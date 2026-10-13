@@ -1,0 +1,20 @@
+# 洪钧 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0578 | 比对状态：confirmed（name+year） | 备考：外交家，赛金花相关公案
+id: hong_jun
+name: 洪钧
+zi: 陶士
+hao: 文卿
+birth_year: 1839
+death_year: 1893
+native_hist: 吳縣 / 歙縣
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 清
+exam_year: 1868
+ganzhi: 戊辰
+ke_ci: 同治七年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

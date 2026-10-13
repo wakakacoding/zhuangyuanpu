@@ -1,0 +1,21 @@
+# 杨云翼 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0328 | 比对状态：missing（仅见异代同名者（清），按缺失计） | 备考：金代名臣学者
+id: yang_yun_yi
+name: 杨云翼
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 平定乐平
+native_modern: 山西省晋中市昔阳县
+lat: 37.62
+lng: 113.7
+dynasty: 金
+exam_year: 1194
+ganzhi: 甲寅
+ke_ci: 明昌五年甲寅科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

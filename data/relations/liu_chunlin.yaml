@@ -1,0 +1,6 @@
+from_id: liu_chunlin
+relations:
+  - to_id: shang_yanliu
+    type: 同年
+    note: 光绪三十年甲辰恩科同榜——刘一甲一名（状元），商一甲三名（探花）。同榜榜眼朱汝珍待录入。
+    source_ids: [src_timin_beilu]

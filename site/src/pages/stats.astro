@@ -1,0 +1,151 @@
+---
+import { allPersons, presentDynasties, fullProfileIds } from '../lib/persons';
+import { listStories } from '../lib/story';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/base.css';
+import '../styles/stats.css';
+
+const persons = allPersons();
+const fullIds = fullProfileIds();
+const stories = listStories();
+const dynasties = presentDynasties(persons);
+
+// ---- 朝代分布 ----
+const dynCount = dynasties.map((d) => ({
+  d, n: persons.filter((p) => p.dynasty === d).length,
+}));
+const dynMax = Math.max(...dynCount.map((x) => x.n));
+
+// ---- 籍贯分布（今地名省级聚合）----
+const provOf = (nm: string | undefined): string | null => {
+  if (!nm) return null;
+  const m = nm.match(/^(.{2,3}?(?:省|市|自治区))/);
+  return m ? m[1] : nm.slice(0, 2);
+};
+const provMap = new Map<string, number>();
+for (const p of persons) {
+  const prov = provOf(p.native_modern);
+  if (prov) provMap.set(prov, (provMap.get(prov) ?? 0) + 1);
+}
+const provTop = [...provMap.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12);
+const provMax = provTop[0]?.[1] ?? 1;
+
+// ---- 标签 TOP ----
+const tagMap = new Map<string, number>();
+for (const p of persons) for (const t of p.tags ?? []) tagMap.set(t, (tagMap.get(t) ?? 0) + 1);
+const tagTop = [...tagMap.entries()].sort((a, b) => b[1] - a[1]).slice(0, 15);
+
+// ---- 科年分布（50 年桶）----
+const buckets = new Map<number, number>();
+for (const p of persons) {
+  if (!p.exam_year) continue;
+  const b = Math.floor(p.exam_year / 50) * 50;
+  buckets.set(b, (buckets.get(b) ?? 0) + 1);
+}
+const bucketList = [...buckets.entries()].sort((a, b) => a[0] - b[0]);
+const bucketMax = Math.max(...bucketList.map(([, n]) => n));
+
+// ---- 覆盖率看板（公开版，呼应 R4「缺数据本身成为叙事」）----
+const n = persons.length;
+const coverage = [
+  { label: '籍贯今名已映射', cur: persons.filter((p) => p.native_modern).length, total: n, target: null },
+  { label: '坐标已录（地图门槛 60%）', cur: persons.filter((p) => p.lat != null).length, total: n, target: 0.6 },
+  { label: '生卒双全（精确口径）', cur: persons.filter((p) => p.birth_year && p.death_year).length, total: n, target: null },
+  { label: '星图可用年（门槛 50%）', cur: persons.filter((p) => p.birth_year || p.fl_year).length, total: n, target: 0.5 },
+  { label: '一句话小传', cur: persons.filter((p) => p.bio_short).length, total: n, target: null },
+  { label: '全字段档案', cur: fullIds.size, total: 50, target: null },
+  { label: '故事', cur: stories.length, total: 15, target: null },
+];
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="统计" description="历代状元数据仪表盘：朝代分布、籍贯分布、科年密度与补全计划覆盖率。" path="/stats/" />
+  </head>
+  <body>
+    <div class="container container-wide">
+      <header class="site-head">
+        <h1>统计仪表盘</h1>
+        <p class="sub">数据截至构建时 · 覆盖率即「补全计划」公开看板</p>
+        <nav class="site-nav">
+          <a href="/">首页</a>
+          <a href="/search/">检索</a>
+          <a href="/timeline/">时间线</a>
+          <a href="/persons/">索引</a>
+        </nav>
+      </header>
+
+      <div class="stats">
+        <div><b>{n}</b><span>已录状元</span></div>
+        <div><b>{dynasties.length}</b><span>朝代</span></div>
+        <div><b>{fullIds.size}</b><span>全字段档案</span></div>
+        <div><b>{stories.length}</b><span>故事</span></div>
+        <div><b>{tagMap.size}</b><span>标签</span></div>
+      </div>
+
+      <h2 class="section-title">朝代分布</h2>
+      <div class="bars">
+        {dynCount.map(({ d, n: c }) => (
+          <div class="bar-line">
+            <span class="bl-label">{d}</span>
+            <span class="bl-track"><span class="bl-fill" style={`width:${((c / dynMax) * 100).toFixed(1)}%`}></span></span>
+            <span class="bl-num">{c}</span>
+          </div>
+        ))}
+      </div>
+
+      <h2 class="section-title">科年密度（50 年一桶）</h2>
+      <div class="histo">
+        {bucketList.map(([b, c]) => (
+          <div class="h-col" title={`${b}–${b + 49}：${c} 人`}>
+            <span class="h-bar" style={`height:${((c / bucketMax) * 100).toFixed(1)}%`}></span>
+            <span class="h-x">{b}</span>
+          </div>
+        ))}
+      </div>
+
+      <h2 class="section-title">籍贯分布（今省级，TOP 12）</h2>
+      <p class="note-line">仅统计已映射今地名者（{persons.filter((p) => p.native_modern).length} 人）；「状元产地重心南移」在此可见——待坐标补全后由籍贯地图完整呈现。</p>
+      <div class="bars">
+        {provTop.map(([prov, c]) => (
+          <div class="bar-line">
+            <span class="bl-label">{prov}</span>
+            <span class="bl-track"><span class="bl-fill prov" style={`width:${((c / provMax) * 100).toFixed(1)}%`}></span></span>
+            <span class="bl-num">{c}</span>
+          </div>
+        ))}
+      </div>
+
+      {tagTop.length > 0 && (
+        <>
+          <h2 class="section-title">标签 TOP {tagTop.length}</h2>
+          <div class="tag-cloud">
+            {tagTop.map(([t, c]) => (
+              <a class="tag-pill" href={`/search/#tag=${encodeURIComponent(t)}`}>{t}<i>{c}</i></a>
+            ))}
+          </div>
+        </>
+      )}
+
+      <h2 class="section-title">补全计划 · 覆盖率</h2>
+      <p class="note-line">阙如不遮不掩。达标线触发下一阶段：坐标 60% 解锁籍贯地图，星图可用年 50% 解锁星图（生年或 CBDB 估算活动年 fl_year，星图上分色标注精确/估算）。</p>
+      <div class="cov">
+        {coverage.map((c) => {
+          const pct = (c.cur / c.total) * 100;
+          const hit = c.target != null && c.cur / c.total >= c.target;
+          return (
+            <div class="cov-row">
+              <span class="cov-label">{c.label}{hit && <em class="hit-mark">已达标</em>}</span>
+              <span class="cov-track">
+                <span class={`cov-fill${hit ? ' hit' : ''}`} style={`width:${Math.min(100, pct).toFixed(1)}%`}></span>
+                {c.target != null && <span class="cov-target" style={`left:${c.target * 100}%`}></span>}
+              </span>
+              <span class="cov-num">{c.cur}/{c.total} · {pct.toFixed(0)}%</span>
+            </div>
+          );
+        })}
+      </div>
+
+      <a class="back" href="/">← 返回首页</a>
+    </div>
+  </body>
+</html>

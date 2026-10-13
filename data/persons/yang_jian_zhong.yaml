@@ -1,0 +1,21 @@
+# 杨建中 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0335 | 比对状态：suspect（名录年分阙如，朝代内唯一候选待人工核年） | 备考：待核
+id: yang_jian_zhong
+name: 杨建中
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 澄城
+native_modern: 陕西省渭南市澄城县
+lat: 35.19
+lng: 109.93
+dynasty: 金
+exam_year: null
+ganzhi: null
+ke_ci: 皇统年间（年分待考）
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

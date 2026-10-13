@@ -1,0 +1,22 @@
+# 崔昭纬 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0105 | 比对状态：suspect（年份冲突：名录 883 vs CBDB 入仕年 [812]）
+id: cui_zhao_wei
+name: 崔昭纬
+zi: null
+hao: null
+birth_year: null
+death_year: 896
+fl_year: 833
+native_hist: 歷城
+native_modern: 山东省济南市历城区
+lat: 36.65
+lng: 117.12
+dynasty: 唐
+exam_year: 883
+ganzhi: 癸卯
+ke_ci: 中和三年癸卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

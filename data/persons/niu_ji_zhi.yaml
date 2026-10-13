@@ -1,0 +1,21 @@
+# 牛继志 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0381 | 比对状态：confirmed（name+year） | 备考：待核
+id: niu_ji_zhi
+name: 牛继志
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1324
+native_hist: 武彊
+native_modern: 河北省衡水市武强县
+lat: 38.04
+lng: 115.98
+dynasty: 元
+exam_year: 1354
+ganzhi: 甲午
+ke_ci: 至正十四年甲午科右榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

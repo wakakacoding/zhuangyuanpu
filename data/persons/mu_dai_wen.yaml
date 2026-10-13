@@ -1,0 +1,21 @@
+# 木待问 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0226 | 比对状态：confirmed（name+year）
+id: mu_dai_wen
+name: 木待问
+zi: 蘊之
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 1133
+native_hist: 永嘉
+native_modern: 浙江省温州市永嘉县
+lat: 28.15
+lng: 120.69
+dynasty: 宋
+exam_year: 1163
+ganzhi: 癸未
+ke_ci: 隆兴元年癸未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,20 @@
+# 彭启丰 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0513 | 比对状态：confirmed（name+year） | 备考：彭定求之孙，祖孙状元
+id: peng_qi_feng
+name: 彭启丰
+zi: 翰文
+hao: 幔仙閣；延綠軒；涵青閣；環蔭書屋；芝庭；蘭陔草堂；蝶夢龕；鉏雲園
+birth_year: 1701
+death_year: 1784
+native_hist: 長洲
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 清
+exam_year: 1727
+ganzhi: 丁未
+ke_ci: 雍正五年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

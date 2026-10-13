@@ -1,0 +1,21 @@
+# 卢郢 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0142 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：待核
+id: lu_ying
+name: 卢郢
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 江寧府
+native_modern: 江苏省南京市
+lat: 32.06
+lng: 118.8
+dynasty: 五代十国
+exam_year: 971
+ganzhi: 辛未
+ke_ci: 南唐开宝四年辛未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

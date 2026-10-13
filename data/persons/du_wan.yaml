@@ -1,0 +1,22 @@
+# 杜绾 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0013 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：《玉芝堂谈荟》作贾季阳，存疑
+id: du_wan
+name: 杜绾
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 708
+native_hist: 長安
+native_modern: 陕西省西安市
+lat: 34.27
+lng: 108.95
+dynasty: 唐
+exam_year: 724
+ganzhi: 甲子
+ke_ci: 开元十二年甲子科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

@@ -1,0 +1,21 @@
+# 扈载 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0132 | 比对状态：suspect（朝代内同名 2 人且年分均无命中）
+id: hu_zai
+name: 扈载
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 河南安阳
+native_modern: 河南省安阳市
+lat: 36.1
+lng: 114.39
+dynasty: 五代十国
+exam_year: 952
+ganzhi: 壬子
+ke_ci: 后周广顺二年壬子科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

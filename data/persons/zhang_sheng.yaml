@@ -1,0 +1,20 @@
+# 张升 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0421 | 比对状态：confirmed（rank1）
+id: zhang_sheng
+name: 张升
+zi: 啓昭；啟昭
+hao: 柏崖；栢崖
+birth_year: 1442
+death_year: 1517
+native_hist: 南城
+native_modern: 江西省抚州市南城县
+lat: 27.55
+lng: 116.64
+dynasty: 明
+exam_year: 1469
+ganzhi: 己丑
+ke_ci: 成化五年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

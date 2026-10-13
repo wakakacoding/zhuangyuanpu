@@ -1,0 +1,20 @@
+# 汪如洋 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0535 | 比对状态：confirmed（name+year）
+id: wang_ru_yang
+name: 汪如洋
+zi: 潤民
+hao: null
+birth_year: 1755
+death_year: 1794
+native_hist: 秀水
+native_modern: 浙江省嘉兴市
+lat: 30.76
+lng: 120.71
+dynasty: 清
+exam_year: 1780
+ganzhi: 庚子
+ke_ci: 乾隆四十五年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

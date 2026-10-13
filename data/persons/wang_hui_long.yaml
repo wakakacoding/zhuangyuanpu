@@ -1,0 +1,20 @@
+# 王会龙 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0247 | 比对状态：confirmed（name+year）
+id: wang_hui_long
+name: 王会龙
+zi: 君遇
+hao: null
+birth_year: 1192
+death_year: 0
+native_hist: 臨海
+native_modern: 浙江省台州市临海市
+lat: 28.86
+lng: 121.14
+dynasty: 宋
+exam_year: 1226
+ganzhi: 丙戌
+ke_ci: 宝庆二年丙戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,21 @@
+# 黄朴 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0248 | 比对状态：suspect（同年同名多条 [545588, 19011]（疑似 CBDB 重条，待人工并合））
+id: huang_pu
+name: 黄朴
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 侯官
+native_modern: 福建省福州市
+lat: 26.08
+lng: 119.3
+dynasty: 宋
+exam_year: 1229
+ganzhi: 己丑
+ke_ci: 绍定二年己丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

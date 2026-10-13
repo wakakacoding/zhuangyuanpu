@@ -1,0 +1,20 @@
+# 张唐卿 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0184 | 比对状态：confirmed（name+year）
+id: zhang_tang_qing
+name: 张唐卿
+zi: 希元
+hao: null
+birth_year: 1010
+death_year: 1037
+native_hist: 益都
+native_modern: 山东省潍坊市青州市
+lat: 36.68
+lng: 118.48
+dynasty: 宋
+exam_year: 1034
+ganzhi: 甲戌
+ke_ci: 景祐元年甲戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

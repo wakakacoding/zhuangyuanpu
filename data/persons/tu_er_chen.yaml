@@ -1,0 +1,21 @@
+# 图尔宸 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0485 | 比对状态：confirmed（rank1）
+id: tu_er_chen
+name: 图尔宸
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1625
+native_hist: 正白旗
+native_modern: 北京市
+lat: 39.9
+lng: 116.4
+dynasty: 清
+exam_year: 1655
+ganzhi: 乙未
+ke_ci: 顺治十二年满榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

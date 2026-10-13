@@ -1,0 +1,21 @@
+# 黄公度 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0218 | 比对状态：suspect（同年同名多条 [11110, 482167]（疑似 CBDB 重条，待人工并合））
+id: huang_gong_du
+name: 黄公度
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 莆田
+native_modern: 福建省莆田市
+lat: 25.45
+lng: 119.01
+dynasty: 宋
+exam_year: 1138
+ganzhi: 戊午
+ke_ci: 绍兴八年戊午科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

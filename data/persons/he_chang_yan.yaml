@@ -1,0 +1,21 @@
+# 何昌言 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0205 | 比对状态：confirmed（name+year）
+id: he_chang_yan
+name: 何昌言
+zi: null
+hao: null
+birth_year: null
+death_year: 1127
+fl_year: 1064
+native_hist: 新淦
+native_modern: 江西省吉安市新干县
+lat: 27.74
+lng: 115.4
+dynasty: 宋
+exam_year: 1097
+ganzhi: 丁丑
+ke_ci: 绍圣四年丁丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

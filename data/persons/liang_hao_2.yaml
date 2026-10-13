@@ -1,0 +1,21 @@
+# 梁灏 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0165 | 比对状态：missing（仅见异代同名者（明），按缺失计） | 备考：「八十岁状元」传说即附会此人，实为误传；子梁固后亦中状元
+id: liang_hao_2
+name: 梁灏
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 郓州须城
+native_modern: 山东省泰安市东平县
+lat: 35.94
+lng: 116.47
+dynasty: 宋
+exam_year: 985
+ganzhi: 乙酉
+ke_ci: 雍熙二年乙酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

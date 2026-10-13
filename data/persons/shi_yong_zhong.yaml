@@ -1,0 +1,19 @@
+# 石用中 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0267 | 比对状态：missing（CBDB 无记录）
+id: shi_yong_zhong
+name: 石用中
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 991
+ganzhi: 辛卯
+ke_ci: 统和九年辛卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

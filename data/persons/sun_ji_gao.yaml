@@ -1,0 +1,21 @@
+# 孙继皋 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0456 | 比对状态：suspect（同年同名多条 [34739, 129807]（疑似 CBDB 重条，待人工并合））
+id: sun_ji_gao
+name: 孙继皋
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 直隶无锡
+native_modern: 江苏省无锡市
+lat: 31.49
+lng: 120.31
+dynasty: 明
+exam_year: 1574
+ganzhi: 甲戌
+ke_ci: 万历二年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

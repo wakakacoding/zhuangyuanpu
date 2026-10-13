@@ -1,0 +1,22 @@
+# 崔元翰 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0044 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: cui_yuan_han
+name: 崔元翰
+zi: null
+hao: null
+birth_year: null
+death_year: 795
+fl_year: 732
+native_hist: 靈昌 / 博陵
+native_modern: 河南省安阳市滑县
+lat: 35.58
+lng: 114.52
+dynasty: 唐
+exam_year: 781
+ganzhi: 辛酉
+ke_ci: 建中二年辛酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

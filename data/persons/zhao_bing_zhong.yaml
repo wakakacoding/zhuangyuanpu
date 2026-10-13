@@ -1,0 +1,21 @@
+# 赵秉忠 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0464 | 比对状态：confirmed（rank1） | 备考：殿试状元卷真迹现存青州市博物馆，为明代孤本
+id: zhao_bing_zhong
+name: 赵秉忠
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1568
+native_hist: 山东益都
+native_modern: 山东省潍坊市青州市
+lat: 36.68
+lng: 118.48
+dynasty: 明
+exam_year: 1598
+ganzhi: 戊戌
+ke_ci: 万历二十六年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,21 @@
+# 徐俨夫 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0252 | 比对状态：confirmed（name+year）
+id: xu_yan_fu
+name: 徐俨夫
+zi: 公望
+hao: 桃渚
+birth_year: null
+death_year: null
+fl_year: 1211
+native_hist: 平陽
+native_modern: 浙江省温州市平阳县
+lat: 27.66
+lng: 120.57
+dynasty: 宋
+exam_year: 1241
+ganzhi: 辛丑
+ke_ci: 淳祐元年辛丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

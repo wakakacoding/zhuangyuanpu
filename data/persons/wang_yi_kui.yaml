@@ -1,0 +1,20 @@
+# 王一夔 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0418 | 比对状态：confirmed（rank1（同年重条，取标记者）） | 备考：初名谢一夔，CBDB 作谢一夔
+id: wang_yi_kui
+name: 王一夔
+zi: 大韶
+hao: 約齋
+birth_year: 1425
+death_year: 1487
+native_hist: 新建
+native_modern: 江西省南昌市新建区
+lat: 28.69
+lng: 115.82
+dynasty: 明
+exam_year: 1460
+ganzhi: 庚辰
+ke_ci: 天顺四年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

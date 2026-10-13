@@ -1,0 +1,20 @@
+# 郑性之 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0241 | 比对状态：confirmed（name+year）
+id: zheng_xing_zhi
+name: 郑性之
+zi: 信之；行之
+hao: 毅齋
+birth_year: 1172
+death_year: 1255
+native_hist: 侯官
+native_modern: 福建省福州市
+lat: 26.08
+lng: 119.3
+dynasty: 宋
+exam_year: 1208
+ganzhi: 戊辰
+ke_ci: 嘉定元年戊辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

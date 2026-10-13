@@ -1,0 +1,21 @@
+# 傅善祥 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0596 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：传为唯一女状元；女科是否开科史有争议，存疑
+id: fu_shan_xiang
+name: 傅善祥
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 江寧府
+native_modern: 江苏省南京市
+lat: 32.06
+lng: 118.8
+dynasty: 其他
+exam_year: 1853
+ganzhi: 癸丑
+ke_ci: 太平天国癸好三年女科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

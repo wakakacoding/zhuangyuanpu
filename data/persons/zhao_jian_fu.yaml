@@ -1,0 +1,19 @@
+# 赵建夫 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0242 | 比对状态：missing（CBDB 无记录）
+id: zhao_jian_fu
+name: 赵建夫
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 宋
+exam_year: 1211
+ganzhi: 辛未
+ke_ci: 嘉定四年辛未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

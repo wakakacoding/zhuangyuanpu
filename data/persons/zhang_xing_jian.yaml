@@ -1,0 +1,21 @@
+# 张行简 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0327 | 比对状态：suspect（朝代内同名 2 人且年分均无命中） | 备考：金代学术大家
+id: zhang_xing_jian
+name: 张行简
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 莒州
+native_modern: 山东省日照市莒县
+lat: 35.58
+lng: 118.84
+dynasty: 金
+exam_year: 1179
+ganzhi: 己亥
+ke_ci: 大定十九年己亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

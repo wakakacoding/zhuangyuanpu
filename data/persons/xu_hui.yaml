@@ -1,0 +1,19 @@
+# 徐晦 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0056 | 比对状态：suspect（朝代内同名 3 人且年分均无命中） | 备考：科年一作贞元十八年(802)，存疑
+id: xu_hui
+name: 徐晦
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 803
+ganzhi: 癸未
+ke_ci: 贞元十九年癸未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

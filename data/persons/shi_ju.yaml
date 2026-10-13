@@ -1,0 +1,21 @@
+# 石琚 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0321 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：金世宗朝名相
+id: shi_ju
+name: 石琚
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 定州
+native_modern: 河北省保定市定州市
+lat: 38.52
+lng: 114.99
+dynasty: 金
+exam_year: 1139
+ganzhi: 己未
+ke_ci: 天眷二年己未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

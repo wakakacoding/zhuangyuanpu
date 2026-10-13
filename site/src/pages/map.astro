@@ -1,0 +1,201 @@
+---
+import { allPersons, fullProfileIds } from '../lib/persons';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/base.css';
+import '../styles/map.css';
+
+// ---- WGS-84 → GCJ-02（公开算法；合规要求腾讯地图使用火星坐标系）----
+const PI = 3.1415926535897932384626;
+const A = 6378245.0;
+const EE = 0.00669342162296594323;
+const outCN = (lng: number, lat: number) => lng < 72.004 || lng > 137.8347 || lat < 0.8293 || lat > 55.8271;
+function tLat(x: number, y: number) {
+  let r = -100 + 2 * x + 3 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * Math.sqrt(Math.abs(x));
+  r += (20 * Math.sin(6 * x * PI) + 20 * Math.sin(2 * x * PI)) * 2 / 3;
+  r += (20 * Math.sin(y * PI) + 40 * Math.sin(y / 3 * PI)) * 2 / 3;
+  r += (160 * Math.sin(y / 12 * PI) + 320 * Math.sin(y * PI / 30)) * 2 / 3;
+  return r;
+}
+function tLng(x: number, y: number) {
+  let r = 300 + x + 2 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * Math.sqrt(Math.abs(x));
+  r += (20 * Math.sin(6 * x * PI) + 20 * Math.sin(2 * x * PI)) * 2 / 3;
+  r += (20 * Math.sin(x * PI) + 40 * Math.sin(x / 3 * PI)) * 2 / 3;
+  r += (150 * Math.sin(x / 12 * PI) + 300 * Math.sin(x / 30 * PI)) * 2 / 3;
+  return r;
+}
+function toGcj(lng: number, lat: number): [number, number] {
+  if (outCN(lng, lat)) return [lng, lat];
+  let dlat = tLat(lng - 105, lat - 35), dlng = tLng(lng - 105, lat - 35);
+  const radlat = lat / 180 * PI;
+  let magic = Math.sin(radlat); magic = 1 - EE * magic * magic;
+  const sqm = Math.sqrt(magic);
+  dlat = (dlat * 180) / ((A * (1 - EE)) / (magic * sqm) * PI);
+  dlng = (dlng * 180) / (A / sqm * Math.cos(radlat) * PI);
+  return [lng + dlng, lat + dlat];
+}
+
+const persons = allPersons();
+const fullIds = fullProfileIds();
+const DYNASTIES = ['唐', '五代十国', '宋', '辽', '金', '元', '明', '清'];
+
+// 点位数据（构建期转 GCJ-02）
+const pts = persons
+  .filter((p) => p.lat != null && p.lng != null && p.dynasty)
+  .map((p) => {
+    const [lng, lat] = toGcj(p.lng, p.lat);
+    return {
+      id: p.id, n: p.name, d: p.dynasty, y: p.exam_year ?? null,
+      gz: p.ganzhi ?? '', nm: p.native_modern ?? '', nh: p.native_hist ?? '',
+      lat: +lat.toFixed(5), lng: +lng.toFixed(5),
+      full: fullIds.has(p.id) ? 1 : 0,
+    };
+  });
+
+// 朝代质心（重心南移可视化）：用未偏移坐标算质心再转 GCJ
+const centroids = DYNASTIES.map((d) => {
+  const list = persons.filter((p) => p.dynasty === d && p.lat != null);
+  if (!list.length) return null;
+  const lat = list.reduce((s, p) => s + p.lat, 0) / list.length;
+  const lng = list.reduce((s, p) => s + p.lng, 0) / list.length;
+  const [glng, glat] = toGcj(lng, lat);
+  return { d, n: list.length, lat: +glat.toFixed(5), lng: +glng.toFixed(5) };
+}).filter(Boolean);
+
+const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).length }));
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="籍贯地图" description="历代状元籍贯分布地图：朝代滑块拖动，看状元产地重心千年南移。" path="/map/" />
+    <!-- 腾讯地图 GL JS：WorkBuddy 代理模式（密钥由后端持有，前端零暴露） -->
+    <script is:inline type="text/javascript">
+      window._TMapSecurityConfig = {
+        serviceHost: 'http://127.0.0.1:__WB_HTTP_PORT__/_TMapService/_wbt/__WB_TMAP_SECRET__',
+      };
+    </script>
+    <script is:inline src="https://map.qq.com/api/gljs?v=1.exp"></script>
+  </head>
+  <body>
+    <div class="map-page">
+      <header class="map-head">
+        <div class="map-title">
+          <h1>籍贯地图</h1>
+          <p class="sub">{pts.length} 个坐标点位 · 拖动朝代滑块，看状元产地重心千年南移</p>
+        </div>
+        <nav class="site-nav">
+          <a href="/">首页</a>
+          <a href="/search/">检索</a>
+          <a href="/timeline/">时间线</a>
+          <a href="/stats/">统计</a>
+        </nav>
+      </header>
+
+      <div class="map-controls">
+        <div class="dyn-slider">
+          <span class="ds-label">朝代</span>
+          <input id="dynRange" type="range" min="0" max={DYNASTIES.length} value="0" step="1" />
+          <span id="dynName" class="ds-name">全部</span>
+          <span id="dynCount" class="ds-count">{pts.length} 人</span>
+        </div>
+        <div class="dyn-ticks">
+          <span>全部</span>{DYNASTIES.map((d) => <span>{d}</span>)}
+        </div>
+      </div>
+
+      <div id="map" class="map-box"></div>
+
+      <section class="map-guide">
+        <h2 class="section-title">读图指南</h2>
+        <p>每个点是一位状元的籍贯（县治级，约数）。拖动滑块逐朝观察：唐宋之际点阵尚在黄河、长江流域间拉锯，明清两代已密集收敛于江浙——「状元产地重心南移」不是比喻，是八百年的经济与文化重心迁移在一张图上的显影。虚线为各朝代质心连线。金点 = 已建全字段档案，点击任意点可读其人小传。</p>
+        <p class="note-line">底图：腾讯地图（GCJ-02 坐标系，点位已偏移对齐）。坐标为县治级约数，误差以县境为度；未上图者 {599 - pts.length} 人，多属「榜上有名，史中无痕」。</p>
+      </section>
+    </div>
+
+    <script type="application/json" id="pts" set:html={JSON.stringify(pts)} />
+    <script type="application/json" id="cents" set:html={JSON.stringify(centroids)} />
+    <script is:inline define:vars={{ dynCount }}>
+      const pts = JSON.parse(document.getElementById('pts').textContent);
+      const cents = JSON.parse(document.getElementById('cents').textContent);
+      const DYNS = ['唐', '五代十国', '宋', '辽', '金', '元', '明', '清'];
+
+      const map = new TMap.Map('map', {
+        zoom: 4.6,
+        center: new TMap.LatLng(34.8, 110.5),
+      });
+
+      // 点样式：普通朱砂点 / 全字段档案金点（inline SVG，不引外部图）
+      const dotSvg = (color, r) =>
+        'data:image/svg+xml,' + encodeURIComponent(
+          `<svg xmlns="http://www.w3.org/2000/svg" width="${r*4}" height="${r*4}"><circle cx="${r*2}" cy="${r*2}" r="${r}" fill="${color}" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/></svg>`);
+
+      const infoWin = new TMap.InfoWindow({ map, enableCustom: true, position: new TMap.LatLng(0, 0), offset: { x: 0, y: -14 } });
+      infoWin.close();
+
+      let markerLayer = null, centroidLayer = null, labelLayer = null;
+
+      function bindClick() {
+        markerLayer.on('click', (evt) => {
+          const p = evt.geometry.properties;
+          infoWin.setContent(`
+            <div class="pop">
+              <b>${p.n}</b>${p.full ? '<span class="pop-badge">全档案</span>' : ''}
+              <div class="pop-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ''}</div>
+              <div class="pop-native">${p.nm || p.nh}</div>
+              <a href="/persons/${p.id}/">查看档案 →</a>
+            </div>`);
+          infoWin.setPosition(new TMap.LatLng(p.lat, p.lng));
+          infoWin.open();
+        });
+      }
+
+      function renderLayer(dynIdx) {
+        if (markerLayer) markerLayer.setMap(null);
+        if (centroidLayer) centroidLayer.setMap(null);
+        if (labelLayer) labelLayer.setMap(null);
+        infoWin.close();
+
+        const show = dynIdx === 0 ? pts : pts.filter((p) => p.d === DYNS[dynIdx - 1]);
+        document.getElementById('dynName').textContent = dynIdx === 0 ? '全部' : DYNS[dynIdx - 1];
+        document.getElementById('dynCount').textContent = show.length + ' 人';
+
+        markerLayer = new TMap.MultiMarker({
+          map,
+          styles: {
+            dot: new TMap.MarkerStyle({ width: 16, height: 16, src: dotSvg('#9e2b22', 6), anchor: { x: 8, y: 8 } }),
+            full: new TMap.MarkerStyle({ width: 22, height: 22, src: dotSvg('#a98b3f', 8.5), anchor: { x: 11, y: 11 } }),
+          },
+          geometries: show.map((p) => ({
+            id: p.id,
+            styleId: p.full ? 'full' : 'dot',
+            position: new TMap.LatLng(p.lat, p.lng),
+            properties: p,
+          })),
+        });
+        bindClick();
+
+        // 质心虚线（仅「全部」视图）：串起各朝代重心，南移一目了然
+        if (dynIdx === 0) {
+          centroidLayer = new TMap.MultiPolyline({
+            map,
+            styles: { c: new TMap.PolylineStyle({ color: '#a98b3f', width: 2, dashStyle: 'dash' }) },
+            geometries: [{
+              id: 'cent', styleId: 'c',
+              paths: cents.map((c) => new TMap.LatLng(c.lat, c.lng)),
+            }],
+          });
+          labelLayer = new TMap.MultiLabel({
+            map,
+            styles: { l: new TMap.LabelStyle({ color: '#6a6558', size: 12, offset: { x: 0, y: -22 } }) },
+            geometries: cents.map((c) => ({
+              id: 'lb' + c.d, styleId: 'l',
+              position: new TMap.LatLng(c.lat, c.lng),
+              content: c.d,
+            })),
+          });
+        }
+      }
+
+      document.getElementById('dynRange').addEventListener('input', (e) => renderLayer(+e.target.value));
+      renderLayer(0);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+# 李球 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0318 | 比对状态：missing（仅见异代同名者（五代/唐/宋/明/朝鮮/未詳/清），按缺失计） | 备考：待核：北辽政权
+id: li_qiu
+name: 李球
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 1123
+ganzhi: 癸卯
+ke_ci: 北辽癸卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

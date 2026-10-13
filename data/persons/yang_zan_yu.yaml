@@ -1,0 +1,19 @@
+# 杨赞禹 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0108 | 比对状态：suspect（朝代内同名 2 人且年分均无命中） | 备考：一作杨赞安，存疑
+id: yang_zan_yu
+name: 杨赞禹
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 890
+ganzhi: 庚戌
+ke_ci: 大顺元年庚戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

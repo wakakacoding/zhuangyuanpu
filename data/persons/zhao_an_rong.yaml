@@ -1,0 +1,21 @@
+# 赵安荣 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0322 | 比对状态：missing（CBDB 无记录） | 备考：待核：与赵安时为兄弟，年分两说互抵
+id: zhao_an_rong
+name: 赵安荣
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 陵川
+native_modern: 山西省晋城市陵川县
+lat: 35.78
+lng: 113.28
+dynasty: 金
+exam_year: 1140
+ganzhi: 庚申
+ke_ci: 天眷三年庚申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

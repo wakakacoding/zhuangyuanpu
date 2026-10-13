@@ -1,0 +1,21 @@
+# 王容 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0234 | 比对状态：confirmed（name+year）
+id: wang_rong
+name: 王容
+zi: 南強
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 1157
+native_hist: 湘陰
+native_modern: 湖南省岳阳市湘阴县
+lat: 28.68
+lng: 112.89
+dynasty: 宋
+exam_year: 1187
+ganzhi: 丁未
+ke_ci: 淳熙十四年丁未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

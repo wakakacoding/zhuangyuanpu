@@ -1,0 +1,21 @@
+# 邓钟岳 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0510 | 比对状态：confirmed（name+year）
+id: deng_zhong_yue
+name: 邓钟岳
+zi: 東長
+hao: 寒香閣；悔廬
+birth_year: null
+death_year: null
+fl_year: 1691
+native_hist: 山東省 / 東昌府 / 聊城
+native_modern: 山东省聊城市
+lat: 36.46
+lng: 115.99
+dynasty: 清
+exam_year: 1721
+ganzhi: 辛丑
+ke_ci: 康熙六十年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

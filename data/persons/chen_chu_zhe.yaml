@@ -1,0 +1,20 @@
+# 陈初哲 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0530 | 比对状态：confirmed（name+year）
+id: chen_chu_zhe
+name: 陈初哲
+zi: 在初
+hao: 小蓬瀛；永齋
+birth_year: 1737
+death_year: 1787
+native_hist: 吳縣 / 元和
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 清
+exam_year: 1769
+ganzhi: 己丑
+ke_ci: 乾隆三十四年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,20 @@
+# 梁耀枢 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0579 | 比对状态：confirmed（name+year）
+id: liang_yao_shu
+name: 梁耀枢
+zi: 斗南
+hao: null
+birth_year: 1833
+death_year: 1888
+native_hist: 順德
+native_modern: 广东省佛山市顺德区
+lat: 22.81
+lng: 113.29
+dynasty: 清
+exam_year: 1871
+ganzhi: 辛未
+ke_ci: 同治十年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

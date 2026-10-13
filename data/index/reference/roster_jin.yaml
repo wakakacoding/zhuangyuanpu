@@ -1,0 +1,45 @@
+# 状元名录参照系 · 金段（v1.0）
+# 主源：《金史》选举志/列传系考订名录（通行金代状元榜互校）
+# 说明：金代状元年分考订粗疏，无通行年分者 year 留空（由 CBDB 反查补年），
+#       空年条目比对状态自动为「存疑·年待核」。
+dynasty: 金
+entries:
+  - {name: "刘伪", year: null, ke: "金初（年分待考）", note: "待核"}
+  - {name: "许必", year: null, ke: "金初（年分待考）", note: "待核"}
+  - {name: "胡砺", year: 1132, ke: "天会十年壬子科", native: "河北磁州", note: "金代早期状元，《金史》有传"}
+  - {name: "赵洞", year: null, ke: "天会年间（年分待考）", note: "待核"}
+  - {name: "石琚", year: 1139, ke: "天眷二年己未科", native: "定州（今河北定州）", note: "金世宗朝名相"}
+  - {name: "吕忠翰", year: null, ke: "天眷年间（年分待考）", note: "待核"}
+  - {name: "杨建中", year: null, ke: "皇统年间（年分待考）", note: "待核"}
+  - {name: "王彦潜", year: null, ke: "皇统年间（年分待考）", note: "待核"}
+  - {name: "常大荣", year: null, ke: "皇统年间（年分待考）", note: "待核"}
+  - {name: "郑子聃", year: 1157, ke: "正隆二年丁丑科", note: "《金史》有传"}
+  - {name: "任忠杰", year: null, ke: "正隆年间（年分待考）", note: "待核"}
+  - {name: "赵安荣", year: 1140, ke: "天眷三年庚申科", native: "陵川（今山西陵川）", note: "待核：与赵安时为兄弟，年分两说互抵"}
+  - {name: "赵安时", year: 1160, ke: "正隆五年庚辰科", native: "陵川（今山西陵川）", note: "兄弟状元（赵安荣兄），年分待核"}
+  - {name: "孟宗献", year: 1163, ke: "大定三年癸未科", native: "开封", note: "「孟四元」：乡会殿连魁，金代著名孝子"}
+  - {name: "徒单镒", year: 1173, ke: "大定十三年癸巳科", note: "女直策论进士第一，金宣宗朝名臣"}
+  - {name: "张行简", year: 1179, ke: "大定十九年己亥科", native: "莒州（今山东莒县）", note: "金代学术大家"}
+  - {name: "王泽", year: null, ke: "大定年间（年分待考）", note: "待核"}
+  - {name: "孙用康", year: null, ke: "大定年间（年分待考）", note: "待核"}
+  - {name: "杨云翼", year: 1194, ke: "明昌五年甲寅科", native: "平定乐平（今山西昔阳）", note: "金代名臣学者"}
+  - {name: "张檝", year: null, ke: "明昌年间（年分待考）", note: "待核"}
+  - {name: "纳兰胡鲁剌", year: null, ke: "承安年间（年分待考）", note: "待核：女真族状元"}
+  - {name: "李俊民", year: 1200, ke: "承安五年庚申科", native: "泽州（今山西晋城）", note: "著名文学家，入元不仕"}
+  - {name: "李演", year: null, ke: "泰和年间（年分待考）", note: "待核"}
+  - {name: "张本", year: null, ke: "泰和年间（年分待考）", note: "待核"}
+  - {name: "李献能", year: 1215, ke: "贞祐三年乙亥科", native: "河中（今山西永济）", note: "金末著名文人"}
+  - {name: "斡勒业德", year: null, ke: "贞祐年间（年分待考）", note: "待核：女真族"}
+  - {name: "富珠哩察罕", year: null, ke: "兴定年间（年分待考）", note: "待核：女真族"}
+  - {name: "王鄂", year: null, ke: "兴定年间（年分待考）", note: "待核"}
+  - {name: "卢亚", year: null, ke: "兴定年间（年分待考）", note: "待核"}
+  - {name: "李塘", year: null, ke: "元光年间（年分待考）", note: "待核"}
+  - {name: "赵承元", year: null, ke: "正大年间（年分待考）", note: "待核"}
+  - {name: "郑时昌", year: null, ke: "正大年间（年分待考）", note: "待核"}
+  - {name: "武明甫", year: null, ke: "正大年间（年分待考）", native: "陵川（今山西陵川）", note: "待核：陵川武氏状元家族"}
+  - {name: "刘海", year: null, ke: "金中后期（年分待考）", note: "待核"}
+  - {name: "李安", year: null, ke: "金中后期（年分待考）", note: "待核"}
+  - {name: "张继祖", year: null, ke: "金中后期（年分待考）", note: "待核"}
+  - {name: "刘文龙", year: null, ke: "金中后期（年分待考）", note: "待核"}
+  - {name: "元堪", year: null, ke: "金末（年分待考）", note: "待核"}
+  - {name: "刘仲渊", year: null, ke: "金末（年分待考）", note: "待核"}

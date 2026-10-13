@@ -1,0 +1,21 @@
+# 姚晔 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0174 | 比对状态：confirmed（name+year）
+id: yao_ye
+name: 姚晔
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 978
+native_hist: 商水
+native_modern: 河南省周口市商水县
+lat: 33.54
+lng: 114.61
+dynasty: 宋
+exam_year: 1008
+ganzhi: 戊申
+ke_ci: 大中祥符元年戊申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

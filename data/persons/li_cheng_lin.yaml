@@ -1,0 +1,21 @@
+# 李承霖 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0564 | 比对状态：confirmed（name+year）
+id: li_cheng_lin
+name: 李承霖
+zi: 雨人
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1810
+native_hist: 丹徒
+native_modern: 江苏省镇江市丹徒区
+lat: 32.19
+lng: 119.51
+dynasty: 清
+exam_year: 1840
+ganzhi: 庚子
+ke_ci: 道光二十年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

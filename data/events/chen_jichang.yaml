@@ -1,0 +1,32 @@
+person_id: chen_jichang
+events:
+  - year: 1791
+    year_precision: exact
+    type: 出生
+    title: 生于广西临桂
+    description: 乾隆五十六年（1791）生，乾隆朝大学士陈宏谋玄孙。
+    source_ids: [src_lingui_xianzhi]
+  - year: 1813
+    year_precision: exact
+    type: 中举
+    title: 嘉庆十八年癸酉科广西乡试解元
+    description: 「三元及第」之始。
+    source_ids: [src_lingui_xianzhi]
+  - year: 1820
+    year_precision: exact
+    type: 夺魁
+    title: 嘉庆二十五年庚辰科会元、状元连捷
+    description: 为中国科举史上最后一位「三元及第」。
+    source_ids: [src_timin_beilu]
+  - year: 1840
+    year_precision: about
+    type: 升迁
+    title: 外任山东、江苏，官至布政使
+    description: 历官翰林院修撰，外放知府、监司，官至布政使。具体迁转年份待考。
+    source_ids: [src_lingui_xianzhi]
+  - year: 1849
+    year_precision: exact
+    type: 卒
+    title: 道光二十九年卒
+    description: 年五十九。
+    source_ids: [src_lingui_xianzhi]

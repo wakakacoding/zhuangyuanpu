@@ -1,0 +1,21 @@
+# 尹极 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0062 | 比对状态：missing（CBDB 无记录）
+id: yin_ji
+name: 尹极
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 阆州（尹枢弟）
+native_modern: 四川省南充市阆中市
+lat: 31.56
+lng: 106.01
+dynasty: 唐
+exam_year: 813
+ganzhi: 癸巳
+ke_ci: 元和八年癸巳科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

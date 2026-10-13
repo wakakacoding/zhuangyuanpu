@@ -1,0 +1,19 @@
+# 张仲举 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0287 | 比对状态：missing（仅见异代同名者（清），按缺失计）
+id: zhang_zhong_ju
+name: 张仲举
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 1020
+ganzhi: 庚申
+ke_ci: 开泰九年庚申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

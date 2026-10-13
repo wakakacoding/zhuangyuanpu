@@ -1,0 +1,22 @@
+# 孔纬 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0088 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: kong_wei
+name: 孔纬
+zi: 化文
+hao: null
+birth_year: null
+death_year: 895
+fl_year: 832
+native_hist: 河陰
+native_modern: 河南省郑州市荥阳市
+lat: 34.79
+lng: 113.38
+dynasty: 唐
+exam_year: 859
+ganzhi: 己卯
+ke_ci: 大中十三年己卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

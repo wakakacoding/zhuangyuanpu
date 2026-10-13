@@ -1,0 +1,138 @@
+---
+import { allPersons, fullProfileIds, ganzhiOf, reignYearOf, REIGNS } from '../lib/persons';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/base.css';
+import '../styles/timeline.css';
+
+const persons = allPersons();
+const fullIds = fullProfileIds();
+
+// ---- 朝代泳道定义（起讫年为史家通行纪年）----
+const LANES: Array<{ name: string; start: number; end: number }> = [
+  { name: '唐', start: 618, end: 907 },
+  { name: '五代十国', start: 907, end: 979 },
+  { name: '宋', start: 960, end: 1279 },
+  { name: '辽', start: 907, end: 1125 },
+  { name: '金', start: 1115, end: 1234 },
+  { name: '元', start: 1271, end: 1368 },
+  { name: '明', start: 1368, end: 1644 },
+  { name: '清', start: 1644, end: 1912 },
+];
+
+// ---- 坐标系 ----
+const X0 = 600, X1 = 1920;           // 轴覆盖年份
+const PX = 1.1;                      // px / 年
+const leftPad = 92, topPad = 40, laneH = 34, laneGap = 10, bottomPad = 30;
+const W = leftPad + (X1 - X0) * PX + 24;
+const laneY = (i: number) => topPad + i * (laneH + laneGap);
+const H = laneY(LANES.length) + bottomPad;
+const x = (y: number) => leftPad + (y - X0) * PX;
+
+// ---- 数据 ----
+const byDynasty = new Map(LANES.map((l) => [l.name, [] as any[]]));
+for (const p of persons) {
+  if (byDynasty.has(p.dynasty)) byDynasty.get(p.dynasty)!.push(p);
+}
+
+// 明清年号分段（REIGNS 中落在明清区间的）
+const MING_QING: Record<string, [number, number]> = { 明: [1368, 1644], 清: [1644, 1912] };
+const reignBlocks = Object.entries(REIGNS)
+  .map(([name, [s, e]]) => {
+    const dyn = s >= 1644 ? '清' : s >= 1368 ? '明' : null;
+    return dyn ? { name, s, e, dyn } : null;
+  })
+  .filter(Boolean) as Array<{ name: string; s: number; e: number; dyn: string }>;
+
+// 刻度：每 50 年主刻度
+const ticks: number[] = [];
+for (let y = 650; y <= 1900; y += 50) ticks.push(y);
+
+const tickTitle = (p: any) => {
+  const ry = p.exam_year ? reignYearOf(p.exam_year) : null;
+  return `${p.name} · ${p.exam_year}（${p.ganzhi ?? (p.exam_year ? ganzhiOf(p.exam_year) : '？')}${ry ? ` · ${ry}` : ''}）`;
+};
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="朝代时间线" description="622–1904 历代状元分布时间线：八朝泳道，公元/干支/年号三套纪年并列。" path="/timeline/" />
+  </head>
+  <body>
+    <div class="container container-wide">
+      <header class="site-head">
+        <h1>朝代时间线</h1>
+        <p class="sub">622 孙伏伽 — 1904 刘春霖 · {persons.length} 人 · 朱砂点 = 已建全字段档案 · 悬浮查看公元/干支/年号</p>
+        <nav class="site-nav">
+          <a href="/">首页</a>
+          <a href="/search/">检索</a>
+          <a href="/persons/">索引</a>
+          <a href="/stats/">统计</a>
+        </nav>
+      </header>
+
+      <div class="tl-scroll">
+        <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} role="img" aria-label="历代状元时间线">
+          {/* 刻度尺 */}
+          {ticks.map((y) => (
+            <g>
+              <line x1={x(y)} y1={topPad - 8} x2={x(y)} y2={H - bottomPad} class="grid" />
+              <text x={x(y)} y={topPad - 14} class="tick-label" text-anchor="middle">{y}</text>
+            </g>
+          ))}
+
+          {/* 泳道 */}
+          {LANES.map((lane, i) => {
+            const y = laneY(i);
+            const list = byDynasty.get(lane.name) ?? [];
+            return (
+              <g>
+                <text x={leftPad - 10} y={y + laneH / 2 + 4} class="lane-name" text-anchor="end">{lane.name}</text>
+                <rect x={x(lane.start)} y={y} width={(lane.end - lane.start) * PX} height={laneH} class={`lane-band lane-${i % 2}`} rx="3" />
+                {/* 明清泳道叠加年号分段 */}
+                {reignBlocks.filter((r) => r.dyn === lane.name).map((r, j) => (
+                  <g>
+                    <rect x={x(r.s)} y={y} width={(r.e - r.s) * PX} height={laneH}
+                      class={j % 2 ? 'reign-alt' : 'reign-plain'} />
+                    {(r.e - r.s) * PX > 34 && (
+                      <text x={x(r.s) + (r.e - r.s) * PX / 2} y={y + laneH / 2 + 3.5} class="reign-label" text-anchor="middle">{r.name}</text>
+                    )}
+                  </g>
+                ))}
+                {/* 状元点 */}
+                {list.filter((p) => p.exam_year).map((p) => (
+                  <a href={`/persons/${p.id}/`}>
+                    <circle cx={x(p.exam_year)} cy={y + laneH / 2}
+                      r={fullIds.has(p.id) ? 4 : 2.4}
+                      class={fullIds.has(p.id) ? 'dot dot-full' : 'dot'}>
+                      <title>{tickTitle(p)}</title>
+                    </circle>
+                  </a>
+                ))}
+                <text x={x(lane.end) + 6} y={y + laneH / 2 + 4} class="lane-count">{list.length}</text>
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+
+      <section class="era-table">
+        <h2 class="section-title">纪年对照（明清）</h2>
+        <p class="note-line">鼠标悬浮时间线上的圆点可见该科公元 / 干支 / 年号三套纪年；明清年号分段已直接绘于泳道。</p>
+        <table class="list">
+          <thead><tr><th>年号</th><th>公元区间</th><th>历时</th><th>首年干支</th></tr></thead>
+          <tbody>
+            {reignBlocks.sort((a, b) => a.s - b.s).map((r) => (
+              <tr>
+                <td>{r.name}</td>
+                <td>{r.s} – {r.e}</td>
+                <td>{r.e - r.s + 1} 年</td>
+                <td>{ganzhiOf(r.s)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      <a class="back" href="/">← 返回首页</a>
+    </div>
+  </body>
+</html>

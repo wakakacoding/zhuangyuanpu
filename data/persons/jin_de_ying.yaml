@@ -1,0 +1,20 @@
+# 金德瑛 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0516 | 比对状态：confirmed（rank1） | 备考：碑录原文：金德瑛，浙江杭州府仁和县人（ctext 抽验一致）
+id: jin_de_ying
+name: 金德瑛
+zi: 慕齋；檜門；汝白
+hao: 檜門；檜門老人
+birth_year: 1701
+death_year: 1762
+native_hist: 仁和
+native_modern: 浙江省杭州市
+lat: 30.25
+lng: 120.17
+dynasty: 清
+exam_year: 1736
+ganzhi: 丙辰
+ke_ci: 乾隆元年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

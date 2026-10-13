@@ -1,0 +1,21 @@
+# 孙暨 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0170 | 比对状态：confirmed（name+year）
+id: sun_ji
+name: 孙暨
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 969
+native_hist: 汝陽
+native_modern: 河南省驻马店市汝南县
+lat: 33.0
+lng: 114.36
+dynasty: 宋
+exam_year: 999
+ganzhi: 己亥
+ke_ci: 咸平二年己亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

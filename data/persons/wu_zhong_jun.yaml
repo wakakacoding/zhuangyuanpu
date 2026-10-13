@@ -1,0 +1,20 @@
+# 吴钟骏 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0559 | 比对状态：confirmed（name+year）
+id: wu_zhong_jun
+name: 吴钟骏
+zi: 崧甫；欥聲；耽聲
+hao: 夝舫；師漢齋；悟雲書屋
+birth_year: 1799
+death_year: 1853
+native_hist: 吳縣
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 清
+exam_year: 1832
+ganzhi: 壬辰
+ke_ci: 道光十二年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

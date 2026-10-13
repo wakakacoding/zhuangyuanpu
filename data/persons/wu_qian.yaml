@@ -1,0 +1,21 @@
+# 吴潜 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0244 | 比对状态：confirmed（name+year） | 备考：宋末三杰之一
+id: wu_qian
+name: 吴潜
+zi: 毅夫
+hao: 履齋
+birth_year: 0
+death_year: 0
+fl_year: 1027
+native_hist: 宁国
+native_modern: 安徽省宣城市宁国市
+lat: 30.63
+lng: 118.98
+dynasty: 宋
+exam_year: 1217
+ganzhi: 丁丑
+ke_ci: 嘉定十年丁丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

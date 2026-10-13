@@ -1,0 +1,22 @@
+# 王源中 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0058 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: wang_yuan_zhong
+name: 王源中
+zi: null
+hao: null
+birth_year: null
+death_year: 838
+fl_year: 775
+native_hist: 咸陽
+native_modern: 陕西省咸阳市
+lat: 34.33
+lng: 108.71
+dynasty: 唐
+exam_year: 807
+ganzhi: 丁亥
+ke_ci: 元和二年丁亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

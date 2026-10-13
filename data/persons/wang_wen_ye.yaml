@@ -1,0 +1,21 @@
+# 王文烨 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0370 | 比对状态：confirmed（name+year）
+id: wang_wen_ye
+name: 王文烨
+zi: 章甫
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1300
+native_hist: 鄒平
+native_modern: 山东省滨州市邹平市
+lat: 36.86
+lng: 117.74
+dynasty: 元
+exam_year: 1330
+ganzhi: 庚午
+ke_ci: 至顺元年庚午科左榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

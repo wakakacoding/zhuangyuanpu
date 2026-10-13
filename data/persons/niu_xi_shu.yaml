@@ -1,0 +1,19 @@
+# 牛锡庶 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0048 | 比对状态：missing（CBDB 无记录）
+id: niu_xi_shu
+name: 牛锡庶
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 787
+ganzhi: 丁卯
+ke_ci: 贞元三年丁卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

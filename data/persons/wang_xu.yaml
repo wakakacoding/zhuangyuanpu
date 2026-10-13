@@ -1,0 +1,19 @@
+# 王溆 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0037 | 比对状态：missing（仅见异代同名者（清），按缺失计）
+id: wang_xu
+name: 王溆
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 771
+ganzhi: 辛亥
+ke_ci: 大历六年辛亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

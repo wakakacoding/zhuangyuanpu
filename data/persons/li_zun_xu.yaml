@@ -1,0 +1,21 @@
+# 李遵顼 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0594 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：后为夏神宗，史上唯一状元皇帝；存疑特例
+id: li_zun_xu
+name: 李遵顼
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 西夏都城
+native_modern: 宁夏回族自治区银川市
+lat: 38.49
+lng: 106.23
+dynasty: 其他
+exam_year: 1203
+ganzhi: 癸亥
+ke_ci: 西夏天庆十年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

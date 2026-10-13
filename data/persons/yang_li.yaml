@@ -1,0 +1,20 @@
+# 杨砺 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0145 | 比对状态：confirmed（name+year） | 备考：宋代首科状元
+id: yang_li
+name: 杨砺
+zi: 汝勵；汝礪
+hao: null
+birth_year: 931
+death_year: 999
+native_hist: 鄠縣
+native_modern: 陕西省西安市鄠邑区
+lat: 34.11
+lng: 108.61
+dynasty: 宋
+exam_year: 960
+ganzhi: 庚申
+ke_ci: 建隆元年庚申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

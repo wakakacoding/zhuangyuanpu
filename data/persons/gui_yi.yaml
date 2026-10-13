@@ -1,0 +1,21 @@
+# 归佾 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0115 | 比对状态：missing（CBDB 无记录） | 备考：一作归修
+id: gui_yi
+name: 归佾
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 苏州
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 唐
+exam_year: 901
+ganzhi: 辛酉
+ke_ci: 天复元年辛酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

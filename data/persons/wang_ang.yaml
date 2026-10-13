@@ -1,0 +1,20 @@
+# 王昂 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0212 | 比对状态：confirmed（name+year）
+id: wang_ang
+name: 王昂
+zi: 叔興
+hao: null
+birth_year: 1089
+death_year: 0
+native_hist: 成都
+native_modern: 四川省成都市
+lat: 30.57
+lng: 104.07
+dynasty: 宋
+exam_year: 1118
+ganzhi: 戊戌
+ke_ci: 重和元年戊戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

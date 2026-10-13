@@ -1,0 +1,20 @@
+# 钟骏声 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0574 | 比对状态：confirmed（name+year）
+id: zhong_jun_sheng
+name: 钟骏声
+zi: 雨辰
+hao: 亦谿
+birth_year: 1833
+death_year: null
+native_hist: 仁和
+native_modern: 浙江省杭州市
+lat: 30.25
+lng: 120.17
+dynasty: 清
+exam_year: 1860
+ganzhi: 庚申
+ke_ci: 咸丰十年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

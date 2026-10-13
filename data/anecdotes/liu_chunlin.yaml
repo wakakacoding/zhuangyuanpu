@@ -1,0 +1,22 @@
+# 轶事与史实物理隔离：以下均为「传说」，前端须以 C 级视觉样式呈现
+person_id: liu_chunlin
+anecdotes:
+  - title: 「因名得状元」传说
+    content: >-
+      传殿试读卷时，慈禧见「春霖」二字，值北方大旱，取「春风雨露」之吉兆，遂拔置第一；
+      又有原拟第一为朱汝珍、因慈禧恶「珍」字（联想珍妃）而易置之说。
+    tier: C
+    source_ids: [src_minjian_chuanshuo]
+    note: 广泛流传但均无一手史料支撑，两说互为异说，并存备考；题名碑录仅证名次，不证缘由。
+  - title: 「第一人中最后人」
+    content: 传刘春霖曾自嘲「第一人中最后人」，一语道尽末代状元与时代落幕的荒诞。
+    tier: C
+    source_ids: [src_minjian_chuanshuo]
+    note: 出处待考，暂作传说收录。
+  - title: 「大楷学颜，小楷学刘」
+    content: >-
+      民国书坛俗谚「大楷学颜（真卿），小楷学刘（春霖）」。其殿试策卷小楷精严，影印件流传坊间，
+      北平求字者络绎；晚年拒任伪职后，即赖此鬻字为生。
+    tier: C
+    source_ids: [src_minjian_chuanshuo]
+    note: 书坛俗谚，具体语出何人待考；其小楷影响力属实（有影印策卷传世），谚语本身列为传说。

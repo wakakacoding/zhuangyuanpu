@@ -1,0 +1,21 @@
+# 张曙 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0107 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: zhang_shu
+name: 张曙
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 南陽
+native_modern: 河南省南阳市
+lat: 33.0
+lng: 112.53
+dynasty: 唐
+exam_year: 889
+ganzhi: 己酉
+ke_ci: 龙纪元年己酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

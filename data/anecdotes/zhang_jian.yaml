@@ -1,0 +1,9 @@
+person_id: zhang_jian
+anecdotes:
+  - title: 「冷籍」冒籍案
+    content: >-
+      张謇早年因家世寒微（三代无人应考，俗称「冷籍」），冒如皋张驹家籍应试得秀才，后案发，
+      几经周折、几近破家方归宗。此事深刻塑造其身份意识与后来「父教育、母实业」的地方实践。
+    tier: B
+    source_ids: [src_seweng_nianpu]
+    note: 出张謇自订年谱，属自述一手材料，故列 B 级而非 C 级传说。

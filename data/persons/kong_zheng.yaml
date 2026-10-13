@@ -1,0 +1,22 @@
+# 孔拯 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0104 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：一作中和三年(883)，存疑
+id: kong_zheng
+name: 孔拯
+zi: null
+hao: null
+birth_year: null
+death_year: 895
+fl_year: 832
+native_hist: 曲阜
+native_modern: 山东省济宁市曲阜市
+lat: 35.58
+lng: 116.99
+dynasty: 唐
+exam_year: 882
+ganzhi: 壬寅
+ke_ci: 中和二年壬寅科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

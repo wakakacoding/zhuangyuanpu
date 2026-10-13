@@ -1,0 +1,20 @@
+# 林召棠 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0556 | 比对状态：confirmed（name+year） | 备考：CBDB 状元标记误作杜召棠，待补核
+id: lin_zhao_tang
+name: 林召棠
+zi: null
+hao: null
+birth_year: 1786
+death_year: 1873
+native_hist: 吳川
+native_modern: 广东省湛江市吴川市
+lat: 21.43
+lng: 110.78
+dynasty: 清
+exam_year: 1823
+ganzhi: 癸未
+ke_ci: 道光三年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

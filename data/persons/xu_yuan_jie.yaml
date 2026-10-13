@@ -1,0 +1,20 @@
+# 徐元杰 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0249 | 比对状态：confirmed（name+year）
+id: xu_yuan_jie
+name: 徐元杰
+zi: 仁伯；子祥
+hao: 梅野
+birth_year: 1193
+death_year: 1245
+native_hist: 上饒
+native_modern: 江西省上饶市
+lat: 28.45
+lng: 117.94
+dynasty: 宋
+exam_year: 1232
+ganzhi: 壬辰
+ke_ci: 绍定五年壬辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

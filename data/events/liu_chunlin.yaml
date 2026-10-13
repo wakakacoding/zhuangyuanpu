@@ -1,0 +1,41 @@
+person_id: liu_chunlin
+events:
+  - year: 1872
+    year_precision: exact
+    type: 出生
+    title: 生于直隶肃宁
+    description: 出身清苦农家（同治十一年，壬申）。
+    source_ids: [src_suning_xianzhi]
+  - year: 1904
+    year_precision: exact
+    type: 夺魁
+    title: 光绪三十年甲辰恩科一甲第一名
+    description: >-
+      殿试夺魁，是为科举史上最后一位状元。次年（光绪三十一年，1905）清廷诏令自丙午科起停止一切科举考试，
+      延续约一千三百年的科举制度终结。
+    source_ids: [src_timin_beilu, src_qingshigao_xuanju]
+  - year: 1904
+    year_precision: exact
+    type: 授官
+    title: 授翰林院修撰
+    description: 循状元例授翰林院修撰（从六品）。
+    source_ids: [src_suning_xianzhi]
+  - year: 1905
+    year_end: 1907
+    year_precision: range
+    type: 留学
+    title: 官派留学日本
+    description: 入东京法政大学研习法政，约 1907 年归国。具体起讫月日待考。
+    source_ids: [src_suning_xianzhi]
+  - year: 1937
+    year_precision: about
+    type: 守节
+    title: 拒任伪职，鬻字自守
+    description: 七七事变后隐居故都，拒绝日伪政权拉拢聘任，以卖字为生，时论高其气节。
+    source_ids: [src_difang_wenshi]
+  - year: 1944
+    year_precision: exact
+    type: 卒
+    title: 卒于北平
+    description: 1944 年 1 月 18 日因心脏病卒于北平，享年七十二。
+    source_ids: [src_difang_wenshi]

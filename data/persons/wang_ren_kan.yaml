@@ -1,0 +1,20 @@
+# 王仁堪 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0582 | 比对状态：confirmed（rank1）
+id: wang_ren_kan
+name: 王仁堪
+zi: 可莊
+hao: 公定行二
+birth_year: 1848
+death_year: 1893
+native_hist: 閩縣
+native_modern: 福建省福州市
+lat: 26.08
+lng: 119.3
+dynasty: 清
+exam_year: 1877
+ganzhi: 丁丑
+ke_ci: 光绪三年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,20 @@
+# 王华 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0425 | 比对状态：confirmed（rank1） | 备考：王阳明之父
+id: wang_hua
+name: 王华
+zi: 德輝
+hao: null
+birth_year: 0
+death_year: 1522
+native_hist: 餘姚
+native_modern: 浙江省宁波市余姚市
+lat: 30.04
+lng: 121.15
+dynasty: 明
+exam_year: 1481
+ganzhi: 辛丑
+ke_ci: 成化十七年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

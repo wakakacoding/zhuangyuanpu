@@ -1,0 +1,21 @@
+# 秦大成 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0528 | 比对状态：confirmed（rank1）
+id: qin_da_cheng
+name: 秦大成
+zi: 澄敘
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1733
+native_hist: 嘉定
+native_modern: 上海市嘉定区
+lat: 31.38
+lng: 121.27
+dynasty: 清
+exam_year: 1763
+ganzhi: 癸未
+ke_ci: 乾隆二十八年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

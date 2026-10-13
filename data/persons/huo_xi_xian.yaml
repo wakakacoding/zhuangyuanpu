@@ -1,0 +1,21 @@
+# 霍希贤 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0362 | 比对状态：confirmed（name+year）
+id: huo_xi_xian
+name: 霍希贤
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1288
+native_hist: 澧州路
+native_modern: 湖南省常德市澧县
+lat: 29.64
+lng: 111.76
+dynasty: 元
+exam_year: 1318
+ganzhi: 戊午
+ke_ci: 延祐五年戊午科左榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

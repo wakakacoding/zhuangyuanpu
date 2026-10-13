@@ -1,0 +1,21 @@
+# 朱之蕃 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0463 | 比对状态：confirmed（rank1（同年重条，取标记者）） | 备考：书画家，出使朝鲜
+id: zhu_zhi_fan
+name: 朱之蕃
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1565
+native_hist: 茌平
+native_modern: 山东省聊城市茌平区
+lat: 36.58
+lng: 116.26
+dynasty: 明
+exam_year: 1595
+ganzhi: 乙未
+ke_ci: 万历二十三年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

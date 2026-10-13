@@ -1,0 +1,22 @@
+# 刘仲渊 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0358 | 比对状态：suspect（名录年分阙如，朝代内唯一候选待人工核年） | 备考：待核
+id: liu_zhong_yuan
+name: 刘仲渊
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1223
+native_hist: 東陽
+native_modern: 浙江省金华市东阳市
+lat: 29.29
+lng: 120.24
+dynasty: 金
+exam_year: null
+ganzhi: null
+ke_ci: 金末（年分待考）
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

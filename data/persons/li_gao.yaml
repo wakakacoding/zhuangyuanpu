@@ -1,0 +1,19 @@
+# 李郜 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0083 | 比对状态：suspect（朝代内同名 2 人且年分均无命中）
+id: li_gao
+name: 李郜
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 851
+ganzhi: 辛未
+ke_ci: 大中五年辛未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

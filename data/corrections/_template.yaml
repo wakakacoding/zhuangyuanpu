@@ -1,0 +1,15 @@
+# 勘误记录模板 —— data/corrections/
+# 流程：读者提交 → 72h 内人工比对 → 采信/驳回/异说备录 → Git 留痕
+# 状态机：pending（待处理）→ accepted（已采信并改正）| rejected（驳回，附理由）| noted（异说并存，不改数据）
+id: corr_000
+# 勘误对象：person:<id> / source:<id> / external:<外部数据源名> / site:<页面路径>
+target: person:someone
+field: birth_year            # 涉及字段；整卡级问题填 record
+current: 现状描述（或外部误记）
+proposed: 建议修正为
+reason: 理由
+evidence: 依据（书名卷次/链接，A/B 级依据优先）
+status: pending
+reporter: 提交者署名（可署「匿名」）
+created: YYYY-MM-DD
+resolution: null             # 处理结论（处理时填写）

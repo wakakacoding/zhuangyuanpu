@@ -1,0 +1,50 @@
+person_id: wen_tianxiang
+events:
+  - year: 1236
+    year_precision: exact
+    type: 出生
+    title: 生于吉州庐陵
+    description: 端平三年（1236）生。
+    source_ids: [src_songshi_wen]
+  - year: 1256
+    year_precision: exact
+    type: 夺魁
+    title: 宝祐四年丙辰科状元
+    description: 廷对策万余言，切中时弊，理宗亲擢为第一。
+    source_ids: [src_songshi_wen]
+  - year: 1270
+    year_precision: exact
+    type: 罢官
+    title: 草制讽贾似道，被劾罢官
+    description: 咸淳六年，贾似道称疾乞归以要君，文天祥当值起草答诏，语含讥讽，不阿权相，旋被劾罢归庐陵。
+    source_ids: [src_songshi_wen]
+  - year: 1274
+    year_precision: about
+    type: 授官
+    title: 知赣州
+    description: 咸淳末知赣州。居官有惠政，次年元兵南下，即于任所应诏勤王。
+    source_ids: [src_songshi_wen]
+  - year: 1275
+    year_precision: exact
+    type: 授官
+    title: 德祐元年起兵勤王
+    description: 元兵南下，倾家财募兵万余人入卫临安。
+    source_ids: [src_songshi_wen]
+  - year: 1276
+    year_precision: exact
+    type: 授官
+    title: 拜右丞相兼枢密使，使元营被拘，脱走南归
+    description: 赴皋亭山元营议事，被伯颜扣留，押解北上途中于京口逃脱，辗转至温州。
+    source_ids: [src_songshi_wen]
+  - year: 1278
+    year_precision: exact
+    type: 被俘
+    title: 五坡岭被俘
+    description: 祥兴元年（1278）十二月，于广东海丰五坡岭兵败被执。
+    source_ids: [src_songshi_wen]
+  - year: 1283
+    year_precision: exact
+    type: 卒
+    title: 就义于大都柴市
+    description: 囚大都四年，拒降。至元十九年十二月（公元 1283 年 1 月）就义，年四十七。衣带中有赞曰：「孔曰成仁，孟曰取义……」
+    source_ids: [src_songshi_wen]

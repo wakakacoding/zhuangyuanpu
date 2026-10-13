@@ -1,0 +1,21 @@
+# 郑侨 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0228 | 比对状态：confirmed（name+year）
+id: zheng_qiao
+name: 郑侨
+zi: 惠叔
+hao: 回溪
+birth_year: 0
+death_year: 0
+fl_year: 1139
+native_hist: 仙遊
+native_modern: 福建省莆田市仙游县
+lat: 25.36
+lng: 118.69
+dynasty: 宋
+exam_year: 1169
+ganzhi: 己丑
+ke_ci: 乾道五年己丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,20 @@
+# 孙家鼐 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0573 | 比对状态：confirmed（name+year） | 备考：京师大学堂首任管学大臣
+id: sun_jia_nai
+name: 孙家鼐
+zi: 燮臣
+hao: 蟄生
+birth_year: 1827
+death_year: 1909
+native_hist: 壽州
+native_modern: 安徽省淮南市寿县
+lat: 32.58
+lng: 116.79
+dynasty: 清
+exam_year: 1859
+ganzhi: 己未
+ke_ci: 咸丰九年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,21 @@
+# 寇湘 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0129 | 比对状态：confirmed（name+year） | 备考：待核：寇准之父
+id: kou_xiang
+name: 寇湘
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 914
+native_hist: 下邽
+native_modern: 陕西省渭南市临渭区
+lat: 34.5
+lng: 109.51
+dynasty: 五代十国
+exam_year: 945
+ganzhi: 乙巳
+ke_ci: 后晋开运二年乙巳科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

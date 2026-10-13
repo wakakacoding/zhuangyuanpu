@@ -1,0 +1,19 @@
+# 宋守节 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0002 | 比对状态：missing（CBDB 无记录） | 备考：《玉芝堂谈荟》作咸亨元年状元杜易简，存疑
+id: song_shou_jie
+name: 宋守节
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 670
+ganzhi: 庚午
+ke_ci: 总章三年庚午科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

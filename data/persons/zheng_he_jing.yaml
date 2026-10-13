@@ -1,0 +1,21 @@
+# 郑合敬 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0099 | 比对状态：suspect（朝代内同名 2 人且年分均无命中）
+id: zheng_he_jing
+name: 郑合敬
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 荥阳
+native_modern: 河南省郑州市荥阳市
+lat: 34.79
+lng: 113.38
+dynasty: 唐
+exam_year: 875
+ganzhi: 乙未
+ke_ci: 乾符二年乙未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

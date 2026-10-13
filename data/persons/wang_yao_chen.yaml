@@ -1,0 +1,20 @@
+# 王尧臣 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0182 | 比对状态：confirmed（name+year）
+id: wang_yao_chen
+name: 王尧臣
+zi: 伯庸
+hao: null
+birth_year: 1003
+death_year: 1058
+native_hist: 虞城
+native_modern: 河南省商丘市虞城县
+lat: 34.4
+lng: 115.86
+dynasty: 宋
+exam_year: 1027
+ganzhi: 丁卯
+ke_ci: 天圣五年丁卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

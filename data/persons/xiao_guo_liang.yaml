@@ -1,0 +1,21 @@
+# 萧国梁 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0227 | 比对状态：confirmed（name+year）
+id: xiao_guo_liang
+name: 萧国梁
+zi: 挺之
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 1136
+native_hist: 永福
+native_modern: 福建省福州市永泰县
+lat: 25.87
+lng: 118.93
+dynasty: 宋
+exam_year: 1166
+ganzhi: 丙戌
+ke_ci: 乾道二年丙戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

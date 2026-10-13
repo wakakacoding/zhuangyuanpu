@@ -1,0 +1,20 @@
+# 毛澄 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0429 | 比对状态：confirmed（rank1） | 备考：大礼议初期礼部尚书
+id: mao_cheng
+name: 毛澄
+zi: 憲淸；顯淸
+hao: 三江；白齋
+birth_year: 1461
+death_year: 1523
+native_hist: 崑山
+native_modern: 江苏省苏州市昆山市
+lat: 31.39
+lng: 120.96
+dynasty: 明
+exam_year: 1493
+ganzhi: 癸丑
+ke_ci: 弘治六年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

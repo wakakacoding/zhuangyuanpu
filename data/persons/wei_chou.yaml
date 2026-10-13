@@ -1,0 +1,21 @@
+# 韦筹 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0070 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: wei_chou
+name: 韦筹
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 京兆
+native_modern: 陕西省西安市
+lat: 34.27
+lng: 108.95
+dynasty: 唐
+exam_year: 828
+ganzhi: 戊申
+ke_ci: 大和二年戊申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

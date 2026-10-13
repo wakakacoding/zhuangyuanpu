@@ -1,0 +1,65 @@
+/* 勘误页 */
+.g-desc { font-size: 0.78rem; color: var(--ink-soft); font-weight: normal; margin-left: 0.8rem; }
+
+.flow-note ol { padding-left: 1.4rem; font-size: 0.92rem; }
+.flow-note li { margin: 0.3rem 0; }
+.note-line { font-size: 0.84rem; color: var(--ink-soft); }
+
+.corr {
+  border: 1px solid var(--line);
+  border-left-width: 4px;
+  border-radius: 3px;
+  background: #fbf8f0;
+  margin-bottom: 0.9rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+}
+.corr-accepted { border-left-color: #4a7c59; }
+.corr-pending { border-left-color: var(--gold); }
+.corr-noted { border-left-color: var(--ink-soft); }
+.corr-rejected { border-left-color: var(--cinnabar); }
+
+.corr-head { display: flex; gap: 0.9rem; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.4rem; }
+.corr-id { font-family: monospace; font-size: 0.78rem; color: var(--cinnabar); }
+.corr-target { font-weight: bold; font-size: 0.88rem; }
+.corr-date { margin-left: auto; font-size: 0.78rem; color: var(--ink-soft); }
+
+.corr-body { margin: 0; display: grid; grid-template-columns: 3.5em 1fr; row-gap: 0.25rem; }
+.corr-body dt { color: var(--ink-soft); font-size: 0.8rem; }
+.corr-body dd { margin: 0; }
+.corr-foot { margin-top: 0.45rem; font-size: 0.78rem; color: var(--ink-soft); }
+
+/* 提交表单 */
+.submit form { display: flex; flex-direction: column; gap: 0.7rem; }
+.submit .row { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+.submit label { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.84rem; color: var(--ink-soft); flex: 1; min-width: 200px; }
+.submit input, .submit select, .submit textarea {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #fff;
+  color: var(--ink);
+}
+.submit button {
+  font: inherit;
+  padding: 0.45rem 1.4rem;
+  border: 1px solid var(--cinnabar);
+  border-radius: 3px;
+  background: var(--cinnabar);
+  color: #fff;
+  cursor: pointer;
+}
+.submit button[type="button"] { background: transparent; color: var(--cinnabar); }
+.submit button[disabled] { opacity: 0.5; cursor: default; }
+.output {
+  margin-top: 0.8rem;
+  padding: 0.8rem 1rem;
+  background: var(--paper-deep);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 0.82rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,20 @@
+# 柯潜 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0415 | 比对状态：confirmed（rank1）
+id: ke_qian
+name: 柯潜
+zi: 孟時
+hao: 竹嵓；竹巖
+birth_year: 1423
+death_year: 1473
+native_hist: 莆田
+native_modern: 福建省莆田市
+lat: 25.45
+lng: 119.01
+dynasty: 明
+exam_year: 1451
+ganzhi: 辛未
+ke_ci: 景泰二年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

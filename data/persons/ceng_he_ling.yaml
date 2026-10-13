@@ -1,0 +1,21 @@
+# 曾鹤龄 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0405 | 比对状态：confirmed（rank1（同年重条，取标记者））
+id: ceng_he_ling
+name: 曾鹤龄
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1391
+native_hist: 泰和
+native_modern: 江西省吉安市泰和县
+lat: 26.79
+lng: 114.91
+dynasty: 明
+exam_year: 1421
+ganzhi: 辛丑
+ke_ci: 永乐十九年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

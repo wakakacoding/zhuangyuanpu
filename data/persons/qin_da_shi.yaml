@@ -1,0 +1,20 @@
+# 秦大士 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0523 | 比对状态：confirmed（rank1） | 备考：秦桧后裔身份公案著名
+id: qin_da_shi
+name: 秦大士
+zi: 魯一
+hao: null
+birth_year: 1715
+death_year: 1777
+native_hist: 江寧
+native_modern: 江苏省南京市
+lat: 32.06
+lng: 118.8
+dynasty: 清
+exam_year: 1752
+ganzhi: 壬申
+ke_ci: 乾隆十七年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,21 @@
+# 魏元礼 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0386 | 比对状态：confirmed（name+year） | 备考：待核
+id: wei_yuan_li
+name: 魏元礼
+zi: 廷訓
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1330
+native_hist: 肅寧
+native_modern: 河北省沧州市肃宁县
+lat: 38.42
+lng: 115.83
+dynasty: 元
+exam_year: 1360
+ganzhi: 庚子
+ke_ci: 至正二十年庚子科左榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

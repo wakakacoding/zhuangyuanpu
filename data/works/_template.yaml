@@ -1,0 +1,9 @@
+# work 模板 —— 复制为 <person_id>.yaml
+# status：存世 / 存世（影印流传）/ 佚 / 待考
+
+person_id: pinyin_slug
+works:
+  - title: 著作名
+    type: 诗文           # 诗文/书法/学术/奏议…（自由枚举）
+    status: 存世
+    note: null

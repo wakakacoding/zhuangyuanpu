@@ -1,0 +1,21 @@
+# 徐铎 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0198 | 比对状态：confirmed（name+year） | 备考：同年武状元薛奕亦莆田人，神宗题诗「一方文武魁天下」
+id: xu_duo
+name: 徐铎
+zi: 振文；振甫
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 1046
+native_hist: 平陽
+native_modern: 浙江省温州市平阳县
+lat: 27.66
+lng: 120.57
+dynasty: 宋
+exam_year: 1076
+ganzhi: 丙辰
+ke_ci: 熙宁九年丙辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

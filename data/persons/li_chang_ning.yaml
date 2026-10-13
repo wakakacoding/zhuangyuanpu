@@ -1,0 +1,20 @@
+# 李常宁 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0202 | 比对状态：confirmed（name+year）
+id: li_chang_ning
+name: 李常宁
+zi: 安邦
+hao: null
+birth_year: 1037
+death_year: 1088
+native_hist: 雍邱
+native_modern: 河南省开封市杞县
+lat: 34.55
+lng: 114.78
+dynasty: 宋
+exam_year: 1088
+ganzhi: 戊辰
+ke_ci: 元祐三年戊辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

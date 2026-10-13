@@ -1,0 +1,97 @@
+/* 文献质感基调：宣纸米白 + 墨黑 + 朱砂点缀（见设计方案 §方案一视觉） */
+:root {
+  --paper: #f5f0e4;
+  --paper-deep: #efe8d6;
+  --ink: #2b2a26;
+  --ink-soft: #6a6558;
+  --cinnabar: #9e2b22;
+  --gold: #a98b3f;
+  --line: #d8cfbc;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+a { color: inherit; }
+
+.site-head { border-bottom: 2px solid var(--ink); padding-bottom: 1rem; margin-bottom: 2rem; }
+.site-head h1 { margin: 0; font-size: 2rem; letter-spacing: 0.3em; }
+.site-head .sub { margin: 0.35rem 0 0; color: var(--ink-soft); font-size: 0.9rem; }
+.site-head .seal {
+  display: inline-block; margin-top: 0.6rem; padding: 0.1rem 0.5rem;
+  background: var(--cinnabar); color: #fff; font-size: 0.75rem; border-radius: 2px;
+}
+
+.stats { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.stats b { display: block; font-size: 1.6rem; color: var(--cinnabar); }
+.stats span { font-size: 0.8rem; color: var(--ink-soft); }
+
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.card {
+  display: block; text-decoration: none; border: 1px solid var(--line);
+  background: #fbf8f0; padding: 1rem 1.1rem; border-radius: 4px;
+  transition: box-shadow 0.15s ease;
+}
+.card:hover { box-shadow: 0 2px 10px rgba(60, 50, 30, 0.12); }
+.card h2 { margin: 0; font-size: 1.25rem; display: inline; }
+.card .rank { font-size: 0.75rem; color: var(--cinnabar); margin-left: 0.5rem; }
+.card .meta, .card .native { margin: 0.4rem 0 0; font-size: 0.82rem; color: var(--ink-soft); }
+.card .bio { margin: 0.5rem 0 0; font-size: 0.88rem; }
+.tags { margin-top: 0.6rem; }
+.tags span {
+  font-size: 0.72rem; border: 1px solid var(--gold); color: var(--gold);
+  padding: 0 0.4rem; border-radius: 999px; margin-right: 0.35rem;
+}
+
+/* 人物档案页 */
+.profile-head h1 { font-size: 2.2rem; margin: 0; }
+.profile-head .zhi { color: var(--ink-soft); font-size: 0.95rem; margin-left: 0.75rem; }
+.fact-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0 2rem; font-size: 0.92rem; }
+.fact-table th, .fact-table td { border: 1px solid var(--line); padding: 0.45rem 0.7rem; text-align: left; vertical-align: top; }
+.fact-table th { width: 7.5em; background: var(--paper-deep); font-weight: normal; color: var(--ink-soft); }
+
+.section-title { border-left: 4px solid var(--cinnabar); padding-left: 0.6rem; font-size: 1.15rem; margin: 2.2rem 0 1rem; }
+
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li { display: flex; gap: 1rem; padding: 0.7rem 0; border-bottom: 1px dashed var(--line); }
+.timeline .year { flex: 0 0 7.5em; color: var(--cinnabar); font-weight: bold; font-size: 0.9rem; }
+.timeline .ev p { margin: 0.3rem 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+
+.src { margin-top: 0.45rem; font-size: 0.82rem; }
+.src summary { cursor: pointer; color: var(--ink-soft); }
+.src blockquote {
+  margin: 0.4rem 0 0.2rem; padding: 0.4rem 0.8rem; background: var(--paper-deep);
+  border-left: 3px solid var(--gold); font-size: 0.85rem;
+}
+.src .note { color: var(--ink-soft); font-size: 0.8rem; }
+.tier { display: inline-block; padding: 0 0.35rem; border-radius: 2px; font-size: 0.72rem; color: #fff; }
+/* 全站统一三级约定（与故事页 cards.ts 一致）：A 金 / B 墨 / C 朱砂
+   选择器须双类 .tier.tier-X，避免单词命中时间线等容器上的 tier-X 类 */
+.tier.tier-A { background: var(--gold); }
+.tier.tier-B { background: var(--ink-soft); }
+.tier.tier-C { background: var(--cinnabar); }
+
+.anecdote {
+  border: 1px dashed #8a8577; border-radius: 4px; padding: 0.8rem 1rem; margin-bottom: 0.8rem;
+  background: rgba(138, 133, 119, 0.06);
+}
+.anecdote h3 { margin: 0; font-size: 0.98rem; }
+.anecdote .legend-tag {
+  font-size: 0.7rem; color: #8a8577; border: 1px solid #8a8577;
+  border-radius: 999px; padding: 0 0.45rem; margin-left: 0.5rem; vertical-align: middle;
+}
+.anecdote p { margin: 0.4rem 0 0; font-size: 0.88rem; }
+
+.quelu { color: var(--ink-soft); font-style: italic; }
+.back { display: inline-block; margin-top: 2.5rem; font-size: 0.85rem; color: var(--ink-soft); }
+
+table.list { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+table.list th, table.list td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.6rem; text-align: left; }
+table.list th { color: var(--ink-soft); font-weight: normal; font-size: 0.8rem; }

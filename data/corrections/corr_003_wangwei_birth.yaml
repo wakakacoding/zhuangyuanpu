@@ -1,0 +1,12 @@
+# 异说备录：王维生年 701 vs 700
+id: corr_003
+target: person:wang_wei
+field: birth_year
+current: 本站录 701（长安元年辛丑）
+proposed: CBDB 录 700（久视元年庚子）
+reason: 两说并存，正史无明确纪年；属学界定论前的合法分歧
+evidence: 《旧唐书·王维传》未载生年；CBDB 作 700；今人年谱多从 701
+status: noted
+reporter: 站内自查（CBDB 比对时发现）
+created: 2026-10-13
+resolution: 不改数据，异说并存。王维卡维持 701，于备考注明 CBDB 作 700；待写作回填时在档案页异说区并列展示。

@@ -1,0 +1,20 @@
+# 刘章 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0220 | 比对状态：confirmed（name+year）
+id: liu_zhang
+name: 刘章
+zi: 文孺
+hao: null
+birth_year: 1100
+death_year: 1179
+native_hist: 龍遊
+native_modern: 浙江省衢州市龙游县
+lat: 29.03
+lng: 119.17
+dynasty: 宋
+exam_year: 1145
+ganzhi: 乙丑
+ke_ci: 绍兴十五年乙丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

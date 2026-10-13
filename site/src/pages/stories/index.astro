@@ -1,0 +1,38 @@
+---
+import { listStories } from '../../lib/story';
+import SeoHead from '../../components/SeoHead.astro';
+import '../../styles/base.css';
+import '../../styles/story.css';
+
+const stories = listStories();
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="故事" description="历代状元的长篇故事：夺魁、沉浮与身后事。" path="/stories/" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-head">
+        <h1>故事</h1>
+        <p class="sub">一甲第一人——每个状元，都是一部时代断代史</p>
+      </header>
+
+      {stories.length === 0 ? (
+        <p class="quelu">故事筹备中。</p>
+      ) : (
+        <div class="story-list">
+          {stories.map((s) => (
+            <a class="story-item" href={`/stories/${s.slug}/`}>
+              <h2>{s.title}</h2>
+              {s.subtitle && <p class="subtitle">{s.subtitle}</p>}
+              {s.intro && <p class="intro">{s.intro}</p>}
+              <div class="meta">{s.date ?? ''}</div>
+            </a>
+          ))}
+        </div>
+      )}
+
+      <a class="back" href="/">← 返回首页</a>
+    </div>
+  </body>
+</html>

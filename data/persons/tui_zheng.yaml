@@ -1,0 +1,19 @@
+# 侻征 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0383 | 比对状态：missing（CBDB 无记录） | 备考：待核
+id: tui_zheng
+name: 侻征
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 元
+exam_year: 1357
+ganzhi: 丁酉
+ke_ci: 至正十七年丁酉科右榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

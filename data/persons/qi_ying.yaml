@@ -1,0 +1,20 @@
+# 齐映 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0035 | 比对状态：confirmed（name+year）
+id: qi_ying
+name: 齐映
+zi: null
+hao: null
+birth_year: 748
+death_year: 795
+native_hist: 高陽
+native_modern: 河北省保定市高阳县
+lat: 38.52
+lng: 115.78
+dynasty: 唐
+exam_year: 769
+ganzhi: 己酉
+ke_ci: 大历四年己酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

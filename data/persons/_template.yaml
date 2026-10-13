@@ -1,0 +1,25 @@
+# person 模板 —— 复制本文件为 <拼音id>.yaml 后填写；不需要的字段整行删除或置 null
+# 校验规则见 schema/SCHEMA.md；写完跑：python3 scripts/validate.py
+
+id: pinyin_slug        # 必填，拼音小写下划线，发布后不修改（URL 绑定）
+name: 姓名              # 必填
+zi: null               # 字
+hao: null              # 号
+birth_year: null       # 生年（公元，int）；有争议时用下行 birth_year_alt
+# birth_year_alt:
+#   - value: 1872
+#     source_id: src_xxx
+death_year: null       # 卒年（公元，int）
+native_hist: null      # 历史籍贯（原文照录，如：直隶省河间府肃宁县）
+native_modern: null    # 今地名
+lat: null              # 今地纬度（WGS84）
+lng: null              # 今地经度
+dynasty: 清            # 必填：唐/宋/辽/金/元/明/清/西夏…
+reign: null            # 帝号，如：光绪
+exam_year: null        # 夺魁公元年（int）
+ganzhi: null           # 干支（须与 exam_year 互验通过）
+ke_ci: null            # 科次全称，如：光绪三十年甲辰恩科
+rank_detail: null      # 榜次，如：一甲第一名（状元）
+bio_short: null        # 百字速览
+tags: []               # 标签：寒门/三元及第/末代状元/书法家…
+status: draft          # draft / published

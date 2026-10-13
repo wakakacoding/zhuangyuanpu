@@ -1,0 +1,21 @@
+# 唐文献 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0460 | 比对状态：confirmed（rank1）
+id: tang_wen_xian
+name: 唐文献
+zi: 元徵；道徵
+hao: 抑所；柳所
+birth_year: null
+death_year: 1605
+fl_year: 1542
+native_hist: 華亭
+native_modern: 上海市松江区
+lat: 31.03
+lng: 121.23
+dynasty: 明
+exam_year: 1586
+ganzhi: 丙戌
+ke_ci: 万历十四年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

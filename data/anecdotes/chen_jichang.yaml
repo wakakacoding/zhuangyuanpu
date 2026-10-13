@@ -1,0 +1,10 @@
+# 轶事卡：陈继昌
+person_id: chen_jichang
+anecdotes:
+  - title: 桂林「三元及第」坊
+    content: >-
+      陈继昌连中三元后，家乡桂林为其立「三元及第」石坊，与秀峰、漓水相映，
+      成为城中文脉地标，今址犹存（近代重修）。一坊一城，把一次考试胜利写进了城市记忆。
+    tier: B
+    source_ids: [src_lingui_xianzhi]
+    note: 方志与桂林地方文献屡见记载，具体始建年份待核。

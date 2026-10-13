@@ -1,0 +1,22 @@
+# 杨护 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0025 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: yang_hu
+name: 杨护
+zi: null
+hao: null
+birth_year: null
+death_year: 758
+fl_year: 695
+native_hist: 華陰
+native_modern: 陕西省渭南市华阴市
+lat: 34.57
+lng: 110.09
+dynasty: 唐
+exam_year: 747
+ganzhi: 丁亥
+ke_ci: 天宝六年丁亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

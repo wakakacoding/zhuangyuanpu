@@ -1,0 +1,22 @@
+# 崔铏 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0086 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: cui_xing
+name: 崔铏
+zi: null
+hao: null
+birth_year: null
+death_year: 878
+fl_year: 815
+native_hist: 安平
+native_modern: 河北省衡水市安平县
+lat: 38.23
+lng: 115.52
+dynasty: 唐
+exam_year: 856
+ganzhi: 丙子
+ke_ci: 大中十年丙子科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

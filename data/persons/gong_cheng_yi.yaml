@@ -1,0 +1,21 @@
+# 公乘亿 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0095 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: gong_cheng_yi
+name: 公乘亿
+zi: 壽仙；壽山
+hao: null
+birth_year: null
+death_year: null
+native_hist: 魏縣
+native_modern: 河北省邯郸市魏县
+lat: 36.36
+lng: 114.94
+dynasty: 唐
+exam_year: 871
+ganzhi: 辛卯
+ke_ci: 咸通十二年辛卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

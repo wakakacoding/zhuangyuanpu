@@ -1,0 +1,21 @@
+# 林环 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0400 | 比对状态：confirmed（rank1）
+id: lin_huan
+name: 林环
+zi: 崇璧
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 1376
+native_hist: 莆田
+native_modern: 福建省莆田市
+lat: 25.45
+lng: 119.01
+dynasty: 明
+exam_year: 1406
+ganzhi: 丙戌
+ke_ci: 永乐四年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

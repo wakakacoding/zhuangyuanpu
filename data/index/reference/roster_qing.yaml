@@ -1,0 +1,120 @@
+# 状元名录参照系 · 清段（v1.0）
+# 主源：《明清进士题名碑录》系考订名录（清 112 科 114 人，含顺治九年/十二年满汉双榜）
+# 校验锚点：CBDB 状元标记 84 条 + ctext《太学进士题名碑录》分科原文抽验（乾隆元年金德瑛等）
+# 说明：干支由 build_index.py 调 era.py 按 exam_year 自动核验补齐。
+dynasty: 清
+entries:
+  - {name: "傅以渐", year: 1646, ke: "顺治三年科", native: "山东聊城", note: "清代首位状元"}
+  - {name: "吕宫", year: 1647, ke: "顺治四年科", native: "江苏武进"}
+  - {name: "刘子壮", year: 1649, ke: "顺治六年科", native: "湖北黄冈"}
+  - {name: "麻勒吉", year: 1652, ke: "顺治九年满榜", native: "满洲正黄旗", note: "满榜状元；CBDB 作瓜尔佳麻勒吉"}
+  - {name: "邹忠倚", year: 1652, ke: "顺治九年汉榜", native: "江苏无锡"}
+  - {name: "图尔宸", year: 1655, ke: "顺治十二年满榜", native: "满洲正白旗"}
+  - {name: "史大成", year: 1655, ke: "顺治十二年汉榜", native: "浙江鄞县"}
+  - {name: "孙承恩", year: 1658, ke: "顺治十五年科", native: "江苏常熟"}
+  - {name: "徐元文", year: 1659, ke: "顺治十六年科", native: "江苏昆山", note: "顾炎武外甥，康熙朝大学士"}
+  - {name: "马世俊", year: 1661, ke: "顺治十八年科", native: "江苏溧阳"}
+  - {name: "严我斯", year: 1664, ke: "康熙三年科", native: "浙江归安（今湖州）"}
+  - {name: "缪彤", year: 1667, ke: "康熙六年科", native: "江苏吴县"}
+  - {name: "蔡启僔", year: 1670, ke: "康熙九年科", native: "浙江德清"}
+  - {name: "韩菼", year: 1673, ke: "康熙十二年科", native: "江苏长洲（今苏州）"}
+  - {name: "彭定求", year: 1676, ke: "康熙十五年科", native: "江苏长洲"}
+  - {name: "归允肃", year: 1679, ke: "康熙十八年科", native: "江苏常熟"}
+  - {name: "蔡升元", year: 1682, ke: "康熙二十一年科", native: "浙江德清", note: "蔡启僔族侄"}
+  - {name: "陆肯堂", year: 1685, ke: "康熙二十四年科", native: "江苏长洲"}
+  - {name: "沈廷文", year: 1688, ke: "康熙二十七年科", native: "浙江秀水"}
+  - {name: "戴有祺", year: 1691, ke: "康熙三十年科", native: "江苏金山卫（今上海金山）", note: "原取吴昺，因康熙帝爱其书法擢为第一"}
+  - {name: "胡任舆", year: 1694, ke: "康熙三十三年科", native: "江苏上元（今南京）"}
+  - {name: "李蟠", year: 1697, ke: "康熙三十六年科", native: "江苏徐州"}
+  - {name: "汪绎", year: 1700, ke: "康熙三十九年科", native: "江苏常熟"}
+  - {name: "王式丹", year: 1703, ke: "康熙四十二年科", native: "江苏宝应"}
+  - {name: "王云锦", year: 1706, ke: "康熙四十五年科", native: "江苏无锡"}
+  - {name: "赵熊诏", year: 1709, ke: "康熙四十八年科", native: "江苏武进"}
+  - {name: "王世琛", year: 1712, ke: "康熙五十一年科", native: "江苏长洲"}
+  - {name: "王敬铭", year: 1713, ke: "康熙五十二年恩科", native: "江苏嘉定（今上海嘉定）"}
+  - {name: "徐陶璋", year: 1715, ke: "康熙五十四年科", native: "江苏长洲"}
+  - {name: "汪应铨", year: 1718, ke: "康熙五十七年科", native: "江苏常熟"}
+  - {name: "邓钟岳", year: 1721, ke: "康熙六十年科", native: "山东东昌（今聊城）"}
+  - {name: "于振", year: 1723, ke: "雍正元年恩科", native: "江苏金坛"}
+  - {name: "陈德华", year: 1724, ke: "雍正二年科", native: "直隶安州（今河北安新）"}
+  - {name: "彭启丰", year: 1727, ke: "雍正五年科", native: "江苏长洲", note: "彭定求之孙，祖孙状元"}
+  - {name: "周澍", year: 1730, ke: "雍正八年科", native: "浙江钱塘", note: "CBDB 作周雨树，存疑"}
+  - {name: "陈倓", year: 1733, ke: "雍正十一年科", native: "江苏仪征"}
+  - {name: "金德瑛", year: 1736, ke: "乾隆元年科", native: "浙江仁和（今杭州）", note: "碑录原文：金德瑛，浙江杭州府仁和县人（ctext 抽验一致）"}
+  - {name: "于敏中", year: 1737, ke: "乾隆二年恩科", native: "江苏金坛", note: "乾隆朝首席军机大臣；CBDB 状元标记误系他人（万松龄），待补核"}
+  - {name: "庄有恭", year: 1739, ke: "乾隆四年科", native: "广东番禺"}
+  - {name: "金甡", year: 1742, ke: "乾隆七年科", native: "浙江仁和"}
+  - {name: "钱维城", year: 1745, ke: "乾隆十年科", native: "江苏武进"}
+  - {name: "梁国治", year: 1748, ke: "乾隆十三年科", native: "浙江会稽（今绍兴）"}
+  - {name: "吴鸿", year: 1751, ke: "乾隆十六年科", native: "浙江仁和"}
+  - {name: "秦大士", year: 1752, ke: "乾隆十七年恩科", native: "江苏江宁（今南京）", note: "秦桧后裔身份公案著名"}
+  - {name: "庄培因", year: 1754, ke: "乾隆十九年科", native: "江苏阳湖（今常州）", note: "庄有恭族弟"}
+  - {name: "蔡以台", year: 1757, ke: "乾隆二十二年科", native: "浙江嘉善", note: "CBDB 作蔡以臺"}
+  - {name: "毕沅", year: 1760, ke: "乾隆二十五年科", native: "江苏镇洋（今太仓）", note: "著名学者，《续资治通鉴》主修"}
+  - {name: "王杰", year: 1761, ke: "乾隆二十六年恩科", native: "陕西韩城", note: "清代唯一陕西状元"}
+  - {name: "秦大成", year: 1763, ke: "乾隆二十八年科", native: "江苏嘉定"}
+  - {name: "张书勋", year: 1766, ke: "乾隆三十一年科", native: "江苏吴县"}
+  - {name: "陈初哲", year: 1769, ke: "乾隆三十四年科", native: "江苏元和（今苏州）"}
+  - {name: "黄轩", year: 1771, ke: "乾隆三十六年恩科", native: "安徽休宁"}
+  - {name: "金榜", year: 1772, ke: "乾隆三十七年科", native: "安徽歙县"}
+  - {name: "吴锡龄", year: 1775, ke: "乾隆四十年科", native: "安徽休宁", note: "CBDB 作吴锡齡"}
+  - {name: "戴衢亨", year: 1778, ke: "乾隆四十三年科", native: "江西大庾（今大余）"}
+  - {name: "汪如洋", year: 1780, ke: "乾隆四十五年恩科", native: "浙江秀水（今嘉兴）"}
+  - {name: "钱棨", year: 1781, ke: "乾隆四十六年科", native: "江苏长洲", note: "三元及第（清代首位），且县府院试皆案首，称「六元」"}
+  - {name: "茹棻", year: 1784, ke: "乾隆四十九年科", native: "浙江会稽"}
+  - {name: "史致光", year: 1787, ke: "乾隆五十二年科", native: "浙江山阴"}
+  - {name: "石韫玉", year: 1790, ke: "乾隆五十五年恩科", native: "江苏吴县"}
+  - {name: "潘世恩", year: 1793, ke: "乾隆五十八年科", native: "江苏吴县", note: "四朝元老，状元宰相之最"}
+  - {name: "王以衔", year: 1795, ke: "乾隆六十年恩科", native: "浙江归安", note: "与弟王以铻同榜高第，「兄弟同科」佳话"}
+  - {name: "赵文楷", year: 1796, ke: "嘉庆元年科", native: "安徽太湖"}
+  - {name: "姚文田", year: 1799, ke: "嘉庆四年科", native: "浙江归安"}
+  - {name: "顾皋", year: 1801, ke: "嘉庆六年科", native: "江苏金匮（今无锡）"}
+  - {name: "吴廷琛", year: 1802, ke: "嘉庆七年科", native: "江苏元和"}
+  - {name: "彭浚", year: 1805, ke: "嘉庆十年科", native: "湖南衡山"}
+  - {name: "吴信中", year: 1808, ke: "嘉庆十三年科", native: "江苏吴县"}
+  - {name: "洪莹", year: 1809, ke: "嘉庆十四年恩科", native: "安徽歙县"}
+  - {name: "蒋立镛", year: 1811, ke: "嘉庆十六年科", native: "湖北天门"}
+  - {name: "龙汝言", year: 1814, ke: "嘉庆十九年科", native: "安徽桐城", note: "因校对失误被革职的著名公案"}
+  - {name: "吴其濬", year: 1817, ke: "嘉庆二十二年科", native: "河南固始", note: "植物学家，《植物名实图考》作者"}
+  - {name: "陈沆", year: 1819, ke: "嘉庆二十四年恩科", native: "湖北蕲水（今浠水）"}
+  - {name: "陈继昌", year: 1820, ke: "嘉庆二十五年科", native: "广西临桂（今桂林）", note: "三元及第，清代最后一位"}
+  - {name: "蒋镛", year: 1821, ke: "道光元年恩科", note: "籍贯待核"}
+  - {name: "戴兰芬", year: 1822, ke: "道光二年科", native: "安徽天长"}
+  - {name: "林召棠", year: 1823, ke: "道光三年科", native: "广东吴川", note: "CBDB 状元标记误作杜召棠，待补核"}
+  - {name: "朱昌颐", year: 1826, ke: "道光六年科", native: "浙江海盐"}
+  - {name: "李振钧", year: 1829, ke: "道光九年科", native: "安徽太湖", note: "CBDB 状元标记误作朱振钧，待补核"}
+  - {name: "吴钟骏", year: 1832, ke: "道光十二年恩科", native: "江苏吴县"}
+  - {name: "汪鸣相", year: 1833, ke: "道光十三年科", native: "江西彭泽", note: "CBDB 作汪嗚相"}
+  - {name: "刘绎", year: 1835, ke: "道光十五年科", native: "江西永丰"}
+  - {name: "林鸿年", year: 1836, ke: "道光十六年恩科", native: "福建侯官（今福州）"}
+  - {name: "钮福保", year: 1838, ke: "道光十八年科", native: "浙江乌程（今湖州）"}
+  - {name: "李承霖", year: 1840, ke: "道光二十年恩科", native: "江苏丹徒"}
+  - {name: "龙启瑞", year: 1841, ke: "道光二十一年科", native: "广西临桂"}
+  - {name: "孙毓溎", year: 1844, ke: "道光二十四年科", native: "山东济宁", note: "CBDB 作孙毓桂"}
+  - {name: "萧锦忠", year: 1845, ke: "道光二十五年恩科", native: "湖南茶陵"}
+  - {name: "张之万", year: 1847, ke: "道光二十七年科", native: "直隶南皮", note: "张之洞族兄，状元宰相"}
+  - {name: "陆增祥", year: 1850, ke: "道光三十年科", native: "江苏太仓"}
+  - {name: "章鋆", year: 1852, ke: "咸丰二年恩科", native: "浙江鄞县"}
+  - {name: "孙如仅", year: 1853, ke: "咸丰三年科", native: "山东济宁", note: "CBDB 作孙如瑾"}
+  - {name: "翁同龢", year: 1856, ke: "咸丰六年科", native: "江苏常熟", note: "两代帝师"}
+  - {name: "孙家鼐", year: 1859, ke: "咸丰九年科", native: "安徽寿州", note: "京师大学堂首任管学大臣"}
+  - {name: "钟骏声", year: 1860, ke: "咸丰十年恩科", native: "浙江仁和"}
+  - {name: "徐郙", year: 1862, ke: "同治元年恩科", native: "江苏嘉定（今上海嘉定）", note: "CBDB 作金郙，待补核"}
+  - {name: "翁曾源", year: 1863, ke: "同治二年恩科", native: "江苏常熟", note: "翁同龢之侄"}
+  - {name: "崇绮", year: 1865, ke: "同治四年科", native: "蒙古正蓝旗", note: "清代唯一旗人状元（阿鲁特氏）"}
+  - {name: "洪钧", year: 1868, ke: "同治七年科", native: "江苏吴县", note: "外交家，赛金花相关公案"}
+  - {name: "梁耀枢", year: 1871, ke: "同治十年科", native: "广东顺德"}
+  - {name: "陆润庠", year: 1874, ke: "同治十三年科", native: "江苏元和", note: "溥仪之师"}
+  - {name: "曹鸿勋", year: 1876, ke: "光绪二年科", native: "山东潍县（今潍坊）"}
+  - {name: "王仁堪", year: 1877, ke: "光绪三年科", native: "福建闽县（今福州）"}
+  - {name: "黄思永", year: 1880, ke: "光绪六年科", native: "江苏江宁", note: "实业先驱"}
+  - {name: "陈冕", year: 1883, ke: "光绪九年科", native: "顺天宛平（今北京）"}
+  - {name: "赵以炯", year: 1886, ke: "光绪十二年科", native: "贵州贵阳", note: "云贵首位状元；CBDB 作赵以烱"}
+  - {name: "张建勋", year: 1889, ke: "光绪十五年科", native: "广西临桂", note: "CBDB 作张建瀛"}
+  - {name: "吴鲁", year: 1890, ke: "光绪十六年恩科", native: "福建晋江", note: "庚子殉难"}
+  - {name: "刘福姚", year: 1892, ke: "光绪十八年科", native: "广西临桂"}
+  - {name: "张謇", year: 1894, ke: "光绪二十年恩科", native: "江苏通州（今南通）", note: "著名实业家、教育家"}
+  - {name: "骆成骧", year: 1895, ke: "光绪二十一年科", native: "四川资州（今资中）", note: "清代四川唯一状元"}
+  - {name: "夏同龢", year: 1898, ke: "光绪二十四年科", native: "贵州麻哈（今麻江）"}
+  - {name: "王寿彭", year: 1903, ke: "光绪二十九年科", native: "山东潍县"}
+  - {name: "刘春霖", year: 1904, ke: "光绪三十年恩科", native: "直隶肃宁（今河北肃宁）", note: "中国历史上最后一位状元"}

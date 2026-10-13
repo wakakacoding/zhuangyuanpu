@@ -1,0 +1,22 @@
+# 崔光表 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0121 | 比对状态：suspect（年份冲突：名录 914 vs CBDB 入仕年 [923]） | 备考：待核
+id: cui_guang_biao
+name: 崔光表
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 893
+native_hist: 鄢陵
+native_modern: 河南省许昌市鄢陵县
+lat: 34.1
+lng: 114.18
+dynasty: 五代十国
+exam_year: 914
+ganzhi: 甲戌
+ke_ci: 后梁乾化四年甲戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

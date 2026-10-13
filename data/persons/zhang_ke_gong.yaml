@@ -1,0 +1,19 @@
+# 张克恭 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0286 | 比对状态：missing（仅见异代同名者（唐/未詳/清），按缺失计）
+id: zhang_ke_gong
+name: 张克恭
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 1018
+ganzhi: 戊午
+ke_ci: 开泰七年戊午科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

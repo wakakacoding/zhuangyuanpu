@@ -1,0 +1,21 @@
+# 张栋 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0390 | 比对状态：confirmed（name+year） | 备考：元代末科状元
+id: zhang_dong
+name: 张栋
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1336
+native_hist: 山西
+native_modern: 山西省太原市
+lat: 37.87
+lng: 112.55
+dynasty: 元
+exam_year: 1366
+ganzhi: 丙午
+ke_ci: 至正二十六年丙午科左榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

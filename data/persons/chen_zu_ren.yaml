@@ -1,0 +1,20 @@
+# 陈祖仁 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0374 | 比对状态：confirmed（name+year）
+id: chen_zu_ren
+name: 陈祖仁
+zi: 子山
+hao: null
+birth_year: 1314
+death_year: 1368
+native_hist: 祥符
+native_modern: 河南省开封市
+lat: 34.8
+lng: 114.31
+dynasty: 元
+exam_year: 1342
+ganzhi: 壬午
+ke_ci: 至正二年壬午科左榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,20 @@
+# 诸大绶 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0450 | 比对状态：confirmed（rank1）
+id: zhu_da_shou
+name: 诸大绶
+zi: 端甫
+hao: 南明
+birth_year: 1523
+death_year: 1573
+native_hist: 山陰
+native_modern: 浙江省绍兴市
+lat: 30.03
+lng: 120.58
+dynasty: 明
+exam_year: 1556
+ganzhi: 丙辰
+ke_ci: 嘉靖三十五年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

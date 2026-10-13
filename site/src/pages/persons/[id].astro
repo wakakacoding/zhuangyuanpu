@@ -1,0 +1,149 @@
+---
+import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf } from '../../lib/persons';
+import SeoHead from '../../components/SeoHead.astro';
+import '../../styles/base.css';
+import '../../styles/profile.css';
+
+export function getStaticPaths() {
+  const sources = allSources();
+  return allPersons().map((person) => ({
+    params: { id: person.id },
+    props: {
+      person,
+      events: subDocs('events', person.id),
+      works: subDocs('works', person.id),
+      anecdotes: subDocs('anecdotes', person.id),
+      relations: subDocs('relations', person.id),
+      sources,
+    },
+  }));
+}
+
+const { person, events, works, anecdotes, relations, sources } = Astro.props;
+const srcOf = (sid: string) => sources[sid];
+
+const TIER_LABEL: Record<string, string> = { A: '正史', B: '方志·笔记', C: '传说' };
+const topTierOf = (ids: string[] = []) => {
+  const tiers = ids.map((s) => sources[s]?.tier).filter(Boolean);
+  return tiers.includes('A') ? 'A' : tiers.includes('B') ? 'B' : 'C';
+};
+// 生平事件按年排序（构建期一次）
+const sortedEvents = [...events].sort((a, b) => a.year - b.year);
+const yearLabel = (e: any) =>
+  `${e.year}${e.year_end ? `–${e.year_end}` : ''}${e.year_precision === 'about' ? '（约）' : ''}`;
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title={person.name} description={person.bio_short ?? `${person.name}，${person.dynasty}代状元。`} path={`/persons/${person.id}/`} />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="crumb"><a href="/">首页</a> / <a href="/persons/">索引</a> / <a href="/search/">检索</a></nav>
+
+      <header class="profile-head">
+        <h1>{person.name}
+          {(person.zi || person.hao) && (
+            <span class="zhi">{person.zi ? `字${person.zi}` : ''}{person.zi && person.hao ? '，' : ''}{person.hao ? `号${person.hao}` : ''}</span>
+          )}
+        </h1>
+        {person.tags?.length > 0 && <div class="tags">{person.tags.map((t) => <span>{t}</span>)}</div>}
+      </header>
+
+      <table class="fact-table">
+        <tbody>
+          <tr><th>生卒</th><td>{person.birth_year ? `${person.birth_year}–${person.death_year ?? '？'}（${ganzhiOf(person.birth_year)}–${person.death_year ? ganzhiOf(person.death_year) : '？'}）` : <span class="quelu">史料阙如</span>}</td></tr>
+          <tr><th>朝代 / 帝号</th><td>{person.dynasty}{person.reign ? ` / ${person.reign}` : ''}</td></tr>
+          <tr><th>科年</th><td>{person.exam_year ? <>{person.exam_year}（{person.ganzhi ?? ganzhiOf(person.exam_year)}）{reignYearOf(person.exam_year) && <span class="reign-mark">{reignYearOf(person.exam_year)}</span>}{person.ke_ci ? ` · ${person.ke_ci}` : ''}</> : <span class="quelu">史料阙如</span>}</td></tr>
+          <tr><th>榜次</th><td>{person.rank_detail ?? <span class="quelu">史料阙如</span>}</td></tr>
+          <tr><th>籍贯（历史）</th><td>{person.native_hist ?? <span class="quelu">史料阙如</span>}</td></tr>
+          <tr><th>籍贯（今）</th><td>{person.native_modern ?? <span class="quelu">待考</span>}{person.lat != null && `（${person.lat}, ${person.lng}）`}</td></tr>
+        </tbody>
+      </table>
+
+      <p class="bio">{person.bio_short ?? <span class="quelu">史料阙如——榜上有名，史中无痕。</span>}</p>
+
+      <h2 class="section-title">仕途时间线</h2>
+      {sortedEvents.length === 0 ? (
+        <p class="quelu">事件档案未建。<a href="/corrections/">了解补全计划 →</a></p>
+      ) : (
+        <ol class="timeline-v2">
+          {sortedEvents.map((e) => {
+            const top = topTierOf(e.source_ids);
+            const isPeak = e.type === '夺魁';
+            return (
+              <li class={`tl-item tier-${top}${isPeak ? ' peak' : ''}`}>
+                <div class="tl-year">
+                  <b>{yearLabel(e)}</b>
+                  <span class="tl-gz">{ganzhiOf(e.year)}</span>
+                  {reignYearOf(e.year) && <span class="tl-reign">{reignYearOf(e.year)}</span>}
+                </div>
+                <div class="tl-body">
+                  <div class="tl-title">
+                    <span class={`ev-type${isPeak ? ' ev-peak' : ''}`}>{e.type}</span>
+                    <b>{e.title}</b>
+                  </div>
+                  {e.description && <p>{e.description}</p>}
+                  {(e.source_ids ?? []).length > 0 && (
+                    <div class="src-panel">
+                      {(e.source_ids ?? []).map(srcOf).filter(Boolean).map((s: any) => (
+                        <details class={`src src-tier-${s.tier}`}>
+                          <summary>
+                            <span class={`tier tier-${s.tier}`}>{s.tier}</span>
+                            <span class="src-kind">{TIER_LABEL[s.tier]}</span>
+                            {s.title}{s.juan ? ` · ${s.juan}` : ''}
+                          </summary>
+                          {s.quote && <blockquote>{s.quote}</blockquote>}
+                          {s.note && <p class="note">{s.note}</p>}
+                        </details>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      )}
+
+      {relations.length > 0 && (
+        <>
+          <h2 class="section-title">人物关系</h2>
+          <ul>
+            {relations.map((r) => (
+              <li>
+                <a href={`/persons/${r.to_id}/`}>{r.to_id}</a>（{r.type}）——{r.note}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {works.length > 0 && (
+        <>
+          <h2 class="section-title">著作</h2>
+          <ul>
+            {works.map((w) => (
+              <li>《{w.title}》（{w.type} · {w.status}）{w.note ? `——${w.note}` : ''}</li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {anecdotes.length > 0 && (
+        <>
+          <h2 class="section-title">轶事与传说</h2>
+          <p class="legend-note">以下属传说层级（C 级），与上方史实物理隔离，不作定论依据。</p>
+          {anecdotes.map((a) => (
+            <div class="anecdote">
+              <h3>{a.title}<span class="legend-tag">传说 · {a.tier} 级</span></h3>
+              <p>{a.content}</p>
+              {a.note && <p class="note" style="color: var(--ink-soft); font-size: 0.8rem;">备考：{a.note}</p>}
+            </div>
+          ))}
+        </>
+      )}
+
+      <a class="back" href="/persons/">← 返回索引</a>
+    </div>
+  </body>
+</html>

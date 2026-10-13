@@ -1,0 +1,11 @@
+# source 模板 —— 复制为 src_<拼音缩写>.yaml
+# tier：A=正史/题名碑/朱卷/登科录；B=地方志/年谱/墓志/回忆录；C=笔记小说/民间传说
+# A 级建议填 juan 与 quote（无原文的 A 级会在校验时警告）
+
+id: src_xxx
+title: 书名
+tier: B          # A / B / C
+juan: null       # 卷次，如：卷三
+quote: null      # 原文摘录
+url: null        # 电子化链接（ctext.org 等）
+note: null       # 版本、册页、待补说明

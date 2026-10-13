@@ -1,0 +1,21 @@
+# 杨寘 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0186 | 比对状态：confirmed（name+year） | 备考：三元及第
+id: yang_zhi
+name: 杨寘
+zi: 審賢
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1012
+native_hist: 合肥
+native_modern: 安徽省合肥市
+lat: 31.82
+lng: 117.23
+dynasty: 宋
+exam_year: 1042
+ganzhi: 壬午
+ke_ci: 庆历二年壬午科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

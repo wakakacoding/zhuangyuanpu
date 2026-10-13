@@ -1,0 +1,21 @@
+# 焦蹈 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0201 | 比对状态：confirmed（name+year） | 备考：「不因南宫火，安得状元焦」；夺魁后六日病卒
+id: jiao_dao
+name: 焦蹈
+zi: 悅道
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1055
+native_hist: 無為軍
+native_modern: 安徽省芜湖市无为市
+lat: 31.3
+lng: 117.91
+dynasty: 宋
+exam_year: 1085
+ganzhi: 乙丑
+ke_ci: 元丰八年乙丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

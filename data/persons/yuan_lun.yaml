@@ -1,0 +1,22 @@
+# 苑论 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0052 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：柳宗元、刘禹锡同榜
+id: yuan_lun
+name: 苑论
+zi: null
+hao: null
+birth_year: null
+death_year: 843
+fl_year: 780
+native_hist: 洛陽 / 揚州
+native_modern: 河南省洛阳市
+lat: 34.62
+lng: 112.45
+dynasty: 唐
+exam_year: 793
+ganzhi: 癸酉
+ke_ci: 贞元九年癸酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

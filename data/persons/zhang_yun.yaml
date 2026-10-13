@@ -1,0 +1,20 @@
+# 章鋆 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0570 | 比对状态：confirmed（name+year）
+id: zhang_yun
+name: 章鋆
+zi: 酡之；酡芝
+hao: 望雲山館；采南；雙橋草堂
+birth_year: 1820
+death_year: 1875
+native_hist: 鄞縣
+native_modern: 浙江省宁波市鄞州区
+lat: 29.82
+lng: 121.55
+dynasty: 清
+exam_year: 1852
+ganzhi: 壬子
+ke_ci: 咸丰二年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

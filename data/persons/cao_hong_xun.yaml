@@ -1,0 +1,21 @@
+# 曹鸿勋 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0581 | 比对状态：confirmed（name+year）
+id: cao_hong_xun
+name: 曹鸿勋
+zi: 仲銘
+hao: 校經堂；竹銘；蘭生
+birth_year: null
+death_year: 1910
+fl_year: 1847
+native_hist: 濰縣
+native_modern: 山东省潍坊市
+lat: 36.71
+lng: 119.16
+dynasty: 清
+exam_year: 1876
+ganzhi: 丙子
+ke_ci: 光绪二年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,20 @@
+# 陈文龙 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0261 | 比对状态：confirmed（name+year） | 备考：抗元殉国
+id: chen_wen_long
+name: 陈文龙
+zi: 君貴；君賁；志忠
+hao: 如心
+birth_year: 1232
+death_year: 1277
+native_hist: 莆田
+native_modern: 福建省莆田市
+lat: 25.45
+lng: 119.01
+dynasty: 宋
+exam_year: 1268
+ganzhi: 戊辰
+ke_ci: 咸淳四年戊辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

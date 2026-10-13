@@ -1,0 +1,103 @@
+/* 人物档案页 v2：仕途时间线 + 出处三级面板 */
+/* 三级视觉与故事页 cards.ts 约定一致：A 金 / B 墨 / C 朱砂虚线 */
+
+.crumb { font-size: 0.8rem; color: var(--ink-soft); margin-bottom: 1.2rem; }
+.crumb a { color: var(--ink-soft); text-decoration: none; }
+.crumb a:hover { color: var(--cinnabar); }
+
+.bio { font-size: 0.98rem; }
+.reign-mark { color: var(--gold); font-size: 0.85rem; margin-left: 0.4rem; }
+
+/* ---- 仕途时间线 ---- */
+.timeline-v2 { list-style: none; margin: 0; padding: 0; }
+.tl-item {
+  display: flex; gap: 1.1rem;
+  padding: 0.85rem 0 0.85rem 1rem;
+  border-left: 3px solid var(--line);
+  position: relative;
+}
+.tl-item::before {
+  content: '';
+  position: absolute; left: -6px; top: 1.35rem;
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--paper); border: 2px solid var(--ink-soft);
+}
+/* 时间线左边条随该事件最高出处等级着色 */
+.tl-item.tier-A { border-left-color: var(--gold); }
+.tl-item.tier-A::before { border-color: var(--gold); }
+.tl-item.tier-B { border-left-color: var(--ink-soft); }
+.tl-item.tier-C { border-left-color: var(--cinnabar); border-left-style: dashed; }
+.tl-item.tier-C::before { border-color: var(--cinnabar); }
+
+/* 夺魁高光节点 */
+.tl-item.peak { background: linear-gradient(to right, rgba(169, 139, 63, 0.08), transparent 70%); }
+.tl-item.peak::before {
+  background: var(--cinnabar); border-color: var(--cinnabar);
+  box-shadow: 0 0 0 3px rgba(158, 43, 34, 0.18);
+}
+
+.tl-year { flex: 0 0 8.5em; font-size: 0.85rem; }
+.tl-year b { color: var(--cinnabar); font-size: 0.95rem; display: block; }
+.tl-year .tl-gz, .tl-year .tl-reign { display: block; color: var(--ink-soft); font-size: 0.75rem; line-height: 1.5; }
+.tl-body { flex: 1; min-width: 0; }
+.tl-title { margin-bottom: 0.2rem; }
+.tl-body > p { margin: 0.35rem 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+
+.ev-type {
+  display: inline-block;
+  font-size: 0.72rem;
+  border: 1px solid var(--ink-soft);
+  color: var(--ink-soft);
+  border-radius: 2px;
+  padding: 0 0.4rem;
+  margin-right: 0.5rem;
+  vertical-align: 0.1em;
+}
+.ev-peak { border-color: var(--cinnabar); color: var(--cinnabar); font-weight: bold; }
+
+/* ---- 出处折叠面板（A/B/C 三级视觉可区分） ---- */
+.src-panel { margin-top: 0.55rem; }
+.src-panel .src {
+  margin: 0.3rem 0;
+  border: 1px solid var(--line);
+  border-left-width: 4px;
+  border-radius: 3px;
+  background: #fbf8f0;
+  font-size: 0.84rem;
+}
+.src-panel .src summary {
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  color: var(--ink);
+  list-style: none;
+}
+.src-panel .src summary::-webkit-details-marker { display: none; }
+.src-panel .src summary::before { content: '▸ '; color: var(--ink-soft); }
+.src-panel .src[open] summary::before { content: '▾ '; }
+.src-panel .src blockquote {
+  margin: 0 0.7rem 0.5rem;
+  padding: 0.45rem 0.8rem;
+  background: var(--paper-deep);
+  border-left: 2px solid var(--gold);
+  font-size: 0.85rem;
+}
+.src-panel .src .note { margin: 0 0.7rem 0.5rem; font-size: 0.8rem; color: var(--ink-soft); }
+
+.src-tier-A { border-left-color: var(--gold); }
+.src-tier-B { border-left-color: var(--ink-soft); }
+.src-tier-C { border-left-color: var(--cinnabar); border-style: dashed; border-left-style: dashed; background: #f8efe9; }
+
+/* tier 徽章与故事页统一：A 金 / B 墨 / C 朱砂（双类选择器防误伤容器） */
+.tier { display: inline-block; padding: 0 0.35rem; border-radius: 2px; color: #fff; font-size: 0.72rem; }
+.tier.tier-A { background: var(--gold); }
+.tier.tier-B { background: var(--ink-soft); }
+.tier.tier-C { background: var(--cinnabar); }
+.src-kind { font-size: 0.72rem; color: var(--ink-soft); margin: 0 0.5rem 0 0.3rem; }
+
+.legend-note { font-size: 0.8rem; color: var(--cinnabar); margin: -0.4rem 0 0.8rem; }
+
+@media (max-width: 640px) {
+  .tl-item { gap: 0.7rem; padding-left: 0.7rem; }
+  .tl-year { flex: 0 0 5.5em; }
+  .tl-year .tl-reign { display: none; }
+}

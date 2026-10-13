@@ -1,0 +1,20 @@
+# 赵岳 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0024 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：《玉芝堂谈荟》作羊袭吉，存疑
+id: zhao_yue
+name: 赵岳
+zi: null
+hao: null
+birth_year: null
+death_year: 890
+fl_year: 827
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 744
+ganzhi: 甲申
+ke_ci: 天宝三年甲申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

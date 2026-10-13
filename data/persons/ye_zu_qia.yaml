@@ -1,0 +1,21 @@
+# 叶祖洽 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0196 | 比对状态：confirmed（name+year）
+id: ye_zu_qia
+name: 叶祖洽
+zi: 敦禮
+hao: null
+birth_year: null
+death_year: 1118
+fl_year: 1055
+native_hist: 上元
+native_modern: 江苏省南京市
+lat: 32.06
+lng: 118.8
+dynasty: 宋
+exam_year: 1070
+ganzhi: 庚戌
+ke_ci: 熙宁三年庚戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

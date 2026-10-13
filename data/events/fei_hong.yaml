@@ -1,0 +1,20 @@
+person_id: fei_hong
+events:
+  - year: 1468
+    year_precision: exact
+    type: 出生
+    title: 生于江西铅山
+    description: 成化四年（1468）生，江西广信府铅山县人。
+    source_ids: [src_mingshi_feihong]
+  - year: 1487
+    year_precision: exact
+    type: 夺魁
+    title: 成化二十三年丁未科状元
+    description: 年十九，殿试一甲第一，授翰林院修撰。
+    source_ids: [src_timin_beilu, src_mingshi_feihong]
+  - year: 1526
+    year_precision: about
+    type: 升迁
+    title: 嘉靖朝三入内阁，终为首辅
+    description: 费宏一生三入内阁，嘉靖初为首辅，持正不阿，为时所重。具体起讫年月待考。
+    source_ids: [src_mingshi_feihong]

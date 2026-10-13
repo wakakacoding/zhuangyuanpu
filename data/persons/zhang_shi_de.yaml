@@ -1,0 +1,21 @@
+# 张师德 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0176 | 比对状态：confirmed（name+year）
+id: zhang_shi_de
+name: 张师德
+zi: 尚賢
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 981
+native_hist: 洛陽
+native_modern: 河南省洛阳市
+lat: 34.62
+lng: 112.45
+dynasty: 宋
+exam_year: 1011
+ganzhi: 辛亥
+ke_ci: 大中祥符四年辛亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

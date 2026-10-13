@@ -1,0 +1,22 @@
+# 崔昭矩 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0109 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：一说该科状元为杜荀鹤，存疑
+id: cui_zhao_ju
+name: 崔昭矩
+zi: null
+hao: null
+birth_year: null
+death_year: 896
+fl_year: 833
+native_hist: 歷城
+native_modern: 山东省济南市历城区
+lat: 36.65
+lng: 117.12
+dynasty: 唐
+exam_year: 891
+ganzhi: 辛亥
+ke_ci: 大顺二年辛亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

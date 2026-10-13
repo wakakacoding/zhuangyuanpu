@@ -1,0 +1,21 @@
+# 王世则 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0164 | 比对状态：confirmed（name+year）
+id: wang_shi_ze
+name: 王世则
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 953
+native_hist: 長沙
+native_modern: 湖南省长沙市
+lat: 28.23
+lng: 112.94
+dynasty: 宋
+exam_year: 983
+ganzhi: 癸未
+ke_ci: 太平兴国八年癸未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

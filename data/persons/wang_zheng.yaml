@@ -1,0 +1,20 @@
+# 王整 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0180 | 比对状态：confirmed（name+year）
+id: wang_zheng
+name: 王整
+zi: 子齊
+hao: null
+birth_year: 970
+death_year: 0
+native_hist: 咸陽
+native_modern: 陕西省咸阳市
+lat: 34.33
+lng: 108.71
+dynasty: 宋
+exam_year: 1019
+ganzhi: 己未
+ke_ci: 天禧三年己未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

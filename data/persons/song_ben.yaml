@@ -1,0 +1,20 @@
+# 宋本 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0364 | 比对状态：confirmed（name+year）
+id: song_ben
+name: 宋本
+zi: 誠夫
+hao: null
+birth_year: 1281
+death_year: 1334
+native_hist: 大興
+native_modern: 北京市
+lat: 39.9
+lng: 116.4
+dynasty: 元
+exam_year: 1321
+ganzhi: 辛酉
+ke_ci: 至治元年辛酉科左榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

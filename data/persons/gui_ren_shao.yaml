@@ -1,0 +1,21 @@
+# 归仁绍 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0094 | 比对状态：confirmed（name+year）
+id: gui_ren_shao
+name: 归仁绍
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 839
+native_hist: 吳縣
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 唐
+exam_year: 869
+ganzhi: 己丑
+ke_ci: 咸通十年己丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

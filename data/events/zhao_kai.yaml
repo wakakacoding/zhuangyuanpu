@@ -1,0 +1,28 @@
+person_id: zhao_kai
+events:
+  - year: 1101
+    year_precision: exact
+    type: 出生
+    title: 生于东京，徽宗第三子
+    description: 后封郓王。
+    source_ids: [src_songshi_zhaokai]
+  - year: 1118
+    year_precision: exact
+    type: 夺魁
+    title: 政和八年廷策唱名第一，以宗室抑为第二
+    description: >-
+      匿宗室身份应试，殿试唱名第一。徽宗为避嫌，改置第二，升第二名王昂为状元。
+      故本科「名分状元」为王昂，「事实状元」为赵楷，时人谓之「真状元假榜眼」。
+    source_ids: [src_songshi_zhaokai]
+  - year: 1127
+    year_precision: exact
+    type: 被俘
+    title: 靖康之变随徽钦北狩
+    description: 靖康二年（1127）金人陷东京，随二帝北迁。
+    source_ids: [src_songshi_zhaokai, src_jingkang_baishi]
+  - year: 1130
+    year_precision: about
+    type: 卒
+    title: 卒于五国城
+    description: 约建炎四年（1130）卒于北地。具体年月待考。
+    source_ids: [src_jingkang_baishi]

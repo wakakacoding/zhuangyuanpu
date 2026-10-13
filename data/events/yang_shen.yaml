@@ -1,0 +1,34 @@
+person_id: yang_shen
+events:
+  - year: 1488
+    year_precision: exact
+    type: 出生
+    title: 生于京师
+    description: 弘治元年（1488）生，少师杨廷和之子。
+    source_ids: [src_mingshi_yangshen]
+  - year: 1511
+    year_precision: exact
+    type: 夺魁
+    title: 正德六年辛未科状元
+    description: 年二十四，殿试一甲第一，授翰林院修撰。
+    source_ids: [src_timin_beilu, src_mingshi_yangshen]
+  - year: 1524
+    year_precision: exact
+    type: 贬谪
+    title: 大礼议伏阙哭谏，两遭廷杖，谪戍云南永昌
+    description: 嘉靖三年（1524）率百官跪左顺门哭谏，撼门大哭，声震阙廷；两受廷杖，几死，谪戍云南永昌卫。
+    source_ids: [src_mingshi_yangshen]
+  - year: 1559
+    year_precision: exact
+    type: 卒
+    title: 卒于永昌戍所
+    description: 戍边三十五年，嘉靖三十八年（1559）卒，年七十二。隆庆初追赠光禄寺少卿。
+    source_ids: [src_mingshi_yangshen]
+  - year: 1550
+    year_precision: about
+    type: 著作
+    title: 戍滇期间著述百余种
+    description: >-
+      谪戍三十五年间著作等身，《明史》称其「明世记诵之博，著作之富，推慎为第一」。
+      《升庵集》《廿一史弹词》《丹铅录》等皆成于此时；诗文杂著百余种并行于世。
+    source_ids: [src_mingshi_yangshen, src_shengan_ji]

@@ -1,0 +1,21 @@
+# 毕渐 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0204 | 比对状态：confirmed（name+year）
+id: bi_jian
+name: 毕渐
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 1064
+native_hist: 潛江
+native_modern: 湖北省潜江市
+lat: 30.4
+lng: 112.9
+dynasty: 宋
+exam_year: 1094
+ganzhi: 甲戌
+ke_ci: 绍圣元年甲戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

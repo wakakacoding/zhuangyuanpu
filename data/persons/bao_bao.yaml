@@ -1,0 +1,19 @@
+# 宝宝 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0387 | 比对状态：suspect（朝代内同名 3 人且年分均无命中） | 备考：待核
+id: bao_bao
+name: 宝宝
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 元
+exam_year: 1363
+ganzhi: 癸卯
+ke_ci: 至正二十三年癸卯科右榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

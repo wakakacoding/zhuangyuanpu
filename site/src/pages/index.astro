@@ -1,0 +1,156 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import yaml from 'js-yaml';
+import { listStories } from '../lib/story';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/base.css';
+import '../styles/story.css';
+
+const dataDir = path.resolve(process.cwd(), '../data');
+const persons = fs.readdirSync(path.join(dataDir, 'persons'))
+  .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
+  .map((f) => yaml.load(fs.readFileSync(path.join(dataDir, 'persons', f), 'utf8')));
+
+const withEvents = persons.filter((p) =>
+  fs.existsSync(path.join(dataDir, 'events', `${p.id}.yaml`))
+);
+
+const stories = listStories();
+const [featured, ...rest] = stories;
+
+// 补全计划进度（R4：缺数据本身成为叙事）
+const coverage = [
+  { label: '名录收录', cur: persons.length, total: 600 },
+  { label: '全字段档案', cur: withEvents.length, total: 50 },
+  { label: '故事', cur: stories.length, total: 15 },
+];
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="状元谱 · 历代状元的人生轨迹" description="自唐武德五年（622）孙伏伽至清光绪三十年（1904）刘春霖，历代文状元人生轨迹：长篇故事 + 可查证的数据底座。" path="/" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-head">
+        <h1>状元谱</h1>
+        <p class="sub">622 年孙伏伽 — 1904 年刘春霖：一千二百八十三年，六百个「天下第一」的人生</p>
+        <nav class="site-nav">
+          <a href="/stories/">故事</a>
+          <a href="/search/">检索</a>
+          <a href="/map/">籍贯地图</a>
+          <a href="/timeline/">时间线</a>
+          <a href="/stats/">统计</a>
+          <a href="/persons/">人物索引（{persons.length}）</a>
+          <a href="/corrections/">勘误</a>
+        </nav>
+      </header>
+
+      {featured && (
+        <a class="feature" href={`/stories/${featured.slug}/`}>
+          <span class="feature-tag">本期主打</span>
+          <h2>{featured.title}</h2>
+          {featured.subtitle && <p class="feature-sub">{featured.subtitle}</p>}
+          {featured.intro && <p class="feature-intro">{featured.intro}</p>}
+          <span class="feature-go">阅读全文 →</span>
+        </a>
+      )}
+
+      {rest.length > 0 && (
+        <section class="flow">
+          {rest.map((s) => (
+            <a class="flow-item" href={`/stories/${s.slug}/`}>
+              <h3>{s.title}</h3>
+              {s.subtitle && <p>{s.subtitle}</p>}
+            </a>
+          ))}
+        </section>
+      )}
+
+      <section class="plan">
+        <h2>补全计划</h2>
+        <p class="plan-note">榜上有名者六百余人，史中留痕者寥寥。缺漏不遮不掩，进度公开——这本身就是本站要讲的故事。</p>
+        <div class="plan-bars">
+          {coverage.map((c) => (
+            <div class="bar-row">
+              <span class="bar-label">{c.label}</span>
+              <span class="bar-track">
+                <span class="bar-fill" style={`width:${Math.min(100, (c.cur / c.total) * 100).toFixed(1)}%`}></span>
+              </span>
+              <span class="bar-num">{c.cur} / {c.total}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title">已建全字段档案</h2>
+        <div class="grid">
+          {withEvents.map((p) => (
+            <a class="card" href={`/persons/${p.id}/`}>
+              <h2>{p.name}</h2>
+              <span class="rank">{p.rank_detail ?? ''}</span>
+              <p class="meta">
+                {p.dynasty}{p.exam_year ? ` · ${p.exam_year}（${p.ganzhi ?? '？'}）` : ''}
+                {p.birth_year ? ` · ${p.birth_year}–${p.death_year ?? '？'}` : ''}
+              </p>
+              <p class="bio">{p.bio_short ?? <span class="quelu">史料阙如</span>}</p>
+            </a>
+          ))}
+        </div>
+        <a class="back" href="/persons/">→ 全量人物索引（{persons.length} 人）</a>
+      </section>
+    </div>
+
+    <style>
+      .site-nav { margin-top: 0.9rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+      .site-nav a {
+        font-size: 0.8rem; text-decoration: none; color: var(--ink);
+        border: 1px solid var(--line); padding: 0.1rem 0.6rem; border-radius: 2px;
+        background: #fbf8f0;
+      }
+      .site-nav a:hover { color: var(--cinnabar); border-color: var(--cinnabar); }
+
+      .feature {
+        display: block; text-decoration: none; color: inherit; margin-bottom: 1.6rem;
+        border: 2px solid var(--ink); background: #fbf8f0; padding: 1.6rem 1.6rem 1.2rem;
+        border-radius: 4px; position: relative;
+      }
+      .feature:hover { box-shadow: 4px 4px 0 var(--ink); }
+      .feature-tag {
+        position: absolute; top: -0.7rem; left: 1.2rem; background: var(--cinnabar);
+        color: #fff; font-size: 0.72rem; padding: 0.1rem 0.6rem; border-radius: 2px; letter-spacing: 0.15em;
+      }
+      .feature h2 { margin: 0.2rem 0 0.3rem; font-size: 1.55rem; line-height: 1.45; }
+      .feature-sub { margin: 0 0 0.6rem; color: var(--cinnabar); font-size: 0.95rem; }
+      .feature-intro { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+      .feature-go { display: inline-block; margin-top: 0.8rem; font-size: 0.85rem; color: var(--cinnabar); }
+
+      .flow { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin-bottom: 2.2rem; }
+      .flow-item {
+        display: block; text-decoration: none; color: inherit; border: 1px solid var(--line);
+        background: #fbf8f0; padding: 1rem 1.1rem; border-radius: 4px;
+      }
+      .flow-item:hover { box-shadow: 0 2px 10px rgba(43,42,38,0.12); }
+      .flow-item h3 { margin: 0 0 0.3rem; font-size: 1.05rem; }
+      .flow-item p { margin: 0; font-size: 0.85rem; color: var(--ink-soft); }
+
+      .plan { border: 1px dashed var(--gold); border-radius: 4px; padding: 1rem 1.2rem; margin-bottom: 2.2rem; background: var(--paper-deep); }
+      .plan h2 { margin: 0 0 0.3rem; font-size: 1.05rem; letter-spacing: 0.2em; }
+      .plan-note { margin: 0 0 0.9rem; font-size: 0.85rem; color: var(--ink-soft); }
+      .bar-row { display: flex; align-items: center; gap: 0.8rem; margin: 0.45rem 0; font-size: 0.82rem; }
+      .bar-label { width: 5.5em; color: var(--ink-soft); }
+      .bar-track { flex: 1; height: 8px; background: #e4dccb; border-radius: 4px; overflow: hidden; }
+      .bar-fill { display: block; height: 100%; background: var(--cinnabar); border-radius: 4px; }
+      .bar-num { width: 5.5em; text-align: right; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+      .sec-title { font-size: 1.15rem; letter-spacing: 0.15em; border-top: 2px solid var(--ink); padding-top: 1rem; }
+      .quelu { color: var(--ink-soft); }
+
+      @media (max-width: 640px) {
+        .feature h2 { font-size: 1.25rem; }
+        .bar-label { width: 4.5em; }
+      }
+    </style>
+  </body>
+</html>

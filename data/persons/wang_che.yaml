@@ -1,0 +1,22 @@
+# 王彻 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0123 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：待核
+id: wang_che
+name: 王彻
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 897
+native_hist: 博平
+native_modern: 山东省聊城市茌平区
+lat: 36.58
+lng: 116.26
+dynasty: 五代十国
+exam_year: 925
+ganzhi: 乙酉
+ke_ci: 后唐同光三年乙酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

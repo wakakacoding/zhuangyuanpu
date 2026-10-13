@@ -1,0 +1,19 @@
+# 康秉俭 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0311 | 比对状态：missing（CBDB 无记录）
+id: kang_bing_jian
+name: 康秉俭
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 1100
+ganzhi: 庚辰
+ke_ci: 寿昌六年庚辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

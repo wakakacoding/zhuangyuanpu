@@ -1,0 +1,20 @@
+person_id: tai_buhua
+events:
+  - year: 1304
+    year_precision: exact
+    type: 出生
+    title: 生于台州（伯牙吾氏）
+    description: 大德八年（1304）生。父塔不台为台州路录事判官，遂家于台州临海。
+    source_ids: [src_yuanshi_taibuhua]
+  - year: 1321
+    year_precision: exact
+    type: 夺魁
+    title: 至治元年右榜状元
+    description: 年十七，蒙古色目人右榜进士第一，文宗朝赐名泰不华。元代科举分左右榜，右榜为蒙古色目人之榜。
+    source_ids: [src_timin_beilu, src_yuanshi_taibuhua]
+  - year: 1352
+    year_precision: exact
+    type: 卒
+    title: 方国珍之乱，战死台州
+    description: 至正十二年（1352），任台州路达鲁花赤，讨方国珍，舟师败绩，死之。年四十九。
+    source_ids: [src_yuanshi_taibuhua]

@@ -1,0 +1,21 @@
+# 文允中 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0380 | 比对状态：confirmed（name+year）
+id: wen_yun_zhong
+name: 文允中
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1321
+native_hist: 成都路
+native_modern: 四川省成都市
+lat: 30.57
+lng: 104.07
+dynasty: 元
+exam_year: 1351
+ganzhi: 辛卯
+ke_ci: 至正十一年辛卯科左榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,56 @@
+person_id: zhang_jian
+events:
+  - year: 1853
+    year_precision: exact
+    type: 出生
+    title: 生于江苏通州
+    description: 咸丰三年（1853）生于通州海门乡间农家。
+    source_ids: [src_seweng_nianpu]
+  - year: 1868
+    year_precision: about
+    type: 应试
+    title: 冒籍应试为生员，后历讼归宗
+    description: 因家世寒微（「冷籍」），冒如皋张氏籍应试得秀才，事发辗转多年方归宗。此经历深嵌其身份焦虑。
+    source_ids: [src_seweng_nianpu]
+  - year: 1882
+    year_precision: about
+    type: 授官
+    title: 入吴长庆幕府，随军赴朝鲜
+    description: 光绪二年入淮军吴长庆幕为机要文书；光绪八年（1882）随军赴朝鲜，参与平定壬午兵变，草《朝鲜善后六策》见知于时。
+    source_ids: [src_seweng_nianpu]
+  - year: 1885
+    year_precision: exact
+    type: 中举
+    title: 顺天乡试第二名（南元）
+    description: 光绪十一年乙酉科顺天乡试第二名，俗称「南元」，文名始著于北方。此后会试仍屡蹶。
+    source_ids: [src_seweng_nianpu]
+  - year: 1894
+    year_precision: exact
+    type: 夺魁
+    title: 光绪二十年甲午恩科状元
+    description: 年四十一，屡蹶场屋后终成。是年甲午战争爆发。
+    source_ids: [src_timin_beilu]
+  - year: 1895
+    year_precision: about
+    type: 实业
+    title: 筹办大生纱厂
+    description: 甲午战败后弃官还乡，奉张之洞命总理通海团练，旋筹办大生纱厂（1899 年投产）。
+    source_ids: [src_seweng_nianpu]
+  - year: 1902
+    year_precision: about
+    type: 实业
+    title: 创通州民立师范学校
+    description: 中国最早独立设置的师范学校之一，开近代师范教育先声。
+    source_ids: [src_seweng_nianpu]
+  - year: 1913
+    year_precision: about
+    type: 授官
+    title: 任北京政府农商总长
+    description: 民国二年（1913）入阁，约 1915 年辞官归南通，专志地方自治。
+    source_ids: [src_seweng_nianpu]
+  - year: 1926
+    year_precision: exact
+    type: 卒
+    title: 卒于南通
+    description: 民国十五年（1926）8 月 24 日卒，年七十四。
+    source_ids: [src_seweng_nianpu]

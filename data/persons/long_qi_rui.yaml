@@ -1,0 +1,20 @@
+# 龙启瑞 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0565 | 比对状态：confirmed（name+year）
+id: long_qi_rui
+name: 龙启瑞
+zi: 翰臣
+hao: 輯五
+birth_year: 1814
+death_year: 1858
+native_hist: 臨桂
+native_modern: 广西壮族自治区桂林市临桂区
+lat: 25.24
+lng: 110.2
+dynasty: 清
+exam_year: 1841
+ganzhi: 辛丑
+ke_ci: 道光二十一年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

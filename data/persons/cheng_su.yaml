@@ -1,0 +1,21 @@
+# 程宿 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0166 | 比对状态：confirmed（name+year）
+id: cheng_su
+name: 程宿
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 958
+native_hist: 開化
+native_modern: 浙江省衢州市开化县
+lat: 29.14
+lng: 118.41
+dynasty: 宋
+exam_year: 988
+ganzhi: 戊子
+ke_ci: 端拱元年戊子科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,22 @@
+# 薛迈 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0089 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: xue_mai
+name: 薛迈
+zi: null
+hao: null
+birth_year: null
+death_year: 645
+fl_year: 582
+native_hist: 寶鼎
+native_modern: 山西省运城市万荣县
+lat: 35.42
+lng: 110.84
+dynasty: 唐
+exam_year: 861
+ganzhi: 辛巳
+ke_ci: 咸通二年辛巳科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

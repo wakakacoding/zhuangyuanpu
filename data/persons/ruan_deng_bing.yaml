@@ -1,0 +1,21 @@
+# 阮登炳 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0260 | 比对状态：confirmed（name+year）
+id: ruan_deng_bing
+name: 阮登炳
+zi: 顯之
+hao: 玉淵
+birth_year: null
+death_year: null
+fl_year: 1235
+native_hist: 宁德
+native_modern: 福建省宁德市
+lat: 26.66
+lng: 119.55
+dynasty: 宋
+exam_year: 1265
+ganzhi: 乙丑
+ke_ci: 咸淳元年乙丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

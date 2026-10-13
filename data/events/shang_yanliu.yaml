@@ -1,0 +1,14 @@
+person_id: shang_yanliu
+events:
+  - year: 1904
+    year_precision: exact
+    type: 夺魁
+    title: 光绪三十年甲辰恩科一甲第三名（探花）
+    description: 与刘春霖（状元）、朱汝珍（榜眼）同榜，是为科举末科。
+    source_ids: [src_timin_beilu]
+  - year: 1958
+    year_precision: about
+    type: 著作
+    title: 出版《清代科举考试述录》
+    description: 以末科进士亲历与文献互证，系统记述清代科举制度与考试实况，为研究要籍。
+    source_ids: [src_keju_shulu]

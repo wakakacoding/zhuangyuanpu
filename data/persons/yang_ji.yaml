@@ -1,0 +1,19 @@
+# 杨佶 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0278 | 比对状态：missing（仅见异代同名者（宋/明/清），按缺失计） | 备考：《辽史》有传
+id: yang_ji
+name: 杨佶
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 1006
+ganzhi: 丙午
+ke_ci: 统和二十四年丙午科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

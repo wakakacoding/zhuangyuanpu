@@ -1,0 +1,21 @@
+# 薛朝晤 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0382 | 比对状态：confirmed（name+year） | 备考：待核
+id: xue_chao_wu
+name: 薛朝晤
+zi: 子顒
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1324
+native_hist: 遼東行中書省
+native_modern: 辽宁省沈阳市
+lat: 41.8
+lng: 123.43
+dynasty: 元
+exam_year: 1354
+ganzhi: 甲午
+ke_ci: 至正十四年甲午科左榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

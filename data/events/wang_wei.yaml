@@ -1,0 +1,32 @@
+person_id: wang_wei
+events:
+  - year: 701
+    year_precision: exact
+    type: 出生
+    title: 生于蒲州
+    description: 祖籍太原祁县，后家于蒲，遂为河东人。
+    source_ids: [src_jiu_tangshu_wang]
+  - year: 721
+    year_precision: exact
+    type: 中举
+    title: 开元九年进士擢第
+    description: 正史仅载进士擢第，未载状元名次；「状元」说见轶事栏，存疑备考。
+    source_ids: [src_jiu_tangshu_wang]
+  - year: 756
+    year_precision: about
+    type: 被俘
+    title: 安史乱中陷贼
+    description: 长安陷，为贼所得，服药佯疾，仍被迫受伪职。
+    source_ids: [src_jiu_tangshu_wang]
+  - year: 757
+    year_precision: about
+    type: 授官
+    title: 以《凝碧池》诗获宥
+    description: 收京后论罪系狱，因陷贼时所作《凝碧池》诗（「万户伤心生野烟」）闻于行在，肃宗宥之，后复官。
+    source_ids: [src_jiu_tangshu_wang]
+  - year: 761
+    year_precision: exact
+    type: 卒
+    title: 卒，官尚书右丞
+    description: 世称王右丞。
+    source_ids: [src_jiu_tangshu_wang]

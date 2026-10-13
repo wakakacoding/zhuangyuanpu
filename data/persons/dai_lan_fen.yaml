@@ -1,0 +1,20 @@
+# 戴兰芬 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0555 | 比对状态：confirmed（name+year）
+id: dai_lan_fen
+name: 戴兰芬
+zi: 湘浦；畹香
+hao: 湘圃
+birth_year: 1782
+death_year: 1833
+native_hist: 天長
+native_modern: 安徽省滁州市天长市
+lat: 32.68
+lng: 119.0
+dynasty: 清
+exam_year: 1822
+ganzhi: 壬午
+ke_ci: 道光二年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,74 @@
+---
+import { listStories, renderStory } from '../../lib/story';
+import SeoHead from '../../components/SeoHead.astro';
+import '../../styles/base.css';
+import '../../styles/story.css';
+
+export function getStaticPaths() {
+  return listStories(true).map((s) => ({ params: { slug: s.slug } }));
+}
+
+const { slug } = Astro.params;
+const rendered = await renderStory(slug!);
+if (!rendered) throw new Error(`story not found: ${slug}`);
+const { meta, html, headings, persons, missing } = rendered;
+
+const personNames = persons.map((p) => p.name).join('、');
+const desc = meta.intro ?? `${meta.title}——${personNames}的故事。`;
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title={meta.title} description={desc} path={`/stories/${slug}/`} type="article" />
+  </head>
+  <body>
+    <div class="container">
+      <nav style="font-size:0.82rem; margin-bottom:1.4rem;">
+        <a href="/">首页</a> / <a href="/stories/">故事</a> / <a href="/persons/">人物索引</a>
+      </nav>
+
+      <header class="story-hero">
+        <h1>{meta.title}</h1>
+        {meta.subtitle && <p class="subtitle">{meta.subtitle}</p>}
+        <div class="meta">
+          {meta.date && <span>{meta.date}</span>}
+          {persons.map((p) => <a href={`/persons/${p.id}/`}>{p.name} · {p.dynasty}</a>)}
+        </div>
+        {meta.intro && <p class="intro">{meta.intro}</p>}
+      </header>
+
+      {headings.length > 1 && (
+        <nav class="s-toc">
+          <b>章节目录</b>
+          <ol>
+            {headings.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+          </ol>
+        </nav>
+      )}
+
+      <article class="story-body" set:html={html} />
+
+      {persons.length > 0 && (
+        <section class="cast">
+          <h2>出场人物档案</h2>
+          <div class="grid">
+            {persons.map((p) => (
+              <a class="card" href={`/persons/${p.id}/`}>
+                <h3>{p.name}</h3>
+                <div class="meta">
+                  {p.dynasty}{p.exam_year ? ` · ${p.exam_year}（${p.ganzhi ?? '？'}）` : ''}{p.birth_year ? ` · ${p.birth_year}–${p.death_year ?? '？'}` : ''}
+                </div>
+                <p class="bio">{p.bio_short ?? '史料阙如——榜上有名，史中无痕。'}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {missing.length > 0 && (
+        <p class="s-note" style="margin-top:2rem;">构建警告：{missing.length} 处卡片标记未命中数据（{missing.join('；')}）</p>
+      )}
+
+      <a class="back" href="/stories/">← 返回故事列表</a>
+    </div>
+  </body>
+</html>

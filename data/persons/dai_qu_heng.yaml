@@ -1,0 +1,20 @@
+# 戴衢亨 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0534 | 比对状态：confirmed（name+year）
+id: dai_qu_heng
+name: 戴衢亨
+zi: 荷之；蓮士
+hao: 震無咎齋
+birth_year: 1755
+death_year: 1811
+native_hist: 大庾
+native_modern: 江西省赣州市大余县
+lat: 25.4
+lng: 114.36
+dynasty: 清
+exam_year: 1778
+ganzhi: 戊戌
+ke_ci: 乾隆四十三年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

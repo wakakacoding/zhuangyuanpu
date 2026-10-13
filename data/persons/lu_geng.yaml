@@ -1,0 +1,22 @@
+# 卢庚 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0031 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: lu_geng
+name: 卢庚
+zi: null
+hao: null
+birth_year: null
+death_year: 842
+fl_year: 779
+native_hist: 范陽
+native_modern: 河北省保定市涿州市
+lat: 39.49
+lng: 115.98
+dynasty: 唐
+exam_year: 756
+ganzhi: 丙申
+ke_ci: 天宝十五年丙申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

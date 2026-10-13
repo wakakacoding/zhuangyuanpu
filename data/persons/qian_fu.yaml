@@ -1,0 +1,20 @@
+# 钱福 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0428 | 比对状态：confirmed（rank1）
+id: qian_fu
+name: 钱福
+zi: 與謙
+hao: null
+birth_year: 1461
+death_year: 1504
+native_hist: 華亭
+native_modern: 上海市松江区
+lat: 31.03
+lng: 121.23
+dynasty: 明
+exam_year: 1490
+ganzhi: 庚戌
+ke_ci: 弘治三年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

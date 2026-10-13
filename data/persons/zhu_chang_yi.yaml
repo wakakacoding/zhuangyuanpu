@@ -1,0 +1,20 @@
+# 朱昌颐 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0557 | 比对状态：confirmed（rank1）
+id: zhu_chang_yi
+name: 朱昌颐
+zi: 吉求；朵山
+hao: 朵山
+birth_year: 1792
+death_year: 1855
+native_hist: 海鹽
+native_modern: 浙江省嘉兴市海盐县
+lat: 30.53
+lng: 120.95
+dynasty: 清
+exam_year: 1826
+ganzhi: 丙戌
+ke_ci: 道光六年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

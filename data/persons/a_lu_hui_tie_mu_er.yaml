@@ -1,0 +1,19 @@
+# 阿鲁辉帖木儿 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0377 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补））
+id: a_lu_hui_tie_mu_er
+name: 阿鲁辉帖木儿
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 元
+exam_year: 1348
+ganzhi: 戊子
+ke_ci: 至正八年戊子科右榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

@@ -1,0 +1,19 @@
+# 李崟 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0206 | 比对状态：missing（仅见异代同名者（唐），按缺失计） | 备考：一作李釜，地方志称「李釜榜」，存疑
+id: li_yin
+name: 李崟
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 宋
+exam_year: 1100
+ganzhi: 庚辰
+ke_ci: 元符三年庚辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

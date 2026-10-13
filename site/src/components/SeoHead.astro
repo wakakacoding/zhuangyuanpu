@@ -1,0 +1,30 @@
+---
+/**
+ * 全站统一的 head 元信息：title / description / canonical / OG / Twitter Card
+ * 用法：<SeoHead title="..." description="..." path="/search/" />
+ */
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  image?: string;
+  type?: 'website' | 'article';
+}
+const { title, description, path = '/', image = '/og.png', type = 'website' } = Astro.props;
+const site = Astro.site ?? new URL('https://zhuangyuanpu.pages.dev');
+const url = new URL(path, site).href;
+const imgUrl = new URL(image, site).href;
+const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={url} />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={url} />
+<meta property="og:image" content={imgUrl} />
+<meta property="og:site_name" content="状元谱" />
+<meta name="twitter:card" content="summary_large_image" />

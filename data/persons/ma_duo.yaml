@@ -1,0 +1,20 @@
+# 马铎 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0402 | 比对状态：confirmed（rank1） | 备考：原名马乐，避成祖讳御赐改名
+id: ma_duo
+name: 马铎
+zi: 彥聲
+hao: null
+birth_year: 1366
+death_year: 1423
+native_hist: 長樂
+native_modern: 福建省福州市长乐区
+lat: 25.96
+lng: 119.52
+dynasty: 明
+exam_year: 1412
+ganzhi: 壬辰
+ke_ci: 永乐十年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

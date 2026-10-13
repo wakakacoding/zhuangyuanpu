@@ -1,0 +1,19 @@
+# 史克忠 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0279 | 比对状态：missing（CBDB 无记录）
+id: shi_ke_zhong
+name: 史克忠
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 1008
+ganzhi: 戊申
+ke_ci: 统和二十六年戊申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

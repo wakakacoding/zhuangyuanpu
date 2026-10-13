@@ -1,0 +1,21 @@
+# 安守亮 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0157 | 比对状态：confirmed（name+year） | 备考：父安德裕亦曾中状元，父子状元
+id: an_shou_liang
+name: 安守亮
+zi: null
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 942
+native_hist: 河南府
+native_modern: 河南省洛阳市
+lat: 34.62
+lng: 112.45
+dynasty: 宋
+exam_year: 972
+ganzhi: 壬申
+ke_ci: 开宝五年壬申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

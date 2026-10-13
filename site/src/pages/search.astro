@@ -1,0 +1,174 @@
+---
+import { allPersons, presentDynasties, fullProfileIds } from '../lib/persons';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/base.css';
+import '../styles/search.css';
+
+const persons = allPersons();
+const fullIds = fullProfileIds();
+
+// 构建期生成精简检索索引（内嵌页面，客户端过滤，响应 <200ms）
+const index = persons.map((p) => ({
+  id: p.id,
+  n: p.name,
+  zi: p.zi ?? '',
+  hao: p.hao ?? '',
+  d: p.dynasty,
+  y: p.exam_year ?? null,
+  gz: p.ganzhi ?? '',
+  kc: p.ke_ci ?? '',
+  rk: p.rank_detail ?? '',
+  nh: p.native_hist ?? '',
+  nm: p.native_modern ?? '',
+  tg: p.tags ?? [],
+  bio: (p.bio_short ?? '').slice(0, 90),
+  full: fullIds.has(p.id) ? 1 : 0,
+}));
+
+const dynasties = presentDynasties(persons);
+const allTags = [...new Set(persons.flatMap((p) => p.tags ?? []))].sort();
+const years = persons.map((p) => p.exam_year).filter(Boolean);
+const yMin = Math.min(...years);
+const yMax = Math.max(...years);
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="检索" description="历代状元组合检索：朝代、科年区间、籍贯、标签自由组合，构建期索引，毫秒响应。" path="/search/" />
+  </head>
+  <body>
+    <div class="container container-wide">
+      <header class="site-head">
+        <h1>检索</h1>
+        <p class="sub">{persons.length} 人在库 · 朝代 / 科年 / 籍贯 / 标签自由组合</p>
+        <nav class="site-nav">
+          <a href="/">首页</a>
+          <a href="/persons/">全量索引</a>
+          <a href="/stories/">故事</a>
+        </nav>
+      </header>
+
+      <section class="filters">
+        <div class="f-row">
+          <input id="q" type="search" placeholder="姓名、字号、籍贯、关键词…" autocomplete="off" />
+          <select id="tag">
+            <option value="">全部标签</option>
+            {allTags.map((t) => <option value={t}>{t}</option>)}
+          </select>
+        </div>
+        <div class="f-row">
+          <div class="dyn-chips" id="dynChips">
+            {dynasties.map((d) => <button type="button" class="chip" data-d={d}>{d}</button>)}
+          </div>
+          <div class="year-range">
+            <input id="yFrom" type="number" placeholder={String(yMin)} min={yMin} max={yMax} />
+            <span>—</span>
+            <input id="yTo" type="number" placeholder={String(yMax)} min={yMin} max={yMax} />
+          </div>
+        </div>
+        <div class="f-row f-meta">
+          <span id="count"></span>
+          <label class="full-only"><input id="fullOnly" type="checkbox" /> 仅看全字段档案</label>
+          <button id="reset" type="button">清空条件</button>
+        </div>
+      </section>
+
+      <ul id="results" class="results"></ul>
+
+      <a class="back" href="/">← 返回首页</a>
+    </div>
+
+    <script type="application/json" id="idx" set:html={JSON.stringify(index)} />
+    <script>
+      const idx = JSON.parse(document.getElementById('idx').textContent);
+      const $ = (s) => document.querySelector(s);
+      const qEl = $('#q'), tagEl = $('#tag'), yFromEl = $('#yFrom'), yToEl = $('#yTo'),
+            countEl = $('#count'), listEl = $('#results'), fullEl = $('#fullOnly');
+      const activeDyn = new Set();
+
+      // URL hash 同步：#q=..&dyn=唐宋&y=1400-1500&tag=..&full=1
+      function toHash() {
+        const p = new URLSearchParams();
+        if (qEl.value.trim()) p.set('q', qEl.value.trim());
+        if (activeDyn.size) p.set('dyn', [...activeDyn].join(','));
+        const yf = yFromEl.value, yt = yToEl.value;
+        if (yf || yt) p.set('y', `${yf || ''}-${yt || ''}`);
+        if (tagEl.value) p.set('tag', tagEl.value);
+        if (fullEl.checked) p.set('full', '1');
+        history.replaceState(null, '', p.toString() ? '#' + p : location.pathname);
+      }
+      function fromHash() {
+        const p = new URLSearchParams(location.hash.slice(1));
+        if (p.get('q')) qEl.value = p.get('q');
+        if (p.get('dyn')) p.get('dyn').split(',').forEach((c) => {
+          const chip = document.querySelector(`.chip[data-d="${c}"]`);
+          if (chip && !activeDyn.has(c)) { activeDyn.add(c); chip.classList.add('on'); }
+        });
+        if (p.get('y')) {
+          const [a, b] = p.get('y').split('-');
+          yFromEl.value = a || ''; yToEl.value = b || '';
+        }
+        if (p.get('tag')) tagEl.value = p.get('tag');
+        if (p.get('full') === '1') fullEl.checked = true;
+      }
+
+      function match(p) {
+        if (fullEl.checked && !p.full) return false;
+        if (activeDyn.size && !activeDyn.has(p.d)) return false;
+        const yf = parseInt(yFromEl.value) || -Infinity;
+        const yt = parseInt(yToEl.value) || Infinity;
+        if (p.y == null) { if (yf !== -Infinity || yt !== Infinity) return false; }
+        else if (p.y < yf || p.y > yt) return false;
+        if (tagEl.value && !p.tg.includes(tagEl.value)) return false;
+        const q = qEl.value.trim();
+        if (q) {
+          const hay = [p.n, p.zi, p.hao, p.nh, p.nm, p.kc, p.rk, p.bio, p.tg.join(' ')].join(' ');
+          if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
+        }
+        return true;
+      }
+
+      function esc(s) {
+        return s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      }
+
+      function render() {
+        const hits = idx.filter(match);
+        countEl.textContent = `命中 ${hits.length} / ${idx.length} 人`;
+        listEl.innerHTML = hits.slice(0, 500).map((p) => `
+          <li class="hit">
+            <a href="/persons/${p.id}/">
+              <b>${esc(p.n)}</b>
+              ${p.full ? '<span class="full-badge">全档案</span>' : ''}
+              <span class="hit-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ' · 科年阙如'}${p.nh ? ` · ${esc(p.nh)}` : ''}</span>
+              ${p.tg.length ? `<span class="hit-tags">${p.tg.map((t) => `<i>${esc(t)}</i>`).join('')}</span>` : ''}
+              ${p.bio ? `<span class="hit-bio">${esc(p.bio)}…</span>` : ''}
+            </a>
+          </li>`).join('');
+        if (!hits.length) listEl.innerHTML = '<li class="none">无命中——换个条件试试。「阙如」亦是史料的一部分。</li>';
+        toHash();
+      }
+
+      document.querySelectorAll('.chip').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          const d = chip.dataset.d;
+          activeDyn.has(d) ? activeDyn.delete(d) : activeDyn.add(d);
+          chip.classList.toggle('on');
+          render();
+        });
+      });
+      [qEl, tagEl, yFromEl, yToEl, fullEl].forEach((el) => {
+        el.addEventListener('input', render);
+        el.addEventListener('change', render);
+      });
+      $('#reset').addEventListener('click', () => {
+        qEl.value = ''; tagEl.value = ''; yFromEl.value = ''; yToEl.value = '';
+        fullEl.checked = false; activeDyn.clear();
+        document.querySelectorAll('.chip.on').forEach((c) => c.classList.remove('on'));
+        render();
+      });
+
+      fromHash();
+      render();
+    </script>
+  </body>
+</html>

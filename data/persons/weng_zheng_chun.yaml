@@ -1,0 +1,20 @@
+# 翁正春 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0462 | 比对状态：confirmed（rank1）
+id: weng_zheng_chun
+name: 翁正春
+zi: 兆震；益齋；青陽
+hao: 靑陽；青陽
+birth_year: 1545
+death_year: 1607
+native_hist: 侯官
+native_modern: 福建省福州市
+lat: 26.08
+lng: 119.3
+dynasty: 明
+exam_year: 1592
+ganzhi: 壬辰
+ke_ci: 万历二十年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

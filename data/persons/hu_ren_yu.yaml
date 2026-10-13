@@ -1,0 +1,21 @@
+# 胡任舆 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0500 | 比对状态：confirmed（rank1）
+id: hu_ren_yu
+name: 胡任舆
+zi: 孟行
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1664
+native_hist: 上元
+native_modern: 江苏省南京市
+lat: 32.06
+lng: 118.8
+dynasty: 清
+exam_year: 1694
+ganzhi: 甲戌
+ke_ci: 康熙三十三年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

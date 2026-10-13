@@ -1,0 +1,21 @@
+# 李献能 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0330 | 比对状态：missing（CBDB 无记录） | 备考：金末著名文人
+id: li_xian_neng
+name: 李献能
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 河中
+native_modern: 山西省运城市永济市
+lat: 34.87
+lng: 110.45
+dynasty: 金
+exam_year: 1215
+ganzhi: 乙亥
+ke_ci: 贞祐三年乙亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

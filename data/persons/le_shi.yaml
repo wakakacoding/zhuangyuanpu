@@ -1,0 +1,21 @@
+# 乐史 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0137 | 比对状态：suspect（年份冲突：名录 962 vs CBDB 入仕年 [980]） | 备考：待核：《太平寰宇记》作者，后入宋
+id: le_shi
+name: 乐史
+zi: 子正
+hao: null
+birth_year: 930
+death_year: 1007
+native_hist: 洛陽
+native_modern: 河南省洛阳市
+lat: 34.62
+lng: 112.45
+dynasty: 五代十国
+exam_year: 962
+ganzhi: 壬戌
+ke_ci: 南唐建隆三年壬戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

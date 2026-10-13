@@ -1,0 +1,21 @@
+# 余复 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0235 | 比对状态：confirmed（rank1）
+id: yu_fu
+name: 余复
+zi: 子叔
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1160
+native_hist: 寧德
+native_modern: 福建省宁德市
+lat: 26.66
+lng: 119.55
+dynasty: 宋
+exam_year: 1190
+ganzhi: 庚戌
+ke_ci: 绍熙元年庚戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

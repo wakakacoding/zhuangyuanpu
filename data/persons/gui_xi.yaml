@@ -1,0 +1,21 @@
+# 归系 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0117 | 比对状态：missing（CBDB 无记录）
+id: gui_xi
+name: 归系
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 苏州（归佾弟）
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 唐
+exam_year: 905
+ganzhi: 乙丑
+ke_ci: 天祐二年乙丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

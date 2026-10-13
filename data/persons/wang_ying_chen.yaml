@@ -1,0 +1,20 @@
+# 汪应辰 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0217 | 比对状态：confirmed（name+year） | 备考：十八岁夺魁，南宋最年轻状元之一
+id: wang_ying_chen
+name: 汪应辰
+zi: 斗南；聖錫
+hao: 玉山先生
+birth_year: 1118
+death_year: 1176
+native_hist: 玉山 / 德安
+native_modern: 江西省上饶市玉山县
+lat: 28.68
+lng: 118.25
+dynasty: 宋
+exam_year: 1135
+ganzhi: 乙卯
+ke_ci: 绍兴五年乙卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

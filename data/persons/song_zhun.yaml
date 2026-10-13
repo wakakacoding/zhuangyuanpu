@@ -1,0 +1,20 @@
+# 宋准 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0158 | 比对状态：confirmed（name+year）
+id: song_zhun
+name: 宋准
+zi: 子平
+hao: null
+birth_year: 938
+death_year: 989
+native_hist: 雍邱
+native_modern: 河南省开封市杞县
+lat: 34.55
+lng: 114.78
+dynasty: 宋
+exam_year: 973
+ganzhi: 癸酉
+ke_ci: 开宝六年癸酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

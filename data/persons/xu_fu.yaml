@@ -1,0 +1,21 @@
+# 徐郙 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0575 | 比对状态：confirmed（rank1（同年重条，取标记者）） | 备考：CBDB 作金郙，待补核
+id: xu_fu
+name: 徐郙
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1832
+native_hist: 嘉定
+native_modern: 上海市嘉定区
+lat: 31.38
+lng: 121.27
+dynasty: 清
+exam_year: 1862
+ganzhi: 壬戌
+ke_ci: 同治元年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

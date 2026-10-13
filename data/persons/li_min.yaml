@@ -1,0 +1,21 @@
+# 李旻 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0426 | 比对状态：confirmed（rank1）
+id: li_min
+name: 李旻
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1454
+native_hist: 浙江钱塘
+native_modern: 浙江省杭州市
+lat: 30.25
+lng: 120.17
+dynasty: 明
+exam_year: 1484
+ganzhi: 甲辰
+ke_ci: 成化二十年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

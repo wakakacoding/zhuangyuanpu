@@ -1,0 +1,21 @@
+# 伍乔 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0134 | 比对状态：missing（仅见异代同名者（唐），按缺失计） | 备考：待核
+id: wu_qiao
+name: 伍乔
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 安徽庐江
+native_modern: 安徽省合肥市庐江县
+lat: 31.26
+lng: 117.29
+dynasty: 五代十国
+exam_year: 954
+ganzhi: 甲寅
+ke_ci: 南唐保大十二年甲寅科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

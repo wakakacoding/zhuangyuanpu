@@ -1,0 +1,20 @@
+# 李迪 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0173 | 比对状态：confirmed（name+year）
+id: li_di
+name: 李迪
+zi: 復古
+hao: null
+birth_year: 971
+death_year: 1047
+native_hist: 開封
+native_modern: 河南省开封市
+lat: 34.8
+lng: 114.31
+dynasty: 宋
+exam_year: 1005
+ganzhi: 乙巳
+ke_ci: 景德二年乙巳科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

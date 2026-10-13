@@ -1,0 +1,21 @@
+# 贾棱 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0051 | 比对状态：missing（CBDB 无记录）
+id: jia_leng
+name: 贾棱
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 河北河间
+native_modern: 河北省沧州市河间市
+lat: 38.45
+lng: 116.1
+dynasty: 唐
+exam_year: 792
+ganzhi: 壬申
+ke_ci: 贞元八年壬申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

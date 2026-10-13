@@ -1,0 +1,47 @@
+person_id: shang_lu
+events:
+  - year: 1435
+    year_precision: exact
+    type: 中举
+    title: 宣德十年乙卯科浙江乡试第一（解元）
+    description: 「三元及第」之始。
+    source_ids: [src_mingshi_shanglu]
+  - year: 1445
+    year_precision: exact
+    type: 夺魁
+    title: 正统十年乙丑科会元、状元连捷
+    description: 会试、殿试皆第一，为明代正式「三元及第」唯一一人（黄观因靖难被革除名籍，故不并计）。
+    source_ids: [src_timin_beilu, src_mingshi_shanglu]
+  - year: 1452
+    year_precision: about
+    type: 升迁
+    title: 入阁预机务
+    description: 景泰间入阁参与机务；土木之变（1449）后力主固守京师，反对南迁。具体入阁年月待考。
+    source_ids: [src_mingshi_shanglu]
+  - year: 1457
+    year_precision: exact
+    type: 罢官
+    title: 夺门之变遭构陷，削籍为民
+    description: 天顺元年（1457）石亨、徐有贞等构陷于谦党，商辂削籍为民。
+    source_ids: [src_mingshi_shanglu]
+  - year: 1467
+    year_precision: about
+    type: 升迁
+    title: 成化初复官，后晋谨身殿大学士
+    description: 成化初召复原职，再入阁。具体年月待考。
+    source_ids: [src_mingshi_shanglu]
+  - year: 1477
+    year_precision: exact
+    type: 升迁
+    title: 率同官劾西厂汪直，直罢西厂
+    description: >-
+      成化十三年（1477），商辂率内阁同官列西厂汪直十一罪上疏。宪宗初震怒，
+      商辂对曰：「臣等同心一意，为国除害，无有先后。」西厂旋罢。
+      未几直复用事，商辂知不可为，致仕归。
+    source_ids: [src_mingshi_shanglu]
+  - year: 1486
+    year_precision: exact
+    type: 卒
+    title: 成化二十二年卒
+    description: 赠太傅，谥文毅。
+    source_ids: [src_mingshi_shanglu]

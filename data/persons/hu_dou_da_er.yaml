@@ -1,0 +1,19 @@
+# 护都答儿 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0359 | 比对状态：missing（CBDB 无记录） | 备考：元代首开科举右榜状元
+id: hu_dou_da_er
+name: 护都答儿
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 元
+exam_year: 1315
+ganzhi: 乙卯
+ke_ci: 延祐二年乙卯科右榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

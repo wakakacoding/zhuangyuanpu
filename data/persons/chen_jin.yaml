@@ -1,0 +1,20 @@
+# 陈谨 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0449 | 比对状态：confirmed（rank1）
+id: chen_jin
+name: 陈谨
+zi: 德言
+hao: 環江
+birth_year: 1525
+death_year: 1566
+native_hist: 閩縣
+native_modern: 福建省福州市
+lat: 26.08
+lng: 119.3
+dynasty: 明
+exam_year: 1553
+ganzhi: 癸丑
+ke_ci: 嘉靖三十二年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,20 @@
+# 安德裕 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0154 | 比对状态：confirmed（name+year） | 备考：子安守亮后亦中状元
+id: an_de_yu
+name: 安德裕
+zi: 師皋；益之；益子
+hao: null
+birth_year: 940
+death_year: 1002
+native_hist: 河南府
+native_modern: 河南省洛阳市
+lat: 34.62
+lng: 112.45
+dynasty: 宋
+exam_year: 969
+ganzhi: 己巳
+ke_ci: 开宝二年己巳科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

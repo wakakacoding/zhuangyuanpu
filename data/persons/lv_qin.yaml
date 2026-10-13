@@ -1,0 +1,21 @@
+# 吕溱 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0185 | 比对状态：confirmed（name+year）
+id: lv_qin
+name: 吕溱
+zi: 叔濟；濟叔
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1008
+native_hist: 歙縣
+native_modern: 安徽省黄山市歙县
+lat: 29.87
+lng: 118.42
+dynasty: 宋
+exam_year: 1038
+ganzhi: 戊寅
+ke_ci: 宝元元年戊寅科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

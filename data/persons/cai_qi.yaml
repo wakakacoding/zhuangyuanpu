@@ -1,0 +1,20 @@
+# 蔡齐 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0179 | 比对状态：confirmed（name+year）
+id: cai_qi
+name: 蔡齐
+zi: 子思
+hao: null
+birth_year: 988
+death_year: 1039
+native_hist: 膠水
+native_modern: 山东省青岛市平度市
+lat: 36.78
+lng: 119.96
+dynasty: 宋
+exam_year: 1015
+ganzhi: 乙卯
+ke_ci: 大中祥符八年乙卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

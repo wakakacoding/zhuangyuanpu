@@ -1,0 +1,19 @@
+# 张檝 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0341 | 比对状态：suspect（名录年分阙如，朝代内唯一候选待人工核年） | 备考：待核
+id: zhang_ji
+name: 张檝
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 金
+exam_year: null
+ganzhi: null
+ke_ci: 明昌年间（年分待考）
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

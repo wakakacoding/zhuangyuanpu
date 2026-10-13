@@ -1,0 +1,20 @@
+# 杨徽之 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0135 | 比对状态：confirmed（name+year） | 备考：待核（一作显德二年955）
+id: yang_hui_zhi
+name: 杨徽之
+zi: 仲猷
+hao: null
+birth_year: 920
+death_year: 999
+native_hist: 浦城
+native_modern: 福建省南平市浦城县
+lat: 27.92
+lng: 118.54
+dynasty: 五代十国
+exam_year: 956
+ganzhi: 丙辰
+ke_ci: 后周显德三年丙辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

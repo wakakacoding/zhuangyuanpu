@@ -1,0 +1,14 @@
+person_id: wang_ying_chen
+events:
+  - year: 1118
+    year_precision: exact
+    type: 出生
+    title: 生于信州玉山
+    description: 重和元年（1118）生。《宋史》称其五岁知读书，幼凝重异常童。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1135
+    year_precision: exact
+    type: 夺魁
+    title: 绍兴五年乙卯科状元
+    description: 年十七，廷试第一。是科考官初见其策，惊为老成宿学之士，拆号方知少年。
+    source_ids: [src_timin_beilu, src_songshi_wangyingchen]

@@ -1,0 +1,21 @@
+# 胡砺 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0320 | 比对状态：missing（CBDB 无记录） | 备考：金代早期状元，《金史》有传
+id: hu_li
+name: 胡砺
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 河北磁州
+native_modern: 河北省邯郸市磁县
+lat: 36.37
+lng: 114.38
+dynasty: 金
+exam_year: 1132
+ganzhi: 壬子
+ke_ci: 天会十年壬子科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

@@ -1,0 +1,19 @@
+# 虞咸 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0016 | 比对状态：missing（CBDB 无记录）
+id: yu_xian
+name: 虞咸
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 728
+ganzhi: 戊辰
+ke_ci: 开元十六年戊辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

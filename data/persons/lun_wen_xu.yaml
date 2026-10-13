@@ -1,0 +1,21 @@
+# 伦文叙 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0431 | 比对状态：confirmed（rank1） | 备考：岭南民间传说最多的状元
+id: lun_wen_xu
+name: 伦文叙
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1469
+native_hist: 广东南海
+native_modern: 广东省佛山市南海区
+lat: 23.03
+lng: 113.14
+dynasty: 明
+exam_year: 1499
+ganzhi: 己未
+ke_ci: 弘治十二年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

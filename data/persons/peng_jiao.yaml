@@ -1,0 +1,20 @@
+# 彭教 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0419 | 比对状态：confirmed（rank1）
+id: peng_jiao
+name: 彭教
+zi: 敷五
+hao: 東瀧
+birth_year: 1438
+death_year: 1480
+native_hist: 吉水
+native_modern: 江西省吉安市吉水县
+lat: 27.22
+lng: 115.14
+dynasty: 明
+exam_year: 1464
+ganzhi: 甲申
+ke_ci: 天顺八年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

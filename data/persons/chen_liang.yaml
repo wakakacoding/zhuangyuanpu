@@ -1,0 +1,20 @@
+# 陈亮 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0236 | 比对状态：confirmed（name+year） | 备考：著名思想家，夺魁次年卒
+id: chen_liang
+name: 陈亮
+zi: 同父；同甫
+hao: 龍川
+birth_year: 1143
+death_year: 1194
+native_hist: 永康
+native_modern: 浙江省金华市永康市
+lat: 28.9
+lng: 120.03
+dynasty: 宋
+exam_year: 1193
+ganzhi: 癸丑
+ke_ci: 绍熙四年癸丑科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

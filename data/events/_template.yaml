@@ -1,0 +1,13 @@
+# event 模板 —— 复制为 <person_id>.yaml；铁律：每条事件 source_ids 不可为空
+# type 枚举：出生/应试/中举/夺魁/授官/留学/升迁/贬谪/罢官/致仕/隐居/守节/著作/卒
+# 轶事禁止写入本表，一律进 data/anecdotes/
+
+person_id: pinyin_slug
+events:
+  - year: 1900               # 公元年（int）
+    year_end: null           # year_precision 为 range 时填止年
+    year_precision: exact    # exact 确年 / about 约年 / range 年间
+    type: 夺魁               # 见上方枚举
+    title: 事件标题
+    description: 详述（可空）
+    source_ids: [src_xxx]    # 必填且非空，引用 data/sources/ 中的 id

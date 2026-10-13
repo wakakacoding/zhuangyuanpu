@@ -1,0 +1,20 @@
+# 赵文楷 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0542 | 比对状态：confirmed（rank1）
+id: zhao_wen_kai
+name: 赵文楷
+zi: 介山；逸書
+hao: null
+birth_year: 1761
+death_year: 1808
+native_hist: 太湖
+native_modern: 安徽省安庆市太湖县
+lat: 30.45
+lng: 116.31
+dynasty: 清
+exam_year: 1796
+ganzhi: 丙辰
+ke_ci: 嘉庆元年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

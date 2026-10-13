@@ -1,0 +1,21 @@
+# 孙逖 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0009 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：一说该科状元为李昂，存疑
+id: sun_ti
+name: 孙逖
+zi: null
+hao: null
+birth_year: 696
+death_year: 761
+native_hist: 涉縣
+native_modern: 河北省邯郸市涉县
+lat: 36.58
+lng: 113.69
+dynasty: 唐
+exam_year: 714
+ganzhi: 甲寅
+ke_ci: 开元二年甲寅科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

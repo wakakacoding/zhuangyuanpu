@@ -1,0 +1,21 @@
+# 傅行简 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0239 | 比对状态：confirmed（name+year）
+id: fu_xing_jian
+name: 傅行简
+zi: 居敬；敬父
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1172
+native_hist: 鄞縣
+native_modern: 浙江省宁波市鄞州区
+lat: 29.82
+lng: 121.55
+dynasty: 宋
+exam_year: 1202
+ganzhi: 壬戌
+ke_ci: 嘉泰二年壬戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

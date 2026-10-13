@@ -1,0 +1,20 @@
+# 王世琛 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0506 | 比对状态：confirmed（name+year）
+id: wang_shi_chen
+name: 王世琛
+zi: 寶傳
+hao: null
+birth_year: 1681
+death_year: 1761
+native_hist: 長洲
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 清
+exam_year: 1712
+ganzhi: 壬辰
+ke_ci: 康熙五十一年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

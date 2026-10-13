@@ -1,0 +1,19 @@
+# 刘贞 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0293 | 比对状态：missing（仅见异代同名者（元/南北朝/明/清），按缺失计） | 备考：一作刘真
+id: liu_zhen
+name: 刘贞
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 1031
+ganzhi: 辛未
+ke_ci: 景福元年辛未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

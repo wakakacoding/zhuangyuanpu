@@ -1,0 +1,21 @@
+# 丁显 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0392 | 比对状态：confirmed（rank1）
+id: ding_xian
+name: 丁显
+zi: null
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1355
+native_hist: 建陽
+native_modern: 福建省南平市建阳区
+lat: 27.33
+lng: 118.12
+dynasty: 明
+exam_year: 1385
+ganzhi: 乙丑
+ke_ci: 洪武十八年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

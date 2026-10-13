@@ -1,0 +1,26 @@
+person_id: sun_fujia
+events:
+  - year: 618
+    year_precision: about
+    type: 授官
+    title: 武德初上疏言事，受知于高祖
+    description: 仕隋为大理寺史，入唐上疏陈事，为高祖所赏。具体年份待考。
+    source_ids: [src_jiu_tangshu_sun]
+  - year: 622
+    year_precision: exact
+    type: 夺魁
+    title: 武德五年壬午科状元
+    description: 史载有姓名可考的第一位状元。
+    source_ids: [src_dengke_jikao]
+  - year: 630
+    year_precision: about
+    type: 守节
+    title: 贞观朝以直谏闻名
+    description: 累谏太宗，或谏游猎、或议律令，以骨鲠称。具体年份待考。
+    source_ids: [src_jiu_tangshu_sun]
+  - year: 658
+    year_precision: exact
+    type: 卒
+    title: 显庆三年卒
+    description: 官至大理寺卿，显庆三年（658）卒。
+    source_ids: [src_jiu_tangshu_sun]

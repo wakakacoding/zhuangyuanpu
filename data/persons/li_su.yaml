@@ -1,0 +1,21 @@
+# 李肃 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0151 | 比对状态：suspect（朝代内同名 3 人且年分均无命中）
+id: li_su
+name: 李肃
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 开封府
+native_modern: 河南省开封市
+lat: 34.8
+lng: 114.35
+dynasty: 宋
+exam_year: 966
+ganzhi: 丙寅
+ke_ci: 乾德四年丙寅科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

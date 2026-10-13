@@ -1,0 +1,19 @@
+# 徒单镒 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0326 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：女直策论进士第一，金宣宗朝名臣
+id: tu_dan_yi
+name: 徒单镒
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 金
+exam_year: 1173
+ganzhi: 癸巳
+ke_ci: 大定十三年癸巳科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

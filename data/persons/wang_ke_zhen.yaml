@@ -1,0 +1,21 @@
+# 王克贞 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0133 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：待核
+id: wang_ke_zhen
+name: 王克贞
+zi: 守節
+hao: null
+birth_year: 930
+death_year: 989
+native_hist: 廬陵
+native_modern: 江西省吉安市
+lat: 27.09
+lng: 114.99
+dynasty: 五代十国
+exam_year: 952
+ganzhi: 壬子
+ke_ci: 南唐保大十年壬子科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

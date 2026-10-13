@@ -1,0 +1,21 @@
+# 许安世 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0195 | 比对状态：confirmed（name+year）
+id: xu_an_shi
+name: 许安世
+zi: 少張
+hao: null
+birth_year: null
+death_year: 1084
+fl_year: 1021
+native_hist: 襄邑
+native_modern: 河南省商丘市睢县
+lat: 34.44
+lng: 115.08
+dynasty: 宋
+exam_year: 1067
+ganzhi: 丁未
+ke_ci: 治平四年丁未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

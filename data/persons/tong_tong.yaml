@@ -1,0 +1,18 @@
+# 同同 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0371 | 比对状态：confirmed（name+year）
+id: tong_tong
+name: 同同
+zi: 同初
+hao: null
+birth_year: 1302
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 元
+exam_year: 1333
+ganzhi: 癸酉
+ke_ci: 元统元年癸酉科右榜
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

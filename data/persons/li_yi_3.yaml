@@ -1,0 +1,21 @@
+# 李易 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0215 | 比对状态：confirmed（name+year） | 备考：南宋首科状元
+id: li_yi_3
+name: 李易
+zi: 順之
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 1098
+native_hist: 江都
+native_modern: 江苏省扬州市
+lat: 32.39
+lng: 119.41
+dynasty: 宋
+exam_year: 1128
+ganzhi: 戊申
+ke_ci: 建炎二年戊申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

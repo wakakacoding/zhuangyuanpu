@@ -1,0 +1,12 @@
+# 勘误：CBDB 将道光九年状元误记为「朱振鈞」
+id: corr_002
+target: external:cbdb
+field: name
+current: CBDB（2026-10-10 版）ENTRY_DATA 状元标记对应人物记作「朱振鈞」
+proposed: 应为「李振钧」（安徽太湖人）
+reason: 外部数据源疑讹；本站名录以《明清进士题名碑录》系为准，未采 CBDB 此条误记
+evidence: 《明清进士题名碑录》道光九年己丑科一甲第一名李振钧；CBDB 比对脚本 rank1 消解记录
+status: accepted
+reporter: 站内自查（build_index.py 反向校验）
+created: 2026-10-13
+resolution: 本站数据无误录；李振钧卡已按碑录系收录，备考注明 CBDB 误记。待向 CBDB 项目反馈。

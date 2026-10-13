@@ -1,0 +1,21 @@
+# 刘蒙叟 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0152 | 比对状态：confirmed（name+year）
+id: liu_meng_sou
+name: 刘蒙叟
+zi: 道民
+hao: null
+birth_year: null
+death_year: null
+fl_year: 937
+native_hist: 寧陵
+native_modern: 河南省商丘市宁陵县
+lat: 34.45
+lng: 115.32
+dynasty: 宋
+exam_year: 967
+ganzhi: 丁卯
+ke_ci: 乾德五年丁卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

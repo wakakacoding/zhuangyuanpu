@@ -1,0 +1,20 @@
+# 彭浚 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0546 | 比对状态：confirmed（name+year）
+id: peng_jun
+name: 彭浚
+zi: 寶臣
+hao: null
+birth_year: 1773
+death_year: null
+native_hist: 衡山
+native_modern: 湖南省衡阳市衡山县
+lat: 27.23
+lng: 112.87
+dynasty: 清
+exam_year: 1805
+ganzhi: 乙丑
+ke_ci: 嘉庆十年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

@@ -1,0 +1,19 @@
+# 陈鼎 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0272 | 比对状态：missing（仅见异代同名者（元/唐/宋/明/清），按缺失计）
+id: chen_ding
+name: 陈鼎
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 997
+ganzhi: 丁酉
+ke_ci: 统和十五年丁酉科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

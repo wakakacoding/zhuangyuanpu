@@ -1,0 +1,21 @@
+id: huang_guan
+name: 黄观
+zi: null
+hao: null
+birth_year: 1364
+death_year: 1402
+native_hist: 池州府贵池县
+native_modern: 安徽省池州市
+lat: 30.66
+lng: 117.49
+dynasty: 明
+reign: 洪武
+exam_year: 1391
+ganzhi: 辛未
+ke_ci: 洪武二十四年辛未科
+rank_detail: 一甲第一名（状元）
+bio_short: 连中三元，靖难殉国，被革除名籍。
+tags:
+- 三元及第
+- 靖难殉国
+status: published

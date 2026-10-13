@@ -1,0 +1,9 @@
+# relation 模板 —— 复制为 <from_id>.yaml（以起点人物为文件名）
+# type 枚举：同年/师生/父子/翁婿/政敌/兄弟/友人
+
+from_id: pinyin_slug
+relations:
+  - to_id: target_slug    # 须为已存在的 person.id
+    type: 同年
+    note: 关系说明
+    source_ids: [src_xxx]

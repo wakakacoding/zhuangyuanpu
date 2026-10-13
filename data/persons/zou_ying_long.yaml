@@ -1,0 +1,20 @@
+# 邹应龙 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0237 | 比对状态：confirmed（name+year）
+id: zou_ying_long
+name: 邹应龙
+zi: 景初
+hao: 南容
+birth_year: 1172
+death_year: 1244
+native_hist: 泰寧
+native_modern: 福建省三明市泰宁县
+lat: 26.9
+lng: 117.18
+dynasty: 宋
+exam_year: 1196
+ganzhi: 丙辰
+ke_ci: 庆元二年丙辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

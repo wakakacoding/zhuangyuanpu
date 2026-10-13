@@ -1,0 +1,22 @@
+# 萧遘 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0034 | 比对状态：suspect（年份冲突：名录 765 vs CBDB 入仕年 [868]）
+id: xiao_gou
+name: 萧遘
+zi: 得聖
+hao: null
+birth_year: null
+death_year: null
+fl_year: 838
+native_hist: 長安
+native_modern: 陕西省西安市
+lat: 34.27
+lng: 108.95
+dynasty: 唐
+exam_year: 765
+ganzhi: 乙巳
+ke_ci: 永泰元年乙巳科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

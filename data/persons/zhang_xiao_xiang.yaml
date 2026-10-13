@@ -1,0 +1,20 @@
+# 张孝祥 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0223 | 比对状态：confirmed（name+year） | 备考：著名词人
+id: zhang_xiao_xiang
+name: 张孝祥
+zi: 安國
+hao: 于湖先生
+birth_year: 1132
+death_year: 1170
+native_hist: 蕪湖
+native_modern: 安徽省芜湖市
+lat: 31.35
+lng: 118.43
+dynasty: 宋
+exam_year: 1154
+ganzhi: 甲戌
+ke_ci: 绍兴二十四年甲戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

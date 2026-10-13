@@ -1,0 +1,39 @@
+person_id: huang_guan
+events:
+  - year: 1364
+    year_precision: exact
+    type: 出生
+    title: 生于池州贵池
+    description: 元至正二十四年（1364）生，南直隶池州府贵池县人。
+    source_ids: [src_mingshi_huangguan]
+  - year: 1391
+    year_precision: exact
+    type: 夺魁
+    title: 洪武二十四年辛未科状元（六首连捷）
+    description: >-
+      县试、府试、院试、乡试、会试、殿试六场皆第一，时年二十八。
+      后世称「三元及第」者，黄观实为「六首」，是科举史上考试等级的全满贯。
+    source_ids: [src_timin_beilu, src_mingshi_huangguan]
+  - year: 1399
+    year_precision: about
+    type: 升迁
+    title: 建文朝官至侍中
+    description: 建文改制，设侍中之职，黄观为右侍中，与方孝孺等并见信用，多所建白。
+    source_ids: [src_mingshi_huangguan]
+  - year: 1402
+    year_precision: exact
+    type: 卒
+    title: 闻国破，投罗刹矶殉国
+    description: >-
+      建文四年（1402），燕兵渡江，黄观奉命赴上游募兵勤王。舟至罗刹矶，
+      闻金川门破、南京陷落，其妻翁氏已先殉。黄观具衣冠，东向再拜，投急湍而死，年三十九。
+      永乐朝名列奸党，家属谪戍，科举名籍革除。
+    source_ids: [src_mingshi_huangguan]
+  - year: 1645
+    year_precision: about
+    type: 升迁
+    title: 平反：从「奸党」到「文贞」
+    description: >-
+      万历间建文诸臣渐获昭雪；南明弘光朝补谥黄观「文贞」。
+      从榜上有名到碑上无名，再到谥号入祀，用了二百四十年。
+    source_ids: [src_mingshi_huangguan]

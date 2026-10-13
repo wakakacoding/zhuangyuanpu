@@ -1,0 +1,10 @@
+# anecdote 模板 —— 复制为 <person_id>.yaml
+# 与 event 物理隔离；默认 tier: C；前端以「传说」视觉样式呈现，明确区别于史实
+
+person_id: pinyin_slug
+anecdotes:
+  - title: 轶事标题
+    content: 内容
+    tier: C              # C 为默认；升 B 须有笔记类一手出处
+    source_ids: [src_xxx]
+    note: null           # 备考（如异说并存说明）

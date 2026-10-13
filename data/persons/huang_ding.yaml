@@ -1,0 +1,21 @@
+# 黄定 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0229 | 比对状态：suspect（同年同名多条 [14159, 531765]（疑似 CBDB 重条，待人工并合））
+id: huang_ding
+name: 黄定
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 永福
+native_modern: 福建省福州市永泰县
+lat: 25.87
+lng: 118.93
+dynasty: 宋
+exam_year: 1172
+ganzhi: 壬辰
+ke_ci: 乾道八年壬辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

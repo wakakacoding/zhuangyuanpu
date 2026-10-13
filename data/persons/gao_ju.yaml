@@ -1,0 +1,19 @@
+# 高举 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0264 | 比对状态：missing（仅见异代同名者（唐/宋/明/清），按缺失计） | 备考：辽有状元可考之始
+id: gao_ju
+name: 高举
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 辽
+exam_year: 988
+ganzhi: 戊子
+ke_ci: 统和六年戊子科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

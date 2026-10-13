@@ -1,0 +1,19 @@
+# 李嶷 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0015 | 比对状态：suspect（朝代内同名 6 人且年分均无命中）
+id: li_yi
+name: 李嶷
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: null
+native_modern: null
+dynasty: 唐
+exam_year: 727
+ganzhi: 丁卯
+ke_ci: 开元十五年丁卯科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

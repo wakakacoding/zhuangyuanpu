@@ -1,0 +1,21 @@
+# 陈逖 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0120 | 比对状态：missing（CBDB 无记录） | 备考：待核
+id: chen_ti
+name: 陈逖
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 河南开封
+native_modern: 河南省开封市
+lat: 34.8
+lng: 114.31
+dynasty: 五代十国
+exam_year: 912
+ganzhi: 壬申
+ke_ci: 后梁乾化二年壬申科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

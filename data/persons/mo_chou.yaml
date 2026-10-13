@@ -1,0 +1,20 @@
+# 莫俦 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0210 | 比对状态：confirmed（name+year）
+id: mo_chou
+name: 莫俦
+zi: 壽朋
+hao: null
+birth_year: 1089
+death_year: 1164
+native_hist: 吳縣
+native_modern: 江苏省苏州市
+lat: 31.3
+lng: 120.62
+dynasty: 宋
+exam_year: 1112
+ganzhi: 壬辰
+ke_ci: 政和二年壬辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

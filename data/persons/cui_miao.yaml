@@ -1,0 +1,21 @@
+# 崔邈 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0119 | 比对状态：missing（仅见异代同名者（唐），按缺失计） | 备考：待核
+id: cui_miao
+name: 崔邈
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 山东青州
+native_modern: 山东省潍坊市青州市
+lat: 36.68
+lng: 118.48
+dynasty: 五代十国
+exam_year: 908
+ganzhi: 戊辰
+ke_ci: 后梁开平二年戊辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 史料阙如
+status: published

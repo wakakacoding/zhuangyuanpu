@@ -1,0 +1,21 @@
+# 黄轩 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0531 | 比对状态：confirmed（rank1）
+id: huang_xuan
+name: 黄轩
+zi: 日駕
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1741
+native_hist: 休寧
+native_modern: 安徽省黄山市休宁县
+lat: 29.79
+lng: 118.19
+dynasty: 清
+exam_year: 1771
+ganzhi: 辛卯
+ke_ci: 乾隆三十六年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

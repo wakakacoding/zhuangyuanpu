@@ -1,0 +1,44 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import yaml from 'js-yaml';
+import SeoHead from '../../components/SeoHead.astro';
+import '../../styles/base.css';
+
+const dataDir = path.resolve(process.cwd(), '../data');
+const persons = fs.readdirSync(path.join(dataDir, 'persons'))
+  .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
+  .map((f) => yaml.load(fs.readFileSync(path.join(dataDir, 'persons', f), 'utf8')))
+  .sort((a, b) => (a.exam_year ?? 9999) - (b.exam_year ?? 9999));
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="全量索引" description={`已录 ${persons.length} 位历代状元名录，按科年排序。「阙如」为合法且诚实的展示。`} path="/persons/" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-head">
+        <h1>全量索引</h1>
+        <p class="sub">已录 {persons.length} 人（目标 600+）· 按科年排序 · 「阙如」为合法且诚实的展示 · <a href="/search/">去检索 →</a></p>
+      </header>
+      <table class="list">
+        <thead>
+          <tr><th>姓名</th><th>朝代</th><th>科年</th><th>干支</th><th>榜次</th><th>籍贯（历史）</th></tr>
+        </thead>
+        <tbody>
+          {persons.map((p) => (
+            <tr>
+              <td><a href={`/persons/${p.id}/`}>{p.name}</a></td>
+              <td>{p.dynasty}</td>
+              <td>{p.exam_year ?? '阙如'}</td>
+              <td>{p.ganzhi ?? '阙如'}</td>
+              <td>{p.rank_detail ?? '阙如'}</td>
+              <td>{p.native_hist ?? '阙如'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <a class="back" href="/">← 返回首页</a>
+    </div>
+  </body>
+</html>

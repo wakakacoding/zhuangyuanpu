@@ -1,0 +1,20 @@
+# 吴叔告 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0250 | 比对状态：confirmed（name+year）
+id: wu_shu_gao
+name: 吴叔告
+zi: 君謀
+hao: null
+birth_year: 1193
+death_year: 1265
+native_hist: 莆田
+native_modern: 福建省莆田市
+lat: 25.45
+lng: 119.01
+dynasty: 宋
+exam_year: 1235
+ganzhi: 乙未
+ke_ci: 端平二年乙未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

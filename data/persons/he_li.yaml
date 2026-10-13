@@ -1,0 +1,21 @@
+# 何栗 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0211 | 比对状态：confirmed（name+year） | 备考：北宋末名臣，靖康殉难
+id: he_li
+name: 何栗
+zi: 文縝
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1085
+native_hist: 井研
+native_modern: 四川省乐山市井研县
+lat: 29.65
+lng: 104.07
+dynasty: 宋
+exam_year: 1115
+ganzhi: 乙未
+ke_ci: 政和五年乙未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

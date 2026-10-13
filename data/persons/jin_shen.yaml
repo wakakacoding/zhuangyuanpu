@@ -1,0 +1,20 @@
+# 金甡 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0519 | 比对状态：confirmed（name+year）
+id: jin_shen
+name: 金甡
+zi: 海柱；雨叔
+hao: 靜簾齋
+birth_year: 1702
+death_year: 1782
+native_hist: 仁和
+native_modern: 浙江省杭州市
+lat: 30.25
+lng: 120.17
+dynasty: 清
+exam_year: 1742
+ganzhi: 壬戌
+ke_ci: 乾隆七年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

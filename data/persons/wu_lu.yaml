@@ -1,0 +1,20 @@
+# 吴鲁 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0587 | 比对状态：confirmed（name+year） | 备考：庚子殉难
+id: wu_lu
+name: 吴鲁
+zi: null
+hao: null
+birth_year: 1845
+death_year: 1912
+native_hist: 晉江
+native_modern: 福建省泉州市晋江市
+lat: 24.78
+lng: 118.55
+dynasty: 清
+exam_year: 1890
+ganzhi: 庚寅
+ke_ci: 光绪十六年恩科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

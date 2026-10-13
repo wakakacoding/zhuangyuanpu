@@ -1,0 +1,21 @@
+# 贾黯 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0187 | 比对状态：confirmed（name+year）
+id: jia_an
+name: 贾黯
+zi: 直孺
+hao: null
+birth_year: null
+death_year: null
+fl_year: 1016
+native_hist: 南陽
+native_modern: 河南省南阳市
+lat: 33.0
+lng: 112.53
+dynasty: 宋
+exam_year: 1046
+ganzhi: 丙戌
+ke_ci: 庆历六年丙戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

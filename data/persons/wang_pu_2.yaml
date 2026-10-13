@@ -1,0 +1,21 @@
+# 王朴 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0131 | 比对状态：suspect（朝代内同名 9 人且年分均无命中） | 备考：待核：周世宗名臣王朴，状元年待考
+id: wang_pu_2
+name: 王朴
+zi: null
+hao: null
+birth_year: null
+death_year: null
+native_hist: 山东东平
+native_modern: 山东省泰安市东平县
+lat: 35.94
+lng: 116.47
+dynasty: 五代十国
+exam_year: 951
+ganzhi: 辛亥
+ke_ci: 后周广顺元年辛亥科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags:
+- 待核
+status: published

@@ -1,0 +1,21 @@
+# 陈诚之 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0219 | 比对状态：confirmed（name+year） | 备考：该科原拟秦熺（秦桧子）第一，高宗抑置第二，陈诚之遂为状元；CBDB 标秦熺第一，异说并存
+id: chen_cheng_zhi
+name: 陈诚之
+zi: 景明
+hao: null
+birth_year: 0
+death_year: 0
+fl_year: 1112
+native_hist: 閩縣
+native_modern: 福建省福州市
+lat: 26.08
+lng: 119.3
+dynasty: 宋
+exam_year: 1142
+ganzhi: 壬戌
+ke_ci: 绍兴十二年壬戌科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

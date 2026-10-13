@@ -1,0 +1,20 @@
+# 卫泾 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0233 | 比对状态：confirmed（name+year）
+id: wei_jing
+name: 卫泾
+zi: 淸叔；清叔
+hao: 後樂；西園居士
+birth_year: 1159
+death_year: 1226
+native_hist: 崑山
+native_modern: 江苏省苏州市昆山市
+lat: 31.39
+lng: 120.96
+dynasty: 宋
+exam_year: 1184
+ganzhi: 甲辰
+ke_ci: 淳熙十一年甲辰科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

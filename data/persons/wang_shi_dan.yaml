@@ -1,0 +1,20 @@
+# 王式丹 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0503 | 比对状态：confirmed（rank1）
+id: wang_shi_dan
+name: 王式丹
+zi: 方若
+hao: 十三本梅花書屋；忍冬齋；方石；梅花書屋；樓村；樓邨；鴻柯草堂
+birth_year: 1645
+death_year: 1718
+native_hist: 寶應
+native_modern: 江苏省扬州市宝应县
+lat: 33.24
+lng: 119.36
+dynasty: 清
+exam_year: 1703
+ganzhi: 癸未
+ke_ci: 康熙四十二年科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

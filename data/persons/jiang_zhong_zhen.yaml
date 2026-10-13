@@ -1,0 +1,21 @@
+# 蒋重珍 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 来源：zhuangyuan_index.yaml z0246 | 比对状态：confirmed（name+year）
+id: jiang_zhong_zhen
+name: 蒋重珍
+zi: 良貴
+hao: 一梅先生
+birth_year: null
+death_year: null
+fl_year: 1193
+native_hist: 無錫
+native_modern: 江苏省无锡市
+lat: 31.49
+lng: 120.31
+dynasty: 宋
+exam_year: 1223
+ganzhi: 癸未
+ke_ci: 嘉定十六年癸未科
+rank_detail: 一甲第一名（状元）
+bio_short: null
+tags: []
+status: published

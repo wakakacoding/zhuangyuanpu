@@ -1,5 +1,5 @@
 ---
-import { allPersons, presentDynasties, fullProfileIds } from '../lib/persons';
+import { allPersons, presentDynasties, fullProfileIds, BASE} from '../lib/persons';
 import { listStories } from '../lib/story';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
@@ -67,10 +67,10 @@ const coverage = [
         <h1>统计仪表盘</h1>
         <p class="sub">数据截至构建时 · 覆盖率即「补全计划」公开看板</p>
         <nav class="site-nav">
-          <a href="/">首页</a>
-          <a href="/search/">检索</a>
-          <a href="/timeline/">时间线</a>
-          <a href="/persons/">索引</a>
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}timeline/`}>时间线</a>
+          <a href={`${BASE}persons/`}>索引</a>
         </nav>
       </header>
 
@@ -120,7 +120,7 @@ const coverage = [
           <h2 class="section-title">标签 TOP {tagTop.length}</h2>
           <div class="tag-cloud">
             {tagTop.map(([t, c]) => (
-              <a class="tag-pill" href={`/search/#tag=${encodeURIComponent(t)}`}>{t}<i>{c}</i></a>
+              <a class="tag-pill" href={`${BASE}search/#tag=${encodeURIComponent(t)}`}>{t}<i>{c}</i></a>
             ))}
           </div>
         </>
@@ -145,7 +145,7 @@ const coverage = [
         })}
       </div>
 
-      <a class="back" href="/">← 返回首页</a>
+      <a class="back" href={BASE}>← 返回首页</a>
     </div>
   </body>
 </html>

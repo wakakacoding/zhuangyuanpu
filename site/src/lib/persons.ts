@@ -9,6 +9,9 @@ import yaml from 'js-yaml';
 
 export const DATA_DIR = path.resolve(process.cwd(), '../data');
 
+/** 部署子路径前缀（GitHub Pages 项目页）：始终以 / 结尾，如 '/zhuangyuanpu/' */
+export const BASE = import.meta.env.BASE_URL;
+
 const cache: Record<string, any> = {};
 
 function loadYaml(file: string) {

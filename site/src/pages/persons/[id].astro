@@ -1,5 +1,5 @@
 ---
-import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf } from '../../lib/persons';
+import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf, BASE} from '../../lib/persons';
 import SeoHead from '../../components/SeoHead.astro';
 import '../../styles/base.css';
 import '../../styles/profile.css';
@@ -38,7 +38,7 @@ const yearLabel = (e: any) =>
   </head>
   <body>
     <div class="container">
-      <nav class="crumb"><a href="/">首页</a> / <a href="/persons/">索引</a> / <a href="/search/">检索</a></nav>
+      <nav class="crumb"><a href={BASE}>首页</a> / <a href={`${BASE}persons/`}>索引</a> / <a href={`${BASE}search/`}>检索</a></nav>
 
       <header class="profile-head">
         <h1>{person.name}
@@ -64,7 +64,7 @@ const yearLabel = (e: any) =>
 
       <h2 class="section-title">仕途时间线</h2>
       {sortedEvents.length === 0 ? (
-        <p class="quelu">事件档案未建。<a href="/corrections/">了解补全计划 →</a></p>
+        <p class="quelu">事件档案未建。<a href={`${BASE}corrections/`}>了解补全计划 →</a></p>
       ) : (
         <ol class="timeline-v2">
           {sortedEvents.map((e) => {
@@ -111,7 +111,7 @@ const yearLabel = (e: any) =>
           <ul>
             {relations.map((r) => (
               <li>
-                <a href={`/persons/${r.to_id}/`}>{r.to_id}</a>（{r.type}）——{r.note}
+                <a href={`${BASE}persons/${r.to_id}/`}>{r.to_id}</a>（{r.type}）——{r.note}
               </li>
             ))}
           </ul>
@@ -143,7 +143,7 @@ const yearLabel = (e: any) =>
         </>
       )}
 
-      <a class="back" href="/persons/">← 返回索引</a>
+      <a class="back" href={`${BASE}persons/`}>← 返回索引</a>
     </div>
   </body>
 </html>

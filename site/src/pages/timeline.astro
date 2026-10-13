@@ -1,5 +1,5 @@
 ---
-import { allPersons, fullProfileIds, ganzhiOf, reignYearOf, REIGNS } from '../lib/persons';
+import { allPersons, fullProfileIds, ganzhiOf, reignYearOf, REIGNS, BASE} from '../lib/persons';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/timeline.css';
@@ -62,10 +62,10 @@ const tickTitle = (p: any) => {
         <h1>朝代时间线</h1>
         <p class="sub">622 孙伏伽 — 1904 刘春霖 · {persons.length} 人 · 朱砂点 = 已建全字段档案 · 悬浮查看公元/干支/年号</p>
         <nav class="site-nav">
-          <a href="/">首页</a>
-          <a href="/search/">检索</a>
-          <a href="/persons/">索引</a>
-          <a href="/stats/">统计</a>
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}persons/`}>索引</a>
+          <a href={`${BASE}stats/`}>统计</a>
         </nav>
       </header>
 
@@ -99,7 +99,7 @@ const tickTitle = (p: any) => {
                 ))}
                 {/* 状元点 */}
                 {list.filter((p) => p.exam_year).map((p) => (
-                  <a href={`/persons/${p.id}/`}>
+                  <a href={`${BASE}persons/${p.id}/`}>
                     <circle cx={x(p.exam_year)} cy={y + laneH / 2}
                       r={fullIds.has(p.id) ? 4 : 2.4}
                       class={fullIds.has(p.id) ? 'dot dot-full' : 'dot'}>
@@ -132,7 +132,7 @@ const tickTitle = (p: any) => {
         </table>
       </section>
 
-      <a class="back" href="/">← 返回首页</a>
+      <a class="back" href={BASE}>← 返回首页</a>
     </div>
   </body>
 </html>

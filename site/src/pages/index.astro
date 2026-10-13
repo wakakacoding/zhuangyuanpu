@@ -6,6 +6,7 @@ import { listStories } from '../lib/story';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/story.css';
+import { BASE } from '../lib/persons';
 
 const dataDir = path.resolve(process.cwd(), '../data');
 const persons = fs.readdirSync(path.join(dataDir, 'persons'))
@@ -36,18 +37,18 @@ const coverage = [
         <h1>状元谱</h1>
         <p class="sub">622 年孙伏伽 — 1904 年刘春霖：一千二百八十三年，六百个「天下第一」的人生</p>
         <nav class="site-nav">
-          <a href="/stories/">故事</a>
-          <a href="/search/">检索</a>
-          <a href="/map/">籍贯地图</a>
-          <a href="/timeline/">时间线</a>
-          <a href="/stats/">统计</a>
-          <a href="/persons/">人物索引（{persons.length}）</a>
-          <a href="/corrections/">勘误</a>
+          <a href={`${BASE}stories/`}>故事</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}map/`}>籍贯地图</a>
+          <a href={`${BASE}timeline/`}>时间线</a>
+          <a href={`${BASE}stats/`}>统计</a>
+          <a href={`${BASE}persons/`}>人物索引（{persons.length}）</a>
+          <a href={`${BASE}corrections/`}>勘误</a>
         </nav>
       </header>
 
       {featured && (
-        <a class="feature" href={`/stories/${featured.slug}/`}>
+        <a class="feature" href={`${BASE}stories/${featured.slug}/`}>
           <span class="feature-tag">本期主打</span>
           <h2>{featured.title}</h2>
           {featured.subtitle && <p class="feature-sub">{featured.subtitle}</p>}
@@ -59,7 +60,7 @@ const coverage = [
       {rest.length > 0 && (
         <section class="flow">
           {rest.map((s) => (
-            <a class="flow-item" href={`/stories/${s.slug}/`}>
+            <a class="flow-item" href={`${BASE}stories/${s.slug}/`}>
               <h3>{s.title}</h3>
               {s.subtitle && <p>{s.subtitle}</p>}
             </a>
@@ -87,7 +88,7 @@ const coverage = [
         <h2 class="sec-title">已建全字段档案</h2>
         <div class="grid">
           {withEvents.map((p) => (
-            <a class="card" href={`/persons/${p.id}/`}>
+            <a class="card" href={`${BASE}persons/${p.id}/`}>
               <h2>{p.name}</h2>
               <span class="rank">{p.rank_detail ?? ''}</span>
               <p class="meta">
@@ -98,7 +99,7 @@ const coverage = [
             </a>
           ))}
         </div>
-        <a class="back" href="/persons/">→ 全量人物索引（{persons.length} 人）</a>
+        <a class="back" href={`${BASE}persons/`}>→ 全量人物索引（{persons.length} 人）</a>
       </section>
     </div>
 

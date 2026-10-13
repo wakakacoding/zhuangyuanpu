@@ -3,6 +3,7 @@ import { listStories, renderStory } from '../../lib/story';
 import SeoHead from '../../components/SeoHead.astro';
 import '../../styles/base.css';
 import '../../styles/story.css';
+import { BASE } from '../../lib/persons';
 
 export function getStaticPaths() {
   return listStories(true).map((s) => ({ params: { slug: s.slug } }));
@@ -23,7 +24,7 @@ const desc = meta.intro ?? `${meta.title}——${personNames}的故事。`;
   <body>
     <div class="container">
       <nav style="font-size:0.82rem; margin-bottom:1.4rem;">
-        <a href="/">首页</a> / <a href="/stories/">故事</a> / <a href="/persons/">人物索引</a>
+        <a href={BASE}>首页</a> / <a href={`${BASE}stories/`}>故事</a> / <a href={`${BASE}persons/`}>人物索引</a>
       </nav>
 
       <header class="story-hero">
@@ -31,7 +32,7 @@ const desc = meta.intro ?? `${meta.title}——${personNames}的故事。`;
         {meta.subtitle && <p class="subtitle">{meta.subtitle}</p>}
         <div class="meta">
           {meta.date && <span>{meta.date}</span>}
-          {persons.map((p) => <a href={`/persons/${p.id}/`}>{p.name} · {p.dynasty}</a>)}
+          {persons.map((p) => <a href={`${BASE}persons/${p.id}/`}>{p.name} · {p.dynasty}</a>)}
         </div>
         {meta.intro && <p class="intro">{meta.intro}</p>}
       </header>
@@ -52,7 +53,7 @@ const desc = meta.intro ?? `${meta.title}——${personNames}的故事。`;
           <h2>出场人物档案</h2>
           <div class="grid">
             {persons.map((p) => (
-              <a class="card" href={`/persons/${p.id}/`}>
+              <a class="card" href={`${BASE}persons/${p.id}/`}>
                 <h3>{p.name}</h3>
                 <div class="meta">
                   {p.dynasty}{p.exam_year ? ` · ${p.exam_year}（${p.ganzhi ?? '？'}）` : ''}{p.birth_year ? ` · ${p.birth_year}–${p.death_year ?? '？'}` : ''}
@@ -68,7 +69,7 @@ const desc = meta.intro ?? `${meta.title}——${personNames}的故事。`;
         <p class="s-note" style="margin-top:2rem;">构建警告：{missing.length} 处卡片标记未命中数据（{missing.join('；')}）</p>
       )}
 
-      <a class="back" href="/stories/">← 返回故事列表</a>
+      <a class="back" href={`${BASE}stories/`}>← 返回故事列表</a>
     </div>
   </body>
 </html>

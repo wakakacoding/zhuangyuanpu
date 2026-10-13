@@ -1,5 +1,5 @@
 ---
-import { allPersons, presentDynasties, fullProfileIds } from '../lib/persons';
+import { allPersons, presentDynasties, fullProfileIds, BASE} from '../lib/persons';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/search.css';
@@ -41,9 +41,9 @@ const yMax = Math.max(...years);
         <h1>检索</h1>
         <p class="sub">{persons.length} 人在库 · 朝代 / 科年 / 籍贯 / 标签自由组合</p>
         <nav class="site-nav">
-          <a href="/">首页</a>
-          <a href="/persons/">全量索引</a>
-          <a href="/stories/">故事</a>
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}persons/`}>全量索引</a>
+          <a href={`${BASE}stories/`}>故事</a>
         </nav>
       </header>
 
@@ -74,11 +74,12 @@ const yMax = Math.max(...years);
 
       <ul id="results" class="results"></ul>
 
-      <a class="back" href="/">← 返回首页</a>
+      <a class="back" href={BASE}>← 返回首页</a>
     </div>
 
     <script type="application/json" id="idx" set:html={JSON.stringify(index)} />
     <script>
+      const BASE = import.meta.env.BASE_URL;
       const idx = JSON.parse(document.getElementById('idx').textContent);
       const $ = (s) => document.querySelector(s);
       const qEl = $('#q'), tagEl = $('#tag'), yFromEl = $('#yFrom'), yToEl = $('#yTo'),
@@ -136,7 +137,7 @@ const yMax = Math.max(...years);
         countEl.textContent = `命中 ${hits.length} / ${idx.length} 人`;
         listEl.innerHTML = hits.slice(0, 500).map((p) => `
           <li class="hit">
-            <a href="/persons/${p.id}/">
+            <a href="${BASE}persons/${p.id}/">
               <b>${esc(p.n)}</b>
               ${p.full ? '<span class="full-badge">全档案</span>' : ''}
               <span class="hit-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ' · 科年阙如'}${p.nh ? ` · ${esc(p.nh)}` : ''}</span>

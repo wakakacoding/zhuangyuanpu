@@ -3,6 +3,7 @@ import { listStories } from '../../lib/story';
 import SeoHead from '../../components/SeoHead.astro';
 import '../../styles/base.css';
 import '../../styles/story.css';
+import { BASE } from '../../lib/persons';
 
 const stories = listStories();
 ---
@@ -22,7 +23,7 @@ const stories = listStories();
       ) : (
         <div class="story-list">
           {stories.map((s) => (
-            <a class="story-item" href={`/stories/${s.slug}/`}>
+            <a class="story-item" href={`${BASE}stories/${s.slug}/`}>
               <h2>{s.title}</h2>
               {s.subtitle && <p class="subtitle">{s.subtitle}</p>}
               {s.intro && <p class="intro">{s.intro}</p>}
@@ -32,7 +33,7 @@ const stories = listStories();
         </div>
       )}
 
-      <a class="back" href="/">← 返回首页</a>
+      <a class="back" href={BASE}>← 返回首页</a>
     </div>
   </body>
 </html>

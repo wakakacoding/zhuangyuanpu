@@ -12,7 +12,7 @@ export function GET(context) {
     items: stories.map((s) => ({
       title: s.title,
       description: s.intro ?? s.subtitle ?? '',
-      link: `/stories/${s.slug}/`,
+      link: `${import.meta.env.BASE_URL}stories/${s.slug}/`,
       pubDate: s.date ? new Date(s.date) : new Date(),
     })),
   });

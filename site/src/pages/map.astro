@@ -1,5 +1,5 @@
 ---
-import { allPersons, fullProfileIds } from '../lib/persons';
+import { allPersons, fullProfileIds, BASE} from '../lib/persons';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/map.css';
@@ -66,13 +66,18 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
 <html lang="zh-CN">
   <head>
     <SeoHead title="籍贯地图" description="历代状元籍贯分布地图：朝代滑块拖动，看状元产地重心千年南移。" path="/map/" />
-    <!-- 腾讯地图 GL JS：WorkBuddy 代理模式（密钥由后端持有，前端零暴露） -->
+    <!-- 腾讯地图 GL JS：本地预览走 WorkBuddy 密钥代理（占位符由运行时替换）；
+         生产部署（GitHub Pages 等静态托管）需自申腾讯位置服务 key 替换下方占位符 -->
     <script is:inline type="text/javascript">
-      window._TMapSecurityConfig = {
-        serviceHost: 'http://127.0.0.1:__WB_HTTP_PORT__/_TMapService/_wbt/__WB_TMAP_SECRET__',
-      };
+      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+        window._TMapSecurityConfig = {
+          serviceHost: 'http://127.0.0.1:__WB_HTTP_PORT__/_TMapService/_wbt/__WB_TMAP_SECRET__',
+        };
+        document.write('<script src="https://map.qq.com/api/gljs?v=1.exp"><\/script>');
+      } else {
+        document.write('<script src="https://map.qq.com/api/gljs?v=1.exp&key=Please apply for your own key at the Tencent Location Service Open Platform and replace this placeholder"><\/script>');
+      }
     </script>
-    <script is:inline src="https://map.qq.com/api/gljs?v=1.exp"></script>
   </head>
   <body>
     <div class="map-page">
@@ -82,10 +87,10 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
           <p class="sub">{pts.length} 个坐标点位 · 拖动朝代滑块，看状元产地重心千年南移</p>
         </div>
         <nav class="site-nav">
-          <a href="/">首页</a>
-          <a href="/search/">检索</a>
-          <a href="/timeline/">时间线</a>
-          <a href="/stats/">统计</a>
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}timeline/`}>时间线</a>
+          <a href={`${BASE}stats/`}>统计</a>
         </nav>
       </header>
 
@@ -112,7 +117,7 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
 
     <script type="application/json" id="pts" set:html={JSON.stringify(pts)} />
     <script type="application/json" id="cents" set:html={JSON.stringify(centroids)} />
-    <script is:inline define:vars={{ dynCount }}>
+    <script is:inline define:vars={{ dynCount, base: import.meta.env.BASE_URL }}>
       const pts = JSON.parse(document.getElementById('pts').textContent);
       const cents = JSON.parse(document.getElementById('cents').textContent);
       const DYNS = ['唐', '五代十国', '宋', '辽', '金', '元', '明', '清'];
@@ -140,7 +145,7 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
               <b>${p.n}</b>${p.full ? '<span class="pop-badge">全档案</span>' : ''}
               <div class="pop-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ''}</div>
               <div class="pop-native">${p.nm || p.nh}</div>
-              <a href="/persons/${p.id}/">查看档案 →</a>
+              <a href="${base}persons/${p.id}/">查看档案 →</a>
             </div>`);
           infoWin.setPosition(new TMap.LatLng(p.lat, p.lng));
           infoWin.open();

@@ -5,6 +5,7 @@ import yaml from 'js-yaml';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/corrections.css';
+import { BASE } from '../lib/persons';
 
 const cdir = path.resolve(process.cwd(), '../data/corrections');
 const corrections = fs.readdirSync(cdir)
@@ -44,9 +45,9 @@ const dateStr = (d: unknown) =>
         <h1>勘误</h1>
         <p class="sub">每条信息都该经得起追问。发现错误，欢迎指出——所有处理公开留痕。</p>
         <nav class="site-nav">
-          <a href="/">首页</a>
-          <a href="/search/">检索</a>
-          <a href="/persons/">索引</a>
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}persons/`}>索引</a>
         </nav>
       </header>
 
@@ -124,7 +125,7 @@ const dateStr = (d: unknown) =>
         <pre id="output" class="output" hidden></pre>
       </section>
 
-      <a class="back" href="/">← 返回首页</a>
+      <a class="back" href={BASE}>← 返回首页</a>
     </div>
 
     <script>

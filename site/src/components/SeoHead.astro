@@ -11,9 +11,10 @@ interface Props {
   type?: 'website' | 'article';
 }
 const { title, description, path = '/', image = '/og.png', type = 'website' } = Astro.props;
-const site = Astro.site ?? new URL('https://zhuangyuanpu.pages.dev');
-const url = new URL(path, site).href;
-const imgUrl = new URL(image, site).href;
+const site = Astro.site ?? new URL('https://wakakacoding.github.io');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const url = new URL(base + path, site).href;
+const imgUrl = new URL(base + image, site).href;
 const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
 ---
 <meta charset="utf-8" />

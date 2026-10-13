@@ -4,6 +4,7 @@ import path from 'node:path';
 import yaml from 'js-yaml';
 import SeoHead from '../../components/SeoHead.astro';
 import '../../styles/base.css';
+import { BASE } from '../../lib/persons';
 
 const dataDir = path.resolve(process.cwd(), '../data');
 const persons = fs.readdirSync(path.join(dataDir, 'persons'))
@@ -19,7 +20,7 @@ const persons = fs.readdirSync(path.join(dataDir, 'persons'))
     <div class="container">
       <header class="site-head">
         <h1>全量索引</h1>
-        <p class="sub">已录 {persons.length} 人（目标 600+）· 按科年排序 · 「阙如」为合法且诚实的展示 · <a href="/search/">去检索 →</a></p>
+        <p class="sub">已录 {persons.length} 人（目标 600+）· 按科年排序 · 「阙如」为合法且诚实的展示 · <a href={`${BASE}search/`}>去检索 →</a></p>
       </header>
       <table class="list">
         <thead>
@@ -28,7 +29,7 @@ const persons = fs.readdirSync(path.join(dataDir, 'persons'))
         <tbody>
           {persons.map((p) => (
             <tr>
-              <td><a href={`/persons/${p.id}/`}>{p.name}</a></td>
+              <td><a href={`${BASE}persons/${p.id}/`}>{p.name}</a></td>
               <td>{p.dynasty}</td>
               <td>{p.exam_year ?? '阙如'}</td>
               <td>{p.ganzhi ?? '阙如'}</td>
@@ -38,7 +39,7 @@ const persons = fs.readdirSync(path.join(dataDir, 'persons'))
           ))}
         </tbody>
       </table>
-      <a class="back" href="/">← 返回首页</a>
+      <a class="back" href={BASE}>← 返回首页</a>
     </div>
   </body>
 </html>

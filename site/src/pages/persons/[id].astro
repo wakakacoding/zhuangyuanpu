@@ -51,7 +51,7 @@ const yearLabel = (e: any) =>
 
       <table class="fact-table">
         <tbody>
-          <tr><th>生卒</th><td>{person.birth_year ? `${person.birth_year}–${person.death_year ?? '？'}（${ganzhiOf(person.birth_year)}–${person.death_year ? ganzhiOf(person.death_year) : '？'}）` : <span class="quelu">史料阙如</span>}</td></tr>
+          <tr><th>生卒</th><td>{(person.birth_year || person.death_year) ? `${person.birth_year || '？'}–${person.death_year ?? '？'}（${person.birth_year ? ganzhiOf(person.birth_year) : '？'}–${person.death_year ? ganzhiOf(person.death_year) : '？'}）` : <span class="quelu">史料阙如</span>}</td></tr>
           <tr><th>朝代 / 帝号</th><td>{person.dynasty}{person.reign ? ` / ${person.reign}` : ''}</td></tr>
           <tr><th>科年</th><td>{person.exam_year ? <>{person.exam_year}（{person.ganzhi ?? ganzhiOf(person.exam_year)}）{reignYearOf(person.exam_year) && <span class="reign-mark">{reignYearOf(person.exam_year)}</span>}{person.ke_ci ? ` · ${person.ke_ci}` : ''}</> : <span class="quelu">史料阙如</span>}</td></tr>
           <tr><th>榜次</th><td>{person.rank_detail ?? <span class="quelu">史料阙如</span>}</td></tr>

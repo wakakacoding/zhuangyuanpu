@@ -1,0 +1,20 @@
+from_id: lin_huan
+relations:
+- to_id: cbdb:66729
+  type: 其他
+  note: 為Y作祭文：楊寓（CBDB 外部人物）
+- to_id: cbdb:12519
+  type: 其他
+  note: 同族長輩：林葦（CBDB 外部人物）
+- to_id: cbdb:24566
+  type: 父子
+  note: 父：林繼（CBDB 外部人物）
+- to_id: cbdb:24573
+  type: 父子
+  note: 父：林時讓（CBDB 外部人物）
+- to_id: cbdb:24574
+  type: 父子
+  note: 父：林（CBDB 外部人物）
+- to_id: cbdb:24562
+  type: 父子
+  note: 從父;伯叔父：林思承（CBDB 外部人物）

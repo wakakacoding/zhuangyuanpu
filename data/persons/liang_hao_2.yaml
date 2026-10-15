@@ -15,7 +15,11 @@ exam_year: 985
 ganzhi: 乙酉
 ke_ci: 雍熙二年乙酉科
 rank_detail: 一甲第一名（状元）
-bio_short: null
+bio_short: >-
+  名录重条：与 liang_hao（梁颢）实为同一人——《宋史》作「颢」，《三字经》及
+  题名碑录系统多作「灏」，音同义通，传写异文。CBDB 以「梁颢」立目，故本条按
+  缺失计。详见 liang_hao 卡及考证故事。
 tags:
 - 史料阙如
+- 异写重条
 status: published

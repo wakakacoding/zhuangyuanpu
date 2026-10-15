@@ -1,0 +1,44 @@
+from_id: hu_dan
+relations:
+- to_id: cbdb:8023
+  type: 政敌
+  note: 反對/攻訐：趙普（CBDB 外部人物）
+- to_id: cbdb:8095
+  type: 政敌
+  note: 反對/攻訐：盧多遜（CBDB 外部人物）
+- to_id: cbdb:15396
+  type: 其他
+  note: 被Y欣賞/器重：宋白（CBDB 外部人物），始年 991
+- to_id: cbdb:348
+  type: 其他
+  note: 與Y結黨：趙昌言（CBDB 外部人物）
+- to_id: cbdb:974
+  type: 其他
+  note: 與Y結黨：李昌齡（CBDB 外部人物）
+- to_id: cbdb:1133
+  type: 其他
+  note: 與Y結黨：梁顥（CBDB 外部人物）
+- to_id: cbdb:1750
+  type: 其他
+  note: 與Y結黨：董儼（CBDB 外部人物）
+- to_id: cbdb:38443
+  type: 其他
+  note: 與Y結黨：王繼恩（CBDB 外部人物）
+- to_id: cbdb:1885
+  type: 其他
+  note: 喪事由Y經紀：王田（CBDB 外部人物）
+- to_id: cbdb:1615
+  type: 其他
+  note: 答Y書：田錫（CBDB 外部人物）
+- to_id: cbdb:44637
+  type: 父子
+  note: 父：胡叔彩（CBDB 外部人物）
+- to_id: cbdb:44640
+  type: 父子
+  note: 父：胡彬(胡旦子)（CBDB 外部人物）
+- to_id: cbdb:44641
+  type: 父子
+  note: 父：胡彤（CBDB 外部人物）
+- to_id: cbdb:44693
+  type: 父子
+  note: 從父;伯叔父：胡拱辰（CBDB 外部人物）

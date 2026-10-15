@@ -1,0 +1,14 @@
+from_id: li_chang_ning
+relations:
+- to_id: cbdb:3043
+  type: 其他
+  note: 墓誌銘由Y所作：秦觀（CBDB 外部人物）
+- to_id: cbdb:27132
+  type: 父子
+  note: 父：李弼（CBDB 外部人物）
+- to_id: cbdb:27131
+  type: 父子
+  note: 父：李永昌（CBDB 外部人物）
+- to_id: cbdb:22981
+  type: 翁婿
+  note: 岳父：秦詠（CBDB 外部人物）

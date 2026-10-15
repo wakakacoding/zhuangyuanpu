@@ -1,0 +1,101 @@
+from_id: li_di
+relations:
+- to_id: cbdb:1169
+  type: 政敌
+  note: 反對/攻訐：林特（CBDB 外部人物）
+- to_id: cbdb:8043
+  type: 其他
+  note: 為Y作祭文：范仲淹（CBDB 外部人物），始年 1045
+- to_id: cbdb:46642
+  type: 其他
+  note: 拒為Y掾屬：張庚（CBDB 外部人物）
+- to_id: cbdb:46642
+  type: 同僚
+  note: 欲辟Y為幕僚但被拒絕：張庚（CBDB 外部人物）
+- to_id: cbdb:217
+  type: 其他
+  note: 神道碑由Y所作：張方平（CBDB 外部人物），始年 1036
+- to_id: cbdb:1558
+  type: 其他
+  note: 致書Y：宋祁（CBDB 外部人物）
+- to_id: cbdb:19151
+  type: 父子
+  note: 直系祖先：李敏之（CBDB 外部人物）
+- to_id: cbdb:577858
+  type: 父子
+  note: 直系祖先：李氏(丁一謙妻)（CBDB 外部人物）
+- to_id: cbdb:12452
+  type: 父子
+  note: 七世祖;太曾祖：李宗甫（CBDB 外部人物）
+- to_id: cbdb:27430
+  type: 父子
+  note: 曾祖：李佩（CBDB 外部人物）
+- to_id: cbdb:19144
+  type: 父子
+  note: 曾祖：李在欽（CBDB 外部人物）
+- to_id: cbdb:1060
+  type: 父子
+  note: 祖父：李令珣（CBDB 外部人物）
+- to_id: cbdb:13065
+  type: 父子
+  note: 祖父：李濤（CBDB 外部人物）
+- to_id: cbdb:19149
+  type: 父子
+  note: 祖父：李孝基（CBDB 外部人物）
+- to_id: cbdb:3503
+  type: 父子
+  note: 從祖;伯叔祖：李孝壽（CBDB 外部人物）
+- to_id: cbdb:333
+  type: 父子
+  note: 外祖父：章惇（CBDB 外部人物）
+- to_id: cbdb:1036
+  type: 父子
+  note: 父：李徽之（CBDB 外部人物）
+- to_id: cbdb:19154
+  type: 父子
+  note: 父：李補之（CBDB 外部人物）
+- to_id: cbdb:41030
+  type: 父子
+  note: 父：李柬之（CBDB 外部人物）
+- to_id: cbdb:3507
+  type: 父子
+  note: 父：李護（CBDB 外部人物）
+- to_id: cbdb:3065
+  type: 翁婿
+  note: 岳父：陳襲古（CBDB 外部人物）
+- to_id: cbdb:3124
+  type: 翁婿
+  note: 岳父：張充（CBDB 外部人物）
+- to_id: cbdb:3350
+  type: 翁婿
+  note: 岳父：向絳（CBDB 外部人物）
+- to_id: cbdb:3987
+  type: 翁婿
+  note: 岳父：王端（CBDB 外部人物）
+- to_id: cbdb:1086
+  type: 父子
+  note: 從父;伯叔父：李肅之（CBDB 外部人物）
+- to_id: cbdb:3479
+  type: 父子
+  note: 從父;伯叔父：李及之（CBDB 外部人物）
+- to_id: cbdb:41233
+  type: 父子
+  note: 從父;伯叔父：李成大（CBDB 外部人物）
+- to_id: cbdb:11656
+  type: 其他
+  note: 妻之叔伯：趙（CBDB 外部人物）
+- to_id: cbdb:19670
+  type: 其他
+  note: 妻之叔伯：孫復（CBDB 外部人物）
+- to_id: cbdb:15886
+  type: 兄弟
+  note: 兄弟：李邁（CBDB 外部人物）
+- to_id: cbdb:1104
+  type: 父子
+  note: 長子; 第一子：李彥純（CBDB 外部人物）
+- to_id: cbdb:40726
+  type: 父子
+  note: 孫：白氏(李令珣妻)（CBDB 外部人物）
+- to_id: cbdb:40720
+  type: 父子
+  note: 曾孫; 重孫：潘氏(李在欽妻)（CBDB 外部人物）

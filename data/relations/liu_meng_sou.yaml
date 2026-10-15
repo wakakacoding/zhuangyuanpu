@@ -1,0 +1,20 @@
+from_id: liu_meng_sou
+relations:
+- to_id: cbdb:360
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：趙湘（CBDB 外部人物）
+- to_id: cbdb:8091
+  type: 父子
+  note: 父：劉熙古（CBDB 外部人物）
+- to_id: cbdb:4179
+  type: 父子
+  note: 父：劉宗誨（CBDB 外部人物）
+- to_id: cbdb:18393
+  type: 父子
+  note: 父：劉宗儒（CBDB 外部人物）
+- to_id: cbdb:120100
+  type: 父子
+  note: 父：劉宗弼（CBDB 外部人物）
+- to_id: cbdb:18392
+  type: 兄弟
+  note: 兄：劉蒙正（CBDB 外部人物）

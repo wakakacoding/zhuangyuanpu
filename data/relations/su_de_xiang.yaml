@@ -1,0 +1,5 @@
+from_id: su_de_xiang
+relations:
+- to_id: cbdb:332
+  type: 其他
+  note: 致書Y：張詠（CBDB 外部人物）

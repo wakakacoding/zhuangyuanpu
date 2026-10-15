@@ -1,0 +1,8 @@
+from_id: fu_xing_jian
+relations:
+- to_id: cbdb:12623
+  type: 同年
+  note: 同年友：方淙（CBDB 外部人物）
+- to_id: cbdb:42400
+  type: 同年
+  note: 同年友：何應龍（CBDB 外部人物）

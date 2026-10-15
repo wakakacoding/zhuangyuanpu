@@ -1,0 +1,20 @@
+from_id: wang_long_ze
+relations:
+- to_id: cbdb:43349
+  type: 同年
+  note: 同年友：胡幼黃（CBDB 外部人物）
+- to_id: cbdb:37892
+  type: 师生
+  note: 為Y之學生：石一鰲（CBDB 外部人物）
+- to_id: cbdb:386535
+  type: 其他
+  note: 同學、同門：許文奎（CBDB 外部人物）
+- to_id: cbdb:20065
+  type: 其他
+  note: 贈詩、文：謝翱（CBDB 外部人物）
+- to_id: cbdb:37891
+  type: 父子
+  note: 祖父：王若訥（CBDB 外部人物）
+- to_id: cbdb:38424
+  type: 兄弟
+  note: 兄：王龍友（CBDB 外部人物）

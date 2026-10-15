@@ -1,0 +1,5 @@
+from_id: wang_zheng
+relations:
+- to_id: cbdb:217
+  type: 其他
+  note: 上奏論Y：張方平（CBDB 外部人物）

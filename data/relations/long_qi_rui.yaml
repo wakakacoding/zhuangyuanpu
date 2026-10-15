@@ -1,0 +1,32 @@
+from_id: long_qi_rui
+relations:
+- to_id: cbdb:58604
+  type: 友人
+  note: 友：王拯（CBDB 外部人物）
+- to_id: cbdb:60222
+  type: 友人
+  note: 友：朱琦（CBDB 外部人物）
+- to_id: cbdb:73795
+  type: 友人
+  note: 友：呂璜（CBDB 外部人物）
+- to_id: cbdb:75033
+  type: 友人
+  note: 友：劉傳瑩（CBDB 外部人物）
+- to_id: cbdb:88490
+  type: 友人
+  note: 友：梅曾亮（CBDB 外部人物）
+- to_id: cbdb:343819
+  type: 友人
+  note: 友：王錫振（CBDB 外部人物）
+- to_id: cbdb:61369
+  type: 同年
+  note: 同年友：胡家玉（CBDB 外部人物）
+- to_id: cbdb:75375
+  type: 其他
+  note: 校訂Y之著述：劉禧延（CBDB 外部人物）
+- to_id: cbdb:72965
+  type: 父子
+  note: 父：龍繼棟（CBDB 外部人物）
+- to_id: cbdb:78882
+  type: 其他
+  note: 丈夫：何慧生（CBDB 外部人物）

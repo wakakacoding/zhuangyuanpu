@@ -1,0 +1,8 @@
+from_id: cai_sheng_yuan
+relations:
+- to_id: cbdb:79348
+  type: 其他
+  note: 被Y欣賞/器重：汪芳藻（CBDB 外部人物）
+- to_id: cbdb:124926
+  type: 其他
+  note: 同鄉：戚麟祥（CBDB 外部人物）

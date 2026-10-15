@@ -1,0 +1,5 @@
+from_id: li_fu
+relations:
+  - to_id: a_cha_chi
+    type: 同年
+    note: 1327 年同科

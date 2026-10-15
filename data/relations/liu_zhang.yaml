@@ -1,0 +1,26 @@
+from_id: liu_zhang
+relations:
+- to_id: cbdb:608
+  type: 同年
+  note: 同年友：馮方（CBDB 外部人物）
+- to_id: cbdb:3678
+  type: 同年
+  note: 同年友：莫濟（CBDB 外部人物）
+- to_id: cbdb:42848
+  type: 同年
+  note: 同年友：林機（CBDB 外部人物）
+- to_id: cbdb:8008
+  type: 政敌
+  note: 排擠：秦檜（CBDB 外部人物），始年 1155
+- to_id: cbdb:13809
+  type: 其他
+  note: 為Y所著書作序：吳泳（CBDB 外部人物），始年 1238
+- to_id: cbdb:3624
+  type: 其他
+  note: 書跋由Y所作：樓鑰（CBDB 外部人物）
+- to_id: cbdb:8008
+  type: 其他
+  note: 為Y之門客：秦檜（CBDB 外部人物），始年 1175
+- to_id: cbdb:20814
+  type: 父子
+  note: 父：劉之衡（CBDB 外部人物）

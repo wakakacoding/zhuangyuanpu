@@ -1,0 +1,14 @@
+from_id: tong_tong
+relations:
+- to_id: li_qi
+  type: 同年
+  note: 1333 年同科
+- to_id: cbdb:28800
+  type: 其他
+  note: 贈詩、文：朱德潤（CBDB 外部人物）
+- to_id: cbdb:117498
+  type: 父子
+  note: 祖父：玉速歹兒（CBDB 外部人物）
+- to_id: cbdb:117409
+  type: 父子
+  note: 父：玉速帖木兒（CBDB 外部人物）

@@ -1,0 +1,17 @@
+from_id: jin_shen
+relations:
+- to_id: cbdb:29954
+  type: 师生
+  note: 為Y之學生：朱珪（CBDB 外部人物）
+- to_id: cbdb:514119
+  type: 父子
+  note: 父：金三事（CBDB 外部人物）
+- to_id: cbdb:514120
+  type: 父子
+  note: 父：金三俊（CBDB 外部人物）
+- to_id: cbdb:514118
+  type: 翁婿
+  note: 岳父：王君喆（CBDB 外部人物）
+- to_id: cbdb:95290
+  type: 兄弟
+  note: 弟：金士珊（CBDB 外部人物）

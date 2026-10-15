@@ -1,0 +1,23 @@
+from_id: chen_cheng_zhi
+relations:
+- to_id: cbdb:13472
+  type: 同年
+  note: 同年友：唐閱（CBDB 外部人物）
+- to_id: cbdb:43640
+  type: 同年
+  note: 同年友：唐孚（CBDB 外部人物）
+- to_id: cbdb:873
+  type: 其他
+  note: 被Y欣賞/器重：霍蠡（CBDB 外部人物）
+- to_id: cbdb:1156
+  type: 其他
+  note: 為Y作祭文：林之奇（CBDB 外部人物）
+- to_id: cbdb:12587
+  type: 父子
+  note: 父：陳峴（CBDB 外部人物）
+- to_id: cbdb:12588
+  type: 父子
+  note: 從父;伯叔父：陳端友（CBDB 外部人物）
+- to_id: cbdb:14564
+  type: 兄弟
+  note: 兄：陳賓（CBDB 外部人物）

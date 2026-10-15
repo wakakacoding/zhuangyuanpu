@@ -1,0 +1,20 @@
+from_id: song_zhun
+relations:
+- to_id: cbdb:18306
+  type: 父子
+  note: 父：宋鵬（CBDB 外部人物）
+- to_id: cbdb:1558
+  type: 父子
+  note: 父：宋祁（CBDB 外部人物）
+- to_id: cbdb:18309
+  type: 父子
+  note: 父：宋大年（CBDB 外部人物）
+- to_id: cbdb:18308
+  type: 兄弟
+  note: 從弟：宋可觀（CBDB 外部人物）
+- to_id: cbdb:1558
+  type: 兄弟
+  note: 族兄：宋祁（CBDB 外部人物）
+- to_id: cbdb:121501
+  type: 兄弟
+  note: 族兄：宋郊（CBDB 外部人物）

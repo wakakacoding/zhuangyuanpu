@@ -1,0 +1,53 @@
+from_id: zhang_qiyan
+relations:
+- to_id: hu_dou_da_er
+  type: 同年
+  note: 1315 年同科
+- to_id: cbdb:10726
+  type: 其他
+  note: 推薦：王褘（CBDB 外部人物），始年 1348
+- to_id: cbdb:35398
+  type: 其他
+  note: 為Y所著書作序：曹伯啟（CBDB 外部人物），始年 1344
+- to_id: cbdb:10815
+  type: 其他
+  note: 墓誌銘由Y所作：歐陽玄（CBDB 外部人物），始年 1344
+- to_id: cbdb:10814
+  type: 其他
+  note: 墓誌銘由Y所作：歐陽龍生（CBDB 外部人物），始年 1308
+- to_id: cbdb:27993
+  type: 其他
+  note: 墓誌銘由Y所作：張養浩（CBDB 外部人物），始年 1329
+- to_id: cbdb:28143
+  type: 其他
+  note: 墓誌銘由Y所作：柳貫（CBDB 外部人物）
+- to_id: cbdb:102419
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：吳克恭（CBDB 外部人物）
+- to_id: cbdb:33229
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：朱思本（CBDB 外部人物），始年 1344
+- to_id: cbdb:106618
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：張崇（CBDB 外部人物）
+- to_id: cbdb:29356
+  type: 其他
+  note: 神道碑的書法由Y所作：董士珍（CBDB 外部人物），始年 1314
+- to_id: cbdb:29366
+  type: 其他
+  note: 神道碑額篆由Y所作：董守簡（CBDB 外部人物），始年 1346
+- to_id: cbdb:28426
+  type: 其他
+  note: 向Y致賀：胡助（CBDB 外部人物）
+- to_id: cbdb:106997
+  type: 其他
+  note: 墓表由Y所作：張如砥（CBDB 外部人物）
+- to_id: cbdb:28532
+  type: 其他
+  note: 贈詩、文：陶安（CBDB 外部人物）
+- to_id: cbdb:35488
+  type: 其他
+  note: 為Y之詩文作跋：迺賢（CBDB 外部人物）
+- to_id: cbdb:28005
+  type: 父子
+  note: 父：張範（CBDB 外部人物）

@@ -1,0 +1,38 @@
+from_id: shi_pan
+relations:
+- to_id: cbdb:66746
+  type: 师生
+  note: 為Y之學生：楊溥（CBDB 外部人物）
+- to_id: cbdb:128218
+  type: 其他
+  note: 傳記作者為Y：吳敏（CBDB 外部人物）
+- to_id: cbdb:236584
+  type: 父子
+  note: 曾祖：施希敬（CBDB 外部人物）
+- to_id: cbdb:236585
+  type: 父子
+  note: 祖父：施志方（CBDB 外部人物）
+- to_id: cbdb:236586
+  type: 父子
+  note: 父：施遵道（CBDB 外部人物）
+- to_id: cbdb:236588
+  type: 其他
+  note: 母：金氏(施槃母)（CBDB 外部人物）
+- to_id: cbdb:236591
+  type: 兄弟
+  note: 兄：施宗賢（CBDB 外部人物）
+- to_id: cbdb:236590
+  type: 其他
+  note: 丈夫：吳氏(施槃妻)（CBDB 外部人物）
+- to_id: cbdb:236590
+  type: 父子
+  note: 妻子：吳氏(施槃妻)（CBDB 外部人物）
+- to_id: cbdb:236588
+  type: 父子
+  note: 子：金氏(施槃母)（CBDB 外部人物）
+- to_id: cbdb:236589
+  type: 父子
+  note: 繼子：嚴氏(施槃繼母)（CBDB 外部人物）
+- to_id: cbdb:236589
+  type: 其他
+  note: 繼母：嚴氏(施槃繼母)（CBDB 外部人物）

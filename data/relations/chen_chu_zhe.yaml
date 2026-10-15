@@ -1,0 +1,5 @@
+from_id: chen_chu_zhe
+relations:
+- to_id: cbdb:56837
+  type: 友人
+  note: 世交父執為Y：陳輝祖（CBDB 外部人物）

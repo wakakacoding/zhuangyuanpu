@@ -1,0 +1,8 @@
+from_id: zhang_zhen_sun
+relations:
+- to_id: wen_tianxiang
+  type: 其他
+  note: 挽詩、詞由Y所作（CBDB）
+- to_id: cbdb:47241
+  type: 父子
+  note: 父：張翔泰（CBDB 外部人物）

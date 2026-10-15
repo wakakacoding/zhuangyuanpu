@@ -1,0 +1,77 @@
+from_id: luo_wan_hua
+relations:
+- to_id: cbdb:34136
+  type: 其他
+  note: 傳記作者為Y：邵廷采（CBDB 外部人物）
+- to_id: cbdb:130726
+  type: 其他
+  note: 傳記作者為Y：陶望齡（CBDB 外部人物）
+- to_id: cbdb:134778
+  type: 其他
+  note: 為Y作祭文：陳懿典（CBDB 外部人物）
+- to_id: cbdb:124310
+  type: 其他
+  note: 行狀由Y所作：朱賡（CBDB 外部人物）
+- to_id: cbdb:30240
+  type: 其他
+  note: 致書Y：馮夢禎（CBDB 外部人物）
+- to_id: cbdb:126943
+  type: 其他
+  note: 致書Y：支大綸（CBDB 外部人物）
+- to_id: cbdb:129426
+  type: 其他
+  note: 致書Y：唐文燦（CBDB 外部人物）
+- to_id: cbdb:123935
+  type: 其他
+  note: 答Y書：王家屏（CBDB 外部人物）
+- to_id: cbdb:333541
+  type: 父子
+  note: 曾祖：羅霳（CBDB 外部人物）
+- to_id: cbdb:368151
+  type: 父子
+  note: 祖父：羅元賓（CBDB 外部人物）
+- to_id: cbdb:333542
+  type: 父子
+  note: 祖父：羅道（CBDB 外部人物）
+- to_id: cbdb:333544
+  type: 父子
+  note: 父：羅拱璧（CBDB 外部人物）
+- to_id: cbdb:333545
+  type: 其他
+  note: 母：沈氏(羅萬化母)（CBDB 外部人物）
+- to_id: cbdb:333549
+  type: 兄弟
+  note: 兄：羅萬言（CBDB 外部人物）
+- to_id: cbdb:333550
+  type: 兄弟
+  note: 兄：羅萬善（CBDB 外部人物）
+- to_id: cbdb:333551
+  type: 兄弟
+  note: 兄：羅萬益（CBDB 外部人物）
+- to_id: cbdb:333552
+  type: 兄弟
+  note: 兄：羅萬春（CBDB 外部人物）
+- to_id: cbdb:333553
+  type: 兄弟
+  note: 兄：羅萬全（CBDB 外部人物）
+- to_id: cbdb:333556
+  type: 兄弟
+  note: 兄：羅萬壽（CBDB 外部人物）
+- to_id: cbdb:333548
+  type: 兄弟
+  note: 兄：羅萬象（CBDB 外部人物）
+- to_id: cbdb:333546
+  type: 其他
+  note: 丈夫：金氏(羅萬化妻)（CBDB 外部人物）
+- to_id: cbdb:333547
+  type: 其他
+  note: 丈夫：謝氏(羅萬化繼妻)（CBDB 外部人物）
+- to_id: cbdb:333546
+  type: 父子
+  note: 妻子：金氏(羅萬化妻)（CBDB 外部人物）
+- to_id: cbdb:333545
+  type: 父子
+  note: 子：沈氏(羅萬化母)（CBDB 外部人物）
+- to_id: cbdb:563577
+  type: 父子
+  note: 過繼的嗣孫：朱氏(羅道妻)（CBDB 外部人物）

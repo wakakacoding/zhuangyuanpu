@@ -1,0 +1,11 @@
+from_id: liu_li_shun
+relations:
+- to_id: cbdb:60027
+  type: 其他
+  note: 致書Y：張鏡心（CBDB 外部人物）
+- to_id: cbdb:29578
+  type: 其他
+  note: 答Y書：陳龍正（CBDB 外部人物）
+- to_id: cbdb:207756
+  type: 其他
+  note: 答Y書：楊之璋（CBDB 外部人物）

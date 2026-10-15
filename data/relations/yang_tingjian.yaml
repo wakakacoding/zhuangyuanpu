@@ -1,0 +1,14 @@
+from_id: yang_tingjian
+relations:
+- to_id: cbdb:130558
+  type: 其他
+  note: 喪事由Y經紀：張瑋（CBDB 外部人物）
+- to_id: cbdb:34215
+  type: 其他
+  note: 與Y為講學：孫慎行（CBDB 外部人物）
+- to_id: cbdb:76612
+  type: 父子
+  note: 父：楊大鶴（CBDB 外部人物）
+- to_id: cbdb:364907
+  type: 父子
+  note: 父：楊大鯤（CBDB 外部人物）

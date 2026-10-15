@@ -1,0 +1,8 @@
+from_id: shi_zhi_guang
+relations:
+- to_id: cbdb:87204
+  type: 友人
+  note: 友：翁元圻（CBDB 外部人物）
+- to_id: cbdb:514466
+  type: 父子
+  note: 父：史承沛（CBDB 外部人物）

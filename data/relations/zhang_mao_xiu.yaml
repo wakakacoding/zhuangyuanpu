@@ -1,0 +1,53 @@
+from_id: zhang_mao_xiu
+relations:
+- to_id: cbdb:218613
+  type: 父子
+  note: 曾祖：張鎮（CBDB 外部人物）
+- to_id: cbdb:218615
+  type: 父子
+  note: 祖父：張文明（CBDB 外部人物）
+- to_id: cbdb:69011
+  type: 父子
+  note: 父：張居正（CBDB 外部人物）
+- to_id: cbdb:218617
+  type: 其他
+  note: 母：吳氏(張懋修母)（CBDB 外部人物）
+- to_id: cbdb:130348
+  type: 兄弟
+  note: 兄：張允修（CBDB 外部人物）
+- to_id: cbdb:218621
+  type: 兄弟
+  note: 兄：張靜修（CBDB 外部人物）
+- to_id: cbdb:218623
+  type: 兄弟
+  note: 兄：張簡修（CBDB 外部人物）
+- to_id: cbdb:218624
+  type: 兄弟
+  note: 兄：張慎修（CBDB 外部人物）
+- to_id: cbdb:218626
+  type: 兄弟
+  note: 兄：張道修（CBDB 外部人物）
+- to_id: cbdb:206487
+  type: 兄弟
+  note: 兄：張敬修（CBDB 外部人物）
+- to_id: cbdb:218622
+  type: 兄弟
+  note: 兄：張嗣修（CBDB 外部人物）
+- to_id: cbdb:218620
+  type: 其他
+  note: 丈夫：高氏(張懋修妻)（CBDB 外部人物）
+- to_id: cbdb:218620
+  type: 父子
+  note: 妻子：高氏(張懋修妻)（CBDB 外部人物）
+- to_id: cbdb:218617
+  type: 父子
+  note: 子：吳氏(張懋修母)（CBDB 外部人物）
+- to_id: cbdb:218618
+  type: 父子
+  note: 繼子：顧氏(張懋修前母)（CBDB 外部人物）
+- to_id: cbdb:218619
+  type: 父子
+  note: 私生子：何氏(張懋修生母)（CBDB 外部人物）
+- to_id: cbdb:218618
+  type: 其他
+  note: 繼母：顧氏(張懋修前母)（CBDB 外部人物）

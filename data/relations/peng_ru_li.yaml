@@ -1,0 +1,59 @@
+from_id: peng_ru_li
+relations:
+- to_id: cbdb:15439
+  type: 友人
+  note: 友：程禦（CBDB 外部人物），始年 1086
+- to_id: cbdb:38146
+  type: 政敌
+  note: 彈劾：王中正（CBDB 外部人物）
+- to_id: cbdb:40864
+  type: 政敌
+  note: 反對/攻訐：李憲（CBDB 外部人物）
+- to_id: cbdb:3825
+  type: 其他
+  note: 被Y欣賞/器重：唐既（CBDB 外部人物）
+- to_id: cbdb:7072
+  type: 其他
+  note: 為Y所著書作序：曾肇（CBDB 外部人物）
+- to_id: cbdb:1232
+  type: 其他
+  note: 書跋由Y所作：劉隨（CBDB 外部人物）
+- to_id: cbdb:10156
+  type: 其他
+  note: 書跋由Y所作：洪皓（CBDB 外部人物）
+- to_id: cbdb:2022
+  type: 其他
+  note: 書跋由Y所作：楊時（CBDB 外部人物）
+- to_id: cbdb:1762
+  type: 其他
+  note: 致書Y：王安石（CBDB 外部人物）
+- to_id: cbdb:3672
+  type: 其他
+  note: 致書Y：毛滂（CBDB 外部人物）
+- to_id: cbdb:8131
+  type: 其他
+  note: 致書Y：蔡卞（CBDB 外部人物）
+- to_id: cbdb:12157
+  type: 其他
+  note: 致書Y：劉弇（CBDB 外部人物）
+- to_id: cbdb:12354
+  type: 其他
+  note: 致書Y：張耒（CBDB 外部人物）
+- to_id: cbdb:8098
+  type: 其他
+  note: 致書Y：陸佃（CBDB 外部人物）
+- to_id: cbdb:4190
+  type: 父子
+  note: 父：彭A（CBDB 外部人物）
+- to_id: cbdb:7397
+  type: 翁婿
+  note: 岳父：吳材（CBDB 外部人物）
+- to_id: cbdb:3707
+  type: 兄弟
+  note: 兄：彭汝方（CBDB 外部人物）
+- to_id: cbdb:3708
+  type: 兄弟
+  note: 兄：彭汝霖（CBDB 外部人物）
+- to_id: cbdb:13120
+  type: 兄弟
+  note: 兄：彭汝發（CBDB 外部人物）

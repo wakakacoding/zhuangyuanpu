@@ -1,26 +1,81 @@
 person_id: sun_fujia
 events:
   - year: 618
-    year_precision: about
+    year_precision: exact
     type: 授官
-    title: 武德初上疏言事，受知于高祖
-    description: 仕隋为大理寺史，入唐上疏陈事，为高祖所赏。具体年份待考。
-    source_ids: [src_jiu_tangshu_sun]
+    title: 武德元年上疏三事，擢治书侍御史
+    description: >-
+      时以万年县法曹上疏谏三事：一曰开不讳之路（隋失天下者，不闻其过也），
+      二曰废百戏散乐，三曰为皇太子及诸王慎选僚友。高祖下诏褒称，赐帛三百匹，
+      颁示远近——「帝受禅，伏伽最先谏」。武德二年，高祖谓裴寂：「惟李纲善尽
+      忠款，孙伏伽可谓诚直。」
+    source_ids: [src_jiu_tangshu_sun, src_xin_tangshu_sun]
+  - year: 621
+    year_precision: exact
+    type: 守节
+    title: 谏止流徙王世充、窦建德余党，并请置谏官
+    description: >-
+      东都平，大赦天下；既而又欲责其党羽，悉令配迁恶地。伏伽上疏力争：
+      「法者，陛下自作之，还须守之，使天下百姓信而畏之。」高祖纳其言，
+      余党得免流徙；又上表请置谏官，高祖皆纳焉。
+    source_ids: [src_jiu_tangshu_sun, src_xin_tangshu_sun]
   - year: 622
     year_precision: exact
     type: 夺魁
-    title: 武德五年壬午科状元
-    description: 史载有姓名可考的第一位状元。
-    source_ids: [src_dengke_jikao]
-  - year: 630
+    title: 武德五年壬午科进士第一
+    description: >-
+      十月诸州贡士入京，十一月敕付尚书省考试，吏部考功员外郎申世宁主试，
+      取秀才一人、进士四人（《唐摭言》作十四人），孙伏伽进士第一——
+      有姓名可考的科举史上第一位状元。
+    source_ids: [src_dengke_jikao, src_yuzhitang_tanhui]
+  - year: 627
+    year_precision: exact
+    type: 升迁
+    title: 封乐安县男，转大理少卿
+    description: 太宗即位，赐爵乐安县男。贞观元年，转大理少卿，由言官重回司法中枢。
+    source_ids: [src_jiu_tangshu_sun, src_xin_tangshu_sun]
+  - year: 628
     year_precision: about
     type: 守节
-    title: 贞观朝以直谏闻名
-    description: 累谏太宗，或谏游猎、或议律令，以骨鲠称。具体年份待考。
+    title: 上书谏太宗走马射帖
+    description: >-
+      谏太宗马射：「千金之子，坐不垂堂……陛下虽欲自轻，其奈社稷天下何！」
+      太宗览之大悦。旧唐书系于贞观元年转大理少卿之后，具体年待考。
+    source_ids: [src_jiu_tangshu_sun, src_xin_tangshu_sun]
+  - year: 631
+    year_precision: exact
+    type: 罢官
+    title: 坐奏囚误失免官
+    description: >-
+      贞观五年，以奏囚误失免官，寻起为刑部郎中。同年张蕴古案发，太宗悔恨
+      之余诏定死刑三覆奏——伏伽之免与制度之立先后相接，慎刑由此成为
+      一代法司的共同课题。
+    source_ids: [src_jiu_tangshu_sun]
+  - year: 631
+    year_end: 640
+    year_precision: range
+    type: 升迁
+    title: 复出，历刑部郎中、大理少卿、民部侍郎
+    description: >-
+      免官后寻起为刑部郎中，累迁大理少卿，转民部侍郎。任内断司农木橦案：
+      司农以倍价市木橦，右丞韦悰劾其吏隐没，伏伽断「缘官市贵，故民直贱。
+      臣见司农识大体，不见其罪」，太宗谓韦悰「卿不逮伏伽远矣」。
+    source_ids: [src_jiu_tangshu_sun, src_xin_tangshu_sun]
+  - year: 640
+    year_precision: exact
+    type: 升迁
+    title: 贞观十四年拜大理卿
+    description: 由民部侍郎拜大理卿，执掌天下刑名，为大理寺长官。
+    source_ids: [src_jiu_tangshu_sun]
+  - year: 654
+    year_precision: exact
+    type: 致仕
+    title: 永徽五年以年老致仕
+    description: 拜大理卿后出为陕州刺史，永徽五年以年老致仕。
     source_ids: [src_jiu_tangshu_sun]
   - year: 658
     year_precision: exact
     type: 卒
     title: 显庆三年卒
-    description: 官至大理寺卿，显庆三年（658）卒。
-    source_ids: [src_jiu_tangshu_sun]
+    description: 显庆三年（658）卒。生年阙如，卒年亦不载葬地。
+    source_ids: [src_jiu_tangshu_sun, src_xin_tangshu_sun]

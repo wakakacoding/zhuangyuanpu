@@ -1,0 +1,38 @@
+from_id: yao_ying
+relations:
+- to_id: cbdb:21049
+  type: 同年
+  note: 同年友：曹莊（CBDB 外部人物）
+- to_id: cbdb:42329
+  type: 同年
+  note: 同年友：邵樸（CBDB 外部人物）
+- to_id: cbdb:47472
+  type: 同年
+  note: 同年友：陳晅（CBDB 外部人物）
+- to_id: cbdb:3624
+  type: 其他
+  note: 墓誌銘由Y所作：樓鑰（CBDB 外部人物）
+- to_id: cbdb:10289
+  type: 其他
+  note: 墓誌銘由Y所作：袁燮（CBDB 外部人物），始年 1183
+- to_id: cbdb:10749
+  type: 其他
+  note: 墓誌銘由Y所作：葉適（CBDB 外部人物）
+- to_id: cbdb:10751
+  type: 父子
+  note: 祖父：姚孚（CBDB 外部人物）
+- to_id: cbdb:10753
+  type: 父子
+  note: 父：姚元特（CBDB 外部人物）
+- to_id: cbdb:10754
+  type: 父子
+  note: 父：姚元哲（CBDB 外部人物）
+- to_id: cbdb:24355
+  type: 父子
+  note: 父：姚孝全（CBDB 外部人物）
+- to_id: cbdb:10697
+  type: 翁婿
+  note: 岳父：王淮（CBDB 外部人物）
+- to_id: cbdb:10699
+  type: 翁婿
+  note: 岳父：王儼（CBDB 外部人物）

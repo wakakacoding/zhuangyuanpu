@@ -1,0 +1,14 @@
+person_id: liang_gu
+events:
+  - year: 1009
+    year_precision: about
+    title: 举服勤词学科，擢甲第（名录作大中祥符二年状元）
+    type: 夺魁
+    description: 初以父颢遗荫赐进士出身，服阕诣登闻院让还前命，愿赴乡举，许之。名录作大中祥符二年己酉科状元；《宋史》本传作大中祥符元年举服勤词学科擢甲第——科年、科目两说并存。与父颢世称「父子状元」。
+    source_ids: [src_songshi_liang, src_chaoye_zaji]
+  - year: 1017
+    year_precision: about
+    title: 天禧大礼成，奏颂甚工，无几卒
+    type: 卒
+    description: 官至著作郎、直史馆。《宋史》本传载卒年三十三（逆推约生于雍熙二年，即父颢夺魁之年）；CBDB 作 987–1019，异说并存。
+    source_ids: [src_songshi_liang]

@@ -1,0 +1,17 @@
+from_id: zhuang_pei_yin
+relations:
+- to_id: cbdb:29876
+  type: 同年
+  note: 同年友：錢大昕（CBDB 外部人物）
+- to_id: cbdb:68081
+  type: 同僚
+  note: 同僚：曹錫寶（CBDB 外部人物）
+- to_id: cbdb:74647
+  type: 父子
+  note: 父：莊柱（CBDB 外部人物）
+- to_id: cbdb:74687
+  type: 父子
+  note: 父：莊述祖（CBDB 外部人物）
+- to_id: cbdb:66888
+  type: 兄弟
+  note: 從弟：莊清度（CBDB 外部人物）

@@ -1,0 +1,17 @@
+from_id: mao_zi_zhi
+relations:
+- to_id: cbdb:27690
+  type: 同年
+  note: 同年友：趙彥悈（CBDB 外部人物）
+- to_id: cbdb:41647
+  type: 同年
+  note: 同年友：李鳴鳳（CBDB 外部人物）
+- to_id: cbdb:46217
+  type: 同年
+  note: 同年友：徐雄（CBDB 外部人物）
+- to_id: cbdb:48126
+  type: 同年
+  note: 同年友：陶木（CBDB 外部人物）
+- to_id: cbdb:49462
+  type: 同年
+  note: 同年友：楊璘（CBDB 外部人物）

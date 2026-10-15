@@ -1,0 +1,23 @@
+from_id: lv_qin
+relations:
+- to_id: cbdb:1384
+  type: 其他
+  note: 推薦：歐陽修（CBDB 外部人物），始年 1068
+- to_id: cbdb:34
+  type: 政敌
+  note: 反對/攻訐：陳執中（CBDB 外部人物）
+- to_id: cbdb:3676
+  type: 其他
+  note: 傳記作者為Y：米芾（CBDB 外部人物）
+- to_id: cbdb:1488
+  type: 其他
+  note: 答Y啓：司馬光（CBDB 外部人物）
+- to_id: cbdb:428
+  type: 父子
+  note: 岳母之父：鄭文寶（CBDB 外部人物）
+- to_id: cbdb:15516
+  type: 父子
+  note: 父：呂士元（CBDB 外部人物）
+- to_id: cbdb:428
+  type: 翁婿
+  note: 外孫女婿：鄭文寶（CBDB 外部人物）

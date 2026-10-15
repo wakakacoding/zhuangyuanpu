@@ -1,0 +1,83 @@
+from_id: qin_ming_lei
+relations:
+- to_id: cbdb:131205
+  type: 其他
+  note: 為Y所著書作序：湯賓尹（CBDB 外部人物）
+- to_id: cbdb:684850
+  type: 其他
+  note: 從Y學：陳武（CBDB 外部人物）
+- to_id: cbdb:338504
+  type: 其他
+  note: 行狀由Y所作：張鳯翼（CBDB 外部人物）
+- to_id: cbdb:69011
+  type: 其他
+  note: 致書Y：張居正（CBDB 外部人物）
+- to_id: cbdb:35065
+  type: 其他
+  note: 贈詩、文：王宗沐（CBDB 外部人物）
+- to_id: cbdb:125302
+  type: 其他
+  note: 為Y之考官：陳有年（CBDB 外部人物）
+- to_id: cbdb:126439
+  type: 其他
+  note: 為Y之考官：王一鶚（CBDB 外部人物）
+- to_id: cbdb:415555
+  type: 其他
+  note: 為Y之考官：王鍚爵（CBDB 外部人物）
+- to_id: cbdb:291359
+  type: 父子
+  note: 曾祖：秦宗傅（CBDB 外部人物）
+- to_id: cbdb:291360
+  type: 父子
+  note: 祖父：秦彥彬（CBDB 外部人物）
+- to_id: cbdb:699531
+  type: 父子
+  note: 父：秦氏(應存徵妻)（CBDB 外部人物）
+- to_id: cbdb:266298
+  type: 父子
+  note: 父：秦禮（CBDB 外部人物）
+- to_id: cbdb:323636
+  type: 翁婿
+  note: 岳父：應存徵（CBDB 外部人物）
+- to_id: cbdb:305230
+  type: 父子
+  note: 嗣父：秦文（CBDB 外部人物）
+- to_id: cbdb:305231
+  type: 其他
+  note: 母：姚氏(秦鳴雷母)（CBDB 外部人物）
+- to_id: cbdb:129691
+  type: 兄弟
+  note: 兄：秦鳴夏（CBDB 外部人物）
+- to_id: cbdb:291368
+  type: 兄弟
+  note: 兄：秦鳴冬（CBDB 外部人物）
+- to_id: cbdb:291365
+  type: 兄弟
+  note: 兄：秦鳴春（CBDB 外部人物）
+- to_id: cbdb:291366
+  type: 兄弟
+  note: 兄：秦鳴秋（CBDB 外部人物）
+- to_id: cbdb:305233
+  type: 其他
+  note: 丈夫：趙氏(秦鳴雷妻)（CBDB 外部人物）
+- to_id: cbdb:305233
+  type: 父子
+  note: 妻子：趙氏(秦鳴雷妻)（CBDB 外部人物）
+- to_id: cbdb:699531
+  type: 其他
+  note: 女兒：秦氏(應存徵妻)（CBDB 外部人物）
+- to_id: cbdb:305231
+  type: 父子
+  note: 子：姚氏(秦鳴雷母)（CBDB 外部人物）
+- to_id: cbdb:702229
+  type: 父子
+  note: 過繼的嗣子：楊氏(秦文妻)（CBDB 外部人物）
+- to_id: cbdb:305232
+  type: 父子
+  note: 繼子：楊氏(秦鳴雷繼母)（CBDB 外部人物）
+- to_id: cbdb:305232
+  type: 其他
+  note: 繼母：楊氏(秦鳴雷繼母)（CBDB 外部人物）
+- to_id: cbdb:702229
+  type: 其他
+  note: 嗣母：楊氏(秦文妻)（CBDB 外部人物）

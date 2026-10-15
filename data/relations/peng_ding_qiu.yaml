@@ -1,0 +1,59 @@
+from_id: peng_ding_qiu
+relations:
+- to_id: cbdb:33903
+  type: 友人
+  note: 友：潘耒（CBDB 外部人物）
+- to_id: cbdb:74080
+  type: 友人
+  note: 友：朱用純（CBDB 外部人物）
+- to_id: cbdb:86864
+  type: 友人
+  note: 友：徐世沐（CBDB 外部人物）
+- to_id: cbdb:91538
+  type: 友人
+  note: 友：潘恬如（CBDB 外部人物）
+- to_id: cbdb:125288
+  type: 友人
+  note: 友：顧培（CBDB 外部人物）
+- to_id: cbdb:550848
+  type: 其他
+  note: 被Y欣賞/器重：胡廷璣（CBDB 外部人物）
+- to_id: cbdb:34836
+  type: 师生
+  note: 為Y之學生：湯斌（CBDB 外部人物）
+- to_id: cbdb:511451
+  type: 师生
+  note: 為Y之弟子：林雲翥（CBDB 外部人物）
+- to_id: cbdb:511669
+  type: 师生
+  note: 為Y之弟子：秉銓政（CBDB 外部人物）
+- to_id: cbdb:81174
+  type: 师生
+  note: 為Y之弟子：陸在新（CBDB 外部人物）
+- to_id: cbdb:81174
+  type: 其他
+  note: 墓誌銘由Y所作：陸在新（CBDB 外部人物）
+- to_id: cbdb:556018
+  type: 友人
+  note: 相唱和：汪與圖（CBDB 外部人物）
+- to_id: cbdb:700771
+  type: 其他
+  note: 為Y篆匾額、器銘：袁氏(沈大立妻)（CBDB 外部人物）
+- to_id: cbdb:522119
+  type: 父子
+  note: 直系祖先：彭學一（CBDB 外部人物）
+- to_id: cbdb:522117
+  type: 父子
+  note: 高祖;四世祖：彭天秩（CBDB 外部人物）
+- to_id: cbdb:522118
+  type: 父子
+  note: 祖父：彭德先（CBDB 外部人物）
+- to_id: cbdb:89278
+  type: 父子
+  note: 從祖;伯叔祖：彭行先（CBDB 外部人物）
+- to_id: cbdb:33916
+  type: 父子
+  note: 父：彭瓏（CBDB 外部人物）
+- to_id: cbdb:89271
+  type: 父子
+  note: 父：彭正乾（CBDB 外部人物）

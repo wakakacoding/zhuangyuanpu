@@ -1,0 +1,44 @@
+from_id: liu_gongquan
+relations:
+- to_id: cbdb:94227
+  type: 友人
+  note: 友：賈島（CBDB 外部人物）
+- to_id: cbdb:42114
+  type: 其他
+  note: 書風為Y所模仿：宗翼（CBDB 外部人物）
+- to_id: cbdb:32227
+  type: 其他
+  note: 贈詩、文：白居易（CBDB 外部人物）
+- to_id: cbdb:94227
+  type: 其他
+  note: 贈詩、文：賈島（CBDB 外部人物）
+- to_id: cbdb:447146
+  type: 其他
+  note: 贈詩、文：魚又玄（CBDB 外部人物）
+- to_id: cbdb:175289
+  type: 其他
+  note: 贈詩、文：李昂（CBDB 外部人物）
+- to_id: cbdb:448287
+  type: 其他
+  note: 贈詩、文：李炎（CBDB 外部人物）
+- to_id: cbdb:450568
+  type: 其他
+  note: 贈詩、文：朱審（CBDB 外部人物）
+- to_id: cbdb:173750
+  type: 同僚
+  note: 上司為Y：李聽（CBDB 外部人物）
+- to_id: cbdb:173750
+  type: 其他
+  note: 下屬為Y：李聽（CBDB 外部人物）
+- to_id: cbdb:33583
+  type: 父子
+  note: 父：柳子溫（CBDB 外部人物）
+- to_id: cbdb:159195
+  type: 父子
+  note: 父：柳知微（CBDB 外部人物）
+- to_id: cbdb:178244
+  type: 父子
+  note: 父：柳仲憲（CBDB 外部人物）
+- to_id: cbdb:33588
+  type: 兄弟
+  note: 兄：柳公綽（CBDB 外部人物）

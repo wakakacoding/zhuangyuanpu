@@ -1,0 +1,26 @@
+from_id: yang_li
+relations:
+- to_id: cbdb:4050
+  type: 父子
+  note: 曾祖：楊守信（CBDB 外部人物）
+- to_id: cbdb:119800
+  type: 父子
+  note: 祖父：楊知禮（CBDB 外部人物）
+- to_id: cbdb:1999
+  type: 父子
+  note: 父：楊嶠（CBDB 外部人物）
+- to_id: cbdb:2033
+  type: 父子
+  note: 父：楊嵎（CBDB 外部人物）
+- to_id: cbdb:22432
+  type: 父子
+  note: 父：楊嶧（CBDB 外部人物）
+- to_id: cbdb:22433
+  type: 父子
+  note: 父：楊（CBDB 外部人物）
+- to_id: cbdb:119808
+  type: 父子
+  note: 父：楊峭（CBDB 外部人物）
+- to_id: cbdb:119814
+  type: 父子
+  note: 父：楊仁儼（CBDB 外部人物）

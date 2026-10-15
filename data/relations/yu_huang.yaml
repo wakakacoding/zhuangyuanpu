@@ -1,0 +1,8 @@
+from_id: yu_huang
+relations:
+- to_id: cbdb:128370
+  type: 兄弟
+  note: 兄：余增遠（CBDB 外部人物）
+- to_id: cbdb:562691
+  type: 兄弟
+  note: 弟：余增雍（CBDB 外部人物）

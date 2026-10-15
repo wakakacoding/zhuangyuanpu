@@ -1,0 +1,5 @@
+from_id: huo_xi_xian
+relations:
+  - to_id: hu_dou_da_er_2
+    type: 同年
+    note: 1318 年同科

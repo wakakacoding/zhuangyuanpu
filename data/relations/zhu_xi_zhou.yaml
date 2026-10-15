@@ -1,0 +1,11 @@
+from_id: zhu_xi_zhou
+relations:
+- to_id: cbdb:132918
+  type: 其他
+  note: 得罪Y：劉瑾（CBDB 外部人物）
+- to_id: cbdb:28806
+  type: 父子
+  note: 父：朱文（CBDB 外部人物）
+- to_id: cbdb:28808
+  type: 父子
+  note: 父：朱景固（CBDB 外部人物）

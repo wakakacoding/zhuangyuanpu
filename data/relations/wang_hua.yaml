@@ -1,0 +1,17 @@
+from_id: wang_hua
+relations:
+- to_id: cbdb:128769
+  type: 师生
+  note: 為Y之學生：牧相（CBDB 外部人物）
+- to_id: cbdb:374173
+  type: 其他
+  note: 喪事由Y經紀：金克厚（CBDB 外部人物）
+- to_id: cbdb:30374
+  type: 其他
+  note: 致書Y：王守仁（CBDB 外部人物），始年 1512
+- to_id: cbdb:135107
+  type: 其他
+  note: 致書Y：富翁妾（CBDB 外部人物）
+- to_id: cbdb:30374
+  type: 父子
+  note: 父：王守仁（CBDB 外部人物）

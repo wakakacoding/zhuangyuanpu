@@ -1,0 +1,74 @@
+from_id: yang_wei_cong
+relations:
+- to_id: cbdb:68236
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：霍韜（CBDB 外部人物）
+- to_id: cbdb:34700
+  type: 其他
+  note: 向Y致賀：王慎中（CBDB 外部人物）
+- to_id: cbdb:68246
+  type: 其他
+  note: 答Y書：王廷相（CBDB 外部人物）
+- to_id: cbdb:34697
+  type: 其他
+  note: 贈詩、文：高叔嗣（CBDB 外部人物）
+- to_id: cbdb:283015
+  type: 父子
+  note: 曾祖：楊榮（CBDB 外部人物）
+- to_id: cbdb:283016
+  type: 父子
+  note: 祖父：楊名（CBDB 外部人物）
+- to_id: cbdb:283017
+  type: 父子
+  note: 父：楊和（CBDB 外部人物）
+- to_id: cbdb:283019
+  type: 其他
+  note: 母：于氏(楊維聰母)（CBDB 外部人物）
+- to_id: cbdb:283021
+  type: 其他
+  note: 母：張氏(楊維聰母)（CBDB 外部人物）
+- to_id: cbdb:283032
+  type: 兄弟
+  note: 兄：楊維誠（CBDB 外部人物）
+- to_id: cbdb:283023
+  type: 兄弟
+  note: 兄：楊鳳（CBDB 外部人物）
+- to_id: cbdb:283024
+  type: 兄弟
+  note: 兄：楊麒（CBDB 外部人物）
+- to_id: cbdb:283025
+  type: 兄弟
+  note: 兄：楊鵬（CBDB 外部人物）
+- to_id: cbdb:283026
+  type: 兄弟
+  note: 兄：楊維督（CBDB 外部人物）
+- to_id: cbdb:283027
+  type: 兄弟
+  note: 兄：楊維良（CBDB 外部人物）
+- to_id: cbdb:283028
+  type: 兄弟
+  note: 兄：楊鴻鷴（CBDB 外部人物）
+- to_id: cbdb:283029
+  type: 兄弟
+  note: 兄：楊維忠（CBDB 外部人物）
+- to_id: cbdb:283030
+  type: 兄弟
+  note: 兄：楊維傑（CBDB 外部人物）
+- to_id: cbdb:283022
+  type: 其他
+  note: 丈夫：辛氏(楊維聰妻)（CBDB 外部人物）
+- to_id: cbdb:283022
+  type: 父子
+  note: 妻子：辛氏(楊維聰妻)（CBDB 外部人物）
+- to_id: cbdb:283019
+  type: 父子
+  note: 子：于氏(楊維聰母)（CBDB 外部人物）
+- to_id: cbdb:283021
+  type: 父子
+  note: 子：張氏(楊維聰母)（CBDB 外部人物）
+- to_id: cbdb:283018
+  type: 父子
+  note: 繼子：劉氏(楊維聰前母)（CBDB 外部人物）
+- to_id: cbdb:283018
+  type: 其他
+  note: 繼母：劉氏(楊維聰前母)（CBDB 外部人物）

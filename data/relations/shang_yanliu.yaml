@@ -1,0 +1,5 @@
+from_id: shang_yanliu
+relations:
+  - to_id: liu_chunlin
+    type: 同年
+    note: 1904 年同科

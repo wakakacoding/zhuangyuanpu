@@ -1,0 +1,29 @@
+from_id: wang_rong
+relations:
+- to_id: cbdb:13426
+  type: 同年
+  note: 同年友：石宗萬（CBDB 外部人物）
+- to_id: cbdb:20324
+  type: 同年
+  note: 同年友：趙崇樸（CBDB 外部人物）
+- to_id: cbdb:39020
+  type: 同年
+  note: 同年友：田慈龍（CBDB 外部人物）
+- to_id: cbdb:41911
+  type: 同年
+  note: 同年友：吳振（CBDB 外部人物）
+- to_id: cbdb:43267
+  type: 同年
+  note: 同年友：柴景望（CBDB 外部人物）
+- to_id: cbdb:45714
+  type: 同年
+  note: 同年友：康仲穎（CBDB 外部人物）
+- to_id: cbdb:47330
+  type: 同年
+  note: 同年友：張興祖（CBDB 外部人物）
+- to_id: cbdb:49585
+  type: 同年
+  note: 同年友：楊祖堯(光)（CBDB 外部人物）
+- to_id: cbdb:27711
+  type: 其他
+  note: 書跋由Y所作：廖行之（CBDB 外部人物）

@@ -1,0 +1,68 @@
+from_id: ke_qian
+relations:
+- to_id: cbdb:25127
+  type: 其他
+  note: 為Y所著書作序：羅從彥（CBDB 外部人物）
+- to_id: cbdb:126815
+  type: 其他
+  note: 傳記作者為Y：王㒜（CBDB 外部人物）
+- to_id: cbdb:28691
+  type: 其他
+  note: 為Y作祭文：李東陽（CBDB 外部人物）
+- to_id: cbdb:66920
+  type: 其他
+  note: 墓表由Y所作：陳泰（CBDB 外部人物）
+- to_id: cbdb:523906
+  type: 父子
+  note: 高祖;四世祖：柯憲孫（CBDB 外部人物）
+- to_id: cbdb:242630
+  type: 父子
+  note: 曾祖：柯均實（CBDB 外部人物）
+- to_id: cbdb:523901
+  type: 父子
+  note: 曾祖：柯君寶（CBDB 外部人物）
+- to_id: cbdb:242741
+  type: 父子
+  note: 祖父：柯德平（CBDB 外部人物）
+- to_id: cbdb:523902
+  type: 父子
+  note: 父：柯宗文（CBDB 外部人物）
+- to_id: cbdb:242852
+  type: 父子
+  note: 父：柯原樸（CBDB 外部人物）
+- to_id: cbdb:523904
+  type: 父子
+  note: 父：柯原𤪤（CBDB 外部人物）
+- to_id: cbdb:523903
+  type: 父子
+  note: 族父：柯拱比（CBDB 外部人物）
+- to_id: cbdb:242963
+  type: 其他
+  note: 母：戴氏(柯潛母)（CBDB 外部人物）
+- to_id: cbdb:243185
+  type: 兄弟
+  note: 兄：柯江（CBDB 外部人物）
+- to_id: cbdb:243296
+  type: 兄弟
+  note: 兄：柯淦（CBDB 外部人物）
+- to_id: cbdb:243407
+  type: 兄弟
+  note: 兄：柯深（CBDB 外部人物）
+- to_id: cbdb:243518
+  type: 兄弟
+  note: 兄：柯混（CBDB 外部人物）
+- to_id: cbdb:243630
+  type: 兄弟
+  note: 兄：柯溫（CBDB 外部人物）
+- to_id: cbdb:523905
+  type: 兄弟
+  note: 兄：柯澍（CBDB 外部人物）
+- to_id: cbdb:243074
+  type: 其他
+  note: 丈夫：戴氏(柯潛妻)（CBDB 外部人物）
+- to_id: cbdb:243074
+  type: 父子
+  note: 妻子：戴氏(柯潛妻)（CBDB 外部人物）
+- to_id: cbdb:242963
+  type: 父子
+  note: 子：戴氏(柯潛母)（CBDB 外部人物）

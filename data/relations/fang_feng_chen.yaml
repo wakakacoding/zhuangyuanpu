@@ -1,0 +1,182 @@
+from_id: fang_feng_chen
+relations:
+- to_id: cbdb:41923
+  type: 友人
+  note: 友：吳攀龍（CBDB 外部人物）
+- to_id: cbdb:52748
+  type: 师生
+  note: 為Y之學生：魏新之（CBDB 外部人物）
+- to_id: cbdb:10740
+  type: 其他
+  note: 為Y所著書作序：黃溍（CBDB 外部人物）
+- to_id: cbdb:16242
+  type: 其他
+  note: 為Y所著書作序：錢可則（CBDB 外部人物）
+- to_id: cbdb:25229
+  type: 其他
+  note: 為Y所著書作序：林景熙（CBDB 外部人物）
+- to_id: yao_mian
+  type: 其他
+  note: 為Y所著書作序（CBDB）
+- to_id: cbdb:43481
+  type: 其他
+  note: 為Y所著書作序：胡伯驥（CBDB 外部人物）
+- to_id: cbdb:51243
+  type: 其他
+  note: 為Y所著書作序：鄭珤（CBDB 外部人物）
+- to_id: cbdb:103691
+  type: 其他
+  note: 為Y所著書作序：汪巽元（CBDB 外部人物）
+- to_id: cbdb:5030
+  type: 其他
+  note: 墓誌銘由Y所作：邵氏(方逢辰妻)（CBDB 外部人物）
+- to_id: cbdb:5268
+  type: 其他
+  note: 墓誌銘由Y所作：潘氏(方天驥妻)（CBDB 外部人物）
+- to_id: cbdb:16973
+  type: 其他
+  note: 墓誌銘由Y所作：方天驥（CBDB 外部人物）
+- to_id: cbdb:24471
+  type: 其他
+  note: 墓誌銘由Y所作：文及翁（CBDB 外部人物）
+- to_id: cbdb:40906
+  type: 其他
+  note: 節行為Y所稱道：李介叔（CBDB 外部人物）
+- to_id: cbdb:10363
+  type: 其他
+  note: 拒絕在Y主政的政府中任職：鄭清之（CBDB 外部人物）
+- to_id: cbdb:10374
+  type: 其他
+  note: 拒絕在Y主政的政府中任職：賈似道（CBDB 外部人物），始年 1280
+- to_id: cbdb:102606
+  type: 友人
+  note: 相唱和：夾谷之奇（CBDB 外部人物）
+- to_id: cbdb:27826
+  type: 其他
+  note: 為Y作祭文：何夢桂（CBDB 外部人物）
+- to_id: cbdb:28257
+  type: 其他
+  note: 聘Y執教族學：蔣沐（CBDB 外部人物）
+- to_id: cbdb:38565
+  type: 其他
+  note: 神道碑序由Y所作：王應午（CBDB 外部人物）
+- to_id: cbdb:43560
+  type: 其他
+  note: 行狀由Y所作：俞公明（CBDB 外部人物）
+- to_id: cbdb:34892
+  type: 其他
+  note: 致書Y：釋道璨（CBDB 外部人物）
+- to_id: cbdb:10767
+  type: 其他
+  note: 致書Y：包恢（CBDB 外部人物）
+- to_id: cbdb:10948
+  type: 其他
+  note: 致書Y：趙汝騰（CBDB 外部人物）
+- to_id: cbdb:15991
+  type: 其他
+  note: 致書Y：陳宜中（CBDB 外部人物）
+- to_id: cbdb:16040
+  type: 其他
+  note: 致書Y：吳淵（CBDB 外部人物）
+- to_id: cbdb:38434
+  type: 其他
+  note: 致書Y：朱禩孫（CBDB 外部人物）
+- to_id: cbdb:41973
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：何時（CBDB 外部人物）
+- to_id: cbdb:38671
+  type: 其他
+  note: 學記（書院記）由Y所作：石孝聞（CBDB 外部人物）
+- to_id: cbdb:43519
+  type: 其他
+  note: 為Y所作詩文作序：俞演（CBDB 外部人物）
+- to_id: cbdb:504
+  type: 其他
+  note: 為Y作祠記：周敦頤（CBDB 外部人物）
+- to_id: cbdb:3102
+  type: 其他
+  note: 為Y作祠記：程顥（CBDB 外部人物）
+- to_id: cbdb:3105
+  type: 其他
+  note: 為Y作祠記：程頤（CBDB 外部人物）
+- to_id: cbdb:27727
+  type: 其他
+  note: 為Y作祠記：方回（CBDB 外部人物）
+- to_id: cbdb:16940
+  type: 父子
+  note: 曾祖：方道叡（CBDB 外部人物）
+- to_id: cbdb:386421
+  type: 父子
+  note: 曾祖：方汝翼（CBDB 外部人物）
+- to_id: cbdb:16939
+  type: 父子
+  note: 祖父：方一夔（CBDB 外部人物）
+- to_id: cbdb:16935
+  type: 父子
+  note: 祖父：方謙（CBDB 外部人物）
+- to_id: cbdb:36943
+  type: 父子
+  note: 父：方粱（CBDB 外部人物）
+- to_id: cbdb:36944
+  type: 父子
+  note: 父：方棟（CBDB 外部人物）
+- to_id: cbdb:36945
+  type: 父子
+  note: 父：方傑（CBDB 外部人物）
+- to_id: cbdb:386425
+  type: 父子
+  note: 父：方氏(方逢辰女)（CBDB 外部人物）
+- to_id: cbdb:386426
+  type: 父子
+  note: 父：方氏(方逢辰女)（CBDB 外部人物）
+- to_id: cbdb:16936
+  type: 父子
+  note: 父：方鎔（CBDB 外部人物）
+- to_id: cbdb:16972
+  type: 翁婿
+  note: 岳父：項雄飛（CBDB 外部人物）
+- to_id: cbdb:36946
+  type: 翁婿
+  note: 岳父：徐敏中（CBDB 外部人物）
+- to_id: cbdb:386428
+  type: 翁婿
+  note: 岳父：邵元廷（CBDB 外部人物）
+- to_id: cbdb:16965
+  type: 翁婿
+  note: 岳父：邵彌高（CBDB 外部人物）
+- to_id: cbdb:386422
+  type: 其他
+  note: 母：邵氏(方逢辰母)（CBDB 外部人物）
+- to_id: cbdb:16937
+  type: 兄弟
+  note: 兄：方逢振（CBDB 外部人物）
+- to_id: cbdb:16938
+  type: 兄弟
+  note: 兄：方逢嘉（CBDB 外部人物）
+- to_id: cbdb:16973
+  type: 兄弟
+  note: 從弟：方天驥（CBDB 外部人物）
+- to_id: cbdb:386423
+  type: 其他
+  note: 丈夫：趙氏(方逢辰妻)（CBDB 外部人物）
+- to_id: cbdb:386424
+  type: 其他
+  note: 丈夫：朱氏(方逢辰妻)（CBDB 外部人物）
+- to_id: cbdb:5030
+  type: 父子
+  note: 妻子：邵氏(方逢辰妻)（CBDB 外部人物）
+- to_id: cbdb:386422
+  type: 父子
+  note: 子：邵氏(方逢辰母)（CBDB 外部人物）
+- to_id: cbdb:386426
+  type: 其他
+  note: 二女：方氏(方逢辰女)（CBDB 外部人物）
+- to_id: cbdb:50974
+  type: 翁婿
+  note: 孫女婿：趙順孫（CBDB 外部人物）
+- to_id: cbdb:386425
+  type: 其他
+  note: 長女：方氏(方逢辰女)（CBDB 外部人物）
+- to_id: cbdb:386427
+  type: 其他
+  note: 三女：方氏(邵元廷妻)（CBDB 外部人物）

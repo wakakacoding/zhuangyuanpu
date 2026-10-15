@@ -1,0 +1,11 @@
+from_id: li_qi
+relations:
+- to_id: tong_tong
+  type: 同年
+  note: 1333 年同科
+- to_id: cbdb:28334
+  type: 其他
+  note: 哀辭由Y所作：張翥（CBDB 外部人物）
+- to_id: cbdb:28616
+  type: 其他
+  note: 贈詩、文：錢惟善（CBDB 外部人物）

@@ -1,0 +1,5 @@
+from_id: zhang_yi
+relations:
+  - to_id: ba_la
+    type: 同年
+    note: 1324 年同科

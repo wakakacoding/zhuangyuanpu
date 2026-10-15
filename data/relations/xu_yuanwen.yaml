@@ -1,0 +1,26 @@
+from_id: xu_yuanwen
+relations:
+- to_id: cbdb:57237
+  type: 政敌
+  note: 彈劾：姚啟聖（CBDB 外部人物）
+- to_id: cbdb:30713
+  type: 其他
+  note: 推薦：黃宗羲（CBDB 外部人物）
+- to_id: cbdb:55858
+  type: 师生
+  note: 為Y之學生：尤侗（CBDB 外部人物）
+- to_id: cbdb:57404
+  type: 师生
+  note: 為Y之學生：衛周祚（CBDB 外部人物）
+- to_id: cbdb:519928
+  type: 父子
+  note: 祖父：徐德符（CBDB 外部人物）
+- to_id: cbdb:353976
+  type: 父子
+  note: 父：徐樹本（CBDB 外部人物）
+- to_id: cbdb:30399
+  type: 兄弟
+  note: 兄：徐乾學（CBDB 外部人物）
+- to_id: cbdb:86971
+  type: 兄弟
+  note: 兄：徐秉義（CBDB 外部人物）

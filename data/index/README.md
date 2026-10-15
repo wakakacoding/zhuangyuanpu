@@ -1,6 +1,6 @@
 # 全量状元索引（v1.0）· 数据说明与比对方法
 
-> 生成：`scripts/build_index.py`（2026-10-13） | 主索引：`zhuangyuan_index.yaml` / `zhuangyuan_index.csv` | 明细报告：`index_report.md`
+> 生成：`scripts/build_index.py`（2026-10-13） | 主索引：`zhuangyuan_index.yaml` / `zhuangyuan_index.csv` | 明细报告：`index_report.md` | 关系汇总：`relations_summary.yaml`（data/relations/ 聚合，含度数榜与扁平边表）
 
 ## 一、规模与结论
 

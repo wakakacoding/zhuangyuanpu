@@ -1,0 +1,8 @@
+from_id: wang_ang
+relations:
+- to_id: zhao_kai
+  type: 同年
+  note: 1118 年同科
+- to_id: cbdb:44210
+  type: 同年
+  note: 同年友：馬擴（CBDB 外部人物）

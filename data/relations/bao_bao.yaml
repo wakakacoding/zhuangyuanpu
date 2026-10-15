@@ -1,0 +1,5 @@
+from_id: bao_bao
+relations:
+  - to_id: he_ke_ming
+    type: 同年
+    note: 1363 年同科

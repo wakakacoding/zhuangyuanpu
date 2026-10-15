@@ -1,0 +1,14 @@
+from_id: wu_zhong_jun
+relations:
+- to_id: cbdb:703952
+  type: 其他
+  note: 被Y欣賞/器重：王琖（CBDB 外部人物）
+- to_id: cbdb:66036
+  type: 师生
+  note: 為Y之學生：朱珔（CBDB 外部人物）
+- to_id: cbdb:56825
+  type: 其他
+  note: 為Y之考官：胡林翼（CBDB 外部人物）
+- to_id: cbdb:352263
+  type: 父子
+  note: 父：吳頤（CBDB 外部人物）

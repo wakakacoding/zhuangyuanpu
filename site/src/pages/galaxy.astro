@@ -1,0 +1,321 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import { BASE, REIGNS } from '../lib/persons';
+import { listStories } from '../lib/story';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/base.css';
+import '../styles/galaxy.css';
+
+// ---- 构建期读取星图数据 ----
+const galaxy = JSON.parse(
+  fs.readFileSync(path.resolve(process.cwd(), 'public/data/galaxy.json'), 'utf8'),
+) as {
+  v: number; gen: string; xr: [number, number]; bands: string[]; tiers: string[];
+  stars: Array<{ s: string; n: string; d: string; ey: number; x: number; y: number; t: number; gz: string | null; rg: string | null; st?: string }>;
+};
+
+// ---- 人物 → 故事 slug（t=0 星的「阅读他的故事」链接）----
+const personStory = new Map<string, string>();
+for (const st of listStories(true)) {
+  for (const pid of st.persons ?? []) if (!personStory.has(pid)) personStory.set(pid, st.slug);
+}
+
+// ---- 年号纪年推算：rg 字段 + 科年 ----
+const CN = '零一二三四五六七八九';
+function cnNum(n: number): string {
+  if (n <= 10) return n === 10 ? '十' : CN[n];
+  if (n < 20) return '十' + CN[n % 10];
+  const t = Math.floor(n / 10), o = n % 10;
+  return CN[t] + '十' + (o ? CN[o] : '');
+}
+function reignLabel(rg: string | null, ey: number): string | null {
+  if (!rg) return null;
+  const r = REIGNS[rg];
+  if (r && ey >= r[0] && ey <= r[1]) return `${rg}${cnNum(ey - r[0] + 1)}年`;
+  return rg;
+}
+
+// ---- 确定性抖动（避免同年同带星点完全重叠），哈希 slug ----
+function hash(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+const BAND_H = 100; // 每条朝代带的世界高度
+const stars = galaxy.stars.map((s) => {
+  const h = hash(s.s);
+  return {
+    s: s.s, n: s.n, d: s.d, y: s.ey, t: s.t, gz: s.gz ?? '', ry: reignLabel(s.rg, s.ey) ?? '',
+    wx: s.x - galaxy.xr[0] + ((h % 43) - 21),          // 世界 x（年偏移 + 抖动）
+    wy: s.y * BAND_H + BAND_H / 2 + (((h >> 6) % 47) - 23), // 世界 y（带心 + 抖动）
+    st: s.t === 0 ? (s.st || personStory.get(s.s) || '') : '',
+  };
+});
+
+// 移动端降级列表：按朝代带分组
+const bandGroups = galaxy.bands.map((b, i) => ({
+  band: b,
+  list: stars.filter((s) => s.d === b || galaxy.stars.find((g) => g.s === s.s)?.y === i)
+    .sort((a, b2) => a.y - b2.y),
+})).filter((g) => g.list.length > 0);
+
+const counts = {
+  story: stars.filter((s) => s.t === 0).length,
+  full: stars.filter((s) => s.t === 1).length,
+};
+---
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="状元星图" description="571 位历代状元化作星点：横轴科年、纵轴朝代，金亮者皆有其传。拖拽平移、滚轮缩放，夜观千年文曲。" path="/galaxy/" />
+  </head>
+  <body>
+    <div class="galaxy-page">
+      <header class="galaxy-head">
+        <h1>状元星图</h1>
+        <p class="sub">{stars.length} 星 · {galaxy.xr[0]}—{galaxy.xr[1]} · 金亮 {counts.story} · 拖拽平移，滚轮缩放</p>
+        <nav class="site-nav">
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}map/`}>地图</a>
+          <a href={`${BASE}timeline/`}>时间线</a>
+          <a href={`${BASE}stats/`}>统计</a>
+          <a href={`${BASE}about/`}>关于</a>
+        </nav>
+      </header>
+
+      <p class="galaxy-guide">
+        读图指南：横轴为登科之年，纵轴为朝代分带，每一点是一位状元。金点有故事可读，朱砂点已建全档案，米白小点为史籍确认、存疑或失考者，光度随证据递减。悬浮见其公元、年号、干支三套纪年，点击展开小帖，可入档案、可读其传。
+      </p>
+
+      <div class="galaxy-stage">
+        <canvas id="galaxyCanvas" aria-label="状元星图，横轴科年，纵轴朝代"></canvas>
+        <span class="galaxy-hint">拖拽平移 · 滚轮缩放 · 点击星点看帖</span>
+      </div>
+
+      <div class="galaxy-legend">
+        <span><i class="lg-story"></i>有故事（{counts.story}）</span>
+        <span><i class="lg-full"></i>全档案（{counts.full}）</span>
+        <span><i class="lg-plain"></i>确认 / 存疑 / 失考（{stars.length - counts.story - counts.full}）</span>
+      </div>
+
+      {/* 移动端降级：竖滚朝代分带列表 */}
+      <div class="band-list">
+        {bandGroups.map((g) => (
+          <section>
+            <h2>{g.band}<span>{g.list.length} 人</span></h2>
+            <ul>
+              {g.list.map((s) => (
+                <li>
+                  <a href={`${BASE}persons/${s.s}/`}>
+                    {s.t === 0 && <span class="bl-star">★</span>}{s.n}
+                  </a>
+                  <span class="bl-year">{s.y}{s.ry ? ` · ${s.ry}` : ''}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </div>
+
+    <div id="galaxyTip" role="tooltip"></div>
+    <div id="galaxyCard">
+      <button class="tie-close" aria-label="关闭">✕</button>
+      <div class="pop" id="galaxyCardBody"></div>
+    </div>
+
+    <script type="application/json" id="stars" set:html={JSON.stringify({ stars, xr: galaxy.xr, bands: galaxy.bands, bandH: BAND_H })} />
+    <script is:inline define:vars={{ base: import.meta.env.BASE_URL }}>
+      const DATA = JSON.parse(document.getElementById('stars').textContent);
+      const STARS = DATA.stars, XR = DATA.xr, BANDS = DATA.bands, BH = DATA.bandH;
+      const WW = XR[1] - XR[0], WH = BANDS.length * BH;
+
+      const canvas = document.getElementById('galaxyCanvas');
+      const ctx = canvas.getContext('2d');
+      const tip = document.getElementById('galaxyTip');
+      const card = document.getElementById('galaxyCard');
+      const cardBody = document.getElementById('galaxyCardBody');
+
+      // 视图：世界坐标 → 屏幕。view = {x, y} 世界中心偏移（屏幕左上对应的世界点）+ scale
+      let view = { x: 0, y: 0, scale: 1 };
+      let dpr = 1, cw = 0, ch = 0;
+      let screenPts = []; // 每帧缓存屏幕坐标供命中检测
+      let raf = 0, dirty = true;
+
+      function resize() {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        cw = canvas.clientWidth; ch = canvas.clientHeight;
+        canvas.width = cw * dpr; canvas.height = ch * dpr;
+        dirty = true; schedule();
+      }
+
+      function fitView() {
+        const sx = cw / WW, sy = ch / WH;
+        view.scale = Math.min(sx, sy) * 0.96;
+        view.x = (WW - cw / view.scale) / 2;
+        view.y = (WH - ch / view.scale) / 2;
+        dirty = true; schedule();
+      }
+
+      const TIER_STYLE = [
+        { r: 5.2, color: '#d4af37', alpha: 1, glow: true },   // 有故事
+        { r: 4.2, color: '#c0392b', alpha: 0.95 },            // 全档案
+        { r: 2.6, color: '#e8e2d0', alpha: 0.8 },             // confirmed
+        { r: 2.1, color: '#e8e2d0', alpha: 0.55 },            // suspect
+        { r: 1.7, color: '#e8e2d0', alpha: 0.35 },            // missing
+      ];
+
+      function render() {
+        raf = 0;
+        if (!dirty) return;
+        dirty = false;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        // 底：玄青黛蓝渐变
+        const g = ctx.createLinearGradient(0, 0, 0, ch);
+        g.addColorStop(0, '#10182a'); g.addColorStop(1, '#0c1220');
+        ctx.fillStyle = g; ctx.fillRect(0, 0, cw, ch);
+
+        const toSX = (wx) => (wx - view.x) * view.scale;
+        const toSY = (wy) => (wy - view.y) * view.scale;
+
+        // 朝代带：交替底色 + 金线分隔 + 带名
+        ctx.textBaseline = 'middle';
+        for (let i = 0; i < BANDS.length; i++) {
+          const y0 = toSY(i * BH), y1 = toSY((i + 1) * BH);
+          if (y1 < 0 || y0 > ch) continue;
+          if (i % 2 === 0) { ctx.fillStyle = 'rgba(212,175,55,0.035)'; ctx.fillRect(0, y0, cw, y1 - y0); }
+          ctx.strokeStyle = 'rgba(169,139,63,0.28)'; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(0, y0); ctx.lineTo(cw, y0); ctx.stroke();
+          ctx.fillStyle = 'rgba(232,217,168,0.75)';
+          ctx.font = '600 13px "Songti SC", serif';
+          ctx.fillText(BANDS[i], 10, (y0 + y1) / 2);
+        }
+
+        // 百年刻度金线
+        ctx.font = '10px Georgia, serif';
+        for (let yr = Math.ceil(XR[0] / 100) * 100; yr <= XR[1]; yr += 100) {
+          const sx = toSX(yr - XR[0]);
+          if (sx < -20 || sx > cw + 20) continue;
+          ctx.strokeStyle = 'rgba(169,139,63,0.16)';
+          ctx.beginPath(); ctx.moveTo(sx, 0); ctx.lineTo(sx, ch); ctx.stroke();
+          ctx.fillStyle = 'rgba(232,226,208,0.45)';
+          ctx.fillText(String(yr), sx + 3, ch - 10);
+        }
+
+        // 星点
+        screenPts.length = 0;
+        const zoomK = Math.sqrt(view.scale);
+        for (const s of STARS) {
+          const sx = toSX(s.wx), sy = toSY(s.wy);
+          if (sx < -12 || sx > cw + 12 || sy < -12 || sy > ch + 12) continue;
+          const st = TIER_STYLE[s.t];
+          const r = st.r * Math.min(zoomK, 2.2);
+          if (st.glow) {
+            const rg = ctx.createRadialGradient(sx, sy, 0, sx, sy, r * 3);
+            rg.addColorStop(0, 'rgba(212,175,55,0.55)'); rg.addColorStop(1, 'rgba(212,175,55,0)');
+            ctx.fillStyle = rg;
+            ctx.beginPath(); ctx.arc(sx, sy, r * 3, 0, 6.2832); ctx.fill();
+          }
+          ctx.globalAlpha = st.alpha;
+          ctx.fillStyle = st.color;
+          ctx.beginPath(); ctx.arc(sx, sy, r, 0, 6.2832); ctx.fill();
+          ctx.globalAlpha = 1;
+          screenPts.push({ s, sx, sy, r: Math.max(r, 6) });
+        }
+      }
+
+      function schedule() { if (!raf) raf = requestAnimationFrame(render); }
+
+      // ---- 拖拽平移 ----
+      let drag = null, moved = false;
+      canvas.addEventListener('pointerdown', (e) => {
+        drag = { x: e.clientX, y: e.clientY }; moved = false;
+        canvas.classList.add('dragging');
+        canvas.setPointerCapture(e.pointerId);
+      });
+      canvas.addEventListener('pointermove', (e) => {
+        if (drag) {
+          const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+          if (Math.abs(dx) + Math.abs(dy) > 3) moved = true;
+          view.x -= dx / view.scale; view.y -= dy / view.scale;
+          drag = { x: e.clientX, y: e.clientY };
+          dirty = true; schedule(); hideTip();
+        } else {
+          hover(e);
+        }
+      });
+      canvas.addEventListener('pointerup', (e) => {
+        canvas.classList.remove('dragging');
+        const wasDrag = moved; drag = null;
+        if (!wasDrag) click(e);
+      });
+
+      // ---- 滚轮缩放（以指针为中心）----
+      canvas.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const rect = canvas.getBoundingClientRect();
+        const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+        const wx = view.x + mx / view.scale, wy = view.y + my / view.scale;
+        view.scale = Math.min(9, Math.max(0.35, view.scale * (e.deltaY < 0 ? 1.16 : 1 / 1.16)));
+        view.x = wx - mx / view.scale; view.y = wy - my / view.scale;
+        dirty = true; schedule(); hideTip();
+      }, { passive: false });
+
+      // ---- 命中检测 ----
+      function pick(e) {
+        const rect = canvas.getBoundingClientRect();
+        const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+        let best = null, bd = 14;
+        for (const p of screenPts) {
+          const d = Math.hypot(p.sx - mx, p.sy - my) - p.r;
+          if (d < bd) { bd = d; best = p; }
+        }
+        return best;
+      }
+
+      function hover(e) {
+        const p = pick(e);
+        if (!p) { hideTip(); canvas.style.cursor = 'grab'; return; }
+        canvas.style.cursor = 'pointer';
+        const s = p.s;
+        tip.innerHTML = `<b>${s.n}</b> <span class="tip-meta">${s.d}</span><br>` +
+          `<span class="tip-meta">${s.y} 年${s.ry ? ' · ' + s.ry : ''}${s.gz ? ' · ' + s.gz : ''}</span>`;
+        tip.style.display = 'block';
+        const x = Math.min(e.clientX + 14, window.innerWidth - 190);
+        const y = Math.min(e.clientY + 14, window.innerHeight - 80);
+        tip.style.left = x + 'px'; tip.style.top = y + 'px';
+      }
+      function hideTip() { tip.style.display = 'none'; }
+      canvas.addEventListener('pointerleave', hideTip);
+
+      // ---- 点击弹「帖」 ----
+      const TIER_NAME = ['有故事', '全档案', '已确认', '存疑', '失考'];
+      function click(e) {
+        const p = pick(e);
+        if (!p) { card.style.display = 'none'; return; }
+        const s = p.s;
+        let html = `<b>${s.n}</b><span class="pop-badge">${TIER_NAME[s.t]}</span>` +
+          `<div class="pop-meta">${s.d} · ${s.y} 年` +
+          (s.ry ? `<br>${s.ry}` : '') + (s.gz ? ` · ${s.gz}` : '') + `</div>` +
+          `<a href="${base}persons/${s.s}/">档案页 →</a>`;
+        if (s.t === 0) {
+          html += s.st
+            ? `<a href="${base}stories/${s.st}/">阅读他的故事 →</a>`
+            : `<a href="${base}stories/">阅读他的故事 →</a>`;
+        }
+        cardBody.innerHTML = html;
+        card.style.display = 'block';
+        const w = 240, h = card.offsetHeight || 160;
+        card.style.left = Math.min(e.clientX + 12, window.innerWidth - w - 12) + 'px';
+        card.style.top = Math.min(e.clientY + 12, window.innerHeight - h - 12) + 'px';
+      }
+      card.querySelector('.tie-close').addEventListener('click', () => { card.style.display = 'none'; });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') card.style.display = 'none'; });
+
+      window.addEventListener('resize', resize);
+      resize(); fitView();
+    </script>
+  </body>
+</html>

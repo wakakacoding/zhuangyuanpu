@@ -1,0 +1,44 @@
+from_id: weng_tonghe
+relations:
+- to_id: cbdb:79382
+  type: 师生
+  note: 為Y之門人：汪宗沂（CBDB 外部人物）
+- to_id: cbdb:54297
+  type: 师生
+  note: 為Y之學生：愛新覺羅載湉（CBDB 外部人物）
+- to_id: cbdb:88890
+  type: 师生
+  note: 為Y之學生：康有為（CBDB 外部人物）
+- to_id: cbdb:89100
+  type: 师生
+  note: 為Y之學生：梁士詒（CBDB 外部人物）
+- to_id: cbdb:54106
+  type: 其他
+  note: 為Y所著書作序：宗婉（CBDB 外部人物）
+- to_id: cbdb:54107
+  type: 其他
+  note: 為Y所著書作序：蕭夔生（CBDB 外部人物）
+- to_id: cbdb:122399
+  type: 友人
+  note: 相識：丁惠馨（CBDB 外部人物）
+- to_id: cbdb:54296
+  type: 其他
+  note: 從Y學：愛新覺羅載淳（CBDB 外部人物）
+- to_id: cbdb:54297
+  type: 其他
+  note: 從Y學：愛新覺羅載湉（CBDB 外部人物）
+- to_id: cbdb:78890
+  type: 同僚
+  note: 上司為Y：何藻翔（CBDB 外部人物）
+- to_id: cbdb:78890
+  type: 其他
+  note: 下屬為Y：何藻翔（CBDB 外部人物）
+- to_id: cbdb:54111
+  type: 父子
+  note: 曾祖：翁之廉（CBDB 外部人物）
+- to_id: cbdb:55008
+  type: 父子
+  note: 父：翁心存（CBDB 外部人物）
+- to_id: cbdb:54103
+  type: 兄弟
+  note: 表兄：陸鐵雲（CBDB 外部人物）

@@ -1,0 +1,26 @@
+from_id: zhu_chang_yi
+relations:
+- to_id: cbdb:74291
+  type: 师生
+  note: 為Y之門人：朱葵之（CBDB 外部人物）
+- to_id: cbdb:55411
+  type: 其他
+  note: 為Y所著書作序：朱嶼（CBDB 外部人物）
+- to_id: cbdb:74236
+  type: 父子
+  note: 祖父：朱星煒（CBDB 外部人物）
+- to_id: cbdb:691350
+  type: 父子
+  note: 父：朱燮元（CBDB 外部人物）
+- to_id: cbdb:74247
+  type: 兄弟
+  note: 兄：朱美英（CBDB 外部人物）
+- to_id: cbdb:55411
+  type: 兄弟
+  note: 從兄：朱嶼（CBDB 外部人物）
+- to_id: cbdb:693160
+  type: 兄弟
+  note: 族兄：朱深（CBDB 外部人物）
+- to_id: cbdb:55415
+  type: 父子
+  note: 從子;姪子：朱方增（CBDB 外部人物）

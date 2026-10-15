@@ -1,0 +1,119 @@
+from_id: gu_ding_chen
+relations:
+- to_id: cbdb:126663
+  type: 其他
+  note: 墓誌銘由Y所作：王倬（CBDB 外部人物）
+- to_id: cbdb:130361
+  type: 其他
+  note: 傳記作者為Y：張汝舟（CBDB 外部人物）
+- to_id: cbdb:28825
+  type: 其他
+  note: 為Y作祭文：張邦奇（CBDB 外部人物）
+- to_id: cbdb:126516
+  type: 其他
+  note: 為Y作祭文：王同祖（CBDB 外部人物）
+- to_id: cbdb:30204
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：方鵬（CBDB 外部人物）
+- to_id: cbdb:130108
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：許立（CBDB 外部人物）
+- to_id: cbdb:130568
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：張遇（CBDB 外部人物）
+- to_id: cbdb:130607
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：張潮（CBDB 外部人物）
+- to_id: cbdb:130612
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：張寬（CBDB 外部人物）
+- to_id: cbdb:131509
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：喻時（CBDB 外部人物）
+- to_id: cbdb:132292
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：管琪（CBDB 外部人物）
+- to_id: cbdb:133631
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：顧可學（CBDB 外部人物）
+- to_id: cbdb:127802
+  type: 其他
+  note: 家譜由Y作序：李志學（CBDB 外部人物）
+- to_id: cbdb:125411
+  type: 其他
+  note: 神道碑由Y所作：嚴嵩（CBDB 外部人物）
+- to_id: cbdb:34643
+  type: 其他
+  note: 墓表由Y所作：杭淮（CBDB 外部人物）
+- to_id: cbdb:128250
+  type: 其他
+  note: 墓表由Y所作：吳愈（CBDB 外部人物）
+- to_id: cbdb:129603
+  type: 其他
+  note: 墓表由Y所作：耿明（CBDB 外部人物）
+- to_id: cbdb:131825
+  type: 其他
+  note: 墓表由Y所作：楊惟康（CBDB 外部人物）
+- to_id: cbdb:33841
+  type: 其他
+  note: 行狀由Y所作：陸深（CBDB 外部人物）
+- to_id: cbdb:126716
+  type: 其他
+  note: 贈詩、文：王堯封（CBDB 外部人物）
+- to_id: cbdb:68140
+  type: 其他
+  note: 學記（書院記）由Y所作：李時（CBDB 外部人物）
+- to_id: cbdb:272690
+  type: 父子
+  note: 曾祖：顧大本（CBDB 外部人物）
+- to_id: cbdb:525951
+  type: 父子
+  note: 祖父：顧謙亨（CBDB 外部人物）
+- to_id: cbdb:525952
+  type: 父子
+  note: 祖父：顧謙益（CBDB 外部人物）
+- to_id: cbdb:577437
+  type: 父子
+  note: 祖父：顧謙服（CBDB 外部人物）
+- to_id: cbdb:266803
+  type: 父子
+  note: 祖父：顧良（CBDB 外部人物）
+- to_id: cbdb:122820
+  type: 父子
+  note: 從祖;伯叔祖：釋濟印（CBDB 外部人物）
+- to_id: cbdb:525947
+  type: 父子
+  note: 父：顧履方（CBDB 外部人物）
+- to_id: cbdb:525948
+  type: 父子
+  note: 父：顧履吉（CBDB 外部人物）
+- to_id: cbdb:525949
+  type: 父子
+  note: 父：顧履芳（CBDB 外部人物）
+- to_id: cbdb:525950
+  type: 父子
+  note: 父：顧履貞（CBDB 外部人物）
+- to_id: cbdb:272692
+  type: 父子
+  note: 父：顧恂（CBDB 外部人物）
+- to_id: cbdb:272697
+  type: 兄弟
+  note: 兄：顧式（CBDB 外部人物）
+- to_id: cbdb:272698
+  type: 兄弟
+  note: 兄：顧宜之（CBDB 外部人物）
+- to_id: cbdb:272696
+  type: 其他
+  note: 丈夫：朱氏(顧鼎成妻)（CBDB 外部人物）
+- to_id: cbdb:272696
+  type: 父子
+  note: 妻子：朱氏(顧鼎成妻)（CBDB 外部人物）
+- to_id: cbdb:272693
+  type: 父子
+  note: 子：吳氏(顧鼎成嫡母)（CBDB 外部人物）
+- to_id: cbdb:272694
+  type: 父子
+  note: 私生子：楊氏(顧鼎成生母)（CBDB 外部人物）
+- to_id: cbdb:272693
+  type: 其他
+  note: 嫡母：吳氏(顧鼎成嫡母)（CBDB 外部人物）

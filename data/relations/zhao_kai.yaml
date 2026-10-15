@@ -1,0 +1,5 @@
+from_id: zhao_kai
+relations:
+  - to_id: wang_ang
+    type: 同年
+    note: 1118 年同科

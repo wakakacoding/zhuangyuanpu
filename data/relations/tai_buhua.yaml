@@ -1,0 +1,74 @@
+from_id: tai_buhua
+relations:
+- to_id: song_ben
+  type: 同年
+  note: 1321 年同科
+- to_id: cbdb:113215
+  type: 其他
+  note: 被Y欣賞/器重：釋性澄（CBDB 外部人物）
+- to_id: cbdb:10801
+  type: 其他
+  note: 為Y之書、畫作跋：虞集（CBDB 外部人物）
+- to_id: cbdb:10389
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：袁桷（CBDB 外部人物）
+- to_id: cbdb:27957
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：吳師道（CBDB 外部人物）
+- to_id: cbdb:27965
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：鄭元祐（CBDB 外部人物）
+- to_id: cbdb:27988
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：傅若金（CBDB 外部人物）
+- to_id: cbdb:28338
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：柯九思（CBDB 外部人物）
+- to_id: cbdb:28414
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：李孝光（CBDB 外部人物）
+- to_id: cbdb:28616
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：錢惟善（CBDB 外部人物）
+- to_id: cbdb:28800
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：朱德潤（CBDB 外部人物）
+- to_id: cbdb:102419
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：吳克恭（CBDB 外部人物）
+- to_id: cbdb:109730
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：葉懋（CBDB 外部人物）
+- to_id: cbdb:27948
+  type: 其他
+  note: 哀辭由Y所作：劉基（CBDB 外部人物）
+- to_id: cbdb:105079
+  type: 其他
+  note: 哀辭由Y所作：范秋蟾（CBDB 外部人物）
+- to_id: cbdb:28022
+  type: 其他
+  note: 挽詩、詞由Y所作：危素（CBDB 外部人物）
+- to_id: cbdb:110067
+  type: 其他
+  note: 挽詩、詞由Y所作：鄔庚（CBDB 外部人物）
+- to_id: cbdb:102303
+  type: 其他
+  note: 贈詩、文：吳善（CBDB 外部人物）
+- to_id: cbdb:35488
+  type: 其他
+  note: 贈詩、文：迺賢（CBDB 外部人物）
+- to_id: cbdb:107887
+  type: 其他
+  note: 贈詩、文：郯韶（CBDB 外部人物）
+- to_id: cbdb:117433
+  type: 其他
+  note: 贈詩、文：雅琥（CBDB 外部人物）
+- to_id: cbdb:10792
+  type: 其他
+  note: 為Y之詩文作跋：蘇天爵（CBDB 外部人物）
+- to_id: cbdb:27998
+  type: 其他
+  note: 為Y之詩文作跋：宋褧（CBDB 外部人物）
+- to_id: cbdb:116795
+  type: 父子
+  note: 父：塔不台（CBDB 外部人物）

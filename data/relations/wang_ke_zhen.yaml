@@ -1,0 +1,5 @@
+from_id: wang_ke_zhen
+relations:
+  - to_id: hu_zai
+    type: 同年
+    note: 952 年同科

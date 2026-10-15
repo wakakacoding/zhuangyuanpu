@@ -1,0 +1,32 @@
+from_id: shen_kun
+relations:
+- to_id: cbdb:302021
+  type: 父子
+  note: 曾祖：沈澄（CBDB 外部人物）
+- to_id: cbdb:302022
+  type: 父子
+  note: 祖父：沈蕙（CBDB 外部人物）
+- to_id: cbdb:302023
+  type: 父子
+  note: 父：沈煒（CBDB 外部人物）
+- to_id: cbdb:302024
+  type: 其他
+  note: 母：于氏(沈坤母)（CBDB 外部人物）
+- to_id: cbdb:302027
+  type: 兄弟
+  note: 兄：沈增（CBDB 外部人物）
+- to_id: cbdb:302028
+  type: 兄弟
+  note: 兄：沈堣（CBDB 外部人物）
+- to_id: cbdb:302029
+  type: 兄弟
+  note: 兄：沈坊（CBDB 外部人物）
+- to_id: cbdb:302025
+  type: 其他
+  note: 丈夫：趙氏(沈坤妻)（CBDB 外部人物）
+- to_id: cbdb:302025
+  type: 父子
+  note: 妻子：趙氏(沈坤妻)（CBDB 外部人物）
+- to_id: cbdb:302024
+  type: 父子
+  note: 子：于氏(沈坤母)（CBDB 外部人物）

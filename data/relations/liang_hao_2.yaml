@@ -1,0 +1,5 @@
+from_id: liang_hao_2
+relations:
+  - to_id: liang_hao
+    type: 同年
+    note: 985 年同科

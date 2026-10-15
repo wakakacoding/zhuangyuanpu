@@ -1,0 +1,11 @@
+from_id: zhou_zhen_yan
+relations:
+- to_id: cbdb:15990
+  type: 其他
+  note: 被Y欣賞/器重：丁大全（CBDB 外部人物）
+- to_id: cbdb:42536
+  type: 政敌
+  note: 排擠：林公一（CBDB 外部人物）
+- to_id: cbdb:42536
+  type: 其他
+  note: 決定Y的科舉次第：林公一（CBDB 外部人物）

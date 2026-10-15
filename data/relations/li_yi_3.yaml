@@ -1,0 +1,26 @@
+from_id: li_yi_3
+relations:
+- to_id: cbdb:10581
+  type: 同年
+  note: 同年友：孫汝翼（CBDB 外部人物）
+- to_id: cbdb:18273
+  type: 同年
+  note: 同年友：任古（CBDB 外部人物）
+- to_id: cbdb:19699
+  type: 其他
+  note: 書跋由Y所作：張元幹（CBDB 外部人物）
+- to_id: cbdb:19638
+  type: 父子
+  note: 父：李孝友（CBDB 外部人物）
+- to_id: cbdb:40334
+  type: 其他
+  note: 母：蔣氏(李易母)（CBDB 外部人物）
+- to_id: cbdb:40336
+  type: 其他
+  note: 丈夫：牛氏(李易妻)（CBDB 外部人物）
+- to_id: cbdb:40336
+  type: 父子
+  note: 妻子：牛氏(李易妻)（CBDB 外部人物）
+- to_id: cbdb:40334
+  type: 父子
+  note: 子：蔣氏(李易母)（CBDB 外部人物）

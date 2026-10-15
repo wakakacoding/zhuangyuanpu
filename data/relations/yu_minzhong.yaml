@@ -1,0 +1,32 @@
+from_id: yu_minzhong
+relations:
+- to_id: cbdb:81202
+  type: 同僚
+  note: 上司為Y：陸伯焜（CBDB 外部人物）
+- to_id: cbdb:81202
+  type: 其他
+  note: 下屬為Y：陸伯焜（CBDB 外部人物）
+- to_id: cbdb:55004
+  type: 其他
+  note: 為Y之考官：管世銘（CBDB 外部人物）
+- to_id: cbdb:121280
+  type: 父子
+  note: 父：于氏(孔憲培妻)（CBDB 外部人物）
+- to_id: cbdb:514065
+  type: 父子
+  note: 父：于齊賢（CBDB 外部人物）
+- to_id: cbdb:59685
+  type: 翁婿
+  note: 岳父：孔憲培（CBDB 外部人物）
+- to_id: cbdb:514064
+  type: 父子
+  note: 從父;伯叔父：于時和（CBDB 外部人物）
+- to_id: cbdb:565218
+  type: 其他
+  note: 丈夫：俞光蕙（CBDB 外部人物）
+- to_id: cbdb:565218
+  type: 父子
+  note: 妻子：俞光蕙（CBDB 外部人物）
+- to_id: cbdb:121280
+  type: 其他
+  note: 女兒：于氏(孔憲培妻)（CBDB 外部人物）

@@ -1,0 +1,5 @@
+from_id: ru_fen
+relations:
+- to_id: cbdb:53957
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：甘立媃（CBDB 外部人物）

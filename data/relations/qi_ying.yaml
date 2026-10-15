@@ -1,0 +1,32 @@
+from_id: qi_ying
+relations:
+- to_id: cbdb:31736
+  type: 其他
+  note: 推薦：盧杞（CBDB 外部人物），始年 781
+- to_id: cbdb:24691
+  type: 同僚
+  note: 為Y之幕僚：馬燧（CBDB 外部人物）
+- to_id: cbdb:32970
+  type: 同僚
+  note: 為Y之幕僚：令狐彰（CBDB 外部人物）
+- to_id: cbdb:33096
+  type: 同僚
+  note: 為Y之幕僚：張鎰（CBDB 外部人物）
+- to_id: cbdb:33487
+  type: 其他
+  note: 贈詩、文：李益（CBDB 外部人物）
+- to_id: cbdb:92328
+  type: 其他
+  note: 贈詩、文：盧綸（CBDB 外部人物）
+- to_id: cbdb:94240
+  type: 其他
+  note: 贈詩、文：顧況（CBDB 外部人物）
+- to_id: cbdb:15749
+  type: 父子
+  note: 直系祖先：齊安（CBDB 外部人物）
+- to_id: cbdb:184204
+  type: 父子
+  note: 父：齊玘（CBDB 外部人物）
+- to_id: cbdb:32970
+  type: 翁婿
+  note: 岳父：令狐彰（CBDB 外部人物）

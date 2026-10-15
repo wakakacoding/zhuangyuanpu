@@ -1,0 +1,5 @@
+from_id: a_lu_hui_tie_mu_er
+relations:
+  - to_id: wang_zong_zhe
+    type: 同年
+    note: 1348 年同科

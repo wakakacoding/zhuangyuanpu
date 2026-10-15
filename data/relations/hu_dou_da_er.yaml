@@ -1,0 +1,5 @@
+from_id: hu_dou_da_er
+relations:
+  - to_id: zhang_qiyan
+    type: 同年
+    note: 1315 年同科

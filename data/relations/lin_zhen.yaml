@@ -1,0 +1,41 @@
+from_id: lin_zhen
+relations:
+- to_id: cbdb:322074
+  type: 父子
+  note: 曾祖：林貴（CBDB 外部人物）
+- to_id: cbdb:322075
+  type: 父子
+  note: 祖父：林汝祥（CBDB 外部人物）
+- to_id: cbdb:322076
+  type: 父子
+  note: 父：林希大（CBDB 外部人物）
+- to_id: cbdb:322077
+  type: 其他
+  note: 母：張氏(林震母)（CBDB 外部人物）
+- to_id: cbdb:322080
+  type: 兄弟
+  note: 兄：林敦仁（CBDB 外部人物）
+- to_id: cbdb:322081
+  type: 兄弟
+  note: 兄：林敦濟（CBDB 外部人物）
+- to_id: cbdb:322082
+  type: 兄弟
+  note: 兄：林敦德（CBDB 外部人物）
+- to_id: cbdb:322083
+  type: 兄弟
+  note: 從弟：林坤成（CBDB 外部人物）
+- to_id: cbdb:322079
+  type: 其他
+  note: 丈夫：某氏(林震妻)（CBDB 外部人物）
+- to_id: cbdb:322079
+  type: 父子
+  note: 妻子：某氏(林震妻)（CBDB 外部人物）
+- to_id: cbdb:322077
+  type: 父子
+  note: 子：張氏(林震母)（CBDB 外部人物）
+- to_id: cbdb:322078
+  type: 父子
+  note: 繼子：蕭氏(林震繼母)（CBDB 外部人物）
+- to_id: cbdb:322078
+  type: 其他
+  note: 繼母：蕭氏(林震繼母)（CBDB 外部人物）

@@ -1,0 +1,26 @@
+from_id: lv_gong
+relations:
+- to_id: cbdb:29584
+  type: 友人
+  note: 友：陳子龍（CBDB 外部人物）
+- to_id: cbdb:55107
+  type: 友人
+  note: 友：夏允彝（CBDB 外部人物）
+- to_id: cbdb:518106
+  type: 父子
+  note: 六世祖;太祖：呂份孫（CBDB 外部人物）
+- to_id: cbdb:518107
+  type: 父子
+  note: 六世祖;太祖：呂俁孫（CBDB 外部人物）
+- to_id: cbdb:73812
+  type: 父子
+  note: 高祖;四世祖：呂爾禧（CBDB 外部人物）
+- to_id: cbdb:699915
+  type: 父子
+  note: 祖父：呂氏(許台耀妻)（CBDB 外部人物）
+- to_id: cbdb:518108
+  type: 父子
+  note: 父：呂翼之（CBDB 外部人物）
+- to_id: cbdb:73844
+  type: 父子
+  note: 五世祖;高曾祖：呂星垣（CBDB 外部人物）

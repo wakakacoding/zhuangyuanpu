@@ -1,0 +1,20 @@
+from_id: wang_yi_xian
+relations:
+- to_id: cbdb:511353
+  type: 友人
+  note: 友：施玉章（CBDB 外部人物）
+- to_id: cbdb:57445
+  type: 师生
+  note: 為Y之學生：竇光鼐（CBDB 外部人物）
+- to_id: cbdb:572496
+  type: 其他
+  note: 墓誌銘由Y所作：顧氏(張維敘妻)（CBDB 外部人物）
+- to_id: yao_wen_tian
+  type: 其他
+  note: 同鄉（CBDB）
+- to_id: cbdb:526695
+  type: 父子
+  note: 祖父：王志楓（CBDB 外部人物）
+- to_id: cbdb:526696
+  type: 父子
+  note: 從父;伯叔父：王涑（CBDB 外部人物）

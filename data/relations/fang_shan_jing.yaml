@@ -1,0 +1,11 @@
+from_id: fang_shan_jing
+relations:
+- to_id: cbdb:38470
+  type: 父子
+  note: 父：方季仁（CBDB 外部人物）
+- to_id: cbdb:38792
+  type: 其他
+  note: 母：孫氏(方季仁妻)（CBDB 外部人物）
+- to_id: cbdb:38792
+  type: 父子
+  note: 子：孫氏(方季仁妻)（CBDB 外部人物）

@@ -1,0 +1,14 @@
+from_id: hong_jun
+relations:
+- to_id: cbdb:521594
+  type: 父子
+  note: 曾祖：洪士澍（CBDB 外部人物）
+- to_id: cbdb:521597
+  type: 父子
+  note: 祖父：洪啟立（CBDB 外部人物）
+- to_id: cbdb:521596
+  type: 父子
+  note: 父：洪洛（CBDB 外部人物）
+- to_id: cbdb:521595
+  type: 父子
+  note: 父：洪坦（CBDB 外部人物）

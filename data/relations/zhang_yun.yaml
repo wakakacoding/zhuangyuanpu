@@ -1,0 +1,5 @@
+from_id: zhang_yun
+relations:
+- to_id: cbdb:520638
+  type: 父子
+  note: 父：章忠型（CBDB 外部人物）

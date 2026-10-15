@@ -1,0 +1,32 @@
+from_id: xu_jiang
+relations:
+- to_id: cbdb:1488
+  type: 政敌
+  note: 反對/攻訐：司馬光（CBDB 外部人物）
+- to_id: cbdb:333
+  type: 其他
+  note: 反對/不支持Y的政策：章惇（CBDB 外部人物）
+- to_id: cbdb:8131
+  type: 其他
+  note: 反對/不支持Y的政策：蔡卞（CBDB 外部人物）
+- to_id: cbdb:982
+  type: 其他
+  note: 致書Y：李清臣（CBDB 外部人物）
+- to_id: cbdb:12157
+  type: 其他
+  note: 致書Y：劉弇（CBDB 外部人物）
+- to_id: cbdb:13460
+  type: 其他
+  note: 致書Y：華鎮（CBDB 外部人物）
+- to_id: cbdb:11969
+  type: 父子
+  note: 高祖;四世祖：許遂（CBDB 外部人物）
+- to_id: cbdb:7086
+  type: 父子
+  note: 第一任妻之祖：王葆（CBDB 外部人物）
+- to_id: cbdb:11970
+  type: 父子
+  note: 父：許份（CBDB 外部人物）
+- to_id: cbdb:7086
+  type: 翁婿
+  note: 孫女婿：王葆（CBDB 外部人物）

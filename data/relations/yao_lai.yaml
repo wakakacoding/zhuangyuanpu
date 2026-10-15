@@ -1,0 +1,23 @@
+from_id: yao_lai
+relations:
+- to_id: cbdb:340423
+  type: 其他
+  note: 得到Y的支持：謝應龍（CBDB 外部人物）
+- to_id: cbdb:68272
+  type: 其他
+  note: 為Y所著書作序：趙時春（CBDB 外部人物）
+- to_id: cbdb:129743
+  type: 其他
+  note: 墓誌銘由Y所作：孫修（CBDB 外部人物）
+- to_id: cbdb:129475
+  type: 其他
+  note: 傳記作者為Y：唐儼（CBDB 外部人物）
+- to_id: cbdb:34663
+  type: 其他
+  note: 致書Y：張岳（CBDB 外部人物）
+- to_id: cbdb:68196
+  type: 父子
+  note: 父：姚鏌（CBDB 外部人物）
+- to_id: cbdb:202969
+  type: 兄弟
+  note: 兄：姚潓（CBDB 外部人物）

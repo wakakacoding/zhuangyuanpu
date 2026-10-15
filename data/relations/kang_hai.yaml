@@ -1,0 +1,251 @@
+from_id: kang_hai
+relations:
+- to_id: cbdb:124897
+  type: 友人
+  note: 友：李開先（CBDB 外部人物）
+- to_id: cbdb:510950
+  type: 师生
+  note: 為Y之學生：于牛生（CBDB 外部人物）
+- to_id: cbdb:129128
+  type: 其他
+  note: 為Y所著書作序：南軒（CBDB 外部人物）
+- to_id: cbdb:34648
+  type: 其他
+  note: 為Y所著書作序：何景明（CBDB 外部人物）
+- to_id: cbdb:34653
+  type: 其他
+  note: 為Y所著書作序：韓邦靖（CBDB 外部人物）
+- to_id: cbdb:68335
+  type: 其他
+  note: 為Y所著書作序：唐龍（CBDB 外部人物），始年 1532
+- to_id: cbdb:126440
+  type: 其他
+  note: 為Y所著書作序：王九思（CBDB 外部人物）
+- to_id: cbdb:126857
+  type: 其他
+  note: 為Y所著書作序：王謳（CBDB 外部人物）
+- to_id: cbdb:127408
+  type: 其他
+  note: 為Y所著書作序：朱應登（CBDB 外部人物）
+- to_id: cbdb:67996
+  type: 其他
+  note: 墓誌銘由Y所作：馬昊（CBDB 外部人物）
+- to_id: cbdb:126868
+  type: 其他
+  note: 墓誌銘由Y所作：王麒（CBDB 外部人物）
+- to_id: cbdb:126891
+  type: 其他
+  note: 墓誌銘由Y所作：王瓚（CBDB 外部人物）
+- to_id: cbdb:127009
+  type: 其他
+  note: 墓誌銘由Y所作：石祿（CBDB 外部人物）
+- to_id: cbdb:128540
+  type: 其他
+  note: 墓誌銘由Y所作：邵昇（CBDB 外部人物）
+- to_id: cbdb:128673
+  type: 其他
+  note: 墓誌銘由Y所作：東思忠（CBDB 外部人物）
+- to_id: cbdb:129180
+  type: 其他
+  note: 墓誌銘由Y所作：范鏞（CBDB 外部人物）
+- to_id: cbdb:129587
+  type: 其他
+  note: 墓誌銘由Y所作：馬應龍（CBDB 外部人物）
+- to_id: cbdb:130988
+  type: 其他
+  note: 墓誌銘由Y所作：陳震（CBDB 外部人物）
+- to_id: cbdb:132252
+  type: 其他
+  note: 墓誌銘由Y所作：暢華（CBDB 外部人物）
+- to_id: cbdb:132704
+  type: 其他
+  note: 墓誌銘由Y所作：劉汝靖（CBDB 外部人物）
+- to_id: cbdb:124897
+  type: 其他
+  note: 傳記作者為Y：李開先（CBDB 外部人物）
+- to_id: cbdb:130118
+  type: 其他
+  note: 傳記作者為Y：許宗魯（CBDB 外部人物）
+- to_id: cbdb:129563
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：馬理（CBDB 外部人物）
+- to_id: cbdb:68348
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：陳九疇（CBDB 外部人物）
+- to_id: cbdb:127141
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：白悅（CBDB 外部人物）
+- to_id: lv_nan
+  type: 其他
+  note: 墓表由Y所作（CBDB）
+- to_id: cbdb:127920
+  type: 其他
+  note: 墓表由Y所作：李善（CBDB 外部人物）
+- to_id: cbdb:133265
+  type: 其他
+  note: 墓表由Y所作：韓福（CBDB 外部人物）
+- to_id: cbdb:34646
+  type: 其他
+  note: 墓表由Y所作：何瑭（CBDB 外部人物）
+- to_id: cbdb:130404
+  type: 其他
+  note: 行狀由Y所作：張治道（CBDB 外部人物）
+- to_id: cbdb:30374
+  type: 其他
+  note: 致書Y：王守仁（CBDB 外部人物）
+- to_id: cbdb:33841
+  type: 其他
+  note: 致書Y：陸深（CBDB 外部人物）
+- to_id: cbdb:67647
+  type: 其他
+  note: 致書Y：曹雄（CBDB 外部人物）
+- to_id: cbdb:68246
+  type: 其他
+  note: 致書Y：王廷相（CBDB 外部人物）
+- to_id: cbdb:68260
+  type: 其他
+  note: 致書Y：楊一清（CBDB 外部人物）
+- to_id: cbdb:68267
+  type: 其他
+  note: 致書Y：彭澤（CBDB 外部人物）
+- to_id: cbdb:126668
+  type: 其他
+  note: 致書Y：王寅（CBDB 外部人物）
+- to_id: cbdb:127467
+  type: 其他
+  note: 致書Y：仲本（CBDB 外部人物）
+- to_id: cbdb:130804
+  type: 其他
+  note: 致書Y：陳天祥（CBDB 外部人物）
+- to_id: cbdb:201111
+  type: 其他
+  note: 致書Y：劉祥（CBDB 外部人物）
+- to_id: cbdb:248765
+  type: 其他
+  note: 致書Y：王銓（CBDB 外部人物）
+- to_id: cbdb:455823
+  type: 其他
+  note: 致書Y：張潛（CBDB 外部人物）
+- to_id: cbdb:508584
+  type: 其他
+  note: 致書Y：馬昊（CBDB 外部人物）
+- to_id: cbdb:68249
+  type: 其他
+  note: 答Y書：蔡天祐（CBDB 外部人物）
+- to_id: cbdb:126786
+  type: 其他
+  note: 答Y書：王綸（CBDB 外部人物）
+- to_id: cbdb:68310
+  type: 其他
+  note: 贈詩、文：寇天敍（CBDB 外部人物）
+- to_id: cbdb:68330
+  type: 其他
+  note: 贈詩、文：翟鵬（CBDB 外部人物）
+- to_id: cbdb:127842
+  type: 其他
+  note: 贈詩、文：李珏（CBDB 外部人物）
+- to_id: cbdb:133440
+  type: 其他
+  note: 贈詩、文：藍章（CBDB 外部人物）
+- to_id: cbdb:67649
+  type: 其他
+  note: 為Y所作詩文作序：王竑（CBDB 外部人物）
+- to_id: cbdb:130588
+  type: 其他
+  note: 為Y所作詩文作序：張嘉謨（CBDB 外部人物）
+- to_id: cbdb:68255
+  type: 其他
+  note: 政績為Y所稱道：劉天和（CBDB 外部人物）
+- to_id: cbdb:530985
+  type: 其他
+  note: 同族長輩：康永嘉（CBDB 外部人物）
+- to_id: cbdb:106451
+  type: 父子
+  note: 六世祖;太祖：康廷瑞（CBDB 外部人物）
+- to_id: cbdb:530936
+  type: 父子
+  note: 高祖;四世祖：康汝楫（CBDB 外部人物）
+- to_id: cbdb:269775
+  type: 父子
+  note: 曾祖：康爵（CBDB 外部人物）
+- to_id: cbdb:530941
+  type: 父子
+  note: 曾伯叔祖;從曾祖：康禋（CBDB 外部人物）
+- to_id: cbdb:551246
+  type: 父子
+  note: 祖父：康禹民（CBDB 外部人物）
+- to_id: cbdb:551247
+  type: 父子
+  note: 祖父：康萬民（CBDB 外部人物）
+- to_id: cbdb:269776
+  type: 父子
+  note: 祖父：康健（CBDB 外部人物）
+- to_id: cbdb:123183
+  type: 父子
+  note: 父：康氏(張之榘妻)（CBDB 外部人物）
+- to_id: cbdb:531069
+  type: 父子
+  note: 父：康梣（CBDB 外部人物）
+- to_id: cbdb:555037
+  type: 父子
+  note: 父：康栗（CBDB 外部人物）
+- to_id: cbdb:269777
+  type: 父子
+  note: 父：康鏞（CBDB 外部人物）
+- to_id: cbdb:269778
+  type: 其他
+  note: 母：張氏(康海母)（CBDB 外部人物）
+- to_id: cbdb:551301
+  type: 其他
+  note: 姻親：楊維康（CBDB 外部人物）
+- to_id: cbdb:130211
+  type: 兄弟
+  note: 兄弟：康河（CBDB 外部人物）
+- to_id: cbdb:201857
+  type: 兄弟
+  note: 兄：康浩（CBDB 外部人物）
+- to_id: cbdb:269785
+  type: 兄弟
+  note: 兄：康潤（CBDB 外部人物）
+- to_id: cbdb:269787
+  type: 兄弟
+  note: 兄：康瀚（CBDB 外部人物）
+- to_id: cbdb:269788
+  type: 兄弟
+  note: 兄：康淳（CBDB 外部人物）
+- to_id: cbdb:269789
+  type: 兄弟
+  note: 兄：康洋（CBDB 外部人物）
+- to_id: cbdb:269790
+  type: 兄弟
+  note: 兄：康瀛（CBDB 外部人物）
+- to_id: cbdb:269780
+  type: 兄弟
+  note: 兄：康阜（CBDB 外部人物）
+- to_id: cbdb:269781
+  type: 兄弟
+  note: 兄：康淮（CBDB 外部人物）
+- to_id: cbdb:269782
+  type: 兄弟
+  note: 兄：康浤（CBDB 外部人物）
+- to_id: cbdb:269784
+  type: 兄弟
+  note: 兄：康澤（CBDB 外部人物）
+- to_id: cbdb:269779
+  type: 其他
+  note: 丈夫：尚氏(康海妻)（CBDB 外部人物）
+- to_id: cbdb:269779
+  type: 父子
+  note: 妻子：尚氏(康海妻)（CBDB 外部人物）
+- to_id: cbdb:123183
+  type: 其他
+  note: 女兒：康氏(張之榘妻)（CBDB 外部人物）
+- to_id: cbdb:269778
+  type: 父子
+  note: 子：張氏(康海母)（CBDB 外部人物）
+- to_id: cbdb:555038
+  type: 翁婿
+  note: 翁;公公;丈夫之父：楊氏(康栗之妻)（CBDB 外部人物）
+- to_id: cbdb:555038
+  type: 父子
+  note: 子婦;兒媳：楊氏(康栗之妻)（CBDB 外部人物）

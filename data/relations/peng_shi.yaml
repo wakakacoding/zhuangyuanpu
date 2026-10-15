@@ -1,0 +1,113 @@
+from_id: peng_shi
+relations:
+- to_id: cbdb:29602
+  type: 其他
+  note: 被Y欣賞/器重：程敏政（CBDB 外部人物）
+- to_id: cbdb:66893
+  type: 其他
+  note: 墓誌銘由Y所作：耿九疇（CBDB 外部人物）
+- to_id: cbdb:67086
+  type: 其他
+  note: 墓誌銘由Y所作：劉實（CBDB 外部人物）
+- to_id: cbdb:67399
+  type: 其他
+  note: 墓誌銘由Y所作：王驥（CBDB 外部人物）
+- to_id: cbdb:67539
+  type: 其他
+  note: 傳記作者為Y：尹直（CBDB 外部人物）
+- to_id: cbdb:33920
+  type: 其他
+  note: 為Y作祭文：彭華（CBDB 外部人物）
+- to_id: cbdb:35164
+  type: 其他
+  note: 神道碑由Y所作：葉盛（CBDB 外部人物）
+- to_id: cbdb:67133
+  type: 其他
+  note: 神道碑由Y所作：李紹（CBDB 外部人物）
+- to_id: cbdb:67612
+  type: 其他
+  note: 神道碑由Y所作：劉定之（CBDB 外部人物）
+- to_id: cbdb:67654
+  type: 其他
+  note: 神道碑由Y所作：姚夔（CBDB 外部人物）
+- to_id: cbdb:132144
+  type: 其他
+  note: 神道碑由Y所作：趙本（CBDB 外部人物）
+- to_id: cbdb:133289
+  type: 其他
+  note: 神道碑由Y所作：薛希璉（CBDB 外部人物）
+- to_id: cbdb:67476
+  type: 其他
+  note: 墓表由Y所作：楊寧（CBDB 外部人物）
+- to_id: cbdb:127567
+  type: 其他
+  note: 墓表由Y所作：沈性（CBDB 外部人物）
+- to_id: cbdb:130226
+  type: 其他
+  note: 墓表由Y所作：寇深（CBDB 外部人物）
+- to_id: cbdb:133057
+  type: 其他
+  note: 墓表由Y所作：盧睿（CBDB 外部人物）
+- to_id: cbdb:132284
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：熊瓚（CBDB 外部人物）
+- to_id: cbdb:525183
+  type: 父子
+  note: 直系祖先：彭忠泰（CBDB 外部人物）
+- to_id: cbdb:525187
+  type: 父子
+  note: 曾祖：彭德順（CBDB 外部人物）
+- to_id: cbdb:240181
+  type: 父子
+  note: 曾祖：彭古清（CBDB 外部人物）
+- to_id: cbdb:525184
+  type: 父子
+  note: 祖父：彭秉銳（CBDB 外部人物）
+- to_id: cbdb:525186
+  type: 父子
+  note: 祖父：彭崧（CBDB 外部人物）
+- to_id: cbdb:240182
+  type: 父子
+  note: 祖父：彭務威（CBDB 外部人物）
+- to_id: cbdb:525182
+  type: 父子
+  note: 父：彭䪻（CBDB 外部人物）
+- to_id: cbdb:525189
+  type: 父子
+  note: 父：彭頤（CBDB 外部人物）
+- to_id: cbdb:240183
+  type: 父子
+  note: 父：彭毓義（CBDB 外部人物）
+- to_id: cbdb:525188
+  type: 父子
+  note: 繼父：彭頹（CBDB 外部人物）
+- to_id: cbdb:240184
+  type: 其他
+  note: 母：王氏(彭時母)（CBDB 外部人物）
+- to_id: cbdb:240190
+  type: 兄弟
+  note: 兄：彭復（CBDB 外部人物）
+- to_id: cbdb:525185
+  type: 兄弟
+  note: 兄：彭革（CBDB 外部人物）
+- to_id: cbdb:240189
+  type: 兄弟
+  note: 兄：彭暵（CBDB 外部人物）
+- to_id: cbdb:240187
+  type: 其他
+  note: 丈夫：李氏(彭時妻)（CBDB 外部人物）
+- to_id: cbdb:240187
+  type: 父子
+  note: 妻子：李氏(彭時妻)（CBDB 外部人物）
+- to_id: cbdb:33920
+  type: 兄弟
+  note: 族兄：彭華（CBDB 外部人物）
+- to_id: cbdb:240184
+  type: 父子
+  note: 子：王氏(彭時母)（CBDB 外部人物）
+- to_id: cbdb:240185
+  type: 父子
+  note: 繼子：余氏(彭時繼母)（CBDB 外部人物）
+- to_id: cbdb:240185
+  type: 其他
+  note: 繼母：余氏(彭時繼母)（CBDB 外部人物）

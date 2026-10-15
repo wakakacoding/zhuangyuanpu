@@ -1,0 +1,74 @@
+from_id: li_chun
+relations:
+- to_id: cbdb:513213
+  type: 友人
+  note: 友：張載（CBDB 外部人物）
+- to_id: cbdb:68260
+  type: 师生
+  note: 為Y之學生：楊一清（CBDB 外部人物）
+- to_id: cbdb:28691
+  type: 其他
+  note: 為Y所著書作序：李東陽（CBDB 外部人物）
+- to_id: cbdb:34510
+  type: 其他
+  note: 傳記作者為Y：倪岳（CBDB 外部人物）
+- to_id: cbdb:129726
+  type: 其他
+  note: 傳記作者為Y：孫宜（CBDB 外部人物）
+- to_id: cbdb:198581
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：馮銀（CBDB 外部人物）
+- to_id: cbdb:67602
+  type: 其他
+  note: 向Y致賀：呂原（CBDB 外部人物）
+- to_id: cbdb:30607
+  type: 其他
+  note: 神道碑由Y所作：徐渭（CBDB 外部人物）
+- to_id: cbdb:34522
+  type: 其他
+  note: 致書Y：何喬新（CBDB 外部人物）
+- to_id: cbdb:281431
+  type: 父子
+  note: 曾祖：黎元勳（CBDB 外部人物）
+- to_id: cbdb:524504
+  type: 父子
+  note: 曾祖：黎元勲（CBDB 外部人物）
+- to_id: cbdb:524506
+  type: 父子
+  note: 祖父：黎循紀（CBDB 外部人物）
+- to_id: cbdb:281442
+  type: 父子
+  note: 祖父：黎仕禎（CBDB 外部人物）
+- to_id: cbdb:338672
+  type: 父子
+  note: 父：黎民牧（CBDB 外部人物）
+- to_id: cbdb:281453
+  type: 父子
+  note: 父：黎斌（CBDB 外部人物）
+- to_id: cbdb:524505
+  type: 父子
+  note: 從父;伯叔父：黎民望（CBDB 外部人物）
+- to_id: cbdb:281508
+  type: 兄弟
+  note: 兄：黎沾（CBDB 外部人物）
+- to_id: cbdb:281519
+  type: 兄弟
+  note: 兄：黎滄（CBDB 外部人物）
+- to_id: cbdb:281497
+  type: 兄弟
+  note: 兄：黎濬（CBDB 外部人物）
+- to_id: cbdb:281486
+  type: 其他
+  note: 丈夫：金氏(黎淳妻)（CBDB 外部人物）
+- to_id: cbdb:281486
+  type: 父子
+  note: 妻子：金氏(黎淳妻)（CBDB 外部人物）
+- to_id: cbdb:281475
+  type: 父子
+  note: 繼子：王氏(黎淳繼母)（CBDB 外部人物）
+- to_id: cbdb:281464
+  type: 父子
+  note: 私生子：元氏(黎淳生母)（CBDB 外部人物）
+- to_id: cbdb:281475
+  type: 其他
+  note: 繼母：王氏(黎淳繼母)（CBDB 外部人物）

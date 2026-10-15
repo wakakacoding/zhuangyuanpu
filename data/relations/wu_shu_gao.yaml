@@ -1,0 +1,26 @@
+from_id: wu_shu_gao
+relations:
+- to_id: cbdb:3595
+  type: 友人
+  note: 友：劉克莊（CBDB 外部人物）
+- to_id: cbdb:42680
+  type: 同年
+  note: 同年友：林應炎（CBDB 外部人物）
+- to_id: cbdb:43574
+  type: 同年
+  note: 同年友：范東叟（CBDB 外部人物）
+- to_id: cbdb:3595
+  type: 其他
+  note: 墓誌銘由Y所作：劉克莊（CBDB 外部人物）
+- to_id: cbdb:25817
+  type: 父子
+  note: 父：吳元度（CBDB 外部人物）
+- to_id: cbdb:25819
+  type: 父子
+  note: 父：吳起沃（CBDB 外部人物）
+- to_id: cbdb:41768
+  type: 其他
+  note: 母：陳氏(吳叔告母)（CBDB 外部人物）
+- to_id: cbdb:41768
+  type: 父子
+  note: 子：陳氏(吳叔告母)（CBDB 外部人物）

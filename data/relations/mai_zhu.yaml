@@ -1,0 +1,5 @@
+from_id: mai_zhu
+relations:
+  - to_id: wei_yuan_li
+    type: 同年
+    note: 1360 年同科

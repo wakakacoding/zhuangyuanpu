@@ -1,0 +1,11 @@
+from_id: liang_hao
+relations:
+  - to_id: liang_gu
+    type: 父子
+    note: 梁固，颢长子。父雍熙二年状元，子祥符间甲第（名录作大中祥符二年状元），世称「父子状元」；《建炎以来朝野杂记》载国朝父子状元凡三家，梁氏居其一。
+    source_ids:
+      - src_songshi_liang
+      - src_chaoye_zaji
+  - to_id: liang_hao_2
+    type: 同年
+    note: 985 年同科

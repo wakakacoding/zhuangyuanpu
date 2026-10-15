@@ -1,0 +1,47 @@
+from_id: liang_guo_zhi
+relations:
+- to_id: cbdb:34189
+  type: 其他
+  note: 被Y欣賞/器重：洪朴（CBDB 外部人物）
+- to_id: cbdb:657623
+  type: 其他
+  note: 被Y欣賞/器重：謝嘉修（CBDB 外部人物）
+- to_id: cbdb:558288
+  type: 师生
+  note: 為Y之學生：汪燾（CBDB 外部人物）
+- to_id: cbdb:55774
+  type: 其他
+  note: 為Y所著書作序：曹錫淑（CBDB 外部人物）
+- to_id: cbdb:516589
+  type: 父子
+  note: 曾祖：梁廷仁（CBDB 外部人物）
+- to_id: cbdb:516587
+  type: 父子
+  note: 祖父：梁一能（CBDB 外部人物）
+- to_id: cbdb:516590
+  type: 父子
+  note: 父：梁和凝（CBDB 外部人物）
+- to_id: cbdb:516591
+  type: 父子
+  note: 父：梁承雲（CBDB 外部人物）
+- to_id: cbdb:516592
+  type: 父子
+  note: 父：梁承福（CBDB 外部人物）
+- to_id: cbdb:516593
+  type: 父子
+  note: 父：梁承綸（CBDB 外部人物）
+- to_id: cbdb:516594
+  type: 父子
+  note: 父：梁承冀（CBDB 外部人物）
+- to_id: cbdb:516595
+  type: 父子
+  note: 父：梁承輿（CBDB 外部人物）
+- to_id: cbdb:516588
+  type: 父子
+  note: 父：梁文標（CBDB 外部人物）
+- to_id: cbdb:516596
+  type: 兄弟
+  note: 兄：梁國泰（CBDB 外部人物）
+- to_id: cbdb:516586
+  type: 兄弟
+  note: 妻兄：李君浚（CBDB 外部人物）

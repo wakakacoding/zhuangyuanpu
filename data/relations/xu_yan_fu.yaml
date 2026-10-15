@@ -1,0 +1,8 @@
+from_id: xu_yan_fu
+relations:
+- to_id: cbdb:51963
+  type: 同年
+  note: 同年友：劉良貴（CBDB 外部人物）
+- to_id: cbdb:15990
+  type: 其他
+  note: 得罪Y：丁大全（CBDB 外部人物）

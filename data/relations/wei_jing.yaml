@@ -1,0 +1,209 @@
+from_id: wei_jing
+relations:
+- to_id: cbdb:13584
+  type: 同年
+  note: 同年友：高似孫（CBDB 外部人物），始年 1184
+- to_id: cbdb:14042
+  type: 同年
+  note: 同年友：章棶（CBDB 外部人物）
+- to_id: cbdb:14060
+  type: 同年
+  note: 同年友：章良肱（CBDB 外部人物）
+- to_id: cbdb:20166
+  type: 同年
+  note: 同年友：林士衡（CBDB 外部人物）
+- to_id: cbdb:21028
+  type: 同年
+  note: 同年友：邵康（CBDB 外部人物）
+- to_id: cbdb:42998
+  type: 同年
+  note: 同年友：施累（CBDB 外部人物）
+- to_id: cbdb:43102
+  type: 同年
+  note: 同年友：陳棅（CBDB 外部人物）
+- to_id: cbdb:43932
+  type: 同年
+  note: 同年友：唐吉先（CBDB 外部人物）
+- to_id: cbdb:47692
+  type: 同年
+  note: 同年友：陳子冲（CBDB 外部人物）
+- to_id: cbdb:47989
+  type: 同年
+  note: 同年友：陳舜申（CBDB 外部人物）
+- to_id: cbdb:52567
+  type: 同年
+  note: 同年友：薛紱（CBDB 外部人物）
+- to_id: cbdb:12466
+  type: 政敌
+  note: 彈劾：林行可（CBDB 外部人物）
+- to_id: cbdb:14993
+  type: 其他
+  note: 推薦：趙師秀（CBDB 外部人物）
+- to_id: cbdb:17958
+  type: 其他
+  note: 推薦：何遲（CBDB 外部人物）
+- to_id: cbdb:21253
+  type: 其他
+  note: 推薦：潘景伯（CBDB 外部人物）
+- to_id: cbdb:27454
+  type: 其他
+  note: 推薦：趙時通（CBDB 外部人物）
+- to_id: cbdb:29567
+  type: 其他
+  note: 推薦：趙善璙（CBDB 外部人物）
+- to_id: cbdb:51409
+  type: 其他
+  note: 推薦：鄭魏挺（CBDB 外部人物）
+- to_id: cbdb:51669
+  type: 其他
+  note: 推薦：滕璘（CBDB 外部人物）
+- to_id: cbdb:536150
+  type: 其他
+  note: 推薦：蔣日宣（CBDB 外部人物）
+- to_id: cbdb:546560
+  type: 其他
+  note: 推薦：桂如篪（CBDB 外部人物）
+- to_id: cbdb:566068
+  type: 其他
+  note: 推薦：王觀之（CBDB 外部人物）
+- to_id: cbdb:511396
+  type: 师生
+  note: 為Y之學生：李去智（CBDB 外部人物）
+- to_id: cbdb:3727
+  type: 政敌
+  note: 排擠：史彌遠（CBDB 外部人物），始年 1233
+- to_id: cbdb:5200
+  type: 其他
+  note: 墓誌銘由Y所作：沈氏(衛時敏妻)（CBDB 外部人物）
+- to_id: cbdb:7361
+  type: 其他
+  note: 墓誌銘由Y所作：曾耆年（CBDB 外部人物）
+- to_id: cbdb:7387
+  type: 其他
+  note: 墓誌銘由Y所作：衛季敏（CBDB 外部人物）
+- to_id: cbdb:12058
+  type: 其他
+  note: 墓誌銘由Y所作：衛藻（CBDB 外部人物）
+- to_id: cbdb:12061
+  type: 其他
+  note: 墓誌銘由Y所作：衛時敏（CBDB 外部人物）
+- to_id: cbdb:12074
+  type: 其他
+  note: 墓誌銘由Y所作：衛沂（CBDB 外部人物）
+- to_id: cbdb:15362
+  type: 其他
+  note: 墓誌銘由Y所作：程卓（CBDB 外部人物）
+- to_id: cbdb:19461
+  type: 其他
+  note: 墓誌銘由Y所作：蓋經（CBDB 外部人物），始年 1190
+- to_id: cbdb:50948
+  type: 其他
+  note: 墓誌銘由Y所作：趙善?（CBDB 外部人物）
+- to_id: cbdb:53079
+  type: 其他
+  note: 墓誌銘由Y所作：釋元聰（CBDB 外部人物）
+- to_id: cbdb:7097
+  type: 其他
+  note: 書跋由Y所作：楊億（CBDB 外部人物）
+- to_id: cbdb:3727
+  type: 其他
+  note: 忌/惡：史彌遠（CBDB 外部人物）
+- to_id: cbdb:5426
+  type: 其他
+  note: 為Y作祭文：章氏(蓋經妻)（CBDB 外部人物）
+- to_id: cbdb:12732
+  type: 其他
+  note: 為Y作祭文：何澹（CBDB 外部人物）
+- to_id: cbdb:17888
+  type: 其他
+  note: 為Y作祭文：王柟（CBDB 外部人物）
+- to_id: cbdb:19530
+  type: 其他
+  note: 為Y作祭文：雷孝友（CBDB 外部人物），始年 1214
+- to_id: cbdb:22389
+  type: 其他
+  note: 為Y作祭文：吳獵（CBDB 外部人物），始年 1214
+- to_id: cbdb:38268
+  type: 其他
+  note: 為Y作祭文：某氏(王柟母)（CBDB 外部人物）
+- to_id: cbdb:39257
+  type: 其他
+  note: 為Y作祭文：丘崈（CBDB 外部人物）
+- to_id: cbdb:7164
+  type: 其他
+  note: 諡議由Y所作：張栻（CBDB 外部人物）
+- to_id: cbdb:3326
+  type: 其他
+  note: 被Y（或追隨者）殺害：韓侂胄（CBDB 外部人物）
+- to_id: cbdb:7389
+  type: 其他
+  note: 行狀由Y所作：衛闐（CBDB 外部人物）
+- to_id: cbdb:3533
+  type: 其他
+  note: 致書Y：李大性（CBDB 外部人物）
+- to_id: cbdb:10258
+  type: 其他
+  note: 致書Y：真德秀（CBDB 外部人物）
+- to_id: cbdb:12731
+  type: 其他
+  note: 致書Y：李珏（CBDB 外部人物）
+- to_id: cbdb:16293
+  type: 其他
+  note: 致書Y：俞建（CBDB 外部人物）
+- to_id: cbdb:17982
+  type: 其他
+  note: 致書Y：鞏嶸（CBDB 外部人物）
+- to_id: cbdb:19405
+  type: 其他
+  note: 致書Y：趙善湘（CBDB 外部人物）
+- to_id: cbdb:21569
+  type: 其他
+  note: 致書Y：滕強恕（CBDB 外部人物）
+- to_id: cbdb:24888
+  type: 其他
+  note: 致書Y：曹蓋（CBDB 外部人物）
+- to_id: cbdb:38065
+  type: 其他
+  note: 致書Y：丁必稱（CBDB 外部人物）
+- to_id: cbdb:50511
+  type: 其他
+  note: 致書Y：趙至道（CBDB 外部人物）
+- to_id: cbdb:10658
+  type: 其他
+  note: 為Y乞某事：劉光祖（CBDB 外部人物）
+- to_id: cbdb:12075
+  type: 父子
+  note: 直系祖先：衛富益（CBDB 外部人物）
+- to_id: cbdb:33424
+  type: 父子
+  note: 曾祖：衛培（CBDB 外部人物）
+- to_id: cbdb:7387
+  type: 父子
+  note: 父：衛季敏（CBDB 外部人物）
+- to_id: cbdb:22861
+  type: 父子
+  note: 父：衛柳（CBDB 外部人物）
+- to_id: cbdb:19461
+  type: 翁婿
+  note: 岳父：蓋經（CBDB 外部人物）
+- to_id: cbdb:12065
+  type: 父子
+  note: 族父：衛价（CBDB 外部人物）
+- to_id: cbdb:570908
+  type: 父子
+  note: 養父：衛國寶（CBDB 外部人物）
+- to_id: cbdb:570909
+  type: 父子
+  note: 養父：衛國卿（CBDB 外部人物）
+- to_id: cbdb:12068
+  type: 兄弟
+  note: 從兄弟;堂兄弟：衛洵（CBDB 外部人物）
+- to_id: cbdb:12067
+  type: 兄弟
+  note: 兄：衛洙（CBDB 外部人物）
+- to_id: cbdb:12072
+  type: 兄弟
+  note: 兄：衛湜（CBDB 外部人物）
+- to_id: cbdb:12073
+  type: 父子
+  note: 次子：衛樵（CBDB 外部人物）

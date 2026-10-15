@@ -1,0 +1,86 @@
+from_id: shi_yun_yu
+relations:
+- to_id: cbdb:54809
+  type: 友人
+  note: 友：張問陶（CBDB 外部人物）
+- to_id: cbdb:510919
+  type: 友人
+  note: 友：王巳孫（CBDB 外部人物）
+- to_id: peng_qi_feng
+  type: 师生
+  note: 為Y之學生（CBDB）
+- to_id: cbdb:54712
+  type: 其他
+  note: 為Y所著書作序：汪端（CBDB 外部人物）
+- to_id: cbdb:54802
+  type: 其他
+  note: 為Y所著書作序：楊繼端（CBDB 外部人物）
+- to_id: cbdb:56140
+  type: 其他
+  note: 傳記作者為Y：葉小鸞（CBDB 外部人物）
+- to_id: cbdb:35003
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：董其昌（CBDB 外部人物）
+- to_id: cbdb:132411
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：鄭滿（CBDB 外部人物）
+- to_id: cbdb:59382
+  type: 同僚
+  note: 上司為Y：費莫勒保（CBDB 外部人物）
+- to_id: cbdb:59382
+  type: 其他
+  note: 下屬為Y：費莫勒保（CBDB 外部人物）
+- to_id: cbdb:522696
+  type: 父子
+  note: 曾祖：石守中（CBDB 外部人物）
+- to_id: cbdb:522697
+  type: 父子
+  note: 曾祖：石守和（CBDB 外部人物）
+- to_id: cbdb:522698
+  type: 父子
+  note: 曾祖：石守訓（CBDB 外部人物）
+- to_id: cbdb:522699
+  type: 父子
+  note: 曾祖：石守清（CBDB 外部人物）
+- to_id: cbdb:522700
+  type: 父子
+  note: 曾祖：石守經（CBDB 外部人物）
+- to_id: cbdb:522701
+  type: 父子
+  note: 曾祖：石守樸（CBDB 外部人物）
+- to_id: cbdb:522702
+  type: 父子
+  note: 曾祖：石守彝（CBDB 外部人物）
+- to_id: cbdb:522703
+  type: 父子
+  note: 祖父：石汝霖（CBDB 外部人物）
+- to_id: cbdb:522704
+  type: 父子
+  note: 祖父：石屺莪（CBDB 外部人物）
+- to_id: cbdb:522707
+  type: 父子
+  note: 祖父：石瑞苹（CBDB 外部人物）
+- to_id: cbdb:522710
+  type: 父子
+  note: 祖父：石巖英（CBDB 外部人物）
+- to_id: cbdb:522711
+  type: 父子
+  note: 祖父：石崐芝（CBDB 外部人物）
+- to_id: cbdb:693420
+  type: 父子
+  note: 祖父：石峻華（CBDB 外部人物）
+- to_id: cbdb:522705
+  type: 父子
+  note: 祖父：石邦楨（CBDB 外部人物）
+- to_id: cbdb:522695
+  type: 父子
+  note: 父：石介福（CBDB 外部人物）
+- to_id: cbdb:522706
+  type: 父子
+  note: 父：石延禧（CBDB 外部人物）
+- to_id: cbdb:522708
+  type: 父子
+  note: 父：石嘉祿（CBDB 外部人物）
+- to_id: cbdb:522709
+  type: 父子
+  note: 父：石熙載（CBDB 外部人物）

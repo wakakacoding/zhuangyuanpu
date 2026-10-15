@@ -1,0 +1,5 @@
+from_id: lu_ken_tang
+relations:
+- to_id: cbdb:689224
+  type: 父子
+  note: 曾祖：陸企曾（CBDB 外部人物）

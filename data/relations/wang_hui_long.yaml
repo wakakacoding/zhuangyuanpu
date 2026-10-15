@@ -1,0 +1,5 @@
+from_id: wang_hui_long
+relations:
+- to_id: cbdb:10755
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：程珌（CBDB 外部人物），始年 1223

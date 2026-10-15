@@ -1,0 +1,5 @@
+from_id: lu_zeng_xiang
+relations:
+- to_id: cbdb:66056
+  type: 友人
+  note: 友：周星譽（CBDB 外部人物）

@@ -6,7 +6,8 @@
         vendor/cbdb/cbdb_20261010.sqlite3    —— CBDB 候选池
   输出：data/index/zhuangyuan_index.yaml     —— 结构化索引（主交付物）
         data/index/zhuangyuan_index.csv      —— 扁平表（表格查看用）
-        data/index/index_report.md           —— 比对报告（统计 + 未匹配清单 + 补核方案）
+        data/index/index_report.md           —— 比对报告（统计 + 未匹配清单 + 补核方案 + 关系网络汇总）
+        data/index/relations_summary.yaml    —— 关系网络汇总（data/relations/ 聚合，供 D4 网络图消费）
 
 比对规则（姓名繁体 + 登科年 ±2 + 朝代 三维）：
   confirmed 已确认：CBDB 唯一候选，且入仕年 ±2 内吻合；若 CBDB 另有「状元」名次标记则记 evidence=rank1
@@ -191,6 +192,62 @@ def match_one(con, name, year, dynasty):
     return "suspect", f"朝代内同名 {len(pool)} 人且年分均无命中", None, len(ids)
 
 
+def build_relations_summary():
+    """聚合 data/relations/ 全量关系边：类型统计 + 度数榜 + 扁平边表 + 同年对（去方向）。
+
+    返回 (summary dict, pairs list)。summary 落盘 relations_summary.yaml；
+    pairs 供报告「同年双方」明细表使用。
+    """
+    persons = {}
+    for f in sorted((ROOT / "data" / "persons").glob("*.yaml")):
+        if f.name.startswith("_"):
+            continue
+        p = yaml.safe_load(f.read_text(encoding="utf-8"))
+        if isinstance(p, dict) and p.get("id"):
+            persons[p["id"]] = p
+
+    edges = []
+    for f in sorted((ROOT / "data" / "relations").glob("*.yaml")):
+        if f.name.startswith("_"):
+            continue
+        doc = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
+        for r in doc.get("relations") or []:
+            edges.append({"from_id": doc.get("from_id", f.stem),
+                          "to_id": r.get("to_id"), "type": r.get("type"),
+                          "note": r.get("note")})
+
+    by_type, deg_out, deg_in = {}, {}, {}
+    for e in edges:
+        by_type[e["type"]] = by_type.get(e["type"], 0) + 1
+        deg_out[e["from_id"]] = deg_out.get(e["from_id"], 0) + 1
+        deg_in[e["to_id"]] = deg_in.get(e["to_id"], 0) + 1
+    covered = sorted(set(deg_out) | set(deg_in))
+    degrees = sorted(
+        ({"id": pid, "name": (persons.get(pid) or {}).get("name", pid),
+          "out": deg_out.get(pid, 0), "in": deg_in.get(pid, 0)} for pid in covered),
+        key=lambda x: (-(x["out"] + x["in"]), x["id"]))
+
+    pairs, seen = [], set()
+    for e in edges:
+        if e["type"] != "同年":
+            continue
+        key = tuple(sorted((e["from_id"], e["to_id"])))
+        if key in seen:
+            continue
+        seen.add(key)
+        pa, pb = persons.get(key[0]) or {}, persons.get(key[1]) or {}
+        pairs.append({"a": key[0], "b": key[1],
+                      "a_name": pa.get("name", key[0]), "b_name": pb.get("name", key[1]),
+                      "dynasty": pa.get("dynasty"), "exam_year": pa.get("exam_year")})
+    order = {d: i for i, d in enumerate(DYNASTY_ORDER)}
+    pairs.sort(key=lambda x: (order.get(x["dynasty"], 99), x["exam_year"] or 9999))
+
+    summary = {"total_edges": len(edges), "by_type": by_type,
+               "persons_covered": len(covered), "total_persons": len(persons),
+               "degrees": degrees, "edges": edges}
+    return summary, pairs
+
+
 def main():
     con = sqlite3.connect(DB)
     # 名录加载
@@ -273,6 +330,17 @@ def main():
               "| CBDB 名(繁) | 年 | 朝代 | CBDB ID |", "|---|---|---|---|"]
     for a in extra:
         lines.append(f"| {a['name_tw']} | {a['year']} | {a['dynasty']} | {a['cbdb_id']} |")
+
+    # 关系网络汇总（data/relations/ 聚合，附报告末尾）
+    rel_sum, rel_pairs = build_relations_summary()
+    lines += ["", "## 关系网络汇总（data/relations/）", "",
+              f"- 关系边总数：**{rel_sum['total_edges']}**"
+              f"（{' / '.join(f'{t} {c}' for t, c in rel_sum['by_type'].items())}）",
+              f"- 覆盖人数：**{rel_sum['persons_covered']}**/{rel_sum['total_persons']}",
+              f"- 同年对（去方向）：**{len(rel_pairs)}**", "",
+              "| 朝代 | 科年 | 同年双方 |", "|---|---|---|"]
+    for p in rel_pairs:
+        lines.append(f"| {p['dynasty']} | {p['exam_year']} | {p['a_name']} × {p['b_name']} |")
     lines.append("")
 
     (OUT / "zhuangyuan_index.yaml").write_text(
@@ -283,10 +351,15 @@ def main():
         w.writeheader()
         w.writerows(results)
     (OUT / "index_report.md").write_text("\n".join(lines), encoding="utf-8")
+    (OUT / "relations_summary.yaml").write_text(
+        "# 关系网络汇总（build_index.py 生成，勿手改；源数据在 data/relations/，改动后重建）\n"
+        + yaml.dump(rel_sum, allow_unicode=True, sort_keys=False), encoding="utf-8")
 
     print(f"名录 {len(results)} | confirmed {by_status.get('confirmed',0)} "
           f"suspect {by_status.get('suspect',0)} missing {by_status.get('missing',0)} "
           f"| CBDB多出 {len(extra)}")
+    print(f"relations {rel_sum['total_edges']} 边 | 覆盖 {rel_sum['persons_covered']}/"
+          f"{rel_sum['total_persons']} 人 | 同年对 {len(rel_pairs)}")
     for d in DYNASTY_ORDER:
         rows = [r for r in results if r["dynasty"] == d]
         c = sum(1 for r in rows if r["status"] == "confirmed")

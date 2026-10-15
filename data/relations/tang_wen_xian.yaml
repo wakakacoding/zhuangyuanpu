@@ -1,0 +1,152 @@
+from_id: tang_wen_xian
+relations:
+- to_id: cbdb:206230
+  type: 其他
+  note: 被Y欣賞/器重：高萃（CBDB 外部人物）
+- to_id: cbdb:62792
+  type: 师生
+  note: 為Y之門人：楊鶴（CBDB 外部人物）
+- to_id: cbdb:349948
+  type: 师生
+  note: 為Y之門人：崔爾進（CBDB 外部人物）
+- to_id: cbdb:125520
+  type: 其他
+  note: 得到Y的支持：郭正域（CBDB 外部人物）
+- to_id: cbdb:131205
+  type: 其他
+  note: 墓誌銘由Y所作：湯賓尹（CBDB 外部人物）
+- to_id: cbdb:131760
+  type: 其他
+  note: 墓誌銘由Y所作：楊守勤（CBDB 外部人物）
+- to_id: cbdb:126420
+  type: 其他
+  note: 向Y致賀：方應選（CBDB 外部人物）
+- to_id: cbdb:35003
+  type: 其他
+  note: 行狀由Y所作：董其昌（CBDB 外部人物）
+- to_id: cbdb:10879
+  type: 其他
+  note: 致書Y：陳繼儒（CBDB 外部人物）
+- to_id: cbdb:33843
+  type: 其他
+  note: 致書Y：陸樹聲（CBDB 外部人物）
+- to_id: cbdb:123710
+  type: 其他
+  note: 致書Y：王圖（CBDB 外部人物）
+- to_id: cbdb:30243
+  type: 其他
+  note: 致書Y：馮時可（CBDB 外部人物）
+- to_id: cbdb:134652
+  type: 其他
+  note: 致書Y：何三畏（CBDB 外部人物）
+- to_id: cbdb:360460
+  type: 其他
+  note: 致書Y：戴士琳（CBDB 外部人物）
+- to_id: cbdb:123872
+  type: 其他
+  note: 致書Y：楊道賓（CBDB 外部人物）
+- to_id: cbdb:123984
+  type: 其他
+  note: 致書Y：王錫爵（CBDB 外部人物）
+- to_id: cbdb:124005
+  type: 其他
+  note: 致書Y：王衡（CBDB 外部人物）
+- to_id: cbdb:127261
+  type: 其他
+  note: 致書Y：朱吾弼（CBDB 外部人物）
+- to_id: cbdb:131252
+  type: 其他
+  note: 致書Y：曾朝節（CBDB 外部人物）
+- to_id: cbdb:207098
+  type: 其他
+  note: 致書Y：章憲文（CBDB 外部人物）
+- to_id: cbdb:207110
+  type: 其他
+  note: 致書Y：顧龍禎（CBDB 外部人物）
+- to_id: cbdb:207240
+  type: 其他
+  note: 致書Y：劉為楫（CBDB 外部人物）
+- to_id: cbdb:207279
+  type: 其他
+  note: 致書Y：趙標（CBDB 外部人物）
+- to_id: cbdb:207281
+  type: 其他
+  note: 致書Y：全天敘（CBDB 外部人物）
+- to_id: cbdb:207392
+  type: 其他
+  note: 致書Y：沈時來（CBDB 外部人物）
+- to_id: cbdb:30240
+  type: 其他
+  note: 答Y書：馮夢禎（CBDB 外部人物）
+- to_id: cbdb:123637
+  type: 其他
+  note: 答Y書：馮琦（CBDB 外部人物）
+- to_id: cbdb:123964
+  type: 其他
+  note: 答Y書：李廷機（CBDB 外部人物）
+- to_id: cbdb:227540
+  type: 父子
+  note: 曾祖：唐珉（CBDB 外部人物）
+- to_id: cbdb:129445
+  type: 父子
+  note: 曾伯叔祖;從曾祖：唐珣（CBDB 外部人物）
+- to_id: cbdb:527294
+  type: 父子
+  note: 祖父：唐克宏（CBDB 外部人物）
+- to_id: cbdb:227541
+  type: 父子
+  note: 祖父：唐濱（CBDB 外部人物）
+- to_id: cbdb:339802
+  type: 父子
+  note: 從祖;伯叔祖：唐昌世（CBDB 外部人物）
+- to_id: cbdb:227555
+  type: 父子
+  note: 父：唐允恭（CBDB 外部人物）
+- to_id: cbdb:227556
+  type: 父子
+  note: 父：唐允執（CBDB 外部人物）
+- to_id: cbdb:227557
+  type: 父子
+  note: 父：唐允?（CBDB 外部人物）
+- to_id: cbdb:227542
+  type: 父子
+  note: 父：唐敷錫（CBDB 外部人物）
+- to_id: cbdb:683539
+  type: 父子
+  note: 從父;伯叔父：唐允振（CBDB 外部人物）
+- to_id: cbdb:227543
+  type: 其他
+  note: 母：劉氏(唐文獻母)（CBDB 外部人物）
+- to_id: cbdb:227545
+  type: 兄弟
+  note: 兄：唐文燈（CBDB 外部人物）
+- to_id: cbdb:227546
+  type: 兄弟
+  note: 兄：唐文燭（CBDB 外部人物）
+- to_id: cbdb:227547
+  type: 兄弟
+  note: 兄：唐文熟（CBDB 外部人物）
+- to_id: cbdb:227548
+  type: 兄弟
+  note: 兄：唐文勳（CBDB 外部人物）
+- to_id: cbdb:227551
+  type: 兄弟
+  note: 兄：唐文烈（CBDB 外部人物）
+- to_id: cbdb:227552
+  type: 兄弟
+  note: 兄：唐文蒸（CBDB 外部人物）
+- to_id: cbdb:227553
+  type: 兄弟
+  note: 兄：唐文然（CBDB 外部人物）
+- to_id: cbdb:227554
+  type: 兄弟
+  note: 兄：唐文濤（CBDB 外部人物）
+- to_id: cbdb:227544
+  type: 其他
+  note: 丈夫：顧氏(唐文獻妻)（CBDB 外部人物）
+- to_id: cbdb:227544
+  type: 父子
+  note: 妻子：顧氏(唐文獻妻)（CBDB 外部人物）
+- to_id: cbdb:227543
+  type: 父子
+  note: 子：劉氏(唐文獻母)（CBDB 外部人物）

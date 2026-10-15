@@ -1,0 +1,5 @@
+from_id: su_jian
+relations:
+  - to_id: xu_yin
+    type: 同年
+    note: 894 年同科

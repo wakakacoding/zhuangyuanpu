@@ -1,0 +1,44 @@
+from_id: wang_jie
+relations:
+- to_id: cbdb:90030
+  type: 其他
+  note: 被Y欣賞/器重：程振甲（CBDB 外部人物）
+- to_id: cbdb:57786
+  type: 师生
+  note: 為Y之學生：陳宏謀（CBDB 外部人物）
+- to_id: cbdb:11885
+  type: 其他
+  note: 為Y所著書作序：游酢（CBDB 外部人物）
+- to_id: cbdb:29876
+  type: 友人
+  note: 相識：錢大昕（CBDB 外部人物）
+- to_id: cbdb:513480
+  type: 父子
+  note: 祖父：王駎（CBDB 外部人物）
+- to_id: cbdb:513481
+  type: 父子
+  note: 祖父：王駉（CBDB 外部人物）
+- to_id: cbdb:513482
+  type: 父子
+  note: 祖父：王騊（CBDB 外部人物）
+- to_id: cbdb:513483
+  type: 父子
+  note: 祖父：王騫（CBDB 外部人物）
+- to_id: cbdb:513484
+  type: 父子
+  note: 祖父：王驌（CBDB 外部人物）
+- to_id: cbdb:513477
+  type: 父子
+  note: 祖父：王象峰（CBDB 外部人物）
+- to_id: cbdb:513475
+  type: 父子
+  note: 父：王堉時（CBDB 外部人物）
+- to_id: cbdb:513476
+  type: 父子
+  note: 父：王垿時（CBDB 外部人物）
+- to_id: cbdb:513478
+  type: 父子
+  note: 父：王嵊時（CBDB 外部人物）
+- to_id: cbdb:513479
+  type: 父子
+  note: 父：王塽時（CBDB 外部人物）

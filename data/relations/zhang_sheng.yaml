@@ -1,0 +1,56 @@
+from_id: zhang_sheng
+relations:
+- to_id: cbdb:129830
+  type: 其他
+  note: 墓誌銘由Y所作：殷謙（CBDB 外部人物）
+- to_id: cbdb:130010
+  type: 其他
+  note: 墓誌銘由Y所作：徐瓊（CBDB 外部人物）
+- to_id: cbdb:133523
+  type: 其他
+  note: 墓誌銘由Y所作：羅玘（CBDB 外部人物）
+- to_id: cbdb:34655
+  type: 其他
+  note: 為Y作祭文：夏良勝（CBDB 外部人物）
+- to_id: cbdb:34700
+  type: 其他
+  note: 為Y所作詩文作序：王慎中（CBDB 外部人物）
+- to_id: cbdb:242582
+  type: 父子
+  note: 曾祖：張循禮（CBDB 外部人物）
+- to_id: cbdb:525503
+  type: 父子
+  note: 祖父：張嵫（CBDB 外部人物）
+- to_id: cbdb:242583
+  type: 父子
+  note: 祖父：張德厚（CBDB 外部人物）
+- to_id: cbdb:346715
+  type: 父子
+  note: 父：張恩（CBDB 外部人物）
+- to_id: cbdb:242584
+  type: 父子
+  note: 父：張文質（CBDB 外部人物）
+- to_id: cbdb:242587
+  type: 其他
+  note: 母：饒氏(張昇母)（CBDB 外部人物）
+- to_id: cbdb:242589
+  type: 其他
+  note: 丈夫：胡氏(張昇妻)（CBDB 外部人物）
+- to_id: cbdb:242589
+  type: 父子
+  note: 妻子：胡氏(張昇妻)（CBDB 外部人物）
+- to_id: cbdb:242587
+  type: 父子
+  note: 子：饒氏(張昇母)（CBDB 外部人物）
+- to_id: cbdb:242585
+  type: 父子
+  note: 繼子：何氏(張昇前母)（CBDB 外部人物）
+- to_id: cbdb:242588
+  type: 父子
+  note: 繼子：江氏(張昇繼母)（CBDB 外部人物）
+- to_id: cbdb:242585
+  type: 其他
+  note: 繼母：何氏(張昇前母)（CBDB 外部人物）
+- to_id: cbdb:242588
+  type: 其他
+  note: 繼母：江氏(張昇繼母)（CBDB 外部人物）

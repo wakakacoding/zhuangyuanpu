@@ -1,0 +1,5 @@
+from_id: zou_zhong_yi
+relations:
+  - to_id: ma_lei_ji
+    type: 同年
+    note: 1652 年同科

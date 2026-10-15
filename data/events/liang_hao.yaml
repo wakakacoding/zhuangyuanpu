@@ -1,0 +1,44 @@
+person_id: liang_hao
+events:
+  - year: 963
+    year_precision: about
+    type: 出生
+    title: 生于郓州须城
+    description: 生年不见于史文，据「景德元年卒、年四十二」逆推。曾祖涓为成武主簿，祖惟忠官至天平军节度判官，父文度早世，颢养于叔父。
+    source_ids: [src_songshi_liang, src_dongdu_shilue]
+  - year: 985
+    year_precision: exact
+    type: 夺魁
+    title: 雍熙二年廷试第一（状元）
+    description: 初举进士不中，留阙下；是年复举，廷试方禹中献赋，太宗召升殿，询其门第，赐甲科。时年二十三（《建炎以来朝野杂记》明载；《三字经》「八十二」说为讹传，见轶事栏）。
+    source_ids: [src_songshi_liang, src_chaoye_zaji]
+  - year: 985
+    year_precision: exact
+    type: 授官
+    title: 解褐大名府观察推官
+    description: 夺魁后首授此职。雍熙四年与梁湛并为右拾遗、直史馆，赐绯，兼鼓司登闻院。
+    source_ids: [src_songshi_liang]
+  - year: 987
+    year_precision: about
+    type: 贬谪
+    title: 坐翟马周事贬虢州司户参军
+    description: 佐赵昌言于大名府，昌言入掌枢密，会翟马周事，颢坐贬。后起知鱼台县，加大理评事，召还迁殿中丞，复直史馆。
+    source_ids: [src_songshi_liang]
+  - year: 1000
+    year_precision: exact
+    type: 升迁
+    title: 与李宗谔、赵安仁并命知制诰，赐金紫
+    description: 咸平三年。颢有吏才，每进对词辩明敏，真宗嘉赏，凡群臣上封者悉付颢洎薛映详阅可否。
+    source_ids: [src_songshi_liang]
+  - year: 1001
+    year_precision: about
+    type: 升迁
+    title: 拜右谏议大夫，寻为翰林学士
+    description: 咸平四年拜右谏议大夫、充户部使；会罢三部使，以颢为翰林学士，同知审官院、三班。
+    source_ids: [src_songshi_liang]
+  - year: 1004
+    year_precision: exact
+    type: 卒
+    title: 权知开封府，六月暴疾卒，年四十二
+    description: 景德元年权知开封，六月暴疾卒，上甚轸恻，赐赠加等，有文集十五卷。今本《宋史》「年九十二」系「四十二」之讹（点校本校勘记据《东都事略》《容斋四笔》《癸巳存稿》正之）。
+    source_ids: [src_songshi_liang, src_dongdu_shilue, src_rongzhai_suibi]

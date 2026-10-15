@@ -1,0 +1,8 @@
+from_id: qin_da_shi
+relations:
+- to_id: cbdb:30080
+  type: 友人
+  note: 友：紀昀（CBDB 外部人物）
+- to_id: cbdb:55833
+  type: 友人
+  note: 友：蔣士銓（CBDB 外部人物）

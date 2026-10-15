@@ -1,0 +1,98 @@
+from_id: huang_shang
+relations:
+- to_id: cbdb:15291
+  type: 同年
+  note: 同年友：周壽（CBDB 外部人物）
+- to_id: cbdb:583
+  type: 其他
+  note: 為Y所著書作序：范峒（CBDB 外部人物）
+- to_id: cbdb:38353
+  type: 其他
+  note: 為Y所著書作序：王悅（CBDB 外部人物）
+- to_id: cbdb:16904
+  type: 其他
+  note: 為Y所著書作序：范迪簡（CBDB 外部人物）
+- to_id: cbdb:43937
+  type: 其他
+  note: 為Y所著書作序：范子鎮（CBDB 外部人物）
+- to_id: cbdb:47543
+  type: 其他
+  note: 為Y所著書作序：陳傅（CBDB 外部人物）
+- to_id: cbdb:53565
+  type: 其他
+  note: 為Y所著書作序：釋常聰（CBDB 外部人物）
+- to_id: cbdb:53730
+  type: 其他
+  note: 為Y所著書作序：釋道果（CBDB 外部人物）
+- to_id: cbdb:3568
+  type: 其他
+  note: 墓誌銘由Y所作：林積（CBDB 外部人物）
+- to_id: cbdb:17037
+  type: 其他
+  note: 墓誌銘由Y所作：方壽（CBDB 外部人物）
+- to_id: cbdb:17038
+  type: 其他
+  note: 墓誌銘由Y所作：方烈（CBDB 外部人物）
+- to_id: cbdb:19266
+  type: 其他
+  note: 墓誌銘由Y所作：郭逢原（CBDB 外部人物）
+- to_id: cbdb:20158
+  type: 其他
+  note: 墓誌銘由Y所作：林輝（CBDB 外部人物）
+- to_id: cbdb:37844
+  type: 其他
+  note: 墓誌銘由Y所作：王氏(王拱辰孫女)（CBDB 外部人物）
+- to_id: cbdb:39085
+  type: 其他
+  note: 墓誌銘由Y所作：王廕（CBDB 外部人物）
+- to_id: cbdb:44126
+  type: 其他
+  note: 墓誌銘由Y所作：俞備（CBDB 外部人物）
+- to_id: cbdb:44244
+  type: 其他
+  note: 墓誌銘由Y所作：陳氏(俞備妻)（CBDB 外部人物）
+- to_id: cbdb:47705
+  type: 其他
+  note: 墓誌銘由Y所作：陳士傑（CBDB 外部人物）
+- to_id: cbdb:51270
+  type: 其他
+  note: 墓誌銘由Y所作：鄭愷（CBDB 外部人物）
+- to_id: cbdb:3624
+  type: 其他
+  note: 墓誌銘由Y所作：樓鑰（CBDB 外部人物）
+- to_id: cbdb:53582
+  type: 其他
+  note: 為Y作佛寺記：釋紹忠（CBDB 外部人物）
+- to_id: cbdb:1845
+  type: 其他
+  note: 挽詩、詞由Y所作：王珪（CBDB 外部人物）
+- to_id: cbdb:12157
+  type: 其他
+  note: 致書Y：劉弇（CBDB 外部人物）
+- to_id: cbdb:1309
+  type: 其他
+  note: 致書Y：呂惠卿（CBDB 外部人物）
+- to_id: cbdb:8098
+  type: 其他
+  note: 致書Y：陸佃（CBDB 外部人物）
+- to_id: shen_hui
+  type: 其他
+  note: 為Y之建築物題詠、記、命名（CBDB）
+- to_id: cbdb:42428
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：林修（CBDB 外部人物）
+- to_id: cbdb:43556
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：高遵禮（CBDB 外部人物）
+- to_id: cbdb:15062
+  type: 父子
+  note: 父：黃文慶（CBDB 外部人物）
+- to_id: cbdb:15063
+  type: 翁婿
+  note: 岳父：陳詳（CBDB 外部人物）
+- to_id: cbdb:48654
+  type: 其他
+  note: 母：吳氏(黃文慶妻)（CBDB 外部人物）
+- to_id: cbdb:48654
+  type: 父子
+  note: 子：吳氏(黃文慶妻)（CBDB 外部人物）

@@ -1,0 +1,110 @@
+from_id: han_tan
+relations:
+- to_id: cbdb:34138
+  type: 友人
+  note: 友：方苞（CBDB 外部人物）
+- to_id: cbdb:125282
+  type: 友人
+  note: 友：范鎬鼎（CBDB 外部人物）
+- to_id: cbdb:556217
+  type: 其他
+  note: 被Y欣賞/器重：宋和（CBDB 外部人物）
+- to_id: cbdb:689684
+  type: 其他
+  note: 被Y欣賞/器重：劉石齡（CBDB 外部人物）
+- to_id: cbdb:684167
+  type: 其他
+  note: 被Y欣賞/器重：沈世弈（CBDB 外部人物）
+- to_id: cbdb:30399
+  type: 师生
+  note: 為Y之學生：徐乾學（CBDB 外部人物）
+- to_id: cbdb:57799
+  type: 师生
+  note: 為Y之學生：納喇常安（CBDB 外部人物）
+- to_id: cbdb:62196
+  type: 师生
+  note: 為Y之學生：裴?度（CBDB 外部人物）
+- to_id: cbdb:66023
+  type: 师生
+  note: 為Y之學生：何焯（CBDB 外部人物）
+- to_id: cbdb:125174
+  type: 师生
+  note: 為Y之學生：高怡（CBDB 外部人物）
+- to_id: cbdb:346140
+  type: 师生
+  note: 為Y之學生：張大受（CBDB 外部人物）
+- to_id: xu_yuanwen
+  type: 师生
+  note: 為Y之學生（CBDB）
+- to_id: cbdb:702895
+  type: 师生
+  note: 為Y之弟子：顧嗣雍（CBDB 外部人物）
+- to_id: cbdb:34138
+  type: 其他
+  note: 墓誌銘由Y所作：方苞（CBDB 外部人物），始年 1696
+- to_id: cbdb:56236
+  type: 其他
+  note: 墓誌銘由Y所作：冒襄（CBDB 外部人物）
+- to_id: cbdb:129013
+  type: 其他
+  note: 墓誌銘由Y所作：胡甲桂（CBDB 外部人物）
+- to_id: cbdb:66032
+  type: 其他
+  note: 墓誌銘由Y所作：朱彝尊（CBDB 外部人物），始年 1696
+- to_id: cbdb:86268
+  type: 其他
+  note: 墓表由Y所作：顧予咸（CBDB 外部人物）
+- to_id: cbdb:333996
+  type: 父子
+  note: 高祖;四世祖：韓世賢（CBDB 外部人物）
+- to_id: cbdb:522750
+  type: 父子
+  note: 祖父：韓萊曾（CBDB 外部人物）
+- to_id: cbdb:522751
+  type: 父子
+  note: 祖父：韓慶曾（CBDB 外部人物）
+- to_id: cbdb:506843
+  type: 父子
+  note: 祖父：韓治（CBDB 外部人物）
+- to_id: cbdb:55330
+  type: 父子
+  note: 父：韓韞玉（CBDB 外部人物）
+- to_id: cbdb:55332
+  type: 父子
+  note: 父：韓孝嗣（CBDB 外部人物）
+- to_id: cbdb:55334
+  type: 父子
+  note: 父：韓孝基（CBDB 外部人物）
+- to_id: cbdb:522746
+  type: 父子
+  note: 父：韓孝容（CBDB 外部人物）
+- to_id: cbdb:522747
+  type: 父子
+  note: 父：韓孝鼎（CBDB 外部人物）
+- to_id: cbdb:522748
+  type: 父子
+  note: 父：韓孝潔（CBDB 外部人物）
+- to_id: cbdb:522749
+  type: 父子
+  note: 父：韓孝餘（CBDB 外部人物）
+- to_id: cbdb:700069
+  type: 父子
+  note: 父：韓氏(顧元揆母)（CBDB 外部人物）
+- to_id: cbdb:522753
+  type: 父子
+  note: 父：韓馚（CBDB 外部人物）
+- to_id: cbdb:86252
+  type: 翁婿
+  note: 岳父：顧元揆（CBDB 外部人物）
+- to_id: cbdb:522745
+  type: 翁婿
+  note: 岳父：金宣忠（CBDB 外部人物）
+- to_id: cbdb:522752
+  type: 其他
+  note: 母：韓蘊玉（CBDB 外部人物）
+- to_id: cbdb:55330
+  type: 其他
+  note: 女兒：韓韞玉（CBDB 外部人物）
+- to_id: cbdb:700069
+  type: 其他
+  note: 女兒：韓氏(顧元揆母)（CBDB 外部人物）

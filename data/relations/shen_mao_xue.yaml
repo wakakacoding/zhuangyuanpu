@@ -1,0 +1,116 @@
+from_id: shen_mao_xue
+relations:
+- to_id: cbdb:131205
+  type: 其他
+  note: 墓誌銘由Y所作：湯賓尹（CBDB 外部人物）
+- to_id: cbdb:34919
+  type: 其他
+  note: 傳記作者為Y：屠隆（CBDB 外部人物）
+- to_id: cbdb:66032
+  type: 其他
+  note: 傳記作者為Y：朱彝尊（CBDB 外部人物），始年 1596
+- to_id: cbdb:34717
+  type: 其他
+  note: 為Y作祭文：王世貞（CBDB 外部人物）
+- to_id: cbdb:130250
+  type: 其他
+  note: 為Y作祭文：梅鼎祚（CBDB 外部人物）
+- to_id: cbdb:130605
+  type: 其他
+  note: 為Y作祭文：張鳳翼（CBDB 外部人物）
+- to_id: cbdb:131252
+  type: 其他
+  note: 為Y作祭文：曾朝節（CBDB 外部人物）
+- to_id: cbdb:132148
+  type: 其他
+  note: 為Y作祭文：趙用賢（CBDB 外部人物）
+- to_id: cbdb:131250
+  type: 其他
+  note: 向Y致賀：曾乾亨（CBDB 外部人物）
+- to_id: cbdb:30240
+  type: 其他
+  note: 致書Y：馮夢禎（CBDB 外部人物）
+- to_id: cbdb:35112
+  type: 其他
+  note: 致書Y：吳國倫（CBDB 外部人物）
+- to_id: cbdb:118816
+  type: 其他
+  note: 致書Y：茅坤（CBDB 外部人物）
+- to_id: cbdb:124891
+  type: 其他
+  note: 致書Y：耿定向（CBDB 外部人物）
+- to_id: cbdb:127530
+  type: 其他
+  note: 致書Y：汪道昆（CBDB 外部人物）
+- to_id: cbdb:129544
+  type: 其他
+  note: 致書Y：馬玉麟（CBDB 外部人物）
+- to_id: cbdb:130015
+  type: 其他
+  note: 致書Y：徐顯卿（CBDB 外部人物）
+- to_id: cbdb:130600
+  type: 其他
+  note: 致書Y：張維新（CBDB 外部人物）
+- to_id: cbdb:34719
+  type: 其他
+  note: 答Y書：王世懋（CBDB 外部人物）
+- to_id: cbdb:125136
+  type: 其他
+  note: 贈詩、文：朱衡（CBDB 外部人物）
+- to_id: cbdb:126814
+  type: 其他
+  note: 贈詩、文：王畿（CBDB 外部人物）
+- to_id: cbdb:215447
+  type: 父子
+  note: 曾祖：沈謙（CBDB 外部人物）
+- to_id: cbdb:215449
+  type: 父子
+  note: 祖父：沈璞（CBDB 外部人物）
+- to_id: cbdb:34923
+  type: 父子
+  note: 父：沈寵（CBDB 外部人物）
+- to_id: cbdb:34925
+  type: 父子
+  note: 父：沈天孫（CBDB 外部人物）
+- to_id: cbdb:207635
+  type: 父子
+  note: 父：沈有則（CBDB 外部人物）
+- to_id: cbdb:215450
+  type: 父子
+  note: 父：沈寵（CBDB 外部人物）
+- to_id: cbdb:34920
+  type: 翁婿
+  note: 岳父：屠金樞（CBDB 外部人物）
+- to_id: cbdb:215451
+  type: 其他
+  note: 母：崔氏(沈懋學母)（CBDB 外部人物）
+- to_id: cbdb:215455
+  type: 兄弟
+  note: 兄：沈懋官（CBDB 外部人物）
+- to_id: cbdb:215456
+  type: 兄弟
+  note: 兄：沈懋卿（CBDB 外部人物）
+- to_id: cbdb:215457
+  type: 兄弟
+  note: 兄：沈懋孝（CBDB 外部人物）
+- to_id: cbdb:215454
+  type: 兄弟
+  note: 兄：沈懋敬（CBDB 外部人物）
+- to_id: cbdb:215453
+  type: 其他
+  note: 丈夫：王氏(沈懋學妻)（CBDB 外部人物）
+- to_id: cbdb:215453
+  type: 父子
+  note: 妻子：王氏(沈懋學妻)（CBDB 外部人物）
+- to_id: cbdb:215451
+  type: 父子
+  note: 子：崔氏(沈懋學母)（CBDB 外部人物）
+- to_id: cbdb:215452
+  type: 父子
+  note: 繼子：葛氏(沈懋學繼母)（CBDB 外部人物）
+- to_id: cbdb:34925
+  type: 其他
+  note: 三女：沈天孫（CBDB 外部人物）
+- to_id: cbdb:215452
+  type: 其他
+  note: 繼母：葛氏(沈懋學繼母)（CBDB 外部人物）

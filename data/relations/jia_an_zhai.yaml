@@ -1,0 +1,20 @@
+from_id: jia_an_zhai
+relations:
+- to_id: cbdb:457
+  type: 同年
+  note: 同年友：姜師仲（CBDB 外部人物）
+- to_id: cbdb:13664
+  type: 同年
+  note: 同年友：張宧（CBDB 外部人物）
+- to_id: cbdb:48859
+  type: 同年
+  note: 同年友：費肅（CBDB 外部人物）
+- to_id: cbdb:1062
+  type: 其他
+  note: 推薦：李彌遜（CBDB 外部人物），始年 1139
+- to_id: cbdb:444
+  type: 父子
+  note: 父：賈收（CBDB 外部人物）
+- to_id: cbdb:10451
+  type: 翁婿
+  note: 岳父：慕容彥逢（CBDB 外部人物）

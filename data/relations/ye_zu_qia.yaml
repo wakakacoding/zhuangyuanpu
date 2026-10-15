@@ -1,0 +1,35 @@
+from_id: ye_zu_qia
+relations:
+- to_id: cbdb:1707
+  type: 其他
+  note: 是Y的恩主：曾布（CBDB 外部人物），始年 1103
+- to_id: cbdb:1647
+  type: 政敌
+  note: 反對/攻訐：蔡確（CBDB 外部人物），始年 1100
+- to_id: cbdb:1845
+  type: 政敌
+  note: 反對/攻訐：王珪（CBDB 外部人物），始年 1100
+- to_id: cbdb:18424
+  type: 师生
+  note: 為Y之學生：江側（CBDB 外部人物）
+- to_id: cbdb:7005
+  type: 其他
+  note: 墓誌銘由Y所作：陳襄（CBDB 外部人物），始年 1072
+- to_id: cbdb:18424
+  type: 其他
+  note: 從Y遊：江側（CBDB 外部人物），始年 1100
+- to_id: cbdb:1309
+  type: 其他
+  note: 決定Y的科舉次第：呂惠卿（CBDB 外部人物），始年 1087
+- to_id: cbdb:8051
+  type: 其他
+  note: 答Y啓：韓維（CBDB 外部人物）
+- to_id: cbdb:14585
+  type: 父子
+  note: 從父;伯叔父：葉兌（CBDB 外部人物）
+- to_id: cbdb:16916
+  type: 父子
+  note: 從父;伯叔父：葉D（CBDB 外部人物）
+- to_id: cbdb:14583
+  type: 兄弟
+  note: 兄：葉祖誼（CBDB 外部人物）

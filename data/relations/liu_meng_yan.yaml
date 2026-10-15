@@ -1,0 +1,53 @@
+from_id: liu_meng_yan
+relations:
+- to_id: cbdb:42163
+  type: 其他
+  note: 推薦：宗必經（CBDB 外部人物）
+- to_id: cbdb:44584
+  type: 其他
+  note: 被Y欣賞/器重：孫潼發（CBDB 外部人物）
+- to_id: cbdb:105373
+  type: 其他
+  note: 被Y欣賞/器重：孫辰龍（CBDB 外部人物）
+- to_id: cbdb:100237
+  type: 其他
+  note: 被Y欣賞/器重：鄭真（CBDB 外部人物）
+- to_id: cbdb:13847
+  type: 政敌
+  note: 排擠：高斯得（CBDB 外部人物）
+- to_id: cbdb:13847
+  type: 其他
+  note: 書跋由Y所作：高斯得（CBDB 外部人物）
+- to_id: cbdb:10389
+  type: 其他
+  note: 傳記作者為Y：袁桷（CBDB 外部人物）
+- to_id: cbdb:28617
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：王惲（CBDB 外部人物）
+- to_id: cbdb:27853
+  type: 其他
+  note: 向Y致賀：程鉅夫（CBDB 外部人物）
+- to_id: cbdb:28845
+  type: 其他
+  note: 向Y致賀：張之翰（CBDB 外部人物）
+- to_id: cbdb:27801
+  type: 其他
+  note: 致書Y：謝枋得（CBDB 外部人物）
+- to_id: cbdb:10084
+  type: 其他
+  note: 贈詩、文：吳澄（CBDB 外部人物）
+- to_id: cbdb:27825
+  type: 其他
+  note: 贈詩、文：汪元量（CBDB 外部人物）
+- to_id: cbdb:27826
+  type: 其他
+  note: 贈詩、文：何夢桂（CBDB 外部人物）
+- to_id: cbdb:29308
+  type: 其他
+  note: 贈詩、文：陳孚（CBDB 外部人物）
+- to_id: cbdb:35267
+  type: 其他
+  note: 贈詩、文：汪夢斗（CBDB 外部人物）
+- to_id: cbdb:35400
+  type: 其他
+  note: 贈詩、文：陳義高（CBDB 外部人物）

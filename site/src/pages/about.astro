@@ -1,0 +1,232 @@
+---
+import { allPersons, fullProfileIds, BASE } from '../lib/persons';
+import { listStories } from '../lib/story';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/base.css';
+
+const persons = allPersons();
+const n = persons.length;
+const fullIds = fullProfileIds();
+const stories = listStories();
+const withCoords = persons.filter((p) => p.lat != null).length;
+
+// 补全计划进度（构建期统计，R4：缺数据本身成为叙事）
+const coverage = [
+  { label: '名录收录', cur: n, total: 600, note: '目标：可考的历代文状元全量' },
+  { label: '故事', cur: stories.length, total: 15, note: '长篇叙事，杂志级' },
+  { label: '坐标覆盖', cur: withCoords, total: n, note: '60% 达标解锁完整籍贯地图', target: 0.6 },
+];
+---
+
+<html lang="zh-CN">
+  <head>
+    <SeoHead title="关于" description="关于状元谱：项目缘起、数据源（CBDB / 题名碑录 / 正史 / 登科记考）、A/B/C 三级考证方法论与补全计划。" path="/about/" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-head">
+        <h1>关于本站</h1>
+        <p class="sub">每条信息都该经得起追问：本站是什么、数据从哪来、凭什么可信。</p>
+        <nav class="site-nav">
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}stories/`}>故事</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}map/`}>籍贯地图</a>
+          <a href={`${BASE}galaxy/`}>星图</a>
+          <a href={`${BASE}timeline/`}>时间线</a>
+          <a href={`${BASE}stats/`}>统计</a>
+          <a href={`${BASE}persons/`}>索引</a>
+          <a href={`${BASE}corrections/`}>勘误</a>
+        </nav>
+      </header>
+
+      <section>
+        <h2 class="section-title">项目缘起</h2>
+        <p>
+          唐武德五年（622），孙伏伽成为中国历史上有名可考的第一位状元；
+          清光绪三十年（1904），刘春霖在甲辰恩科中夺魁，成为「第一人中最后人」。
+          一头一尾，<b>1283 年</b>，科举史上共留下 <b>600 余位</b>文状元的名字。
+        </p>
+        <p>
+          这六百余人是中国一千三百年选官制度金字塔的塔尖：有人拜相封侯、青史留名，
+          有人英年早逝、只留下籍贯与名次；同一串名字背后，是地域重心的南移、
+          家族与师承的网络、以及一个王朝如何挑选它的精英。
+          本站想回答一个朴素的问题——<b>这些「天下第一」后来都怎么样了？</b>
+        </p>
+        <p>
+          做法是两条腿走路：一边是有温度、可阅读的<b>长篇故事</b>，
+          一边是可查证、带出处编号的<b>结构化数据底座</b>——目标是做成「状元领域的 CBDB」。
+        </p>
+      </section>
+
+      <section>
+        <h2 class="section-title">数据源</h2>
+        <p class="note-line">以一手史料为骨、权威数据库为底，地方文献补阙。每条入库数据均须挂出处编号。</p>
+        <div class="src-grid">
+          <div class="src-card">
+            <h3>《登科记考》</h3>
+            <p class="src-tag">清 · 徐松 · 三十卷</p>
+            <p>唐五代科举史料集大成之作，逐科考辨登第者姓名与科年，有中华书局点校本。唐五代段名录的主要依据。</p>
+          </div>
+          <div class="src-card">
+            <h3>《明清进士题名碑录》</h3>
+            <p class="src-tag">据北京国子监进士题名碑整理</p>
+            <p>明清两代姓名、籍贯、名次的一手证据——碑刻立于放榜之时，是最难作伪的那类史料。</p>
+          </div>
+          <div class="src-card">
+            <h3>正史列传</h3>
+            <p class="src-tag">二十四史 + 《清史稿》</p>
+            <p>人物仕宦、生卒、著述的主干来源。入传者只是少数，但这少数构成了考证的锚点。</p>
+          </div>
+          <div class="src-card">
+            <h3>CBDB 中国历代人物传记资料库</h3>
+            <p class="src-tag">哈佛 / 北大 / 中研院合作项目</p>
+            <p>50 万+ 人物结构化数据，含科举年份、籍贯、社会关系与估算活动年（fl_year）。本站冷启动的底座，逐条与一手史料交叉核对。</p>
+          </div>
+        </div>
+        <p class="note-line">另参：地方志「选举志」、年谱、墓志、朱卷与登科录等；全部出处逐条登记于数据层，页面可展开查证。</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">考证方法论</h2>
+
+        <h3 class="sub-title">三级出处：给每条信息一个可信度</h3>
+        <div class="tier-list">
+          <div class="tier-row">
+            <span class="tier tier-A">A</span>
+            <div>
+              <b>正史 / 题名碑 / 朱卷 / 登科录</b>
+              <p>原始或接近原始的记录。任何字段无出处不得标 A 级；A 级结论须两个以上独立来源支撑。</p>
+            </div>
+          </div>
+          <div class="tier-row">
+            <span class="tier tier-B">B</span>
+            <div>
+              <b>地方志 / 年谱 / 墓志 / 回忆录</b>
+              <p>二手但严肃的文献，用于补正史之阙、证生平细节。</p>
+            </div>
+          </div>
+          <div class="tier-row">
+            <span class="tier tier-C">C</span>
+            <div>
+              <b>笔记小说 / 民间传说</b>
+              <p>可以入站，但与史实<b>物理隔离</b>：单独归入轶事，前端明确标注「传说」，绝不允许混入年表。</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="sub-title">异说并存：不强行定论</h3>
+        <p>
+          生卒年、籍贯有争议时，存多个版本并各挂出处，并列展示、标注「存疑」。
+          正史沉默处的合法分歧，呈现分歧比强行统一更诚实。
+        </p>
+
+        <h3 class="sub-title">史料阙如，合法</h3>
+        <p>
+          榜上有名而史中无传，本身就是历史事实——它说明寒门夺魁后的仕途天花板、
+          说明史料保存的偏向。凡遇此情形，页面如实标注<span class="quelu">史料阙如</span>，
+          不编造、不脑补、不用传说填空。
+        </p>
+      </section>
+
+      <section class="plan">
+        <h2 class="section-title plan-title">补全计划</h2>
+        <p class="plan-note">榜上有名者六百余人，史中留痕者寥寥。缺漏不遮不掩，进度公开——这本身就是本站要讲的故事。数据为构建时统计。</p>
+        <div class="plan-bars">
+          {coverage.map((c) => {
+            const pct = (c.cur / c.total) * 100;
+            const hit = c.target != null && c.cur / c.total >= c.target;
+            return (
+              <div class="bar-row">
+                <span class="bar-label">{c.label}</span>
+                <span class="bar-track">
+                  <span class={`bar-fill${hit ? ' hit' : ''}`} style={`width:${Math.min(100, pct).toFixed(1)}%`}></span>
+                  {c.target != null && <span class="bar-target" style={`left:${c.target * 100}%`}></span>}
+                </span>
+                <span class="bar-num">{c.cur} / {c.total}{c.target != null ? ` · ${pct.toFixed(0)}%` : ''}</span>
+                <span class="bar-note">{c.note}</span>
+              </div>
+            );
+          })}
+        </div>
+        <p class="plan-note">另有全字段档案（含仕途时间线）已建 {fullIds.size} / 50；坐标覆盖率达 60% 解锁完整籍贯地图。</p>
+      </section>
+
+      <section class="corr-entry">
+        <h2 class="section-title">发现错误？</h2>
+        <p>
+          本站所有结论均可追问出处，也欢迎被推翻。勘误走「读者提交 → 人工比对 → Git 留痕」流程，
+          72 小时内响应；采信、驳回、异说备录，全部公开可查。
+        </p>
+        <a class="corr-btn" href={`${BASE}corrections/`}>前往勘误页 →</a>
+      </section>
+
+      <a class="back" href={BASE}>← 返回首页</a>
+    </div>
+
+    <style>
+      .site-nav { margin-top: 0.9rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+      .site-nav a {
+        font-size: 0.8rem; text-decoration: none; color: var(--ink);
+        border: 1px solid var(--line); padding: 0.1rem 0.6rem; border-radius: 2px;
+        background: #fbf8f0;
+      }
+      .site-nav a:hover { color: var(--cinnabar); border-color: var(--cinnabar); }
+
+      section p { font-size: 0.95rem; }
+      .sub-title { font-size: 1rem; margin: 1.6rem 0 0.6rem; }
+
+      /* 数据源卡片 */
+      .src-grid { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); margin: 1rem 0 0.8rem; }
+      .src-card {
+        border: 1px solid var(--line); background: #fbf8f0;
+        border-radius: 4px; padding: 1rem 1.1rem;
+      }
+      .src-card h3 { margin: 0; font-size: 1.02rem; }
+      .src-tag { margin: 0.25rem 0 0.5rem; font-size: 0.78rem; color: var(--cinnabar); }
+      .src-card p:last-child { margin: 0; font-size: 0.87rem; color: var(--ink-soft); }
+
+      /* 三级出处 */
+      .tier-list { display: flex; flex-direction: column; gap: 0.7rem; margin: 0.6rem 0 0.4rem; }
+      .tier-row {
+        display: flex; gap: 0.9rem; align-items: flex-start;
+        border: 1px solid var(--line); border-radius: 4px;
+        background: #fbf8f0; padding: 0.8rem 1rem;
+      }
+      .tier-row .tier { flex: 0 0 auto; font-size: 0.9rem; padding: 0.1rem 0.55rem; margin-top: 0.15rem; }
+      .tier-row p { margin: 0.15rem 0 0; font-size: 0.87rem; color: var(--ink-soft); }
+
+      /* 补全计划（呼应首页 plan 样式） */
+      .plan { border: 1px dashed var(--gold); border-radius: 4px; padding: 1rem 1.2rem 1.2rem; background: var(--paper-deep); }
+      .plan-title { margin-top: 0.2rem; border-left-color: var(--gold); }
+      .plan-note { margin: 0 0 0.9rem; font-size: 0.85rem; color: var(--ink-soft); }
+      .plan-note:last-child { margin: 0.9rem 0 0; }
+      .plan-bars { display: flex; flex-direction: column; gap: 0.55rem; }
+      .bar-row { display: flex; align-items: center; gap: 0.7rem; font-size: 0.85rem; flex-wrap: wrap; }
+      .bar-label { flex: 0 0 4.5em; color: var(--ink-soft); }
+      .bar-track {
+        flex: 1 1 12rem; height: 0.9rem; background: #e4dccb;
+        border-radius: 2px; overflow: hidden; position: relative;
+      }
+      .bar-fill { display: block; height: 100%; background: var(--cinnabar); border-radius: 2px; }
+      .bar-fill.hit { background: #4a7c59; }
+      .bar-target { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--ink); }
+      .bar-num { flex: 0 0 auto; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+      .bar-note { flex: 0 0 100%; margin: -0.35rem 0 0 calc(4.5em + 0.7rem); font-size: 0.75rem; color: var(--ink-soft); }
+
+      /* 勘误入口 */
+      .corr-entry p { font-size: 0.95rem; }
+      .corr-btn {
+        display: inline-block; margin-top: 0.4rem; text-decoration: none;
+        background: var(--cinnabar); color: #fff; font-size: 0.9rem;
+        padding: 0.35rem 1.2rem; border-radius: 3px; letter-spacing: 0.1em;
+      }
+      .corr-btn:hover { box-shadow: 3px 3px 0 var(--ink); }
+
+      @media (max-width: 640px) {
+        .bar-label { flex-basis: 4em; }
+        .bar-note { margin-left: 0; }
+      }
+    </style>
+  </body>
+</html>

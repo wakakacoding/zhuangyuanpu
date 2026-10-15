@@ -1,0 +1,209 @@
+from_id: luo_lun
+relations:
+- to_id: cbdb:29570
+  type: 友人
+  note: 友：陳獻章（CBDB 外部人物）
+- to_id: cbdb:34532
+  type: 友人
+  note: 友：章懋（CBDB 外部人物）
+- to_id: cbdb:67120
+  type: 友人
+  note: 友：陳壯（CBDB 外部人物）
+- to_id: cbdb:67718
+  type: 友人
+  note: 友：莊昶（CBDB 外部人物）
+- to_id: cbdb:67756
+  type: 友人
+  note: 友：張元禎（CBDB 外部人物）
+- to_id: cbdb:267308
+  type: 友人
+  note: 友：龍瑄（CBDB 外部人物）
+- to_id: cbdb:560331
+  type: 师生
+  note: 為Y之門人：胡克和（CBDB 外部人物）
+- to_id: cbdb:200369
+  type: 师生
+  note: 為Y之學生：鄧淮（CBDB 外部人物）
+- to_id: cbdb:34747
+  type: 其他
+  note: 為Y所著書作序：鄒元標（CBDB 外部人物）
+- to_id: cbdb:68298
+  type: 其他
+  note: 為Y所著書作序：聶豹（CBDB 外部人物）
+- to_id: cbdb:35544
+  type: 其他
+  note: 為Y所著書作序：蕭立之（CBDB 外部人物）
+- to_id: cbdb:3513
+  type: 其他
+  note: 墓誌銘由Y所作：李覯（CBDB 外部人物）
+- to_id: cbdb:34573
+  type: 其他
+  note: 墓誌銘由Y所作：賀欽（CBDB 外部人物）
+- to_id: cbdb:126932
+  type: 其他
+  note: 書跋由Y所作：尹襄（CBDB 外部人物）
+- to_id: cbdb:29570
+  type: 其他
+  note: 傳記作者為Y：陳獻章（CBDB 外部人物）
+- to_id: cbdb:130936
+  type: 其他
+  note: 傳記作者為Y：陳煒（CBDB 外部人物）
+- to_id: cbdb:131031
+  type: 其他
+  note: 傳記作者為Y：陳騏（CBDB 外部人物）
+- to_id: cbdb:131843
+  type: 其他
+  note: 傳記作者為Y：楊廉（CBDB 外部人物）
+- to_id: cbdb:34580
+  type: 其他
+  note: 為Y作祭文：邵寶（CBDB 外部人物）
+- to_id: cbdb:67703
+  type: 其他
+  note: 為Y作祭文：黃潛（CBDB 外部人物）
+- to_id: cbdb:67789
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：楊守陳（CBDB 外部人物）
+- to_id: cbdb:127491
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：沃頖（CBDB 外部人物）
+- to_id: cbdb:34600
+  type: 其他
+  note: 行狀由Y所作：鄒智（CBDB 外部人物）
+- to_id: cbdb:28691
+  type: 其他
+  note: 致書Y：李東陽（CBDB 外部人物）
+- to_id: cbdb:30631
+  type: 其他
+  note: 致書Y：胡居仁（CBDB 外部人物）
+- to_id: cbdb:128585
+  type: 其他
+  note: 致書Y：林光（CBDB 外部人物）
+- to_id: cbdb:66979
+  type: 其他
+  note: 致書Y：崔恭（CBDB 外部人物）
+- to_id: cbdb:67119
+  type: 其他
+  note: 致書Y：夏寅（CBDB 外部人物）
+- to_id: cbdb:67120
+  type: 其他
+  note: 致書Y：陳壯（CBDB 外部人物）
+- to_id: cbdb:67650
+  type: 其他
+  note: 致書Y：李秉（CBDB 外部人物）
+- to_id: cbdb:128822
+  type: 其他
+  note: 致書Y：周孟中（CBDB 外部人物）
+- to_id: cbdb:132826
+  type: 其他
+  note: 致書Y：劉彬（CBDB 外部人物）
+- to_id: wang_yi_kui
+  type: 其他
+  note: 致書Y（CBDB）
+- to_id: cbdb:133151
+  type: 其他
+  note: 致書Y：謝文祥（CBDB 外部人物）
+- to_id: cbdb:198463
+  type: 其他
+  note: 致書Y：羅明（CBDB 外部人物）
+- to_id: cbdb:199087
+  type: 其他
+  note: 致書Y：劉煊（CBDB 外部人物）
+- to_id: cbdb:199108
+  type: 其他
+  note: 致書Y：何純（CBDB 外部人物）
+- to_id: cbdb:199212
+  type: 其他
+  note: 致書Y：劉忠（CBDB 外部人物）
+- to_id: cbdb:34532
+  type: 其他
+  note: 答Y書：章懋（CBDB 外部人物）
+- to_id: cbdb:67443
+  type: 其他
+  note: 答Y書：張瓚（CBDB 外部人物）
+- to_id: cbdb:129075
+  type: 其他
+  note: 答Y書：胡榮（CBDB 外部人物）
+- to_id: cbdb:198224
+  type: 其他
+  note: 答Y書：李直（CBDB 外部人物）
+- to_id: cbdb:199137
+  type: 其他
+  note: 答Y書：翁晏（CBDB 外部人物）
+- to_id: cbdb:550750
+  type: 其他
+  note: 答Y書：邱濬（CBDB 外部人物）
+- to_id: cbdb:67445
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：謝士元（CBDB 外部人物）
+- to_id: cbdb:130917
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：陳琦（CBDB 外部人物）
+- to_id: cbdb:133173
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：謝省（CBDB 外部人物）
+- to_id: cbdb:133693
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：饒秉鑑（CBDB 外部人物）
+- to_id: cbdb:34663
+  type: 其他
+  note: 學記（書院記）由Y所作：張岳（CBDB 外部人物）
+- to_id: cbdb:130008
+  type: 其他
+  note: 壙記由Y所作：徐懷（CBDB 外部人物）
+- to_id: cbdb:525304
+  type: 父子
+  note: 直系祖先：羅開禮（CBDB 外部人物）
+- to_id: cbdb:219259
+  type: 父子
+  note: 曾祖：羅叔彥（CBDB 外部人物）
+- to_id: cbdb:219270
+  type: 父子
+  note: 祖父：羅永仁（CBDB 外部人物）
+- to_id: cbdb:525301
+  type: 父子
+  note: 祖父：羅求仁（CBDB 外部人物）
+- to_id: cbdb:525300
+  type: 父子
+  note: 父：羅橒（CBDB 外部人物）
+- to_id: cbdb:525302
+  type: 父子
+  note: 父：羅柱（CBDB 外部人物）
+- to_id: cbdb:525303
+  type: 父子
+  note: 父：羅梁（CBDB 外部人物）
+- to_id: cbdb:525305
+  type: 父子
+  note: 父：羅榦（CBDB 外部人物）
+- to_id: cbdb:219281
+  type: 父子
+  note: 父：羅修大（CBDB 外部人物）
+- to_id: cbdb:219292
+  type: 其他
+  note: 母：李氏(羅倫母)（CBDB 外部人物）
+- to_id: cbdb:219350
+  type: 兄弟
+  note: 兄：羅儼（CBDB 外部人物）
+- to_id: cbdb:219361
+  type: 兄弟
+  note: 兄：羅傑（CBDB 外部人物）
+- to_id: cbdb:219328
+  type: 兄弟
+  note: 兄：羅侃（CBDB 外部人物）
+- to_id: cbdb:219339
+  type: 兄弟
+  note: 兄：羅倍（CBDB 外部人物）
+- to_id: cbdb:219314
+  type: 其他
+  note: 丈夫：梁氏(羅倫妻)（CBDB 外部人物）
+- to_id: cbdb:219314
+  type: 父子
+  note: 妻子：梁氏(羅倫妻)（CBDB 外部人物）
+- to_id: cbdb:219292
+  type: 父子
+  note: 子：李氏(羅倫母)（CBDB 外部人物）
+- to_id: cbdb:219303
+  type: 父子
+  note: 繼子：嚴氏(羅倫繼母)（CBDB 外部人物）
+- to_id: cbdb:219303
+  type: 其他
+  note: 繼母：嚴氏(羅倫繼母)（CBDB 外部人物）

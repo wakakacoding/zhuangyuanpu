@@ -1,0 +1,44 @@
+from_id: peng_jiao
+relations:
+- to_id: cbdb:133516
+  type: 其他
+  note: 為Y所著書作序：羅大紘（CBDB 外部人物）
+- to_id: cbdb:33920
+  type: 其他
+  note: 墓誌銘由Y所作：彭華（CBDB 外部人物）
+- to_id: cbdb:34510
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：倪岳（CBDB 外部人物）
+- to_id: cbdb:324285
+  type: 父子
+  note: 曾祖：彭于古（CBDB 外部人物）
+- to_id: cbdb:324296
+  type: 父子
+  note: 祖父：彭不同（CBDB 外部人物）
+- to_id: cbdb:324307
+  type: 父子
+  note: 父：彭汝弼（CBDB 外部人物）
+- to_id: cbdb:324318
+  type: 其他
+  note: 母：項氏(彭教母)（CBDB 外部人物）
+- to_id: cbdb:324341
+  type: 兄弟
+  note: 兄：彭敬（CBDB 外部人物）
+- to_id: cbdb:324352
+  type: 兄弟
+  note: 兄：彭占（CBDB 外部人物）
+- to_id: cbdb:324363
+  type: 兄弟
+  note: 兄：彭道（CBDB 外部人物）
+- to_id: cbdb:324374
+  type: 兄弟
+  note: 兄：彭術（CBDB 外部人物）
+- to_id: cbdb:324330
+  type: 其他
+  note: 丈夫：張氏(彭教妻)（CBDB 外部人物）
+- to_id: cbdb:324330
+  type: 父子
+  note: 妻子：張氏(彭教妻)（CBDB 外部人物）
+- to_id: cbdb:324318
+  type: 父子
+  note: 子：項氏(彭教母)（CBDB 外部人物）

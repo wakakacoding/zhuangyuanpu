@@ -1,0 +1,449 @@
+# 关系网络汇总（build_index.py 生成，勿手改；源数据在 data/relations/，改动后重建）
+total_edges: 55
+by_type:
+  同年: 54
+  父子: 1
+persons_covered: 55
+total_persons: 599
+degrees:
+- id: liang_hao
+  name: 梁颢
+  out: 2
+  in: 1
+- id: a_cha_chi
+  name: 阿察赤
+  out: 1
+  in: 1
+- id: a_lu_hui_tie_mu_er
+  name: 阿鲁辉帖木儿
+  out: 1
+  in: 1
+- id: ba_la
+  name: 捌剌
+  out: 1
+  in: 1
+- id: bai_zhu
+  name: 拜住
+  out: 1
+  in: 1
+- id: bao_bao
+  name: 宝宝
+  out: 1
+  in: 1
+- id: bian_guan_dao
+  name: 边贯道
+  out: 1
+  in: 1
+- id: chen_an
+  name: 陈䢿
+  out: 1
+  in: 1
+- id: chen_zu_ren
+  name: 陈祖仁
+  out: 1
+  in: 1
+- id: du_lie_tu
+  name: 笃列图
+  out: 1
+  in: 1
+- id: duo_lie_tu
+  name: 朵列图
+  out: 1
+  in: 1
+- id: fu_shan_xiang
+  name: 傅善祥
+  out: 1
+  in: 1
+- id: han_ke_zhong
+  name: 韩克忠
+  out: 1
+  in: 1
+- id: he_de_pu_hua
+  name: 赫德溥化
+  out: 1
+  in: 1
+- id: he_ke_ming
+  name: 何克明
+  out: 1
+  in: 1
+- id: hu_dou_da_er
+  name: 护都答儿
+  out: 1
+  in: 1
+- id: hu_dou_da_er_2
+  name: 忽都达儿
+  out: 1
+  in: 1
+- id: hu_zai
+  name: 扈载
+  out: 1
+  in: 1
+- id: huo_xi_xian
+  name: 霍希贤
+  out: 1
+  in: 1
+- id: li_fu
+  name: 李黼
+  out: 1
+  in: 1
+- id: li_qi
+  name: 李齐
+  out: 1
+  in: 1
+- id: li_qiu
+  name: 李球
+  out: 1
+  in: 1
+- id: liang_hao_2
+  name: 梁灏
+  out: 1
+  in: 1
+- id: liang_song
+  name: 梁嵩
+  out: 1
+  in: 1
+- id: liu_chunlin
+  name: 刘春霖
+  out: 1
+  in: 1
+- id: ma_lei_ji
+  name: 麻勒吉
+  out: 1
+  in: 1
+- id: mai_zhu
+  name: 买住
+  out: 1
+  in: 1
+- id: niu_ji_zhi
+  name: 牛继志
+  out: 1
+  in: 1
+- id: pu_yan_bu_hua
+  name: 普颜不花
+  out: 1
+  in: 1
+- id: shang_yanliu
+  name: 商衍鎏
+  out: 1
+  in: 1
+- id: shi_da_cheng
+  name: 史大成
+  out: 1
+  in: 1
+- id: song_ben
+  name: 宋本
+  out: 1
+  in: 1
+- id: su_jian
+  name: 苏检
+  out: 1
+  in: 1
+- id: tai_buhua
+  name: 泰不华
+  out: 1
+  in: 1
+- id: tong_tong
+  name: 同同
+  out: 1
+  in: 1
+- id: tu_er_chen
+  name: 图尔宸
+  out: 1
+  in: 1
+- id: tui_zheng
+  name: 侻征
+  out: 1
+  in: 1
+- id: wang_ang
+  name: 王昂
+  out: 1
+  in: 1
+- id: wang_che
+  name: 王彻
+  out: 1
+  in: 1
+- id: wang_ke_zhen
+  name: 王克贞
+  out: 1
+  in: 1
+- id: wang_wen_ye
+  name: 王文烨
+  out: 1
+  in: 1
+- id: wang_zong_si
+  name: 王宗嗣
+  out: 1
+  in: 1
+- id: wang_zong_zhe
+  name: 王宗哲
+  out: 1
+  in: 1
+- id: wei_yuan_li
+  name: 魏元礼
+  out: 1
+  in: 1
+- id: wen_yun_zhong
+  name: 文允中
+  out: 1
+  in: 1
+- id: xu_yin
+  name: 徐寅
+  out: 1
+  in: 1
+- id: xue_chao_wu
+  name: 薛朝晤
+  out: 1
+  in: 1
+- id: zhang_dong
+  name: 张栋
+  out: 1
+  in: 1
+- id: zhang_qiyan
+  name: 张起岩
+  out: 1
+  in: 1
+- id: zhang_shi_jian
+  name: 张士坚
+  out: 1
+  in: 1
+- id: zhang_yi
+  name: 张益
+  out: 1
+  in: 1
+- id: zhao_kai
+  name: 赵楷
+  out: 1
+  in: 1
+- id: zhong_fang_li
+  name: 钟芳礼
+  out: 1
+  in: 1
+- id: zou_zhong_yi
+  name: 邹忠倚
+  out: 1
+  in: 1
+- id: liang_gu
+  name: 梁固
+  out: 0
+  in: 1
+edges:
+- from_id: a_cha_chi
+  to_id: li_fu
+  type: 同年
+  note: 1327 年同科
+- from_id: a_lu_hui_tie_mu_er
+  to_id: wang_zong_zhe
+  type: 同年
+  note: 1348 年同科
+- from_id: ba_la
+  to_id: zhang_yi
+  type: 同年
+  note: 1324 年同科
+- from_id: bai_zhu
+  to_id: chen_zu_ren
+  type: 同年
+  note: 1342 年同科
+- from_id: bao_bao
+  to_id: he_ke_ming
+  type: 同年
+  note: 1363 年同科
+- from_id: bian_guan_dao
+  to_id: li_qiu
+  type: 同年
+  note: 1123 年同科
+- from_id: chen_an
+  to_id: han_ke_zhong
+  type: 同年
+  note: 1397 年同科
+- from_id: chen_zu_ren
+  to_id: bai_zhu
+  type: 同年
+  note: 1342 年同科
+- from_id: du_lie_tu
+  to_id: wang_wen_ye
+  type: 同年
+  note: 1330 年同科
+- from_id: duo_lie_tu
+  to_id: wen_yun_zhong
+  type: 同年
+  note: 1351 年同科
+- from_id: fu_shan_xiang
+  to_id: zhong_fang_li
+  type: 同年
+  note: 1853 年同科
+- from_id: han_ke_zhong
+  to_id: chen_an
+  type: 同年
+  note: 1397 年同科
+- from_id: he_de_pu_hua
+  to_id: zhang_dong
+  type: 同年
+  note: 1366 年同科
+- from_id: he_ke_ming
+  to_id: bao_bao
+  type: 同年
+  note: 1363 年同科
+- from_id: hu_dou_da_er
+  to_id: zhang_qiyan
+  type: 同年
+  note: 1315 年同科
+- from_id: hu_dou_da_er_2
+  to_id: huo_xi_xian
+  type: 同年
+  note: 1318 年同科
+- from_id: hu_zai
+  to_id: wang_ke_zhen
+  type: 同年
+  note: 952 年同科
+- from_id: huo_xi_xian
+  to_id: hu_dou_da_er_2
+  type: 同年
+  note: 1318 年同科
+- from_id: li_fu
+  to_id: a_cha_chi
+  type: 同年
+  note: 1327 年同科
+- from_id: li_qi
+  to_id: tong_tong
+  type: 同年
+  note: 1333 年同科
+- from_id: li_qiu
+  to_id: bian_guan_dao
+  type: 同年
+  note: 1123 年同科
+- from_id: liang_hao
+  to_id: liang_gu
+  type: 父子
+  note: 梁固，颢长子。父雍熙二年状元，子祥符间甲第（名录作大中祥符二年状元），世称「父子状元」；《建炎以来朝野杂记》载国朝父子状元凡三家，梁氏居其一。
+- from_id: liang_hao
+  to_id: liang_hao_2
+  type: 同年
+  note: 985 年同科
+- from_id: liang_hao_2
+  to_id: liang_hao
+  type: 同年
+  note: 985 年同科
+- from_id: liang_song
+  to_id: wang_che
+  type: 同年
+  note: 925 年同科
+- from_id: liu_chunlin
+  to_id: shang_yanliu
+  type: 同年
+  note: 光绪三十年甲辰恩科同榜——刘一甲一名（状元），商一甲三名（探花）。同榜榜眼朱汝珍待录入。
+- from_id: ma_lei_ji
+  to_id: zou_zhong_yi
+  type: 同年
+  note: 1652 年同科
+- from_id: mai_zhu
+  to_id: wei_yuan_li
+  type: 同年
+  note: 1360 年同科
+- from_id: niu_ji_zhi
+  to_id: xue_chao_wu
+  type: 同年
+  note: 1354 年同科
+- from_id: pu_yan_bu_hua
+  to_id: zhang_shi_jian
+  type: 同年
+  note: 1345 年同科
+- from_id: shang_yanliu
+  to_id: liu_chunlin
+  type: 同年
+  note: 1904 年同科
+- from_id: shi_da_cheng
+  to_id: tu_er_chen
+  type: 同年
+  note: 1655 年同科
+- from_id: song_ben
+  to_id: tai_buhua
+  type: 同年
+  note: 1321 年同科
+- from_id: su_jian
+  to_id: xu_yin
+  type: 同年
+  note: 894 年同科
+- from_id: tai_buhua
+  to_id: song_ben
+  type: 同年
+  note: 1321 年同科
+- from_id: tong_tong
+  to_id: li_qi
+  type: 同年
+  note: 1333 年同科
+- from_id: tu_er_chen
+  to_id: shi_da_cheng
+  type: 同年
+  note: 1655 年同科
+- from_id: tui_zheng
+  to_id: wang_zong_si
+  type: 同年
+  note: 1357 年同科
+- from_id: wang_ang
+  to_id: zhao_kai
+  type: 同年
+  note: 1118 年同科
+- from_id: wang_che
+  to_id: liang_song
+  type: 同年
+  note: 925 年同科
+- from_id: wang_ke_zhen
+  to_id: hu_zai
+  type: 同年
+  note: 952 年同科
+- from_id: wang_wen_ye
+  to_id: du_lie_tu
+  type: 同年
+  note: 1330 年同科
+- from_id: wang_zong_si
+  to_id: tui_zheng
+  type: 同年
+  note: 1357 年同科
+- from_id: wang_zong_zhe
+  to_id: a_lu_hui_tie_mu_er
+  type: 同年
+  note: 1348 年同科
+- from_id: wei_yuan_li
+  to_id: mai_zhu
+  type: 同年
+  note: 1360 年同科
+- from_id: wen_yun_zhong
+  to_id: duo_lie_tu
+  type: 同年
+  note: 1351 年同科
+- from_id: xu_yin
+  to_id: su_jian
+  type: 同年
+  note: 894 年同科
+- from_id: xue_chao_wu
+  to_id: niu_ji_zhi
+  type: 同年
+  note: 1354 年同科
+- from_id: zhang_dong
+  to_id: he_de_pu_hua
+  type: 同年
+  note: 1366 年同科
+- from_id: zhang_qiyan
+  to_id: hu_dou_da_er
+  type: 同年
+  note: 1315 年同科
+- from_id: zhang_shi_jian
+  to_id: pu_yan_bu_hua
+  type: 同年
+  note: 1345 年同科
+- from_id: zhang_yi
+  to_id: ba_la
+  type: 同年
+  note: 1324 年同科
+- from_id: zhao_kai
+  to_id: wang_ang
+  type: 同年
+  note: 1118 年同科
+- from_id: zhong_fang_li
+  to_id: fu_shan_xiang
+  type: 同年
+  note: 1853 年同科
+- from_id: zou_zhong_yi
+  to_id: ma_lei_ji
+  type: 同年
+  note: 1652 年同科

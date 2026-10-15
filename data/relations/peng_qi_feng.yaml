@@ -1,0 +1,23 @@
+from_id: peng_qi_feng
+relations:
+- to_id: cbdb:57395
+  type: 友人
+  note: 友：蔣炳（CBDB 外部人物）
+- to_id: cbdb:57334
+  type: 同僚
+  note: 同僚：雷鋐（CBDB 外部人物）
+- to_id: cbdb:692941
+  type: 其他
+  note: 主Y家之教席：李鎭（CBDB 外部人物）
+- to_id: peng_ding_qiu
+  type: 父子
+  note: 祖父（CBDB）
+- to_id: cbdb:65748
+  type: 父子
+  note: 父：彭紹升（CBDB 外部人物）
+- to_id: cbdb:89311
+  type: 父子
+  note: 父：彭紹謙（CBDB 外部人物）
+- to_id: cbdb:89271
+  type: 父子
+  note: 父：彭正乾（CBDB 外部人物）

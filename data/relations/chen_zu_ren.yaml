@@ -1,0 +1,35 @@
+from_id: chen_zu_ren
+relations:
+- to_id: bai_zhu
+  type: 同年
+  note: 1342 年同科
+- to_id: cbdb:28455
+  type: 其他
+  note: 墓誌銘由Y所作：李士瞻（CBDB 外部人物），始年 1367
+- to_id: cbdb:10818
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：趙汸（CBDB 外部人物），始年 1369
+- to_id: cbdb:28377
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：張以寧（CBDB 外部人物），始年 1360
+- to_id: cbdb:28640
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：張仲深（CBDB 外部人物），始年 1351
+- to_id: cbdb:28642
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：成廷珪（CBDB 外部人物），始年 1370
+- to_id: cbdb:28410
+  type: 其他
+  note: 哀辭由Y所作：王逢（CBDB 外部人物）
+- to_id: cbdb:30337
+  type: 其他
+  note: 致書Y：謝應芳（CBDB 外部人物）
+- to_id: cbdb:33562
+  type: 其他
+  note: 為Y之詩文作跋：凌廷堪（CBDB 外部人物）
+- to_id: cbdb:28644
+  type: 父子
+  note: 父：陳安國（CBDB 外部人物）
+- to_id: cbdb:108214
+  type: 兄弟
+  note: 兄：陳宗義（CBDB 外部人物）

@@ -1,0 +1,5 @@
+from_id: hong_ying
+relations:
+- to_id: cbdb:30858
+  type: 其他
+  note: 與Y遊：顧廣圻（CBDB 外部人物）

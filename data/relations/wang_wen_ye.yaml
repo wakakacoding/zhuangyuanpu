@@ -1,0 +1,5 @@
+from_id: wang_wen_ye
+relations:
+  - to_id: du_lie_tu
+    type: 同年
+    note: 1330 年同科

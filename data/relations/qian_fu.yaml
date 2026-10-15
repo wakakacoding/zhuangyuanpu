@@ -1,0 +1,38 @@
+from_id: qian_fu
+relations:
+- to_id: cbdb:68219
+  type: 其他
+  note: 墓誌銘由Y所作：喬宇（CBDB 外部人物）
+- to_id: cbdb:129312
+  type: 其他
+  note: 墓誌銘由Y所作：姚旬（CBDB 外部人物）
+- to_id: cbdb:28691
+  type: 其他
+  note: 墓表由Y所作：李東陽（CBDB 外部人物）
+- to_id: cbdb:260902
+  type: 父子
+  note: 曾祖：錢復（CBDB 外部人物）
+- to_id: cbdb:260904
+  type: 父子
+  note: 祖父：錢昌（CBDB 外部人物）
+- to_id: cbdb:260905
+  type: 父子
+  note: 父：錢中（CBDB 外部人物）
+- to_id: cbdb:260906
+  type: 其他
+  note: 母：陸氏(錢福母)（CBDB 外部人物）
+- to_id: cbdb:260909
+  type: 兄弟
+  note: 兄：錢祚（CBDB 外部人物）
+- to_id: cbdb:260908
+  type: 兄弟
+  note: 兄：錢塘（CBDB 外部人物）
+- to_id: cbdb:260907
+  type: 其他
+  note: 丈夫：顧氏(錢福妻)（CBDB 外部人物）
+- to_id: cbdb:260907
+  type: 父子
+  note: 妻子：顧氏(錢福妻)（CBDB 外部人物）
+- to_id: cbdb:260906
+  type: 父子
+  note: 子：陸氏(錢福母)（CBDB 外部人物）

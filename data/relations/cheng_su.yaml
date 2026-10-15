@@ -1,0 +1,8 @@
+from_id: cheng_su
+relations:
+- to_id: cbdb:15377
+  type: 父子
+  note: 直系祖先：程C（CBDB 外部人物）
+- to_id: cbdb:15378
+  type: 父子
+  note: 族父：程伯照（CBDB 外部人物）

@@ -1,0 +1,26 @@
+from_id: mu_dai_wen
+relations:
+- to_id: cbdb:14450
+  type: 同年
+  note: 同年友：傅伯壽（CBDB 外部人物）
+- to_id: cbdb:18864
+  type: 同年
+  note: 同年友：胡瑑（CBDB 外部人物）
+- to_id: cbdb:25538
+  type: 同年
+  note: 同年友：莫叔光（CBDB 外部人物）
+- to_id: cbdb:42080
+  type: 同年
+  note: 同年友：何萬（CBDB 外部人物）
+- to_id: cbdb:46734
+  type: 同年
+  note: 同年友：張淵（CBDB 外部人物）
+- to_id: cbdb:39239
+  type: 其他
+  note: 被Y欣賞/器重：江史（CBDB 外部人物）
+- to_id: cbdb:10592
+  type: 师生
+  note: 為Y之弟子：鄭伯熊（CBDB 外部人物）
+- to_id: cbdb:38517
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：石如壎（CBDB 外部人物）

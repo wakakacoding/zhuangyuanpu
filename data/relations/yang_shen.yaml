@@ -1,0 +1,140 @@
+from_id: yang_shen
+relations:
+- to_id: cbdb:34717
+  type: 其他
+  note: 為Y所著書作序：王世貞（CBDB 外部人物）
+- to_id: cbdb:124893
+  type: 其他
+  note: 為Y所著書作序：李贄（CBDB 外部人物）
+- to_id: cbdb:127530
+  type: 其他
+  note: 為Y所著書作序：汪道昆（CBDB 外部人物）
+- to_id: cbdb:130797
+  type: 其他
+  note: 為Y所著書作序：陳文燭（CBDB 外部人物）
+- to_id: cbdb:133653
+  type: 其他
+  note: 為Y所著書作序：顧起元（CBDB 外部人物）
+- to_id: cbdb:127479
+  type: 其他
+  note: 墓誌銘由Y所作：向信（CBDB 外部人物）
+- to_id: cbdb:20065
+  type: 其他
+  note: 傳記作者為Y：謝翱（CBDB 外部人物）
+- to_id: cbdb:67821
+  type: 其他
+  note: 為Y作祭文：劉春（CBDB 外部人物）
+- to_id: cbdb:67943
+  type: 其他
+  note: 為Y作祭文：黃珂（CBDB 外部人物）
+- to_id: cbdb:68064
+  type: 其他
+  note: 為Y作祭文：王元正（CBDB 外部人物）
+- to_id: cbdb:68446
+  type: 其他
+  note: 為Y作祭文：彭汝實（CBDB 外部人物）
+- to_id: cbdb:67304
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：姜龍（CBDB 外部人物）
+- to_id: cbdb:338582
+  type: 其他
+  note: 年譜由Y所作：簡紹芳（CBDB 外部人物）
+- to_id: cbdb:68196
+  type: 其他
+  note: 神道碑由Y所作：姚鏌（CBDB 外部人物）
+- to_id: cbdb:28826
+  type: 其他
+  note: 致書Y：張時徹（CBDB 外部人物）
+- to_id: cbdb:130490
+  type: 其他
+  note: 致書Y：張袞（CBDB 外部人物）
+- to_id: cbdb:131495
+  type: 其他
+  note: 致書Y：費宷（CBDB 外部人物）
+- to_id: cbdb:132583
+  type: 其他
+  note: 致書Y：蔡汝楠（CBDB 外部人物）
+- to_id: cbdb:68333
+  type: 其他
+  note: 致書Y：歐陽重（CBDB 外部人物）
+- to_id: cbdb:128739
+  type: 其他
+  note: 致書Y：金臯（CBDB 外部人物）
+- to_id: cbdb:68449
+  type: 其他
+  note: 答Y書：劉繪（CBDB 外部人物）
+- to_id: cbdb:129726
+  type: 其他
+  note: 答Y書：孫宜（CBDB 外部人物）
+- to_id: cbdb:551423
+  type: 其他
+  note: 贈詩、文：董思近（CBDB 外部人物）
+- to_id: cbdb:130683
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：張璧（CBDB 外部人物）
+- to_id: cbdb:30626
+  type: 其他
+  note: 為Y所作詩文作序：薛蕙（CBDB 外部人物）
+- to_id: cbdb:128905
+  type: 其他
+  note: 為Y所作詩文作序：周滿（CBDB 外部人物）
+- to_id: cbdb:128175
+  type: 其他
+  note: 政績為Y所稱道：吳伯與（CBDB 外部人物）
+- to_id: cbdb:275714
+  type: 父子
+  note: 曾祖：楊玟（CBDB 外部人物）
+- to_id: cbdb:275715
+  type: 父子
+  note: 祖父：楊春（CBDB 外部人物）
+- to_id: cbdb:68092
+  type: 父子
+  note: 父：楊廷和（CBDB 外部人物）
+- to_id: cbdb:275717
+  type: 其他
+  note: 母：黃氏(楊慎母)（CBDB 外部人物）
+- to_id: cbdb:275721
+  type: 兄弟
+  note: 兄：楊惇（CBDB 外部人物）
+- to_id: cbdb:275722
+  type: 兄弟
+  note: 兄：楊愷（CBDB 外部人物）
+- to_id: cbdb:275723
+  type: 兄弟
+  note: 兄：楊恆（CBDB 外部人物）
+- to_id: cbdb:275724
+  type: 兄弟
+  note: 兄：楊恂（CBDB 外部人物）
+- to_id: cbdb:275725
+  type: 兄弟
+  note: 兄：楊忱（CBDB 外部人物）
+- to_id: cbdb:275726
+  type: 兄弟
+  note: 兄：楊悌（CBDB 外部人物）
+- to_id: cbdb:275727
+  type: 兄弟
+  note: 兄：楊某（CBDB 外部人物）
+- to_id: cbdb:525747
+  type: 兄弟
+  note: 兄：楊怐（CBDB 外部人物）
+- to_id: cbdb:118846
+  type: 其他
+  note: 丈夫：黃氏(楊慎妻)（CBDB 外部人物）
+- to_id: cbdb:275720
+  type: 其他
+  note: 丈夫：王氏(楊慎妻)（CBDB 外部人物）
+- to_id: cbdb:118846
+  type: 父子
+  note: 妻子：黃氏(楊慎妻)（CBDB 外部人物）
+- to_id: cbdb:275720
+  type: 父子
+  note: 妻子：王氏(楊慎妻)（CBDB 外部人物）
+- to_id: cbdb:275717
+  type: 父子
+  note: 子：黃氏(楊慎母)（CBDB 外部人物）
+- to_id: cbdb:275718
+  type: 父子
+  note: 繼子：喻氏(楊慎繼母)（CBDB 外部人物）
+- to_id: cbdb:275718
+  type: 其他
+  note: 繼母：喻氏(楊慎繼母)（CBDB 外部人物）

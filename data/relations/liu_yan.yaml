@@ -1,0 +1,59 @@
+from_id: liu_yan
+relations:
+- to_id: cbdb:67977
+  type: 其他
+  note: 墓誌銘由Y所作：羅如墉（CBDB 外部人物）
+- to_id: cbdb:127123
+  type: 其他
+  note: 墓誌銘由Y所作：丘嵩（CBDB 外部人物）
+- to_id: cbdb:132491
+  type: 其他
+  note: 墓誌銘由Y所作：鄧崙（CBDB 外部人物）
+- to_id: cbdb:126765
+  type: 其他
+  note: 傳記作者為Y：王業（CBDB 外部人物）
+- to_id: cbdb:34493
+  type: 其他
+  note: 神道碑由Y所作：王直（CBDB 外部人物）
+- to_id: cbdb:67602
+  type: 其他
+  note: 神道碑由Y所作：呂原（CBDB 外部人物）
+- to_id: cbdb:29603
+  type: 其他
+  note: 墓表由Y所作：李賢（CBDB 外部人物）
+- to_id: cbdb:237461
+  type: 父子
+  note: 曾祖：劉惟德（CBDB 外部人物）
+- to_id: cbdb:237462
+  type: 父子
+  note: 祖父：劉永寧（CBDB 外部人物）
+- to_id: cbdb:523915
+  type: 父子
+  note: 父：劉即（CBDB 外部人物）
+- to_id: cbdb:523916
+  type: 父子
+  note: 父：劉敉（CBDB 外部人物）
+- to_id: cbdb:237463
+  type: 父子
+  note: 父：劉原性（CBDB 外部人物）
+- to_id: cbdb:237464
+  type: 其他
+  note: 母：楊氏(劉儼母)（CBDB 外部人物）
+- to_id: cbdb:237467
+  type: 兄弟
+  note: 兄：劉宣光（CBDB 外部人物）
+- to_id: cbdb:237468
+  type: 兄弟
+  note: 兄：劉宣昭（CBDB 外部人物）
+- to_id: cbdb:237466
+  type: 其他
+  note: 丈夫：王氏(劉儼妻)（CBDB 外部人物）
+- to_id: cbdb:237466
+  type: 父子
+  note: 妻子：王氏(劉儼妻)（CBDB 外部人物）
+- to_id: cbdb:237464
+  type: 父子
+  note: 子：楊氏(劉儼母)（CBDB 外部人物）
+- to_id: cbdb:523914
+  type: 父子
+  note: 五世祖;高曾祖：劉天聲（CBDB 外部人物）

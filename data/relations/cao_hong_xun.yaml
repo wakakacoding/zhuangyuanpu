@@ -1,0 +1,5 @@
+from_id: cao_hong_xun
+relations:
+- to_id: cbdb:63550
+  type: 其他
+  note: 詩社成員：馮文蔚（CBDB 外部人物）

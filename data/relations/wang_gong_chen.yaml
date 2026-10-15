@@ -1,0 +1,119 @@
+from_id: wang_gong_chen
+relations:
+- to_id: cbdb:12761
+  type: 同年
+  note: 同年友：鄭條（CBDB 外部人物）
+- to_id: cbdb:3718
+  type: 其他
+  note: 推薦：邵雍（CBDB 外部人物），始年 1071
+- to_id: cbdb:13592
+  type: 其他
+  note: 推薦：張得一（CBDB 外部人物）
+- to_id: cbdb:43532
+  type: 其他
+  note: 推薦：姚奭（CBDB 外部人物）
+- to_id: cbdb:1488
+  type: 其他
+  note: 為Y所著書作序：司馬光（CBDB 外部人物）
+- to_id: cbdb:1558
+  type: 其他
+  note: 墓誌銘由Y所作：宋祁（CBDB 外部人物）
+- to_id: cbdb:8089
+  type: 其他
+  note: 墓誌銘由Y所作：劉摯（CBDB 外部人物）
+- to_id: cbdb:4001
+  type: 其他
+  note: 書跋由Y所作：魏了翁（CBDB 外部人物）
+- to_id: cbdb:10706
+  type: 其他
+  note: 書跋由Y所作：王柏（CBDB 外部人物）
+- to_id: cbdb:13
+  type: 其他
+  note: 為Y作祭文：晁補之（CBDB 外部人物）
+- to_id: cbdb:1953
+  type: 其他
+  note: 同會：文彥博（CBDB 外部人物），始年 1082
+- to_id: cbdb:375
+  type: 其他
+  note: 批評：趙抃（CBDB 外部人物）
+- to_id: cbdb:3580
+  type: 其他
+  note: 行狀由Y所作：劉敞（CBDB 外部人物）
+- to_id: cbdb:1384
+  type: 其他
+  note: 致書Y：歐陽修（CBDB 外部人物）
+- to_id: cbdb:1762
+  type: 其他
+  note: 致書Y：王安石（CBDB 外部人物）
+- to_id: cbdb:3762
+  type: 其他
+  note: 致書Y：蘇洵（CBDB 外部人物）
+- to_id: cbdb:17935
+  type: 其他
+  note: 致書Y：石介（CBDB 外部人物）
+- to_id: cbdb:43157
+  type: 其他
+  note: 致書Y：耶律宗真（CBDB 外部人物）
+- to_id: cbdb:630
+  type: 其他
+  note: 致Y啓：韓琦（CBDB 外部人物）
+- to_id: cbdb:22015
+  type: 父子
+  note: 曾祖：王湘（CBDB 外部人物）
+- to_id: cbdb:37844
+  type: 父子
+  note: 祖父：王氏(王拱辰孫女)（CBDB 外部人物）
+- to_id: cbdb:7039
+  type: 父子
+  note: 妻之祖父：李格非（CBDB 外部人物）
+- to_id: cbdb:22014
+  type: 父子
+  note: 父：王端甫（CBDB 外部人物）
+- to_id: cbdb:24469
+  type: 父子
+  note: 父：王正甫（CBDB 外部人物）
+- to_id: cbdb:12850
+  type: 父子
+  note: 父：王代恕（CBDB 外部人物）
+- to_id: cbdb:1314
+  type: 翁婿
+  note: 岳父：呂公著（CBDB 外部人物）
+- to_id: cbdb:3648
+  type: 翁婿
+  note: 岳父：呂希亞（CBDB 外部人物）
+- to_id: cbdb:37755
+  type: 翁婿
+  note: 岳父：程詞恭（CBDB 外部人物）
+- to_id: cbdb:803
+  type: 翁婿
+  note: 第一任妻父：薛奎（CBDB 外部人物）
+- to_id: cbdb:5209
+  type: 其他
+  note: 母：李氏(王代恕妻)（CBDB 外部人物）
+- to_id: cbdb:45904
+  type: 其他
+  note: 母：李氏(王代恕妻)（CBDB 外部人物）
+- to_id: cbdb:22236
+  type: 兄弟
+  note: 兄：王拱安（CBDB 外部人物）
+- to_id: cbdb:37628
+  type: 其他
+  note: 丈夫：薛氏(王拱辰妻)（CBDB 外部人物）
+- to_id: cbdb:45905
+  type: 其他
+  note: 丈夫：薛氏(王拱辰妻)（CBDB 外部人物）
+- to_id: cbdb:37628
+  type: 父子
+  note: 妻子：薛氏(王拱辰妻)（CBDB 外部人物）
+- to_id: cbdb:45905
+  type: 父子
+  note: 妻子：薛氏(王拱辰妻)（CBDB 外部人物）
+- to_id: cbdb:5209
+  type: 父子
+  note: 子：李氏(王代恕妻)（CBDB 外部人物）
+- to_id: cbdb:45904
+  type: 父子
+  note: 子：李氏(王代恕妻)（CBDB 外部人物）
+- to_id: cbdb:7039
+  type: 翁婿
+  note: 孫女婿：李格非（CBDB 外部人物）

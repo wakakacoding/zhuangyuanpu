@@ -1,0 +1,5 @@
+from_id: tui_zheng
+relations:
+  - to_id: wang_zong_si
+    type: 同年
+    note: 1357 年同科

@@ -1,0 +1,68 @@
+from_id: yao_wen_tian
+relations:
+- to_id: cbdb:29794
+  type: 友人
+  note: 友：焦循（CBDB 外部人物）
+- to_id: cbdb:65949
+  type: 友人
+  note: 友：惲敬（CBDB 外部人物）
+- to_id: cbdb:66033
+  type: 友人
+  note: 友：嚴可均（CBDB 外部人物）
+- to_id: cbdb:84633
+  type: 友人
+  note: 友：胡秉虔（CBDB 外部人物）
+- to_id: cbdb:85551
+  type: 友人
+  note: 友：姚學塽（CBDB 外部人物）
+- to_id: cbdb:124873
+  type: 友人
+  note: 友：沈夢蘭（CBDB 外部人物）
+- to_id: cbdb:439013
+  type: 友人
+  note: 友：丁溶（CBDB 外部人物）
+- to_id: cbdb:86477
+  type: 师生
+  note: 為Y之學生：錢以同（CBDB 外部人物）
+- to_id: cbdb:550847
+  type: 其他
+  note: 讚揚Y之學：胡清焣（CBDB 外部人物）
+- to_id: cbdb:514463
+  type: 父子
+  note: 曾祖：姚德升（CBDB 外部人物）
+- to_id: cbdb:514464
+  type: 父子
+  note: 曾祖：姚德謙（CBDB 外部人物）
+- to_id: cbdb:514459
+  type: 父子
+  note: 祖父：姚經甸（CBDB 外部人物）
+- to_id: cbdb:514460
+  type: 父子
+  note: 祖父：姚經炳（CBDB 外部人物）
+- to_id: cbdb:514461
+  type: 父子
+  note: 祖父：姚經第（CBDB 外部人物）
+- to_id: cbdb:514462
+  type: 父子
+  note: 祖父：姚經輔（CBDB 外部人物）
+- to_id: cbdb:514456
+  type: 父子
+  note: 祖父：姚世孝（CBDB 外部人物）
+- to_id: cbdb:514457
+  type: 父子
+  note: 父：姚倍勤（CBDB 外部人物）
+- to_id: cbdb:514458
+  type: 父子
+  note: 父：姚晏（CBDB 外部人物）
+- to_id: cbdb:514465
+  type: 父子
+  note: 父：姚衡（CBDB 外部人物）
+- to_id: cbdb:56363
+  type: 翁婿
+  note: 岳父：周鼎樞（CBDB 外部人物）
+- to_id: cbdb:56362
+  type: 其他
+  note: 丈夫：周瑤（CBDB 外部人物）
+- to_id: cbdb:56362
+  type: 父子
+  note: 妻子：周瑤（CBDB 外部人物）

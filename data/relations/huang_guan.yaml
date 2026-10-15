@@ -1,0 +1,20 @@
+from_id: huang_guan
+relations:
+- to_id: cbdb:67171
+  type: 友人
+  note: 友：柯暹（CBDB 外部人物）
+- to_id: cbdb:109085
+  type: 师生
+  note: 為Y之學生：黃冔（CBDB 外部人物）
+- to_id: cbdb:67539
+  type: 其他
+  note: 傳記作者為Y：尹直（CBDB 外部人物）
+- to_id: cbdb:523515
+  type: 兄弟
+  note: 兄：黃覯（CBDB 外部人物）
+- to_id: cbdb:118925
+  type: 其他
+  note: 丈夫：翁氏(黃觀妻)（CBDB 外部人物）
+- to_id: cbdb:118925
+  type: 父子
+  note: 妻子：翁氏(黃觀妻)（CBDB 外部人物）

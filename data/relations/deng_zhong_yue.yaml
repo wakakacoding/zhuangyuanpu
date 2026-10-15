@@ -1,0 +1,35 @@
+from_id: deng_zhong_yue
+relations:
+- to_id: cbdb:700217
+  type: 友人
+  note: 以文章、學問受知於：楊銘淇（CBDB 外部人物）
+- to_id: cbdb:700217
+  type: 其他
+  note: 稱道Y之文章、學問：楊銘淇（CBDB 外部人物）
+- to_id: cbdb:518480
+  type: 父子
+  note: 高祖;四世祖：鄧守漸（CBDB 外部人物）
+- to_id: cbdb:518479
+  type: 父子
+  note: 祖父：鄧允燮（CBDB 外部人物）
+- to_id: cbdb:518481
+  type: 父子
+  note: 父：鄧汝敏（CBDB 外部人物）
+- to_id: cbdb:518484
+  type: 父子
+  note: 父：鄧基哲（CBDB 外部人物）
+- to_id: cbdb:518482
+  type: 父子
+  note: 從父;伯叔父：鄧汝賢（CBDB 外部人物）
+- to_id: cbdb:518485
+  type: 兄弟
+  note: 兄：鄧鍾一（CBDB 外部人物）
+- to_id: cbdb:518486
+  type: 兄弟
+  note: 兄：鄧鍾音（CBDB 外部人物）
+- to_id: cbdb:518487
+  type: 兄弟
+  note: 兄：鄧鍾敘（CBDB 外部人物）
+- to_id: cbdb:518483
+  type: 父子
+  note: 五世祖;高曾祖：鄧邦（CBDB 外部人物）

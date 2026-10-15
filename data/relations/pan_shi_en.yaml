@@ -1,0 +1,89 @@
+from_id: pan_shi_en
+relations:
+- to_id: cbdb:35103
+  type: 其他
+  note: 推薦：姚瑩（CBDB 外部人物）
+- to_id: cbdb:54819
+  type: 其他
+  note: 推薦：林則徐（CBDB 外部人物）
+- to_id: cbdb:86274
+  type: 师生
+  note: 為Y之門人：顧禮琥（CBDB 外部人物）
+- to_id: cbdb:61428
+  type: 师生
+  note: 為Y之學生：桑春榮（CBDB 外部人物）
+- to_id: cbdb:75028
+  type: 师生
+  note: 為Y之學生：劉廷榆（CBDB 外部人物）
+- to_id: cbdb:91468
+  type: 其他
+  note: 為Y所著書作序：潘世鏞（CBDB 外部人物）
+- to_id: cbdb:514182
+  type: 父子
+  note: 曾祖：潘成榖（CBDB 外部人物）
+- to_id: cbdb:514183
+  type: 父子
+  note: 祖父：潘庭誥（CBDB 外部人物）
+- to_id: cbdb:514184
+  type: 父子
+  note: 祖父：潘祖均（CBDB 外部人物）
+- to_id: cbdb:514185
+  type: 父子
+  note: 祖父：潘祖謙（CBDB 外部人物）
+- to_id: cbdb:514186
+  type: 父子
+  note: 祖父：潘祖疇（CBDB 外部人物）
+- to_id: cbdb:514187
+  type: 父子
+  note: 祖父：潘儀鳳（CBDB 外部人物）
+- to_id: cbdb:514175
+  type: 父子
+  note: 妻之祖父：汪乃昌（CBDB 外部人物）
+- to_id: cbdb:514176
+  type: 父子
+  note: 妻之祖父：汪廷標（CBDB 外部人物）
+- to_id: cbdb:514188
+  type: 父子
+  note: 妻之祖父：蔣鎔經（CBDB 外部人物）
+- to_id: cbdb:514189
+  type: 父子
+  note: 妻之祖父：韓文和（CBDB 外部人物）
+- to_id: cbdb:54480
+  type: 父子
+  note: 父：潘曾瑩（CBDB 外部人物）
+- to_id: cbdb:91535
+  type: 父子
+  note: 父：潘奕基（CBDB 外部人物）
+- to_id: cbdb:91566
+  type: 父子
+  note: 父：潘曾沂（CBDB 外部人物）
+- to_id: cbdb:514178
+  type: 翁婿
+  note: 岳父：汪楏（CBDB 外部人物）
+- to_id: cbdb:514179
+  type: 翁婿
+  note: 岳父：汪嘉梓（CBDB 外部人物）
+- to_id: cbdb:514180
+  type: 翁婿
+  note: 岳父：汪嘉森（CBDB 外部人物）
+- to_id: cbdb:514181
+  type: 翁婿
+  note: 岳父：汪學源（CBDB 外部人物）
+- to_id: cbdb:514177
+  type: 翁婿
+  note: 岳父：汪為仁（CBDB 外部人物）
+- to_id: cbdb:54073
+  type: 父子
+  note: 從父;伯叔父：潘奕雋（CBDB 外部人物）
+- to_id: cbdb:514175
+  type: 翁婿
+  note: 孫女婿：汪乃昌（CBDB 外部人物）
+- to_id: cbdb:514176
+  type: 翁婿
+  note: 孫女婿：汪廷標（CBDB 外部人物）
+- to_id: cbdb:514188
+  type: 翁婿
+  note: 孫女婿：蔣鎔經（CBDB 外部人物）
+- to_id: cbdb:514189
+  type: 翁婿
+  note: 孫女婿：韓文和（CBDB 外部人物）

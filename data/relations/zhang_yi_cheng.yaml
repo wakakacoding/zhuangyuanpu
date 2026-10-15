@@ -1,0 +1,14 @@
+from_id: zhang_yi_cheng
+relations:
+- to_id: cbdb:30243
+  type: 其他
+  note: 致書Y：馮時可（CBDB 外部人物）
+- to_id: cbdb:134778
+  type: 其他
+  note: 致書Y：陳懿典（CBDB 外部人物）
+- to_id: cbdb:130527
+  type: 父子
+  note: 高祖;四世祖：張弼（CBDB 外部人物）
+- to_id: cbdb:345868
+  type: 父子
+  note: 父：張安茂（CBDB 外部人物）

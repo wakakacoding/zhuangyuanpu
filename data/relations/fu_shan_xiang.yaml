@@ -1,0 +1,5 @@
+from_id: fu_shan_xiang
+relations:
+  - to_id: zhong_fang_li
+    type: 同年
+    note: 1853 年同科

@@ -1,0 +1,8 @@
+from_id: cao_nai
+relations:
+- to_id: cbdb:524325
+  type: 父子
+  note: 祖父：曹廷訓（CBDB 外部人物）
+- to_id: cbdb:524326
+  type: 父子
+  note: 父：曹祉咸（CBDB 外部人物）

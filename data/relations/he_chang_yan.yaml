@@ -1,0 +1,11 @@
+from_id: he_chang_yan
+relations:
+- to_id: cbdb:24202
+  type: 父子
+  note: 高祖;四世祖：何嵩之（CBDB 外部人物）
+- to_id: cbdb:3336
+  type: 父子
+  note: 從父;伯叔父：何正臣（CBDB 外部人物）
+- to_id: cbdb:562766
+  type: 兄弟
+  note: 兄：何昌辰（CBDB 外部人物）

@@ -1,0 +1,8 @@
+from_id: bai_zhu
+relations:
+- to_id: chen_zu_ren
+  type: 同年
+  note: 1342 年同科
+- to_id: cbdb:10740
+  type: 其他
+  note: 為Y所作詩文作序：黃溍（CBDB 外部人物）

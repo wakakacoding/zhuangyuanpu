@@ -1,0 +1,20 @@
+from_id: xu_shi
+relations:
+- to_id: cbdb:3624
+  type: 其他
+  note: 書跋由Y所作：樓鑰（CBDB 外部人物）
+- to_id: cbdb:702370
+  type: 父子
+  note: 十二世祖：徐謙（CBDB 外部人物）
+- to_id: cbdb:3381
+  type: 父子
+  note: 父：徐師閔（CBDB 外部人物）
+- to_id: cbdb:14343
+  type: 父子
+  note: 父：徐師甫（CBDB 外部人物）
+- to_id: cbdb:765
+  type: 父子
+  note: 從父;伯叔父：徐師旦（CBDB 外部人物）
+- to_id: cbdb:3380
+  type: 父子
+  note: 從父;伯叔父：徐師回（CBDB 外部人物）

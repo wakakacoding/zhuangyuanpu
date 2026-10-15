@@ -1,0 +1,92 @@
+from_id: feng_jing
+relations:
+- to_id: cbdb:4058
+  type: 同年
+  note: 同年友：姚闢（CBDB 外部人物）
+- to_id: cbdb:301
+  type: 政敌
+  note: 彈劾：張璪（CBDB 外部人物）
+- to_id: cbdb:628
+  type: 其他
+  note: 得到Y的支持：富弼（CBDB 外部人物）
+- to_id: cbdb:7197
+  type: 其他
+  note: 書跋由Y所作：周必大（CBDB 外部人物）
+- to_id: cbdb:51448
+  type: 其他
+  note: 從Y遊：鄧咸（CBDB 外部人物）
+- to_id: cbdb:1762
+  type: 其他
+  note: 反對/不支持Y的政策：王安石（CBDB 外部人物）
+- to_id: cbdb:630
+  type: 其他
+  note: 拒絕會面：韓琦（CBDB 外部人物）
+- to_id: cbdb:3244
+  type: 其他
+  note: 為Y作祭文：周行己（CBDB 外部人物）
+- to_id: cbdb:1617
+  type: 其他
+  note: 為Y作祭文：田況（CBDB 外部人物）
+- to_id: cbdb:1384
+  type: 其他
+  note: 致書Y：歐陽修（CBDB 外部人物）
+- to_id: cbdb:1649
+  type: 其他
+  note: 致書Y：蔡京（CBDB 外部人物）
+- to_id: cbdb:971
+  type: 其他
+  note: 致書Y：李常（CBDB 外部人物）
+- to_id: cbdb:7076
+  type: 其他
+  note: 答Y書：王安國（CBDB 外部人物）
+- to_id: cbdb:13378
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：鄭獬（CBDB 外部人物）
+- to_id: cbdb:48292
+  type: 父子
+  note: 曾祖：馮碧（CBDB 外部人物）
+- to_id: cbdb:48294
+  type: 父子
+  note: 祖父：馮禹謀（CBDB 外部人物）
+- to_id: cbdb:3315
+  type: 父子
+  note: 父：馮諶（CBDB 外部人物）
+- to_id: cbdb:16468
+  type: 父子
+  note: 父：馮詢（CBDB 外部人物）
+- to_id: cbdb:4223
+  type: 父子
+  note: 父：馮式（CBDB 外部人物）
+- to_id: cbdb:8130
+  type: 翁婿
+  note: 岳父：蔡懋（CBDB 外部人物）
+- to_id: cbdb:1879
+  type: 翁婿
+  note: 第一任妻父：王絲（CBDB 外部人物）
+- to_id: cbdb:628
+  type: 翁婿
+  note: 第二任妻父：富弼（CBDB 外部人物）
+- to_id: cbdb:5031
+  type: 其他
+  note: 母：朱氏(馮京母)（CBDB 外部人物）
+- to_id: cbdb:48297
+  type: 兄弟
+  note: 弟：馮襄（CBDB 外部人物）
+- to_id: cbdb:48296
+  type: 其他
+  note: 丈夫：富氏(馮京妻)（CBDB 外部人物）
+- to_id: cbdb:48296
+  type: 父子
+  note: 妻子：富氏(馮京妻)（CBDB 外部人物）
+- to_id: cbdb:5031
+  type: 父子
+  note: 子：朱氏(馮京母)（CBDB 外部人物）
+- to_id: cbdb:48295
+  type: 父子
+  note: 孫：吳氏(馮禹謀妻)（CBDB 外部人物）
+- to_id: cbdb:48293
+  type: 父子
+  note: 曾孫; 重孫：李氏(馮碧妻)（CBDB 外部人物）
+- to_id: cbdb:48298
+  type: 兄弟
+  note: 兄弟之妻：朱氏(馮襄妻)（CBDB 外部人物）

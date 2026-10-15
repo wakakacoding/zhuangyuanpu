@@ -1,0 +1,20 @@
+from_id: zhuang_you_gong
+relations:
+- to_id: cbdb:78965
+  type: 其他
+  note: 被Y欣賞/器重：余觀德（CBDB 外部人物）
+- to_id: cbdb:29876
+  type: 其他
+  note: 題Y之墓：錢大昕（CBDB 外部人物）
+- to_id: cbdb:517450
+  type: 父子
+  note: 父：莊士斌（CBDB 外部人物）
+- to_id: cbdb:517451
+  type: 父子
+  note: 父：莊資政（CBDB 外部人物）
+- to_id: cbdb:517449
+  type: 翁婿
+  note: 岳父：何文通（CBDB 外部人物）
+- to_id: cbdb:517452
+  type: 翁婿
+  note: 岳父：羅永楠（CBDB 外部人物）

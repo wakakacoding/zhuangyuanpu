@@ -1,0 +1,29 @@
+from_id: jin_de_ying
+relations:
+- to_id: cbdb:513382
+  type: 父子
+  note: 祖父：金敦順（CBDB 外部人物）
+- to_id: cbdb:513376
+  type: 父子
+  note: 父：金忠沂（CBDB 外部人物）
+- to_id: cbdb:513377
+  type: 父子
+  note: 父：金忠泉（CBDB 外部人物）
+- to_id: cbdb:513378
+  type: 父子
+  note: 父：金忠淳（CBDB 外部人物）
+- to_id: cbdb:513379
+  type: 父子
+  note: 父：金忠湜（CBDB 外部人物）
+- to_id: cbdb:513380
+  type: 父子
+  note: 父：金忠潔（CBDB 外部人物）
+- to_id: cbdb:513381
+  type: 父子
+  note: 父：金忠澤（CBDB 外部人物）
+- to_id: cbdb:513383
+  type: 父子
+  note: 父：金聖緖（CBDB 外部人物）
+- to_id: cbdb:513384
+  type: 兄弟
+  note: 兄：金德鎔（CBDB 外部人物）

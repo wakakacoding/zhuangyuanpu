@@ -1,0 +1,5 @@
+from_id: he_de_pu_hua
+relations:
+  - to_id: zhang_dong
+    type: 同年
+    note: 1366 年同科

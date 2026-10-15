@@ -1,0 +1,35 @@
+from_id: zou_ying_long
+relations:
+- to_id: cbdb:25209
+  type: 同年
+  note: 同年友：鍾震（CBDB 外部人物）
+- to_id: cbdb:25540
+  type: 同年
+  note: 同年友：莫子純（CBDB 外部人物）
+- to_id: cbdb:44592
+  type: 同年
+  note: 同年友：姚師虎（CBDB 外部人物）
+- to_id: cbdb:50511
+  type: 同年
+  note: 同年友：趙至道（CBDB 外部人物）
+- to_id: cbdb:17116
+  type: 其他
+  note: 書跋由Y所作：李昴英（CBDB 外部人物）
+- to_id: cbdb:3326
+  type: 其他
+  note: 不合：韓侂胄（CBDB 外部人物）
+- to_id: cbdb:13847
+  type: 其他
+  note: 挽詩、詞由Y所作：高斯得（CBDB 外部人物）
+- to_id: cbdb:10892
+  type: 其他
+  note: 致書Y：陳宓（CBDB 外部人物）
+- to_id: cbdb:11328
+  type: 其他
+  note: 致書Y：方大琮（CBDB 外部人物）
+- to_id: cbdb:49960
+  type: 父子
+  note: 父：鄒徽（CBDB 外部人物）
+- to_id: cbdb:49958
+  type: 兄弟
+  note: 從弟：鄒應博（CBDB 外部人物）

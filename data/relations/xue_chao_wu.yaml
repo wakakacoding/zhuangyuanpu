@@ -1,0 +1,5 @@
+from_id: xue_chao_wu
+relations:
+  - to_id: niu_ji_zhi
+    type: 同年
+    note: 1354 年同科

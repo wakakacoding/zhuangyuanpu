@@ -1,0 +1,32 @@
+from_id: sun_xian
+relations:
+- to_id: cbdb:127365
+  type: 其他
+  note: 傳記作者為Y：朱睦㮮（CBDB 外部人物）
+- to_id: cbdb:247998
+  type: 父子
+  note: 曾祖：孫敬先（CBDB 外部人物）
+- to_id: cbdb:248009
+  type: 父子
+  note: 祖父：孫林（CBDB 外部人物）
+- to_id: cbdb:248020
+  type: 父子
+  note: 父：孫興（CBDB 外部人物）
+- to_id: cbdb:248031
+  type: 其他
+  note: 母：李氏(孫賢母)（CBDB 外部人物）
+- to_id: cbdb:248053
+  type: 兄弟
+  note: 兄：孫貢（CBDB 外部人物）
+- to_id: cbdb:248064
+  type: 兄弟
+  note: 兄：孫質（CBDB 外部人物）
+- to_id: cbdb:248042
+  type: 其他
+  note: 丈夫：常氏(孫賢妻)（CBDB 外部人物）
+- to_id: cbdb:248042
+  type: 父子
+  note: 妻子：常氏(孫賢妻)（CBDB 外部人物）
+- to_id: cbdb:248031
+  type: 父子
+  note: 子：李氏(孫賢母)（CBDB 外部人物）

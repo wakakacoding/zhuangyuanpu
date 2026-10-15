@@ -1,0 +1,8 @@
+from_id: wang_ren_kan
+relations:
+- to_id: cbdb:89100
+  type: 师生
+  note: 為Y之學生：梁士詒（CBDB 外部人物）
+- to_id: cbdb:55540
+  type: 其他
+  note: 書跋由Y所作：左錫嘉（CBDB 外部人物）

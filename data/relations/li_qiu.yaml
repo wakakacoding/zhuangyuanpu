@@ -1,0 +1,5 @@
+from_id: li_qiu
+relations:
+  - to_id: bian_guan_dao
+    type: 同年
+    note: 1123 年同科

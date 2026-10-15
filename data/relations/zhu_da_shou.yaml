@@ -1,0 +1,65 @@
+from_id: zhu_da_shou
+relations:
+- to_id: cbdb:124310
+  type: 其他
+  note: 傳記作者為Y：朱賡（CBDB 外部人物）
+- to_id: cbdb:126579
+  type: 其他
+  note: 為Y作祭文：王叔杲（CBDB 外部人物）
+- to_id: cbdb:128983
+  type: 其他
+  note: 哀辭由Y所作：姜寶（CBDB 外部人物）
+- to_id: zhang_yuan_bian
+  type: 其他
+  note: 行狀由Y所作（CBDB）
+- to_id: cbdb:35065
+  type: 其他
+  note: 致書Y：王宗沐（CBDB 外部人物）
+- to_id: cbdb:126814
+  type: 其他
+  note: 致書Y：王畿（CBDB 外部人物）
+- to_id: cbdb:318988
+  type: 父子
+  note: 曾祖：諸坰（CBDB 外部人物）
+- to_id: cbdb:318989
+  type: 父子
+  note: 祖父：諸宏（CBDB 外部人物）
+- to_id: cbdb:318990
+  type: 父子
+  note: 父：諸宗教（CBDB 外部人物）
+- to_id: cbdb:318991
+  type: 其他
+  note: 母：金氏(諸大綬母)（CBDB 外部人物）
+- to_id: cbdb:319000
+  type: 兄弟
+  note: 兄：諸大約（CBDB 外部人物）
+- to_id: cbdb:319001
+  type: 兄弟
+  note: 兄：諸大繡（CBDB 外部人物）
+- to_id: cbdb:319002
+  type: 兄弟
+  note: 兄：諸大維（CBDB 外部人物）
+- to_id: cbdb:318993
+  type: 兄弟
+  note: 兄：諸大綱（CBDB 外部人物）
+- to_id: cbdb:318994
+  type: 兄弟
+  note: 兄：諸大紀（CBDB 外部人物）
+- to_id: cbdb:318997
+  type: 兄弟
+  note: 兄：諸大纓（CBDB 外部人物）
+- to_id: cbdb:318998
+  type: 兄弟
+  note: 兄：諸大繹（CBDB 外部人物）
+- to_id: cbdb:318999
+  type: 兄弟
+  note: 兄：諸大綗（CBDB 外部人物）
+- to_id: cbdb:318992
+  type: 其他
+  note: 丈夫：錢氏(諸大綬妻)（CBDB 外部人物）
+- to_id: cbdb:318992
+  type: 父子
+  note: 妻子：錢氏(諸大綬妻)（CBDB 外部人物）
+- to_id: cbdb:318991
+  type: 父子
+  note: 子：金氏(諸大綬母)（CBDB 外部人物）

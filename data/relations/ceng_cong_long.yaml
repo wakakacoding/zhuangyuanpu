@@ -1,0 +1,35 @@
+from_id: ceng_cong_long
+relations:
+- to_id: cbdb:18324
+  type: 同年
+  note: 同年友：姚子材（CBDB 外部人物）
+- to_id: cbdb:44059
+  type: 同年
+  note: 同年友：皇甫曄（CBDB 外部人物）
+- to_id: cbdb:45115
+  type: 其他
+  note: 推薦：徐鳳（CBDB 外部人物）
+- to_id: cbdb:3595
+  type: 其他
+  note: 為Y作祭文：劉克莊（CBDB 外部人物），始年 1246
+- to_id: cbdb:4001
+  type: 其他
+  note: 致書Y：魏了翁（CBDB 外部人物）
+- to_id: cbdb:10258
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：真德秀（CBDB 外部人物）
+- to_id: cbdb:21686
+  type: 父子
+  note: 曾祖：曾詳（CBDB 外部人物）
+- to_id: cbdb:21687
+  type: 父子
+  note: 祖父：曾憕（CBDB 外部人物）
+- to_id: cbdb:12681
+  type: 兄弟
+  note: 兄：曾天麟（CBDB 外部人物）
+- to_id: cbdb:21688
+  type: 兄弟
+  note: 兄：曾治鳳（CBDB 外部人物）
+- to_id: cbdb:21689
+  type: 兄弟
+  note: 兄：曾用虎（CBDB 外部人物）

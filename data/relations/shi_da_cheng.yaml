@@ -1,0 +1,5 @@
+from_id: shi_da_cheng
+relations:
+  - to_id: tu_er_chen
+    type: 同年
+    note: 1655 年同科

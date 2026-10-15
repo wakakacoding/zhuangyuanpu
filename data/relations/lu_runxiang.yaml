@@ -1,0 +1,5 @@
+from_id: lu_runxiang
+relations:
+- to_id: cbdb:520222
+  type: 父子
+  note: 父：陸宗振（CBDB 外部人物）

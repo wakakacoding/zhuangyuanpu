@@ -1,0 +1,104 @@
+from_id: xu_yuan_jie
+relations:
+- to_id: cbdb:12820
+  type: 同年
+  note: 同年友：葉大有（CBDB 外部人物）
+- to_id: cbdb:47335
+  type: 同年
+  note: 同年友：張濟之（CBDB 外部人物）
+- to_id: cbdb:3728
+  type: 政敌
+  note: 反對/攻訐：史嵩之（CBDB 外部人物）
+- to_id: cbdb:10948
+  type: 其他
+  note: 為Y所著書作序：趙汝騰（CBDB 外部人物）
+- to_id: cbdb:10258
+  type: 其他
+  note: 為Y學派的成員：真德秀（CBDB 外部人物），始年 1245
+- to_id: cbdb:22004
+  type: 师生
+  note: 為Y之弟子：陳文蔚（CBDB 外部人物）
+- to_id: cbdb:22009
+  type: 其他
+  note: 墓誌銘由Y所作：王窳（CBDB 外部人物）
+- to_id: cbdb:35282
+  type: 其他
+  note: 墓誌銘由Y所作：吳如愚（CBDB 外部人物），始年 1226
+- to_id: cbdb:37851
+  type: 其他
+  note: 墓誌銘由Y所作：方桂（CBDB 外部人物）
+- to_id: cbdb:38277
+  type: 其他
+  note: 墓誌銘由Y所作：方子方（CBDB 外部人物）
+- to_id: cbdb:3257
+  type: 其他
+  note: 書跋由Y所作：朱熹（CBDB 外部人物）
+- to_id: cbdb:25514
+  type: 其他
+  note: 書跋由Y所作：趙訓之（CBDB 外部人物）
+- to_id: cbdb:26913
+  type: 其他
+  note: 書跋由Y所作：劉輝（CBDB 外部人物）
+- to_id: cbdb:3595
+  type: 其他
+  note: 為Y作祭文：劉克莊（CBDB 外部人物），始年 1246
+- to_id: cbdb:21180
+  type: 其他
+  note: 為Y作祭文：方岳（CBDB 外部人物），始年 1262
+- to_id: cbdb:14973
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：劉爚（CBDB 外部人物），始年 1208
+- to_id: cbdb:22004
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：陳文蔚（CBDB 外部人物），始年 1213
+- to_id: cbdb:19481
+  type: 同僚
+  note: 同僚：郭磊卿（CBDB 外部人物）
+- to_id: cbdb:1391
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：龐籍（CBDB 外部人物）
+- to_id: cbdb:7055
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：呂祖謙（CBDB 外部人物）
+- to_id: cbdb:11811
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：劉韐（CBDB 外部人物）
+- to_id: cbdb:20584
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：陸九齡（CBDB 外部人物）
+- to_id: cbdb:25265
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：趙士礽（CBDB 外部人物）
+- to_id: cbdb:25269
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：趙不逿（CBDB 外部人物）
+- to_id: cbdb:26262
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：祝可久（CBDB 外部人物）
+- to_id: cbdb:30359
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：辛棄疾（CBDB 外部人物）
+- to_id: cbdb:49291
+  type: 其他
+  note: 畫贊(畫像記)由Y所作：賈逸祖（CBDB 外部人物）
+- to_id: cbdb:46059
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：金衡（CBDB 外部人物）
+- to_id: cbdb:10831
+  type: 其他
+  note: 為Y乞某事：李心傳（CBDB 外部人物）
+- to_id: cbdb:24854
+  type: 其他
+  note: 為Y乞某事：劉漢弻（CBDB 外部人物）
+- to_id: cbdb:11087
+  type: 其他
+  note: 為Y作祠記：林希逸（CBDB 外部人物）
+- to_id: cbdb:22006
+  type: 父子
+  note: 父：徐直方（CBDB 外部人物）
+- to_id: cbdb:105540
+  type: 父子
+  note: 從父;伯叔父：徐九齡（CBDB 外部人物）
+- to_id: cbdb:22005
+  type: 兄弟
+  note: 從兄弟;堂兄弟：徐元得（CBDB 外部人物）

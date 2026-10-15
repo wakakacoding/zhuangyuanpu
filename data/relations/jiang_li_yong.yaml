@@ -1,0 +1,11 @@
+from_id: jiang_li_yong
+relations:
+- to_id: cbdb:75028
+  type: 其他
+  note: 同鄉：劉廷榆（CBDB 外部人物）
+- to_id: cbdb:527234
+  type: 父子
+  note: 高祖;四世祖：蔣遇（CBDB 外部人物）
+- to_id: cbdb:527233
+  type: 父子
+  note: 祖父：蔣其暄（CBDB 外部人物）

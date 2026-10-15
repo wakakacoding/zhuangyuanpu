@@ -1,0 +1,5 @@
+from_id: dai_qu_heng
+relations:
+- to_id: cbdb:89613
+  type: 其他
+  note: 傳記作者為Y：蔣師爚（CBDB 外部人物）

@@ -1,0 +1,8 @@
+from_id: wang_jing_ming
+relations:
+- to_id: cbdb:65759
+  type: 师生
+  note: 為Y之學生：王原祁（CBDB 外部人物）
+- to_id: cbdb:65759
+  type: 其他
+  note: 畫風師法Y：王原祁（CBDB 外部人物）

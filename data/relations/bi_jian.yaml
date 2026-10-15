@@ -1,0 +1,5 @@
+from_id: bi_jian
+relations:
+- to_id: wang_ying_chen
+  type: 其他
+  note: 書跋由Y所作（CBDB）

@@ -1,0 +1,5 @@
+from_id: gui_yun_su
+relations:
+- to_id: cbdb:73040
+  type: 父子
+  note: 父：歸起先（CBDB 外部人物）

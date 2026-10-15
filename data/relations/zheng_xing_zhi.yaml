@@ -1,0 +1,50 @@
+from_id: zheng_xing_zhi
+relations:
+- to_id: cbdb:38219
+  type: 同年
+  note: 同年友：于有成（CBDB 外部人物）
+- to_id: cbdb:3257
+  type: 师生
+  note: 為Y之門人：朱熹（CBDB 外部人物）
+- to_id: cbdb:3595
+  type: 其他
+  note: 為Y作祭文：劉克莊（CBDB 外部人物）
+- to_id: cbdb:11134
+  type: 其他
+  note: 為Y作廟碑記：黃榦（CBDB 外部人物）
+- to_id: cbdb:10892
+  type: 其他
+  note: 致Y啓：陳宓（CBDB 外部人物）
+- to_id: cbdb:45350
+  type: 其他
+  note: 為Y篆匾額、器銘：許儉（CBDB 外部人物）
+- to_id: cbdb:51356
+  type: 父子
+  note: 曾祖：鄭可大（CBDB 外部人物）
+- to_id: cbdb:51358
+  type: 父子
+  note: 祖父：鄭獎（CBDB 外部人物）
+- to_id: cbdb:51403
+  type: 父子
+  note: 父：鄭德起（CBDB 外部人物）
+- to_id: cbdb:51360
+  type: 父子
+  note: 父：鄭汝永（CBDB 外部人物）
+- to_id: cbdb:51361
+  type: 其他
+  note: 母：黃氏(鄭汝永妻)（CBDB 外部人物）
+- to_id: cbdb:51362
+  type: 其他
+  note: 丈夫：潘氏(鄭性之妻)（CBDB 外部人物）
+- to_id: cbdb:51362
+  type: 父子
+  note: 妻子：潘氏(鄭性之妻)（CBDB 外部人物）
+- to_id: cbdb:51361
+  type: 父子
+  note: 子：黃氏(鄭汝永妻)（CBDB 外部人物）
+- to_id: cbdb:51359
+  type: 父子
+  note: 孫：陳氏(鄭獎妻)（CBDB 外部人物）
+- to_id: cbdb:51357
+  type: 父子
+  note: 曾孫; 重孫：陳氏(鄭可大妻)（CBDB 外部人物）

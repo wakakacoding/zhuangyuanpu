@@ -1,0 +1,47 @@
+from_id: fan_ying_qi
+relations:
+- to_id: cbdb:127609
+  type: 其他
+  note: 墓誌銘由Y所作：沈楠（CBDB 外部人物）
+- to_id: cbdb:35262
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：袁尊尼（CBDB 外部人物）
+- to_id: cbdb:130300
+  type: 其他
+  note: 致書Y：敖文禎（CBDB 外部人物）
+- to_id: cbdb:329383
+  type: 父子
+  note: 曾祖：范縉（CBDB 外部人物）
+- to_id: cbdb:329384
+  type: 父子
+  note: 祖父：范完（CBDB 外部人物）
+- to_id: cbdb:329385
+  type: 父子
+  note: 父：范萱（CBDB 外部人物）
+- to_id: cbdb:329386
+  type: 其他
+  note: 母：陸氏(范應期母)（CBDB 外部人物）
+- to_id: cbdb:329389
+  type: 兄弟
+  note: 兄：范應明（CBDB 外部人物）
+- to_id: cbdb:329390
+  type: 兄弟
+  note: 兄：范應光（CBDB 外部人物）
+- to_id: cbdb:329391
+  type: 兄弟
+  note: 兄：范輝（CBDB 外部人物）
+- to_id: cbdb:329392
+  type: 兄弟
+  note: 兄：范嘉（CBDB 外部人物）
+- to_id: cbdb:329393
+  type: 兄弟
+  note: 兄：范朝（CBDB 外部人物）
+- to_id: cbdb:329388
+  type: 其他
+  note: 丈夫：沈氏(范應期妻)（CBDB 外部人物）
+- to_id: cbdb:329388
+  type: 父子
+  note: 妻子：沈氏(范應期妻)（CBDB 外部人物）
+- to_id: cbdb:329386
+  type: 父子
+  note: 子：陸氏(范應期母)（CBDB 外部人物）

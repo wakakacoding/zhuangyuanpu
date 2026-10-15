@@ -1,0 +1,26 @@
+from_id: zhou_tan
+relations:
+- to_id: cbdb:42464
+  type: 同年
+  note: 同年友：邵澤（CBDB 外部人物）
+- to_id: cbdb:25127
+  type: 其他
+  note: 諡議由Y所作：羅從彥（CBDB 外部人物）
+- to_id: cbdb:137910
+  type: 父子
+  note: 祖父：周揖（CBDB 外部人物）
+- to_id: cbdb:42961
+  type: 父子
+  note: 父：周明復（CBDB 外部人物）
+- to_id: cbdb:42668
+  type: 父子
+  note: 父：周澈（CBDB 外部人物）
+- to_id: cbdb:137382
+  type: 父子
+  note: 父：周大成（CBDB 外部人物）
+- to_id: cbdb:138414
+  type: 其他
+  note: 丈夫：丘氏(周坦妻)（CBDB 外部人物）
+- to_id: cbdb:138414
+  type: 父子
+  note: 妻子：丘氏(周坦妻)（CBDB 外部人物）

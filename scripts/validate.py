@@ -27,7 +27,8 @@ EVENT_TYPES = {"出生", "应试", "中举", "夺魁", "授官", "留学", "升�
                "贬谪", "罢官", "被俘", "实业", "致仕", "隐居", "守节", "著作", "卒"}
 PRECISIONS = {"exact", "about", "range"}
 TIERS = {"A", "B", "C"}
-REL_TYPES = {"同年", "师生", "父子", "翁婿", "政敌", "兄弟", "友人"}
+REL_TYPES = {"同年", "师生", "父子", "翁婿", "政敌", "兄弟", "友人", "同僚", "其他"}
+EXT_TO_ID_RE = re.compile(r"^cbdb:\d+$")  # CBDB 外部人物标记
 ID_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 
 errors: list[str] = []
@@ -167,7 +168,8 @@ for stem, doc in rels_by.items():
         err(f"relations/{stem}.yaml: from_id {fid} 不存在")
     for i, r in enumerate(doc.get("relations") or []):
         tag = f"relations/{stem}[{i}]"
-        if r.get("to_id") not in persons:
+        to_id = r.get("to_id")
+        if to_id not in persons and not (isinstance(to_id, str) and EXT_TO_ID_RE.match(to_id)):
             err(f"{tag}: to_id {r.get('to_id')} 不存在")
         if r.get("type") not in REL_TYPES:
             err(f"{tag}: type 非法 {r.get('type')}")

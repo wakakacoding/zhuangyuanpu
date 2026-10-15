@@ -1,0 +1,5 @@
+from_id: han_ke_zhong
+relations:
+  - to_id: chen_an
+    type: 同年
+    note: 1397 年同科

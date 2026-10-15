@@ -1,0 +1,320 @@
+from_id: yuan_fu
+relations:
+- to_id: cbdb:21495
+  type: 友人
+  note: 友：湯漢（CBDB 外部人物），始年 1274
+- to_id: cbdb:39653
+  type: 友人
+  note: 友：伍維寅（CBDB 外部人物）
+- to_id: cbdb:47130
+  type: 友人
+  note: 友：張伯常（CBDB 外部人物）
+- to_id: cbdb:12736
+  type: 同年
+  note: 同年友：何處久（CBDB 外部人物），始年 1214
+- to_id: cbdb:13014
+  type: 同年
+  note: 同年友：李伯堅（CBDB 外部人物）
+- to_id: cbdb:24324
+  type: 政敌
+  note: 彈劾：徐清叟（CBDB 外部人物）
+- to_id: cbdb:20699
+  type: 其他
+  note: 被Y欣賞/器重：馬光祖（CBDB 外部人物）
+- to_id: cbdb:45657
+  type: 其他
+  note: 被Y欣賞/器重：曹逢己（CBDB 外部人物）
+- to_id: cbdb:15072
+  type: 师生
+  note: 為Y之學生：楊簡（CBDB 外部人物）
+- to_id: cbdb:10289
+  type: 其他
+  note: 為Y所著書作序：袁燮（CBDB 外部人物）
+- to_id: cbdb:10258
+  type: 其他
+  note: 為Y所著書作序：真德秀（CBDB 外部人物），始年 1235
+- to_id: cbdb:20240
+  type: 其他
+  note: 為Y所著書作序：徐士龍（CBDB 外部人物）
+- to_id: cbdb:20927
+  type: 其他
+  note: 為Y所著書作序：沈省曾（CBDB 外部人物）
+- to_id: cbdb:35293
+  type: 其他
+  note: 為Y所著書作序：嚴粲（CBDB 外部人物），始年 1244
+- to_id: cbdb:38244
+  type: 其他
+  note: 為Y所著書作序：王與之（CBDB 外部人物）
+- to_id: cbdb:38900
+  type: 其他
+  note: 為Y所著書作序：王塤（CBDB 外部人物）
+- to_id: cbdb:44260
+  type: 其他
+  note: 為Y所著書作序：祝泌（CBDB 外部人物）
+- to_id: cbdb:46177
+  type: 其他
+  note: 為Y所著書作序：徐存（CBDB 外部人物）
+- to_id: cbdb:48902
+  type: 其他
+  note: 為Y所著書作序：項復（CBDB 外部人物）
+- to_id: cbdb:51060
+  type: 其他
+  note: 為Y所著書作序：趙韙夫（CBDB 外部人物）
+- to_id: cbdb:5164
+  type: 其他
+  note: 墓誌銘由Y所作：趙希怡（CBDB 外部人物）
+- to_id: cbdb:5249
+  type: 其他
+  note: 墓誌銘由Y所作：巢氏(江萬里祖母)（CBDB 外部人物）
+- to_id: cbdb:5308
+  type: 其他
+  note: 墓誌銘由Y所作：何靜恭（CBDB 外部人物）
+- to_id: cbdb:16526
+  type: 其他
+  note: 墓誌銘由Y所作：朱適之（CBDB 外部人物）
+- to_id: cbdb:17542
+  type: 其他
+  note: 墓誌銘由Y所作：洪琠（CBDB 外部人物）
+- to_id: cbdb:18785
+  type: 其他
+  note: 墓誌銘由Y所作：楊璘（CBDB 外部人物）
+- to_id: cbdb:20526
+  type: 其他
+  note: 墓誌銘由Y所作：馮興宗（CBDB 外部人物）
+- to_id: cbdb:20556
+  type: 其他
+  note: 墓誌銘由Y所作：危和（CBDB 外部人物）
+- to_id: cbdb:20642
+  type: 其他
+  note: 墓誌銘由Y所作：呂夔友（CBDB 外部人物）
+- to_id: cbdb:26762
+  type: 其他
+  note: 墓誌銘由Y所作：趙俾夫（CBDB 外部人物）
+- to_id: cbdb:26766
+  type: 其他
+  note: 墓誌銘由Y所作：程榆（CBDB 外部人物）
+- to_id: cbdb:39644
+  type: 其他
+  note: 墓誌銘由Y所作：伍總（CBDB 外部人物）
+- to_id: cbdb:43132
+  type: 其他
+  note: 墓誌銘由Y所作：胡誼（CBDB 外部人物）
+- to_id: cbdb:43161
+  type: 其他
+  note: 墓誌銘由Y所作：林思哲（CBDB 外部人物）
+- to_id: cbdb:44968
+  type: 其他
+  note: 墓誌銘由Y所作：孫九敘（CBDB 外部人物）
+- to_id: cbdb:46313
+  type: 其他
+  note: 墓誌銘由Y所作：甘氏(徐鹿卿母)（CBDB 外部人物）
+- to_id: cbdb:47341
+  type: 其他
+  note: 墓誌銘由Y所作：張應運（CBDB 外部人物）
+- to_id: cbdb:51346
+  type: 其他
+  note: 墓誌銘由Y所作：鄭良朋（CBDB 外部人物）
+- to_id: cbdb:52791
+  type: 其他
+  note: 墓誌銘由Y所作：關?（CBDB 外部人物）
+- to_id: cbdb:16058
+  type: 其他
+  note: 墓誌銘由Y所作：江璘（CBDB 外部人物），始年 1207
+- to_id: cbdb:25775
+  type: 其他
+  note: 墓誌銘由Y所作：徐琮（CBDB 外部人物），始年 1218
+- to_id: cbdb:16060
+  type: 其他
+  note: 墓誌銘由Y所作：江萬里（CBDB 外部人物）
+- to_id: cbdb:870
+  type: 其他
+  note: 書跋由Y所作：洪适（CBDB 外部人物）
+- to_id: cbdb:3257
+  type: 其他
+  note: 書跋由Y所作：朱熹（CBDB 外部人物）
+- to_id: cbdb:3632
+  type: 其他
+  note: 書跋由Y所作：陸九淵（CBDB 外部人物），始年 1192
+- to_id: cbdb:3640
+  type: 其他
+  note: 書跋由Y所作：陸游（CBDB 外部人物）
+- to_id: cbdb:3707
+  type: 其他
+  note: 書跋由Y所作：彭汝方（CBDB 外部人物）
+- to_id: cbdb:7097
+  type: 其他
+  note: 書跋由Y所作：楊億（CBDB 外部人物）
+- to_id: cbdb:9004
+  type: 其他
+  note: 書跋由Y所作：趙禎（CBDB 外部人物）
+- to_id: cbdb:9014
+  type: 其他
+  note: 書跋由Y所作：趙昀（CBDB 外部人物）
+- to_id: cbdb:10156
+  type: 其他
+  note: 書跋由Y所作：洪皓（CBDB 外部人物）
+- to_id: cbdb:15072
+  type: 其他
+  note: 書跋由Y所作：楊簡（CBDB 外部人物）
+- to_id: cbdb:21492
+  type: 其他
+  note: 書跋由Y所作：湯巾（CBDB 外部人物）
+- to_id: cbdb:26023
+  type: 其他
+  note: 書跋由Y所作：歐陽鎮（CBDB 外部人物）
+- to_id: cbdb:44838
+  type: 其他
+  note: 書跋由Y所作：夏庭簡（CBDB 外部人物）
+- to_id: cbdb:48384
+  type: 其他
+  note: 書跋由Y所作：厲氏(馮興宗祖母)（CBDB 外部人物）
+- to_id: cbdb:48385
+  type: 其他
+  note: 書跋由Y所作：李氏(馮興宗母)（CBDB 外部人物）
+- to_id: cbdb:10389
+  type: 其他
+  note: 書跋由Y所作：袁桷（CBDB 外部人物）
+- to_id: cbdb:28306
+  type: 其他
+  note: 書跋由Y所作：戴表元（CBDB 外部人物）
+- to_id: cbdb:16666
+  type: 其他
+  note: 從Y遊：朱擇善（CBDB 外部人物），始年 1200
+- to_id: cbdb:7055
+  type: 其他
+  note: 節行為Y所稱道：呂祖謙（CBDB 外部人物）
+- to_id: cbdb:11840
+  type: 其他
+  note: 為Y作字說、名述：真志道（CBDB 外部人物）
+- to_id: cbdb:26768
+  type: 其他
+  note: 為Y作字說、名述：程沐（CBDB 外部人物），始年 1244
+- to_id: cbdb:46246
+  type: 其他
+  note: 為Y作字說、名述：徐憲（CBDB 外部人物）
+- to_id: cbdb:49760
+  type: 其他
+  note: 為Y作字說、名述：葉東（CBDB 外部人物）
+- to_id: cbdb:375
+  type: 其他
+  note: 為Y作祭文：趙抃（CBDB 外部人物），始年 1244
+- to_id: cbdb:8113
+  type: 其他
+  note: 為Y作祭文：史浩（CBDB 外部人物）
+- to_id: cbdb:8043
+  type: 其他
+  note: 為Y作祝詞：范仲淹（CBDB 外部人物）
+- to_id: cbdb:10325
+  type: 其他
+  note: 為Y作世系碑記：舒璘（CBDB 外部人物）
+- to_id: cbdb:15259
+  type: 其他
+  note: 為Y作廟碑記：喬行簡（CBDB 外部人物）
+- to_id: cbdb:38990
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：王志叔（CBDB 外部人物）
+- to_id: cbdb:42470
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：林元晉（CBDB 外部人物）
+- to_id: cbdb:47130
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：張伯常（CBDB 外部人物）
+- to_id: cbdb:50971
+  type: 其他
+  note: 為Y作臨別贈言(送別詩、序)：趙隆孫（CBDB 外部人物）
+- to_id: cbdb:49214
+  type: 其他
+  note: 批評：舒撝（CBDB 外部人物）
+- to_id: cbdb:10892
+  type: 其他
+  note: 致書Y：陳宓（CBDB 外部人物）
+- to_id: cbdb:11328
+  type: 其他
+  note: 致書Y：方大琮（CBDB 外部人物）
+- to_id: cbdb:21039
+  type: 其他
+  note: 致書Y：時少章（CBDB 外部人物）
+- to_id: cbdb:4001
+  type: 其他
+  note: 答Y書：魏了翁（CBDB 外部人物）
+- to_id: cbdb:16527
+  type: 其他
+  note: 贈詩、文：朱元龍（CBDB 外部人物）
+- to_id: cbdb:504
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：周敦頤（CBDB 外部人物）
+- to_id: cbdb:10755
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：程珌（CBDB 外部人物）
+- to_id: cbdb:10352
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：汪立中（CBDB 外部人物）
+- to_id: cbdb:10423
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：趙師雍（CBDB 外部人物）
+- to_id: cbdb:14544
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：陳瑢（CBDB 外部人物）
+- to_id: cbdb:14811
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：趙以夫（CBDB 外部人物）
+- to_id: cbdb:17113
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：史文卿（CBDB 外部人物）
+- to_id: cbdb:20415
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：劉渙（CBDB 外部人物）
+- to_id: cbdb:22434
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：楊瑾（CBDB 外部人物）
+- to_id: cbdb:22573
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：楊白（CBDB 外部人物）
+- to_id: cbdb:39885
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：朱復之（CBDB 外部人物）
+- to_id: cbdb:42283
+  type: 其他
+  note: 為Y之建築物題詠、記、命名：何嗣武（CBDB 外部人物）
+- to_id: cbdb:3105
+  type: 其他
+  note: 學記（書院記）由Y所作：程頤（CBDB 外部人物）
+- to_id: cbdb:11843
+  type: 其他
+  note: 學記（書院記）由Y所作：趙必愿（CBDB 外部人物）
+- to_id: cbdb:49958
+  type: 其他
+  note: 學記（書院記）由Y所作：鄒應博（CBDB 外部人物）
+- to_id: cbdb:51190
+  type: 其他
+  note: 學記（書院記）由Y所作：潘材之（CBDB 外部人物）
+- to_id: cbdb:42101
+  type: 其他
+  note: 聘Y執教官學、書院：錢時（CBDB 外部人物）
+- to_id: cbdb:3729
+  type: 其他
+  note: 上奏論Y：史宅之（CBDB 外部人物）
+- to_id: cbdb:7164
+  type: 其他
+  note: 為Y作祠記：張栻（CBDB 外部人物）
+- to_id: cbdb:10289
+  type: 父子
+  note: 父：袁燮（CBDB 外部人物）
+- to_id: cbdb:10298
+  type: 父子
+  note: 父：袁從（CBDB 外部人物）
+- to_id: cbdb:10299
+  type: 父子
+  note: 父：袁徯（CBDB 外部人物）
+- to_id: cbdb:10304
+  type: 翁婿
+  note: 岳父：趙師淵（CBDB 外部人物）
+- to_id: cbdb:10295
+  type: 兄弟
+  note: 兄：袁肅（CBDB 外部人物）
+- to_id: cbdb:5164
+  type: 父子
+  note: 妻子：趙希怡（CBDB 外部人物）
+- to_id: cbdb:45657
+  type: 兄弟
+  note: 連襟;妻姊妹之夫：曹逢己（CBDB 外部人物）

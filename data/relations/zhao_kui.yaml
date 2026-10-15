@@ -1,0 +1,26 @@
+from_id: zhao_kui
+relations:
+- to_id: cbdb:7325
+  type: 同年
+  note: 同年友：沈洵（CBDB 外部人物）
+- to_id: cbdb:20396
+  type: 同年
+  note: 同年友：劉焞（CBDB 外部人物）
+- to_id: cbdb:8034
+  type: 其他
+  note: 墓誌銘由Y所作：周麟之（CBDB 外部人物）
+- to_id: cbdb:3767
+  type: 其他
+  note: 文風效法Y：蘇軾（CBDB 外部人物）
+- to_id: cbdb:8008
+  type: 其他
+  note: 忌/惡：秦檜（CBDB 外部人物）
+- to_id: cbdb:45834
+  type: 其他
+  note: 拒絕會面：王曦（CBDB 外部人物）
+- to_id: cbdb:10830
+  type: 其他
+  note: 為Y作祭文：李石（CBDB 外部人物）
+- to_id: cbdb:121484
+  type: 父子
+  note: 八世祖;太高祖：趙處榮（CBDB 外部人物）

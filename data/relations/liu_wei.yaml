@@ -1,0 +1,11 @@
+from_id: liu_wei
+relations:
+- to_id: cbdb:18020
+  type: 同年
+  note: 同年友：郭始中（CBDB 外部人物）
+- to_id: cbdb:19715
+  type: 同年
+  note: 同年友：李榘（CBDB 外部人物）
+- to_id: cbdb:25189
+  type: 同年
+  note: 同年友：王辰應（CBDB 外部人物）

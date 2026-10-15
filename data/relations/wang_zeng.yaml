@@ -1,0 +1,107 @@
+from_id: wang_zeng
+relations:
+- to_id: cbdb:1885
+  type: 其他
+  note: 推薦：王田（CBDB 外部人物），始年 1038
+- to_id: cbdb:83
+  type: 其他
+  note: 推薦：陳恕（CBDB 外部人物）
+- to_id: cbdb:47466
+  type: 其他
+  note: 推薦：陳耿（CBDB 外部人物）
+- to_id: cbdb:7019
+  type: 其他
+  note: 被Y欣賞/器重：嵇穎（CBDB 外部人物），始年 1050
+- to_id: cbdb:8016
+  type: 其他
+  note: 被Y欣賞/器重：張昪（CBDB 外部人物）
+- to_id: cbdb:630
+  type: 其他
+  note: 為Y所著書作序：韓琦（CBDB 外部人物）
+- to_id: cbdb:628
+  type: 其他
+  note: 墓誌銘由Y所作：富弼（CBDB 外部人物），始年 1038
+- to_id: cbdb:1558
+  type: 其他
+  note: 墓誌銘由Y所作：宋祁（CBDB 外部人物）
+- to_id: cbdb:25127
+  type: 其他
+  note: 傳記作者為Y：羅從彥（CBDB 外部人物）
+- to_id: cbdb:17233
+  type: 其他
+  note: 反對/不支持Y的政策：符惟忠（CBDB 外部人物）
+- to_id: cbdb:7104
+  type: 其他
+  note: 為Y作祭文：尹洙（CBDB 外部人物），始年 1038
+- to_id: cbdb:3580
+  type: 其他
+  note: 為Y作世系碑記：劉敞（CBDB 外部人物）
+- to_id: cbdb:17935
+  type: 其他
+  note: 致書Y：石介（CBDB 外部人物）
+- to_id: cbdb:17736
+  type: 其他
+  note: 致書Y：王兼皇（CBDB 外部人物）
+- to_id: cbdb:53354
+  type: 其他
+  note: 上奏論Y：釋宗秀（CBDB 外部人物）
+- to_id: cbdb:1802
+  type: 父子
+  note: 直系祖先：王蕃（CBDB 外部人物）
+- to_id: cbdb:10760
+  type: 父子
+  note: 直系祖先：王闢之（CBDB 外部人物）
+- to_id: cbdb:26534
+  type: 父子
+  note: 妻之祖父：李庠（CBDB 外部人物）
+- to_id: cbdb:3264
+  type: 父子
+  note: 妻之叔伯祖：朱述（CBDB 外部人物）
+- to_id: cbdb:38331
+  type: 父子
+  note: 父：王紹（CBDB 外部人物）
+- to_id: cbdb:119721
+  type: 父子
+  note: 父：王縡（CBDB 外部人物）
+- to_id: cbdb:17736
+  type: 父子
+  note: 父：王兼皇（CBDB 外部人物）
+- to_id: cbdb:7328
+  type: 翁婿
+  note: 岳父：沈惟溫（CBDB 外部人物）
+- to_id: cbdb:39657
+  type: 其他
+  note: 母舅：朱延世（CBDB 外部人物）
+- to_id: cbdb:1824
+  type: 父子
+  note: 從父;伯叔父：王繹（CBDB 外部人物）
+- to_id: cbdb:119741
+  type: 父子
+  note: 從父;伯叔父：王宗元（CBDB 外部人物）
+- to_id: cbdb:8076
+  type: 翁婿
+  note: 第一任妻父：李沆（CBDB 外部人物）
+- to_id: cbdb:3428
+  type: 其他
+  note: 第一任妻之叔伯：任拱之（CBDB 外部人物）
+- to_id: cbdb:1911
+  type: 兄弟
+  note: 兄：王皞（CBDB 外部人物）
+- to_id: cbdb:3988
+  type: 兄弟
+  note: 兄：王（CBDB 外部人物）
+- to_id: cbdb:45816
+  type: 兄弟
+  note: 兄：王皡（CBDB 外部人物）
+- to_id: cbdb:578082
+  type: 兄弟
+  note: 兄：王氏(楊日休妻)（CBDB 外部人物）
+- to_id: cbdb:38330
+  type: 其他
+  note: 丈夫：李氏(王曾妻)（CBDB 外部人物）
+- to_id: cbdb:38330
+  type: 父子
+  note: 妻子：李氏(王曾妻)（CBDB 外部人物）
+- to_id: cbdb:26534
+  type: 翁婿
+  note: 孫女婿：李庠（CBDB 外部人物）

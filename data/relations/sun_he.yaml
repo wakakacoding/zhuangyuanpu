@@ -1,0 +1,23 @@
+from_id: sun_he
+relations:
+- to_id: cbdb:1641
+  type: 友人
+  note: 友：丁謂（CBDB 外部人物）
+- to_id: cbdb:3997
+  type: 其他
+  note: 被Y欣賞/器重：王禹偁（CBDB 外部人物）
+- to_id: yang_hui_zhi
+  type: 其他
+  note: 致書Y（CBDB）
+- to_id: cbdb:17911
+  type: 父子
+  note: 祖父：孫鎰（CBDB 外部人物）
+- to_id: cbdb:120002
+  type: 父子
+  note: 父：孫言（CBDB 外部人物）
+- to_id: cbdb:17912
+  type: 父子
+  note: 父：孫庸（CBDB 外部人物）
+- to_id: cbdb:17914
+  type: 兄弟
+  note: 兄：孫侑（CBDB 外部人物）

@@ -1,0 +1,353 @@
+from_id: wang_wei
+relations:
+- to_id: cbdb:94937
+  type: 友人
+  note: 友：裴迪（CBDB 外部人物）
+- to_id: cbdb:188968
+  type: 友人
+  note: 友：李琳（CBDB 外部人物）
+- to_id: cbdb:447605
+  type: 友人
+  note: 友：祖自虛（CBDB 外部人物），始年 716
+- to_id: cbdb:551106
+  type: 友人
+  note: 友：李[⿰王員]（CBDB 外部人物）
+- to_id: cbdb:3130
+  type: 其他
+  note: 推薦：張九齡（CBDB 外部人物），始年 735
+- to_id: cbdb:19245
+  type: 其他
+  note: 被Y欣賞/器重：李亨(唐肅宗)（CBDB 外部人物）
+- to_id: cbdb:31044
+  type: 其他
+  note: 墓誌銘由Y所作：韋斌（CBDB 外部人物），始年 759
+- to_id: cbdb:32061
+  type: 其他
+  note: 墓誌銘由Y所作：韓朝宗（CBDB 外部人物），始年 745
+- to_id: cbdb:32188
+  type: 其他
+  note: 墓誌銘由Y所作：裴回（CBDB 外部人物），始年 743
+- to_id: cbdb:155530
+  type: 其他
+  note: 從Y遊：李業(薛王)（CBDB 外部人物），始年 719
+- to_id: cbdb:189016
+  type: 其他
+  note: 從Y遊：李範(岐王)（CBDB 外部人物），始年 719
+- to_id: cbdb:339631
+  type: 其他
+  note: 從Y遊：李憲(唐讓皇帝)（CBDB 外部人物），始年 719
+- to_id: cbdb:3130
+  type: 友人
+  note: 相唱和：張九齡（CBDB 外部人物），始年 737
+- to_id: cbdb:11765
+  type: 友人
+  note: 相唱和：裴耀卿（CBDB 外部人物），始年 737
+- to_id: cbdb:12261
+  type: 友人
+  note: 相唱和：蕭嵩（CBDB 外部人物），始年 737
+- to_id: cbdb:22451
+  type: 友人
+  note: 相唱和：韓休（CBDB 外部人物），始年 737
+- to_id: cbdb:32685
+  type: 友人
+  note: 相唱和：杜暹（CBDB 外部人物），始年 737
+- to_id: cbdb:91984
+  type: 友人
+  note: 相唱和：王邱（CBDB 外部人物），始年 737
+- to_id: cbdb:379873
+  type: 其他
+  note: 被Y逮捕：安祿山（CBDB 外部人物）
+- to_id: cbdb:19246
+  type: 其他
+  note: 稱道Y之文風：李豫(唐代宗)（CBDB 外部人物）
+- to_id: cbdb:94793
+  type: 其他
+  note: 從Y學：釋道光（CBDB 外部人物），始年 729
+- to_id: cbdb:31046
+  type: 其他
+  note: 拜訪：韋抗（CBDB 外部人物），始年 726
+- to_id: cbdb:32175
+  type: 其他
+  note: 編輯Y之詩/文：王縉（CBDB 外部人物）
+- to_id: cbdb:11765
+  type: 其他
+  note: 贈詩、文：裴耀卿（CBDB 外部人物），始年 725
+- to_id: cbdb:12261
+  type: 其他
+  note: 贈詩、文：蕭嵩（CBDB 外部人物）
+- to_id: cbdb:17137
+  type: 其他
+  note: 贈詩、文：房琯（CBDB 外部人物）
+- to_id: cbdb:19244
+  type: 其他
+  note: 贈詩、文：李隆基(唐玄宗)（CBDB 外部人物）
+- to_id: cbdb:31043
+  type: 其他
+  note: 贈詩、文：韋陟（CBDB 外部人物）
+- to_id: cbdb:31088
+  type: 其他
+  note: 贈詩、文：韋濟（CBDB 外部人物）
+- to_id: cbdb:31221
+  type: 其他
+  note: 贈詩、文：楊國忠（CBDB 外部人物）
+- to_id: cbdb:32165
+  type: 其他
+  note: 贈詩、文：李峴（CBDB 外部人物）
+- to_id: cbdb:3915
+  type: 其他
+  note: 贈詩、文：杜甫（CBDB 外部人物）
+- to_id: cbdb:32290
+  type: 其他
+  note: 贈詩、文：崔興宗（CBDB 外部人物）
+- to_id: cbdb:32405
+  type: 其他
+  note: 贈詩、文：祖詠（CBDB 外部人物）
+- to_id: cbdb:32694
+  type: 其他
+  note: 贈詩、文：賈至（CBDB 外部人物）
+- to_id: cbdb:92035
+  type: 其他
+  note: 贈詩、文：王昌齡（CBDB 外部人物）
+- to_id: cbdb:92446
+  type: 其他
+  note: 贈詩、文：司空曙（CBDB 外部人物）
+- to_id: cbdb:93476
+  type: 其他
+  note: 贈詩、文：張祜（CBDB 外部人物）
+- to_id: cbdb:93677
+  type: 其他
+  note: 贈詩、文：苑咸（CBDB 外部人物）
+- to_id: cbdb:93956
+  type: 其他
+  note: 贈詩、文：孟浩然（CBDB 外部人物）
+- to_id: cbdb:94109
+  type: 其他
+  note: 贈詩、文：皇甫冉（CBDB 外部人物）
+- to_id: cbdb:94204
+  type: 其他
+  note: 贈詩、文：耿湋（CBDB 外部人物）
+- to_id: cbdb:94271
+  type: 其他
+  note: 贈詩、文：錢起（CBDB 外部人物）
+- to_id: cbdb:94595
+  type: 其他
+  note: 贈詩、文：釋皎然（CBDB 外部人物）
+- to_id: cbdb:94771
+  type: 其他
+  note: 贈詩、文：儲光羲（CBDB 外部人物）
+- to_id: cbdb:94937
+  type: 其他
+  note: 贈詩、文：裴迪（CBDB 外部人物）
+- to_id: cbdb:446517
+  type: 其他
+  note: 贈詩、文：盧象（CBDB 外部人物）
+- to_id: cbdb:446880
+  type: 其他
+  note: 贈詩、文：儲嗣宗（CBDB 外部人物）
+- to_id: cbdb:449867
+  type: 其他
+  note: 贈詩、文：丘爲（CBDB 外部人物）
+- to_id: cbdb:32534
+  type: 其他
+  note: 贈詩、文：李林甫（CBDB 外部人物）
+- to_id: cbdb:32672
+  type: 其他
+  note: 贈詩、文：元載（CBDB 外部人物）
+- to_id: cbdb:33638
+  type: 其他
+  note: 贈詩、文：薛據（CBDB 外部人物）
+- to_id: cbdb:93022
+  type: 其他
+  note: 贈詩、文：李頎（CBDB 外部人物），始年 735
+- to_id: cbdb:93503
+  type: 其他
+  note: 贈詩、文：張諲（CBDB 外部人物）
+- to_id: cbdb:93603
+  type: 其他
+  note: 贈詩、文：陳希烈（CBDB 外部人物）
+- to_id: cbdb:94328
+  type: 其他
+  note: 贈詩、文：殷遙（CBDB 外部人物）
+- to_id: cbdb:94901
+  type: 其他
+  note: 贈詩、文：綦毋潛（CBDB 外部人物）
+- to_id: cbdb:141367
+  type: 其他
+  note: 贈詩、文：寇氏(寇溶女)（CBDB 外部人物）
+- to_id: cbdb:170609
+  type: 其他
+  note: 贈詩、文：裴旻（CBDB 外部人物）
+- to_id: cbdb:177103
+  type: 其他
+  note: 贈詩、文：崔惠童（CBDB 外部人物）
+- to_id: cbdb:187242
+  type: 其他
+  note: 贈詩、文：李少康（CBDB 外部人物）
+- to_id: cbdb:195688
+  type: 其他
+  note: 贈詩、文：嚴武（CBDB 外部人物）
+- to_id: cbdb:377869
+  type: 其他
+  note: 贈詩、文：邢濟（CBDB 外部人物）
+- to_id: cbdb:378470
+  type: 其他
+  note: 贈詩、文：夫蒙靈詧（CBDB 外部人物）
+- to_id: cbdb:378538
+  type: 其他
+  note: 贈詩、文：達奚珣（CBDB 外部人物）
+- to_id: cbdb:379150
+  type: 其他
+  note: 贈詩、文：崔季重（CBDB 外部人物）
+- to_id: cbdb:382863
+  type: 其他
+  note: 贈詩、文：康昭遠（CBDB 外部人物）
+- to_id: cbdb:383292
+  type: 其他
+  note: 贈詩、文：慕容損（CBDB 外部人物）
+- to_id: cbdb:445110
+  type: 其他
+  note: 贈詩、文：高耽（CBDB 外部人物）
+- to_id: cbdb:445128
+  type: 其他
+  note: 贈詩、文：高道（CBDB 外部人物）
+- to_id: cbdb:445368
+  type: 其他
+  note: 贈詩、文：郭愼微（CBDB 外部人物）
+- to_id: cbdb:445425
+  type: 其他
+  note: 贈詩、文：李持盈(李旦女)（CBDB 外部人物）
+- to_id: cbdb:445483
+  type: 其他
+  note: 贈詩、文：賀遂（CBDB 外部人物）
+- to_id: cbdb:445513
+  type: 其他
+  note: 贈詩、文：王絿（CBDB 外部人物）
+- to_id: cbdb:445518
+  type: 其他
+  note: 贈詩、文：王紞（CBDB 外部人物）
+- to_id: cbdb:445610
+  type: 其他
+  note: 贈詩、文：王蕃（CBDB 外部人物），始年 732
+- to_id: cbdb:445713
+  type: 其他
+  note: 贈詩、文：丁寓（CBDB 外部人物）
+- to_id: cbdb:445803
+  type: 其他
+  note: 贈詩、文：平澹然（CBDB 外部人物）
+- to_id: cbdb:446400
+  type: 其他
+  note: 贈詩、文：尹愔（CBDB 外部人物），始年 737
+- to_id: cbdb:446453
+  type: 其他
+  note: 贈詩、文：釋乘如（CBDB 外部人物），始年 735
+- to_id: cbdb:446720
+  type: 其他
+  note: 贈詩、文：崔傅（CBDB 外部人物）
+- to_id: cbdb:446768
+  type: 其他
+  note: 贈詩、文：崔渙（CBDB 外部人物）
+- to_id: cbdb:446778
+  type: 其他
+  note: 贈詩、文：崔希逸（CBDB 外部人物）
+- to_id: cbdb:446821
+  type: 其他
+  note: 贈詩、文：崔圓（CBDB 外部人物）
+- to_id: cbdb:447030
+  type: 其他
+  note: 贈詩、文：吳官（CBDB 外部人物）
+- to_id: cbdb:447085
+  type: 其他
+  note: 贈詩、文：黎昕（CBDB 外部人物）
+- to_id: cbdb:447368
+  type: 其他
+  note: 贈詩、文：宋渾（CBDB 外部人物）
+- to_id: cbdb:447488
+  type: 其他
+  note: 贈詩、文：沈福之（CBDB 外部人物）
+- to_id: cbdb:447576
+  type: 其他
+  note: 贈詩、文：釋溫古（CBDB 外部人物）
+- to_id: cbdb:447605
+  type: 其他
+  note: 贈詩、文：祖自虛（CBDB 外部人物），始年 717
+- to_id: cbdb:447626
+  type: 其他
+  note: 贈詩、文：釋道一（CBDB 外部人物）
+- to_id: cbdb:447899
+  type: 其他
+  note: 贈詩、文：李佋（CBDB 外部人物）
+- to_id: cbdb:448105
+  type: 其他
+  note: 贈詩、文：李楫（CBDB 外部人物）
+- to_id: cbdb:448362
+  type: 其他
+  note: 贈詩、文：韋穆（CBDB 外部人物）
+- to_id: cbdb:448450
+  type: 其他
+  note: 贈詩、文：韋恆（CBDB 外部人物）
+- to_id: cbdb:448658
+  type: 其他
+  note: 贈詩、文：慕容承（CBDB 外部人物）
+- to_id: cbdb:448946
+  type: 其他
+  note: 贈詩、文：杜希望（CBDB 外部人物）
+- to_id: cbdb:449290
+  type: 其他
+  note: 贈詩、文：趙仙舟（CBDB 外部人物）
+- to_id: cbdb:449353
+  type: 其他
+  note: 贈詩、文：史寰（CBDB 外部人物）
+- to_id: cbdb:449465
+  type: 其他
+  note: 贈詩、文：晁衡（CBDB 外部人物）
+- to_id: cbdb:449525
+  type: 其他
+  note: 贈詩、文：釋曇壁（CBDB 外部人物）
+- to_id: cbdb:449526
+  type: 其他
+  note: 贈詩、文：釋曇興（CBDB 外部人物）
+- to_id: cbdb:449994
+  type: 其他
+  note: 贈詩、文：陳據（CBDB 外部人物）
+- to_id: cbdb:39828
+  type: 其他
+  note: 畫風師法Y：朱銳（CBDB 外部人物）
+- to_id: cbdb:84874
+  type: 其他
+  note: 畫風師法Y：鍾諤（CBDB 外部人物）
+- to_id: cbdb:110375
+  type: 其他
+  note: 畫風師法Y：趙原（CBDB 外部人物）
+- to_id: cbdb:22451
+  type: 其他
+  note: 為Y所作詩文作序：韓休（CBDB 外部人物），始年 737
+- to_id: cbdb:32685
+  type: 其他
+  note: 為Y所作詩文作序：杜暹（CBDB 外部人物），始年 737
+- to_id: cbdb:91984
+  type: 其他
+  note: 為Y所作詩文作序：王邱（CBDB 外部人物），始年 737
+- to_id: cbdb:11765
+  type: 同僚
+  note: 上司為Y：裴耀卿（CBDB 外部人物），始年 724
+- to_id: cbdb:32175
+  type: 友人
+  note: 為友人提供幫助：王縉（CBDB 外部人物）
+- to_id: cbdb:32173
+  type: 父子
+  note: 父：王處廉（CBDB 外部人物）
+- to_id: cbdb:551094
+  type: 其他
+  note: 母：崔氏(王維母)（CBDB 外部人物）
+- to_id: cbdb:32175
+  type: 兄弟
+  note: 兄：王縉（CBDB 外部人物）
+- to_id: cbdb:445610
+  type: 兄弟
+  note: 從弟：王蕃（CBDB 外部人物）
+- to_id: cbdb:551094
+  type: 父子
+  note: 子：崔氏(王維母)（CBDB 外部人物）
+- to_id: cbdb:32290
+  type: 兄弟
+  note: 妻弟：崔興宗（CBDB 外部人物）

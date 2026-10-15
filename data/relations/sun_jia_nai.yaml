@@ -1,0 +1,14 @@
+from_id: sun_jia_nai
+relations:
+- to_id: cbdb:59010
+  type: 师生
+  note: 為Y之學生：李菡（CBDB 外部人物）
+- to_id: cbdb:65002
+  type: 师生
+  note: 為Y之學生：愛新覺羅奕謨（CBDB 外部人物）
+- to_id: cbdb:693297
+  type: 同僚
+  note: 為Y之幕僚：胡朝賀（CBDB 外部人物）
+- to_id: cbdb:122327
+  type: 其他
+  note: 被Y鞫治：楊翠喜（CBDB 外部人物）

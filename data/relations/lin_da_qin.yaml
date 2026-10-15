@@ -1,0 +1,29 @@
+from_id: lin_da_qin
+relations:
+- to_id: cbdb:68374
+  type: 其他
+  note: 傳記作者為Y：薛侃（CBDB 外部人物）
+- to_id: cbdb:128562
+  type: 其他
+  note: 傳記作者為Y：林大春（CBDB 外部人物）
+- to_id: cbdb:290709
+  type: 父子
+  note: 曾祖：林山（CBDB 外部人物）
+- to_id: cbdb:290710
+  type: 父子
+  note: 祖父：林?（CBDB 外部人物）
+- to_id: cbdb:290711
+  type: 父子
+  note: 父：林烏（CBDB 外部人物）
+- to_id: cbdb:290712
+  type: 其他
+  note: 母：劉氏(林大欽母)（CBDB 外部人物）
+- to_id: cbdb:290713
+  type: 其他
+  note: 丈夫：孫氏(林大欽妻)（CBDB 外部人物）
+- to_id: cbdb:290713
+  type: 父子
+  note: 妻子：孫氏(林大欽妻)（CBDB 外部人物）
+- to_id: cbdb:290712
+  type: 父子
+  note: 子：劉氏(林大欽母)（CBDB 外部人物）

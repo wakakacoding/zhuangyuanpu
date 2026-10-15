@@ -1,0 +1,23 @@
+from_id: wu_qijun
+relations:
+- to_id: cbdb:568964
+  type: 父子
+  note: 祖父：吳疇五（CBDB 外部人物）
+- to_id: cbdb:136167
+  type: 父子
+  note: 祖父：吳樽讓（CBDB 外部人物）
+- to_id: cbdb:120896
+  type: 父子
+  note: 父：吳元禧（CBDB 外部人物）
+- to_id: cbdb:136163
+  type: 父子
+  note: 父：吳榮禧（CBDB 外部人物）
+- to_id: cbdb:136164
+  type: 父子
+  note: 父：吳崇恩（CBDB 外部人物）
+- to_id: cbdb:136165
+  type: 父子
+  note: 父：吳承恩（CBDB 外部人物）
+- to_id: cbdb:136166
+  type: 父子
+  note: 父：吳洪恩（CBDB 外部人物）

@@ -1,0 +1,5 @@
+from_id: duo_lie_tu
+relations:
+  - to_id: wen_yun_zhong
+    type: 同年
+    note: 1351 年同科

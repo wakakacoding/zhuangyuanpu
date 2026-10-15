@@ -1,11 +1,18 @@
 ---
-import { allPersons, presentDynasties, fullProfileIds, BASE} from '../lib/persons';
+import { allPersons, presentDynasties, fullProfileIds, roleOf, ROLE_LABEL, ROLE_NOTE, BASE} from '../lib/persons';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/search.css';
 
 const persons = allPersons();
 const fullIds = fullProfileIds();
+
+// 单页最多渲染的结果条数：超出则列表顶部提示，引导用户加筛选条件
+const RESULT_LIMIT = 500;
+
+// 口径（R1.4-2）：库里是「人物卡」，其中状元与特例分列——标题不写「N 位状元」
+const nZhuangyuan = persons.filter((p) => roleOf(p) === 'zhuangyuan').length;
+const nSpecial = persons.length - nZhuangyuan;
 
 // 构建期生成精简检索索引（内嵌页面，客户端过滤，响应 <200ms）
 const index = persons.map((p) => ({
@@ -23,6 +30,10 @@ const index = persons.map((p) => ({
   tg: p.tags ?? [],
   bio: (p.bio_short ?? '').slice(0, 90),
   full: fullIds.has(p.id) ? 1 : 0,
+  // 名录身份：仅特例携带（状元缺省），供结果卡片渲染身份徽标
+  role: roleOf(p) === 'zhuangyuan' ? '' : roleOf(p),
+  roleLabel: roleOf(p) === 'zhuangyuan' ? '' : ROLE_LABEL[roleOf(p)],
+  roleNote: roleOf(p) === 'zhuangyuan' ? '' : ROLE_NOTE[roleOf(p)],
 }));
 
 const dynasties = presentDynasties(persons);
@@ -39,7 +50,7 @@ const yMax = Math.max(...years);
     <div class="container container-wide">
       <header class="site-head">
         <h1>检索</h1>
-        <p class="sub">{persons.length} 人在库 · 朝代 / 科年 / 籍贯 / 标签自由组合</p>
+        <p class="sub">状元 {nZhuangyuan} 人 · 特例 {nSpecial} 人（探花／事实状元，见卡面徽标） · 朝代 / 科年 / 籍贯 / 标签自由组合</p>
         <nav class="site-nav">
           <a href={BASE}>首页</a>
           <a href={`${BASE}persons/`}>全量索引</a>
@@ -79,10 +90,11 @@ const yMax = Math.max(...years);
       <a class="back" href={BASE}>← 返回首页</a>
     </div>
 
-    <script type="application/json" id="idx" set:html={JSON.stringify(index)} />
+    <script type="application/json" id="idx" data-limit={String(RESULT_LIMIT)} set:html={JSON.stringify(index)} />
     <script>
       const BASE = import.meta.env.BASE_URL;
       const idx = JSON.parse(document.getElementById('idx').textContent);
+      const LIMIT = parseInt(document.getElementById('idx').dataset.limit, 10) || 500;
       const $ = (s) => document.querySelector(s);
       const qEl = $('#q'), tagEl = $('#tag'), yFromEl = $('#yFrom'), yToEl = $('#yTo'),
             countEl = $('#count'), listEl = $('#results'), fullEl = $('#fullOnly');
@@ -137,17 +149,25 @@ const yMax = Math.max(...years);
       function render() {
         const hits = idx.filter(match);
         countEl.textContent = `命中 ${hits.length} / ${idx.length} 人`;
-        listEl.innerHTML = hits.slice(0, 500).map((p) => `
+        if (!hits.length) {
+          listEl.innerHTML = '<li class="none">无命中——换个条件试试。「阙如」亦是史料的一部分。</li>';
+        } else {
+          // 命中超过单页上限：顶部明示截断，避免用户误以为这就是全部结果
+          const notice = hits.length > LIMIT
+            ? `<li class="trunc-note">仅显示前 ${LIMIT} 条，请加筛选条件缩小范围</li>`
+            : '';
+          listEl.innerHTML = notice + hits.slice(0, LIMIT).map((p) => `
           <li class="hit">
             <a href="${BASE}persons/${p.id}/">
               <b>${esc(p.n)}</b>
+              ${p.role ? `<span class="role-badge role-${esc(p.role)}" title="${esc(p.roleNote)}">${esc(p.roleLabel)}</span>` : ''}
               ${p.full ? '<span class="full-badge">全档案</span>' : ''}
               <span class="hit-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ' · 科年阙如'}${p.nh ? ` · ${esc(p.nh)}` : ''}</span>
               ${p.tg.length ? `<span class="hit-tags">${p.tg.map((t) => `<i>${esc(t)}</i>`).join('')}</span>` : ''}
               ${p.bio ? `<span class="hit-bio">${esc(p.bio)}…</span>` : ''}
             </a>
           </li>`).join('');
-        if (!hits.length) listEl.innerHTML = '<li class="none">无命中——换个条件试试。「阙如」亦是史料的一部分。</li>';
+        }
         toHash();
       }
 

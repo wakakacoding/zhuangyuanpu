@@ -5,8 +5,8 @@ name: 郑弘业
 zi: null
 hao: null
 birth_year: null
-death_year: 871
-fl_year: 808
+death_year: null
+fl_year: null
 native_hist: 榮澤
 native_modern: 河南省郑州市惠济区
 lat: 34.87
@@ -20,3 +20,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

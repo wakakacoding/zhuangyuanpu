@@ -24,9 +24,6 @@ relations:
 - to_id: cbdb:699340
   type: 父子
   note: 父：張景思（CBDB 外部人物）
-- to_id: cbdb:701787
-  type: 父子
-  note: 父：張氏(石用休妻)（CBDB 外部人物）
 - to_id: cbdb:38676
   type: 翁婿
   note: 岳父：石用休（CBDB 外部人物）
@@ -36,6 +33,3 @@ relations:
 - to_id: cbdb:282
   type: 兄弟
   note: 兄弟：張師顏（CBDB 外部人物）
-- to_id: cbdb:701787
-  type: 其他
-  note: 女兒：張氏(石用休妻)（CBDB 外部人物）

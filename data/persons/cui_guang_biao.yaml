@@ -4,9 +4,9 @@ id: cui_guang_biao
 name: 崔光表
 zi: null
 hao: null
-birth_year: 0
-death_year: 0
-fl_year: 893
+birth_year: null
+death_year: null
+fl_year: null
 native_hist: 鄢陵
 native_modern: 河南省许昌市鄢陵县
 lat: 34.1
@@ -20,3 +20,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

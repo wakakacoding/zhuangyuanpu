@@ -5,7 +5,8 @@
   1. --verify  抽样验证：查询若干位已知状元在 CBDB 中的记录质量（本项目的 R10 风险验证）
   2. --export  导出候选池：CBDB 中所有「进士」入仕者 → 极简速览卡 YAML（待人工比对题名碑录后入库）
 
-数据库获取（学术免费使用，须遵循 CBDB Data Licensing Terms）：
+数据库获取（须遵循 CBDB Data Licensing Terms：属「当前单机版范围内」的数据为
+  CC BY-NC-SA 4.0——不得商用、须署名 CBDB、改编须以相同协议发布）：
   https://github.com/cbdb-project/cbdb_sqlite  →  latest.json 给出 HuggingFace 下载地址
   本项目已落地 2026-10-10 版：vendor/cbdb/cbdb_20261010.sqlite3（勿提交 Git）
 

@@ -4,6 +4,8 @@
 铁律：只填空（缺字段 / null / 0 占位），绝不覆盖已有值（王维 701 异说案例保护）。
 诚实性：c_birthyear/c_deathyear 为精确生卒才回填；CBDB 的 c_index_year 是估算
 活动年（约中年），回填为独立字段 fl_year 并标注来源，绝不混入 birth_year。
+身份闸门（R1.1-2）：`identity_status: suspect` 的卡一律跳过——此时 cbdb_id 指向的
+只是「候选匹配」，其生卒/活动年属该候选人的数据，不是本人的（fl_year 一并排除）。
 用法:
   python3 scripts/fill_lifespan.py --dry-run
   python3 scripts/fill_lifespan.py
@@ -44,11 +46,16 @@ def main():
 
     pdir = DATA / "persons"
     filled_b = filled_d = filled_fl = skipped_kept = no_cbdb = no_year = 0
+    skipped_suspect = 0
     for f in sorted(pdir.glob("*.yaml")):
         if f.name.startswith("_"):
             continue
         doc = yaml.safe_load(f.read_text(encoding="utf-8"))
         if not isinstance(doc, dict):
+            continue
+        if doc.get("identity_status") == "suspect":
+            # 身份匹配存疑：cbdb_id 只是候选，其生卒/活动年不是本人的数据
+            skipped_suspect += 1
             continue
         pid = slug2cbdb.get(doc["id"])
         if not pid:
@@ -93,7 +100,8 @@ def main():
             f.write_text(text, encoding="utf-8")
 
     conn.close()
-    print(f"{'[DRY-RUN] ' if dry else ''}cbdb 无锚点 {no_cbdb} | CBDB 无任何年 {no_year} | 已齐跳过 {skipped_kept}")
+    print(f"{'[DRY-RUN] ' if dry else ''}identity_status=suspect 跳过 {skipped_suspect} | "
+          f"cbdb 无锚点 {no_cbdb} | CBDB 无任何年 {no_year} | 已齐跳过 {skipped_kept}")
     print(f"回填生年 {filled_b} / 卒年 {filled_d} / 活动年(fl_year, CBDB 估算) {filled_fl}")
 
 

@@ -4,23 +4,27 @@ import path from 'node:path';
 import yaml from 'js-yaml';
 import SeoHead from '../../components/SeoHead.astro';
 import '../../styles/base.css';
-import { BASE } from '../../lib/persons';
+import { BASE, roleOf, ROLE_LABEL, ROLE_NOTE } from '../../lib/persons';
 
 const dataDir = path.resolve(process.cwd(), '../data');
 const persons = fs.readdirSync(path.join(dataDir, 'persons'))
   .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
   .map((f) => yaml.load(fs.readFileSync(path.join(dataDir, 'persons', f), 'utf8')))
   .sort((a, b) => (a.exam_year ?? 9999) - (b.exam_year ?? 9999));
+
+// 口径（R1.4-2）：名录是状元；人物卡另含特例（探花／事实状元），须分列且带徽标
+const zy = persons.filter((p) => roleOf(p) === 'zhuangyuan').length;
+const nSpecial = persons.length - zy;
 ---
 <html lang="zh-CN">
   <head>
-    <SeoHead title="全量索引" description={`已录 ${persons.length} 位历代状元名录，按科年排序。「阙如」为合法且诚实的展示。`} path="/persons/" />
+    <SeoHead title="全量索引" description={`已录状元 ${zy} 位（另有特例 ${nSpecial} 人：探花／事实状元），按科年排序。「待考」为合法且诚实的展示。`} path="/persons/" />
   </head>
   <body>
     <div class="container">
       <header class="site-head">
         <h1>全量索引</h1>
-        <p class="sub">已录 {persons.length} 人（目标 600+）· 按科年排序 · 「阙如」为合法且诚实的展示 · <a href={`${BASE}search/`}>去检索 →</a></p>
+        <p class="sub">已录状元 {zy} 人 · 特例 {nSpecial} 人（探花／事实状元，卡面带徽标）· 按科年排序 · 缺载字段标「待考」——「待考」是整理进度，不冒充史料结论 · <a href={`${BASE}search/`}>去检索 →</a></p>
       </header>
       <table class="list">
         <thead>
@@ -29,12 +33,17 @@ const persons = fs.readdirSync(path.join(dataDir, 'persons'))
         <tbody>
           {persons.map((p) => (
             <tr>
-              <td><a href={`${BASE}persons/${p.id}/`}>{p.name}</a></td>
+              <td>
+                <a href={`${BASE}persons/${p.id}/`}>{p.name}</a>
+                {roleOf(p) !== 'zhuangyuan' && (
+                  <span class={`role-badge role-${roleOf(p)}`} title={ROLE_NOTE[roleOf(p)]}>{ROLE_LABEL[roleOf(p)]}</span>
+                )}
+              </td>
               <td>{p.dynasty}</td>
-              <td>{p.exam_year ?? '阙如'}</td>
-              <td>{p.ganzhi ?? '阙如'}</td>
-              <td>{p.rank_detail ?? '阙如'}</td>
-              <td>{p.native_hist ?? '阙如'}</td>
+              <td>{p.exam_year ?? '待考'}</td>
+              <td>{p.ganzhi ?? '待考'}</td>
+              <td>{p.rank_detail ?? '待考'}</td>
+              <td>{p.native_hist ?? '待考'}</td>
             </tr>
           ))}
         </tbody>

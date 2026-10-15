@@ -1,12 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
-import { DATA_DIR, allPersons, fullProfileIds } from './persons';
+import { DATA_DIR, allPersons, fullProfileIds, zhuangyuanOnly } from './persons';
 import { listStories } from './story';
 
 /**
  * 补全计划看板：全部数字在构建期从 data/ 实测得出，页面不得手写任何数字。
  * 唯一的常量是「阶段目标」（写在开发计划文档里），集中在 GOALS / TARGETS。
+ *
+ * 口径（R1.4-2）：data/persons/ 下的人物卡含**特例收录**（探花 商衍鎏、事实状元 赵楷）。
+ * 「状元」这一口径只认 `role: zhuangyuan`（缺省即状元）；特例单列，不并入状元总数与分布。
+ * 因此 599 张卡 = 状元 597 + 特例 2，两者不可混用。
  */
 
 /** 阶段目标（来自《下一阶段开发计划》：名录 600、全字段档案 50、故事 15 篇） */
@@ -48,9 +52,22 @@ export interface SourceItem {
   detail?: string;
 }
 
+/** 名录身份拆分（R1.4-2）：一切统计以 zhuangyuan 为准，特例单列 */
+export interface RoleSplit {
+  zhuangyuan: number;
+  tanhua: number;
+  deFacto: number;
+  /** 特例合计 = tanhua + deFacto */
+  special: number;
+}
+
 export interface CoverageStats {
   generated: string;
+  /** 人物卡总数（含特例） */
   persons: number;
+  /** 状元数 —— 统计口径基准 */
+  zhuangyuan: number;
+  roles: RoleSplit;
   dynastyCount: number;
   items: CoverageItem[];
   stories: { published: number; goal: number };
@@ -98,6 +115,17 @@ export function coverageStats(): CoverageStats {
 
   const persons = allPersons();
   const n = persons.length;
+  // 口径基准：状元才是「状元统计」的总体；特例（探花/事实状元）单列
+  const zyList = zhuangyuanOnly(persons);
+  const zy = zyList.length;
+  const nTanhua = persons.filter((p) => p.role === 'tanhua').length;
+  const nDeFacto = persons.filter((p) => p.role === 'de_facto').length;
+  const roles: RoleSplit = {
+    zhuangyuan: zy,
+    tanhua: nTanhua,
+    deFacto: nDeFacto,
+    special: nTanhua + nDeFacto,
+  };
   const stories = listStories();
   const fullIds = fullProfileIds();
 
@@ -147,43 +175,44 @@ export function coverageStats(): CoverageStats {
   const items: CoverageItem[] = [
     {
       key: 'persons',
-      label: '名录收录',
-      cur: n,
+      label: '状元名录收录',
+      cur: zy,
       total: GOALS.persons,
       target: null,
       goal: true,
-      note: '目标：可考的历代文状元全量',
+      note: `目标：可考的历代文状元全量。另有特例 ${roles.special} 人单列（探花 ${roles.tanhua} · 事实状元 ${roles.deFacto}），不计入状元口径`,
     },
     {
       key: 'coords',
       label: '坐标覆盖',
-      cur: persons.filter((p) => p.lat != null && p.lng != null).length,
+      cur: zyList.filter((p) => p.lat != null && p.lng != null).length,
       total: GOALS.persons,
       target: TARGETS.coords,
-      note: '达标线 60%，解锁完整籍贯地图',
+      note: '达标线 60%，解锁完整籍贯地图；分子分母均限状元',
     },
     {
       key: 'starYear',
       label: '生年或活动年',
-      cur: persons.filter((p) => p.birth_year || p.fl_year).length,
-      total: n,
+      cur: zyList.filter((p) => p.birth_year || p.fl_year).length,
+      total: zy,
       target: TARGETS.starYear,
       note: '生年或 CBDB 估算活动年（fl_year）者占比；达标线 50%，解锁星图，图上按精确/估算分色',
     },
     {
       key: 'lifespan',
       label: '生卒双全',
-      cur: persons.filter((p) => p.birth_year && p.death_year).length,
-      total: n,
+      cur: zyList.filter((p) => p.birth_year && p.death_year).length,
+      total: zy,
       target: null,
       note: '史书多只记卒年，生年常阙如',
     },
     {
       key: 'bio',
       label: '一句话小传',
-      cur: persons.filter((p) => p.bio_short).length,
-      total: n,
+      cur: zyList.filter((p) => p.bio_short).length,
+      total: zy,
       target: null,
+      note: '余者为「待整理」——整理进度，不等于史料无载',
     },
     {
       key: 'fullProfile',
@@ -206,7 +235,13 @@ export function coverageStats(): CoverageStats {
   ];
 
   const sourceItems: SourceItem[] = [
-    { key: 'persons', label: '人物卡', n, unit: '人' },
+    {
+      key: 'persons',
+      label: '人物卡',
+      n,
+      unit: '人',
+      detail: `状元 ${zy} · 特例 ${roles.special}（探花 ${roles.tanhua} · 事实状元 ${roles.deFacto}）`,
+    },
     {
       key: 'events',
       label: '生平事件',
@@ -254,7 +289,10 @@ export function coverageStats(): CoverageStats {
   cached = {
     generated: new Date().toISOString().slice(0, 10),
     persons: n,
-    dynastyCount: new Set(persons.map((p) => p.dynasty)).size,
+    zhuangyuan: zy,
+    roles,
+    // 朝代口径同样只算状元（特例会污染分布）
+    dynastyCount: new Set(zyList.map((p) => p.dynasty)).size,
     items,
     stories: { published: stories.length, goal: GOALS.stories },
     fullProfile: { cur: fullIds.size, goal: GOALS.fullProfile },

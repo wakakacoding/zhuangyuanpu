@@ -1,7 +1,7 @@
 ---
 import fs from 'node:fs';
 import path from 'node:path';
-import { BASE, REIGNS } from '../lib/persons';
+import { BASE, REIGNS, allPersons, specialRoles } from '../lib/persons';
 import { listStories } from '../lib/story';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
@@ -65,12 +65,16 @@ const counts = {
   story: stars.filter((s) => s.t === 0).length,
   full: stars.filter((s) => s.t === 1).length,
 };
+
+// 口径（R1.4-2）：星图收纳全部人物卡，其中含「特例收录」（探花／事实状元）。
+// 星点里两者尚未分色，故文案须写明，避免被读成「全都是状元」。
+const nSpecial = specialRoles(allPersons()).length;
 ---
 <html lang="zh-CN">
   <head>
     <SeoHead
       title="状元星图"
-      description={`${stars.length} 位历代状元化作星点：横轴科年、纵轴朝代，金亮者皆有其传。拖拽平移、滚轮缩放，夜观千年文曲。`}
+      description={`${stars.length} 个星点：历代状元及其特例收录者，横轴科年、纵轴朝代，金亮者皆有其传。拖拽平移、滚轮缩放，夜观千年文曲。`}
       path="/galaxy/"
       image="/og-galaxy.png"
     />
@@ -91,7 +95,7 @@ const counts = {
       </header>
 
       <p class="galaxy-guide">
-        读图指南：横轴为登科之年，纵轴为朝代分带，每一点是一位状元。金点有故事可读，朱砂点已建全档案，米白小点为史籍确认、存疑或失考者，光度随证据递减。悬浮见其公元、年号、干支三套纪年，点击展开小帖，可入档案、可读其传。
+        读图指南：横轴为登科之年，纵轴为朝代分带，每一点是一位人物——历代状元，另含特例收录 {nSpecial} 人（探花／事实状元，不收进状元统计）。金点有故事可读，朱砂点已建全档案，米白小点为史籍确认、存疑或失考者，光度随证据递减。悬浮见其公元、年号、干支三套纪年，点击展开小帖，可入档案、可读其传。
       </p>
 
       <div class="galaxy-stage">

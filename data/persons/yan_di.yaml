@@ -6,7 +6,7 @@ zi: null
 hao: null
 birth_year: null
 death_year: null
-fl_year: 684
+fl_year: null
 native_hist: null
 native_modern: null
 dynasty: 唐
@@ -18,3 +18,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，活动年（fl_year）系候选人数据，待碑录／《登科记考》补

@@ -3,11 +3,12 @@
 
 把 data/ 数据底座导出为静态 API，供第三方复用与引证：
 
-    site/public/api/persons.json          全量精简字段（599 人，一行一人）
+    site/public/api/persons.json          全量精简字段（一人一行；含 role 字段以分辨状元与特例）
     site/public/api/persons.csv           同上，CSV 版（UTF-8 无 BOM）
     site/public/api/persons/<slug>.json   单人全字段（含 events/works/anecdotes/relations/sources）
     site/public/api/index.json            清单：版本、许可、条目数、端点表
-    site/public/api/README.md             数据字典 + CC BY-SA 许可说明
+    site/public/api/README.md             数据字典 + 分层许可说明
+                                          （自主编纂内容 CC BY-SA 4.0 / CBDB 派生数据 CC BY-NC-SA 4.0）
 
 由 site/astro.config.mjs 的 api-data 集成在 `astro build` / `astro dev` 时自动调用，
 也可手动复跑：
@@ -33,27 +34,87 @@ API_DIR = os.path.join(ROOT, 'site', 'public', 'api')
 DETAIL_DIR = os.path.join(API_DIR, 'persons')
 
 SITE_URL = 'https://wakakacoding.github.io/zhuangyuanpu/'
+
+# ---------------------------------------------------------------------------
+# 分层许可（R0-1 / R0-2）
+#   ① 本站自主编纂内容 → CC BY-SA 4.0（含商用）
+#   ② CBDB 派生数据     → CC BY-NC-SA 4.0（不得商用，须署名 CBDB）
+#   ③ 史料原文          → 不在上述任一授权范围内
+# 依据：CBDB Data Licensing Terms（2026-08-20 生效；属「当前单机版范围内」的数据适用 CC BY-NC-SA 4.0）
+# ---------------------------------------------------------------------------
 LICENSE = 'CC BY-SA 4.0'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-sa/4.0/deed.zh'
+LICENSE_CBDB = 'CC BY-NC-SA 4.0'
+LICENSE_CBDB_URL = 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'
+CBDB_NAME = '中国历代人物传记资料库（China Biographical Database Project, CBDB）'
+CBDB_HOME = 'https://cbdb.hsites.harvard.edu/'
+CBDB_TERMS = 'https://cbdb.hsites.harvard.edu/cbdb-data-licensing-terms'
+
+# 所用 CBDB 数据版本：官方单机版 SQLite 发行版（sha256 与官方仓库 latest.json 一致，非私人副本）
+CBDB_RELEASE = 'cbdb_20261010（SQLite 单机版，生成于 2026-10-10）'
+CBDB_DERIVED_FIELDS = [
+    'fl_year', 'birth_year', 'death_year', 'zi', 'hao',
+    'native_hist', 'native_modern', 'relations',
+]
+CBDB_ATTRIBUTION = (
+    f'本数据集中取自{CBDB_NAME}的字段（{" / ".join(CBDB_DERIVED_FIELDS)}）'
+    f'依 CC BY-NC-SA 4.0 使用：须注明 CBDB 为数据来源并标明所用版本，不得用于商业目的，'
+    f'改编后须以相同协议发布。版本：{CBDB_RELEASE}；条款：{CBDB_TERMS}'
+)
+LICENSE_NOTE = (
+    '分层许可：本站自主编纂内容（考证、编排、标点、长篇故事、事件/著作/轶事/出处的登记、人工关系条目）'
+    '为 CC BY-SA 4.0，含商用；CBDB 派生数据为 CC BY-NC-SA 4.0，不含商用（须署名 CBDB）；'
+    '史料原文（sources[].quote）不在上述任一授权范围内。'
+)
 API_VERSION = 1
+
+
+def license_meta():
+    """分层许可元数据（persons.json / index.json 的 meta 与单人 JSON 共用同一口径）。"""
+    return {
+        'license': LICENSE,
+        'license_url': LICENSE_URL,
+        'license_note': LICENSE_NOTE,
+        'cbdb_license': LICENSE_CBDB,
+        'cbdb_license_url': LICENSE_CBDB_URL,
+        'cbdb_attribution': CBDB_ATTRIBUTION,
+        'cbdb_source': CBDB_NAME,
+        'cbdb_source_url': CBDB_HOME,
+        'cbdb_license_terms': CBDB_TERMS,
+        'cbdb_release': CBDB_RELEASE,
+        'cbdb_derived_fields': CBDB_DERIVED_FIELDS,
+    }
+
+
+def license_meta_compact():
+    """单人 JSON 用的精简许可元数据（完整声明见 index.json 与 README.md）。"""
+    return {
+        'license': LICENSE,
+        'cbdb_license': LICENSE_CBDB,
+        'cbdb_attribution': CBDB_ATTRIBUTION,
+    }
+
 
 # 精简字段（persons.json / persons.csv 的列序即此序）
 SLIM_FIELDS = [
     ('id', 'slug，与档案页 URL /persons/<id>/ 一致，亦为单人 JSON 文件名'),
     ('name', '姓名'),
-    ('zi', '字'),
-    ('hao', '号'),
+    ('zi', '字（经索引带入者源自 CBDB ALTNAME_DATA）'),
+    ('hao', '号（经索引带入者源自 CBDB ALTNAME_DATA）'),
     ('dynasty', '朝代（原文，含「五代十国」等）'),
     ('reign', '年号（夺魁之年所在年号）'),
     ('exam_year', '科年（公元，夺魁之年）'),
     ('ganzhi', '科年干支'),
     ('ke_ci', '科次原文，如「武德五年壬午科」'),
     ('rank_detail', '名次原文，如「一甲第一名（状元）」'),
-    ('birth_year', '生年（公元）'),
-    ('death_year', '卒年（公元）'),
-    ('fl_year', '活动年（CBDB 估算，多用于生年阙如者）'),
-    ('native_hist', '籍贯（史料原文地名）'),
-    ('native_modern', '籍贯今地名'),
+    ('role', '名录身份：zhuangyuan 状元 / tanhua 探花 / de_facto 事实状元。'
+             '导出时已归一——原始 YAML 缺省即为状元，此处显式写出；'
+             '统计状元时应筛 role=zhuangyuan，勿把人物卡总数当状元数'),
+    ('birth_year', '生年（公元，含 CBDB 机器回填部分）'),
+    ('death_year', '卒年（公元，含 CBDB 机器回填部分）'),
+    ('fl_year', '活动年（CBDB 估算，BIOG_MAIN.c_index_year，多用于生年阙如者）'),
+    ('native_hist', '籍贯（史料原文地名；CBDB BIOG_ADDR_DATA 优先，名录兜底）'),
+    ('native_modern', '籍贯今地名（与上一字段同源）'),
     ('lat', '纬度（WGS84，籍贯今地近似点）'),
     ('lng', '经度（WGS84）'),
     ('bio_short', '一句话小传；阙如时为 null'),
@@ -63,6 +124,8 @@ SLIM_FIELDS = [
 # 单人 JSON 里 person 对象的完整字段（= 精简 + 以下）
 FULL_EXTRA_FIELDS = [
     ('status', '卡片状态：published / draft'),
+    ('verified_absent', '「史料阙如」人工认定：true = 已查证确认无传世记载；'
+                        '缺省/null = 尚未整理。据此可分辨「整理进度」与「历史结论」'),
 ]
 
 SUB_DOCS = {
@@ -112,6 +175,8 @@ def slim_of(p):
     for k, _ in SLIM_FIELDS:
         v = p.get(k)
         row[k] = [] if (k == 'tags' and v is None) else v
+    # role 归一：原始 YAML 缺省即状元，导出时显式化——免得消费方还要知道默认约定
+    row['role'] = p.get('role') or 'zhuangyuan'
     return row
 
 
@@ -149,8 +214,7 @@ def build(dump_all=True):
             'v': API_VERSION,
             'generated': date.today().isoformat(),
             'source': SITE_URL,
-            'license': LICENSE,
-            'license_url': LICENSE_URL,
+            **license_meta(),
             'count': len(slim_rows),
             'note': '每次站点构建重新生成；字段含义见 README.md 数据字典。',
             'detail_endpoint': 'persons/{id}.json',
@@ -201,7 +265,7 @@ def build(dump_all=True):
             'v': API_VERSION,
             'generated': index_doc['meta']['generated'],
             'source': SITE_URL,
-            'license': LICENSE,
+            **license_meta_compact(),
             'person': person,
             'events': docs['events'],
             'works': docs['works'],
@@ -221,8 +285,7 @@ def build(dump_all=True):
         'v': API_VERSION,
         'generated': index_doc['meta']['generated'],
         'source': SITE_URL,
-        'license': LICENSE,
-        'license_url': LICENSE_URL,
+        **license_meta(),
         'counts': {
             'persons': len(persons),
             'person_files': len(doc_bytes),
@@ -294,13 +357,14 @@ def readme(c, sample_id, sample_name):
 
 | 端点 | 内容 | 当前条目数 |
 |---|---|---|
-| [`persons.json`](persons.json) | 全量**精简字段**，一行一人 | {c['persons']} 人 |
+| [`persons.json`](persons.json) | 全量**精简字段**，一行一人（含 `role`，可分离状元与特例） | {c['persons']} 张人物卡 |
 | [`persons.csv`](persons.csv) | 同上，CSV 版（UTF-8 **无 BOM**，换行 LF） | {c['persons']} 行 + 表头 |
 | [`persons/<id>.json`](persons/{sample_id}.json) | **单人全字段**：档案 + 生平事件 + 著作 + 轶事 + 关系 + 所引出处（示例：{sample_name}） | {c['person_files']} 个文件 |
 | [`index.json`](index.json) | 清单：版本、生成日期、条目数、端点表 | — |
 
-字段为空的语义：JSON 为 `null`（标签为 `[]`），CSV 为空串。**「史料阙如」是本站合法的数据状态**，
-空值即「史无明文」，不作推测填充。
+字段为空的语义：JSON 为 `null`（标签为 `[]`），CSV 为空串。**空值本身是合法数据状态**，不作推测填充；
+但「没有值」有两层成因，引用时请分清：缺省 = **尚未整理**（本站进度），仅 `verified_absent: true` 者才是
+**已经人工查证确认「史无明文」**。「史料阙如」这一表述只用于后者。
 
 ## 二、字段字典 · 精简字段（persons.json / persons.csv）
 
@@ -309,6 +373,10 @@ def readme(c, sample_id, sample_name):
 {slim_tbl}
 
 `tags` 在 JSON 中为字符串数组，CSV 中为 `｜`（全角竖线）连接，如 `父子状元｜直谏`。
+
+> **许可分层提示（重要）**：上表中 `zi` / `hao` / `birth_year` / `death_year` / `fl_year` /
+> `native_hist` / `native_modern` 可能含 CBDB 派生值，属**第 ② 层**——CC BY-NC-SA 4.0，
+> **不含商用**、须署名 CBDB；其余字段属**第 ① 层**——CC BY-SA 4.0，含商用。详见第五节。
 
 ## 三、单人全字段（persons/<id>.json）
 
@@ -320,6 +388,8 @@ def readme(c, sample_id, sample_name):
   "generated": "YYYY-MM-DD",
   "source": "{SITE_URL}",
   "license": "{LICENSE}",
+  "cbdb_license": "{LICENSE_CBDB}",
+  "cbdb_attribution": "…CBDB 署名与版本声明…",
   "person":    {{ ...档案字段... }},
   "events":    [ ...生平事件... ],
   "works":     [ ...著作... ],
@@ -355,19 +425,53 @@ def readme(c, sample_id, sample_name):
 
 生卒年、籍贯有异说时，本站**并存多版本**并在 `note` 中标明分歧，不强行定论。
 
-## 五、许可
+## 五、许可（分层，务必分别遵循）
 
-- **本站编纂的数据集**（persons / events / works / anecdotes / relations / sources 的结构化内容）
-  以 **CC BY-SA 4.0** 许可发布：{LICENSE_URL}
-  可自由复制、分发、改编（含商用），条件为 ——
-  1. **署名**：注明「数据来源：状元谱 {SITE_URL}」；
-  2. **相同方式共享**：改编后的数据集须以相同许可发布。
-- **史料原文**（`sources[].quote` 等）版权属原书及其点校本，本站仅作考证性引用（合理使用），
-  **不在 CC BY-SA 授权范围内**，转引请回查原书。
-- **CBDB 中国历代人物传记资料库**：部分科举年份、籍贯与活动年（`fl_year`）及社会关系
-  取自 CBDB，依其学术免费使用条款使用，**再分发请遵循 CBDB 条款**
-  （<https://cbdb.fas.harvard.edu/>）。标记为 `cbdb:` 的关系边同理。
-- 本站对数据准确性不作担保；**引用前请回溯 `sources[].quote` 原文**，发现错误欢迎提勘误。
+本数据集是两层材料的叠加，授权不同；「许可层」与 JSON 顶层 `cbdb_derived_fields` 字段一一对应。
+
+### 5.1 第 ① 层 · 本站自主编纂内容 —— CC BY-SA 4.0（含商用）
+
+覆盖：人物档案的编纂与标点、A/B/C 三级考证结论、生平事件／著作／轶事与出处的登记编排、
+人物关系的**人工条目**、长篇故事正文。
+
+以 **CC BY-SA 4.0** 发布：{LICENSE_URL}
+可自由复制、分发、改编（**含商用**），条件为：
+
+1. **署名**：注明「数据来源：状元谱 {SITE_URL}」；
+2. **相同方式共享**：改编后的数据集须以相同许可发布。
+
+### 5.2 第 ② 层 · CBDB 派生数据 —— CC BY-NC-SA 4.0（**不含商用**，须署名 CBDB）
+
+覆盖字段（即 JSON 顶层 `cbdb_derived_fields` 所列）：
+
+| 字段 / 段落 | CBDB 来源 |
+|---|---|
+| `fl_year` | `BIOG_MAIN.c_index_year`（估算活动年） |
+| `birth_year` / `death_year`（机器回填部分） | `BIOG_MAIN.c_birthyear` / `c_deathyear` |
+| `zi` / `hao`（经索引带入者） | `ALTNAME_DATA`（类型 4=字 / 5=号） |
+| `native_hist` / `native_modern`（CBDB 籍贯优先） | `BIOG_ADDR_DATA`（type=1） |
+| `relations`（机器收割边，`to_id` 前缀 `cbdb:`） | `ASSOC_DATA` + `KIN_DATA` |
+
+以 **CC BY-NC-SA 4.0** 发布：{LICENSE_CBDB_URL}
+
+- **署名**：须注明数据来源为{CBDB_NAME}，并标明所用版本（{CBDB_RELEASE}）；
+- **非商业**：**不得用于商业目的**；
+- **相同方式共享**：改编后的数据集须以相同协议发布。
+
+依据《CBDB Data Licensing Terms》（2026-08-20 生效）：属「当前单机版范围内」的 CBDB 数据适用
+CC BY-NC-SA 4.0。条款原文：{CBDB_TERMS}　数据库主页：{CBDB_HOME}
+
+> 口径：第 ② 层为**保守下限声明**——凡取值可能来自 CBDB 的字段一律计入；
+> 个别记录实际另有名录或一手史料来源，以该条记录的出处链为准。
+
+### 5.3 第 ③ 层 · 史料原文 —— 不在上述任一授权范围内
+
+`sources[].quote` 等古籍摘录，版权属原书及其点校本，本站仅作考证性引用（合理使用），
+转引请回查原书。
+
+### 5.4 免责
+
+本站对数据准确性不作担保；**引用前请回溯 `sources[].quote` 原文**，发现错误欢迎提勘误。
 
 ## 六、更新节奏
 

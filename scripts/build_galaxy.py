@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """星图数据切片生成器（build_galaxy.py）
 
-读取 data/persons/*.yaml（599+ 人），合并 stories / events / 比对索引三处信号，
+读取 data/persons/*.yaml（全部 published 人物卡，含少数特例收录者），合并 stories / events / 比对索引三处信号，
 生成 site/public/data/galaxy.json —— 供方案三（星图可视化）渲染用。
 
 由 site/astro.config.mjs 的 galaxy-data 集成在 `astro build` / `astro dev` 时自动调用，
@@ -26,7 +26,7 @@ tier 判定优先级（自上而下，命中即止）：
     0  content/stories/*.md（status: published）frontmatter 的 persons 名单
     1  data/events/<id>.yaml 存在；或档案富度 ≥8
        （富度 = zi/hao/birth_year/death_year/native_hist/native_modern/bio_short/ke_ci/reign
-        九字段非空计数 + 有效标签 1 分；「待核」「史料阙如」不计）
+        九字段非空计数 + 有效标签 1 分；「待核」「待整理」不计）
     2  索引 status = confirmed（zhuangyuan_index.yaml）
     3  索引 status = suspect；或索引无此人（手补卡，打印告警）
     4  索引 status = missing
@@ -38,7 +38,7 @@ tier 判定优先级（自上而下，命中即止）：
 索引匹配三级策略（索引 slug 为逐字拼音，person id 为连写拼音，两套命名并存）：
     1. slug 直配 → 2. (姓名, 科年) 配 → 3. 索引内唯一姓名配
 科年阙如（金代集中，年分「待核」）时尝试从索引回补；两边皆阙则剔除该星点并告警
-（「史料阙如」是合法数据状态，不编造坐标）。
+（缺载是合法数据状态，不编造坐标）。
 """
 import glob
 import json
@@ -130,9 +130,9 @@ RICH_THRESHOLD = 8
 
 
 def richness_of(p):
-    """档案富度：九字段非空计数 + 有效标签（待核/史料阙如不算）1 分。"""
+    """档案富度：九字段非空计数 + 有效标签（待核/待整理不算）1 分。"""
     s = sum(1 for f in RICH_FIELDS if p.get(f))
-    tags = [t for t in (p.get('tags') or []) if t not in ('待核', '史料阙如')]
+    tags = [t for t in (p.get('tags') or []) if t not in ('待核', '待整理')]
     return s + (1 if tags else 0)
 
 

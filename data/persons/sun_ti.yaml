@@ -4,8 +4,8 @@ id: sun_ti
 name: 孙逖
 zi: null
 hao: null
-birth_year: 696
-death_year: 761
+birth_year: null
+death_year: null
 native_hist: 涉縣
 native_modern: 河北省邯郸市涉县
 lat: 36.58
@@ -19,3 +19,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

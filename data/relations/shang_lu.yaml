@@ -6,9 +6,6 @@ relations:
 - to_id: cbdb:525722
   type: 其他
   note: 被Y欣賞/器重：洪澄（CBDB 外部人物）
-- to_id: cbdb:702424
-  type: 其他
-  note: 被Y欣賞/器重：沈勲（CBDB 外部人物）
 - to_id: cbdb:16939
   type: 其他
   note: 為Y所著書作序：方一夔（CBDB 外部人物）

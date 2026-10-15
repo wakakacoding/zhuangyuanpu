@@ -1,5 +1,5 @@
 ---
-import { allPersons, presentDynasties, fullProfileIds, BASE} from '../lib/persons';
+import { allPersons, presentDynasties, fullProfileIds, zhuangyuanOnly, specialRoles, BASE} from '../lib/persons';
 import { listStories } from '../lib/story';
 import { coverageStats, pct } from '../lib/coverage';
 import SeoHead from '../components/SeoHead.astro';
@@ -7,9 +7,12 @@ import '../styles/base.css';
 import '../styles/stats.css';
 
 const persons = allPersons();
+// 口径（R1.4-2）：分布类统计一律只算状元；特例（探花/事实状元）单列，不并入分布
+const zy = zhuangyuanOnly(persons);
+const specials = specialRoles(persons);
 const fullIds = fullProfileIds();
 const stories = listStories();
-const dynasties = presentDynasties(persons);
+const dynasties = presentDynasties(zy);
 
 // 补全计划看板：数字全部来自构建期实测（见 src/lib/coverage.ts）
 const cov = coverageStats();
@@ -19,11 +22,13 @@ const relMax = relTop[0]?.n ?? 1;
 // 故条形长度取条目数的开平方（相对长度，仅用于目视排序，读数值请读数字）。
 const srcMax = Math.sqrt(Math.max(...cov.sourceItems.map((s) => s.n), 1));
 
-// ---- 朝代分布 ----
+// ---- 朝代分布（八朝分带）----
 const dynCount = dynasties.map((d) => ({
-  d, n: persons.filter((p) => p.dynasty === d).length,
+  d, n: zy.filter((p) => p.dynasty === d).length,
 }));
 const dynMax = Math.max(...dynCount.map((x) => x.n));
+// 未落入八朝主带者（西夏/大西/太平天国/五代后汉 等并列政权）——脚注须如实交代，否则总数对不上
+const offBand = zy.filter((p) => !dynasties.includes(p.dynasty)).length;
 
 // ---- 籍贯分布（今地名省级聚合）----
 const provOf = (nm: string | undefined): string | null => {
@@ -32,21 +37,22 @@ const provOf = (nm: string | undefined): string | null => {
   return m ? m[1] : nm.slice(0, 2);
 };
 const provMap = new Map<string, number>();
-for (const p of persons) {
+for (const p of zy) {
   const prov = provOf(p.native_modern);
   if (prov) provMap.set(prov, (provMap.get(prov) ?? 0) + 1);
 }
 const provTop = [...provMap.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12);
 const provMax = provTop[0]?.[1] ?? 1;
+const withProv = zy.filter((p) => provOf(p.native_modern)).length;
 
 // ---- 标签 TOP ----
 const tagMap = new Map<string, number>();
-for (const p of persons) for (const t of p.tags ?? []) tagMap.set(t, (tagMap.get(t) ?? 0) + 1);
+for (const p of zy) for (const t of p.tags ?? []) tagMap.set(t, (tagMap.get(t) ?? 0) + 1);
 const tagTop = [...tagMap.entries()].sort((a, b) => b[1] - a[1]).slice(0, 15);
 
 // ---- 科年分布（50 年桶）----
 const buckets = new Map<number, number>();
-for (const p of persons) {
+for (const p of zy) {
   if (!p.exam_year) continue;
   const b = Math.floor(p.exam_year / 50) * 50;
   buckets.set(b, (buckets.get(b) ?? 0) + 1);
@@ -56,7 +62,7 @@ const bucketMax = Math.max(...bucketList.map(([, n]) => n));
 
 // ---- 覆盖率看板（公开版，呼应 R4「缺数据本身成为叙事」）----
 // 定义已上移至 src/lib/coverage.ts，供 /stats、/about 共用同一份构建期实测口径
-const n = persons.length;
+const n = cov.zhuangyuan;
 ---
 <html lang="zh-CN">
   <head>
@@ -84,8 +90,16 @@ const n = persons.length;
         <div><b>{stories.length}</b><span>故事</span></div>
         <div><b>{tagMap.size}</b><span>标签</span></div>
       </div>
+      <p class="note-line">
+        口径说明：本站人物卡 {cov.persons} 张，其中<b>状元 {cov.zhuangyuan}</b> 与<b>特例 {cov.roles.special}</b> 分列——
+        特例为{cov.roles.tanhua ? `探花 ${cov.roles.tanhua} 人（商衍鎏，末科一甲第三名）` : ''}
+        {cov.roles.tanhua && cov.roles.deFacto ? '、' : ''}
+        {cov.roles.deFacto ? `事实状元 ${cov.roles.deFacto} 人（赵楷，殿试唱名第一而以宗室避嫌抑置）` : ''}，
+        因科举史料价值收录，<b>不计入状元总数与下列各分布</b>（详见 <a href={`${BASE}persons/`}>全量索引</a>，卡面带身份徽标）。
+      </p>
 
       <h2 class="section-title">朝代分布</h2>
+      <p class="note-line">仅计状元（{n} 人）{offBand > 0 && <>；另有 {offBand} 人属并列政权（西夏／大西／太平天国／五代后汉），不属八朝主带，见<a href={`${BASE}timeline/`}>时间线</a></>}。</p>
       <div class="bars">
         {dynCount.map(({ d, n: c }) => (
           <div class="bar-line">
@@ -97,6 +111,7 @@ const n = persons.length;
       </div>
 
       <h2 class="section-title">科年密度（50 年一桶）</h2>
+      <p class="note-line">仅计状元（{n} 人）。</p>
       <div class="histo">
         {bucketList.map(([b, c]) => (
           <div class="h-col" title={`${b}–${b + 49}：${c} 人`}>
@@ -107,7 +122,7 @@ const n = persons.length;
       </div>
 
       <h2 class="section-title">籍贯分布（今省级，TOP 12）</h2>
-      <p class="note-line">仅统计已映射今地名者（{persons.filter((p) => p.native_modern).length} 人）；「状元产地重心南移」在此可见——待坐标补全后由籍贯地图完整呈现。</p>
+      <p class="note-line">仅计状元，且仅统计已映射今地名者（{withProv} / {n} 人）；「状元产地重心南移」在此可见——待坐标补全后由<a href={`${BASE}map/`}>籍贯地图</a>完整呈现。</p>
       <div class="bars">
         {provTop.map(([prov, c]) => (
           <div class="bar-line">
@@ -121,6 +136,7 @@ const n = persons.length;
       {tagTop.length > 0 && (
         <>
           <h2 class="section-title">标签 TOP {tagTop.length}</h2>
+          <p class="note-line">仅计状元标签。</p>
           <div class="tag-cloud">
             {tagTop.map(([t, c]) => (
               <a class="tag-pill" href={`${BASE}search/#tag=${encodeURIComponent(t)}`}>{t}<i>{c}</i></a>
@@ -130,7 +146,7 @@ const n = persons.length;
       )}
 
       <h2 class="section-title">补全计划 · 覆盖率</h2>
-      <p class="note-line">阙如不遮不掩。以下数字全部于构建时从数据底座实测得出（{cov.generated}），不手写、不估算。达标线触发下一阶段：坐标 60% 解锁籍贯地图，生年或活动年 50% 解锁星图（fl_year 为 CBDB 估算活动年，星图上另色标注）。</p>      <div class="cov">
+      <p class="note-line">阙如不遮不掩。以下数字全部于构建时从数据底座实测得出（{cov.generated}），不手写、不估算。<b>覆盖率总体为状元 {cov.zhuangyuan} 人</b>（特例不并入）；达标线触发下一阶段：坐标 60% 解锁籍贯地图，生年或活动年 50% 解锁星图（fl_year 为 CBDB 估算活动年，星图上另色标注）。</p>      <div class="cov">
         {cov.items.map((c) => {
           const p = pct(c.cur, c.total);
           const hit = c.target != null && c.cur / c.total >= c.target;
@@ -189,7 +205,7 @@ const n = persons.length;
         </tbody>
       </table>
       <p class="note-line">
-        完整数据可经<a href={`${BASE}about/#download`}>公开数据 API</a>下载：{cov.persons} 人全量 JSON 与 CSV，
+        完整数据可经<a href={`${BASE}about/#download`}>公开数据 API</a>下载：人物卡 {cov.persons} 张（状元 {cov.zhuangyuan} · 特例 {cov.roles.special}）的全量 JSON 与 CSV，
         字段含义与 CC BY-SA 许可说明见<a href={`${BASE}api/`}>数据字典</a>。
       </p>
 

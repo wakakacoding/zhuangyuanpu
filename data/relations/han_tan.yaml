@@ -36,9 +36,6 @@ relations:
 - to_id: xu_yuanwen
   type: 师生
   note: 為Y之學生（CBDB）
-- to_id: cbdb:702895
-  type: 师生
-  note: 為Y之弟子：顧嗣雍（CBDB 外部人物）
 - to_id: cbdb:34138
   type: 其他
   note: 墓誌銘由Y所作：方苞（CBDB 外部人物），始年 1696

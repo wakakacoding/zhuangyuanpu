@@ -1,11 +1,14 @@
 ---
-import { allPersons, fullProfileIds, ganzhiOf, reignYearOf, REIGNS, BASE} from '../lib/persons';
+import { allPersons, fullProfileIds, ganzhiOf, reignYearOf, REIGNS, zhuangyuanOnly, specialRoles, BASE} from '../lib/persons';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/timeline.css';
 
 const persons = allPersons();
 const fullIds = fullProfileIds();
+// 口径（R1.4-2）：主线泳道只画状元；特例（探花/事实状元）单列说明，不并入人数
+const zy = zhuangyuanOnly(persons);
+const nSpecial = specialRoles(persons).length;
 
 // ---- 朝代泳道定义（起讫年为史家通行纪年）----
 const LANES: Array<{ name: string; start: number; end: number }> = [
@@ -30,7 +33,7 @@ const x = (y: number) => leftPad + (y - X0) * PX;
 
 // ---- 数据 ----
 const byDynasty = new Map(LANES.map((l) => [l.name, [] as any[]]));
-for (const p of persons) {
+for (const p of zy) {
   if (byDynasty.has(p.dynasty)) byDynasty.get(p.dynasty)!.push(p);
 }
 
@@ -60,7 +63,7 @@ const tickTitle = (p: any) => {
     <div class="container container-wide">
       <header class="site-head">
         <h1>朝代时间线</h1>
-        <p class="sub">622 孙伏伽 — 1904 刘春霖 · {persons.length} 人 · 朱砂点 = 已建全字段档案 · 悬浮查看公元/干支/年号</p>
+        <p class="sub">622 孙伏伽 — 1904 刘春霖 · 状元 {zy.length} 人{ nSpecial > 0 && <>（另有特例 {nSpecial} 人，未入泳道）</>} · 朱砂点 = 已建全字段档案 · 悬浮查看公元/干支/年号</p>
         <nav class="site-nav">
           <a href={BASE}>首页</a>
           <a href={`${BASE}search/`}>检索</a>

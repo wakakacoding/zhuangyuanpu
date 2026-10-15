@@ -24,7 +24,7 @@ scripts/
 content/stories/    # 故事长文（Phase 1）
 site/           # Astro 静态站（构建期读取 data/）
   public/api/       # 开放数据 API 导出物（build_api.py 生成，勿手改）
-vendor/cbdb/    # CBDB 数据库（不提交 Git，学术免费使用）
+vendor/cbdb/    # CBDB 数据库（不提交 Git；CC BY-NC-SA 4.0，不得商用，见 CBDB Data Licensing Terms）
 ```
 
 ## 开放数据

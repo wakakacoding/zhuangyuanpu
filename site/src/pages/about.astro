@@ -14,13 +14,31 @@ const stories = listStories();
 const cov = coverageStats();
 const byKey = Object.fromEntries(cov.items.map((i) => [i.key, i]));
 const coverage = [
-  { ...byKey.persons, note: '目标：可考的历代文状元全量' },
+  { ...byKey.persons, note: `目标：可考的历代文状元全量；另有特例 ${cov.roles.special} 人单列（探花 ${cov.roles.tanhua} · 事实状元 ${cov.roles.deFacto}），不并入此数` },
   { ...byKey.stories, note: '长篇叙事，杂志级' },
   { ...byKey.coords, note: '60% 达标解锁完整籍贯地图' },
 ];
 
 // API 端点绝对地址（供 curl 示例，避免手写域名）
 const apiBase = new URL(`${import.meta.env.BASE_URL}api/`, Astro.site ?? new URL('https://wakakacoding.github.io')).href;
+
+// ---- 分层许可（R0-1/R0-2）：授权协议原文与「数据血缘」清单 ----
+// 血缘清单里的覆盖数全部构建期实测（persons 卡 + coverageStats 的关系边），不手写数字。
+const SELF_CC = 'https://creativecommons.org/licenses/by-sa/4.0/deed.zh';
+const CBDB_CC = 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh';
+const CBDB_TERMS = 'https://cbdb.hsites.harvard.edu/cbdb-data-licensing-terms';
+const CBDB_HOME = 'https://cbdb.hsites.harvard.edu/';
+const CBDB_RELEASE = 'cbdb_20261010';
+
+const cnt = (f) => persons.filter(f).length;
+const lin = {
+  fl: cnt((p) => p.fl_year),
+  birth: cnt((p) => p.birth_year),
+  death: cnt((p) => p.death_year),
+  zi: cnt((p) => p.zi),
+  hao: cnt((p) => p.hao),
+  native: cnt((p) => p.native_hist),
+};
 ---
 
 <html lang="zh-CN">
@@ -86,7 +104,11 @@ const apiBase = new URL(`${import.meta.env.BASE_URL}api/`, Astro.site ?? new URL
           <div class="src-card">
             <h3>CBDB 中国历代人物传记资料库</h3>
             <p class="src-tag">哈佛 / 北大 / 中研院合作项目</p>
-            <p>50 万+ 人物结构化数据，含科举年份、籍贯、社会关系与估算活动年（fl_year）。本站冷启动的底座，逐条与一手史料交叉核对。</p>
+            <p>
+              50 万+ 人物结构化数据，含科举年份、籍贯、社会关系与估算活动年（fl_year）。
+              本站冷启动的底座，逐条与一手史料交叉核对。
+              <span class="src-lic">本站取自该库的字段以 CC BY-NC-SA 4.0 使用：须署名 CBDB、不得商用。</span>
+            </p>
           </div>
         </div>
         <p class="note-line">另参：地方志「选举志」、年谱、墓志、朱卷与登科录等；全部出处逐条登记于数据层，页面可展开查证。</p>
@@ -132,11 +154,20 @@ const apiBase = new URL(`${import.meta.env.BASE_URL}api/`, Astro.site ?? new URL
           说明史料保存的偏向。凡遇此情形，页面如实标注<span class="quelu">史料阙如</span>，
           不编造、不脑补、不用传说填空。
         </p>
+        <p>
+          但「没有记载」与「还没去查」是两回事：<b>「史料阙如」须经人工查证认定</b>（人物卡标 <code>verified_absent: true</code>）方可使用；
+          尚未整理的缺载一律表述为「待考」「待整理」——整理进度不冒充历史结论。
+        </p>
       </section>
 
       <section class="plan">
         <h2 class="section-title plan-title">补全计划</h2>
-        <p class="plan-note">榜上有名者六百余人，史中留痕者寥寥。缺漏不遮不掩，进度公开——这本身就是本站要讲的故事。数据为构建时统计。</p>
+        <p class="plan-note">历代榜上有名者六百余人，本站已录状元 {cov.zhuangyuan} 人；史中留痕者寥寥。缺漏不遮不掩，进度公开——这本身就是本站要讲的故事。数据为构建时统计。</p>
+        <p class="plan-note">
+          口径：人物的统计总体是<b>状元</b>（当前 {cov.zhuangyuan} 人）；人物卡另有<b>特例 {cov.roles.special} 人</b>——
+          {cov.roles.tanhua > 0 && <>探花 {cov.roles.tanhua} 人（商衍鎏）、</>}
+          事实状元 {cov.roles.deFacto} 人（赵楷），因科举史料价值收录，<b>不并入状元总数与各分布</b>。
+        </p>
         <div class="plan-bars">
           {coverage.map((c) => {
             const p = pct(c.cur, c.total);
@@ -160,14 +191,16 @@ const apiBase = new URL(`${import.meta.env.BASE_URL}api/`, Astro.site ?? new URL
       <section id="download" class="download">
         <h2 class="section-title">数据下载</h2>
         <p class="note-line">
-          全站数据底座以 CC BY-SA 4.0 开放，构建期自动导出为静态 API，随每次构建刷新（当前 {cov.generated}）。
+          全站数据底座<b>分层开放</b>：本站自主编纂的部分以 <b>CC BY-SA 4.0</b> 发布（含商用）；
+          取自 CBDB 的派生字段以 <b>CC BY-NC-SA 4.0</b> 发布（<b>不得商用</b>、须署名 CBDB）——
+          逐字段归属见下方「许可与引用」。构建期自动导出为静态 API，随每次构建刷新（当前 {cov.generated}）。
           没有密钥、没有速率限制；数据即本站正文的可机读形态，欢迎复刻、校验与引证。
         </p>
 
         <div class="dl-grid">
           <a class="dl-card" href={`${BASE}api/persons.json`}>
             <h3>persons.json <span class="dl-size">全量精简字段</span></h3>
-            <p><b>{cov.persons}</b> 位状元，一人一条：姓名、朝代、科年干支、名次、生卒、籍贯与今地坐标、小传、标签。</p>
+            <p><b>{cov.persons}</b> 张人物卡（状元 {cov.zhuangyuan} · 特例 {cov.roles.special}），一人一条：姓名、朝代、科年干支、名次、生卒、籍贯与今地坐标、小传、标签。</p>
             <span class="dl-go">下载 JSON →</span>
           </a>
           <a class="dl-card" href={`${BASE}api/persons.csv`}>
@@ -196,23 +229,86 @@ const apiBase = new URL(`${import.meta.env.BASE_URL}api/`, Astro.site ?? new URL
         </p>
         <pre class="dl-code"><code>curl -s {apiBase}persons.json | jq '.meta.count, .persons[0].name'</code></pre>
 
-        <h3 class="sub-title">许可与引用</h3>
+        <h3 class="sub-title">许可与引用（分层）</h3>
+        <p class="note-line">
+          本站的数据是<b>两层材料的叠加</b>，两层授权不同，请分别遵循；逐字段归属见下方血缘清单。
+        </p>
         <ul class="dl-license">
           <li>
-            <b>本站编纂的数据集</b>以 <b>CC BY-SA 4.0</b> 发布——可自由复制、分发、改编（含商用），
-            条件为署名「数据来源：状元谱」并以相同方式共享。
+            <b>① 本站自主编纂内容 —— CC BY-SA 4.0（含商用）</b>：人物档案的编纂与标点、A/B/C 三级考证结论、
+            生平事件／著作／轶事与出处的登记编排、人物关系中的人工条目、长篇故事正文。
+            以 <b>CC BY-SA 4.0</b> 发布（<a class="inline-link" href={SELF_CC}>协议原文</a>）：
+            可自由复制、分发、改编（<b>含商用</b>），条件为署名「数据来源：状元谱」并以相同方式共享。
           </li>
           <li>
-            <b>史料原文</b>（出处摘录）版权属原书及点校本，本站仅作考证性引用，不在 CC BY-SA 授权范围内。
+            <b>② CBDB 派生数据 —— CC BY-NC-SA 4.0（不得商用，须署名）</b>：取自
+            《中国历代人物传记资料库》（CBDB，哈佛大学／北京大学／中央研究院合作项目）。依《CBDB Data Licensing Terms》
+            （<a class="inline-link" href={CBDB_TERMS}>条款原文</a>，2026-08-20 生效），属「当前单机版范围内」的 CBDB 数据适用
+            {' '}<b>CC BY-NC-SA 4.0</b>（<a class="inline-link" href={CBDB_CC}>协议原文</a>）：
+            <b>须注明 CBDB 为数据来源并标明所用版本</b>，<b>不得用于商业目的</b>，改编后须以相同协议共享。
+            该库主页见 <a class="inline-link" href={CBDB_HOME}>cbdb.hsites.harvard.edu</a>。
+            <b>「含商用」只覆盖第 ① 层</b>，不含本层。
           </li>
           <li>
-            <b>CBDB</b>：部分科举年份、籍贯、估算活动年（fl_year）与人物关系取自 CBDB，
-            再分发请遵循其学术免费使用条款。
+            <b>③ 史料原文 —— 不在上述任一授权范围内</b>：<code>sources[].quote</code> 等古籍摘录，
+            版权属原书及其点校本，本站仅作考证性引用，转引请回查原书。
           </li>
           <li>
             数据不担保无误：<b>引用前请回溯出处原文</b>。发现错误请走<a href={`${BASE}corrections/`}>勘误</a>流程。
           </li>
         </ul>
+
+        <h4 class="lic-h">数据血缘清单：哪个字段属于哪一层</h4>
+        <div class="lic-table">
+          <table>
+            <thead>
+              <tr><th>数据（当前覆盖）</th><th>实际出处</th><th>层级</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>fl_year</code> 估算活动年（{lin.fl} / {n}）</td>
+                <td>CBDB <code>BIOG_MAIN.c_index_year</code>，经 <code>fill_lifespan.py</code> 回填（仅补空）</td>
+                <td><span class="lic-tag lic-2">②</span></td>
+              </tr>
+              <tr>
+                <td><code>birth_year</code> / <code>death_year</code> 机器回填部分（现有值 {lin.birth} / {lin.death}）</td>
+                <td>CBDB <code>BIOG_MAIN.c_birthyear</code> / <code>c_deathyear</code>；已有人工考证值不被覆盖</td>
+                <td><span class="lic-tag lic-2">②</span></td>
+              </tr>
+              <tr>
+                <td><code>zi</code> / <code>hao</code> 经索引带入者（{lin.zi} / {lin.hao}）</td>
+                <td>CBDB <code>ALTNAME_DATA</code>（类型 4=字 / 5=号）</td>
+                <td><span class="lic-tag lic-2">②</span></td>
+              </tr>
+              <tr>
+                <td><code>native_hist</code> / <code>native_modern</code> 籍贯（{lin.native}）</td>
+                <td>CBDB <code>BIOG_ADDR_DATA</code>（type=1）优先，名录籍贯兜底</td>
+                <td><span class="lic-tag lic-2">②</span></td>
+              </tr>
+              <tr>
+                <td>关系机器收割边（{cov.relations.external} / {cov.relations.total} 条，<code>to_id</code> 前缀 <code>cbdb:</code>）</td>
+                <td>CBDB <code>ASSOC_DATA</code> + <code>KIN_DATA</code>，经 <code>harvest_cbdb_relations.py</code> 收割</td>
+                <td><span class="lic-tag lic-2">②</span></td>
+              </tr>
+              <tr>
+                <td>考证结论、事件／著作／轶事／出处登记、故事正文、人工关系条目</td>
+                <td>正史／题名碑录／登科记考／方志等一手二手史料 + 本站编纂</td>
+                <td><span class="lic-tag lic-1">①</span></td>
+              </tr>
+              <tr>
+                <td><code>sources[].quote</code> 古籍原文</td>
+                <td>原书及点校本</td>
+                <td><span class="lic-tag lic-3">③</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note-line">
+          口径说明：第 ② 层为<b>保守下限声明</b>——凡取值可能来自 CBDB 的字段一律标 ②，
+          个别记录实际另有名录或一手史料来源，以该条记录的出处链为准；
+          所用 CBDB 数据版本为 <code>{CBDB_RELEASE}</code>（官方单机版 SQLite 发行版）。
+          本站为非商业项目，第 ② 层仅在非商业前提下使用。
+        </p>
         <p class="note-line">
           数据条目数（构建期实测）：{' '}
           {cov.sourceItems.map((s, i) => (
@@ -254,6 +350,7 @@ const apiBase = new URL(`${import.meta.env.BASE_URL}api/`, Astro.site ?? new URL
       .src-card h3 { margin: 0; font-size: 1.02rem; }
       .src-tag { margin: 0.25rem 0 0.5rem; font-size: 0.78rem; color: var(--cinnabar); }
       .src-card p:last-child { margin: 0; font-size: 0.87rem; color: var(--ink-soft); }
+      .src-lic { display: block; margin-top: 0.4rem; font-size: 0.78rem; color: var(--cinnabar); }
 
       /* 三级出处 */
       .tier-list { display: flex; flex-direction: column; gap: 0.7rem; margin: 0.6rem 0 0.4rem; }
@@ -310,6 +407,28 @@ const apiBase = new URL(`${import.meta.env.BASE_URL}api/`, Astro.site ?? new URL
       .dl-license { margin: 0.5rem 0 0; padding-left: 1.2rem; font-size: 0.88rem; }
       .dl-license li { margin: 0.35rem 0; color: var(--ink-soft); }
       .dl-license b { color: var(--ink); }
+
+      /* 分层许可 · 数据血缘清单 */
+      .lic-h { font-size: 0.95rem; margin: 1.3rem 0 0.5rem; }
+      .lic-table { overflow-x: auto; }
+      .lic-table table {
+        width: 100%; border-collapse: collapse; font-size: 0.82rem;
+        border: 1px solid var(--line); background: #fbf8f0;
+      }
+      .lic-table th, .lic-table td {
+        border: 1px solid var(--line); padding: 0.45rem 0.6rem;
+        text-align: left; vertical-align: top; line-height: 1.6;
+      }
+      .lic-table th { background: var(--paper-deep); font-weight: 600; white-space: nowrap; }
+      .lic-table td:last-child { text-align: center; white-space: nowrap; }
+      .lic-table code { font-size: 0.95em; }
+      .lic-tag {
+        display: inline-block; min-width: 1.4em; text-align: center;
+        font-size: 0.78rem; border-radius: 2px; padding: 0 0.35rem; color: #fff;
+      }
+      .lic-1 { background: #4a7c59; }
+      .lic-2 { background: var(--cinnabar); }
+      .lic-3 { background: #7a6a4f; }
       #download code {
         background: var(--paper-deep); border-radius: 2px; padding: 0 0.25rem;
         font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85em;

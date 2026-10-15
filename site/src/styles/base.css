@@ -92,6 +92,22 @@ a { color: inherit; }
 .quelu { color: var(--ink-soft); font-style: italic; }
 .back { display: inline-block; margin-top: 2.5rem; font-size: 0.85rem; color: var(--ink-soft); }
 
+/* 名录身份徽标（R1.4-2）：探花 / 事实状元等特例须在列表与档案页与状元一眼可分，
+   避免 599 张人物卡被整体读成「599 位状元」 */
+.role-badge {
+  display: inline-block; margin-left: 0.45rem; vertical-align: 0.08em;
+  font-size: 0.68rem; font-weight: normal; line-height: 1.7; padding: 0 0.5rem;
+  border-radius: 999px; border: 1px solid var(--gold); color: var(--gold);
+  letter-spacing: 0.08em; white-space: nowrap;
+}
+.role-badge.role-de_facto { border-color: var(--cinnabar); color: var(--cinnabar); }
+.role-badge-lg { font-size: 0.78rem; padding: 0.1rem 0.7rem; }
+
+/* 档案状态分层（R1.4-5）：待整理 = 整理进度；史料阙如 = 已人工查证的历史结论 */
+.bio-pending { color: var(--ink-soft); }
+.bio-pending .status-mark { border-bottom: 1px dashed var(--line); padding-bottom: 1px; }
+.bio-absent { color: var(--ink-soft); font-style: italic; }
+
 table.list { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 table.list th, table.list td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.6rem; text-align: left; }
 table.list th { color: var(--ink-soft); font-weight: normal; font-size: 0.8rem; }

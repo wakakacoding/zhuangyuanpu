@@ -8,6 +8,9 @@
   - 枚举合法性（event.type / year_precision / source.tier / relation.type）
   - 引用完整性（event.source_ids、relation.to_id 等必须存在）
   - 干支-公元互验（person.exam_year vs ganzhi）
+  - 身份分层（R1.1-5）: identity_status 取值合法；科年 > 卒年 -> 错误；suspect 却带生卒 -> 警告
+  - 名录身份与档案状态（R1.4）: role 取值合法（缺省=状元）；verified_absent 须为布尔且与 bio_short 互斥；
+    标签「史料阙如」已废弃（属历史结论，只能由 verified_absent 驱动页面渲染）
   - 铁律 1: 事件无出处（source_ids 为空）-> 错误；史实仅有 C 级出处 -> 警告
   - 铁律 2: 轶事只存在于 anecdotes 表（event.type 枚举中无「轶事」，天然隔离）
   - 覆盖率看板: 坐标 / 生卒覆盖（Phase 3 数据阈值闸门）
@@ -28,6 +31,8 @@ EVENT_TYPES = {"出生", "应试", "中举", "夺魁", "授官", "留学", "升�
 PRECISIONS = {"exact", "about", "range"}
 TIERS = {"A", "B", "C"}
 REL_TYPES = {"同年", "师生", "父子", "翁婿", "政敌", "兄弟", "友人", "同僚", "其他"}
+# 名录身份（R1.4-1）：缺省 = zhuangyuan；特例仅 tanhua / de_facto 两种
+ROLES = {"zhuangyuan", "tanhua", "de_facto"}
 EXT_TO_ID_RE = re.compile(r"^cbdb:\d+$")  # CBDB 外部人物标记
 ID_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 
@@ -80,9 +85,37 @@ for stem, p in persons.items():
             err(f"person {pid}: 缺必填字段 {req}")
     if p.get("status") not in ("draft", "published"):
         err(f"person {pid}: status 非法（draft/published）")
+    # 身份匹配状态：confirmed / suspect；缺省 = 未标注（索引 status 为 confirmed/missing 者不写）
+    if p.get("identity_status") not in (None, "confirmed", "suspect"):
+        err(f"person {pid}: identity_status 非法（confirmed/suspect，或省略）")
+    # 名录身份（R1.4-1）：缺省 = zhuangyuan；特例须显式标注，否则统计口径会被特例污染
+    if p.get("role") not in (None, *ROLES):
+        err(f"person {pid}: role 非法（zhuangyuan/tanhua/de_facto，或省略=状元）")
+    if p.get("role") == "zhuangyuan":
+        warn(f"person {pid}: role 显式写 zhuangyuan 属冗余（缺省即状元），建议整行删除")
+    # 「史料阙如」人工认定（R1.4-5）：只接受布尔；与 bio_short 互斥
+    va = p.get("verified_absent")
+    if va is not None and not isinstance(va, bool):
+        err(f"person {pid}: verified_absent 须为布尔 true（或省略）；当前 {va!r}")
+    if va is True and p.get("bio_short"):
+        err(f"person {pid}: verified_absent=true 却已有 bio_short——两者互斥（有传则非阙如）")
+    if va is False:
+        warn(f"person {pid}: verified_absent 显式写 false 属冗余（省略即未认定），建议整行删除")
+    # 「史料阙如」是历史结论，只能经 verified_absent 认定后由页面渲染，**不得作为标签**：
+    # 标签会被检索与统计页当成人物分类展示，等于把整理进度冒充史料结论（R1.4-5 定规）
+    if "史料阙如" in (p.get("tags") or []):
+        err(f"person {pid}: 标签「史料阙如」已废弃——未整理者标「待整理」，"
+            f"确无传世记载者置 verified_absent: true（由页面渲染成「史料阙如」）")
+    # R1.1-5 时间序：夺魁年不得晚于卒年（两值皆有时）——晚于者几乎必是身份误配（如薛迈 卒645/科861）
+    dy = p.get("death_year")
+    if dy and p.get("exam_year") and int(p["exam_year"]) > int(dy):
+        err(f"person {pid}: 科年({p['exam_year']}) 晚于卒年({dy})——身份或生卒疑为误配")
+    # R1.1-5 身份未核者不应带生卒：suspect 卡的生卒系 CBDB 候选人数据（见 schema/SCHEMA.md）
+    if p.get("identity_status") == "suspect" and (p.get("birth_year") or p.get("death_year")):
+        warn(f"person {pid}: 身份匹配存疑（suspect）却带生卒——须人工核验后补，或回退为 null 并写 identity_note")
     for opt in ("exam_year", "native_hist", "rank_detail"):
         if p.get(opt) is None:
-            warn(f"person {pid}: 建议字段 {opt} 缺失（若史料阙如可忽略）")
+            warn(f"person {pid}: 建议字段 {opt} 缺失（未考出可忽略——缺载是合法状态）")
     ey, gz = p.get("exam_year"), p.get("ganzhi")
     if ey is not None and gz:
         if ganzhi_of(int(ey)) != gz:
@@ -241,12 +274,24 @@ c_bd = cov(lambda p: bool(p.get("birth_year")) and bool(p.get("death_year")))
 c_star = cov(lambda p: bool(p.get("birth_year")) or bool(p.get("fl_year")))
 c_ev = sum(1 for stem in persons if stem in events_by)
 rel_edges = sum(len((d or {}).get("relations") or []) for d in rels_by.values())
+# 状元口径（统计以状元为准，特例单列）：覆盖率闸门同样只看状元
+g_geo = sum(1 for p in persons.values() if isinstance(p, dict)
+            and (p.get("role") or "zhuangyuan") == "zhuangyuan" and p.get("lat") is not None)
 
 print("=" * 56)
 print("数据底座校验报告")
 print("=" * 56)
 print(f"persons: {n} | sources: {len(sources)} | relation 边: {rel_edges}")
-print(f"坐标覆盖: {c_geo[0]}/{n} ({c_geo[1]:.0f}%)   [地图闸门 >= 60%]")
+# 名录身份拆分（R1.4）：统计口径 = 状元；特例单列不并入
+n_zy = sum(1 for p in persons.values() if isinstance(p, dict) and (p.get("role") or "zhuangyuan") == "zhuangyuan")
+n_th = sum(1 for p in persons.values() if isinstance(p, dict) and p.get("role") == "tanhua")
+n_df = sum(1 for p in persons.values() if isinstance(p, dict) and p.get("role") == "de_facto")
+n_va = sum(1 for p in persons.values() if isinstance(p, dict) and p.get("verified_absent") is True)
+print(f"名录身份: 状元 {n_zy} + 特例 {n_th + n_df}（探花 {n_th} · 事实状元 {n_df}）"
+      f"   [统计口径以状元为准]")
+print(f"史料阙如人工认定（verified_absent）: {n_va} / {n_zy + n_th + n_df}")
+print(f"坐标覆盖: {c_geo[0]}/{n} ({c_geo[1]:.0f}%)   [地图闸门 >= 60%]"
+      f"  状元口径 {g_geo}/{n_zy}")
 print(f"生卒双全: {c_bd[0]}/{n} ({c_bd[1]:.0f}%)   [精确口径]")
 print(f"星图可用年: {c_star[0]}/{n} ({c_star[1]:.0f}%)   [星图闸门 >= 50%：生年或 fl_year(CBDB 估算活动年)]")
 print(f"有事件档案: {c_ev}/{n}")

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 先看已受理的勘误（避免重复提交）
+    url: https://wakakacoding.github.io/zhuangyuanpu/corrections/
+    about: 已采信 / 异说备录 / 已驳回的勘误都在这里，附处理理由与留痕编号。
+  - name: 考证方法与数据来源说明
+    url: https://wakakacoding.github.io/zhuangyuanpu/about/
+    about: A/B/C 三级出处判定标准、分层许可口径、CBDB 版本与署名要求。

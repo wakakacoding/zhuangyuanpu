@@ -21,9 +21,6 @@ relations:
 - to_id: cbdb:30713
   type: 其他
   note: 墓誌銘由Y所作：黃宗羲（CBDB 外部人物），始年 1633
-- to_id: cbdb:702596
-  type: 其他
-  note: 論學：嚴桓（CBDB 外部人物）
 - to_id: cbdb:56535
   type: 其他
   note: 同學、同門：姚希孟（CBDB 外部人物）

@@ -4,9 +4,9 @@ id: liu_hui
 name: 刘煇
 zi: null
 hao: null
-birth_year: 0
-death_year: 0
-fl_year: 1205
+birth_year: null
+death_year: null
+fl_year: null
 native_hist: 象山
 native_modern: 浙江省宁波市象山县
 lat: 29.48
@@ -20,3 +20,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

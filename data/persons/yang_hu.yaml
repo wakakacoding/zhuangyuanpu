@@ -5,8 +5,8 @@ name: 杨护
 zi: null
 hao: null
 birth_year: null
-death_year: 758
-fl_year: 695
+death_year: null
+fl_year: null
 native_hist: 華陰
 native_modern: 陕西省渭南市华阴市
 lat: 34.57
@@ -20,3 +20,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

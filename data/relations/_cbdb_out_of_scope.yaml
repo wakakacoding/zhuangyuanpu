@@ -1,0 +1,87 @@
+# CBDB 越界记录排除清单（out-of-scope blocklist）· 非关系数据文件
+#
+# 本文件以「_」开头，被所有数据加载器跳过（validate.py / coverage.ts / build_network.py /
+# build_galaxy.py / build_api.py 均跳过 _ 前缀），不参与任何页面或 API 导出。
+# 它的唯一职责：记录「不属于 CBDB 当前单机版范围」的 CBDB personid，防止关系重收割时复活。
+#
+# ── 为什么剔除 ──────────────────────────────────────────────
+# 依《CBDB Data Licensing Terms》（2026-08-20 生效）：
+#   ・凡在单机版发布日期（含当日）之前发布、且在当前单机版数据量范围内的 CBDB 数据 → CC BY-NC-SA 4.0；
+#   ・凡在发布日期之后发布，或超出该数据量范围者 → 第二节条款：禁商用、**禁演绎**、
+#     **禁止再分发与公开数据访问服务**（明文包含「以该数据作公开网站 / 应用 / API /
+#     可视化服务的底层数据源」）。
+# 下列记录建档于当前单机版发布日期之后，故严格属「范围外」，不得出现在公开面。
+#
+# ── 判定依据（R0-1 核实，2026-10-15）────────────────────────
+#  ・数据源：vendor/cbdb/cbdb_20261010.sqlite3
+#    （sha256 b43de31b298546ad8605ab52cd78d2a70d7b946abc01bf0d4efd18dd7853782d，
+#      与官方 cbdb-project/cbdb_sqlite 仓库 latest.json 逐字一致 = 官方当前 SQLite 发行版）
+#  ・当前单机版口径：CBDB BJ 20260602 / 649,533 人（download 页公布）
+#  ・判定字段：BIOG_MAIN.c_created_date（唯一可用的「发布时点」代理；
+#    c_modified_date 有 597,678/662,861 为 NULL 且含 0000-00-00，属噪声，不可用）
+#  ・核查范围：本站引用（索引 404 + 关系边对方 3,952，去重 4,354）的 personid 中，
+#    仅下列 10 条建档于 2026-06-02 之后 —— 全部为关系边对方，**无一是状元本人**
+#
+# ── 重建方法 ────────────────────────────────────────────────
+# 见 .workbuddy/memory/2026-10-15.md「R0-1 书面结论」段内的核查脚本；也可用：
+#   sqlite3 -readonly vendor/cbdb/cbdb_20261010.sqlite3 \
+#     "SELECT c_personid,c_name_chn,c_created_date FROM BIOG_MAIN
+#      WHERE c_created_date >= '2026-06-02' ORDER BY c_created_date;"
+#
+# ⚠ 重要（R1.2 全量重收割前必读）
+# harvest_cbdb_relations.py 在重写时**必须消费本清单**：收割循环里跳过 to_id 或 from
+# 落在下列 cbdb_id 中的边。否则本节剔除的 12 条边（10 个 personid）会被重新收割回来，
+# 公开面将再次出现范围外数据。
+#
+# 维护纪律：本清单只增不减；若日后 CBDB 新版单机版的发布日期推后至覆盖这些记录，
+# 应连同 R0-1 结论文档一并重新评估，而非直接删除条目。
+
+meta:
+  established: '2026-10-15'
+  basis: CBDB Data Licensing Terms (effective 2026-08-20)
+  release_scope: 'CBDB BJ 20260602 / 649,533 人'
+  cutoff: '2026-06-02'
+  removed_edges: 12
+  note: 全部为关系边对方人物，无一是状元本人
+
+excluded:
+  - cbdb_id: 701483
+    name: 張津
+    created: '2026-06-06'
+    note: 曾祖 —— 原边指向 zhang_qu_hua
+  - cbdb_id: 701787
+    name: 張氏(石用休妻)
+    created: '2026-06-13'
+    note: 父 / 女兒（2 条边）—— 原边指向 zhang_shi_de
+  - cbdb_id: 702229
+    name: 楊氏(秦文妻)
+    created: '2026-06-30'
+    note: 過繼的嗣子 / 嗣母（2 条边）—— 原边指向 qin_ming_lei
+  - cbdb_id: 702370
+    name: 徐謙
+    created: '2026-07-07'
+    note: 十二世祖 —— 原边指向 xu_shi
+  - cbdb_id: 702396
+    name: 吳孟融
+    created: '2026-07-08'
+    note: 父 —— 原边指向 wu_kuan
+  - cbdb_id: 702424
+    name: 沈勲
+    created: '2026-07-10'
+    note: 被器重 —— 原边指向 shang_lu
+  - cbdb_id: 702596
+    name: 嚴桓
+    created: '2026-07-16'
+    note: 論學 —— 原边指向 wen_zhenmeng
+  - cbdb_id: 702833
+    name: 李錦
+    created: '2026-07-24'
+    note: 與遊 —— 原边指向 xie_qian
+  - cbdb_id: 702895
+    name: 顧嗣雍
+    created: '2026-07-28'
+    note: 為弟子 —— 原边指向 han_tan
+  - cbdb_id: 703952
+    name: 王琖
+    created: '2026-09-02'
+    note: 被器重 —— 原边指向 wu_zhong_jun

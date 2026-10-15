@@ -39,9 +39,6 @@ relations:
 - to_id: cbdb:67830
   type: 同僚
   note: 同僚：劉健（CBDB 外部人物）
-- to_id: cbdb:702833
-  type: 其他
-  note: 與Y遊：李錦（CBDB 外部人物）
 - to_id: cbdb:28691
   type: 其他
   note: 神道碑由Y所作：李東陽（CBDB 外部人物）

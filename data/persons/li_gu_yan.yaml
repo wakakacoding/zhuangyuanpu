@@ -4,8 +4,8 @@ id: li_gu_yan
 name: 李固言
 zi: null
 hao: null
-birth_year: 776
-death_year: 852
+birth_year: null
+death_year: null
 native_hist: 高邑
 native_modern: 河北省石家庄市高邑县
 lat: 37.62
@@ -19,3 +19,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

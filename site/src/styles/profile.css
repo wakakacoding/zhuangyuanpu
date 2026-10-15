@@ -6,7 +6,31 @@
 .crumb a:hover { color: var(--cinnabar); }
 
 .bio { font-size: 0.98rem; }
+.bio-hint { margin: -0.4rem 0 1.2rem; font-size: 0.8rem; color: var(--ink-soft); }
 .reign-mark { color: var(--gold); font-size: 0.85rem; margin-left: 0.4rem; }
+
+/* ---- 名录身份说明（R1.4-2）：仅特例（探花／事实状元）渲染 ---- */
+.role-flag {
+  font-size: 0.85rem; color: var(--ink-soft); line-height: 1.75;
+  border-left: 3px solid var(--gold);
+  background: #f7f3e6;
+  padding: 0.55rem 0.8rem; margin: 0 0 1.25rem;
+}
+.role-flag b { color: var(--ink); }
+
+/* ---- 身份匹配存疑徽标（R1.1-4）：仅 identity_status: suspect 的卡渲染 ---- */
+.id-flag {
+  font-size: 0.85rem; color: var(--ink-soft); line-height: 1.7;
+  border-left: 3px solid var(--cinnabar);
+  background: #f8efe9;
+  padding: 0.55rem 0.8rem; margin: 0 0 1.25rem;
+}
+.id-badge {
+  display: inline-block; font-size: 0.72rem; color: #fff;
+  background: var(--cinnabar); border-radius: 2px;
+  padding: 0 0.4rem; margin-right: 0.5rem; vertical-align: 0.1em;
+}
+.id-flag a { color: var(--cinnabar); }
 
 /* ---- 仕途时间线 ---- */
 .timeline-v2 { list-style: none; margin: 0; padding: 0; }

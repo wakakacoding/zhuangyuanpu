@@ -9,9 +9,6 @@ relations:
 - to_id: cbdb:699339
   type: 父子
   note: 曾祖：張立（CBDB 外部人物）
-- to_id: cbdb:701483
-  type: 父子
-  note: 曾祖：張津（CBDB 外部人物）
 - to_id: cbdb:205
   type: 父子
   note: 祖父：張景憲（CBDB 外部人物）

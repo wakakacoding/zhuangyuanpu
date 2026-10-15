@@ -4,7 +4,7 @@ zi: null
 hao: null
 birth_year: null
 death_year: null
-fl_year: 864
+fl_year: null
 native_hist: 泉州莆田县
 native_modern: 福建省莆田市
 lat: 25.45
@@ -18,3 +18,5 @@ rank_detail: 一甲第一名（状元）
 bio_short: 唐末闽中诗人。
 tags: []
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，活动年（fl_year）系候选人数据，待碑录／《登科记考》补

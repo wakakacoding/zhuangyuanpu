@@ -4,8 +4,8 @@ id: le_shi
 name: 乐史
 zi: 子正
 hao: null
-birth_year: 930
-death_year: 1007
+birth_year: null
+death_year: null
 native_hist: 洛陽
 native_modern: 河南省洛阳市
 lat: 34.62
@@ -19,3 +19,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

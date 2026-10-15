@@ -1,5 +1,5 @@
 ---
-import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf, BASE} from '../../lib/persons';
+import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf, profileStatusText, roleOf, ROLE_LABEL, ROLE_NOTE, BASE} from '../../lib/persons';
 import SeoHead from '../../components/SeoHead.astro';
 import CareerRiver from '../../components/CareerRiver.astro';
 import '../../styles/base.css';
@@ -23,6 +23,12 @@ export function getStaticPaths() {
 const { person, events, works, anecdotes, relations, sources } = Astro.props;
 const srcOf = (sid: string) => sources[sid];
 
+// 名录身份（R1.4-2）：特例（探花／事实状元）须在档案页明示，不冒充状元
+const role = roleOf(person);
+const isSpecial = role !== 'zhuangyuan';
+// 档案状态分层（R1.4-5）：待整理 = 整理进度；史料阙如 = 已人工查证
+const bio = profileStatusText(person);
+
 const TIER_LABEL: Record<string, string> = { A: '正史', B: '方志·笔记', C: '传说' };
 const topTierOf = (ids: string[] = []) => {
   const tiers = ids.map((s) => sources[s]?.tier).filter(Boolean);
@@ -35,7 +41,7 @@ const yearLabel = (e: any) =>
 ---
 <html lang="zh-CN">
   <head>
-    <SeoHead title={person.name} description={person.bio_short ?? `${person.name}，${person.dynasty}代状元。`} path={`/persons/${person.id}/`} />
+    <SeoHead title={person.name} description={person.bio_short ?? `${person.name}，${person.dynasty}代${ROLE_LABEL[role]}。`} path={`/persons/${person.id}/`} />
   </head>
   <body>
     <div class="container">
@@ -43,6 +49,7 @@ const yearLabel = (e: any) =>
 
       <header class="profile-head">
         <h1>{person.name}
+          {isSpecial && <span class={`role-badge role-badge-lg role-${role}`} title={ROLE_NOTE[role]}>{ROLE_LABEL[role]}</span>}
           {(person.zi || person.hao) && (
             <span class="zhi">{person.zi ? `字${person.zi}` : ''}{person.zi && person.hao ? '，' : ''}{person.hao ? `号${person.hao}` : ''}</span>
           )}
@@ -50,18 +57,36 @@ const yearLabel = (e: any) =>
         {person.tags?.length > 0 && <div class="tags">{person.tags.map((t) => <span>{t}</span>)}</div>}
       </header>
 
+      {/* 名录身份说明（R1.4-2）：特例收录者不是状元，须在档案页讲清名分 */}
+      {isSpecial && (
+        <p class="role-flag">
+          <span class={`role-badge role-${role}`}>{ROLE_LABEL[role]}</span>
+          此人为<b>特例收录</b>：{ROLE_NOTE[role]}。因科举史料价值立卡，<b>不计入本站状元总数与各分布统计</b>。
+        </p>
+      )}
+
+      {/* 身份匹配存疑徽标（R1.1-4）：CBDB 候选匹配未核实者不再静默展示 */}
+      {person.identity_status === 'suspect' && (
+        <p class="id-flag">
+          <span class="id-badge">身份匹配存疑</span>
+          此人系 CBDB 候选比对所得，未经题名碑录／《登科记考》核验，是否即名录上之本人尚无定论；卡上信息仅供参考，待人工考证（见 <a href={`${BASE}corrections/`}>补全计划</a>）。
+        </p>
+      )}
+
       <table class="fact-table">
         <tbody>
-          <tr><th>生卒</th><td>{(person.birth_year || person.death_year) ? `${person.birth_year || '？'}–${person.death_year ?? '？'}（${person.birth_year ? ganzhiOf(person.birth_year) : '？'}–${person.death_year ? ganzhiOf(person.death_year) : '？'}）` : <span class="quelu">史料阙如</span>}</td></tr>
+          <tr><th>生卒</th><td>{(person.birth_year || person.death_year) ? `${person.birth_year || '？'}–${person.death_year ?? '？'}（${person.birth_year ? ganzhiOf(person.birth_year) : '？'}–${person.death_year ? ganzhiOf(person.death_year) : '？'}）` : <span class="quelu">待考</span>}</td></tr>
           <tr><th>朝代 / 帝号</th><td>{person.dynasty}{person.reign ? ` / ${person.reign}` : ''}</td></tr>
-          <tr><th>科年</th><td>{person.exam_year ? <>{person.exam_year}（{person.ganzhi ?? ganzhiOf(person.exam_year)}）{reignYearOf(person.exam_year) && <span class="reign-mark">{reignYearOf(person.exam_year)}</span>}{person.ke_ci ? ` · ${person.ke_ci}` : ''}</> : <span class="quelu">史料阙如</span>}</td></tr>
-          <tr><th>榜次</th><td>{person.rank_detail ?? <span class="quelu">史料阙如</span>}</td></tr>
-          <tr><th>籍贯（历史）</th><td>{person.native_hist ?? <span class="quelu">史料阙如</span>}</td></tr>
+          <tr><th>科年</th><td>{person.exam_year ? <>{person.exam_year}（{person.ganzhi ?? ganzhiOf(person.exam_year)}）{reignYearOf(person.exam_year) && <span class="reign-mark">{reignYearOf(person.exam_year)}</span>}{person.ke_ci ? ` · ${person.ke_ci}` : ''}</> : <span class="quelu">待考</span>}</td></tr>
+          <tr><th>榜次</th><td>{person.rank_detail ?? <span class="quelu">待考</span>}</td></tr>
+          <tr><th>籍贯（历史）</th><td>{person.native_hist ?? <span class="quelu">待考</span>}</td></tr>
           <tr><th>籍贯（今）</th><td>{person.native_modern ?? <span class="quelu">待考</span>}{person.lat != null && `（${person.lat}, ${person.lng}）`}</td></tr>
         </tbody>
       </table>
 
-      <p class="bio">{person.bio_short ?? <span class="quelu">史料阙如——榜上有名，史中无痕。</span>}</p>
+      <p class={`bio bio-${bio.status}`}>{bio.label}</p>
+      {bio.hint && <p class="bio-hint">{bio.hint}</p>}
+      <p class="note-line" style="font-size:0.8rem;">表中「待考」= 尚未考出，属整理进度；只有经人工查证确认无载者，才表述为「史料阙如」。</p>
 
       {/* 仕途河流图：整块位于「仕途时间线」一节之上；仕途事件 <3 条自动不渲染（阙如合法） */}
       <CareerRiver events={sortedEvents} deathYear={person.death_year ?? null} sources={sources} personName={person.name} />

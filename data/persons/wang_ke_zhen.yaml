@@ -4,8 +4,8 @@ id: wang_ke_zhen
 name: 王克贞
 zi: 守節
 hao: null
-birth_year: 930
-death_year: 989
+birth_year: null
+death_year: null
 native_hist: 廬陵
 native_modern: 江西省吉安市
 lat: 27.09
@@ -19,3 +19,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

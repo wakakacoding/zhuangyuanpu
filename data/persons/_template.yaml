@@ -20,6 +20,9 @@ exam_year: null        # 夺魁公元年（int）
 ganzhi: null           # 干支（须与 exam_year 互验通过）
 ke_ci: null            # 科次全称，如：光绪三十年甲辰恩科
 rank_detail: null      # 榜次，如：一甲第一名（状元）
+role: null             # 名录身份：缺省/null = zhuangyuan 状元；特例才写 tanhua 探花 / de_facto 事实状元
 bio_short: null        # 百字速览
+verified_absent: null  # 仅当已人工查证确认「史料无传」时置 true —— 页面才会显示「史料阙如」；
+                       # 留空/null = 尚未整理，页面显示「待整理」（整理进度 ≠ 历史结论）
 tags: []               # 标签：寒门/三元及第/末代状元/书法家…
 status: draft          # draft / published

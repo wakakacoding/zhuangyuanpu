@@ -30,6 +30,8 @@
   font-size: 0.66rem; color: #fff; background: var(--gold);
   border-radius: 2px; padding: 0 0.3rem; margin-left: 0.4rem; vertical-align: 0.1em;
 }
+/* 身份徽标（R1.4-2）：特例收录者与「全档案」用不同底色，避免读成同一类属性 */
+.pop-badge-role { background: #6a6558; }
 .pop-meta { font-size: 0.78rem; color: #6a6558; margin-top: 0.15rem; }
 .pop-native { font-size: 0.82rem; margin-top: 0.2rem; }
 .pop a { color: #9e2b22; font-size: 0.82rem; text-decoration: none; display: inline-block; margin-top: 0.35rem; }

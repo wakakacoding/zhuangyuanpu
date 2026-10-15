@@ -1,21 +1,18 @@
 ---
 import fs from 'node:fs';
 import path from 'node:path';
-import yaml from 'js-yaml';
 import { listStories } from '../lib/story';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/story.css';
-import { BASE } from '../lib/persons';
+import {
+  BASE, allPersons, fullProfileIds, isSpecialRole, profileStatusText, roleOf, ROLE_LABEL, ROLE_NOTE,
+} from '../lib/persons';
+import { coverageStats, GOALS } from '../lib/coverage';
 
-const dataDir = path.resolve(process.cwd(), '../data');
-const persons = fs.readdirSync(path.join(dataDir, 'persons'))
-  .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
-  .map((f) => yaml.load(fs.readFileSync(path.join(dataDir, 'persons', f), 'utf8')));
-
-const withEvents = persons.filter((p) =>
-  fs.existsSync(path.join(dataDir, 'events', `${p.id}.yaml`))
-);
+const persons = allPersons();
+const fullIds = fullProfileIds();
+const withEvents = persons.filter((p) => fullIds.has(p.id));
 
 const stories = listStories();
 const [featured, ...rest] = stories;
@@ -37,11 +34,12 @@ try {
   galaxy = null;
 }
 
-// 补全计划进度（R4：缺数据本身成为叙事）
+// 补全计划进度（R4：缺数据本身成为叙事）——与 /stats、/about 同源，构建期实测，不手写数字
+const cov = coverageStats();
 const coverage = [
-  { label: '名录收录', cur: persons.length, total: 600 },
-  { label: '全字段档案', cur: withEvents.length, total: 50 },
-  { label: '故事', cur: stories.length, total: 15 },
+  { label: '状元名录收录', cur: cov.zhuangyuan, total: GOALS.persons },
+  { label: '全字段档案', cur: cov.fullProfile.cur, total: GOALS.fullProfile },
+  { label: '故事', cur: cov.stories.published, total: GOALS.stories },
 ];
 ---
 <html lang="zh-CN">
@@ -52,7 +50,7 @@ const coverage = [
     <div class="container">
       <header class="site-head">
         <h1>状元谱</h1>
-        <p class="sub">622 年孙伏伽 — 1904 年刘春霖：一千二百八十三年，六百个「天下第一」的人生</p>
+        <p class="sub">622 年孙伏伽 — 1904 年刘春霖：一千二百八十三年，已录 <b>{cov.zhuangyuan}</b> 位「天下第一」的人生</p>
         <nav class="site-nav">
           <a href={`${BASE}stories/`}>故事</a>
           <a href={`${BASE}search/`}>检索</a>
@@ -82,8 +80,8 @@ const coverage = [
           <h2>状元星河 · 一眼望尽 1283 年</h2>
           <p class="ge-desc">
             {galaxy
-              ? `${galaxy.n} 位状元的科年与朝代，化作一片金点星河：横轴 ${galaxy.from}—${galaxy.to} 年，纵轴八朝分带，金亮者皆有其传。`
-              : '六百位状元的科年与朝代，化作一片金点星河：横轴千年，纵轴八朝，金亮者皆有其传。'}
+              ? `${galaxy.n} 个人物的科年与朝代，化作一片金点星河：横轴 ${galaxy.from}—${galaxy.to} 年，纵轴八朝分带，金亮者皆有其传。`
+              : '历代状元的科年与朝代，化作一片金点星河：横轴千年，纵轴八朝，金亮者皆有其传。'}
           </p>
           <span class="ge-meta">
             {galaxy && <span class="ge-chip">{galaxy.n} 星点</span>}
@@ -108,7 +106,7 @@ const coverage = [
 
       <section class="plan">
         <h2>补全计划</h2>
-        <p class="plan-note">榜上有名者六百余人，史中留痕者寥寥。缺漏不遮不掩，进度公开——这本身就是本站要讲的故事。</p>
+        <p class="plan-note">历代榜上有名者六百余人，本站已录状元 {cov.zhuangyuan} 人（另收特例 {cov.roles.special} 人）；史中留痕者寥寥。缺漏不遮不掩，进度公开——这本身就是本站要讲的故事。</p>
         <div class="plan-bars">
           {coverage.map((c) => (
             <div class="bar-row">
@@ -125,17 +123,23 @@ const coverage = [
       <section>
         <h2 class="sec-title">已建全字段档案</h2>
         <div class="grid">
-          {withEvents.map((p) => (
-            <a class="card" href={`${BASE}persons/${p.id}/`}>
-              <h2>{p.name}</h2>
-              <span class="rank">{p.rank_detail ?? ''}</span>
-              <p class="meta">
-                {p.dynasty}{p.exam_year ? ` · ${p.exam_year}（${p.ganzhi ?? '？'}）` : ''}
-                {p.birth_year ? ` · ${p.birth_year}–${p.death_year ?? '？'}` : ''}
-              </p>
-              <p class="bio">{p.bio_short ?? <span class="quelu">史料阙如</span>}</p>
-            </a>
-          ))}
+          {withEvents.map((p) => {
+            const st = profileStatusText(p);
+            const special = isSpecialRole(p);
+            return (
+              <a class="card" href={`${BASE}persons/${p.id}/`}>
+                <h2>{p.name}
+                  {special && <span class={`role-badge role-${roleOf(p)}`} title={ROLE_NOTE[roleOf(p)]}>{ROLE_LABEL[roleOf(p)]}</span>}
+                </h2>
+                <span class="rank">{p.rank_detail ?? ''}</span>
+                <p class="meta">
+                  {p.dynasty}{p.exam_year ? ` · ${p.exam_year}（${p.ganzhi ?? '？'}）` : ''}
+                  {p.birth_year ? ` · ${p.birth_year}–${p.death_year ?? '？'}` : ''}
+                </p>
+                <p class={`bio bio-${st.status}`}>{st.label}</p>
+              </a>
+            );
+          })}
         </div>
         <a class="back" href={`${BASE}persons/`}>→ 全量人物索引（{persons.length} 人）</a>
       </section>

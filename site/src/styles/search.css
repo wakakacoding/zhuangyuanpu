@@ -106,6 +106,17 @@
 .hit-bio { display: block; font-size: 0.85rem; color: var(--ink); margin-top: 0.35rem; }
 .none { color: var(--ink-soft); font-style: italic; padding: 2rem 0; text-align: center; }
 
+/* 结果截断提示：命中数超过单页上限时置顶 */
+.trunc-note {
+  font-size: 0.82rem;
+  color: var(--cinnabar);
+  background: #fdf6ec;
+  border: 1px dashed var(--cinnabar);
+  border-radius: 3px;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
 @media (max-width: 640px) {
   .year-range { width: 100%; }
 }

@@ -4,9 +4,9 @@ id: wang_che
 name: 王彻
 zi: null
 hao: null
-birth_year: 0
-death_year: 0
-fl_year: 897
+birth_year: null
+death_year: null
+fl_year: null
 native_hist: 博平
 native_modern: 山东省聊城市茌平区
 lat: 36.58
@@ -20,3 +20,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

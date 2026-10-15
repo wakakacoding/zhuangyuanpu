@@ -62,6 +62,94 @@ export function fullProfileIds(): Set<string> {
 /** 朝代顺序表（时间线/检索筛选共用） */
 export const DYNASTY_ORDER = ['唐', '五代十国', '宋', '辽', '金', '元', '明', '清'];
 
+// ---------------------------------------------------------------------------
+// 名录身份分层（R1.4-1/R1.4-2）
+//   zhuangyuan 状元（缺省） / tanhua 探花 / de_facto 事实状元
+//   凡「状元总数、朝代分布、科年密度、籍贯分布、覆盖率」一律以 zhuangyuan 为准；
+//   特例是收录，不并入状元统计——否则 599 会被读成「599 位状元」。
+// ---------------------------------------------------------------------------
+export const ROLE_ORDER = ['zhuangyuan', 'tanhua', 'de_facto'] as const;
+export type Role = (typeof ROLE_ORDER)[number];
+
+export const ROLE_LABEL: Record<string, string> = {
+  zhuangyuan: '状元',
+  tanhua: '探花',
+  de_facto: '事实状元',
+};
+
+/** 特例身份在页面上的身份说明（列表/档案页徽标配套文案；只讲名分，收录理由由页面统一交代） */
+export const ROLE_NOTE: Record<string, string> = {
+  zhuangyuan: '',
+  tanhua: '本科一甲第三名，非状元',
+  de_facto: '殿试唱名第一而以宗室避嫌抑置第二，非名分状元',
+};
+
+/** 名录身份：缺省即状元 */
+export function roleOf(p: any): Role {
+  const r = p?.role;
+  return r === 'tanhua' || r === 'de_facto' ? r : 'zhuangyuan';
+}
+
+export function isZhuangyuan(p: any): boolean {
+  return roleOf(p) === 'zhuangyuan';
+}
+
+/** 特例（非状元）：探花 / 事实状元 */
+export function isSpecialRole(p: any): boolean {
+  return roleOf(p) !== 'zhuangyuan';
+}
+
+/** 状元子集（口径基准：一切「状元统计」都从这里取数） */
+export function zhuangyuanOnly(persons: any[]): any[] {
+  return persons.filter(isZhuangyuan);
+}
+
+/** 特例子集（探花 / 事实状元） */
+export function specialRoles(persons: any[]): any[] {
+  return persons.filter(isSpecialRole);
+}
+
+// ---------------------------------------------------------------------------
+// 档案状态分层（R1.4-5）
+//   「没有小传」有两种成因，页面文案必须分开：
+//     pending 待整理   —— 本站尚未撰写（整理进度）          默认
+//     absent  史料阙如 —— 已人工查证确认无传世记载（历史结论）  须 verified_absent: true
+//   不再把整理进度表述成历史结论。
+// ---------------------------------------------------------------------------
+export type ProfileStatus = 'filled' | 'pending' | 'absent';
+
+export function profileStatus(p: any): ProfileStatus {
+  if (p?.bio_short) return 'filled';
+  return p?.verified_absent === true ? 'absent' : 'pending';
+}
+
+export interface ProfileStatusText {
+  status: ProfileStatus;
+  /** 展示文案（filled 时即 bio_short 原文） */
+  label: string;
+  /** 补充说明，仅 pending / absent 两种情况需要 */
+  hint: string;
+}
+
+export function profileStatusText(p: any): ProfileStatusText {
+  switch (profileStatus(p)) {
+    case 'filled':
+      return { status: 'filled', label: String(p.bio_short), hint: '' };
+    case 'absent':
+      return {
+        status: 'absent',
+        label: '史料阙如——榜上有名，史中无痕。',
+        hint: '已经人工查证，确无传世记载留痕。',
+      };
+    default:
+      return {
+        status: 'pending',
+        label: '待整理',
+        hint: '本站尚未撰写小传——这是整理进度，不等于史料无载。',
+      };
+  }
+}
+
 export function presentDynasties(persons: any[]): string[] {
   return DYNASTY_ORDER.filter((d) => persons.some((p) => p.dynasty === d));
 }

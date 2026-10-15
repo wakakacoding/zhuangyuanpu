@@ -1,5 +1,5 @@
 ---
-import { allPersons, fullProfileIds, BASE} from '../lib/persons';
+import { allPersons, fullProfileIds, roleOf, ROLE_LABEL, specialRoles, zhuangyuanOnly, BASE} from '../lib/persons';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/map.css';
@@ -35,6 +35,10 @@ function toGcj(lng: number, lat: number): [number, number] {
 }
 
 const persons = allPersons();
+// 口径（R1.4-2）：质心与「重心南移」叙述只由**状元**支撑；特例（探花/事实状元）仍可上图，
+// 但以青灰点另行标注，且不参与质心计算。
+const zy = zhuangyuanOnly(persons);
+const specials = specialRoles(persons);
 const fullIds = fullProfileIds();
 const DYNASTIES = ['唐', '五代十国', '宋', '辽', '金', '元', '明', '清'];
 
@@ -48,20 +52,53 @@ const pts = persons
       gz: p.ganzhi ?? '', nm: p.native_modern ?? '', nh: p.native_hist ?? '',
       lat: +lat.toFixed(5), lng: +lng.toFixed(5),
       full: fullIds.has(p.id) ? 1 : 0,
+      // 名录身份：仅特例携带（状元缺省），客户端据此换点样式
+      ro: roleOf(p) === 'zhuangyuan' ? '' : roleOf(p),
+      roLabel: roleOf(p) === 'zhuangyuan' ? '' : ROLE_LABEL[roleOf(p)],
     };
   });
 
-// 朝代质心（重心南移可视化）：用未偏移坐标算质心再转 GCJ
-const centroids = DYNASTIES.map((d) => {
-  const list = persons.filter((p) => p.dynasty === d && p.lat != null);
-  if (!list.length) return null;
+// ---- 朝代质心（重心南移可视化）----
+// 最小样本阈值（R1.4-3）：样本太少或覆盖太低的朝代，质心没有代表性。
+// 仅按「<10 人」一刀切时，辽（1/56）会被剔除，但金（12/39，覆盖仅 31%）仍会留下一个
+// 由少量点撑起的伪质心——它会把「重心南移」的虚线拐出一个不存在的弯。故双闸门：
+const MIN_CENTROID_N = 10; // 该朝有坐标者 < 10 人 → 不画质心
+const MIN_CENTROID_COV = 0.5; // 该朝坐标覆盖率 < 50% → 不画质心
+
+// 各朝覆盖率（构建期实测；「62/119」式），同时作为质心是否绘制的闸门依据
+const dynCov = DYNASTIES.map((d) => {
+  const all = zy.filter((p) => p.dynasty === d);
+  const withXY = all.filter((p) => p.lat != null && p.lng != null);
+  return {
+    d,
+    n: withXY.length,
+    total: all.length,
+    cov: all.length ? withXY.length / all.length : 0,
+  };
+});
+const centroidOk = (d: string) => {
+  const c = dynCov.find((x) => x.d === d);
+  return !!c && c.n >= MIN_CENTROID_N && c.cov >= MIN_CENTROID_COV;
+};
+/** 因阈值不画质心的朝代（用于读图指南如实交代，不让用户以为算不出来） */
+const gatedDyn = dynCov.filter((c) => !centroidOk(c.d));
+
+// 质心用未偏移坐标算，再整体转 GCJ
+const centroids = DYNASTIES.filter(centroidOk).map((d) => {
+  const list = zy.filter((p) => p.dynasty === d && p.lat != null && p.lng != null);
   const lat = list.reduce((s, p) => s + p.lat, 0) / list.length;
   const lng = list.reduce((s, p) => s + p.lng, 0) / list.length;
   const [glng, glat] = toGcj(lng, lat);
   return { d, n: list.length, lat: +glat.toFixed(5), lng: +glng.toFixed(5) };
-}).filter(Boolean);
+});
 
-const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).length }));
+/** 连线至少两点才有意义（阈值剔除后可能只剩 1 个质心） */
+const canDrawLine = centroids.length >= 2;
+
+const dynCount = DYNASTIES.map((d) => ({ d, n: zy.filter((p) => p.dynasty === d).length }));
+
+/** 已上图的状元数（分母口径用；与 pts 的差即特例收录者） */
+const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
 ---
 <html lang="zh-CN">
   <head>
@@ -84,7 +121,7 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
       <header class="map-head">
         <div class="map-title">
           <h1>籍贯地图</h1>
-          <p class="sub">{pts.length} 个坐标点位 · 拖动朝代滑块，看状元产地重心千年南移</p>
+          <p class="sub">{pts.length} 个坐标点位（状元 {nZyOnMap} + 特例 {specials.length}）· 拖动朝代滑块，看状元产地重心千年南移</p>
         </div>
         <nav class="site-nav">
           <a href={BASE}>首页</a>
@@ -112,8 +149,25 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
 
       <section class="map-guide">
         <h2 class="section-title">读图指南</h2>
-        <p>每个点是一位状元的籍贯（县治级，约数）。拖动滑块逐朝观察：唐宋之际点阵尚在黄河、长江流域间拉锯，明清两代已密集收敛于江浙——「状元产地重心南移」不是比喻，是八百年的经济与文化重心迁移在一张图上的显影。虚线为各朝代质心连线。金点 = 已建全字段档案，点击任意点可读其人小传。</p>
-        <p class="note-line">底图：腾讯地图（GCJ-02 坐标系，点位已偏移对齐）。坐标为县治级约数，误差以县境为度；未上图者 {599 - pts.length} 人，多属「榜上有名，史中无痕」。</p>
+        <p>每个点是一位状元的籍贯（县治级，约数）。拖动滑块逐朝观察：唐宋之际点阵尚在黄河、长江流域间拉锯，明清两代已密集收敛于江浙——「状元产地重心南移」不是比喻，是八百年的经济与文化重心迁移在一张图上的显影。金点 = 已建全字段档案，青灰点 = 特例收录者（探花／事实状元，不入状元统计），点击任意点可读其人小传。</p>
+        <p class="note-line">
+          各朝坐标覆盖率（有坐标者 / 该朝状元数，构建期实测）：
+          {dynCov.map((c, i) => (
+            <span>{i > 0 ? ' · ' : ''}{c.d} {c.n}/{c.total}</span>
+          ))}
+        </p>
+        <p class="note-line">
+          质心与虚线：<b>仅画样本充足的朝代</b>——该朝有坐标者须 ≥ {MIN_CENTROID_N} 人且坐标覆盖率 ≥ {Math.round(MIN_CENTROID_COV * 100)}%。
+          {gatedDyn.length > 0 && (
+            <>因样本过少或覆盖过低而不画质心者：{gatedDyn.map((c, i) => (
+              <span>{i > 0 ? '、' : ''}{c.d}（{c.n}/{c.total}）</span>
+            ))}——一两个点算出的「质心」会把千年南移的路径拐出并不存在的弯，故宁可留白；图中不再有它们的连线。</>
+          )}
+        </p>
+        <p class="note-line">
+          底图：腾讯地图（GCJ-02 坐标系，点位已偏移对齐）。坐标为县治级约数，误差以县境为度；
+          状元未上图者 {zy.length - nZyOnMap} 人（已上图状元 {nZyOnMap} 人，另有 {specials.length} 位特例收录者亦在图上，以青灰点标注）。
+        </p>
       </section>
     </div>
 
@@ -129,7 +183,7 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
         center: new TMap.LatLng(34.8, 110.5),
       });
 
-      // 点样式：普通朱砂点 / 全字段档案金点（inline SVG，不引外部图）
+      // 点样式：普通朱砂点 / 全字段档案金点 / 特例收录者青灰点（inline SVG，不引外部图）
       const dotSvg = (color, r) =>
         'data:image/svg+xml,' + encodeURIComponent(
           `<svg xmlns="http://www.w3.org/2000/svg" width="${r*4}" height="${r*4}"><circle cx="${r*2}" cy="${r*2}" r="${r}" fill="${color}" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/></svg>`);
@@ -144,7 +198,7 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
           const p = evt.geometry.properties;
           infoWin.setContent(`
             <div class="pop">
-              <b>${p.n}</b>${p.full ? '<span class="pop-badge">全档案</span>' : ''}
+              <b>${p.n}</b>${p.ro ? `<span class="pop-badge pop-badge-role">${p.roLabel}</span>` : ''}${p.full ? '<span class="pop-badge">全档案</span>' : ''}
               <div class="pop-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ''}</div>
               <div class="pop-native">${p.nm || p.nh}</div>
               <a href="${base}persons/${p.id}/">查看档案 →</a>
@@ -169,18 +223,20 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
           styles: {
             dot: new TMap.MarkerStyle({ width: 16, height: 16, src: dotSvg('#9e2b22', 6), anchor: { x: 8, y: 8 } }),
             full: new TMap.MarkerStyle({ width: 22, height: 22, src: dotSvg('#a98b3f', 8.5), anchor: { x: 11, y: 11 } }),
+            special: new TMap.MarkerStyle({ width: 18, height: 18, src: dotSvg('#6a6558', 6.5), anchor: { x: 9, y: 9 } }),
           },
           geometries: show.map((p) => ({
             id: p.id,
-            styleId: p.full ? 'full' : 'dot',
+            styleId: p.ro ? 'special' : (p.full ? 'full' : 'dot'),
             position: new TMap.LatLng(p.lat, p.lng),
             properties: p,
           })),
         });
         bindClick();
 
-        // 质心虚线（仅「全部」视图）：串起各朝代重心，南移一目了然
-        if (dynIdx === 0) {
+        // 质心虚线（仅「全部」视图）：串起各朝代重心，南移一目了然。
+        // cents 已在构建期按最小样本阈值过滤；不足两点时连线无意义，直接不画。
+        if (dynIdx === 0 && cents.length >= 2) {
           centroidLayer = new TMap.MultiPolyline({
             map,
             styles: { c: new TMap.PolylineStyle({ color: '#a98b3f', width: 2, dashStyle: 'dash' }) },
@@ -189,6 +245,8 @@ const dynCount = DYNASTIES.map((d) => ({ d, n: pts.filter((p) => p.d === d).leng
               paths: cents.map((c) => new TMap.LatLng(c.lat, c.lng)),
             }],
           });
+        }
+        if (dynIdx === 0) {
           labelLayer = new TMap.MultiLabel({
             map,
             styles: { l: new TMap.LabelStyle({ color: '#6a6558', size: 12, offset: { x: 0, y: -22 } }) },

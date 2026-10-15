@@ -5,8 +5,8 @@ name: 赵岳
 zi: null
 hao: null
 birth_year: null
-death_year: 890
-fl_year: 827
+death_year: null
+fl_year: null
 native_hist: null
 native_modern: null
 dynasty: 唐
@@ -18,3 +18,5 @@ bio_short: null
 tags:
 - 待核
 status: published
+identity_status: suspect
+identity_note: CBDB 候选匹配，生卒系候选人数据，待碑录／《登科记考》补

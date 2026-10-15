@@ -29,7 +29,7 @@
 | 元 | 《元史》选举志系名录（16 科 × 左右榜 = 32 人） | 通行考订 |
 | 明清 | **《明清进士题名碑录》系考订名录**（明 89 科 90 人、清 112 科 114 人） | ctext《太学进士题名碑录》分科原文抽验（例：乾隆元年丙辰科首名「金德瑛，浙江杭州府仁和县人」与名录/CBDB 三方一致） |
 
-**B. CBDB 候选池（验证与字段增强）** —— `vendor/cbdb/cbdb_20261010.sqlite3`（2026-10-10 版，学术免费使用，遵循 CBDB Data Licensing Terms）。提供：cbdb_id、生卒年、字号（ALTNAME_DATA 类型 4=字 / 5=号）、籍贯（BIOG_ADDR_DATA type=1）、入仕年与殿试名次标记（ENTRY_DATA.c_exam_rank）。
+**B. CBDB 候选池（验证与字段增强）** —— `vendor/cbdb/cbdb_20261010.sqlite3`（2026-10-10 版，官方当前 SQLite 发行版；属「当前单机版范围内」的数据依 **CC BY-NC-SA 4.0** 使用：**不得商用**、须署名 CBDB 并标明版本、改编须以相同协议发布 —— 详见《CBDB Data Licensing Terms》）。提供：cbdb_id、生卒年、字号（ALTNAME_DATA 类型 4=字 / 5=号）、籍贯（BIOG_ADDR_DATA type=1）、入仕年与殿试名次标记（ENTRY_DATA.c_exam_rank）。
 
 ## 三、比对方法（build_index.py 实现，可复跑）
 

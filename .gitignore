@@ -12,3 +12,4 @@ vendor/
 site/public/api/
 !site/public/vendor/
 !site/public/vendor/
+outputs/

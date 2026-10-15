@@ -7,7 +7,10 @@
 状态映射：
   confirmed → 普通极简卡（CBDB 字段带入：字号/生卒/籍贯）
   suspect   → 卡 + tags:[待核]（朝代互证不足，页面与检索可识别）
-  missing   → 卡 + tags:[史料阙如]（仅名录三字段，合法空值）
+  missing   → 卡 + tags:[待整理]（仅名录三字段，合法空值）
+
+注（R1.4-5）：「史料阙如」是须经人工查证认定（verified_absent: true）才能用的**历史结论**，
+不得由脚本按 status 自动贴；未整理的缺载一律标「待整理」——整理进度不冒充史料结论。
 
 用法：
   python3 scripts/index_to_cards.py          # 生成
@@ -66,7 +69,7 @@ def main() -> None:
         used_ids.add(slug)
 
         hist, modern = split_native(e.get("native_cbdb") or e.get("native_roster"))
-        tags = {"confirmed": [], "suspect": ["待核"], "missing": ["史料阙如"]}[e["status"]]
+        tags = {"confirmed": [], "suspect": ["待核"], "missing": ["待整理"]}[e["status"]]
 
         card: dict = {
             "id": slug,

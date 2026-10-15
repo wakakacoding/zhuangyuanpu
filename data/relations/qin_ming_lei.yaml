@@ -69,15 +69,9 @@ relations:
 - to_id: cbdb:305231
   type: 父子
   note: 子：姚氏(秦鳴雷母)（CBDB 外部人物）
-- to_id: cbdb:702229
-  type: 父子
-  note: 過繼的嗣子：楊氏(秦文妻)（CBDB 外部人物）
 - to_id: cbdb:305232
   type: 父子
   note: 繼子：楊氏(秦鳴雷繼母)（CBDB 外部人物）
 - to_id: cbdb:305232
   type: 其他
   note: 繼母：楊氏(秦鳴雷繼母)（CBDB 外部人物）
-- to_id: cbdb:702229
-  type: 其他
-  note: 嗣母：楊氏(秦文妻)（CBDB 外部人物）

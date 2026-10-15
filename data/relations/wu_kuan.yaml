@@ -357,9 +357,6 @@ relations:
 - to_id: cbdb:245058
   type: 父子
   note: 父：吳融（CBDB 外部人物）
-- to_id: cbdb:702396
-  type: 父子
-  note: 父：吳孟融（CBDB 外部人物）
 - to_id: cbdb:700274
   type: 父子
   note: 從父;伯叔父：吳弈（CBDB 外部人物）

@@ -1,0 +1,101 @@
+name: 勘误提交
+description: 指出人物卡、故事、出处登记或页面中的事实错误（含外部数据源讹误）。72 小时内人工比对，处理过程公开留痕。
+title: "[勘误] "
+labels: ["勘误"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你愿意较真——本站的立身之本就是**每条信息都经得起追问**。
+
+        提交前请留意三点：
+
+        1. **先查受理记录**：已提交的勘误（含「已采信 / 异说备录 / 已驳回」及理由）都挂在站点的「勘误」页上，重复提交会合并处理。
+        2. **依据分级**：正史、题名碑录、官方典章与地方志、年谱、墓志属 A/B 级；网文、百科、AI 生成内容**不算依据**。A 级结论需要**双独立来源**支撑。
+        3. **异说不是错误**：正史沉默处的合法分歧会以「异说备录」并列展示，未必直接改数据——这不代表你的意见被驳回。
+
+        字段带 `*` 为必填。想先看看处理规则，见「关于」页的考证方法论一节。
+
+  - type: dropdown
+    id: target-kind
+    attributes:
+      label: 对象类型
+      description: 你要纠正的对象属于哪一类？决定下面「对象标识」该怎么填。
+      options:
+        - 人物（person）
+        - 出处（source）
+        - 站点页面（site）
+        - 外部数据源（external）
+    validations:
+      required: true
+
+  - type: input
+    id: target-id
+    attributes:
+      label: 对象标识
+      description: 人物填人物 id（档案页网址最后一段，如 wang_wei）；出处填出处 id；站点页面填路径（如 /map/）；外部数据源填库名 + 记录号（如 CBDB personid 110375）。
+      placeholder: "例：wang_wei　/　/map/　/　CBDB personid 110375"
+    validations:
+      required: true
+
+  - type: input
+    id: field
+    attributes:
+      label: 涉及字段
+      description: 只错一处就写字段名（birth_year / death_year / fl_year / exam_year / zi / hao / native_hist / native_modern / name 等）；整条记录都成问题，请保留 record。
+      value: record
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: 现状
+      description: 站内当前记载（或外部数据源的误记）的原文，请直接粘贴、不要转述。
+      placeholder: "把站点/数据源上那句原文粘进来"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: 建议修正为
+      description: 你主张的正确内容。有异说请一并写出，注明各自出处。
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 依据
+      description: 书名 + 卷次/条目，或可核验的链接。A/B 级依据优先；请写清依据里的原文，不要只给结论。
+      placeholder: "例：《旧唐书》卷一九〇下·王维传：「……」。另见《唐才子传校笺》卷二。"
+    validations:
+      required: true
+
+  - type: input
+    id: reporter
+    attributes:
+      label: 署名
+      description: 可留空（记为「匿名」）；想被记入勘误记录就留名。
+      placeholder: 匿名
+    validations:
+      required: false
+
+  - type: textarea
+    id: note
+    attributes:
+      label: 补充说明（可选）
+      description: 上下文、判断过程中的犹豫、你查过但排除的来源等。图片可直接拖进来。
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: affirm
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我引用的「现状」是站内或外部数据源的**原文**，没有改写其表述。
+          required: true
+        - label: 我理解单条依据可能先被记为「异说备录」并列展示，而非直接改写数据。
+          required: false

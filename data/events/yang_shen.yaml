@@ -12,23 +12,51 @@ events:
     title: 正德六年辛未科状元
     description: 年二十四，殿试一甲第一，授翰林院修撰。
     source_ids: [src_timin_beilu, src_mingshi_yangshen]
+  - year: 1511
+    year_precision: exact
+    type: 授官
+    title: 授翰林院修撰
+    description: 正德六年（1511）殿试第一，年二十四，循状元例授翰林院修撰。
+    source_ids: [src_mingshi_yangshen]
+  - year: 1517
+    year_precision: exact
+    type: 隐居
+    title: 抗疏谏武宗微行，寻移疾归
+    description: 正德十二年（1517）八月，武宗微行出居庸关，杨慎抗疏切谏；不报，寻移疾归蜀。此前尝丁继母忧，服阕起故官。
+    source_ids: [src_mingshi_yangshen]
+  - year: 1521
+    year_precision: exact
+    type: 升迁
+    title: 世宗嗣位，起充经筵讲官
+    description: 嘉靖帝入继大统，起复旧官，充经筵讲官。尝讲《舜典》赎刑之条，借经义指斥时弊。
+    source_ids: [src_mingshi_yangshen]
   - year: 1524
     year_precision: exact
     type: 贬谪
     title: 大礼议伏阙哭谏，两遭廷杖，谪戍云南永昌
     description: 嘉靖三年（1524）率百官跪左顺门哭谏，撼门大哭，声震阙廷；两受廷杖，几死，谪戍云南永昌卫。
     source_ids: [src_mingshi_yangshen]
+  - year: 1526
+    year_precision: exact
+    type: 守节
+    title: 率僮奴及步卒驰击寻甸、武定之乱
+    description: 戍滇期间闻寻甸安铨、武定凤朝文作乱，率僮奴及步卒百余人驰赴木密所，与守臣合击败贼。谪臣而能赴难，滇人称之。
+    source_ids: [src_mingshi_yangshen]
+  - year: 1550
+    year_precision: about
+    type: 著作
+    title: 戍滇期间著述百余种
+    description: 谪戍三十五年间著作等身，《明史》称其「明世记诵之博，著作之富，推慎为第一」。 《升庵集》《廿一史弹词》《丹铅录》等皆成于此时；诗文杂著百余种并行于世。
+    source_ids: [src_mingshi_yangshen, src_shengan_ji]
   - year: 1559
     year_precision: exact
     type: 卒
     title: 卒于永昌戍所
     description: 戍边三十五年，嘉靖三十八年（1559）卒，年七十二。隆庆初追赠光禄寺少卿。
     source_ids: [src_mingshi_yangshen]
-  - year: 1550
-    year_precision: about
-    type: 著作
-    title: 戍滇期间著述百余种
-    description: >-
-      谪戍三十五年间著作等身，《明史》称其「明世记诵之博，著作之富，推慎为第一」。
-      《升庵集》《廿一史弹词》《丹铅录》等皆成于此时；诗文杂著百余种并行于世。
-    source_ids: [src_mingshi_yangshen, src_shengan_ji]
+  - year: 1567
+    year_precision: exact
+    type: 升迁
+    title: 隆庆改元，追赠光禄寺少卿
+    description: 嘉靖三十八年卒于戍所，至死仍系「罪臣」。隆庆改元为议礼诸臣平反，追赠光禄寺少卿。
+    source_ids: [src_mingshi_yangshen]

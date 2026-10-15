@@ -30,11 +30,23 @@ events:
     title: 光绪二十年甲午恩科状元
     description: 年四十一，屡蹶场屋后终成。是年甲午战争爆发。
     source_ids: [src_timin_beilu]
+  - year: 1894
+    year_precision: exact
+    type: 授官
+    title: 授翰林院修撰
+    description: 甲午恩科殿试一甲第一名，循状元例授翰林院修撰。九月疏劾李鸿章战不备，旋丁父忧南归。
+    source_ids: [src_seweng_nianpu]
   - year: 1895
     year_precision: about
     type: 实业
     title: 筹办大生纱厂
     description: 甲午战败后弃官还乡，奉张之洞命总理通海团练，旋筹办大生纱厂（1899 年投产）。
+    source_ids: [src_seweng_nianpu]
+  - year: 1901
+    year_precision: exact
+    type: 实业
+    title: 创办通海垦牧公司
+    description: 十一月通海垦牧公司开工，开近代农垦企业之先。
     source_ids: [src_seweng_nianpu]
   - year: 1902
     year_precision: about
@@ -42,11 +54,47 @@ events:
     title: 创通州民立师范学校
     description: 中国最早独立设置的师范学校之一，开近代师范教育先声。
     source_ids: [src_seweng_nianpu]
+  - year: 1904
+    year_precision: exact
+    type: 授官
+    title: 赏三品衔，任商部头等顾问官
+    description: 三月清廷赏加三品衔，任商部头等顾问官；同月为张之洞、魏光焘起草请求立宪奏稿，六月刻印《日本宪法》。
+    source_ids: [src_seweng_nianpu]
+  - year: 1906
+    year_precision: exact
+    type: 授官
+    title: 发起预备立宪公会，任副会长
+    description: 联络江、浙、闽立宪党人，在上海组成预备立宪公会，任副会长，为清末最有分量的立宪团体之一。
+    source_ids: [src_seweng_nianpu]
+  - year: 1909
+    year_precision: exact
+    type: 授官
+    title: 当选江苏咨议局议长
+    description: 江苏咨议局成立，张謇当选议长，旋发起国会请愿运动。同时被推为江苏教育总会会长。
+    source_ids: [src_seweng_nianpu]
+  - year: 1911
+    year_precision: exact
+    type: 授官
+    title: 任中央教育会会长、江苏两淮盐政总理
+    description: 八月武昌起义后，任江苏两淮盐政总理；在沪电请清帝退位，参与组织共和统一会。
+    source_ids: [src_seweng_nianpu]
+  - year: 1912
+    year_precision: exact
+    type: 授官
+    title: 任南京临时政府实业部总长
+    description: 中华民国成立，孙中山任命张謇为实业部总长兼两淮盐政总理；同期被举为江苏省教育会长。
+    source_ids: [src_seweng_nianpu]
   - year: 1913
     year_precision: about
     type: 授官
     title: 任北京政府农商总长
     description: 民国二年（1913）入阁，约 1915 年辞官归南通，专志地方自治。
+    source_ids: [src_seweng_nianpu]
+  - year: 1915
+    year_precision: exact
+    type: 致仕
+    title: 辞农商总长、全国水利局总裁，归南通
+    description: 袁世凯称帝后即请假南下，次年三月再请准辞去本兼各职，此后再未出仕，专志南通地方建设。
     source_ids: [src_seweng_nianpu]
   - year: 1926
     year_precision: exact

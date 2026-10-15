@@ -34,6 +34,9 @@ const apiData = () => pythonStep('api-data', 'build_api.py');
 // 关系网络切片：scripts/build_network.py → public/data/network.json（供 /network 关系网络图）
 const networkData = () => pythonStep('network-data', 'build_network.py');
 
+// 繁简切换人名保护表：scripts/build_names.py → public/data/protected_names.json
+const namesData = () => pythonStep('names-data', 'build_names.py');
+
 // 静态站：构建期读取 ../data/*.yaml，运行期零数据库
 // 部署目标：GitHub Pages（项目页，子路径 /zhuangyuanpu）
 export default defineConfig({
@@ -41,5 +44,5 @@ export default defineConfig({
   base: '/zhuangyuanpu',
   output: 'static',
   trailingSlash: 'always',
-  integrations: [sitemap(), galaxyData(), apiData(), networkData()],
+  integrations: [sitemap(), galaxyData(), apiData(), networkData(), namesData()],
 });

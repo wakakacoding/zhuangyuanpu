@@ -24,6 +24,13 @@
   border-left: 3px solid var(--gold); color: var(--ink-soft); font-size: 0.92rem;
 }
 .story-body blockquote p { margin: 0.3rem 0; }
+/* 正文内站内互链（如 /map、/stats）：base.css 的 a{color:inherit} 会让链接与正文同色，
+   故在正文范围内恢复朱砂色 + 细下划线，保证「显式互链」在视觉上可辨 */
+.story-body a {
+  color: var(--cinnabar); text-decoration: none;
+  border-bottom: 1px solid rgba(158, 43, 34, 0.35);   /* --cinnabar #9e2b22 的浅色版，避免 color-mix 兼容性 */
+}
+.story-body a:hover { border-bottom-color: var(--cinnabar); }
 
 /* 章节目录 */
 .s-toc { margin: 0 0 2rem; padding: 0.9rem 1.1rem; border: 1px solid var(--line); background: #fbf8f0; border-radius: 4px; }

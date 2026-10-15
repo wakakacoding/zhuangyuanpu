@@ -12,11 +12,53 @@ events:
     title: 宝祐四年丙辰科状元
     description: 廷对策万余言，切中时弊，理宗亲擢为第一。
     source_ids: [src_songshi_wen]
+  - year: 1259
+    year_precision: about
+    type: 授官
+    title: 入为宁海军节度判官
+    description: 开庆元年（1259）元兵伐宋，天祥入为宁海军节度判官。
+    source_ids: [src_songshi_wen]
+  - year: 1259
+    year_precision: about
+    type: 罢官
+    title: 上书乞斩董宋臣，不报，即自免归
+    description: 宦官董宋臣说理宗迁都，人莫敢议其非。天祥上书乞斩宋臣以一人心，不报，即自免归。
+    source_ids: [src_songshi_wen]
+  - year: 1262
+    year_precision: about
+    type: 升迁
+    title: 稍迁至刑部郎官
+    description: 董宋臣复入为都知，天祥又上书极言其罪，亦不报。《宋史》云此后「稍迁至刑部郎官」，不载确年。
+    source_ids: [src_songshi_wen]
+  - year: 1263
+    year_precision: about
+    type: 授官
+    title: 出守瑞州
+    description: 景定间出知瑞州。
+    source_ids: [src_songshi_wen]
+  - year: 1264
+    year_precision: about
+    type: 升迁
+    title: 改江西提刑，迁尚书左司郎官
+    description: 自瑞州改任江西提点刑狱，迁尚书左司郎官，寻为台臣论罢。
+    source_ids: [src_songshi_wen]
+  - year: 1267
+    year_precision: about
+    type: 授官
+    title: 除军器监兼权直学士院
+    description: 咸淳间除军器监，兼权直学士院，掌内制。
+    source_ids: [src_songshi_wen]
   - year: 1270
     year_precision: exact
     type: 罢官
     title: 草制讽贾似道，被劾罢官
     description: 咸淳六年，贾似道称疾乞归以要君，文天祥当值起草答诏，语含讥讽，不阿权相，旋被劾罢归庐陵。
+    source_ids: [src_songshi_wen]
+  - year: 1273
+    year_precision: exact
+    type: 授官
+    title: 起为湖南提刑
+    description: 咸淳九年（1273）起为湖南提刑，谒故相江万里，万里以「世道之责，其在君乎」相期。
     source_ids: [src_songshi_wen]
   - year: 1274
     year_precision: about
@@ -30,11 +72,23 @@ events:
     title: 德祐元年起兵勤王
     description: 元兵南下，倾家财募兵万余人入卫临安。
     source_ids: [src_songshi_wen]
+  - year: 1275
+    year_precision: exact
+    type: 授官
+    title: 提兵至临安，除知平江府
+    description: 德祐元年（1275）八月，天祥提兵至临安，除知平江府。十月入平江，旋以援常州失利，弃平江守余杭。
+    source_ids: [src_songshi_wen]
   - year: 1276
     year_precision: exact
     type: 授官
     title: 拜右丞相兼枢密使，使元营被拘，脱走南归
     description: 赴皋亭山元营议事，被伯颜扣留，押解北上途中于京口逃脱，辗转至温州。
+    source_ids: [src_songshi_wen]
+  - year: 1278
+    year_precision: exact
+    type: 升迁
+    title: 加少保、信国公
+    description: 至元十五年（1278）八月，益王殂、卫王继立，加天祥少保、信国公。是冬即于五坡岭被执。
     source_ids: [src_songshi_wen]
   - year: 1278
     year_precision: exact

@@ -12,6 +12,42 @@ events:
     title: 开元九年进士擢第
     description: 正史仅载进士擢第，未载状元名次；「状元」说见轶事栏，存疑备考。
     source_ids: [src_jiu_tangshu_wang]
+  - year: 721
+    year_precision: exact
+    type: 授官
+    title: 调太乐丞
+    description: 《新唐书》本传：「开元初，擢进士，调太乐丞。」太乐丞掌太乐署乐工之政，为试身之职。
+    source_ids: [src_xin_tangshu_wang]
+  - year: 724
+    year_precision: about
+    type: 贬谪
+    title: 坐累为济州司仓参军
+    description: 同出《新唐书》本传：「坐累为济州司仓参军。」因伶人舞黄狮子事坐累，外贬济州（今山东济宁）掌仓储，滞留数载方得还。
+    source_ids: [src_xin_tangshu_wang]
+  - year: 733
+    year_precision: about
+    type: 升迁
+    title: 张九龄执政，擢右拾遗
+    description: 开元二十一年（733）张九龄为中书侍郎同平章事，擢王维为右拾遗。此为维仕途由外转内之关键。两《唐书》俱载，不系确年。
+    source_ids: [src_xin_tangshu_wang]
+  - year: 736
+    year_precision: about
+    type: 升迁
+    title: 迁监察御史
+    description: 《旧唐书》本传叙其历官：「历右拾遗、监察御史、左补阙、库部郎中。」监察御史掌分察百僚、巡按州县。
+    source_ids: [src_jiu_tangshu_wang]
+  - year: 745
+    year_precision: about
+    type: 升迁
+    title: 历左补阙、库部郎中
+    description: 由监察御史转左补阙、库部郎中。其间曾以监察御史身份出使河西节度幕（《使至塞上》所纪），并知南选。
+    source_ids: [src_jiu_tangshu_wang]
+  - year: 755
+    year_precision: about
+    type: 授官
+    title: 天宝末为给事中
+    description: 《旧唐书》：「天宝末，为给事中。」给事中掌封驳，居门下省要职。次年安禄山即反。
+    source_ids: [src_jiu_tangshu_wang]
   - year: 756
     year_precision: about
     type: 被俘
@@ -23,6 +59,18 @@ events:
     type: 授官
     title: 以《凝碧池》诗获宥
     description: 收京后论罪系狱，因陷贼时所作《凝碧池》诗（「万户伤心生野烟」）闻于行在，肃宗宥之，后复官。
+    source_ids: [src_jiu_tangshu_wang]
+  - year: 758
+    year_precision: about
+    type: 升迁
+    title: 乾元中迁太子中庶子、中书舍人
+    description: 《旧唐书》：「乾元中，迁太子中庶子、中书舍人，复拜给事中。」由获宥之贬官渐次复起。
+    source_ids: [src_jiu_tangshu_wang]
+  - year: 760
+    year_precision: about
+    type: 升迁
+    title: 转尚书右丞
+    description: 《旧唐书》：「转尚书右丞。」掌尚书省都省事，世称王右丞。次年即卒。
     source_ids: [src_jiu_tangshu_wang]
   - year: 761
     year_precision: exact

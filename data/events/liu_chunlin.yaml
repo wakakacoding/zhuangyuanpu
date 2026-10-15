@@ -10,9 +10,7 @@ events:
     year_precision: exact
     type: 夺魁
     title: 光绪三十年甲辰恩科一甲第一名
-    description: >-
-      殿试夺魁，是为科举史上最后一位状元。次年（光绪三十一年，1905）清廷诏令自丙午科起停止一切科举考试，
-      延续约一千三百年的科举制度终结。
+    description: 殿试夺魁，是为科举史上最后一位状元。次年（光绪三十一年，1905）清廷诏令自丙午科起停止一切科举考试， 延续约一千三百年的科举制度终结。
     source_ids: [src_timin_beilu, src_qingshigao_xuanju]
   - year: 1904
     year_precision: exact
@@ -26,6 +24,30 @@ events:
     type: 留学
     title: 官派留学日本
     description: 入东京法政大学研习法政，约 1907 年归国。具体起讫月日待考。
+    source_ids: [src_suning_xianzhi]
+  - year: 1907
+    year_precision: about
+    type: 授官
+    title: 归国任职，历直隶谘议局、资政院议员
+    description: 留日归国（回国年份有 1907／1908／1909 三说，存世家书证 1908 年已在任），历任直隶谘议局（后改顺直谘议局）议员、资政院议员、记名福建提学使、直隶高等学堂提调、保定北洋女子师范学校监督。
+    source_ids: [src_suning_xianzhi]
+  - year: 1914
+    year_precision: about
+    type: 授官
+    title: 入总统府任内史，兼中央农事试验场场长
+    description: 民国三年起历任总统府内史（秘书），兼中央农事试验场场长、直隶高等学堂监督，出身农家故留意农事推广。具体任职年份诸说不一。
+    source_ids: [src_suning_xianzhi]
+  - year: 1920
+    year_precision: about
+    type: 授官
+    title: 兼任直隶省教育厅厅长
+    description: 任直隶省教育厅厅长，曾两次代表大总统主持曲阜孔子大成节典礼。年份据职官表推系，待考。
+    source_ids: [src_suning_xianzhi]
+  - year: 1928
+    year_precision: exact
+    type: 致仕
+    title: 辞官，寓居北平、天津
+    description: 目睹军阀割据、政争与腐败，愤然辞职，自此不问政事，以书法自娱，兼营直隶书局、群玉山房。
     source_ids: [src_suning_xianzhi]
   - year: 1937
     year_precision: about

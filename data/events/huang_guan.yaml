@@ -10,10 +10,20 @@ events:
     year_precision: exact
     type: 夺魁
     title: 洪武二十四年辛未科状元（六首连捷）
-    description: >-
-      县试、府试、院试、乡试、会试、殿试六场皆第一，时年二十八。
-      后世称「三元及第」者，黄观实为「六首」，是科举史上考试等级的全满贯。
+    description: 县试、府试、院试、乡试、会试、殿试六场皆第一，时年二十八。 后世称「三元及第」者，黄观实为「六首」，是科举史上考试等级的全满贯。
     source_ids: [src_timin_beilu, src_mingshi_huangguan]
+  - year: 1391
+    year_precision: exact
+    type: 授官
+    title: 授翰林院修撰
+    description: 洪武二十四年（1391）会试、廷试皆第一，授翰林院修撰。
+    source_ids: [src_mingshi_huangguan]
+  - year: 1396
+    year_precision: about
+    type: 升迁
+    title: 累官礼部右侍郎，奏复黄姓
+    description: 《明史》本传：「累官礼部右侍郎，乃奏复姓。」本传不系年，地方志作洪武二十九年（1396），姑系此年待考。黄观父入赘许家，故早年姓许名观，至此始奏复黄姓。
+    source_ids: [src_mingshi_huangguan]
   - year: 1399
     year_precision: about
     type: 升迁
@@ -22,18 +32,19 @@ events:
     source_ids: [src_mingshi_huangguan]
   - year: 1402
     year_precision: exact
+    type: 授官
+    title: 奉诏募兵上游，督诸郡兵赴援
+    description: 建文四年（1402）燕兵南下，黄观奉命赴长江上游募兵，并督诸郡兵北上赴援。行至安庆，京师已陷。
+    source_ids: [src_mingshi_huangguan]
+  - year: 1402
+    year_precision: exact
     type: 卒
     title: 闻国破，投罗刹矶殉国
-    description: >-
-      建文四年（1402），燕兵渡江，黄观奉命赴上游募兵勤王。舟至罗刹矶，
-      闻金川门破、南京陷落，其妻翁氏已先殉。黄观具衣冠，东向再拜，投急湍而死，年三十九。
-      永乐朝名列奸党，家属谪戍，科举名籍革除。
+    description: 建文四年（1402），燕兵渡江，黄观奉命赴上游募兵勤王。舟至罗刹矶， 闻金川门破、南京陷落，其妻翁氏已先殉。黄观具衣冠，东向再拜，投急湍而死，年三十九。 永乐朝名列奸党，家属谪戍，科举名籍革除。
     source_ids: [src_mingshi_huangguan]
   - year: 1645
     year_precision: about
     type: 升迁
     title: 平反：从「奸党」到「文贞」
-    description: >-
-      万历间建文诸臣渐获昭雪；南明弘光朝补谥黄观「文贞」。
-      从榜上有名到碑上无名，再到谥号入祀，用了二百四十年。
+    description: 万历间建文诸臣渐获昭雪；南明弘光朝补谥黄观「文贞」。 从榜上有名到碑上无名，再到谥号入祀，用了二百四十年。
     source_ids: [src_mingshi_huangguan]

@@ -1,6 +1,7 @@
 ---
 import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf, BASE} from '../../lib/persons';
 import SeoHead from '../../components/SeoHead.astro';
+import CareerRiver from '../../components/CareerRiver.astro';
 import '../../styles/base.css';
 import '../../styles/profile.css';
 
@@ -62,16 +63,19 @@ const yearLabel = (e: any) =>
 
       <p class="bio">{person.bio_short ?? <span class="quelu">史料阙如——榜上有名，史中无痕。</span>}</p>
 
+      {/* 仕途河流图：整块位于「仕途时间线」一节之上；仕途事件 <3 条自动不渲染（阙如合法） */}
+      <CareerRiver events={sortedEvents} deathYear={person.death_year ?? null} sources={sources} personName={person.name} />
+
       <h2 class="section-title">仕途时间线</h2>
       {sortedEvents.length === 0 ? (
         <p class="quelu">事件档案未建。<a href={`${BASE}corrections/`}>了解补全计划 →</a></p>
       ) : (
         <ol class="timeline-v2">
-          {sortedEvents.map((e) => {
+          {sortedEvents.map((e, i) => {
             const top = topTierOf(e.source_ids);
             const isPeak = e.type === '夺魁';
             return (
-              <li class={`tl-item tier-${top}${isPeak ? ' peak' : ''}`}>
+              <li id={`ev-${i}`} class={`tl-item tier-${top}${isPeak ? ' peak' : ''}`}>
                 <div class="tl-year">
                   <b>{yearLabel(e)}</b>
                   <span class="tl-gz">{ganzhiOf(e.year)}</span>

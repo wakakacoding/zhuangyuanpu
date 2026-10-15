@@ -12,3 +12,88 @@ events:
     title: 绍兴五年乙卯科状元
     description: 年十七，廷试第一。是科考官初见其策，惊为老成宿学之士，拆号方知少年。
     source_ids: [src_timin_beilu, src_songshi_wangyingchen]
+  - year: 1135
+    year_precision: exact
+    type: 授官
+    title: 授镇东军签判
+    description: 绍兴五年（1135）进士第一，年甫十八。帝欲即除馆职，赵鼎请「且令历外任，养成其材」，乃授镇东军签判。故事殿试第一人无待次者，至是取一年半之阙以归。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1138
+    year_precision: about
+    type: 授官
+    title: 召为秘书省正字
+    description: 任满还朝，召为秘书省正字，入馆阁。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1139
+    year_precision: about
+    type: 贬谪
+    title: 上疏言和议之可畏，忤秦桧，出通判建州
+    description: 秦桧力主和议，应辰上疏力言「因循无备之可畏」「上下相蒙之可畏」，乞常若敌至。疏奏，秦桧大不悦，出通判建州，遂请祠以归。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1143
+    year_precision: about
+    type: 隐居
+    title: 寓居常山永年院，凡三主管崇道观
+    description: 奉祠屏居常山永年院，「蓬蒿满径，一室萧然，饘粥不继，处之裕如，益以修身讲学为事」，凡三任祠官。赵鼎卒于朱崖，应辰千里往吊为文祭之，几遭罗织。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1152
+    year_end: 1155
+    year_precision: range
+    type: 授官
+    title: 通判袁州，继通判静江府、广州
+    description: 流落岭峤十余年间历通判袁州、静江府、广州。通判袁州时「凡所予夺，人无异词」，始以书生见易者，已乃服其吏才。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1156
+    year_precision: exact
+    type: 升迁
+    title: 秦桧死，召为吏部郎官，迁右司
+    description: 绍兴二十五年（1155）桧死，明年召还，为吏部郎官，迁右司。张常先构陷张浚一案连逮数十家，狱具而桧死，应辰幸免。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1157
+    year_precision: about
+    type: 授官
+    title: 母老乞外，出知婺州
+    description: 丞相苦留之，应辰曰「亲老矣，不可缓」，乃出知婺州。至郡蠲宿逋、去苛敛，补发积欠上供十三万缗。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1160
+    year_precision: about
+    type: 升迁
+    title: 除秘书少监，迁权吏部尚书
+    description: 丁内艰服阕，除秘书少监，迁权吏部尚书；奏驳李显忠冒具安丰军功赏五千余人。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1161
+    year_precision: about
+    type: 升迁
+    title: 权户部侍郎兼侍讲
+    description: 金人渝盟，诏求足食足兵之策，应辰奏陈军政不修之弊。独员当剧务，节冗费，条奏堂吏食钱滥支之弊，帝命吏部裁之。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1163
+    year_precision: about
+    type: 授官
+    title: 连乞补外，知福州，升敷文阁待制
+    description: 议太上尊号与朝议不合，应辰连乞补外，遂知福州；未几升敷文阁待制，举朱熹自代。在镇二年。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1165
+    year_precision: about
+    type: 升迁
+    title: 以敷文阁直学士为四川制置使、知成都府
+    description: 朝廷谋蜀帅，以应辰为四川制置使、知成都府。至蜀免利路民饷运、徙沿边戍兵就粮内郡，蜀大旱则请度牒为籴本赈济，全蜀蒙惠，帝称「汪应辰治蜀甚有声」。吴璘卒，应辰摄宣抚之职，蜀道晏然。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1167
+    year_precision: about
+    type: 升迁
+    title: 召还，除吏部尚书，寻兼翰林学士、侍读
+    description: 刘珙荐其学行才能，得旨召还。冬入觐，除吏部尚书，寻兼翰林学士并侍读；在朝多革弊事，中贵人皆侧目。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1170
+    year_precision: about
+    type: 贬谪
+    title: 以端明殿学士知平江府，连贬秩，遂致仕不起
+    description: 庙堂议不合，不悦者众，以端明殿学士出知平江府。韩玉衔其不加礼，还朝构之，谓所至州县无如平江之乱者，遂连遭贬秩，气病卧家，致仕不起。
+    source_ids: [src_songshi_wangyingchen]
+  - year: 1176
+    year_precision: exact
+    type: 卒
+    title: 卒，谥文定
+    description: 淳熙三年（1176）卒，年五十九（《宋史》本传不著年岁，此据「绍兴五年年甫十八」推）。谥文定。有文集五十卷，今传《文定集》。
+    source_ids: [src_songshi_wangyingchen]

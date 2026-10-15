@@ -19,10 +19,46 @@ events:
     description: 夺魁后首授此职。雍熙四年与梁湛并为右拾遗、直史馆，赐绯，兼鼓司登闻院。
     source_ids: [src_songshi_liang]
   - year: 987
+    year_precision: exact
+    type: 升迁
+    title: 召为右拾遗、直史馆，赐绯，判鼓司、登闻院
+    description: 雍熙四年（987），与梁湛并召为右拾遗、直史馆，赐绯，判鼓司、登闻院。
+    source_ids: [src_songshi_liang]
+  - year: 987
     year_precision: about
     type: 贬谪
     title: 坐翟马周事贬虢州司户参军
     description: 佐赵昌言于大名府，昌言入掌枢密，会翟马周事，颢坐贬。后起知鱼台县，加大理评事，召还迁殿中丞，复直史馆。
+    source_ids: [src_songshi_liang]
+  - year: 990
+    year_precision: about
+    type: 授官
+    title: 起知鱼台县，就加大理评事
+    description: 坐翟马周事贬虢州司户参军后起用，知鱼台县，就地加衔大理评事。
+    source_ids: [src_songshi_liang]
+  - year: 991
+    year_precision: about
+    type: 升迁
+    title: 召还，迁殿中丞，复直史馆
+    description: 自鱼台召还朝中，迁殿中丞，不久复直史馆。
+    source_ids: [src_songshi_liang]
+  - year: 995
+    year_precision: about
+    type: 升迁
+    title: 历开封府推官、三司关西道判官，转太常博士
+    description: 由京府推官转三司关西道判官，再转太常博士。其间丁内艰去职，起令赴职，改右司谏。
+    source_ids: [src_songshi_liang]
+  - year: 998
+    year_precision: exact
+    type: 授官
+    title: 咸平元年同知贡举，参修《太祖实录》
+    description: 咸平元年（998）与杨励、李若拙、朱台符同知贡举；时诏钱若水重修《太祖实录》，表颢参其事，又同修起居注。
+    source_ids: [src_songshi_liang]
+  - year: 999
+    year_precision: about
+    type: 授官
+    title: 还为度支判官
+    description: 真宗初诏群臣言事，颢时使陕西，途中作《听政箴》以献；还朝后为度支判官。
     source_ids: [src_songshi_liang]
   - year: 1000
     year_precision: exact

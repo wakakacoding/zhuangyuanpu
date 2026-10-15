@@ -1,0 +1,243 @@
+---
+/**
+ * 仕途河流图（人生档案页 · 仕途时间线上方）
+ * ---------------------------------------------------------------------------
+ * · 桌面：SVG 流带。横轴为年，纵轴为「官位高下」（跨朝代归一近似值 0–10）。
+ *   河宽随官位（官愈尊则河道愈宽），主线朱砂，贬谪段转墨灰。
+ * · 窄屏（≤640px）：CSS 断点切换到纵向阶梯图（同一份节点数据，无 JS 依赖）。
+ * · 仕途事件（授官/升迁/贬谪/致仕）少于 3 条 → 整块不渲染（阙如合法，不报错）。
+ * · 卒后追赠／补谥／平反不入河流，改在脚注点名，不静默丢弃。
+ * · 出处等级徽章沿用全站双类 .tier.tier-X（A 金 / B 墨 / C 朱砂）。
+ */
+import { buildRiver, MIN_NODES, labelText, shortLabel } from '../lib/river.js';
+
+const {
+  events = [],
+  deathYear = null,
+  sources = {},
+  personName = '',
+} = Astro.props;
+
+const r = buildRiver(events, { deathYear, sources, width: 760, height: 320 });
+
+const TYPE_HINT = { 授官: '除授', 升迁: '迁转', 贬谪: '贬谪', 致仕: '致仕' };
+
+// 每个节点补时间线锚点（回指原事件在已按年排序的 events 中的下标，与 <li id="ev-N"> 对应）
+const rows = r
+  ? r.nodes.map((n) => {
+      const i = events.indexOf(n.event);
+      return { ...n, anchor: i < 0 ? null : `ev-${i}` };
+    })
+  : [];
+
+const aria = r
+  ? `${personName}仕途河流图，共 ${r.nodes.length} 个仕途节点：`
+    + r.nodes.map((n) => `${n.year}${n.yearPrecision === 'about' ? '约' : ''}${n.type}${n.short}`).join('；')
+  : '';
+---
+
+{r && (
+  <figure class="rv" id="career-river">
+    <figcaption class="rv-cap">
+      <b>仕途河流</b>
+      <span class="rv-cap-sub">
+        横轴为年，纵轴为官位高下（跨朝代归一近似），河宽随官位——
+        <span class="rv-key rv-key--main">迁转</span>
+        <span class="rv-key rv-key--demote">贬谪</span>
+      </span>
+    </figcaption>
+
+    <div class="rv-chart">
+      <svg viewBox={`0 0 ${r.width} ${r.height}`} role="img" aria-label={aria} preserveAspectRatio="xMidYMid meet">
+        <title>{personName}仕途河流图</title>
+
+        <g class="rv-grid">
+          {r.bands.map((b) => (
+            <g class="rv-band-row">
+              <rect x={r.padL} y={b.yTop} width={r.width - r.padL - r.padR}
+                height={Math.max(b.yBottom - b.yTop, 0)}
+                class={b.used ? 'rv-band-cell rv-band-cell--used' : 'rv-band-cell'} />
+              <line x1={r.padL} y1={b.yTop} x2={r.width - r.padR} y2={b.yTop} class="rv-grid-line" />
+              <text x={r.padL - 8} y={b.yMid + 3.4} class="rv-grid-label" text-anchor="end">{b.label}</text>
+            </g>
+          ))}
+          <line x1={r.padL} y1={r.axis.yBottom} x2={r.width - r.padR} y2={r.axis.yBottom} class="rv-axis-line" />
+        </g>
+
+        {r.qukuiX != null && (
+          <g class="rv-qukui">
+            <line x1={r.qukuiX} y1={r.padT - 2} x2={r.qukuiX} y2={r.axis.yBottom} />
+            <text x={r.qukuiX} y={r.padT - 9} text-anchor="middle">夺魁</text>
+          </g>
+        )}
+
+        {r.deathX != null && (
+          <g class="rv-death">
+            <line x1={r.deathX} y1={r.padT - 2} x2={r.deathX} y2={r.axis.yBottom} />
+            <text x={r.deathX} y={r.padT - 9} text-anchor="end">卒 {deathYear}</text>
+          </g>
+        )}
+
+        <g class="rv-flow">
+          {r.spans.map((s) => (
+            <g class={s.demoted ? 'rv-span rv-span--demote' : 'rv-span'}>
+              <path d={s.band} class="rv-band" />
+              <path d={s.line} class="rv-line" />
+            </g>
+          ))}
+        </g>
+
+        {/* 节点环色 = 该事件的最高出处等级（A 金 / B 墨 / C 朱砂），与时间线同口径 */}
+        <g class="rv-nodes">
+          {rows.map((n) => (
+            <g class={`rv-node rv-node--${n.tier}${n.demoted ? ' rv-node--demote' : ''}`}>
+              {n.labelShow && Math.abs(n.labelY - n.y) > n.hw + 10 && (
+                <line class="rv-leader" x1={n.x} y1={n.y - n.hw - 1} x2={n.x} y2={n.labelY + 3.5} />
+              )}
+              <circle cx={n.x} cy={n.y} r={3.6} />
+              {n.labelShow && (
+                <text x={n.labelX} y={n.labelY} text-anchor={n.labelAnchor}>{labelText(n)}</text>
+              )}
+            </g>
+          ))}
+        </g>
+
+        <g class="rv-ticks">
+          {r.ticks.map((t) => (
+            <g class="rv-tick">
+              <line x1={t.x} y1={r.axis.yBottom} x2={t.x} y2={r.axis.yBottom + 4} />
+              <text x={t.x} y={r.axis.yBottom + 17} text-anchor="middle">{t.year}</text>
+            </g>
+          ))}
+        </g>
+      </svg>
+    </div>
+
+    <ol class="rv-ladder">
+      {rows.map((n) => (
+        <li class={n.demoted ? 'rv-step rv-step--demote' : 'rv-step'}>
+          <a class="rv-step-head" href={n.anchor ? `#${n.anchor}` : undefined}>
+            <span class="rv-step-year">{n.year}{n.yearPrecision === 'about' ? '（约）' : ''}</span>
+            <span class={`tier tier-${n.tier}`}>{n.tier}</span>
+            <span class="rv-step-type">{TYPE_HINT[n.type] ?? n.type}</span>
+            <span class="rv-step-title">{n.short}</span>
+          </a>
+          <span class="rv-step-track">
+            <span class="rv-step-bar" style={`width:${Math.round((n.level / 10) * 100)}%`}></span>
+            <span class="rv-step-lv">官位 {n.level}</span>
+          </span>
+        </li>
+      ))}
+    </ol>
+
+    <p class="rv-foot">
+      图例与口径：纵轴为<b>官位高下</b>，系唐、宋、明、清、民国诸代官品归一的<b>近似值</b>
+      （非严格品级，兼取职任权位，如明代大学士品级低而权位高）；河宽随官位。节点环色即该事件的最高出处等级
+      <span class="tier tier-A">A</span> 正史 / <span class="tier tier-B">B</span> 方志·笔记 /
+      <span class="tier tier-C">C</span> 传说，与下方仕途时间线同一口径。本图只绘生前仕途，
+      仕途事件须满 {MIN_NODES} 条方出图。
+      {r.excludedPosthumous.length > 0 && (
+        <span>
+          {' '}卒后追赠、昭雪未绘入：
+          {r.excludedPosthumous.map((e, i) => (
+            <span>{i > 0 ? '、' : ''}{e.year} 年「{shortLabel(e.title)}」</span>
+          ))}
+          。
+        </span>
+      )}
+    </p>
+  </figure>
+)}
+
+<style>
+  .rv { margin: 0 0 1.6rem; }
+
+  .rv-cap { display: block; margin-bottom: 0.5rem; }
+  .rv-cap b { font-size: 0.95rem; letter-spacing: 0.08em; }
+  .rv-cap-sub { display: block; margin-top: 0.15rem; font-size: 0.76rem; color: var(--ink-soft); line-height: 1.7; }
+
+  .rv-key { display: inline-block; margin-left: 0.35rem; padding: 0 0.45rem; border-radius: 2px; font-size: 0.7rem; color: #fff; }
+  .rv-key--main { background: var(--cinnabar); }
+  .rv-key--demote { background: var(--ink-soft); }
+
+  /* ---- SVG 河流 ---- */
+  .rv-chart { border: 1px solid var(--line); border-radius: 4px; background: #fbf8f0; padding: 0.15rem 0.3rem; }
+  .rv-chart svg { display: block; width: 100%; height: auto; }
+
+  .rv-band-cell { fill: transparent; }
+  .rv-band-cell--used { fill: rgba(169, 139, 63, 0.075); }
+  .rv-grid-line { stroke: var(--line); stroke-width: 0.6; stroke-dasharray: 3 4; }
+  .rv-grid-label { fill: var(--ink-soft); font-size: 9.5px; }
+  .rv-axis-line { stroke: var(--ink-soft); stroke-width: 0.8; }
+
+  .rv-qukui line { stroke: var(--gold); stroke-width: 0.9; stroke-dasharray: 4 3; }
+  .rv-qukui text { fill: var(--gold); font-size: 9.5px; letter-spacing: 0.12em; }
+  .rv-death line { stroke: #b9b2a2; stroke-width: 0.9; stroke-dasharray: 2 3; }
+  .rv-death text { fill: #a09686; font-size: 9.5px; }
+
+  .rv-band { fill: rgba(158, 43, 34, 0.17); }
+  .rv-span--demote .rv-band { fill: rgba(106, 101, 88, 0.26); }
+  .rv-line { fill: none; stroke: var(--cinnabar); stroke-width: 1.9; stroke-linejoin: round; stroke-linecap: round; }
+  .rv-span--demote .rv-line { stroke: var(--ink-soft); stroke-dasharray: 5 2.5; }
+
+  .rv-node circle { fill: var(--paper); stroke-width: 2; stroke: var(--ink-soft); }
+  .rv-node--A circle { stroke: var(--gold); }
+  .rv-node--B circle { stroke: var(--ink-soft); }
+  .rv-node--C circle { stroke: var(--cinnabar); }
+  .rv-node--demote circle { fill: var(--ink-soft); stroke: var(--ink); }
+
+  .rv-node text { fill: var(--ink-soft); font-size: 9.5px; }
+  .rv-leader { stroke: var(--line); stroke-width: 0.7; }
+
+  .rv-tick line { stroke: var(--ink-soft); stroke-width: 0.8; }
+  .rv-tick text { fill: var(--ink-soft); font-size: 10px; }
+
+  .rv-foot {
+    margin: 0.6rem 0 0;
+    padding-left: 0.7rem;
+    border-left: 3px solid var(--line);
+    font-size: 0.76rem;
+    line-height: 1.85;
+    color: var(--ink-soft);
+  }
+
+  /* ---- 窄屏降级：纵向阶梯图 ---- */
+  .rv-ladder { display: none; }
+
+  @media (max-width: 640px) {
+    .rv-chart { display: none; }
+    .rv-ladder {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0 0.95rem;
+      border-left: 2px solid var(--line);
+    }
+    .rv-step { position: relative; padding: 0.35rem 0 0.55rem; }
+    .rv-step::before {
+      content: '';
+      position: absolute;
+      left: -1.38rem; top: 0.72rem;
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--cinnabar); box-shadow: 0 0 0 1px var(--cinnabar);
+    }
+    .rv-step--demote::before { background: var(--ink-soft); box-shadow: 0 0 0 1px var(--ink-soft); }
+
+    .rv-step-head { display: block; text-decoration: none; font-size: 0.86rem; line-height: 1.6; }
+    .rv-step-year { color: var(--cinnabar); font-weight: bold; margin-right: 0.4rem; }
+    .rv-step--demote .rv-step-year { color: var(--ink-soft); }
+    .rv-step-type {
+      margin-left: 0.4rem; padding: 0 0.35rem; border-radius: 2px;
+      border: 1px solid var(--ink-soft); color: var(--ink-soft); font-size: 0.68rem;
+    }
+    .rv-step-title { display: block; }
+
+    .rv-step-track { display: flex; align-items: center; gap: 0.45rem; margin-top: 0.28rem; }
+    .rv-step-bar {
+      display: block; height: 6px; border-radius: 3px; min-width: 8px;
+      background: linear-gradient(to right, rgba(158, 43, 34, 0.35), var(--cinnabar));
+    }
+    .rv-step--demote .rv-step-bar { background: linear-gradient(to right, rgba(106, 101, 88, 0.35), var(--ink-soft)); }
+    .rv-step-lv { font-size: 0.68rem; color: var(--ink-soft); white-space: nowrap; }
+  }
+</style>

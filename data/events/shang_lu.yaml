@@ -12,11 +12,17 @@ events:
     title: 正统十年乙丑科会元、状元连捷
     description: 会试、殿试皆第一，为明代正式「三元及第」唯一一人（黄观因靖难被革除名籍，故不并计）。
     source_ids: [src_timin_beilu, src_mingshi_shanglu]
-  - year: 1452
-    year_precision: about
+  - year: 1445
+    year_precision: exact
+    type: 授官
+    title: 除修撰，进学东阁，为展书官
+    description: 正统十年（1445）会试、殿试皆第一，「终明之世，三试第一者，辂一人而已」。除翰林院修撰，寻与刘俨等十人进学东阁，帝亲简为展书官。
+    source_ids: [src_mingshi_shanglu]
+  - year: 1449
+    year_precision: exact
     type: 升迁
     title: 入阁预机务
-    description: 景泰间入阁参与机务；土木之变（1449）后力主固守京师，反对南迁。具体入阁年月待考。
+    description: 正统十四年（1449）八月土木之变，郕王监国，商辂以陈循、高谷荐入内阁参机务。徐珵倡南迁议，辂力沮之，其冬进侍读。
     source_ids: [src_mingshi_shanglu]
   - year: 1457
     year_precision: exact
@@ -30,14 +36,29 @@ events:
     title: 成化初复官，后晋谨身殿大学士
     description: 成化初召复原职，再入阁。具体年月待考。
     source_ids: [src_mingshi_shanglu]
+  - year: 1468
+    year_precision: about
+    type: 升迁
+    title: 进兵部尚书
+    description: 成化三年（1467）召还入阁，次年寻进兵部尚书。
+    source_ids: [src_mingshi_shanglu]
+  - year: 1471
+    year_precision: about
+    type: 升迁
+    title: 加太子少保，进吏部尚书
+    description: 皇太子立，加太子少保，进吏部尚书；《宋元通鉴纲目》成，改兼文渊阁大学士。
+    source_ids: [src_mingshi_shanglu]
   - year: 1477
     year_precision: exact
     type: 升迁
     title: 率同官劾西厂汪直，直罢西厂
-    description: >-
-      成化十三年（1477），商辂率内阁同官列西厂汪直十一罪上疏。宪宗初震怒，
-      商辂对曰：「臣等同心一意，为国除害，无有先后。」西厂旋罢。
-      未几直复用事，商辂知不可为，致仕归。
+    description: 成化十三年（1477），商辂率内阁同官列西厂汪直十一罪上疏。宪宗初震怒， 商辂对曰：「臣等同心一意，为国除害，无有先后。」西厂旋罢。 未几直复用事，商辂知不可为，致仕归。
+    source_ids: [src_mingshi_shanglu]
+  - year: 1477
+    year_precision: exact
+    type: 致仕
+    title: 力求去，诏加少保，赐敕驰传归
+    description: 劾汪直后西厂虽罢而直宠幸如故，复谮辂纳贿，辂不自安，力求去。诏加少保，赐敕驰传归淳安。后钱溥作《秃妇传》讥之、黎淳疏诋之，辂皆不较，待之如平时。
     source_ids: [src_mingshi_shanglu]
   - year: 1486
     year_precision: exact

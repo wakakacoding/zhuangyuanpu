@@ -29,3 +29,101 @@ const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
 <meta property="og:image" content={imgUrl} />
 <meta property="og:site_name" content="状元谱" />
 <meta name="twitter:card" content="summary_large_image" />
+
+<!-- 繁简切换（全站共用入口）：浮动印章按钮，懒加载 OpenCC，人名占位符保护 -->
+<button id="cc-toggle" type="button" aria-label="切换繁体">繁</button>
+<style>
+  #cc-toggle {
+    position: fixed; right: 1.1rem; bottom: 1.1rem; z-index: 9999;
+    width: 2.5rem; height: 2.5rem; border-radius: 6px;
+    border: 1px solid rgba(158, 43, 34, 0.55);
+    background: rgba(158, 43, 34, 0.92); color: #f7f3e8;
+    font: 600 1.05rem/1 "Songti SC", "STSong", serif;
+    cursor: pointer; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    opacity: 0.85; transition: opacity 0.2s;
+  }
+  #cc-toggle:hover { opacity: 1; }
+</style>
+<script is:inline define:vars={{ base }}>
+  (function () {
+    const KEY = 'zyp-lang';
+    const btn = document.getElementById('cc-toggle');
+    let converter = null, names = null, loading = null;
+
+    function loadDeps() {
+      if (loading) return loading;
+      loading = Promise.all([
+        new Promise((res, rej) => {
+          const s = document.createElement('script');
+          s.src = base + '/vendor/opencc/cn2t.js';
+          s.onload = res; s.onerror = rej;
+          document.head.appendChild(s);
+        }),
+        fetch(base + '/data/protected_names.json').then((r) => r.json()),
+      ]).then(([, list]) => {
+        converter = OpenCC.Converter({ from: 'cn', to: 't' });
+        names = list;
+      });
+      return loading;
+    }
+
+    // 人名 → 占位符（私有区字符，OpenCC 不会动）
+    function shield(text) {
+      const tokens = [];
+      let out = text;
+      for (let i = 0; i < names.length; i++) {
+        if (out.indexOf(names[i]) === -1) continue;
+        const token = String.fromCharCode(0xe000 + (i % 6000));
+        out = out.split(names[i]).join(token);
+        tokens.push([token, names[i]]);
+      }
+      return [out, tokens];
+    }
+    function unshield(text, tokens) {
+      for (const [token, name] of tokens) text = text.split(token).join(name);
+      return text;
+    }
+
+    function convertPage() {
+      const walker = document.createTreeWalker(
+        document.body, NodeFilter.SHOW_TEXT,
+        { acceptNode: (n) => {
+            const p = n.parentElement;
+            if (!p || /^(SCRIPT|STYLE|TEXTAREA|CODE|PRE|NOSCRIPT)$/.test(p.tagName)) return NodeFilter.FILTER_REJECT;
+            return n.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+          } }
+      );
+      const nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      for (const n of nodes) {
+        const [text, tokens] = shield(n.nodeValue);
+        n.nodeValue = unshield(converter(text), tokens);
+      }
+      document.documentElement.lang = 'zh-Hant';
+      btn.textContent = '简';
+      btn.setAttribute('aria-label', '切换简体');
+    }
+
+    function activate() {
+      loadDeps().then(() => { convertPage(); localStorage.setItem(KEY, 't'); })
+        .catch(() => { /* 字典加载失败时静默：保持简体 */ });
+    }
+
+    btn.addEventListener('click', () => {
+      if (localStorage.getItem(KEY) === 't') {
+        localStorage.removeItem(KEY);
+        location.reload(); // 回到简体 = 重载原始 HTML，避免双向转换误差
+      } else {
+        activate();
+      }
+    });
+
+    if (localStorage.getItem(KEY) === 't') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', activate);
+      } else {
+        activate();
+      }
+    }
+  })();
+</script>

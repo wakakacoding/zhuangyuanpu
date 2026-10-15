@@ -10,3 +10,5 @@ vendor/
 # 随 astro build 一起进 dist 发布）。数据源仍是 data/*.yaml，勿手改、也不必入库。
 # 若希望 api/ 的原始文件也能在仓库里直接浏览，删掉下一行即可。
 site/public/api/
+!site/public/vendor/
+!site/public/vendor/

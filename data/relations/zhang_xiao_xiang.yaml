@@ -105,9 +105,6 @@ relations:
 - to_id: cbdb:7163
   type: 其他
   note: 為Y作祭文：張邵（CBDB 外部人物）
-- to_id: zhang_xiao_xiang
-  type: 其他
-  note: 從Y學（CBDB），始年 1149
 - to_id: cbdb:53737
   type: 其他
   note: 為Y作佛寺記：釋道恭（CBDB 外部人物）

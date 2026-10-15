@@ -372,9 +372,6 @@ relations:
 - to_id: cbdb:50743
   type: 同僚
   note: 同僚：趙孟濚（CBDB 外部人物）
-- to_id: wen_tianxiang
-  type: 其他
-  note: 年譜由Y所作（CBDB）
 - to_id: cbdb:41626
   type: 其他
   note: 支持Y的政策 [併入27]：吳名揚（CBDB 外部人物）

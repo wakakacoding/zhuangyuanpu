@@ -1,5 +1,4 @@
-# 钟芳礼 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0597 | 比对状态：missing（CBDB 无记录） | 备考：太平天国状元说见部分名录，存疑待考
+# 钟芳礼（约嘉庆初生）—— 太平天国御林侍卫、恩赏丞相，督理织营；「状元」说见部分名录，存疑
 id: zhong_fang_li
 name: 钟芳礼
 zi: null
@@ -8,12 +7,23 @@ birth_year: null
 death_year: null
 native_hist: null
 native_modern: null
+lat: null
+lng: null
 dynasty: 其他
+reign: null
 exam_year: 1853
 ganzhi: 癸丑
 ke_ci: 太平天国癸好三年科
-rank_detail: 一甲第一名（状元）
-bio_short: null
+rank_detail: 部分名录作一甲第一名（状元）；罗尔纲立传不载科第，存疑待考
+bio_short: >-
+  广西人，癸好三年（1853）时年约五十，乡村小贩出身，信从天王宗旨入拜上帝会，
+  为平地山老兄弟。金田起义授御林侍卫；克复南京后封恩赏丞相，督理织营（以军制编组织工
+  五营集体织造）、总理「杂行」五十九行日用生产。丁巳七年（1857）任副掌率，封顺天燕，
+  与蒙得恩共同总理国务，为天京事变后朝中要人之一；庚申十年（1860）诏升封义爵，
+  其后事迹不详。具体籍贯县份与生卒年俱待考。
 tags:
-- 史料阙如
+  - 太平天国
+  - 老兄弟
+  - 督理织营
+  - 状元说存疑
 status: published

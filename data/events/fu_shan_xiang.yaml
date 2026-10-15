@@ -1,0 +1,31 @@
+person_id: fu_shan_xiang
+events:
+  - year: 1853
+    year_precision: exact
+    type: 应试
+    title: 天京招考识字女子，傅善祥入选东王府
+    description: >-
+      太平天国定都天京后，各王府不得居男子，文书批答须借识字女子，遂在女馆中招考识字者
+      充任簿书。同时代亲历者谢介鹤记：「女簿书，东贼逼取民女识字者充之，以代己批判。」
+      傅善祥即由此入东王府。此非制度化的女子科举，故本站记「招考」「女试」，不记「开科」。
+    source_ids: [src_jinling_guijia, src_tianfu_shengzhi, src_zeiqing_huizuan]
+  - year: 1853
+    year_precision: exact
+    type: 中举
+    title: 中式第一，派任东王府内簿书
+    description: >-
+      罗尔纲《太平天国史》述其事：「太平天国在建都天京后，举行女试。天京女子傅善祥中式
+      第一名，派往东王府任东殿内簿书，替东王杨秀清批判军国大事。」时人纪事诗亦有「棘闱先设
+      女科场，女状元称傅善祥」之咏。然「女试」与「女科」之别，正是百年聚讼所在：本站采罗氏
+      最终表述，记「女试」、记「中式第一」，而于「状元」名分存疑。
+    source_ids: [src_luoergang_taiping_shi, src_jinling_jishi_zayong, src_tianfu_shengzhi]
+  - year: 1854
+    year_precision: about
+    type: 贬谪
+    title: 忤东王，借吸食黄烟之名枷发女馆
+    description: >-
+      《金陵癸甲纪事略》：「凡贼文书皆归批判，颇当贼意。由是贼伪官均尚文，有不合善祥式者
+      辄批骂，恃宠骄傲，屡言『老长毛狗屁不通』，忤东贼，乃借善祥吸食黄烟，枷发女馆以禁之。」
+      其事在癸丑、甲寅间（1853–1854），确月待考。《天父圣旨》甲寅四年正月条尚见其以内簿书
+      之职宣降圣旨，可与本条的系年互参。此后去向，亲历记载仅云「不知所终，或云逃去」。
+    source_ids: [src_jinling_guijia, src_tianfu_shengzhi]

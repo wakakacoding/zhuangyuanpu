@@ -1,6 +1,7 @@
 ---
 import { allPersons, presentDynasties, fullProfileIds, BASE} from '../lib/persons';
 import { listStories } from '../lib/story';
+import { coverageStats, pct } from '../lib/coverage';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 import '../styles/stats.css';
@@ -9,6 +10,14 @@ const persons = allPersons();
 const fullIds = fullProfileIds();
 const stories = listStories();
 const dynasties = presentDynasties(persons);
+
+// 补全计划看板：数字全部来自构建期实测（见 src/lib/coverage.ts）
+const cov = coverageStats();
+const relTop = cov.relations.byType.slice(0, 6);
+const relMax = relTop[0]?.n ?? 1;
+// 各表条目量级跨数千倍（个位 ~ 数千）：线性比例下小表条形只剩像素，
+// 故条形长度取条目数的开平方（相对长度，仅用于目视排序，读数值请读数字）。
+const srcMax = Math.sqrt(Math.max(...cov.sourceItems.map((s) => s.n), 1));
 
 // ---- 朝代分布 ----
 const dynCount = dynasties.map((d) => ({
@@ -46,16 +55,8 @@ const bucketList = [...buckets.entries()].sort((a, b) => a[0] - b[0]);
 const bucketMax = Math.max(...bucketList.map(([, n]) => n));
 
 // ---- 覆盖率看板（公开版，呼应 R4「缺数据本身成为叙事」）----
+// 定义已上移至 src/lib/coverage.ts，供 /stats、/about 共用同一份构建期实测口径
 const n = persons.length;
-const coverage = [
-  { label: '籍贯今名已映射', cur: persons.filter((p) => p.native_modern).length, total: n, target: null },
-  { label: '坐标已录（地图门槛 60%）', cur: persons.filter((p) => p.lat != null).length, total: n, target: 0.6 },
-  { label: '生卒双全（精确口径）', cur: persons.filter((p) => p.birth_year && p.death_year).length, total: n, target: null },
-  { label: '星图可用年（门槛 50%）', cur: persons.filter((p) => p.birth_year || p.fl_year).length, total: n, target: 0.5 },
-  { label: '一句话小传', cur: persons.filter((p) => p.bio_short).length, total: n, target: null },
-  { label: '全字段档案', cur: fullIds.size, total: 50, target: null },
-  { label: '故事', cur: stories.length, total: 15, target: null },
-];
 ---
 <html lang="zh-CN">
   <head>
@@ -129,23 +130,68 @@ const coverage = [
       )}
 
       <h2 class="section-title">补全计划 · 覆盖率</h2>
-      <p class="note-line">阙如不遮不掩。达标线触发下一阶段：坐标 60% 解锁籍贯地图，星图可用年 50% 解锁星图（生年或 CBDB 估算活动年 fl_year，星图上分色标注精确/估算）。</p>
-      <div class="cov">
-        {coverage.map((c) => {
-          const pct = (c.cur / c.total) * 100;
+      <p class="note-line">阙如不遮不掩。以下数字全部于构建时从数据底座实测得出（{cov.generated}），不手写、不估算。达标线触发下一阶段：坐标 60% 解锁籍贯地图，生年或活动年 50% 解锁星图（fl_year 为 CBDB 估算活动年，星图上另色标注）。</p>      <div class="cov">
+        {cov.items.map((c) => {
+          const p = pct(c.cur, c.total);
           const hit = c.target != null && c.cur / c.total >= c.target;
           return (
             <div class="cov-row">
               <span class="cov-label">{c.label}{hit && <em class="hit-mark">已达标</em>}</span>
               <span class="cov-track">
-                <span class={`cov-fill${hit ? ' hit' : ''}`} style={`width:${Math.min(100, pct).toFixed(1)}%`}></span>
+                <span class={`cov-fill${hit ? ' hit' : ''}`} style={`width:${Math.min(100, p).toFixed(1)}%`}></span>
                 {c.target != null && <span class="cov-target" style={`left:${c.target * 100}%`}></span>}
               </span>
-              <span class="cov-num">{c.cur}/{c.total} · {pct.toFixed(0)}%</span>
+              <span class="cov-num">{c.cur}/{c.total}{c.goal ? '' : ` · ${p.toFixed(0)}%`}</span>
             </div>
           );
         })}
       </div>
+      <ul class="cov-notes">
+        {cov.items.filter((c) => c.note).map((c) => (
+          <li><b>{c.label}</b>：{c.note}</li>
+        ))}
+      </ul>
+
+      <h3 class="sub-title">关系网络</h3>
+      <p class="note-line">关系数据自 CBDB 社会关系（Kinship / Association）收割并与本站史料互校。边数取 <code>data/relations/*.yaml</code> 构建期实测——索引目录下的 <code>relations_summary.yaml</code> 生成于收割之前，已不代表现状，故不采信。</p>
+      <div class="stats">
+        <div><b>{cov.relations.total}</b><span>关系边总数</span></div>
+        <div><b>{cov.relations.internal}</b><span>状元之间（本站立卡）</span></div>
+        <div><b>{cov.relations.external}</b><span>涉外部人物（CBDB）</span></div>
+        <div><b>{cov.relations.files}</b><span>有关系表的人数</span></div>
+      </div>
+      <div class="bars">
+        {relTop.map((r) => (
+          <div class="bar-line">
+            <span class="bl-label">{r.type}</span>
+            <span class="bl-track"><span class="bl-fill prov" style={`width:${((r.n / relMax) * 100).toFixed(1)}%`}></span></span>
+            <span class="bl-num">{r.n}</span>
+          </div>
+        ))}
+      </div>
+      <p class="note-line">上图为「状元之间」的边（按类型 TOP {relTop.length}）；「其他」多为墓志铭、书跋、作序等尚未细分映射的关系。外部人物仅存 CBDB 编号，未立卡。</p>
+
+      <h2 class="section-title">各数据源条目数</h2>
+      <p class="note-line">数据底座逐条登记于 <code>data/</code>，以 YAML + Git 版本管理；下表为构建期实测条目数。轶事与史实物理隔离，故分列。条形长度为条目数的开平方取相对值（各表量级相差数千倍，线性比例下小表不可见），仅作目视排序，数值请看数字。</p>
+      <table class="src-table">
+        <thead>
+          <tr><th>数据源</th><th class="st-n">条目数</th><th class="st-bar"></th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          {cov.sourceItems.map((s) => (
+            <tr>
+              <td>{s.label}</td>
+              <td class="st-n"><b>{s.n}</b> <span>{s.unit}</span></td>
+              <td class="st-bar"><span class="st-fill" style={`width:${((Math.sqrt(s.n) / srcMax) * 100).toFixed(1)}%`}></span></td>
+              <td class="st-note">{s.detail ?? ''}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="note-line">
+        完整数据可经<a href={`${BASE}about/#download`}>公开数据 API</a>下载：{cov.persons} 人全量 JSON 与 CSV，
+        字段含义与 CC BY-SA 许可说明见<a href={`${BASE}api/`}>数据字典</a>。
+      </p>
 
       <a class="back" href={BASE}>← 返回首页</a>
     </div>

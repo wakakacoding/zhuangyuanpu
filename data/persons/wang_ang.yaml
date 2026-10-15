@@ -1,20 +1,29 @@
-# 王昂 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0212 | 比对状态：confirmed（name+year）
+# 王昂（1090–1132）—— 政和八年（1118）戊戌科状元；原拟第二，因榜首赵楷以宗室避嫌被抑置而递升
 id: wang_ang
 name: 王昂
-zi: 叔興
+zi: 叔兴
 hao: null
-birth_year: 1089
-death_year: 0
-native_hist: 成都
-native_modern: 四川省成都市
-lat: 30.57
-lng: 104.07
+birth_year: 1090
+death_year: 1132
+native_hist: 江都
+native_modern: 江苏省扬州市（江都）
+lat: 32.39
+lng: 119.41
 dynasty: 宋
+reign: 政和
 exam_year: 1118
 ganzhi: 戊戌
-ke_ci: 重和元年戊戌科
-rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+ke_ci: 政和八年（重和元年）戊戌科
+rank_detail: 一甲第一名（状元）——原拟第二，因榜首嘉王赵楷以宗室避嫌被抑置而递升
+bio_short: >-
+  字叔兴，江都（今扬州）人，一说祖籍成都（CBDB 径作成都人）；一说为神宗朝宰相王珪之侄。
+  以文学称于时。政和八年（1118）殿试原拟第二，因榜首为徽宗第三子嘉王赵楷、帝为避嫌
+  不欲宗室先多士，遂擢为榜首。入仕除秘书省校书郎；宣和六年（1124）充接伴大金国贺正旦
+  人使（《三朝北盟会编》作礼部员外郎、九月，今人标目作祠部员外郎、十月），后坐「不谨」
+  停职；绍兴二年（1132）以起居舍人并试中书舍人，以疾不拜，改徽猷阁待制知台州，是年卒。
+  生年有 1090（今人标目）与 1089（CBDB）两说，并存。
+tags:
+  - 递补状元
+  - 北宋末科场
+  - 南渡词臣
 status: published

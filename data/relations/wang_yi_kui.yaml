@@ -6,9 +6,6 @@ relations:
 - to_id: cbdb:34522
   type: 其他
   note: 行狀由Y所作：何喬新（CBDB 外部人物）
-- to_id: wang_yi_kui
-  type: 其他
-  note: 行狀由Y所作（CBDB）
 - to_id: cbdb:127758
   type: 其他
   note: 畫贊(畫像記)由Y所作：李永通（CBDB 外部人物）

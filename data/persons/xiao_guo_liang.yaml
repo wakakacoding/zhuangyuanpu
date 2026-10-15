@@ -1,21 +1,30 @@
-# 萧国梁 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0227 | 比对状态：confirmed（name+year）
+# 萧国梁 —— 乾道二年（1166）丙戌科状元；原拟第二，因榜首赵汝愚以故事降居第二而递升
 id: xiao_guo_liang
 name: 萧国梁
 zi: 挺之
 hao: null
-birth_year: 0
-death_year: 0
+birth_year: null
+death_year: null
 fl_year: 1136
 native_hist: 永福
 native_modern: 福建省福州市永泰县
 lat: 25.87
 lng: 118.93
 dynasty: 宋
+reign: null
 exam_year: 1166
 ganzhi: 丙戌
 ke_ci: 乾道二年丙戌科
-rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+rank_detail: 一甲第一名（状元）——原拟第二，因榜首宗室赵汝愚以故事降居第二而递升
+bio_short: >-
+  字挺之，福州永福翀峰（今永泰县岭路乡）人，一说今莆田涵江大洋乡人，两说并存。
+  乾道二年（1166）殿试原拟第二，因榜首宗室赵汝愚曾挂仕版、按故事当逊避而降居第二，
+  遂升为第一人。历官左宣义郎、秘书郎、著作郎、太子侍讲兼礼部郎中、广东通判，知泉州、
+  建宁，终知漳州，举家入漳，卒葬龙溪新亭（今漳州「萧状元墓」）。乾道五年（1169）
+  以校书郎论汉武帝虚耗之弊、盐铁坑冶取民无艺，孝宗多采其说。与杨万里交好，
+  万里有《别萧挺之泉州二首》。有文集十一种，皆不传。生卒年俱不详。
+tags:
+  - 递补状元
+  - 七年三状元
+  - 永泰三状元
 status: published

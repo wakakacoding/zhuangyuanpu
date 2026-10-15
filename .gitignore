@@ -5,3 +5,8 @@ dist/
 __pycache__/
 vendor/
 .workbuddy/
+
+# 公开数据 API 导出物（601 个文件 / 1.2MB，由 scripts/build_api.py 于每次构建重新生成，
+# 随 astro build 一起进 dist 发布）。数据源仍是 data/*.yaml，勿手改、也不必入库。
+# 若希望 api/ 的原始文件也能在仓库里直接浏览，删掉下一行即可。
+site/public/api/

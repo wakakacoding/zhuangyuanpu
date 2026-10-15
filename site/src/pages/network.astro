@@ -1,0 +1,693 @@
+---
+/**
+ * 关系网络图页 /network/
+ *
+ * 数据：site/public/data/network.json（由 scripts/build_network.py 构建期生成）
+ * 双层口径：默认「纯状元网络」（金）；勾选「展开名士层」叠加外部名士节点（银）。
+ * 自绘：Canvas 2D 力导向，无第三方库；布局算法见 src/scripts/network-layout.js。
+ * 视觉：直接复用 galaxy.css 的玄青夜页壳与弹卡样式 —— 下方 #galaxyTip / #galaxyCard
+ *       是有意沿用 galaxy 的 id 与 class，以保证两页视觉完全一致且不复制一份 CSS。
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+import { BASE } from '../lib/persons';
+import { listStories } from '../lib/story';
+import SeoHead from '../components/SeoHead.astro';
+import '../styles/base.css';
+import '../styles/galaxy.css';
+import '../styles/network.css';
+
+interface NetNode { s: string; n: string; d: string; ey: number; t: number; k: number; g: number }
+type NetEdge = [number, number, number, number, string];
+interface NetDoc {
+  v: number; gen: string; types: string[]; groups: number[][]; gname: string[]; def: number[];
+  nodes: NetNode[]; edges: NetEdge[];
+  stats: { nZy: number; nZyAll: number; nExt: number; eInner: number; eExt: number; relFiles: number; zyTotal: number; zyWithRel: number };
+  meta: { innerEntries: number; innerEntriesValid: number; innerPairs: number; selfLoops: number; extEntries: number; extAll: number; extMinDeg: number; maxNodes: number };
+}
+
+const net = JSON.parse(
+  fs.readFileSync(path.resolve(process.cwd(), 'public/data/network.json'), 'utf8'),
+) as NetDoc;
+
+const N = net.nodes;
+const E = net.edges;
+
+/** 类型组色板（同时通过内联 JSON 交给 canvas，保证 chips 与连线同色） */
+const GROUP_COLORS = ['#4a86b8', '#3f9e86', '#c08a3e', '#8a76c4', '#6f9a55', '#b8443c', '#7e93a8', '#7a7a7a'];
+
+// 分层切片：状元↔状元 / 状元↔名士
+const isInner = (e: NetEdge) => N[e[0]].k === 0 && N[e[1]].k === 0;
+const groupEdges = net.gname.map((_, gi) => E.filter((e) => e[2] === gi));
+const groupInner = groupEdges.map((g) => g.filter(isInner).sort((a, b) => (N[a[0]].n < N[b[0]].n ? -1 : 1)));
+
+// 名士层枢纽（移动端清单用）：度数 top 40，列出其关联状元
+const hubList = N.map((nd, i) => ({ ...nd, i }))
+  .filter((nd) => nd.k === 1)
+  .sort((a, b) => b.g - a.g || (a.s < b.s ? -1 : 1));
+const hubs = hubList.slice(0, 40).map((h) => {
+  const seen = new Set<string>();
+  const partners = E.filter((e) => e[0] === h.i || e[1] === h.i)
+    .map((e) => N[e[0] === h.i ? e[1] : e[0]])
+    .filter((p) => p.k === 0 && !seen.has(p.s) && seen.add(p.s));
+  return { ...h, partners };
+});
+
+// tier=0（有故事）节点的故事 slug，供弹卡「阅读他的故事」导流
+const personStory = new Map<string, string>();
+for (const st of listStories(true)) {
+  for (const pid of st.persons ?? []) if (!personStory.has(pid)) personStory.set(pid, st.slug);
+}
+const stories: Record<string, string> = {};
+for (const nd of N) {
+  const sl = nd.t === 0 ? personStory.get(nd.s) : undefined;
+  if (sl) stories[nd.s] = sl;
+}
+
+const countInner = E.filter(isInner).length;
+const countExt = E.length - countInner;
+const extOnlyNodes = net.stats.nZyAll - net.stats.nZy;
+// 首屏只需要渲染用字段，meta/stats 已在构建期渲染进文案，不再重复内联
+const clientData = {
+  nodes: N,
+  edges: E,
+  gname: net.gname,
+  def: net.def,
+  colors: GROUP_COLORS,
+  stories,
+};
+---
+
+<html lang="zh-CN">
+  <head>
+    <SeoHead
+      title="状元关系网络"
+      description={`${net.stats.nZy} 位状元之间的 ${net.meta.innerPairs} 对关系，叠加 ${net.stats.nExt} 位外朝名士的 ${countExt} 条往来：同年、师生、亲缘、政敌、文字缘，力导向自绘的关系网络图。点开节点可见档案页与传记。`}
+      path="/network/"
+    />
+  </head>
+  <body>
+    <div class="galaxy-page">
+      <header class="galaxy-head">
+        <h1>状元关系网络</h1>
+        <p class="sub">
+          {net.stats.nZy} 位状元 · {net.meta.innerPairs} 对关系（自 {net.meta.innerEntries} 条有向记录去重） · 名士层 {net.stats.nExt} 人 · 力导向自绘
+        </p>
+        <nav class="site-nav">
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}map/`}>地图</a>
+          <a href={`${BASE}timeline/`}>时间线</a>
+          <a href={`${BASE}galaxy/`}>星图</a>
+          <a href={`${BASE}stats/`}>统计</a>
+          <a href={`${BASE}about/`}>关于</a>
+        </nav>
+      </header>
+
+      <p class="galaxy-guide">
+        读图指南：一点一人，金为状元、银为外朝名士；一线一关系，颜色分同年、师生、亲缘、政敌、文字缘。点越大交游越广，点越亮档案越实。悬浮看关系，点击看帖，可入档案、读其传。默认只显状元之间的往来，勾「展开名士层」才见朱熹、欧阳修等枢纽人物。
+      </p>
+
+      <div class="network-tools" id="netTools">
+        {net.gname.map((g, gi) => (
+          <button class="chip" type="button" data-g={gi} aria-pressed={net.def[gi] ? 'true' : 'false'} style={`--chip:${GROUP_COLORS[gi]}`}>
+            <i></i>{g}<em>{groupEdges[gi].length}</em>
+          </button>
+        ))}
+        <label class="net-switch" id="extSwitch">
+          <input type="checkbox" id="extToggle" />展开名士层
+        </label>
+        <span class="net-stat" id="netStat">布局中…</span>
+      </div>
+
+      <p class="net-preset">
+        操作：<button type="button" data-preset="all">全选</button>
+        <button type="button" data-preset="strong">只看强关系</button>
+        <button type="button" data-preset="none">全不选</button>
+        <button type="button" data-preset="fit">复位视图</button>
+      </p>
+
+      <div class="galaxy-stage">
+        <canvas id="netCanvas" aria-label="状元关系网络图，力导向布局"></canvas>
+        <span class="galaxy-hint">拖拽平移 · 滚轮缩放 · 点击节点看帖</span>
+        <div class="net-empty" id="netEmpty">当前筛选下没有关系可显，请重新勾选类型。</div>
+      </div>
+
+      <div class="galaxy-legend">
+        <span><i class="lg-gold1"></i>状元·有故事</span>
+        <span><i class="lg-gold2"></i>状元·全档案</span>
+        <span><i class="lg-gold3"></i>状元·已确认</span>
+        <span><i class="lg-gold4"></i>状元·存疑 / 失考</span>
+        <span><i class="lg-ext"></i>名士·外朝人物</span>
+        <span>入图 {E.length} 条关系（状元间 {countInner}、状元—名士 {countExt}）</span>
+      </div>
+
+      <p class="net-preset" style="margin-top:0.6rem">
+        名士层口径：只收度数 ≥{net.meta.extMinDeg} 的外朝人物（源数据共 {net.meta.extAll} 位），总节点 ≤{net.meta.maxNodes}；
+        另有 {extOnlyNodes} 位状元只与名士相连，勾选名士层后才会出现。
+        {net.meta.selfLoops > 0 && `源数据有 ${net.meta.selfLoops} 条自环（to_id 与 from_id 相同）已剔除。`}
+      </p>
+
+      {/* 移动端降级：按类型分组的关系清单 */}
+      <div class="rel-list">
+        <p class="rl-lead">
+          移动端降级为关系清单（网络图需桌面端）。状元间 {net.meta.innerPairs} 对关系来自 {net.meta.innerEntries} 条有向记录——
+          源数据里同年、兄弟等多为双向互指，去重后即成一对；被剔除的 {net.meta.selfLoops} 条自环亦未计入。
+        </p>
+
+        {net.gname.map((g, gi) =>
+          groupInner[gi].length > 0 && (
+            <section>
+              <h2>{g}<span>{groupInner[gi].length} 对状元</span></h2>
+              <ul>
+                {groupInner[gi].map((e) => (
+                  <li>
+                    <a href={`${BASE}persons/${N[e[0]].s}/`}>{N[e[0]].n}</a>
+                    <span class="pair-arrow">—</span>
+                    <a href={`${BASE}persons/${N[e[1]].s}/`}>{N[e[1]].n}</a>
+                    <span class="rl-note">{e[4]}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ),
+        )}
+
+        <section>
+          <h2>名士层<span>度数 top {hubs.length} / 共 {net.stats.nExt} 人</span></h2>
+          <ul>
+            {hubs.map((h) => (
+              <li>
+                <span class="rl-ext">{h.n}</span>
+                <span class="rl-hub">
+                  与 {h.g} 位状元有往来：
+                  {h.partners.slice(0, 8).map((p) => (
+                    <a href={`${BASE}persons/${p.s}/`}>{p.n}</a>
+                  ))}
+                  {h.partners.length > 8 && ` 等 ${h.partners.length} 人`}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    {/* 沿用 galaxy 的提示条与弹卡 id / class（见文件头注释），样式全部来自 galaxy.css */}
+    <div id="galaxyTip" role="tooltip"></div>
+    <div id="galaxyCard">
+      <button class="tie-close" aria-label="关闭">✕</button>
+      <div class="pop" id="galaxyCardBody"></div>
+    </div>
+
+    <script type="application/json" id="netData" set:html={JSON.stringify(clientData)} />
+
+    <script>
+      import { newLayout, placeDisc, placeCentroid, relax, separate, bounds } from '../scripts/network-layout.js';
+
+      const BASE = import.meta.env.BASE_URL;
+      const DATA = JSON.parse(document.getElementById('netData').textContent);
+      const N = DATA.nodes;
+      const E = DATA.edges;
+      const GNAME = DATA.gname;
+      const COLORS = DATA.colors;
+      const STORIES = DATA.stories;
+
+      const canvas = document.getElementById('netCanvas');
+      const ctx = canvas.getContext('2d');
+      const tip = document.getElementById('galaxyTip');
+      const card = document.getElementById('galaxyCard');
+      const cardBody = document.getElementById('galaxyCardBody');
+      const stat = document.getElementById('netStat');
+      const empty = document.getElementById('netEmpty');
+      const tools = document.getElementById('netTools');
+      const extSwitch = document.getElementById('extSwitch');
+      const extToggle = document.getElementById('extToggle');
+
+      const TIER_NAME = ['有故事', '全档案', '已确认', '存疑', '失考'];
+      // 状元沿用 galaxy 的金色阶梯（亮度随证据递减）；名士为冷银，两层一眼可分
+      const ZY_STYLE = [
+        { c: '#f8de92', a: 1, glow: true },
+        { c: '#e2bd46', a: 1, glow: false },
+        { c: '#c6a450', a: 0.98, glow: false },
+        { c: '#a98f44', a: 0.95, glow: false },
+        { c: '#8d7739', a: 0.92, glow: false },
+      ];
+      const EXT_C = '#d3dbe6';
+      const EXT_HUB_C = '#f2f6fc';
+
+      // 邻接表（弹卡与高亮都要频繁查邻居，构建期建一次）
+      const ADJ = N.map(() => []);
+      for (const e of E) {
+        ADJ[e[0]].push(e);
+        ADJ[e[1]].push(e);
+      }
+      const isInnerEdge = (e) => N[e[0]].k === 0 && N[e[1]].k === 0;
+
+      const onG = DATA.def.map(Boolean);
+      let showExt = false;
+      /** 按当前层过滤：纯状元视图下隐去一切状元—名士关系 */
+      const inLayer = (e) => showExt || isInnerEdge(e);
+
+      // 视图：世界坐标 → 屏幕（view = 屏幕左上角对应的世界点 + 缩放）
+      const view = { x: 0, y: 0, scale: 1 };
+      let dpr = 1, cw = 0, ch = 0;
+      let screenPts = [];
+      let raf = 0, dirty = true;
+      let hover = -1, picked = -1, markSet = new Set();
+
+      // 布局状态
+      let L = newLayout(N.length);
+      let active = [];
+      let pairs = [];
+      let layoutMs = 0;
+      let inited = false;
+
+      const radius = (i) => (N[i].k === 1
+        ? Math.min(3.0 + N[i].g * 0.48, 8.6)
+        : 4.2 + Math.min(N[i].g, 8) * 0.7 + (N[i].t === 0 ? 1.4 : 0));
+      /** 点半径随缩放微调并设下限：缩到最小时也保证看得见 */
+      const zoomK = () => Math.max(1, Math.min(Math.sqrt(view.scale) * 1.15, 2.1));
+
+      function neighborsOf(i) {
+        const s = new Set();
+        for (const e of ADJ[i]) if (inLayer(e)) s.add(e[0] === i ? e[1] : e[0]);
+        return s;
+      }
+
+      // ── 图集：按当前层与类型勾选取可见边、可见节点 ──
+      function visibleSets() {
+        const pr = [];
+        const keep = new Set();
+        for (const e of E) {
+          if (!onG[e[2]] || !inLayer(e)) continue;
+          pr.push(e);
+          keep.add(e[0]);
+          keep.add(e[1]);
+        }
+        return { pr, act: Array.from(keep) };
+      }
+
+      // ── 布点 ──
+      // 状元按科年排进一个圆盘（螺线由内向外即年代由早到晚，年代近者先天相邻）；
+      // 名士落到其关联状元的质心（先放进他认识的人中间，再由力导向微调）。
+      const SEED_R = 0.56;
+      function seed(act, pr) {
+        L = newLayout(N.length);
+        const zy = act.filter((i) => N[i].k === 0)
+          .sort((a, b) => (N[a].ey || 9999) - (N[b].ey || 9999) || (N[a].s < N[b].s ? -1 : 1));
+        placeDisc(L, zy, SEED_R * Math.min(L.w, L.h));
+        if (showExt) {
+          const adj = new Map();
+          for (const e of pr) {
+            const a = e[0], b = e[1];
+            if (N[a].k === 0 && N[b].k === 1) { const l = adj.get(b) || []; l.push(a); adj.set(b, l); }
+            else if (N[b].k === 0 && N[a].k === 1) { const l = adj.get(a) || []; l.push(b); adj.set(a, l); }
+          }
+          const ext = act.filter((i) => N[i].k === 1)
+            .sort((a, b) => N[b].g - N[a].g || (N[a].s < N[b].s ? -1 : 1));
+          let s = 1;
+          for (const i of ext) placeCentroid(L, i, adj.get(i) || [], s++);
+        }
+        let s2 = 1;
+        for (const i of act) if (!L.placed[i]) placeCentroid(L, i, [], s2++ * 17 + i);
+      }
+
+      // 类型筛选变化时保留既有位置，只把新露面的节点靠到已落位的邻居处
+      function ensurePlaced(act) {
+        const need = act.filter((i) => !L.placed[i]);
+        if (!need.length) return;
+        const nb = new Map();
+        for (const e of pairs) {
+          for (const [a, b] of [[e[0], e[1]], [e[1], e[0]]]) {
+            if (!nb.has(a)) nb.set(a, []);
+            nb.get(a).push(b);
+          }
+        }
+        let s = 1;
+        for (const i of need) placeCentroid(L, i, (nb.get(i) || []).filter((j) => L.placed[j]), s++ * 23 + i);
+      }
+
+      function relayout(structural) {
+        const t0 = performance.now();
+        const v = visibleSets();
+        active = v.act;
+        pairs = v.pr;
+        if (structural) {
+          seed(active, pairs);
+          relax(L, active, pairs, 200); // 迭代 200 次后静止，不跑动画帧
+        } else {
+          ensurePlaced(active);
+          relax(L, active, pairs, 60);
+        }
+        // 去重叠 → 适配 → 再去重叠：点半径是屏幕像素，去重叠须知道缩放，故交替两轮收敛
+        const gapR = (i) => radius(i) * zoomK();
+        fitView();
+        separate(L, active, { radius: gapR, scale: view.scale, gap: 4 });
+        fitView();
+        separate(L, active, { radius: gapR, scale: view.scale, gap: 4 });
+        layoutMs = performance.now() - t0; // 「布局耗时」= 布点 + 迭代 + 去重叠 + 适配 全程
+        hover = -1;
+        picked = -1;
+        markSet = new Set();
+        card.style.display = 'none';
+        fitView();
+        updateHud();
+        dirty = true;
+        schedule();
+      }
+
+      // ── 视图适配 ──
+      function fitView() {
+        if (!active.length || cw <= 0) { dirty = true; schedule(); return; }
+        const b = bounds(L, active);
+        // 留白要容得下点半径（最大 11px）、光晕（3.4×半径）与点上方 8px 的标签
+        const pad = 34;
+        const w = Math.max(b.x1 - b.x0, 1);
+        const h = Math.max(b.y1 - b.y0, 1);
+        view.scale = Math.min(2.6, Math.max(0.3, Math.min((cw - pad * 2) / w, (ch - pad * 2) / h)));
+        view.x = (b.x0 + b.x1) / 2 - cw / 2 / view.scale;
+        view.y = (b.y0 + b.y1) / 2 - ch / 2 / view.scale;
+        dirty = true;
+        schedule();
+      }
+
+      function resize() {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        cw = canvas.clientWidth;
+        ch = canvas.clientHeight;
+        canvas.width = Math.max(1, Math.round(cw * dpr));
+        canvas.height = Math.max(1, Math.round(ch * dpr));
+        dirty = true;
+        schedule();
+      }
+
+      // ── 绘制 ──
+      function render() {
+        raf = 0;
+        if (!dirty) return;
+        dirty = false;
+        if (cw <= 0) return; // 画布被媒体查询隐藏（移动端降级），无需绘制
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        const bg = ctx.createLinearGradient(0, 0, 0, ch);
+        bg.addColorStop(0, '#10182a');
+        bg.addColorStop(1, '#0c1220');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, cw, ch);
+
+        const toSX = (wx) => (wx - view.x) * view.scale;
+        const toSY = (wy) => (wy - view.y) * view.scale;
+        const zk = zoomK();
+        const focus = picked >= 0 ? picked : hover;
+
+        // 边：焦点身上加亮，其余压暗
+        ctx.lineCap = 'round';
+        for (const e of pairs) {
+          const hi = focus >= 0 && (e[0] === focus || e[1] === focus);
+          ctx.strokeStyle = COLORS[e[2]];
+          ctx.globalAlpha = focus >= 0 ? (hi ? 1 : 0.08) : 0.6;
+          ctx.lineWidth = Math.max(1.1, (hi ? 2.1 : 1.25) * zk);
+          ctx.beginPath();
+          ctx.moveTo(toSX(L.pos[e[0] * 2]), toSY(L.pos[e[0] * 2 + 1]));
+          ctx.lineTo(toSX(L.pos[e[1] * 2]), toSY(L.pos[e[1] * 2 + 1]));
+          ctx.stroke();
+        }
+        ctx.globalAlpha = 1;
+
+        // 节点
+        screenPts.length = 0;
+        const labelAll = view.scale >= 1.25;
+        for (const i of active) {
+          const nd = N[i];
+          const sx = toSX(L.pos[i * 2]);
+          const sy = toSY(L.pos[i * 2 + 1]);
+          const r = radius(i) * zk;
+          if (sx < -30 || sx > cw + 30 || sy < -30 || sy > ch + 30) continue;
+          const dim = focus >= 0 && i !== focus && !markSet.has(i);
+          const isFocus = i === focus;
+
+          if (nd.k === 0) {
+            const st = ZY_STYLE[nd.t] || ZY_STYLE[4];
+            if (st.glow && !dim) {
+              const rg = ctx.createRadialGradient(sx, sy, 0, sx, sy, r * 3.4);
+              rg.addColorStop(0, isFocus ? 'rgba(240,210,122,0.7)' : 'rgba(240,210,122,0.42)');
+              rg.addColorStop(1, 'rgba(240,210,122,0)');
+              ctx.fillStyle = rg;
+              ctx.beginPath();
+              ctx.arc(sx, sy, r * 3.4, 0, 6.2832);
+              ctx.fill();
+            }
+            ctx.globalAlpha = dim ? st.a * 0.28 : st.a;
+            ctx.fillStyle = st.c;
+          } else {
+            const hub = nd.g >= 8;
+            if (hub && !dim) {
+              const rg = ctx.createRadialGradient(sx, sy, 0, sx, sy, r * 3);
+              rg.addColorStop(0, 'rgba(200,210,222,0.34)');
+              rg.addColorStop(1, 'rgba(200,210,222,0)');
+              ctx.fillStyle = rg;
+              ctx.beginPath();
+              ctx.arc(sx, sy, r * 3, 0, 6.2832);
+              ctx.fill();
+            }
+            ctx.globalAlpha = dim ? 0.3 : 0.95;
+            ctx.fillStyle = hub ? EXT_HUB_C : EXT_C;
+          }
+          ctx.beginPath();
+          ctx.arc(sx, sy, r, 0, 6.2832);
+          ctx.fill();
+          ctx.globalAlpha = dim ? 0.2 : 1;
+          ctx.lineWidth = isFocus ? 2 : 1;
+          ctx.strokeStyle = isFocus ? '#fff8e0' : 'rgba(12,18,32,0.85)';
+          ctx.stroke();
+          ctx.globalAlpha = 1;
+          screenPts.push({ i, sx, sy, r: Math.max(r, 9) });
+        }
+
+        // 标签：枢纽与焦点优先，放大后全显
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        for (const p of screenPts) {
+          const nd = N[p.i];
+          const isFocus = p.i === focus;
+          if (!(isFocus || markSet.has(p.i) || labelAll || (nd.k === 0 ? nd.g >= 4 : nd.g >= 8))) continue;
+          const dim = focus >= 0 && !isFocus && !markSet.has(p.i);
+          ctx.font = nd.k === 1
+            ? '11px "Songti SC", "Noto Serif CJK SC", serif'
+            : '600 12px "Songti SC", "Noto Serif CJK SC", serif';
+          ctx.globalAlpha = dim ? 0.3 : 0.95;
+          ctx.fillStyle = nd.k === 1 ? '#dfe6f0' : '#f2e6c0';
+          ctx.fillText(nd.n, p.sx, p.sy - radius(p.i) * zk - 8);
+        }
+        ctx.globalAlpha = 1;
+        empty.classList.toggle('show', pairs.length === 0);
+      }
+
+      function schedule() {
+        if (!raf) raf = requestAnimationFrame(render);
+      }
+
+      function updateHud() {
+        stat.innerHTML = `节点 <b>${active.length}</b> · 边 <b>${pairs.length}</b> · 布局 <b>${layoutMs.toFixed(1)}</b> ms`;
+        const c = new Array(GNAME.length).fill(0);
+        for (const e of pairs) c[e[2]]++;
+        for (const b of tools.querySelectorAll('.chip')) {
+          b.querySelector('em').textContent = String(c[+b.dataset.g]);
+        }
+      }
+
+      // ── 命中检测 ──
+      function pick(ev) {
+        const rect = canvas.getBoundingClientRect();
+        const mx = ev.clientX - rect.left;
+        const my = ev.clientY - rect.top;
+        let best = null, bd = 16;
+        for (const p of screenPts) {
+          const d = Math.hypot(p.sx - mx, p.sy - my) - p.r;
+          if (d < bd) { bd = d; best = p; }
+        }
+        return best;
+      }
+
+      function hideTip() { tip.style.display = 'none'; }
+
+      function setHover(i) {
+        if (i === hover) return;
+        hover = i;
+        markSet = i >= 0 ? neighborsOf(i) : (picked >= 0 ? neighborsOf(picked) : new Set());
+        dirty = true;
+        schedule();
+      }
+
+      // ── 弹「帖」 ──
+      function showCard(i, ev) {
+        const nd = N[i];
+        const rel = ADJ[i].filter(inLayer);
+        const byGroup = new Map();
+        for (const e of rel) byGroup.set(e[2], (byGroup.get(e[2]) || 0) + 1);
+        const breakdown = Array.from(byGroup.entries())
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 4)
+          .map(([g, c]) => `${GNAME[g]} ${c}`)
+          .join(' · ');
+
+        let html = nd.k === 1
+          ? `<b>${nd.n}</b><span class="pop-badge" style="background:#8e9aab;color:#10152a">名士</span>`
+          : `<b>${nd.n}</b><span class="pop-badge">${TIER_NAME[nd.t]}</span>`;
+        html += nd.k === 1
+          ? `<div class="pop-meta">外朝人物 · 与 ${rel.length} 位本谱进士有往来<br>${breakdown}</div>`
+          : `<div class="pop-meta">${nd.d}${nd.ey ? ` · ${nd.ey} 年` : ''} · 关系 ${rel.length} 条<br>${breakdown}</div>`;
+
+        const tops = rel.slice(0, 6).map((e) => {
+          const o = N[e[0] === i ? e[1] : e[0]];
+          return o.k === 0
+            ? `<a href="${BASE}persons/${o.s}/">${GNAME[e[2]]} · ${o.n}</a>`
+            : `<span style="color:#c8d2de;font-size:0.8rem;margin-right:0.6rem">${GNAME[e[2]]} · ${o.n}</span>`;
+        }).join('');
+        if (tops) html += `<div class="pop-meta" style="margin-top:0.5rem">${tops}</div>`;
+
+        if (nd.k === 0) {
+          html += `<a href="${BASE}persons/${nd.s}/">档案页 →</a>`;
+          if (nd.t === 0) {
+            html += STORIES[nd.s]
+              ? `<a href="${BASE}stories/${STORIES[nd.s]}/">阅读他的故事 →</a>`
+              : `<a href="${BASE}stories/">阅读他的故事 →</a>`;
+          }
+        }
+        cardBody.innerHTML = html;
+        card.style.display = 'block';
+        const w = 252;
+        const h = card.offsetHeight || 180;
+        card.style.left = Math.min(ev.clientX + 12, window.innerWidth - w - 12) + 'px';
+        card.style.top = Math.min(ev.clientY + 12, window.innerHeight - h - 12) + 'px';
+      }
+
+      // ── 交互：拖拽平移 / 滚轮缩放 / 悬浮 / 点选 ──
+      let drag = null, moved = false;
+      canvas.addEventListener('pointerdown', (ev) => {
+        drag = { x: ev.clientX, y: ev.clientY };
+        moved = false;
+        canvas.classList.add('dragging');
+        canvas.setPointerCapture(ev.pointerId);
+      });
+      canvas.addEventListener('pointermove', (ev) => {
+        if (drag) {
+          const dx = ev.clientX - drag.x;
+          const dy = ev.clientY - drag.y;
+          if (Math.abs(dx) + Math.abs(dy) > 3) moved = true;
+          view.x -= dx / view.scale;
+          view.y -= dy / view.scale;
+          drag = { x: ev.clientX, y: ev.clientY };
+          dirty = true;
+          schedule();
+          hideTip();
+          return;
+        }
+        const p = pick(ev);
+        if (!p) {
+          setHover(-1);
+          hideTip();
+          canvas.style.cursor = 'grab';
+          return;
+        }
+        canvas.style.cursor = 'pointer';
+        setHover(p.i);
+        const nd = N[p.i];
+        const rel = ADJ[p.i].filter(inLayer);
+        const types = Array.from(new Set(rel.map((e) => GNAME[e[2]]))).slice(0, 3).join('、');
+        tip.innerHTML = `<b>${nd.n}</b> <span class="tip-meta">${
+          nd.k === 1 ? '名士' : `${nd.d}${nd.ey ? ` · ${nd.ey} 年` : ''}`
+        }</span><br><span class="tip-meta">关系 ${rel.length} 条${types ? ` · ${types}` : ''}</span>`;
+        tip.style.display = 'block';
+        tip.style.left = Math.min(ev.clientX + 14, window.innerWidth - 200) + 'px';
+        tip.style.top = Math.min(ev.clientY + 14, window.innerHeight - 80) + 'px';
+      });
+      canvas.addEventListener('pointerup', (ev) => {
+        canvas.classList.remove('dragging');
+        const wasDrag = moved;
+        drag = null;
+        if (wasDrag) return;
+        const p = pick(ev);
+        if (!p) {
+          picked = -1;
+          markSet = new Set();
+          card.style.display = 'none';
+          dirty = true;
+          schedule();
+          return;
+        }
+        picked = p.i;
+        markSet = neighborsOf(p.i);
+        dirty = true;
+        schedule();
+        showCard(p.i, ev);
+      });
+      canvas.addEventListener('pointerleave', () => {
+        hideTip();
+        setHover(-1);
+      });
+      canvas.addEventListener('wheel', (ev) => {
+        ev.preventDefault();
+        const rect = canvas.getBoundingClientRect();
+        const mx = ev.clientX - rect.left;
+        const my = ev.clientY - rect.top;
+        const wx = view.x + mx / view.scale;
+        const wy = view.y + my / view.scale;
+        view.scale = Math.min(9, Math.max(0.3, view.scale * (ev.deltaY < 0 ? 1.16 : 1 / 1.16)));
+        view.x = wx - mx / view.scale;
+        view.y = wy - my / view.scale;
+        dirty = true;
+        schedule();
+        hideTip();
+      }, { passive: false });
+      card.querySelector('.tie-close').addEventListener('click', () => { card.style.display = 'none'; });
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape') card.style.display = 'none';
+      });
+
+      // ── 类型 chips / 名士层开关 / 预设 ──
+      tools.addEventListener('click', (ev) => {
+        const b = ev.target.closest('.chip');
+        if (!b) return;
+        const gi = +b.dataset.g;
+        onG[gi] = !onG[gi];
+        b.setAttribute('aria-pressed', onG[gi] ? 'true' : 'false');
+        relayout(false);
+      });
+      extToggle.addEventListener('change', () => {
+        showExt = extToggle.checked;
+        extSwitch.classList.toggle('on', showExt);
+        relayout(true); // 层结构变化 → 重新布点（状元重新排环、名士落到邻居质心）
+      });
+
+      const PRESETS = {
+        all: [1, 1, 1, 1, 1, 1, 1, 1],
+        strong: [1, 1, 1, 1, 1, 1, 0, 0], // 去掉文字缘与「其他」，只看同年/师生/亲缘/友人/同僚/政敌
+        none: [0, 0, 0, 0, 0, 0, 0, 0],
+      };
+      for (const b of document.querySelectorAll('[data-preset]')) {
+        b.addEventListener('click', () => {
+          const p = b.dataset.preset;
+          if (p === 'fit') { fitView(); return; }
+          const cfg = PRESETS[p];
+          for (let i = 0; i < cfg.length; i++) onG[i] = !!cfg[i];
+          for (const el of tools.querySelectorAll('.chip')) {
+            el.setAttribute('aria-pressed', onG[+el.dataset.g] ? 'true' : 'false');
+          }
+          relayout(false);
+        });
+      }
+
+      function boot() {
+        resize();
+        if (cw <= 0) { stat.textContent = '移动端已降级为关系清单'; return; } // 画布被媒体查询隐藏
+        if (inited) { fitView(); return; }
+        inited = true;
+        relayout(true);
+        console.log(`[network] 首屏布局 ${layoutMs.toFixed(1)}ms · 节点 ${active.length} · 边 ${pairs.length}`);
+      }
+      window.addEventListener('resize', boot);
+      boot();
+    </script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 ---
 import { allPersons, fullProfileIds, BASE } from '../lib/persons';
 import { listStories } from '../lib/story';
+import { coverageStats, GOALS, pct } from '../lib/coverage';
 import SeoHead from '../components/SeoHead.astro';
 import '../styles/base.css';
 
@@ -8,14 +9,18 @@ const persons = allPersons();
 const n = persons.length;
 const fullIds = fullProfileIds();
 const stories = listStories();
-const withCoords = persons.filter((p) => p.lat != null).length;
 
-// 补全计划进度（构建期统计，R4：缺数据本身成为叙事）
+// 补全计划进度：与 /stats 同源，全部构建期实测（见 src/lib/coverage.ts），不手写数字
+const cov = coverageStats();
+const byKey = Object.fromEntries(cov.items.map((i) => [i.key, i]));
 const coverage = [
-  { label: '名录收录', cur: n, total: 600, note: '目标：可考的历代文状元全量' },
-  { label: '故事', cur: stories.length, total: 15, note: '长篇叙事，杂志级' },
-  { label: '坐标覆盖', cur: withCoords, total: n, note: '60% 达标解锁完整籍贯地图', target: 0.6 },
+  { ...byKey.persons, note: '目标：可考的历代文状元全量' },
+  { ...byKey.stories, note: '长篇叙事，杂志级' },
+  { ...byKey.coords, note: '60% 达标解锁完整籍贯地图' },
 ];
+
+// API 端点绝对地址（供 curl 示例，避免手写域名）
+const apiBase = new URL(`${import.meta.env.BASE_URL}api/`, Astro.site ?? new URL('https://wakakacoding.github.io')).href;
 ---
 
 <html lang="zh-CN">
@@ -134,22 +139,86 @@ const coverage = [
         <p class="plan-note">榜上有名者六百余人，史中留痕者寥寥。缺漏不遮不掩，进度公开——这本身就是本站要讲的故事。数据为构建时统计。</p>
         <div class="plan-bars">
           {coverage.map((c) => {
-            const pct = (c.cur / c.total) * 100;
+            const p = pct(c.cur, c.total);
             const hit = c.target != null && c.cur / c.total >= c.target;
             return (
               <div class="bar-row">
                 <span class="bar-label">{c.label}</span>
                 <span class="bar-track">
-                  <span class={`bar-fill${hit ? ' hit' : ''}`} style={`width:${Math.min(100, pct).toFixed(1)}%`}></span>
+                  <span class={`bar-fill${hit ? ' hit' : ''}`} style={`width:${Math.min(100, p).toFixed(1)}%`}></span>
                   {c.target != null && <span class="bar-target" style={`left:${c.target * 100}%`}></span>}
                 </span>
-                <span class="bar-num">{c.cur} / {c.total}{c.target != null ? ` · ${pct.toFixed(0)}%` : ''}</span>
+                <span class="bar-num">{c.cur} / {c.total}{c.target != null ? ` · ${p.toFixed(0)}%` : ''}</span>
                 <span class="bar-note">{c.note}</span>
               </div>
             );
           })}
         </div>
-        <p class="plan-note">另有全字段档案（含仕途时间线）已建 {fullIds.size} / 50；坐标覆盖率达 60% 解锁完整籍贯地图。</p>
+        <p class="plan-note">另有全字段档案（含仕途时间线）已建 {fullIds.size} / {GOALS.fullProfile}；坐标覆盖率达 60% 解锁完整籍贯地图。完整看板见<a href={`${BASE}stats/`}>统计页</a>。</p>
+      </section>
+
+      <section id="download" class="download">
+        <h2 class="section-title">数据下载</h2>
+        <p class="note-line">
+          全站数据底座以 CC BY-SA 4.0 开放，构建期自动导出为静态 API，随每次构建刷新（当前 {cov.generated}）。
+          没有密钥、没有速率限制；数据即本站正文的可机读形态，欢迎复刻、校验与引证。
+        </p>
+
+        <div class="dl-grid">
+          <a class="dl-card" href={`${BASE}api/persons.json`}>
+            <h3>persons.json <span class="dl-size">全量精简字段</span></h3>
+            <p><b>{cov.persons}</b> 位状元，一人一条：姓名、朝代、科年干支、名次、生卒、籍贯与今地坐标、小传、标签。</p>
+            <span class="dl-go">下载 JSON →</span>
+          </a>
+          <a class="dl-card" href={`${BASE}api/persons.csv`}>
+            <h3>persons.csv <span class="dl-size">表格版</span></h3>
+            <p>同上字段集，UTF-8 无 BOM、LF 换行。适合 Excel / pandas 直接读入做统计与制图。</p>
+            <span class="dl-go">下载 CSV →</span>
+          </a>
+          <a class="dl-card" href={`${BASE}api/`}>
+            <h3>数据字典 <span class="dl-size">api/README.md</span></h3>
+            <p>逐字段释义、子文档结构（生平事件 / 著作 / 轶事 / 关系 / 出处）、A-B-C 三级可信度约定与许可条款。</p>
+            <span class="dl-go">阅读字典 →</span>
+          </a>
+          <a class="dl-card" href={`${BASE}api/index.json`}>
+            <h3>index.json <span class="dl-size">清单</span></h3>
+            <p>版本号、生成日期、各表条目数与端点表——程序化接入时先读它。</p>
+            <span class="dl-go">查看清单 →</span>
+          </a>
+        </div>
+
+        <h3 class="sub-title">单人全字段</h3>
+        <p>
+          每位状元另有 <code>/api/persons/&lt;id&gt;.json</code>，含档案全字段、生平事件、著作、轶事、
+          人物关系，以及该人所引史料的原文摘录与卷次。例如
+          {' '}<a class="inline-link" href={`${BASE}api/persons/wen_tianxiang.json`}>文天祥</a>
+          {' '}、<a class="inline-link" href={`${BASE}api/persons/sun_fujia.json`}>孙伏伽</a>。
+        </p>
+        <pre class="dl-code"><code>curl -s {apiBase}persons.json | jq '.meta.count, .persons[0].name'</code></pre>
+
+        <h3 class="sub-title">许可与引用</h3>
+        <ul class="dl-license">
+          <li>
+            <b>本站编纂的数据集</b>以 <b>CC BY-SA 4.0</b> 发布——可自由复制、分发、改编（含商用），
+            条件为署名「数据来源：状元谱」并以相同方式共享。
+          </li>
+          <li>
+            <b>史料原文</b>（出处摘录）版权属原书及点校本，本站仅作考证性引用，不在 CC BY-SA 授权范围内。
+          </li>
+          <li>
+            <b>CBDB</b>：部分科举年份、籍贯、估算活动年（fl_year）与人物关系取自 CBDB，
+            再分发请遵循其学术免费使用条款。
+          </li>
+          <li>
+            数据不担保无误：<b>引用前请回溯出处原文</b>。发现错误请走<a href={`${BASE}corrections/`}>勘误</a>流程。
+          </li>
+        </ul>
+        <p class="note-line">
+          数据条目数（构建期实测）：{' '}
+          {cov.sourceItems.map((s, i) => (
+            <span>{i > 0 ? ' · ' : ''}{s.label} {s.n} {s.unit}</span>
+          ))}
+        </p>
       </section>
 
       <section class="corr-entry">
@@ -213,6 +282,39 @@ const coverage = [
       .bar-target { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--ink); }
       .bar-num { flex: 0 0 auto; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
       .bar-note { flex: 0 0 100%; margin: -0.35rem 0 0 calc(4.5em + 0.7rem); font-size: 0.75rem; color: var(--ink-soft); }
+
+      /* 数据下载 */
+      .download { border-top: 2px solid var(--ink); padding-top: 0.2rem; }
+      .dl-grid { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); margin: 1rem 0 1.4rem; }
+      .dl-card {
+        display: block; text-decoration: none; color: inherit;
+        border: 1px solid var(--line); border-left: 4px solid var(--gold);
+        background: #fbf8f0; border-radius: 4px; padding: 0.9rem 1.1rem 0.8rem;
+      }
+      .dl-card:hover { box-shadow: 3px 3px 0 var(--ink); }
+      .dl-card h3 { margin: 0; font-size: 1rem; }
+      .dl-card .dl-size {
+        font-size: 0.7rem; color: var(--cinnabar); border: 1px solid var(--cinnabar);
+        border-radius: 999px; padding: 0 0.45rem; margin-left: 0.4rem; vertical-align: 0.15em;
+      }
+      .dl-card p { margin: 0.4rem 0 0.5rem; font-size: 0.85rem; color: var(--ink-soft); }
+      .dl-card .dl-go { font-size: 0.82rem; color: var(--cinnabar); }
+      .inline-link { color: var(--cinnabar); text-decoration: none; }
+      .inline-link:hover { text-decoration: underline; }
+      .dl-code {
+        margin: 0.6rem 0 0; padding: 0.6rem 0.9rem; overflow-x: auto;
+        background: var(--paper-deep); border-left: 3px solid var(--ink);
+        font-size: 0.78rem; line-height: 1.7;
+      }
+      .dl-code code { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+      .dl-license { margin: 0.5rem 0 0; padding-left: 1.2rem; font-size: 0.88rem; }
+      .dl-license li { margin: 0.35rem 0; color: var(--ink-soft); }
+      .dl-license b { color: var(--ink); }
+      #download code {
+        background: var(--paper-deep); border-radius: 2px; padding: 0 0.25rem;
+        font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85em;
+      }
+      #download .note-line:last-child { margin-top: 0.9rem; }
 
       /* 勘误入口 */
       .corr-entry p { font-size: 0.95rem; }

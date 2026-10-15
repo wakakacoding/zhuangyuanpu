@@ -20,6 +20,23 @@ const withEvents = persons.filter((p) =>
 const stories = listStories();
 const [featured, ...rest] = stories;
 
+// 星图入口卡：星点数与年份区间取自构建期产物（build_galaxy.py 先于页面渲染执行），
+// 读不到就降级为不带数字的文案——首页不该因为一张入口卡而构建失败
+let galaxy: { n: number; from: number; to: number; gold: number } | null = null;
+try {
+  const g = JSON.parse(
+    fs.readFileSync(path.resolve(process.cwd(), 'public/data/galaxy.json'), 'utf8'),
+  ) as { stars: Array<{ t: number }>; xr: [number, number] };
+  galaxy = {
+    n: g.stars.length,
+    from: g.xr[0],
+    to: g.xr[1],
+    gold: g.stars.filter((s) => s.t === 0).length,
+  };
+} catch {
+  galaxy = null;
+}
+
 // 补全计划进度（R4：缺数据本身成为叙事）
 const coverage = [
   { label: '名录收录', cur: persons.length, total: 600 },
@@ -58,6 +75,25 @@ const coverage = [
           <span class="feature-go">阅读全文 →</span>
         </a>
       )}
+
+      <a class="galaxy-entry" href={`${BASE}galaxy/`}>
+        <span class="ge-body">
+          <span class="ge-tag">可视化 · 星图</span>
+          <h2>状元星河 · 一眼望尽 1283 年</h2>
+          <p class="ge-desc">
+            {galaxy
+              ? `${galaxy.n} 位状元的科年与朝代，化作一片金点星河：横轴 ${galaxy.from}—${galaxy.to} 年，纵轴八朝分带，金亮者皆有其传。`
+              : '六百位状元的科年与朝代，化作一片金点星河：横轴千年，纵轴八朝，金亮者皆有其传。'}
+          </p>
+          <span class="ge-meta">
+            {galaxy && <span class="ge-chip">{galaxy.n} 星点</span>}
+            {galaxy && <span class="ge-chip">金亮 {galaxy.gold}</span>}
+            <span class="ge-chip">八朝分带</span>
+            <span class="ge-chip">可拖拽缩放</span>
+          </span>
+          <span class="ge-go">入河观星 →</span>
+        </span>
+      </a>
 
       {rest.length > 0 && (
         <section class="flow">
@@ -129,6 +165,52 @@ const coverage = [
       .feature-intro { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
       .feature-go { display: inline-block; margin-top: 0.8rem; font-size: 0.85rem; color: var(--cinnabar); }
 
+      /* 星图入口卡：深色星河（与 /galaxy/ 夜模式同源），独立于宣纸风专题流 */
+      .galaxy-entry {
+        display: block; position: relative; overflow: hidden; text-decoration: none;
+        margin-bottom: 2.2rem; padding: 1.5rem 1.6rem 1.3rem;
+        border: 1px solid var(--gold); border-radius: 4px;
+        background: radial-gradient(125% 170% at 84% 8%, #1e2b46 0%, #141d2f 44%, #0b111e 100%);
+        box-shadow: 0 6px 22px rgba(18, 24, 38, 0.26);
+      }
+      /* 点阵（纯 CSS，无脚本）：确定性星点，避免与正文抢注意力 */
+      .galaxy-entry::before {
+        content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.85;
+        background-image:
+          radial-gradient(1.5px 1.5px at 8% 22%, rgba(232,217,168,0.95), transparent 62%),
+          radial-gradient(1px 1px at 15% 68%, rgba(168,172,180,0.7), transparent 60%),
+          radial-gradient(1.3px 1.3px at 24% 38%, rgba(212,175,55,0.85), transparent 62%),
+          radial-gradient(1px 1px at 31% 82%, rgba(232,226,208,0.6), transparent 60%),
+          radial-gradient(1.6px 1.6px at 42% 18%, rgba(232,217,168,0.9), transparent 62%),
+          radial-gradient(1px 1px at 49% 61%, rgba(168,172,180,0.65), transparent 60%),
+          radial-gradient(2px 2px at 58% 30%, rgba(232,217,168,1), transparent 62%),
+          radial-gradient(1px 1px at 63% 76%, rgba(158,43,34,0.85), transparent 60%),
+          radial-gradient(1.4px 1.4px at 71% 52%, rgba(212,175,55,0.8), transparent 62%),
+          radial-gradient(1px 1px at 78% 14%, rgba(232,226,208,0.6), transparent 60%),
+          radial-gradient(1.8px 1.8px at 86% 66%, rgba(232,217,168,0.9), transparent 62%),
+          radial-gradient(1px 1px at 92% 34%, rgba(168,172,180,0.6), transparent 60%),
+          radial-gradient(1.3px 1.3px at 96% 82%, rgba(212,175,55,0.75), transparent 62%),
+          radial-gradient(1px 1px at 4% 46%, rgba(232,226,208,0.55), transparent 60%);
+      }
+      .ge-body { position: relative; z-index: 1; display: block; }
+      .ge-tag {
+        display: inline-block; font-size: 0.7rem; letter-spacing: 0.18em;
+        color: #0e1420; background: var(--gold); border-radius: 2px; padding: 0.05rem 0.5rem;
+      }
+      .galaxy-entry h2 {
+        margin: 0.7rem 0 0.5rem; font-size: 1.5rem; line-height: 1.4;
+        color: #e8d9a8; letter-spacing: 0.06em;
+      }
+      .ge-desc { margin: 0 0 0.9rem; font-size: 0.9rem; line-height: 1.85; color: rgba(232, 226, 208, 0.78); }
+      .ge-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+      .ge-chip {
+        font-size: 0.74rem; color: #d4af37;
+        border: 1px solid rgba(169, 139, 63, 0.6); border-radius: 999px; padding: 0.02rem 0.6rem;
+      }
+      .ge-go { display: inline-block; margin-top: 0.9rem; font-size: 0.85rem; color: #d4af37; }
+      .galaxy-entry:hover { border-color: #d4af37; box-shadow: 0 8px 30px rgba(18, 24, 38, 0.42); }
+      .galaxy-entry:hover .ge-go { text-decoration: underline; }
+
       .flow { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin-bottom: 2.2rem; }
       .flow-item {
         display: block; text-decoration: none; color: inherit; border: 1px solid var(--line);
@@ -153,6 +235,8 @@ const coverage = [
       @media (max-width: 640px) {
         .feature h2 { font-size: 1.25rem; }
         .bar-label { width: 4.5em; }
+        .galaxy-entry { padding: 1.2rem 1.1rem 1.1rem; }
+        .galaxy-entry h2 { font-size: 1.2rem; }
       }
     </style>
   </body>

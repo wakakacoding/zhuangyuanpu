@@ -1,0 +1,146 @@
+---
+/**
+ * 开放数据文档页 /api/
+ *
+ * 正文即 site/public/api/README.md —— 由 scripts/build_api.py 在构建期生成，
+ * 是数据字典与许可条款的**单一事实来源**（此处只做渲染，不改写内容）。
+ * 该文件同时作为静态资源发布，供开发者直接取原始 markdown。
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import { BASE } from '../../lib/persons';
+import SeoHead from '../../components/SeoHead.astro';
+import '../../styles/base.css';
+
+const apiDir = path.resolve(process.cwd(), 'public/api');
+const readmePath = path.join(apiDir, 'README.md');
+
+// 构建期由 astro.config.mjs 的 api-data 集成先生成；此处仍做兜底，
+// 避免文档页把整个构建拖垮
+let html = '';
+let generated = '';
+let manifest: any = null;
+if (fs.existsSync(readmePath)) {
+  const md = fs.readFileSync(readmePath, 'utf8');
+  const processor = await createMarkdownProcessor({ syntaxHighlight: false });
+  html = (await processor.render(md)).code;
+}
+const manifestPath = path.join(apiDir, 'index.json');
+if (fs.existsSync(manifestPath)) {
+  manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  generated = manifest.generated ?? '';
+}
+const counts = manifest?.counts ?? {};
+
+const endpoints = [
+  { file: 'persons.json', label: '全量精简字段', desc: '一人一条，适合批量分析', n: counts.persons ? `${counts.persons} 条` : '' },
+  { file: 'persons.csv', label: 'CSV 版', desc: 'UTF-8 无 BOM，Excel / pandas 直读', n: counts.persons ? `${counts.persons} 行` : '' },
+  { file: 'index.json', label: '清单', desc: '版本、生成日期与各表条目数', n: '' },
+  { file: 'README.md', label: '数据字典原文', desc: '本页正文的原始 markdown', n: '' },
+];
+---
+
+<html lang="zh-CN">
+  <head>
+    <SeoHead
+      title="开放数据 API"
+      description="状元谱数据字典：全量人物 JSON / CSV 端点、字段释义、A-B-C 三级可信度约定与 CC BY-SA 4.0 许可说明。"
+      path="/api/"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-head">
+        <h1>开放数据</h1>
+        <p class="sub">
+          数据即正文的可机读形态：{counts.persons ?? '—'} 位状元的人物卡、生平事件、著作、轶事与关系。
+          全部构建期生成，无密钥、无速率限制。
+        </p>
+        <nav class="site-nav">
+          <a href={BASE}>首页</a>
+          <a href={`${BASE}stories/`}>故事</a>
+          <a href={`${BASE}search/`}>检索</a>
+          <a href={`${BASE}map/`}>籍贯地图</a>
+          <a href={`${BASE}galaxy/`}>星图</a>
+          <a href={`${BASE}timeline/`}>时间线</a>
+          <a href={`${BASE}stats/`}>统计</a>
+          <a href={`${BASE}persons/`}>索引</a>
+          <a href={`${BASE}about/#download`}>数据下载</a>
+        </nav>
+      </header>
+
+      <section class="dl-top">
+        <div class="dl-grid">
+          {endpoints.map((e) => (
+            <a class="dl-card" href={`${BASE}api/${e.file}`}>
+              <h3>{e.file}{e.n && <span class="dl-size">{e.n}</span>}</h3>
+              <p><b>{e.label}</b> —— {e.desc}</p>
+            </a>
+          ))}
+        </div>
+        {generated && <p class="gen-line">当前文档生成于 {generated}，随站点每次构建刷新。</p>}
+      </section>
+
+      <article class="doc" set:html={html} />
+
+      <a class="back" href={BASE}>← 返回首页</a>
+    </div>
+
+    <style>
+      .site-nav { margin-top: 0.9rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+      .site-nav a {
+        font-size: 0.8rem; text-decoration: none; color: var(--ink);
+        border: 1px solid var(--line); padding: 0.1rem 0.6rem; border-radius: 2px;
+        background: #fbf8f0;
+      }
+      .site-nav a:hover { color: var(--cinnabar); border-color: var(--cinnabar); }
+
+      .dl-grid { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+      .dl-card {
+        display: block; text-decoration: none; color: inherit;
+        border: 1px solid var(--line); border-left: 4px solid var(--gold);
+        background: #fbf8f0; border-radius: 4px; padding: 0.8rem 1rem;
+      }
+      .dl-card:hover { box-shadow: 3px 3px 0 var(--ink); }
+      .dl-card h3 { margin: 0; font-size: 0.95rem; }
+      .dl-card .dl-size {
+        font-size: 0.7rem; color: var(--cinnabar); border: 1px solid var(--cinnabar);
+        border-radius: 999px; padding: 0 0.45rem; margin-left: 0.4rem; vertical-align: 0.15em;
+      }
+      .dl-card p { margin: 0.35rem 0 0; font-size: 0.82rem; color: var(--ink-soft); }
+      .gen-line { margin: 0.9rem 0 0; font-size: 0.8rem; color: var(--ink-soft); }
+
+      /* README 正文渲染 */
+      .doc { border-top: 2px solid var(--ink); margin-top: 2rem; padding-top: 0.5rem; }
+      .doc :global(h1) { display: none; } /* 页面已有 h1，隐藏 markdown 里重复的标题 */
+      .doc :global(h2) {
+        font-size: 1.1rem; letter-spacing: 0.1em; margin: 2rem 0 0.8rem;
+        border-left: 4px solid var(--cinnabar); padding-left: 0.6rem;
+      }
+      .doc :global(h3) { font-size: 1rem; margin: 1.4rem 0 0.5rem; }
+      .doc :global(p), .doc :global(li) { font-size: 0.92rem; }
+      .doc :global(blockquote) {
+        margin: 1rem 0; padding: 0.6rem 1rem; background: var(--paper-deep);
+        border-left: 3px solid var(--gold); font-size: 0.88rem; color: var(--ink-soft);
+      }
+      .doc :global(blockquote p) { margin: 0.2rem 0; font-size: 0.88rem; }
+      .doc :global(code) {
+        background: var(--paper-deep); border-radius: 2px; padding: 0 0.25rem;
+        font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85em;
+      }
+      .doc :global(pre) {
+        background: var(--paper-deep); border-left: 3px solid var(--ink);
+        padding: 0.7rem 1rem; overflow-x: auto; font-size: 0.78rem; line-height: 1.7;
+      }
+      .doc :global(pre code) { background: none; padding: 0; }
+      .doc :global(table) { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin: 0.8rem 0; }
+      .doc :global(th), .doc :global(td) {
+        border-bottom: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top;
+      }
+      .doc :global(th) { color: var(--ink-soft); font-weight: normal; font-size: 0.78rem; }
+      .doc :global(a) { color: var(--cinnabar); }
+      .doc :global(hr) { border: none; border-top: 1px dashed var(--line); margin: 1.6rem 0; }
+    </style>
+  </body>
+</html>

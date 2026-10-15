@@ -1,0 +1,37 @@
+person_id: wang_ang
+events:
+  - year: 1118
+    year_precision: exact
+    type: 夺魁
+    title: 御集英殿策进士，由第二名擢为榜首（状元）
+    description: >-
+      三月癸巳，诏令嘉王赵楷赴廷对；戊戌，徽宗御集英殿策进士；戊申，赐礼部奏名进士及第、
+      出身七百八十三人。有司以赵楷第一，帝不欲宗室先多士，遂以第二人王昂为榜首——王昂的
+      状元名分由此而来，是科举史上罕见的「递补状元」，时年二十九（虚岁）。
+    source_ids: [src_songshi_huizong, src_songlike_zhuangyuanlu, src_zhuangyuan_dangan]
+  - year: 1124
+    year_precision: exact
+    type: 罢官
+    title: 充接伴大金国贺正旦人使；后坐「不谨」停职
+    description: >-
+      《三朝北盟会编》卷十九：宣和六年（1124）九月二十七日，「礼部员外郎王昂，充接伴
+      大金国贺正旦人使」——职衔与月份均与今人标目（祠部员外郎、十月）小异，两说并存。
+      今人标目又谓其以祠部员外郎奉命接待金国使臣，因「不谨」被徽宗下令停职；此节
+      未见于《会编》，待溯他书。状元而充接伴，可见其人在徽宗末年的词臣位置。
+    source_ids: [src_sanchaobeimeng_19, src_zhuangyuan_dangan]
+  - year: 1132
+    year_precision: exact
+    type: 授官
+    title: 以起居舍人并试中书舍人，以疾不拜；改徽猷阁待制知台州
+    description: >-
+      《建炎以来系年要录》绍兴二年（1132）五月条：「起居舍人王昂并试中书舍人……昂以疾
+      不拜，后二日改徽猷阁待制知台州。」此前曾任秘书少监。
+    source_ids: [src_jianyan_yiluo, src_zhuangyuan_dangan]
+  - year: 1132
+    year_precision: about
+    type: 卒
+    title: 提举江州太平观后，卒于家
+    description: >-
+      今人标目作绍兴二年（1132）以待制知台州、提举江州太平观，病逝于家中；《要录》仅记
+      其改知台州，卒年与卒地细节待考。
+    source_ids: [src_zhuangyuan_dangan, src_jianyan_yiluo]

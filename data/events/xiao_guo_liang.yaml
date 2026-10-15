@@ -1,0 +1,33 @@
+person_id: xiao_guo_liang
+events:
+  - year: 1166
+    year_precision: exact
+    type: 夺魁
+    title: 乾道二年丙戌科进士第一人（原拟第二，因榜首赵汝愚降居第二而递升）
+    description: >-
+      《宋会要辑稿·选举二》：「孝宗乾道二年三月丁卯，赐礼部进士萧国梁以下四百九十有三人
+      及第、出身。榜首本赵汝愚，以故事降居第二。」赵汝愚为宗室且已挂仕版，按「设科以待
+      草茅士，凡预属籍、挂仕板者法当逊避」之故事逊避，遂升萧国梁为榜首。其殿试有
+      「名传玉陛星辰晓，泽沛金芝雨露春」之句；谢恩奏章以韩信功高屈次、萧何无汗马之劳
+      而居首为喻，自明原属第二。
+    source_ids: [src_songhuiyao_xuanju, src_yongfu_jiuzhi]
+  - year: 1169
+    year_precision: exact
+    type: 升迁
+    title: 以校书郎论财用，孝宗多采其说
+    description: >-
+      乾道五年（1169）五月辛酉，校书郎萧国梁论汉武帝承富庶之后而有虚耗之弊，谓「用之者多，
+      不止为征伐」。又论盐铁、商车、缗钱皆取民无艺，坑冶不必搜、茶盐不必多为之法。
+      孝宗一一答之，谓「自古人君当艰难之运，未有不节俭」「祖宗茶法已尽善，诚不必更变」。
+      同年同乡郑侨殿试第一（永泰三状元之第二元），有《赠郑侨廷试第一》诗贺之。
+      其后历秘书郎、著作郎、太子侍讲兼礼部郎中等。
+    source_ids: [src_songshi_quanwen, src_youhuan_jiwen]
+  - year: 1174
+    year_precision: exact
+    type: 升迁
+    title: 知泉州，杨万里作诗二首送别
+    description: >-
+      淳熙元年（1174），萧国梁赴泉州任，杨万里连作《别萧挺之泉州二首》为别，有「名实今无对，
+      云霄早致身」「八叶今成九，一枝谁敢双」之句。此后历知建宁府、广东通判等职，
+      晚岁知漳州，举家入漳，居漳四年而卒，葬龙溪县东厢新亭道左——卒年不详，本站不系年。
+    source_ids: [src_chengzhai_ji, src_yongfu_jiuzhi, src_zhangzhou_fuzhi]

@@ -68,7 +68,12 @@ const counts = {
 ---
 <html lang="zh-CN">
   <head>
-    <SeoHead title="状元星图" description="571 位历代状元化作星点：横轴科年、纵轴朝代，金亮者皆有其传。拖拽平移、滚轮缩放，夜观千年文曲。" path="/galaxy/" />
+    <SeoHead
+      title="状元星图"
+      description={`${stars.length} 位历代状元化作星点：横轴科年、纵轴朝代，金亮者皆有其传。拖拽平移、滚轮缩放，夜观千年文曲。`}
+      path="/galaxy/"
+      image="/og-galaxy.png"
+    />
   </head>
   <body>
     <div class="galaxy-page">

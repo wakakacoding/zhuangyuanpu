@@ -1,0 +1,100 @@
+/**
+ * 关系网络页专用样式。
+ * 页壳（.galaxy-page / .galaxy-head / .site-nav / .galaxy-guide / .galaxy-stage /
+ * .galaxy-hint / .galaxy-legend / #galaxyTip / #galaxyCard）直接复用 galaxy.css，
+ * 本文件只补网络页独有的部分：画布 id、类型 chips、名士层开关、指标读数、移动端关系清单。
+ *
+ * 视觉基调沿用玄青夜模式：底 #10182a→#0c1220，金线 rgba(169,139,63,*)，字 #e8e2d0。
+ */
+
+#netCanvas {
+  display: block; width: 100%; height: 70vh;
+  border: 1px solid rgba(169, 139, 63, 0.35); border-radius: 4px;
+  background: #10182a; cursor: grab; touch-action: none;
+}
+#netCanvas.dragging { cursor: grabbing; }
+
+/* ── 工具条：类型 chips + 名士层开关 + 读数 ── */
+.network-tools {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem 0.4rem;
+  margin: 0 0 0.5rem;
+}
+.chip {
+  font-family: inherit; font-size: 0.78rem; line-height: 1.5;
+  color: rgba(232, 226, 208, 0.5); background: none;
+  border: 1px solid rgba(232, 226, 208, 0.22); border-radius: 999px;
+  padding: 0.05rem 0.6rem; cursor: pointer; transition: all 0.12s ease;
+  display: inline-flex; align-items: center; gap: 0.3rem;
+}
+.chip i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--chip); opacity: 0.55; }
+.chip em { font-style: normal; font-size: 0.7rem; opacity: 0.62; }
+.chip:hover { color: rgba(232, 226, 208, 0.85); border-color: rgba(169, 139, 63, 0.5); }
+.chip[aria-pressed='true'] { color: #e8d9a8; border-color: var(--chip); background: rgba(255, 255, 255, 0.03); }
+.chip[aria-pressed='true'] i { opacity: 1; box-shadow: 0 0 6px var(--chip); }
+
+.net-switch {
+  font-size: 0.78rem; color: rgba(232, 226, 208, 0.62);
+  border: 1px dashed rgba(169, 139, 63, 0.5); border-radius: 999px;
+  padding: 0.05rem 0.6rem; cursor: pointer; user-select: none;
+  display: inline-flex; align-items: center; gap: 0.35rem; font-family: inherit;
+}
+.net-switch input { accent-color: #a98b3f; margin: 0; }
+.net-switch.on { color: #e8d9a8; border-style: solid; }
+
+.net-stat {
+  margin-left: auto; font-size: 0.72rem; color: rgba(232, 226, 208, 0.45);
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.net-stat b { color: rgba(232, 217, 168, 0.85); font-weight: normal; }
+
+.net-preset { font-size: 0.74rem; color: rgba(232, 226, 208, 0.4); margin: 0 0 1rem; }
+.net-preset button {
+  font-family: inherit; font-size: 0.74rem; color: rgba(212, 175, 55, 0.85);
+  background: none; border: none; border-bottom: 1px dotted rgba(212, 175, 55, 0.5);
+  padding: 0 0 1px; margin-right: 0.2rem; cursor: pointer;
+}
+.net-preset button:hover { color: #d4af37; }
+
+/* 图例色块：与 canvas 上的金色/银色阶梯一一对应（不动 galaxy 自有的 .lg-* 定义） */
+.galaxy-legend .lg-gold1 { background: #f8de92; box-shadow: 0 0 7px rgba(248, 222, 146, 0.85); }
+.galaxy-legend .lg-gold2 { background: #e2bd46; }
+.galaxy-legend .lg-gold3 { background: #c6a450; }
+.galaxy-legend .lg-gold4 { background: #8d7739; }
+.galaxy-legend .lg-ext { background: #d3dbe6; box-shadow: 0 0 6px rgba(211, 219, 230, 0.6); }
+
+/* 画布上的空态提示（例如类型全不选） */
+.net-empty {
+  position: absolute; inset: 0; display: none; align-items: center; justify-content: center;
+  color: rgba(232, 226, 208, 0.5); font-size: 0.88rem; pointer-events: none;
+}
+.net-empty.show { display: flex; }
+
+/* ── 移动端降级：关系清单（桌面隐藏） ── */
+.rel-list { display: none; }
+
+@media (max-width: 760px) {
+  #netCanvas, .galaxy-hint, .network-tools, .net-preset, .net-empty, .galaxy-legend { display: none !important; }
+  .rel-list { display: block; }
+  .rel-list .rl-lead {
+    border-left: 3px solid #a98b3f; padding: 0.4rem 0 0.4rem 0.8rem; margin-bottom: 1.4rem;
+    color: rgba(232, 226, 208, 0.62); font-size: 0.8rem; line-height: 1.8;
+  }
+  .rel-list h2 {
+    font-size: 1.02rem; color: #e8d9a8; letter-spacing: 0.12em;
+    margin: 1.6rem 0 0.5rem; padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(169, 139, 63, 0.35);
+  }
+  .rel-list h2 span { font-size: 0.72rem; color: rgba(232, 226, 208, 0.5); font-weight: normal; margin-left: 0.5rem; }
+  .rel-list ul { list-style: none; margin: 0; padding: 0; }
+  .rel-list li {
+    padding: 0.4rem 0; border-bottom: 1px dashed rgba(232, 226, 208, 0.12); font-size: 0.86rem;
+    line-height: 1.7;
+  }
+  .rel-list li a { color: #e8d9a8; text-decoration: none; }
+  .rel-list li a:active { color: #d4af37; }
+  .rel-list .pair-arrow { color: rgba(232, 226, 208, 0.35); margin: 0 0.25rem; }
+  .rel-list .rl-ext { color: #c8d2de; }
+  .rel-list .rl-note { display: block; font-style: normal; font-size: 0.74rem; color: rgba(232, 226, 208, 0.45); }
+  .rel-list .rl-hub { display: block; font-size: 0.74rem; color: rgba(232, 226, 208, 0.5); }
+  .rel-list .rl-hub a { color: rgba(212, 175, 55, 0.8); }
+}

@@ -40,7 +40,7 @@
 /* 覆盖率看板 */
 .cov { display: flex; flex-direction: column; gap: 0.55rem; }
 .cov-row { display: flex; align-items: center; gap: 0.8rem; font-size: 0.88rem; }
-.cov-label { flex: 0 0 15em; color: var(--ink); }
+.cov-label { flex: 0 0 16em; color: var(--ink); }
 .hit-mark {
   font-style: normal; font-size: 0.68rem; color: #fff; background: #4a7c59;
   border-radius: 2px; padding: 0 0.35rem; margin-left: 0.5rem; vertical-align: 0.1em;
@@ -57,7 +57,37 @@
 }
 .cov-num { flex: 0 0 8.5em; color: var(--ink-soft); font-size: 0.8rem; }
 
+/* 覆盖率脚注（口径说明，逐条挂在指标下） */
+.cov-notes {
+  list-style: none; margin: 1rem 0 0; padding: 0.7rem 0.9rem;
+  border-left: 3px solid var(--line); background: var(--paper-deep);
+  font-size: 0.8rem; color: var(--ink-soft);
+}
+.cov-notes li { margin: 0.2rem 0; }
+.cov-notes b { color: var(--ink); font-weight: normal; }
+
+/* 三级小标题（板块内分栏） */
+.sub-title {
+  font-size: 1rem; letter-spacing: 0.1em; margin: 1.8rem 0 0.7rem;
+  padding-left: 0.55rem; border-left: 3px solid var(--gold);
+}
+
+/* 各数据源条目数表 */
+.src-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-top: 0.6rem; }
+.src-table th, .src-table td {
+  padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle;
+}
+.src-table th { color: var(--ink-soft); font-weight: normal; font-size: 0.78rem; letter-spacing: 0.08em; }
+.src-table .st-n { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.src-table .st-n b { font-size: 1.05rem; color: var(--cinnabar); }
+.src-table .st-n span { font-size: 0.76rem; color: var(--ink-soft); }
+.src-table .st-bar { width: 30%; min-width: 90px; }
+.src-table .st-fill { display: block; height: 6px; background: var(--gold); opacity: 0.8; border-radius: 3px; min-width: 2px; }
+.src-table .st-note { font-size: 0.78rem; color: var(--ink-soft); }
+
 @media (max-width: 640px) {
   .cov-label { flex: 0 0 10em; font-size: 0.8rem; }
   .cov-num { flex: 0 0 6.5em; }
+  .src-table .st-bar { display: none; }
+  .src-table .st-note { font-size: 0.72rem; }
 }

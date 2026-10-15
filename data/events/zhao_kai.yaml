@@ -4,25 +4,56 @@ events:
     year_precision: exact
     type: 出生
     title: 生于东京，徽宗第三子
-    description: 后封郓王。
+    description: >-
+      母为懿肃贵妃王氏。长兄钦宗生于元符三年（1100），次兄衮王柽早薨，故赵楷在存活诸子中
+      序次居前。生年不见正史明文，据《开封府状》靖康二年（1127）「郓王楷二十七岁」逆推。
+    source_ids: [src_kaifengfuzhuang, src_songshi_zhaokai]
+  - year: 1102
+    year_precision: about
+    type: 授官
+    title: 初名焕，始封魏国公，历进高密郡王、嘉王
+    description: >-
+      《宋史》本传仅记爵次与改名，未系年月。历奉宁、镇安、镇东、武宁、保平、荆南、宁江、
+      剑南西川、镇南、河东、宁海十一节度使。封王的具体年月待考。
     source_ids: [src_songshi_zhaokai]
   - year: 1118
     year_precision: exact
     type: 夺魁
-    title: 政和八年廷策唱名第一，以宗室抑为第二
+    title: 御集英殿策进士，有司奏第一，帝抑置第二
     description: >-
-      匿宗室身份应试，殿试唱名第一。徽宗为避嫌，改置第二，升第二名王昂为状元。
-      故本科「名分状元」为王昂，「事实状元」为赵楷，时人谓之「真状元假榜眼」。
+      三月癸巳，诏令嘉王楷赴廷对；戊戌，徽宗御集英殿策进士；戊申，赐礼部奏名进士及第、
+      出身七百八十三人。有司以楷第一，帝不欲楷先多士，遂以第二人王昂为榜首。自诏令赴廷对
+      至放榜凡十五日，无乡试、省试次第可寻。同时代画史亦记其「射策于庭，名标第一，多士推服」；
+      本科第三为张焘，三鼎甲之序可由碑传复原：王昂、赵楷、张焘。
+    source_ids: [src_songshi_huizong, src_songshi_zhaokai, src_songlike_zhuangyuanlu, src_huaji, src_wenzhongji_zhangtao]
+  - year: 1118
+    year_precision: exact
+    type: 升迁
+    title: 超拜太傅，改王郓，仍提举皇城司
+    description: >-
+      本传称「母王妃方有宠，遂超拜太傅，改王郓」，是唱名第一之后的实际所得。出入禁省
+      不复限朝暮，于外第作飞桥复道以通往来——恩遇之隆，与状元的虚名恰成对照。
+    source_ids: [src_songshi_zhaokai]
+  - year: 1126
+    year_precision: exact
+    type: 授官
+    title: 钦宗立，改镇凤翔、彰德军
+    description: >-
+      徽宗内禅后诸弟改镇。宣和年间北伐之役，朝廷曾议以为元帅，会白沟失利而止。
     source_ids: [src_songshi_zhaokai]
   - year: 1127
     year_precision: exact
     type: 被俘
-    title: 靖康之变随徽钦北狩
-    description: 靖康二年（1127）金人陷东京，随二帝北迁。
-    source_ids: [src_songshi_zhaokai, src_jingkang_baishi]
+    title: 靖康之变，与诸王同迁北地
+    description: >-
+      金人陷东京，赵楷自斋宫四起北行，与徽钦二帝及诸王同迁。《开封府状》载其时年二十七。
+    source_ids: [src_songshi_zhaokai, src_jingkang_baishi, src_kaifengfuzhuang]
   - year: 1130
-    year_precision: about
+    year_precision: exact
     type: 卒
-    title: 卒于五国城
-    description: 约建炎四年（1130）卒于北地。具体年月待考。
-    source_ids: [src_jingkang_baishi]
+    title: 金天会八年六月二十六日卒于韩州
+    description: >-
+      《宋俘记》：「赵楷即郓王……楷八年六月二十六日殁韩州。」《呻吟语》同记「天会八年
+      六月二十六日，郓王薨」；《三朝北盟会编》所引《靖康皇族陷记》「殁故亲王」条下亦注
+      「郓王（韩州）」。韩州在今吉林梨树一带；旧说卒于五国城者误。
+    source_ids: [src_jingkang_baishi, src_sanchaobeimeng]

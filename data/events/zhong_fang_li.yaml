@@ -1,0 +1,39 @@
+person_id: zhong_fang_li
+events:
+  - year: 1851
+    year_precision: about
+    type: 授官
+    title: 金田起义，授御林侍卫
+    description: >-
+      广西乡村小贩出身，癸好三年时年约五十，信从天王宗旨入拜上帝会，为平地山老兄弟。
+      金田起义后授御林侍卫。
+    source_ids: [src_luoergang_zhuan54]
+  - year: 1853
+    year_precision: exact
+    type: 授官
+    title: 克复南京，封恩赏丞相
+    description: 癸好三年（1853）二月克复南京后封恩赏丞相，为建都之初受封的一批勋旧之一。
+    source_ids: [src_luoergang_zhuan54]
+  - year: 1853
+    year_precision: exact
+    type: 实业
+    title: 督理织营，总理「杂行」
+    description: >-
+      南京为当时织造锦缎名区。天朝克城后设织营，以军制编组织工为前、后、左、右、中五营，
+      任命钟芳礼督理织营事务，以黄为正为副理；又天京设五十九行生产日用品的「杂行」，
+      以芳礼总理其事。他是太平天国官营手工业体系的主要经手人。
+    source_ids: [src_luoergang_zhuan54]
+  - year: 1857
+    year_precision: exact
+    type: 升迁
+    title: 任副掌率，封顺天燕，与蒙得恩同总理国务
+    description: >-
+      丁巳七年（1857）夏，天京事变后石达开又出走，天王特任芳礼为副掌率、封顺天燕，
+      与蒙得恩共同总理国务，为这一时期太平天国闻名的领导人之一。
+    source_ids: [src_luoergang_zhuan54]
+  - year: 1860
+    year_precision: exact
+    type: 升迁
+    title: 幼主诏平在山勋旧俱升封义爵，芳礼与其列
+    description: 庚申十年（1860）九月十三日。其后不再闻其事迹。
+    source_ids: [src_luoergang_zhuan54]

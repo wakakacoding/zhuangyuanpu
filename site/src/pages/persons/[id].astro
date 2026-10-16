@@ -1,7 +1,21 @@
 ---
-import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf, profileStatusText, roleOf, ROLE_LABEL, ROLE_NOTE, BASE} from '../../lib/persons';
+/**
+ * 人物档案页（599 张，getStaticPaths 构建期展开）
+ *
+ * 本页承担四项评审修复任务（T9 一次性改造，见《评审修复与质量攻坚计划》附录 A）：
+ *   · R3-1   关系列表重写：cbdb: 前缀的外部人物不拼站内链接，以 note 内的姓名纯文本展示；
+ *   · R1.2-6 机器边（src: cbdb）与本站编纂边两类来源标注，视觉可辨；
+ *   · R3-3b  「勘误此卡」按钮：带参跳转 GitHub Issue 表单（模板 .github/ISSUE_TEMPLATE/correction.yml）；
+ *   · R3-5   「读完这个人」推荐模块：同科／同籍贯／关系人物／相关故事（阙如者整类隐藏）；
+ *   · R3-4   接入 <SiteNav>（此前全站唯一无法直达 /network/ 的页面模板）。
+ *
+ * 数据一律构建期实测——本页不写死任何统计数字。
+ */
+import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf, profileStatusText, roleOf, ROLE_LABEL, ROLE_NOTE, fullProfileIds, BASE } from '../../lib/persons';
+import { listStories } from '../../lib/story';
 import SeoHead from '../../components/SeoHead.astro';
 import CareerRiver from '../../components/CareerRiver.astro';
+import SiteNav from '../../components/SiteNav.astro';
 import '../../styles/base.css';
 import '../../styles/profile.css';
 
@@ -18,6 +32,88 @@ export function getStaticPaths() {
       sources,
     },
   }));
+}
+
+// ---------------------------------------------------------------------------
+// 构建期共享索引（模块级只算一次，599 张卡共用；不要在页面正文里重复全量扫描）
+// ---------------------------------------------------------------------------
+const personsAll = allPersons();
+const personById = new Map(personsAll.map((p) => [p.id, p]));
+/** 已建全字段档案者（有 events 文件）——推荐排序里视为「更值得先读」 */
+const fullIds = fullProfileIds();
+
+const storiesAll = listStories(); // 仅 published
+const storiesByPerson = new Map<string, any[]>();
+for (const s of storiesAll) {
+  for (const pid of s.persons ?? []) {
+    const list = storiesByPerson.get(pid) ?? [];
+    list.push(s);
+    storiesByPerson.set(pid, list);
+  }
+}
+
+/** 籍贯（今）→ 省 / 地市两级；含备考说明（括号）者不参与归并 */
+const homeCache = new Map<string, { province: string | null; city: string | null }>();
+function homelands(native?: string | null): { province: string | null; city: string | null } {
+  if (!native) return { province: null, city: null };
+  const hit = homeCache.get(native);
+  if (hit) return hit;
+  let val: { province: string | null; city: string | null } = { province: null, city: null };
+  if (!/[（(]/.test(native)) {
+    const ci = native.indexOf('市');
+    const city = ci >= 0
+      ? native.slice(0, ci + 1)
+      : (native.match(/^.*?(?:自治州|自治区|地区|盟)/)?.[0] ?? null);
+    const pi = native.indexOf('省');
+    val = { province: pi >= 0 ? native.slice(0, pi + 1) : city, city };
+  }
+  homeCache.set(native, val);
+  return val;
+}
+
+// 分组索引（模块级建一次）：推荐模块每页只做 O(1) 查表，不重复全量扫描
+const byExamYear = new Map<number, any[]>();
+const byDynasty = new Map<string, any[]>();
+const byCity = new Map<string, any[]>();
+const byProvince = new Map<string, any[]>();
+const push = (m: Map<any, any[]>, k: any, p: any) => {
+  if (k === null || k === undefined || k === '') return;
+  const list = m.get(k) ?? [];
+  list.push(p);
+  m.set(k, list);
+};
+for (const p of personsAll) {
+  push(byExamYear, p.exam_year, p);
+  push(byDynasty, p.dynasty, p);
+  const h = homelands(p.native_modern);
+  push(byCity, h.city, p);
+  push(byProvince, h.province, p);
+}
+
+const clip = (s: string, n = 26) => (s.length > n ? `${s.slice(0, n)}…` : s);
+
+/** 推荐排序键：有故事 > 有全档案 > 科年相近 > 姓名 */
+const richnessOf = (p: any) => (storiesByPerson.has(p.id) ? 4 : 0) + (fullIds.has(p.id) ? 2 : 0);
+const yearDist = (p: any, anchorYear: number | null) =>
+  anchorYear && p.exam_year ? Math.abs(p.exam_year - anchorYear) : 9999;
+function rankCandidates(list: any[], anchorYear: number | null, n: number) {
+  return [...list]
+    .sort((a, b) =>
+      richnessOf(b) - richnessOf(a) ||
+      yearDist(a, anchorYear) - yearDist(b, anchorYear) ||
+      (a.name < b.name ? -1 : 1)
+    )
+    .slice(0, n);
+}
+/** 「科年相近」的排序与其它类不同：科年距离就是这一类的定义，故距离优先，不按资料丰度插队 */
+function nearestCandidates(list: any[], anchorYear: number | null, n: number) {
+  return [...list]
+    .sort((a, b) =>
+      yearDist(a, anchorYear) - yearDist(b, anchorYear) ||
+      richnessOf(b) - richnessOf(a) ||
+      (a.name < b.name ? -1 : 1)
+    )
+    .slice(0, n);
 }
 
 const { person, events, works, anecdotes, relations, sources } = Astro.props;
@@ -38,6 +134,190 @@ const topTierOf = (ids: string[] = []) => {
 const sortedEvents = [...events].sort((a, b) => a.year - b.year);
 const yearLabel = (e: any) =>
   `${e.year}${e.year_end ? `–${e.year_end}` : ''}${e.year_precision === 'about' ? '（约）' : ''}`;
+
+// ---------------------------------------------------------------------------
+// 关系条目重写（R3-1 + R1.2-6）
+//   两类来源：本站编纂（无 src，含同年与人工考订）／CBDB 数据库（src: cbdb，机器导出）
+//   两级对象：站内立卡者（拼接站内链接）／CBDB 外部人物（to_id 为 cbdb: 前缀，不设链接）
+//   注意：外部人物的姓名只能从 note 取（「称谓：姓名（CBDB 外部人物）」），不可上屏 cbdb: 编号。
+// ---------------------------------------------------------------------------
+const CBDB_EXT = '（CBDB 外部人物）';
+
+interface RelView {
+  key: string;
+  name: string;
+  href: string | null;
+  role: string;
+  badge: string;
+  type: string;
+  desc: string;
+  external: boolean;
+  machine: boolean;
+}
+
+function viewRelation(r: any): RelView {
+  const rawId = String(r.to_id ?? '');
+  const external = rawId.startsWith('cbdb:');
+  const machine = r.src === 'cbdb' || external;
+  const known = personById.get(rawId);
+  let note = String(r.note ?? '');
+  let name = known?.name ?? rawId;
+
+  if (external) {
+    // note 形如「父：安重榮（CBDB 外部人物）」或「友：范子長（CBDB 外部人物），始年 1194」
+    const cut = note.indexOf(CBDB_EXT);
+    const head = cut >= 0 ? note.slice(0, cut) : note;
+    const colon = head.lastIndexOf('：');
+    name = colon >= 0 ? head.slice(colon + 1) : '（姓名未载）';
+    note = (colon >= 0 ? head.slice(0, colon) : head) + (cut >= 0 ? note.slice(cut + CBDB_EXT.length) : '');
+  } else if (machine) {
+    note = note.replace(/（CBDB）$/, ''); // 来源已由徽标统一交代，正文不重复
+  }
+
+  return {
+    key: rawId,
+    name,
+    href: external || !known ? null : `${BASE}persons/${rawId}/`,
+    role: known ? roleOf(known) : 'zhuangyuan',
+    badge: known && roleOf(known) !== 'zhuangyuan' ? ROLE_LABEL[roleOf(known)] : '',
+    type: String(r.type ?? ''),
+    desc: note,
+    external,
+    machine,
+  };
+}
+
+// 排序：站内人物在前 → 本站编纂边在前 → 保持数据文件原序（稳定排序）
+const relViews: RelView[] = relations
+  .map((r, i) => ({ v: viewRelation(r), i }))
+  .sort((a, b) =>
+    Number(a.v.external) - Number(b.v.external) ||
+    Number(a.v.machine) - Number(b.v.machine) ||
+    a.i - b.i
+  )
+  .map((x) => x.v);
+
+const relMachine = relViews.filter((v) => v.machine).length;
+const relOwn = relViews.length - relMachine;
+const relSite = relViews.filter((v) => v.href);
+
+// ---------------------------------------------------------------------------
+// 「读完这个人」推荐（R3-5）
+//   规格四类：同科（exam_year）／同籍贯（同地市，阙则降同省）／关系人物（站内关系优先）
+//             ／相关故事。每类阙如即整类隐藏，不计空标题。
+//   另加一类「科年相近」兜底续读：四类全空者在数据集里是多数（本谱一年一科，同科天然稀疏），
+//   没有兜底则这些卡整块推荐缺失；兜底只按同朝科年最近取人，不下任何判断。
+// ---------------------------------------------------------------------------
+interface NextItem { name: string; href: string; role: string; badge: string; meta: string }
+interface NextGroup { key: string; title: string; note: string; items: NextItem[]; more: number }
+
+const anchorYear = person.exam_year ?? null;
+const home = homelands(person.native_modern);
+const nextReads: NextGroup[] = [];
+
+const toItem = (p: any, meta: string): NextItem => ({
+  name: p.name,
+  href: `${BASE}persons/${p.id}/`,
+  role: roleOf(p),
+  badge: roleOf(p) !== 'zhuangyuan' ? ROLE_LABEL[roleOf(p)] : '',
+  meta,
+});
+
+// ① 同科及第（同年登第者；本谱一年一科，故多为 0–2 人）
+const sameExam = person.exam_year
+  ? (byExamYear.get(person.exam_year) ?? []).filter((p) => p.id !== person.id)
+  : [];
+if (sameExam.length) {
+  nextReads.push({
+    key: 'exam', title: '同科及第', note: `${person.exam_year} 年同榜`,
+    items: rankCandidates(sameExam, anchorYear, 8).map((p) => toItem(p, `籍贯：${p.native_hist ?? '待考'}`)),
+    more: Math.max(0, sameExam.length - 8),
+  });
+}
+
+// ② 同籍贯：先同地市；本地市无他人时降到同省（标签同步改写，不冒充同乡）
+const sameCity = home.city
+  ? (byCity.get(home.city) ?? []).filter((p) => p.id !== person.id)
+  : [];
+const sameProvince = !sameCity.length && home.province
+  ? (byProvince.get(home.province) ?? []).filter((p) => p.id !== person.id)
+  : [];
+const hometown = sameCity.length
+  ? { list: sameCity, label: home.city ?? '', same: true }
+  : { list: sameProvince, label: home.province ?? '', same: false };
+if (hometown.list.length) {
+  nextReads.push({
+    key: 'home',
+    title: hometown.same ? '同籍贯' : '同省',
+    note: hometown.same ? hometown.label : `${hometown.label}（本籍地市别无他人）`,
+    items: rankCandidates(hometown.list, anchorYear, 8).map((p) => toItem(p, `${p.dynasty} · ${p.exam_year ?? '科年待考'}`)),    more: Math.max(0, hometown.list.length - 8),
+  });
+}
+
+// ③ 关系人物（站内关系优先；CBDB 外部人物不在站内立卡，无「下一页」可读，不入推荐）
+const relPicks: NextItem[] = [];
+const seenRel = new Set<string>();
+for (const v of relSite) {
+  if (seenRel.has(v.key)) continue;
+  seenRel.add(v.key);
+  relPicks.push({
+    name: v.name,
+    href: v.href!,
+    role: v.role,
+    badge: v.badge,
+    meta: `${v.type}${v.desc ? ` · ${clip(v.desc, 22)}` : ''}`,
+  });
+}
+if (relPicks.length) {
+  nextReads.push({
+    key: 'rel', title: '关系人物', note: '站内已立卡者',
+    items: relPicks.slice(0, 8),
+    more: Math.max(0, relPicks.length - 8),
+  });
+}
+
+// ④ 相关故事
+const myStories = storiesByPerson.get(person.id) ?? [];
+if (myStories.length) {
+  nextReads.push({
+    key: 'story', title: '相关故事', note: '本站长篇',
+    items: myStories.map((s: any) => ({
+      name: s.title, href: `${BASE}stories/${s.slug}/`, role: 'zhuangyuan', badge: '',
+      meta: s.subtitle ?? '',
+    })),
+    more: 0,
+  });
+}
+
+// ⑤ 科年相近（兜底续读）：同朝者按科年距离取最近；若四类已有内容，仍保留作为「顺年读下去」。
+//    本朝别无他人（如「五代后汉」这类只收一人的朝代值）时降级为全谱科年最近，标签同步改口。
+const sameDynasty = person.dynasty
+  ? (byDynasty.get(person.dynasty) ?? []).filter((p) => p.id !== person.id)
+  : [];
+const nearby = sameDynasty.length ? sameDynasty : personsAll.filter((p) => p.id !== person.id);
+if (nearby.length) {
+  nextReads.push({
+    key: 'near', title: '科年相近',
+    note: sameDynasty.length && person.dynasty ? `同朝（${person.dynasty}）` : '全谱科年最近',
+    items: nearestCandidates(nearby, anchorYear, 6).map((p) => toItem(p, `${p.exam_year ?? '科年待考'} 年`)),
+    more: Math.max(0, nearby.length - 6),
+  });
+}
+
+// ---------------------------------------------------------------------------
+// 「勘误此卡」（R3-3b）：带参跳转 GitHub Issue 表单
+//   预填人物 id 与页面路径；字段名与 .github/ISSUE_TEMPLATE/correction.yml 的 id 一一对应。
+//   注意：务必带 template= 且用完整 github.com 域名——短链 302 会把整个 query 丢掉。
+// ---------------------------------------------------------------------------
+const pageUrl = new URL(`${BASE}persons/${person.id}/`, Astro.site ?? 'https://wakakacoding.github.io').href;
+const correctionUrl = `https://github.com/wakakacoding/zhuangyuanpu/issues/new?${new URLSearchParams({
+  template: 'correction.yml',
+  title: `[勘误] ${person.name}（${person.id}）`,
+  'target-kind': '人物（person）',
+  'target-id': person.id,
+  field: 'record',
+  note: `页面：${pageUrl}`,
+}).toString()}`;
 ---
 <html lang="zh-CN">
   <head>
@@ -55,6 +335,8 @@ const yearLabel = (e: any) =>
           )}
         </h1>
         {person.tags?.length > 0 && <div class="tags">{person.tags.map((t) => <span>{t}</span>)}</div>}
+        {/* 全站统一导航（R3-4）：档案页此前漏接，导致本页无法直达 /network/ */}
+        <SiteNav current="/persons/" />
       </header>
 
       {/* 名录身份说明（R1.4-2）：特例收录者不是状元，须在档案页讲清名分 */}
@@ -134,13 +416,27 @@ const yearLabel = (e: any) =>
         </ol>
       )}
 
-      {relations.length > 0 && (
+      {/* 人物关系（R3-1 + R1.2-6）：两类来源分别标注，外部人物不拼链接 */}
+      {relViews.length > 0 && (
         <>
           <h2 class="section-title">人物关系</h2>
-          <ul>
-            {relations.map((r) => (
-              <li>
-                <a href={`${BASE}persons/${r.to_id}/`}>{r.to_id}</a>（{r.type}）——{r.note}
+          <p class="rel-legend">
+            共 {relViews.length} 条，分两类来源：
+            <span class="rel-tag rel-tag-own">本站编纂</span> {relOwn} 条（同年、亲手考订的往来），
+            <span class="rel-tag rel-tag-cbdb">CBDB 数据库（未经逐条人工核验）</span> {relMachine} 条（机器导出，仅供线索）。
+            标 <span class="rel-tag rel-tag-ext">CBDB 外部人物</span> 者未在本站立卡，故只列姓名、不设链接。
+          </p>
+          <ul class="rel-list-v2">
+            {relViews.map((v) => (
+              <li class={`rel-item ${v.machine ? 'rel-cbdb' : 'rel-own'}`}>
+                {v.href
+                  ? <a class="rel-name" href={v.href}>{v.name}</a>
+                  : <span class="rel-name">{v.name}</span>}
+                {v.badge && <span class={`role-badge role-${v.role}`}>{v.badge}</span>}
+                {v.external && <span class="rel-tag rel-tag-ext">CBDB 外部人物</span>}
+                <span class="rel-type">{v.type}</span>
+                {v.desc && <span class="rel-desc">{v.desc}</span>}
+                {v.machine && <span class="rel-tag rel-tag-cbdb">CBDB 数据库（未经逐条人工核验）</span>}
               </li>
             ))}
           </ul>
@@ -171,6 +467,39 @@ const yearLabel = (e: any) =>
           ))}
         </>
       )}
+
+      {/* 读完这个人（R3-5）：四类规格推荐 + 一类兜底续读；阙如者整类隐藏 */}
+      {nextReads.length > 0 && (
+        <>
+          <h2 class="section-title">读完这个人</h2>
+          <p class="next-lead">同一榜、同一乡、同一张关系网里的其他人，以及本站已写成长篇的故事。</p>
+          <div class="next-grid">
+            {nextReads.map((g) => (
+              <div class="next-col">
+                <h3>{g.title}{g.note && <span>{g.note}</span>}</h3>
+                <ul class="next-list">
+                  {g.items.map((it) => (
+                    <li>
+                      <a href={it.href}>{it.name}</a>
+                      {it.badge && <span class={`role-badge role-${it.role}`}>{it.badge}</span>}
+                      {it.meta && <span class="next-meta">{it.meta}</span>}
+                    </li>
+                  ))}
+                </ul>
+                {g.more > 0 && <p class="next-more">另有 {g.more} 人未列</p>}
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* 勘误此卡（R3-3b）：带人物 id 与页面路径跳 GitHub Issue 表单 */}
+      <div class="page-foot">
+        <a class="err-btn" href={correctionUrl} target="_blank" rel="noopener noreferrer">
+          勘误此卡 · 去 GitHub 提 Issue →
+        </a>
+        <span class="page-foot-note">预填卡号 {person.id} 与页面地址；提交前请附原文与依据。</span>
+      </div>
 
       <a class="back" href={`${BASE}persons/`}>← 返回索引</a>
     </div>

@@ -19,7 +19,10 @@ import '../styles/galaxy.css';
 import '../styles/network.css';
 
 interface NetNode { s: string; n: string; d: string; ey: number; t: number; k: number; g: number }
-type NetEdge = [number, number, number, number, string];
+/** 边元组：[from, to, 类型组号, ?, note, 是否含 CBDB 机器边(1/0)]
+ *  第 6 位由 build_network.py 落盘（R1.2-5），第 5 位之后属向后兼容追加：
+ *  前端 NetEdge 只读前 5 位，本页用第 6 位驱动「仅史料关系」筛选（R1.2-6 网络图侧）。 */
+type NetEdge = [number, number, number, number, string, number];
 interface NetDoc {
   v: number; gen: string; types: string[]; groups: number[][]; gname: string[]; def: number[];
   nodes: NetNode[]; edges: NetEdge[];
@@ -68,6 +71,9 @@ for (const nd of N) {
 const countInner = E.filter(isInner).length;
 const countExt = E.length - countInner;
 const extOnlyNodes = net.stats.nZyAll - net.stats.nZy;
+// 边的来源分层（R1.2-6）：第 6 位 = 该边是否至少含一条 src: cbdb 记录
+const countCbdb = E.filter((e) => e[5] === 1).length;
+const countHist = E.length - countCbdb;
 // 首屏只需要渲染用字段，meta/stats 已在构建期渲染进文案，不再重复内联
 const clientData = {
   nodes: N,
@@ -99,6 +105,7 @@ const clientData = {
 
       <p class="galaxy-guide">
         读图指南：一点一人，金为状元、银为外朝名士；一线一关系，颜色分同年、师生、亲缘、政敌、文字缘。点越大交游越广，点越亮档案越实。悬浮看关系，点击看帖，可入档案、读其传。默认只显状元之间的往来，勾「展开名士层」才见朱熹、欧阳修等枢纽人物。
+        两类来源须分清：<b>本站编纂</b>（同年、亲手考订的往来）与 <b>CBDB 数据库</b>（机器导出，<b>未经逐条人工核验</b>，只作线索）。线上的颜色分关系类型，来源另由开关切换——勾「仅史料关系」即隐去全部 CBDB 机器边，只看本站编纂的那一部分。
       </p>
 
       <div class="network-tools" id="netTools">
@@ -110,8 +117,19 @@ const clientData = {
         <label class="net-switch" id="extSwitch">
           <input type="checkbox" id="extToggle" />展开名士层
         </label>
+        <label class="net-switch net-switch-hist" id="histSwitch" title="隐去 CBDB 数据库机器边，只看本站编纂的关系">
+          <input type="checkbox" id="histToggle" />仅史料关系
+        </label>
         <span class="net-stat" id="netStat">布局中…</span>
       </div>
+
+      {/* 「仅史料关系」开启后的补充说明：状元—名士边在源数据里是否全为 CBDB 机器边，
+          由构建期实测判定（cbdbExt 计数），数据集变了这句话自动改口，不写死结论 */}
+      <p class="net-hist-hint" id="histHint" hidden>
+        {countExt === net.meta.cbdbExt
+          ? `已隐去全部 CBDB 数据库机器边（本页 ${countCbdb} 条）。状元—名士的 ${countExt} 条往来在源数据里全属机器边，故此模式下勾「展开名士层」也不会有新关系露面。`
+          : `已隐去 CBDB 数据库机器边（本页 ${countCbdb} 条），仅保留本站编纂的 ${countHist} 条。`}
+      </p>
 
       <p class="net-preset">
         操作：<button type="button" data-preset="all">全选</button>
@@ -133,6 +151,7 @@ const clientData = {
         <span><i class="lg-gold4"></i>状元·存疑 / 失考</span>
         <span><i class="lg-ext"></i>名士·外朝人物</span>
         <span>入图 {E.length} 条关系（状元间 {countInner}、状元—名士 {countExt}）</span>
+        <span>来源：本站编纂 {countHist} · CBDB 数据库 {countCbdb}（未经逐条人工核验）</span>
       </div>
 
       <p class="net-preset" style="margin-top:0.6rem">
@@ -216,6 +235,9 @@ const clientData = {
       const tools = document.getElementById('netTools');
       const extSwitch = document.getElementById('extSwitch');
       const extToggle = document.getElementById('extToggle');
+      const histSwitch = document.getElementById('histSwitch');
+      const histToggle = document.getElementById('histToggle');
+      const histHint = document.getElementById('histHint');
 
       const TIER_NAME = ['有故事', '全档案', '已确认', '存疑', '失考'];
       // 状元沿用 galaxy 的金色阶梯（亮度随证据递减）；名士为冷银，两层一眼可分
@@ -239,8 +261,12 @@ const clientData = {
 
       const onG = DATA.def.map(Boolean);
       let showExt = false;
+      /** 仅史料关系（R1.2-6）：隐去含 src: cbdb 的机器边，只留本站编纂边 */
+      let onlyHist = false;
       /** 按当前层过滤：纯状元视图下隐去一切状元—名士关系 */
       const inLayer = (e) => showExt || isInnerEdge(e);
+      /** 可见性总闸：层 + 来源两重筛选（相邻、弹卡、读数一律走这里，勿各自实现） */
+      const visibleE = (e) => inLayer(e) && !(onlyHist && e[5] === 1);
 
       // 视图：世界坐标 → 屏幕（view = 屏幕左上角对应的世界点 + 缩放）
       const view = { x: 0, y: 0, scale: 1 };
@@ -264,7 +290,7 @@ const clientData = {
 
       function neighborsOf(i) {
         const s = new Set();
-        for (const e of ADJ[i]) if (inLayer(e)) s.add(e[0] === i ? e[1] : e[0]);
+        for (const e of ADJ[i]) if (visibleE(e)) s.add(e[0] === i ? e[1] : e[0]);
         return s;
       }
 
@@ -273,7 +299,7 @@ const clientData = {
         const pr = [];
         const keep = new Set();
         for (const e of E) {
-          if (!onG[e[2]] || !inLayer(e)) continue;
+          if (!onG[e[2]] || !visibleE(e)) continue;
           pr.push(e);
           keep.add(e[0]);
           keep.add(e[1]);
@@ -515,7 +541,7 @@ const clientData = {
       // ── 弹「帖」 ──
       function showCard(i, ev) {
         const nd = N[i];
-        const rel = ADJ[i].filter(inLayer);
+        const rel = ADJ[i].filter(visibleE);
         const byGroup = new Map();
         for (const e of rel) byGroup.set(e[2], (byGroup.get(e[2]) || 0) + 1);
         const breakdown = Array.from(byGroup.entries())
@@ -586,7 +612,7 @@ const clientData = {
         canvas.style.cursor = 'pointer';
         setHover(p.i);
         const nd = N[p.i];
-        const rel = ADJ[p.i].filter(inLayer);
+        const rel = ADJ[p.i].filter(visibleE);
         const types = Array.from(new Set(rel.map((e) => GNAME[e[2]]))).slice(0, 3).join('、');
         tip.innerHTML = `<b>${nd.n}</b> <span class="tip-meta">${
           nd.k === 1 ? '名士' : `${nd.d}${nd.ey ? ` · ${nd.ey} 年` : ''}`
@@ -651,6 +677,13 @@ const clientData = {
         showExt = extToggle.checked;
         extSwitch.classList.toggle('on', showExt);
         relayout(true); // 层结构变化 → 重新布点（状元重新排环、名士落到邻居质心）
+      });
+      // 仅史料关系（R1.2-6）：只换可见边集，不动布点结构（false = 保留既有位置）
+      histToggle.addEventListener('change', () => {
+        onlyHist = histToggle.checked;
+        histSwitch.classList.toggle('on', onlyHist);
+        histHint.hidden = !onlyHist;
+        relayout(false);
       });
 
       const PRESETS = {

@@ -120,6 +120,69 @@
 
 .legend-note { font-size: 0.8rem; color: var(--cinnabar); margin: -0.4rem 0 0.8rem; }
 
+/* ---- 人物关系（R3-1 / R1.2-6）：两类来源视觉可辨 ----
+   本站编纂 = 实线金边；CBDB 数据库机器边 = 虚线灰边，条目整体压暗，一眼分出主次 */
+.rel-legend { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.9; margin: -0.5rem 0 0.9rem; }
+.rel-tag {
+  display: inline-block; font-size: 0.68rem; line-height: 1.6;
+  padding: 0 0.4rem; border-radius: 2px; vertical-align: 0.08em; white-space: nowrap;
+}
+.rel-tag-own { background: var(--gold); color: #fff; }
+.rel-tag-cbdb { background: #8a8577; color: #fff; font-style: italic; }
+.rel-tag-ext { border: 1px dashed #8a8577; color: var(--ink-soft); }
+
+.rel-list-v2 { list-style: none; margin: 0; padding: 0; }
+.rel-item {
+  padding: 0.32rem 0 0.32rem 0.7rem;
+  border-left: 3px solid var(--gold);
+  border-bottom: 1px dashed var(--line);
+  font-size: 0.9rem; line-height: 1.8;
+}
+/* 机器边：改虚线 + 压暗，与史料边在列表里逐行可辨 */
+.rel-item.rel-cbdb { border-left-style: dashed; border-left-color: #a39c8b; color: var(--ink-soft); }
+.rel-name { font-weight: bold; }
+.rel-item.rel-cbdb .rel-name { font-weight: normal; }
+a.rel-name { color: var(--cinnabar); text-decoration: none; }
+a.rel-name:hover { text-decoration: underline; }
+.rel-type {
+  display: inline-block; margin: 0 0.45rem 0 0.4rem;
+  font-size: 0.72rem; border: 1px solid var(--ink-soft); color: var(--ink-soft);
+  border-radius: 2px; padding: 0 0.35rem; vertical-align: 0.1em;
+}
+.rel-desc { color: var(--ink-soft); font-size: 0.84rem; margin-right: 0.4rem; }
+
+/* ---- 读完这个人（R3-5） ---- */
+.next-lead { font-size: 0.85rem; color: var(--ink-soft); margin: -0.5rem 0 1rem; }
+.next-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.next-col { border: 1px solid var(--line); background: #fbf8f0; border-radius: 4px; padding: 0.7rem 0.85rem 0.6rem; }
+.next-col h3 {
+  margin: 0 0 0.45rem; font-size: 0.9rem; color: var(--cinnabar);
+  border-bottom: 1px solid var(--line); padding-bottom: 0.3rem; letter-spacing: 0.06em;
+}
+.next-col h3 span { font-size: 0.7rem; color: var(--ink-soft); font-weight: normal; margin-left: 0.4rem; letter-spacing: 0; }
+.next-list { list-style: none; margin: 0; padding: 0; }
+.next-list li { padding: 0.16rem 0; font-size: 0.86rem; line-height: 1.7; }
+.next-list li a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--line); }
+.next-list li a:hover { color: var(--cinnabar); border-bottom-color: var(--cinnabar); }
+.next-meta { display: block; font-size: 0.72rem; color: var(--ink-soft); }
+.next-more { margin: 0.4rem 0 0; font-size: 0.72rem; color: var(--ink-soft); }
+
+/* ---- 页脚：勘误此卡（R3-3b）+ 返回索引 ---- */
+.page-foot { margin-top: 3rem; padding-top: 1rem; border-top: 1px dashed var(--line); }
+.err-btn {
+  display: inline-block; font-size: 0.82rem; text-decoration: none;
+  border: 1px solid var(--cinnabar); color: var(--cinnabar);
+  border-radius: 3px; padding: 0.2rem 0.7rem;
+}
+.err-btn:hover { background: var(--cinnabar); color: #fff; }
+.page-foot-note { display: block; margin-top: 0.5rem; font-size: 0.75rem; color: var(--ink-soft); }
+
+@media (max-width: 640px) {
+  .rel-legend { font-size: 0.78rem; }
+  .rel-tag-cbdb { font-style: normal; }
+  .next-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 640px) {
   .tl-item { gap: 0.7rem; padding-left: 0.7rem; }
   .tl-year { flex: 0 0 5.5em; }

@@ -32,7 +32,7 @@ def main():
             if v and isinstance(v, str):
                 names.add(v.strip())
 
-    ordered = sorted(names, key=len, reverse=True)
+    ordered = sorted(names, key=lambda s: (-len(s), s))  # 长度降序+字典序：等长词顺序确定，产物 sha256 可复现
     payload = json.dumps(ordered, ensure_ascii=False, separators=(',', ':'))
     with open(OUT, 'w', encoding='utf-8') as f:
         f.write(payload)

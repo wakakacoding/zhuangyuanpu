@@ -41,6 +41,18 @@
 .net-switch input { accent-color: #a98b3f; margin: 0; }
 .net-switch.on { color: #e8d9a8; border-style: solid; }
 
+/* 「仅史料关系」开关（R1.2-6）：与「展开名士层」并排，改用暖灰虚线以示不是同一组筛选 */
+.net-switch-hist { border-color: rgba(232, 226, 208, 0.3); }
+.net-switch-hist input { accent-color: #c08a3e; }
+.net-switch-hist.on { border-color: #c08a3e; }
+
+/* 「仅史料关系」开启后的口径补充（构建期判定文案，关闭时 hidden） */
+.net-hist-hint {
+  font-size: 0.76rem; line-height: 1.8; color: rgba(232, 226, 208, 0.65);
+  border-left: 2px solid #c08a3e; padding: 0.25rem 0 0.25rem 0.7rem; margin: 0 0 1rem;
+}
+.net-hist-hint b { color: #e8d9a8; font-weight: normal; }
+
 .net-stat {
   margin-left: auto; font-size: 0.72rem; color: rgba(232, 226, 208, 0.45);
   font-variant-numeric: tabular-nums; white-space: nowrap;

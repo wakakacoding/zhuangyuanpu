@@ -19,6 +19,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # 数据底座校验：0 错误才进构建（R2-4）。
+      # PyYAML 必须装在 withastro/action **之前**：站点构建期的 pythonStep
+      # （build_galaxy/build_api/build_network/build_names）也 import yaml，
+      # 与本步骤同一 runner、同一 python3，装一次两边都用得上。
+      - name: 数据底座校验（validate.py）
+        run: |
+          python3 -m pip install --quiet --disable-pip-version-check pyyaml
+          python3 scripts/validate.py
+
       - uses: withastro/action@v3
         with:
           path: ./site

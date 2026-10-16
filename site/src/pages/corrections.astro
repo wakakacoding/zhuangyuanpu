@@ -51,7 +51,7 @@ const dateStr = (d: unknown) =>
       <section class="flow-note">
         <h2 class="section-title">处理流程</h2>
         <ol>
-          <li><b>提交</b>：用下方表单生成勘误单，复制后经邮件或 GitHub Issue 发送（72 小时内响应）。</li>
+          <li><b>提交</b>：用下方表单生成勘误单，再点「在 GitHub 提交」一键开出 Issue（内容已预填，72 小时内响应）。</li>
           <li><b>比对</b>：人工核对原始出处；A 级结论须双独立来源支撑。</li>
           <li><b>留痕</b>：采信 / 驳回 / 异说备录，均写入本站勘误记录并随版本库公开。</li>
         </ol>
@@ -82,7 +82,7 @@ const dateStr = (d: unknown) =>
 
       <section class="submit">
         <h2 class="section-title">提交勘误</h2>
-        <p class="note-line">填写后点「生成勘误单」，复制文本发邮件至 <b>（待配置邮箱）</b>，或在 GitHub 仓库开 Issue 粘贴。</p>
+        <p class="note-line">填写后点「生成勘误单」，再点「在 GitHub 提交此勘误」——内容已预填为 Issue，确认提交即可（需 GitHub 账号）。「复制文本」留作备用。</p>
         <form id="corrForm">
           <div class="row">
             <label>对象类型
@@ -116,6 +116,7 @@ const dateStr = (d: unknown) =>
           </label>
           <div class="row">
             <button type="submit">生成勘误单</button>
+            <a id="issueBtn" class="issue-link" hidden target="_blank" rel="noopener">在 GitHub 提交此勘误 →</a>
             <button type="button" id="copyBtn" disabled>复制文本</button>
           </div>
         </form>
@@ -129,6 +130,7 @@ const dateStr = (d: unknown) =>
       const form = document.getElementById('corrForm');
       const out = document.getElementById('output');
       const copyBtn = document.getElementById('copyBtn');
+      const issueBtn = document.getElementById('issueBtn');
       const v = (id) => document.getElementById(id).value.trim();
       form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -149,6 +151,13 @@ const dateStr = (d: unknown) =>
         out.textContent = y;
         out.hidden = false;
         copyBtn.disabled = false;
+        // 一键开 Issue：文本式模板认 ?title=&body=（表单式只认字段 id 预填）
+        const issueUrl = 'https://github.com/wakakacoding/zhuangyuanpu/issues/new'
+          + '?template=correction-text.md'
+          + `&title=${encodeURIComponent(`[勘误] ${v('f-id')}`)}`
+          + `&body=${encodeURIComponent(y)}`;
+        issueBtn.href = issueUrl;
+        issueBtn.hidden = false;
       });
       copyBtn.addEventListener('click', async () => {
         await navigator.clipboard.writeText(out.textContent);

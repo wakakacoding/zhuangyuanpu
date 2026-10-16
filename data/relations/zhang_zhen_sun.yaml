@@ -2,7 +2,7 @@ from_id: zhang_zhen_sun
 relations:
 - to_id: cbdb:47241
   type: 父子
-  note: 父：張翔泰（CBDB 外部人物）
+  note: 父：张翔泰（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward

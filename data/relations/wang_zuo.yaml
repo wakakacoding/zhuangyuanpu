@@ -2,19 +2,19 @@ from_id: wang_zuo
 relations:
 - to_id: cbdb:13476
   type: 父子
-  note: 父：王俊彥（CBDB 外部人物）
+  note: 父：王俊彦（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:134739
   type: 母子
-  note: 母：葉氏(王佐母)（CBDB 外部人物）
+  note: 母：叶氏(王佐母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:22224
   type: 兄弟
-  note: 弟：王公袞（CBDB 外部人物）
+  note: 弟：王公衮（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -32,61 +32,61 @@ relations:
   direction: forward
 - to_id: cbdb:3145
   type: 翁婿
-  note: 第二任女婿：張孝曾（CBDB 外部人物）
+  note: 第二任女婿：张孝曾（CBDB 外部人物）
   src: cbdb
   kin_code: 201
   direction: forward
 - to_id: cbdb:51786
   type: 其他
-  note: 推薦：劉鄂（CBDB 外部人物）
+  note: 推荐：刘鄂（CBDB 外部人物）
   src: cbdb
   assoc_code: 13
   direction: forward
 - to_id: cbdb:3640
   type: 其他
-  note: 墓誌銘由對方所作：陸游（CBDB 外部人物）
+  note: 墓志铭由对方所作：陆游（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:15459
   type: 其他
-  note: 傳記作者為對方：陳造（CBDB 外部人物）
+  note: 传记作者为对方：陈造（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:8008
   type: 其他
-  note: 反對/不支持對方的政策：秦檜（CBDB 外部人物）
+  note: 反对/不支持对方的政策：秦桧（CBDB 外部人物）
   src: cbdb
   assoc_code: 136
   direction: forward
 - to_id: cbdb:3257
   type: 其他
-  note: 被致書由對方：朱熹（CBDB 外部人物）
+  note: 被致书由对方：朱熹（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:10612
   type: 其他
-  note: 被致書由對方：林光朝（CBDB 外部人物）
+  note: 被致书由对方：林光朝（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:10585
   type: 其他
-  note: 收到對方的答書：陳傅良（CBDB 外部人物）
+  note: 收到对方的答书：陈傅良（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward
 - to_id: cbdb:3624
   type: 其他
-  note: 收到對方的啓：樓鑰（CBDB 外部人物）
+  note: 收到对方的启：楼钥（CBDB 外部人物）
   src: cbdb
   assoc_code: 434
   direction: forward
 - to_id: cbdb:7197
   type: 其他
-  note: 建築物得到對方的題詠、記、命名：周必大（CBDB 外部人物）
+  note: 建筑物得到对方的题咏、记、命名：周必大（CBDB 外部人物）
   src: cbdb
   assoc_code: 444
   direction: forward

@@ -2,13 +2,13 @@ from_id: lu_zhao
 relations:
 - to_id: cbdb:190344
   type: 父子
-  note: 父：盧森（CBDB 外部人物）
+  note: 父：卢森（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:145835
   type: 父女
-  note: 女兒：盧綺（CBDB 外部人物）
+  note: 女儿：卢绮（CBDB 外部人物）
   src: cbdb
   kin_code: 176
   direction: forward
@@ -26,67 +26,67 @@ relations:
   direction: forward
 - to_id: cbdb:22497
   type: 其他
-  note: 贈詩、文：楊收（CBDB 外部人物）
+  note: 赠诗、文：杨收（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:32054
   type: 其他
-  note: 贈詩、文：牛僧孺（CBDB 外部人物）
+  note: 赠诗、文：牛僧孺（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:92061
   type: 其他
-  note: 贈詩、文：王起（CBDB 外部人物）
+  note: 赠诗、文：王起（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:93093
   type: 其他
-  note: 贈詩、文：李群玉（CBDB 外部人物）
+  note: 赠诗、文：李群玉（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:93797
   type: 其他
-  note: 贈詩、文：周墀（CBDB 外部人物）
+  note: 赠诗、文：周墀（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:382117
   type: 其他
-  note: 贈詩、文：成應元（CBDB 外部人物）
+  note: 赠诗、文：成应元（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:382836
   type: 其他
-  note: 贈詩、文：游符（CBDB 外部人物）
+  note: 赠诗、文：游符（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:448499
   type: 其他
-  note: 贈詩、文：姚巖傑（CBDB 外部人物）
+  note: 赠诗、文：姚岩杰（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:449115
   type: 其他
-  note: 贈詩、文：楊鄴（CBDB 外部人物）
+  note: 赠诗、文：杨邺（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:450592
   type: 其他
-  note: 贈詩、文：潘圖（CBDB 外部人物）
+  note: 赠诗、文：潘图（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:92673
   type: 其他
-  note: 收到對方的贈詩、文：劉得仁（CBDB 外部人物）
+  note: 收到对方的赠诗、文：刘得仁（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward

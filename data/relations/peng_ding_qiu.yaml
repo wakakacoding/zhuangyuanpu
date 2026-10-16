@@ -1,32 +1,32 @@
 from_id: peng_ding_qiu
 relations:
 - to_id: cbdb:522119
-  type: 祖孫
-  note: 直系祖先：彭學一（CBDB 外部人物）
+  type: 祖孙
+  note: 直系祖先：彭学一（CBDB 外部人物）
   src: cbdb
   kin_code: 2
   direction: forward
 - to_id: cbdb:522117
-  type: 祖孫
+  type: 祖孙
   note: 高祖;四世祖：彭天秩（CBDB 外部人物）
   src: cbdb
   kin_code: 39
   direction: forward
 - to_id: cbdb:522118
-  type: 祖孫
+  type: 祖孙
   note: 祖父：彭德先（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:89278
   type: 旁系
-  note: 從祖;伯叔祖：彭行先（CBDB 外部人物）
+  note: 从祖;伯叔祖：彭行先（CBDB 外部人物）
   src: cbdb
   kin_code: 64
   direction: forward
 - to_id: cbdb:33916
   type: 父子
-  note: 父：彭瓏（CBDB 外部人物）
+  note: 父：彭珑（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -37,8 +37,8 @@ relations:
   kin_code: 180
   direction: forward
 - to_id: peng_qi_feng
-  type: 祖孫
-  note: 孫（CBDB）
+  type: 祖孙
+  note: 孙（CBDB）
   src: cbdb
   kin_code: 243
   direction: forward
@@ -50,7 +50,7 @@ relations:
   direction: forward
 - to_id: cbdb:74080
   type: 友人
-  note: 友：朱用純（CBDB 外部人物）
+  note: 友：朱用纯（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -68,55 +68,55 @@ relations:
   direction: forward
 - to_id: cbdb:125288
   type: 友人
-  note: 友：顧培（CBDB 外部人物）
+  note: 友：顾培（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:550848
   type: 其他
-  note: 欣賞/器重：胡廷璣（CBDB 外部人物）
+  note: 欣赏/器重：胡廷玑（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:34836
   type: 师生
-  note: 為對方之學生：湯斌（CBDB 外部人物）
+  note: 为对方之学生：汤斌（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:81174
   type: 师生
-  note: 為對方之弟子：陸在新（CBDB 外部人物）
+  note: 为对方之弟子：陆在新（CBDB 外部人物）
   src: cbdb
   assoc_code: 36
   direction: forward
 - to_id: cbdb:511451
   type: 师生
-  note: 弟子為對方：林雲翥（CBDB 外部人物）
+  note: 弟子为对方：林云翥（CBDB 外部人物）
   src: cbdb
   assoc_code: 37
   direction: forward
 - to_id: cbdb:511669
   type: 师生
-  note: 弟子為對方：秉銓政（CBDB 外部人物）
+  note: 弟子为对方：秉铨政（CBDB 外部人物）
   src: cbdb
   assoc_code: 37
   direction: forward
 - to_id: cbdb:81174
   type: 其他
-  note: 為對方作墓誌銘：陸在新（CBDB 外部人物）
+  note: 为对方作墓志铭：陆在新（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:556018
   type: 友人
-  note: 相唱和：汪與圖（CBDB 外部人物）
+  note: 相唱和：汪与图（CBDB 外部人物）
   src: cbdb
   assoc_code: 114
   direction: forward
 - to_id: cbdb:700771
   type: 其他
-  note: 為對方篆匾額、器銘：袁氏(沈大立妻)（CBDB 外部人物）
+  note: 为对方篆匾额、器铭：袁氏(沈大立妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 483
   direction: forward

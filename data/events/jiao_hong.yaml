@@ -1,0 +1,105 @@
+person_id: jiao_hong
+events:
+  - year: 1541
+    year_precision: exact
+    type: 出生
+    title: 生于江宁，祖籍山东日照
+    description: >-
+      《明史》本传与《明儒学案》均不载生年，据「万历四十八年卒，年八十」逆推为 1541。
+      《明史》作「江宁人」，《明儒学案》作「南京旗手卫人」而记「原籍山东」——南京旗手卫
+      与应天府江宁县同城，本籍江宁、原籍日照，两说不相碍。至其显达后，原籍族人欲表其宅，
+      他改置为义田以赡族（见是年闰后 events[3] 所述夺魁时事）。
+    source_ids: [src_mingshi_jiaohong, src_mingruxuean_jiaohong]
+  - year: 1562
+    year_precision: about
+    type: 应试
+    title: 游于耿定向、罗汝芳之门，为崇正书院诸生之长
+    description: >-
+      本传：「为诸生，有盛名。从督学御史耿定向学，复质疑于罗汝芳。」又：「定向遴十四郡
+      名士读书崇正书院，以竑为之长。及定向里居，复往从之。」诸事两源均不系年，据其
+      嘉靖四十三年（1564）举于乡之前后次第系于此，仍以约年视之。耿定向（天台）与罗汝芳
+      （近溪）皆泰州学派名家，《明儒学案》以其入泰州学案四，且谓其「讲学以汝芳为宗」——
+      焦竑之学脉即由此入。
+    source_ids: [src_mingshi_jiaohong, src_mingruxuean_jiaohong]
+  - year: 1564
+    year_precision: exact
+    type: 中举
+    title: 举嘉靖四十三年乡试，会试下第
+    description: >-
+      本传：「举嘉靖四十三年乡试，下第还。」此后二十五年间屡上春官不第，以一老举人主盟
+      金陵讲席，直至万历十七年始成进士。《明儒学案》独记「万历己丑进士第一人」而略其乡试，
+      系年据本传。
+    source_ids: [src_mingshi_jiaohong, src_mingruxuean_jiaohong]
+  - year: 1589
+    year_precision: exact
+    type: 夺魁
+    title: 万历十七年己丑科殿试第一，授翰林修撰；辞建坊而请以赈饥
+    description: >-
+      本传：「万历十七年，始以殿试第一人官翰林修撰，益讨习国朝典章。」《明儒学案》补二事
+      于其夺魁之后：「京兆欲为树棹楔，谢以赈饥」——京兆欲为立状元坊，他辞谢而请以之赈饥；
+      「原籍山东，亦欲表于宅，改置义田」——日照原籍欲表其宅，他改为义田以赡族人。
+      据 1541 生年虚计，是年已四十有九，故世称晚成。
+    source_ids: [src_mingshi_jiaohong, src_mingruxuean_jiaohong]
+  - year: 1594
+    year_precision: exact
+    type: 授官
+    title: 朝廷开史局修国史，专领撰《经籍志》；史事中辍，乃私成《献征录》百二十卷
+    description: >-
+      本传：「二十二年，大学士陈于陛建议修国史，欲竑专领其事，竑逊谢，乃先撰《经籍志》，
+      其他率无所撰，馆亦竟罢。」《明儒学案》作「癸巳开史局，南充意在先生。先生条四议以进，
+      史事中止」——「癸巳」为万历二十一年（1593），与本传「二十二年」异，本站从本传作
+      二十二年，异说并存。史事既辍，竑乃私撰《国朝献征录》一百二十卷，采摭明初以来名臣
+      行状、碑传、志状之属，分门编次，为明代人物文献之总汇。同时「翰林教小内侍书者，
+      众视为具文，竑独曰：『此曹他日在帝左右，安得忽之。』取古奄人善恶，时与论说。」
+    source_ids: [src_mingshi_jiaohong, src_mingruxuean_jiaohong]
+  - year: 1594
+    year_precision: exact
+    type: 授官
+    title: 简为东宫讲读官，屡启皇长子问难之风
+    description: >-
+      《明儒学案》：「甲午简为东宫讲读官。」本传记其讲筵三事：讲毕即进言「博学审问，
+      功用维均，敷陈或未尽，惟殿下赐明问」；又以「解则有误，问复何误？古人不耻下问」
+      相劝。因皇长子终无所问，乃与同列谋先启其端，适讲《舜典》，举「稽于众，舍己从人」
+      为问，皇长子答「稽者，考也。考集众思，然后舍己之短，从人之长」，时方十三龄而答问
+      无滞。又尝讲次群鸟飞鸣，皇长子仰视，竑即辍讲肃立，待其敛容乃复讲如初。
+    source_ids: [src_mingruxuean_jiaohong, src_mingshi_jiaohong]
+  - year: 1595
+    year_precision: about
+    type: 著作
+    title: 采古储君事为《养正图说》，拟进之而止
+    description: >-
+      本传：「竑尝采古储君事可为法戒者为《养正图说》，拟进之。同官郭正域辈恶其不相闻，
+      目为贾誉，竑遂止。」《明儒学案》作《养正图解》，且作「取故事可为劝戒者，绘图上之」
+      ——书名与是否进呈两说并存，详见轶事栏该条。两源均不系年，系于其任讲官之后，仍以
+      约年视之。
+    source_ids: [src_mingshi_jiaohong, src_mingruxuean_jiaohong, src_siku_yutangcongyu]
+  - year: 1597
+    year_precision: exact
+    type: 贬谪
+    title: 主顺天乡试被劾，谪福宁州同知；岁余大计复镌秩，遂不出
+    description: >-
+      本传：「二十五年主顺天乡试，举子曹蕃等九人文多险诞语，竑被劾，谪福宁州同知。
+      岁余大计，复镌秩，竑遂不出。」《明儒学案》记其自辩「分经校阅，其所摘，非臣所取」，
+      并谓其「素为新建（王守仁）所不喜，原推者复构之」，给事中项应祥、曹大咸纠其所取险怪。
+      此后家居二十余年不复出，专以读书、撰述、讲学为事。
+    source_ids: [src_mingshi_jiaohong, src_mingruxuean_jiaohong]
+  - year: 1610
+    year_precision: about
+    type: 授官
+    title: 移太仆寺丞，再升南京司业，时年已七十
+    description: >-
+      《明儒学案》：「谪福宁州同知，移太仆寺丞。后升南京司业，而年已七十矣。」本传不载
+      此二任。据其生年 1541 推「年已七十」约在万历三十八年前后，故系于约年。
+    source_ids: [src_mingruxuean_jiaohong]
+  - year: 1620
+    year_precision: exact
+    type: 卒
+    title: 万历四十八年卒，年八十；赠谕德，福王时追谥文端
+    description: >-
+      本传：「万历四十八年卒，年八十。熹宗时，以先朝讲读恩，复官，赠谕德，赐祭荫子。
+      福王时，追谥文端。」卒年三说并存：① 本传作万历四十八年（1620）；② 《明儒学案》
+      作「泰昌元年卒，年八十一」——泰昌元年即万历四十八年，同年而元号异、岁数差一；
+      ③ 黄汝亨《祭焦弱侯先生文》作「万历己未（四十七年，1619）冬十一月……行年八十」，
+      为同时代人所记最早之说。本站从本传、学案系于 1620，第③说并存备考。谥号亦有异说：
+      本传作「福王时追谥文端」，《明儒学案》作「崇祯末，补谥文端」。
+    source_ids: [src_mingshi_jiaohong, src_mingruxuean_jiaohong, src_huangruheng_jiaohong]

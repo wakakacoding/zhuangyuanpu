@@ -1,20 +1,20 @@
 from_id: tong_tong
 relations:
   - to_id: cbdb:117498
-    type: 祖孫
-    note: 祖父：玉速歹兒（CBDB 外部人物）
+    type: 祖孙
+    note: 祖父：玉速歹儿（CBDB 外部人物）
     src: cbdb
     kin_code: 62
     direction: forward
   - to_id: cbdb:117409
     type: 父子
-    note: 父：玉速帖木兒（CBDB 外部人物）
+    note: 父：玉速帖木儿（CBDB 外部人物）
     src: cbdb
     kin_code: 75
     direction: forward
   - to_id: cbdb:28800
     type: 其他
-    note: 收到對方的贈詩、文：朱德潤（CBDB 外部人物）
+    note: 收到对方的赠诗、文：朱德润（CBDB 外部人物）
     src: cbdb
     assoc_code: 438
     direction: forward

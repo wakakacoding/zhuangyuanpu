@@ -2,13 +2,13 @@ from_id: wang_yi_xian
 relations:
 - to_id: cbdb:526696
   type: 旁系
-  note: 從子;姪子：王涑（CBDB 外部人物）
+  note: 从子;姪子：王涑（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:526695
-  type: 祖孫
-  note: 孫：王志楓（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王志枫（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
@@ -20,13 +20,13 @@ relations:
   direction: forward
 - to_id: cbdb:57445
   type: 师生
-  note: 為對方之學生：竇光鼐（CBDB 外部人物）
+  note: 为对方之学生：窦光鼐（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:572496
   type: 其他
-  note: 為對方作墓誌銘：顧氏(張維敘妻)（CBDB 外部人物）
+  note: 为对方作墓志铭：顾氏(张维叙妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward

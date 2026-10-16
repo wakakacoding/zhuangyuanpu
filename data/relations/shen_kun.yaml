@@ -1,20 +1,20 @@
 from_id: shen_kun
 relations:
 - to_id: cbdb:302021
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：沈澄（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:302022
-  type: 祖孫
+  type: 祖孙
   note: 祖父：沈蕙（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:302023
   type: 父子
-  note: 父：沈煒（CBDB 外部人物）
+  note: 父：沈炜（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -44,7 +44,7 @@ relations:
   direction: forward
 - to_id: cbdb:302025
   type: 夫妻
-  note: 妻子：趙氏(沈坤妻)（CBDB 外部人物）
+  note: 妻子：赵氏(沈坤妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward

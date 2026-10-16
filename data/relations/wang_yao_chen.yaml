@@ -2,43 +2,43 @@ from_id: wang_yao_chen
 relations:
 - to_id: cbdb:3986
   type: 父子
-  note: 父：王瀆（CBDB 外部人物）
+  note: 父：王渎（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:15752
   type: 旁系
-  note: 從父;伯叔父：王沖（CBDB 外部人物）
+  note: 从父;伯叔父：王冲（CBDB 外部人物）
   src: cbdb
   kin_code: 79
   direction: forward
 - to_id: cbdb:562984
   type: 母子
-  note: 母：仇氏(王堯臣母)（CBDB 外部人物）
+  note: 母：仇氏(王尧臣母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:1906
   type: 兄弟
-  note: 從兄弟;堂兄弟：王端臣（CBDB 外部人物）
+  note: 从兄弟;堂兄弟：王端臣（CBDB 外部人物）
   src: cbdb
   kin_code: 119
   direction: forward
 - to_id: cbdb:15753
   type: 兄弟
-  note: 弟：王純臣（CBDB 外部人物）
+  note: 弟：王纯臣（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:1785
   type: 兄弟
-  note: 從弟：王陟臣（CBDB 外部人物）
+  note: 从弟：王陟臣（CBDB 外部人物）
   src: cbdb
   kin_code: 130
   direction: forward
 - to_id: cbdb:1888
   type: 父子
-  note: 長子; 第一子：王同老（CBDB 外部人物）
+  note: 长子; 第一子：王同老（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
@@ -56,7 +56,7 @@ relations:
   direction: forward
 - to_id: cbdb:3030
   type: 翁婿
-  note: 長女婿：戚師道（CBDB 外部人物）
+  note: 长女婿：戚师道（CBDB 外部人物）
   src: cbdb
   kin_code: 332
   direction: forward
@@ -68,73 +68,73 @@ relations:
   direction: forward
 - to_id: cbdb:3479
   type: 其他
-  note: 推薦：李及之（CBDB 外部人物）
+  note: 推荐：李及之（CBDB 外部人物）
   src: cbdb
   assoc_code: 13
   direction: forward
 - to_id: cbdb:45283
   type: 其他
-  note: 推薦：孫惟恭（CBDB 外部人物）
+  note: 推荐：孙惟恭（CBDB 外部人物）
   src: cbdb
   assoc_code: 13
   direction: forward
 - to_id: cbdb:95228
   type: 其他
-  note: 推薦：令狐挻（CBDB 外部人物）
+  note: 推荐：令狐挻（CBDB 外部人物）
   src: cbdb
   assoc_code: 13
   direction: forward
 - to_id: cbdb:8064
   type: 政敌
-  note: 遭到對方的反對/攻訐：胡宿（CBDB 外部人物）
+  note: 遭到对方的反对/攻讦：胡宿（CBDB 外部人物）
   src: cbdb
   assoc_code: 16
   direction: forward
 - to_id: cbdb:797
   type: 其他
-  note: 欣賞/器重：許元（CBDB 外部人物）
+  note: 欣赏/器重：许元（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:1384
   type: 其他
-  note: 墓誌銘由對方所作：歐陽修（CBDB 外部人物）
+  note: 墓志铭由对方所作：欧阳修（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:26501
   type: 其他
-  note: 為對方作墓誌銘：丁司農（CBDB 外部人物），始年 1058
+  note: 为对方作墓志铭：丁司农（CBDB 外部人物），始年 1058
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:8116
   type: 其他
-  note: 祭文由對方所作：蘇頌（CBDB 外部人物）
+  note: 祭文由对方所作：苏颂（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:630
   type: 其他
-  note: 祭文由對方所作：韓琦（CBDB 外部人物），始年 1058
+  note: 祭文由对方所作：韩琦（CBDB 外部人物），始年 1058
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:3580
   type: 其他
-  note: 行狀由對方所作：劉敞（CBDB 外部人物），始年 1058
+  note: 行状由对方所作：刘敞（CBDB 外部人物），始年 1058
   src: cbdb
   assoc_code: 425
   direction: forward
 - to_id: cbdb:3513
   type: 其他
-  note: 被致書由對方：李覯（CBDB 外部人物）
+  note: 被致书由对方：李觏（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:46642
   type: 其他
-  note: 為對方乞某事：張庚（CBDB 外部人物）
+  note: 为对方乞某事：张庚（CBDB 外部人物）
   src: cbdb
   assoc_code: 551
   direction: forward

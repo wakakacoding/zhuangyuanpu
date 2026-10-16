@@ -2,55 +2,55 @@ from_id: chen_yaozi
 relations:
 - to_id: cbdb:3083
   type: 父子
-  note: 父：陳省華（CBDB 外部人物）
+  note: 父：陈省华（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:118924
   type: 母子
-  note: 母：馮氏(陳堯叟母)（CBDB 外部人物）
+  note: 母：冯氏(陈尧叟母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:98
   type: 兄弟
-  note: 兄：陳堯佐（CBDB 外部人物）
+  note: 兄：陈尧佐（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:5393
   type: 父女
-  note: 女兒：陳氏(賈昌朝妻)（CBDB 外部人物）
+  note: 女儿：陈氏(贾昌朝妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 176
   direction: forward
 - to_id: cbdb:14384
   type: 旁系
-  note: 從子;姪子：陳漸（CBDB 外部人物）
+  note: 从子;姪子：陈渐（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:59
   type: 父子
-  note: 子：陳榮古（CBDB 外部人物）
+  note: 子：陈荣古（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:85
   type: 父子
-  note: 子：陳述古（CBDB 外部人物）
+  note: 子：陈述古（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:14210
   type: 父子
-  note: 子：陳博古（CBDB 外部人物）
+  note: 子：陈博古（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:8031
   type: 翁婿
-  note: 女婿：賈昌朝（CBDB 外部人物）
+  note: 女婿：贾昌朝（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
@@ -61,38 +61,38 @@ relations:
   kin_code: 181
   direction: forward
 - to_id: cbdb:39973
-  type: 祖孫
-  note: 孫女：陳氏(尹林妻)（CBDB 外部人物）
+  type: 祖孙
+  note: 孙女：陈氏(尹林妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 251
   direction: forward
 - to_id: cbdb:46404
   type: 其他
-  note: 讚揚對方之學：梁頠（CBDB 外部人物）
+  note: 赞扬对方之学：梁頠（CBDB 外部人物）
   src: cbdb
   assoc_code: 140
   direction: forward
 - to_id: cbdb:21393
   type: 其他
-  note: 被致書由對方：孫堪（CBDB 外部人物）
+  note: 被致书由对方：孙堪（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:16469
   type: 其他
-  note: 為對方篆匾額、器銘：朱協（CBDB 外部人物）
+  note: 为对方篆匾额、器铭：朱协（CBDB 外部人物）
   src: cbdb
   assoc_code: 483
   direction: forward
 - to_id: cbdb:1488
   type: 其他
-  note: 祠記由對方所作：司馬光（CBDB 外部人物）
+  note: 祠记由对方所作：司马光（CBDB 外部人物）
   src: cbdb
   assoc_code: 561
   direction: forward
 - to_id: cbdb:7343
   type: 其他
-  note: 祠記由對方所作：孫覿（CBDB 外部人物）
+  note: 祠记由对方所作：孙觌（CBDB 外部人物）
   src: cbdb
   assoc_code: 561
   direction: forward

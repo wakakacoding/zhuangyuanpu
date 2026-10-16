@@ -8,13 +8,13 @@ relations:
   direction: forward
 - to_id: cbdb:3088
   type: 同年
-  note: 同年友：陳宗召（CBDB 外部人物）
+  note: 同年友：陈宗召（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:11848
   type: 同年
-  note: 同年友：湯碩（CBDB 外部人物）
+  note: 同年友：汤硕（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -26,7 +26,7 @@ relations:
   direction: forward
 - to_id: cbdb:3624
   type: 其他
-  note: 收到對方的答啓：樓鑰（CBDB 外部人物）
+  note: 收到对方的答启：楼钥（CBDB 外部人物）
   src: cbdb
   assoc_code: 436
   direction: forward

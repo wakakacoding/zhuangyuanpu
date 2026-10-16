@@ -1,140 +1,140 @@
 from_id: luo_wan_hua
 relations:
 - to_id: cbdb:333541
-  type: 祖孫
-  note: 曾祖：羅霳（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：罗霳（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:333542
-  type: 祖孫
-  note: 祖父：羅道（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：罗道（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:333544
   type: 父子
-  note: 父：羅拱璧（CBDB 外部人物）
+  note: 父：罗拱璧（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:333545
   type: 母子
-  note: 母：沈氏(羅萬化母)（CBDB 外部人物）
+  note: 母：沈氏(罗万化母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:333548
   type: 兄弟
-  note: 兄：羅萬象（CBDB 外部人物）
+  note: 兄：罗万象（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:333549
   type: 兄弟
-  note: 弟：羅萬言（CBDB 外部人物）
+  note: 弟：罗万言（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:333550
   type: 兄弟
-  note: 弟：羅萬善（CBDB 外部人物）
+  note: 弟：罗万善（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:333551
   type: 兄弟
-  note: 弟：羅萬益（CBDB 外部人物）
+  note: 弟：罗万益（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:333552
   type: 兄弟
-  note: 弟：羅萬春（CBDB 外部人物）
+  note: 弟：罗万春（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:333553
   type: 兄弟
-  note: 弟：羅萬全（CBDB 外部人物）
+  note: 弟：罗万全（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:333556
   type: 兄弟
-  note: 弟：羅萬壽（CBDB 外部人物）
+  note: 弟：罗万寿（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:333546
   type: 夫妻
-  note: 妻子：金氏(羅萬化妻)（CBDB 外部人物）
+  note: 妻子：金氏(罗万化妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:333547
   type: 夫妻
-  note: 第二任妻：謝氏(羅萬化繼妻)（CBDB 外部人物）
+  note: 第二任妻：谢氏(罗万化继妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 163
   direction: forward
 - to_id: cbdb:368151
-  type: 祖孫
-  note: 孫：羅元賓（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：罗元宾（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:563577
-  type: 祖孫
-  note: 嗣祖母：朱氏(羅道妻)（CBDB 外部人物）
+  type: 祖孙
+  note: 嗣祖母：朱氏(罗道妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 584
   direction: forward
 - to_id: cbdb:34136
   type: 其他
-  note: 傳記作者為對方：邵廷采（CBDB 外部人物）
+  note: 传记作者为对方：邵廷采（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:130726
   type: 其他
-  note: 傳記作者為對方：陶望齡（CBDB 外部人物）
+  note: 传记作者为对方：陶望龄（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:134778
   type: 其他
-  note: 祭文由對方所作：陳懿典（CBDB 外部人物）
+  note: 祭文由对方所作：陈懿典（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:124310
   type: 其他
-  note: 行狀由對方所作：朱賡（CBDB 外部人物）
+  note: 行状由对方所作：朱赓（CBDB 外部人物）
   src: cbdb
   assoc_code: 425
   direction: forward
 - to_id: cbdb:30240
   type: 其他
-  note: 被致書由對方：馮夢禎（CBDB 外部人物）
+  note: 被致书由对方：冯梦祯（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:126943
   type: 其他
-  note: 被致書由對方：支大綸（CBDB 外部人物）
+  note: 被致书由对方：支大纶（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:129426
   type: 其他
-  note: 被致書由對方：唐文燦（CBDB 外部人物）
+  note: 被致书由对方：唐文灿（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:123935
   type: 其他
-  note: 收到對方的答書：王家屏（CBDB 外部人物）
+  note: 收到对方的答书：王家屏（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward

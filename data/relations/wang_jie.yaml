@@ -1,86 +1,86 @@
 from_id: wang_jie
 relations:
 - to_id: cbdb:513477
-  type: 祖孫
+  type: 祖孙
   note: 祖父：王象峰（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:513475
   type: 父子
-  note: 子：王堉時（CBDB 外部人物）
+  note: 子：王堉时（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:513476
   type: 父子
-  note: 子：王垿時（CBDB 外部人物）
+  note: 子：王垿时（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:513478
   type: 父子
-  note: 子：王嵊時（CBDB 外部人物）
+  note: 子：王嵊时（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:513479
   type: 父子
-  note: 子：王塽時（CBDB 外部人物）
+  note: 子：王塽时（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:513480
-  type: 祖孫
-  note: 孫：王駎（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王駎（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:513481
-  type: 祖孫
-  note: 孫：王駉（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王駉（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:513482
-  type: 祖孫
-  note: 孫：王騊（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王騊（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:513483
-  type: 祖孫
-  note: 孫：王騫（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王骞（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:513484
-  type: 祖孫
-  note: 孫：王驌（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王骕（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:57786
   type: 师生
-  note: 為對方之學生：陳宏謀（CBDB 外部人物）
+  note: 为对方之学生：陈宏谋（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:11885
   type: 其他
-  note: 為對方所著書作序：游酢（CBDB 外部人物）
+  note: 为对方所著书作序：游酢（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:29876
   type: 友人
-  note: 相識：錢大昕（CBDB 外部人物）
+  note: 相识：钱大昕（CBDB 外部人物）
   src: cbdb
   assoc_code: 95
   direction: forward
 - to_id: cbdb:90030
   type: 其他
-  note: 欣賞/器重：程振甲（CBDB 外部人物）
+  note: 欣赏/器重：程振甲（CBDB 外部人物）
   src: cbdb
   assoc_code: 17
   direction: reverse

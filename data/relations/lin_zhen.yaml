@@ -1,13 +1,13 @@
 from_id: lin_zhen
 relations:
 - to_id: cbdb:322074
-  type: 祖孫
-  note: 曾祖：林貴（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：林贵（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:322075
-  type: 祖孫
+  type: 祖孙
   note: 祖父：林汝祥（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -20,7 +20,7 @@ relations:
   direction: forward
 - to_id: cbdb:322077
   type: 母子
-  note: 母：張氏(林震母)（CBDB 外部人物）
+  note: 母：张氏(林震母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
@@ -32,7 +32,7 @@ relations:
   direction: forward
 - to_id: cbdb:322081
   type: 兄弟
-  note: 弟：林敦濟（CBDB 外部人物）
+  note: 弟：林敦济（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -44,7 +44,7 @@ relations:
   direction: forward
 - to_id: cbdb:322083
   type: 兄弟
-  note: 從弟：林坤成（CBDB 外部人物）
+  note: 从弟：林坤成（CBDB 外部人物）
   src: cbdb
   kin_code: 130
   direction: forward
@@ -56,7 +56,7 @@ relations:
   direction: forward
 - to_id: cbdb:322078
   type: 母子
-  note: 繼母：蕭氏(林震繼母)（CBDB 外部人物）
+  note: 继母：萧氏(林震继母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward

@@ -2,7 +2,7 @@ from_id: hu_dan
 relations:
 - to_id: cbdb:44693
   type: 旁系
-  note: 從子;姪子：胡拱辰（CBDB 外部人物）
+  note: 从子;姪子：胡拱辰（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
@@ -26,61 +26,61 @@ relations:
   direction: forward
 - to_id: cbdb:8023
   type: 政敌
-  note: 反對/攻訐：趙普（CBDB 外部人物）
+  note: 反对/攻讦：赵普（CBDB 外部人物）
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:8095
   type: 政敌
-  note: 反對/攻訐：盧多遜（CBDB 外部人物）
+  note: 反对/攻讦：卢多逊（CBDB 外部人物）
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:15396
   type: 其他
-  note: 欣賞/器重：宋白（CBDB 外部人物），始年 1008
+  note: 欣赏/器重：宋白（CBDB 外部人物），始年 1008
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:348
   type: 其他
-  note: 與對方結黨：趙昌言（CBDB 外部人物）
+  note: 与对方结党：赵昌言（CBDB 外部人物）
   src: cbdb
   assoc_code: 21
   direction: forward
 - to_id: cbdb:974
   type: 其他
-  note: 與對方結黨：李昌齡（CBDB 外部人物）
+  note: 与对方结党：李昌龄（CBDB 外部人物）
   src: cbdb
   assoc_code: 21
   direction: forward
 - to_id: cbdb:1133
   type: 其他
-  note: 與對方結黨：梁顥（CBDB 外部人物）
+  note: 与对方结党：梁颢（CBDB 外部人物）
   src: cbdb
   assoc_code: 21
   direction: forward
 - to_id: cbdb:1750
   type: 其他
-  note: 與對方結黨：董儼（CBDB 外部人物）
+  note: 与对方结党：董俨（CBDB 外部人物）
   src: cbdb
   assoc_code: 21
   direction: forward
 - to_id: cbdb:38443
   type: 其他
-  note: 與對方結黨：王繼恩（CBDB 外部人物）
+  note: 与对方结党：王继恩（CBDB 外部人物）
   src: cbdb
   assoc_code: 21
   direction: forward
 - to_id: cbdb:1885
   type: 其他
-  note: 喪事由對方經紀：王田（CBDB 外部人物）
+  note: 丧事由对方经纪：王田（CBDB 外部人物）
   src: cbdb
   assoc_code: 223
   direction: forward
 - to_id: cbdb:1615
   type: 其他
-  note: 收到對方的答書：田錫（CBDB 外部人物）
+  note: 收到对方的答书：田锡（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward

@@ -2,25 +2,25 @@ from_id: zhao_xiong_zhao
 relations:
 - to_id: cbdb:57355
   type: 父子
-  note: 父：趙申喬（CBDB 外部人物）
+  note: 父：赵申乔（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:84170
   type: 兄弟
-  note: 弟：趙鳳詔（CBDB 外部人物）
+  note: 弟：赵凤诏（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:85320
   type: 旁系
-  note: 外甥：洪公寀（CBDB 外部人物）
+  note: 外甥：洪公采（CBDB 外部人物）
   src: cbdb
   kin_code: 179
   direction: forward
 - to_id: cbdb:698315
   type: 父子
-  note: 子：趙侗斆（CBDB 外部人物）
+  note: 子：赵侗敩（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward

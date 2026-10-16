@@ -2,103 +2,103 @@ from_id: liu_meng_yan
 relations:
 - to_id: cbdb:42163
   type: 其他
-  note: 推薦：宗必經（CBDB 外部人物）
+  note: 推荐：宗必经（CBDB 外部人物）
   src: cbdb
   assoc_code: 13
   direction: forward
 - to_id: cbdb:100237
   type: 其他
-  note: 被對方欣賞/器重：鄭真（CBDB 外部人物）
+  note: 被对方欣赏/器重：郑真（CBDB 外部人物）
   src: cbdb
   assoc_code: 17
   direction: forward
 - to_id: cbdb:44584
   type: 其他
-  note: 欣賞/器重：孫潼發（CBDB 外部人物）
+  note: 欣赏/器重：孙潼发（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:105373
   type: 其他
-  note: 欣賞/器重：孫辰龍（CBDB 外部人物）
+  note: 欣赏/器重：孙辰龙（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:13847
   type: 政敌
-  note: 排擠：高斯得（CBDB 外部人物）
+  note: 排挤：高斯得（CBDB 外部人物）
   src: cbdb
   assoc_code: 29
   direction: forward
 - to_id: cbdb:13847
   type: 其他
-  note: 書跋由對方所作：高斯得（CBDB 外部人物）
+  note: 书跋由对方所作：高斯得（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:10389
   type: 其他
-  note: 傳記作者為對方：袁桷（CBDB 外部人物）
+  note: 传记作者为对方：袁桷（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:28617
   type: 其他
-  note: 臨別得到對方所作贈言(送別詩、序)：王惲（CBDB 外部人物）
+  note: 临别得到对方所作赠言(送别诗、序)：王恽（CBDB 外部人物）
   src: cbdb
   assoc_code: 163
   direction: forward
 - to_id: cbdb:27853
   type: 其他
-  note: 從對方處收到賀詞 (occasion)：程鉅夫（CBDB 外部人物）
+  note: 从对方处收到贺词 (occasion)：程巨夫（CBDB 外部人物）
   src: cbdb
   assoc_code: 391
   direction: forward
 - to_id: cbdb:28845
   type: 其他
-  note: 從對方處收到賀詞 (occasion)：張之翰（CBDB 外部人物）
+  note: 从对方处收到贺词 (occasion)：张之翰（CBDB 外部人物）
   src: cbdb
   assoc_code: 391
   direction: forward
 - to_id: cbdb:27801
   type: 其他
-  note: 被致書由對方：謝枋得（CBDB 外部人物）
+  note: 被致书由对方：谢枋得（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:10084
   type: 其他
-  note: 收到對方的贈詩、文：吳澄（CBDB 外部人物）
+  note: 收到对方的赠诗、文：吴澄（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:27825
   type: 其他
-  note: 收到對方的贈詩、文：汪元量（CBDB 外部人物）
+  note: 收到对方的赠诗、文：汪元量（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:27826
   type: 其他
-  note: 收到對方的贈詩、文：何夢桂（CBDB 外部人物）
+  note: 收到对方的赠诗、文：何梦桂（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:29308
   type: 其他
-  note: 收到對方的贈詩、文：陳孚（CBDB 外部人物）
+  note: 收到对方的赠诗、文：陈孚（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:35267
   type: 其他
-  note: 收到對方的贈詩、文：汪夢斗（CBDB 外部人物）
+  note: 收到对方的赠诗、文：汪梦斗（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:35400
   type: 其他
-  note: 收到對方的贈詩、文：陳義高（CBDB 外部人物）
+  note: 收到对方的赠诗、文：陈义高（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward

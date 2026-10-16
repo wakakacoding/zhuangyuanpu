@@ -2,91 +2,91 @@ from_id: su_yijian
 relations:
 - to_id: cbdb:4197
   type: 父子
-  note: 父：蘇協（CBDB 外部人物）
+  note: 父：苏协（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:1678
   type: 翁婿
-  note: 岳父：崔憲（CBDB 外部人物）
+  note: 岳父：崔宪（CBDB 外部人物）
   src: cbdb
   kin_code: 76
   direction: forward
 - to_id: cbdb:118915
   type: 母子
-  note: 母：薛氏(蘇易簡母)（CBDB 外部人物）
+  note: 母：薛氏(苏易简母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:119432
   type: 夫妻
-  note: 妻子：崔氏(蘇易簡妻)（CBDB 外部人物）
+  note: 妻子：崔氏(苏易简妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:19267
   type: 父子
-  note: 子：蘇壽（CBDB 外部人物）
+  note: 子：苏寿（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:19274
   type: 父子
-  note: 長子; 第一子：蘇叟（CBDB 外部人物）
+  note: 长子; 第一子：苏叟（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:21238
   type: 父子
-  note: 長子; 第一子：蘇宿（CBDB 外部人物）
+  note: 长子; 第一子：苏宿（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:1490
   type: 父子
-  note: 三子：蘇耆（CBDB 外部人物）
+  note: 三子：苏耆（CBDB 外部人物）
   src: cbdb
   kin_code: 184
   direction: forward
 - to_id: cbdb:19268
-  type: 祖孫
-  note: 曾孫; 重孫：蘇澄（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：苏澄（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:21246
-  type: 祖孫
-  note: 九世孫：蘇振文（CBDB 外部人物）
+  type: 祖孙
+  note: 九世孙：苏振文（CBDB 外部人物）
   src: cbdb
   kin_code: 281
   direction: forward
 - to_id: cbdb:890
   type: 其他
-  note: 是對方的恩主：康戩（CBDB 外部人物），始年 996
+  note: 是对方的恩主：康戬（CBDB 外部人物），始年 996
   src: cbdb
   assoc_code: 4
   direction: forward
 - to_id: cbdb:17006
   type: 其他
-  note: 欣賞/器重：易延慶（CBDB 外部人物）
+  note: 欣赏/器重：易延庆（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:16237
   type: 其他
-  note: 為對方所著書作序：錢昭度（CBDB 外部人物），始年 996
+  note: 为对方所著书作序：钱昭度（CBDB 外部人物），始年 996
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:7197
   type: 其他
-  note: 書跋由對方所作：周必大（CBDB 外部人物）
+  note: 书跋由对方所作：周必大（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:146
   type: 其他
-  note: 稱道對方的詩作：錢易（CBDB 外部人物）
+  note: 称道对方的诗作：钱易（CBDB 外部人物）
   src: cbdb
   assoc_code: 71
   direction: forward

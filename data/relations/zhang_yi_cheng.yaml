@@ -1,26 +1,26 @@
 from_id: zhang_yi_cheng
 relations:
 - to_id: cbdb:130527
-  type: 祖孫
-  note: 高祖;四世祖：張弼（CBDB 外部人物）
+  type: 祖孙
+  note: 高祖;四世祖：张弼（CBDB 外部人物）
   src: cbdb
   kin_code: 39
   direction: forward
 - to_id: cbdb:345868
   type: 父子
-  note: 子：張安茂（CBDB 外部人物）
+  note: 子：张安茂（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:30243
   type: 其他
-  note: 被致書由對方：馮時可（CBDB 外部人物）
+  note: 被致书由对方：冯时可（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:134778
   type: 其他
-  note: 被致書由對方：陳懿典（CBDB 外部人物）
+  note: 被致书由对方：陈懿典（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

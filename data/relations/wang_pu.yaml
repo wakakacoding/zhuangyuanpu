@@ -20,49 +20,49 @@ relations:
   direction: forward
 - to_id: cbdb:10683
   type: 旁系
-  note: 族人(輩分不詳)：王從浩（CBDB 外部人物）
+  note: 族人(辈分不详)：王从浩（CBDB 外部人物）
   src: cbdb
   kin_code: 147
   direction: forward
 - to_id: cbdb:22070
   type: 父子
-  note: 長子; 第一子：王貽孫（CBDB 外部人物）
+  note: 长子; 第一子：王贻孙（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:3960
   type: 父子
-  note: 次子：王貽正（CBDB 外部人物）
+  note: 次子：王贻正（CBDB 外部人物）
   src: cbdb
   kin_code: 183
   direction: forward
 - to_id: cbdb:22071
   type: 父子
-  note: 三子：王貽慶（CBDB 外部人物）
+  note: 三子：王贻庆（CBDB 外部人物）
   src: cbdb
   kin_code: 184
   direction: forward
 - to_id: cbdb:22072
   type: 父子
-  note: 四子：王貽矩（CBDB 外部人物）
+  note: 四子：王贻矩（CBDB 外部人物）
   src: cbdb
   kin_code: 185
   direction: forward
 - to_id: cbdb:1829
-  type: 祖孫
-  note: 孫：王貽永（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王贻永（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:570907
-  type: 祖孫
-  note: 孫：王渙（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王涣（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:91980
   type: 师生
-  note: 為對方之學生：王仁裕（CBDB 外部人物）
+  note: 为对方之学生：王仁裕（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward

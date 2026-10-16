@@ -2,25 +2,25 @@ from_id: yang_tingjian
 relations:
 - to_id: cbdb:76612
   type: 父子
-  note: 子：楊大鶴（CBDB 外部人物）
+  note: 子：杨大鹤（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:364907
   type: 父子
-  note: 子：楊大鯤（CBDB 外部人物）
+  note: 子：杨大鲲（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:130558
   type: 其他
-  note: 經紀對方之喪：張瑋（CBDB 外部人物）
+  note: 经纪对方之丧：张玮（CBDB 外部人物）
   src: cbdb
   assoc_code: 224
   direction: forward
 - to_id: cbdb:34215
   type: 其他
-  note: 與對方為講學：孫慎行（CBDB 外部人物）
+  note: 与对方为讲学：孙慎行（CBDB 外部人物）
   src: cbdb
   assoc_code: 596
   direction: forward

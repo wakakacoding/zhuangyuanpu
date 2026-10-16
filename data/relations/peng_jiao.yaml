@@ -1,13 +1,13 @@
 from_id: peng_jiao
 relations:
 - to_id: cbdb:324285
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：彭于古（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:324296
-  type: 祖孫
+  type: 祖孙
   note: 祖父：彭不同（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -20,7 +20,7 @@ relations:
   direction: forward
 - to_id: cbdb:324318
   type: 母子
-  note: 母：項氏(彭教母)（CBDB 外部人物）
+  note: 母：项氏(彭教母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
@@ -44,31 +44,31 @@ relations:
   direction: forward
 - to_id: cbdb:324374
   type: 兄弟
-  note: 兄：彭術（CBDB 外部人物）
+  note: 兄：彭术（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:324330
   type: 夫妻
-  note: 妻子：張氏(彭教妻)（CBDB 外部人物）
+  note: 妻子：张氏(彭教妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:133516
   type: 其他
-  note: 書序由對方所作：羅大紘（CBDB 外部人物）
+  note: 书序由对方所作：罗大纮（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:33920
   type: 其他
-  note: 墓誌銘由對方所作：彭華（CBDB 外部人物）
+  note: 墓志铭由对方所作：彭华（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:34510
   type: 其他
-  note: 畫贊(畫像記)由對方所作：倪岳（CBDB 外部人物）
+  note: 画赞(画像记)由对方所作：倪岳（CBDB 外部人物）
   src: cbdb
   assoc_code: 427
   direction: forward

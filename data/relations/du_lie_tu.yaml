@@ -1,8 +1,8 @@
 from_id: du_lie_tu
 relations:
   - to_id: cbdb:116206
-    type: 祖孫
-    note: 祖父：火失答兒（CBDB 外部人物）
+    type: 祖孙
+    note: 祖父：火失答儿（CBDB 外部人物）
     src: cbdb
     kin_code: 62
     direction: forward
@@ -14,37 +14,37 @@ relations:
     direction: forward
   - to_id: cbdb:114903
     type: 兄弟
-    note: 弟：觀音奴（CBDB 外部人物）
+    note: 弟：观音奴（CBDB 外部人物）
     src: cbdb
     kin_code: 126
     direction: forward
   - to_id: cbdb:27988
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：傅若金（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：傅若金（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:27998
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：宋褧（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：宋褧（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28410
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：王逢（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：王逢（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28460
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：貢師泰（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：贡师泰（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28615
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：王沂（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：王沂（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward

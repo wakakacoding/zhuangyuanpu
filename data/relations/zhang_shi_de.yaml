@@ -1,8 +1,8 @@
 from_id: zhang_shi_de
 relations:
 - to_id: cbdb:119930
-  type: 祖孫
-  note: 祖父：張裕（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：张裕（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
@@ -14,19 +14,19 @@ relations:
   direction: forward
 - to_id: cbdb:282
   type: 兄弟
-  note: 兄弟：張師顏（CBDB 外部人物）
+  note: 兄弟：张师颜（CBDB 外部人物）
   src: cbdb
   kin_code: 118
   direction: forward
 - to_id: cbdb:119968
   type: 父子
-  note: 子：張中憲（CBDB 外部人物）
+  note: 子：张中宪（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:699340
   type: 父子
-  note: 子：張景思（CBDB 外部人物）
+  note: 子：张景思（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
@@ -38,25 +38,25 @@ relations:
   direction: forward
 - to_id: cbdb:205
   type: 父子
-  note: 次子：張景憲（CBDB 外部人物）
+  note: 次子：张景宪（CBDB 外部人物）
   src: cbdb
   kin_code: 183
   direction: forward
 - to_id: cbdb:699339
-  type: 祖孫
-  note: 孫：張立（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：张立（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:699345
-  type: 祖孫
-  note: 孫：張亶（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：张亶（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:8153
   type: 政敌
-  note: 遭到對方的反對/攻訐：王旦（CBDB 外部人物）
+  note: 遭到对方的反对/攻讦：王旦（CBDB 外部人物）
   src: cbdb
   assoc_code: 16
   direction: forward

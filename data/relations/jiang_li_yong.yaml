@@ -1,20 +1,20 @@
 from_id: jiang_li_yong
 relations:
 - to_id: cbdb:527234
-  type: 祖孫
-  note: 高祖;四世祖：蔣遇（CBDB 外部人物）
+  type: 祖孙
+  note: 高祖;四世祖：蒋遇（CBDB 外部人物）
   src: cbdb
   kin_code: 39
   direction: forward
 - to_id: cbdb:527233
-  type: 祖孫
-  note: 祖父：蔣其暄（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：蒋其暄（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:75028
   type: 其他
-  note: 同鄉：劉廷榆（CBDB 外部人物）
+  note: 同乡：刘廷榆（CBDB 外部人物）
   src: cbdb
   assoc_code: 94
   direction: forward

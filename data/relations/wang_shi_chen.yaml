@@ -2,7 +2,7 @@ from_id: wang_shi_chen
 relations:
 - to_id: cbdb:695107
   type: 兄弟
-  note: 兄：王世繩（CBDB 外部人物）
+  note: 兄：王世绳（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward

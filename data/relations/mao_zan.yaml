@@ -1,13 +1,13 @@
 from_id: mao_zan
 relations:
 - to_id: cbdb:298606
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：茅仕安（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:298607
-  type: 祖孫
+  type: 祖孙
   note: 祖父：茅茂（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -20,7 +20,7 @@ relations:
   direction: forward
 - to_id: cbdb:298609
   type: 母子
-  note: 母：張氏(茅瓚母)（CBDB 外部人物）
+  note: 母：张氏(茅瓒母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
@@ -38,43 +38,43 @@ relations:
   direction: forward
 - to_id: cbdb:298611
   type: 夫妻
-  note: 妻子：方氏(茅瓚妻)（CBDB 外部人物）
+  note: 妻子：方氏(茅瓒妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:69560
-  type: 祖孫
-  note: 孫：茅鼐（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：茅鼐（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:298610
   type: 母子
-  note: 繼母：茹氏(茅瓚繼母)（CBDB 外部人物）
+  note: 继母：茹氏(茅瓒继母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:69557
   type: 姻亲
-  note: 孫媳：梁孟昭（CBDB 外部人物）
+  note: 孙媳：梁孟昭（CBDB 外部人物）
   src: cbdb
   kin_code: 464
   direction: forward
 - to_id: zhu_da_shou
   type: 其他
-  note: 墓誌銘由對方所作（CBDB）
+  note: 墓志铭由对方所作（CBDB）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:128233
   type: 其他
-  note: 為對方作墓誌銘：吳源（CBDB 外部人物）
+  note: 为对方作墓志铭：吴源（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:126791
   type: 其他
-  note: 收到對方的贈詩、文：王維楨（CBDB 外部人物）
+  note: 收到对方的赠诗、文：王维桢（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward

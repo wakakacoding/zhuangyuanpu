@@ -2,7 +2,7 @@ from_id: an_de_yu
 relations:
 - to_id: cbdb:39402
   type: 父子
-  note: 父：安重榮（CBDB 外部人物）
+  note: 父：安重荣（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward

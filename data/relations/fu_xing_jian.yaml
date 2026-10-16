@@ -8,7 +8,7 @@ relations:
   direction: forward
 - to_id: cbdb:42400
   type: 同年
-  note: 同年友：何應龍（CBDB 外部人物）
+  note: 同年友：何应龙（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward

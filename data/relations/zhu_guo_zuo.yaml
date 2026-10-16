@@ -1,13 +1,13 @@
 from_id: zhu_guo_zuo
 relations:
 - to_id: cbdb:222074
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：朱恭（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:222075
-  type: 祖孫
+  type: 祖孙
   note: 祖父：朱彩（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -20,127 +20,127 @@ relations:
   direction: forward
 - to_id: cbdb:222080
   type: 兄弟
-  note: 兄：朱國禎（CBDB 外部人物）
+  note: 兄：朱国祯（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:222081
   type: 兄弟
-  note: 兄：朱國賢（CBDB 外部人物）
+  note: 兄：朱国贤（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:222083
   type: 兄弟
-  note: 兄：朱國祥（CBDB 外部人物）
+  note: 兄：朱国祥（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:222084
   type: 兄弟
-  note: 兄：朱國士（CBDB 外部人物）
+  note: 兄：朱国士（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:222085
   type: 兄弟
-  note: 兄：朱國臣（CBDB 外部人物）
+  note: 兄：朱国臣（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:222086
   type: 兄弟
-  note: 弟：朱國禮（CBDB 外部人物）
+  note: 弟：朱国礼（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:222079
   type: 夫妻
-  note: 妻子：何氏(朱國祚妻)（CBDB 外部人物）
+  note: 妻子：何氏(朱国祚妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:30143
   type: 旁系
-  note: 從子;姪子：朱大啟（CBDB 外部人物）
+  note: 从子;姪子：朱大启（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:30145
-  type: 祖孫
-  note: 曾孫; 重孫：朱彝鑒（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：朱彝鉴（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:66032
-  type: 祖孫
-  note: 曾孫; 重孫：朱彝尊（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：朱彝尊（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:222078
   type: 母子
-  note: 私生子女之本生母：王氏(朱國祚生母)（CBDB 外部人物）
+  note: 私生子女之本生母：王氏(朱国祚生母)（CBDB 外部人物）
   src: cbdb
   kin_code: 377
   direction: forward
 - to_id: cbdb:222077
   type: 母子
-  note: 嫡母：唐氏(朱國祚嫡母)（CBDB 外部人物）
+  note: 嫡母：唐氏(朱国祚嫡母)（CBDB 外部人物）
   src: cbdb
   kin_code: 420
   direction: forward
 - to_id: cbdb:131951
   type: 其他
-  note: 祭文由對方所作：葉向高（CBDB 外部人物）
+  note: 祭文由对方所作：叶向高（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:30240
   type: 其他
-  note: 被致書由對方：馮夢禎（CBDB 外部人物）
+  note: 被致书由对方：冯梦祯（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:56580
   type: 其他
-  note: 被致書由對方：茅元儀（CBDB 外部人物）
+  note: 被致书由对方：茅元仪（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:124967
   type: 其他
-  note: 被致書由對方：丁賓（CBDB 外部人物）
+  note: 被致书由对方：丁宾（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:125520
   type: 其他
-  note: 被致書由對方：郭正域（CBDB 外部人物）
+  note: 被致书由对方：郭正域（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:134652
   type: 其他
-  note: 被致書由對方：何三畏（CBDB 外部人物）
+  note: 被致书由对方：何三畏（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:551099
   type: 其他
-  note: 被致書由對方：鄭心材（CBDB 外部人物）
+  note: 被致书由对方：郑心材（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:130954
   type: 其他
-  note: 收到對方的贈詩、文：陳萬言（CBDB 外部人物）
+  note: 收到对方的赠诗、文：陈万言（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:133653
   type: 其他
-  note: 收到對方的贈詩、文：顧起元（CBDB 外部人物）
+  note: 收到对方的赠诗、文：顾起元（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward

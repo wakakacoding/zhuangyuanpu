@@ -2,7 +2,7 @@ from_id: yang_hui_zhi
 relations:
 - to_id: cbdb:12938
   type: 父子
-  note: 父：楊澄（CBDB 外部人物）
+  note: 父：杨澄（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -14,7 +14,7 @@ relations:
   direction: forward
 - to_id: cbdb:49637
   type: 夫妻
-  note: 妻子：王氏(楊徽之妻)（CBDB 外部人物）
+  note: 妻子：王氏(杨徽之妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
@@ -25,92 +25,92 @@ relations:
   kin_code: 181
   direction: forward
 - to_id: cbdb:1575
-  type: 祖孫
-  note: 外孫：宋綬（CBDB 外部人物）
+  type: 祖孙
+  note: 外孙：宋绶（CBDB 外部人物）
   src: cbdb
   kin_code: 238
   direction: forward
 - to_id: cbdb:7097
   type: 旁系
-  note: 姪孫;從孫：楊億（CBDB 外部人物）
+  note: 姪孙;从孙：杨亿（CBDB 外部人物）
   src: cbdb
   kin_code: 240
   direction: forward
 - to_id: cbdb:119797
   type: 旁系
-  note: 姪孫;從孫：楊集（CBDB 外部人物）
+  note: 姪孙;从孙：杨集（CBDB 外部人物）
   src: cbdb
   kin_code: 240
   direction: forward
 - to_id: cbdb:119812
   type: 旁系
-  note: 姪孫;從孫：楊偃（CBDB 外部人物）
+  note: 姪孙;从孙：杨偃（CBDB 外部人物）
   src: cbdb
   kin_code: 240
   direction: forward
 - to_id: cbdb:898
   type: 政敌
-  note: 反對/攻訐：寇準（CBDB 外部人物）
+  note: 反对/攻讦：寇准（CBDB 外部人物）
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:1950
   type: 政敌
-  note: 反對/攻訐：溫仲舒（CBDB 外部人物）
+  note: 反对/攻讦：温仲舒（CBDB 外部人物）
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:8116
   type: 其他
-  note: 墓誌銘由對方所作：蘇頌（CBDB 外部人物），始年 986
+  note: 墓志铭由对方所作：苏颂（CBDB 外部人物），始年 986
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:12236
   type: 其他
-  note: 為對方作祭文：徐鉉（CBDB 外部人物），始年 992
+  note: 为对方作祭文：徐铉（CBDB 外部人物），始年 992
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:8075
   type: 其他
-  note: 同會：李昉（CBDB 外部人物），始年 995
+  note: 同会：李昉（CBDB 外部人物），始年 995
   src: cbdb
   assoc_code: 268
   direction: forward
 - to_id: cbdb:1575
   type: 其他
-  note: 喜爱：宋綬（CBDB 外部人物）
+  note: 喜爱：宋绶（CBDB 外部人物）
   src: cbdb
   assoc_code: 359
   direction: forward
 - to_id: cbdb:7097
   type: 其他
-  note: 行狀由對方所作：楊億（CBDB 外部人物）
+  note: 行状由对方所作：杨亿（CBDB 外部人物）
   src: cbdb
   assoc_code: 425
   direction: forward
 - to_id: cbdb:49981
   type: 其他
-  note: 贈詩、文：廖融（CBDB 外部人物）
+  note: 赠诗、文：廖融（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:447390
   type: 其他
-  note: 贈詩、文：江爲（CBDB 外部人物）
+  note: 赠诗、文：江为（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:450377
   type: 其他
-  note: 贈詩、文：鄭起（CBDB 外部人物）
+  note: 赠诗、文：郑起（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:10258
   type: 其他
-  note: 建築物得到對方的題詠、記、命名：真德秀（CBDB 外部人物）
+  note: 建筑物得到对方的题咏、记、命名：真德秀（CBDB 外部人物）
   src: cbdb
   assoc_code: 444
   direction: forward

@@ -2,7 +2,7 @@ from_id: lin_hong_nian
 relations:
 - to_id: cbdb:118279
   type: 母子
-  note: 母：謝氏(林鴻年母)（CBDB 外部人物）
+  note: 母：谢氏(林鸿年母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward

@@ -2,7 +2,7 @@ from_id: yao_lai
 relations:
 - to_id: cbdb:68196
   type: 父子
-  note: 父：姚鏌（CBDB 外部人物）
+  note: 父：姚镆（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -14,31 +14,31 @@ relations:
   direction: forward
 - to_id: cbdb:340423
   type: 其他
-  note: 得到對方的支持：謝應龍（CBDB 外部人物）
+  note: 得到对方的支持：谢应龙（CBDB 外部人物）
   src: cbdb
   assoc_code: 26
   direction: forward
 - to_id: cbdb:68272
   type: 其他
-  note: 書序由對方所作：趙時春（CBDB 外部人物）
+  note: 书序由对方所作：赵时春（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:129743
   type: 其他
-  note: 為對方作墓誌銘：孫修（CBDB 外部人物）
+  note: 为对方作墓志铭：孙修（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:129475
   type: 其他
-  note: 為對方作傳：唐儼（CBDB 外部人物）
+  note: 为对方作传：唐俨（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward
 - to_id: cbdb:34663
   type: 其他
-  note: 被致書由對方：張岳（CBDB 外部人物）
+  note: 被致书由对方：张岳（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

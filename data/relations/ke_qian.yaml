@@ -1,32 +1,32 @@
 from_id: ke_qian
 relations:
 - to_id: cbdb:523906
-  type: 祖孫
-  note: 高祖;四世祖：柯憲孫（CBDB 外部人物）
+  type: 祖孙
+  note: 高祖;四世祖：柯宪孙（CBDB 外部人物）
   src: cbdb
   kin_code: 39
   direction: forward
 - to_id: cbdb:242630
-  type: 祖孫
-  note: 曾祖：柯均實（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：柯均实（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:523901
-  type: 祖孫
-  note: 曾祖：柯君寶（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：柯君宝（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:242741
-  type: 祖孫
+  type: 祖孙
   note: 祖父：柯德平（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:242852
   type: 父子
-  note: 父：柯原樸（CBDB 外部人物）
+  note: 父：柯原朴（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -38,7 +38,7 @@ relations:
   direction: forward
 - to_id: cbdb:242963
   type: 母子
-  note: 母：戴氏(柯潛母)（CBDB 外部人物）
+  note: 母：戴氏(柯潜母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
@@ -68,7 +68,7 @@ relations:
   direction: forward
 - to_id: cbdb:243630
   type: 兄弟
-  note: 弟：柯溫（CBDB 外部人物）
+  note: 弟：柯温（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -80,7 +80,7 @@ relations:
   direction: forward
 - to_id: cbdb:243074
   type: 夫妻
-  note: 妻子：戴氏(柯潛妻)（CBDB 外部人物）
+  note: 妻子：戴氏(柯潜妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
@@ -98,25 +98,25 @@ relations:
   direction: forward
 - to_id: cbdb:25127
   type: 其他
-  note: 為對方所著書作序：羅從彥（CBDB 外部人物）
+  note: 为对方所著书作序：罗从彦（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:126815
   type: 其他
-  note: 傳記作者為對方：王㒜（CBDB 外部人物）
+  note: 传记作者为对方：王㒜（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:28691
   type: 其他
-  note: 祭文由對方所作：李東陽（CBDB 外部人物）
+  note: 祭文由对方所作：李东阳（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:66920
   type: 其他
-  note: 為對方作墓表：陳泰（CBDB 外部人物）
+  note: 为对方作墓表：陈泰（CBDB 外部人物）
   src: cbdb
   assoc_code: 410
   direction: forward

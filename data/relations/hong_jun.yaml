@@ -1,14 +1,14 @@
 from_id: hong_jun
 relations:
 - to_id: cbdb:521594
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：洪士澍（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:521597
-  type: 祖孫
-  note: 祖父：洪啟立（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：洪启立（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward

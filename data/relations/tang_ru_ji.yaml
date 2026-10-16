@@ -1,26 +1,26 @@
 from_id: tang_ru_ji
 relations:
 - to_id: cbdb:311647
-  type: 祖孫
-  note: 曾祖：唐賢（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：唐贤（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:311648
-  type: 祖孫
-  note: 祖父：唐學（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：唐学（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:68335
   type: 父子
-  note: 父：唐龍（CBDB 外部人物）
+  note: 父：唐龙（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:311652
   type: 母子
-  note: 母：劉氏(唐汝楫母)（CBDB 外部人物）
+  note: 母：刘氏(唐汝楫母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
@@ -62,13 +62,13 @@ relations:
   direction: forward
 - to_id: cbdb:311660
   type: 兄弟
-  note: 弟：唐汝陽（CBDB 外部人物）
+  note: 弟：唐汝阳（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:311661
   type: 兄弟
-  note: 弟：唐汝禮（CBDB 外部人物）
+  note: 弟：唐汝礼（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -98,91 +98,91 @@ relations:
   direction: forward
 - to_id: cbdb:311650
   type: 母子
-  note: 繼母：徐氏(唐汝楫前母)（CBDB 外部人物）
+  note: 继母：徐氏(唐汝楫前母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:371196
   type: 政敌
-  note: 被對方彈劾：陳瓚（CBDB 外部人物）
+  note: 被对方弹劾：陈瓒（CBDB 外部人物）
   src: cbdb
   assoc_code: 12
   direction: forward
 - to_id: cbdb:124886
   type: 师生
-  note: 門人為對方：吳文華（CBDB 外部人物）
+  note: 门人为对方：吴文华（CBDB 外部人物）
   src: cbdb
   assoc_code: 20
   direction: forward
 - to_id: cbdb:132225
   type: 师生
-  note: 門人為對方：趙賢（CBDB 外部人物）
+  note: 门人为对方：赵贤（CBDB 外部人物）
   src: cbdb
   assoc_code: 20
   direction: forward
 - to_id: cbdb:125411
   type: 其他
-  note: 支持：嚴嵩（CBDB 外部人物）
+  note: 支持：严嵩（CBDB 外部人物）
   src: cbdb
   assoc_code: 27
   direction: forward
 - to_id: cbdb:445050
   type: 其他
-  note: 書序由對方所作：徐應亨（CBDB 外部人物），始年 1614
+  note: 书序由对方所作：徐应亨（CBDB 外部人物），始年 1614
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:133218
   type: 其他
-  note: 為對方作墓誌銘：應檟（CBDB 外部人物）
+  note: 为对方作墓志铭：应槚（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:314243
   type: 其他
-  note: 為對方作墓誌銘：胡媚永（CBDB 外部人物）
+  note: 为对方作墓志铭：胡媚永（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:417084
   type: 其他
-  note: 為對方作墓誌銘：祝珝（CBDB 外部人物），始年 1567
+  note: 为对方作墓志铭：祝珝（CBDB 外部人物），始年 1567
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:68547
   type: 其他
-  note: 求對方為他人（第三方）作墓誌銘：徐階（CBDB 外部人物）
+  note: 求对方为他人（第三方）作墓志铭：徐阶（CBDB 外部人物）
   src: cbdb
   assoc_code: 154
   direction: forward
 - to_id: cbdb:124886
   type: 其他
-  note: 編輯對方之詩/文：吳文華（CBDB 外部人物）
+  note: 编辑对方之诗/文：吴文华（CBDB 外部人物）
   src: cbdb
   assoc_code: 341
   direction: forward
 - to_id: cbdb:132225
   type: 其他
-  note: 編輯對方之詩/文：趙賢（CBDB 外部人物）
+  note: 编辑对方之诗/文：赵贤（CBDB 外部人物）
   src: cbdb
   assoc_code: 341
   direction: forward
 - to_id: cbdb:126791
   type: 其他
-  note: 被致書由對方：王維楨（CBDB 外部人物）
+  note: 被致书由对方：王维桢（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:134659
   type: 其他
-  note: 建築物得到對方的題詠、記、命名：張爕（CBDB 外部人物）
+  note: 建筑物得到对方的题咏、记、命名：张爕（CBDB 外部人物）
   src: cbdb
   assoc_code: 444
   direction: forward
 - to_id: cbdb:314055
   type: 其他
-  note: 為對方作祠記：劉桐（CBDB 外部人物），始年 1560
+  note: 为对方作祠记：刘桐（CBDB 外部人物），始年 1560
   src: cbdb
   assoc_code: 560
   direction: forward

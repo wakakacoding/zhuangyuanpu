@@ -1,122 +1,122 @@
 from_id: chen_jin
 relations:
 - to_id: cbdb:314883
-  type: 祖孫
-  note: 曾祖：陳志（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：陈志（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:314886
-  type: 祖孫
-  note: 祖父：陳㻠（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：陈㻠（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:314887
   type: 父子
-  note: 父：陳伯亮（CBDB 外部人物）
+  note: 父：陈伯亮（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:314888
   type: 母子
-  note: 母：卓氏(陳謹母)（CBDB 外部人物）
+  note: 母：卓氏(陈谨母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:314893
   type: 兄弟
-  note: 弟：陳記（CBDB 外部人物）
+  note: 弟：陈记（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314894
   type: 兄弟
-  note: 弟：陳文猷（CBDB 外部人物）
+  note: 弟：陈文猷（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314895
   type: 兄弟
-  note: 弟：陳大經（CBDB 外部人物）
+  note: 弟：陈大经（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314897
   type: 兄弟
-  note: 弟：陳詢（CBDB 外部人物）
+  note: 弟：陈询（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314898
   type: 兄弟
-  note: 弟：陳諮（CBDB 外部人物）
+  note: 弟：陈咨（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314899
   type: 兄弟
-  note: 弟：陳諟（CBDB 外部人物）
+  note: 弟：陈諟（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314900
   type: 兄弟
-  note: 弟：陳諤（CBDB 外部人物）
+  note: 弟：陈谔（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314901
   type: 兄弟
-  note: 弟：陳詩（CBDB 外部人物）
+  note: 弟：陈诗（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314902
   type: 兄弟
-  note: 弟：陳誨（CBDB 外部人物）
+  note: 弟：陈诲（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:314891
   type: 夫妻
-  note: 妻子：石氏(陳謹妻)（CBDB 外部人物）
+  note: 妻子：石氏(陈谨妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:314892
   type: 夫妻
-  note: 第二任妻：鄧氏(陳謹繼妻)（CBDB 外部人物）
+  note: 第二任妻：邓氏(陈谨继妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 163
   direction: forward
 - to_id: cbdb:314889
   type: 母子
-  note: 繼母：林氏(陳謹前母)（CBDB 外部人物）
+  note: 继母：林氏(陈谨前母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:314890
   type: 母子
-  note: 繼母：林氏(陳謹前母)（CBDB 外部人物）
+  note: 继母：林氏(陈谨前母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:68547
   type: 其他
-  note: 墓誌銘由對方所作：徐階（CBDB 外部人物）
+  note: 墓志铭由对方所作：徐阶（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:127936
   type: 其他
-  note: 祭文由對方所作：李貴（CBDB 外部人物）
+  note: 祭文由对方所作：李贵（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:124070
   type: 其他
-  note: 行狀由對方所作：張四維（CBDB 外部人物）
+  note: 行状由对方所作：张四维（CBDB 外部人物）
   src: cbdb
   assoc_code: 425
   direction: forward

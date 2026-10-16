@@ -1,20 +1,20 @@
 from_id: mao_cheng
 relations:
 - to_id: cbdb:263787
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：毛伯振（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:263788
-  type: 祖孫
+  type: 祖孙
   note: 祖父：毛弼（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:263789
   type: 父子
-  note: 父：毛昇（CBDB 外部人物）
+  note: 父：毛升（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -44,7 +44,7 @@ relations:
   direction: forward
 - to_id: cbdb:263796
   type: 兄弟
-  note: 弟：毛淵（CBDB 外部人物）
+  note: 弟：毛渊（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -67,92 +67,92 @@ relations:
   kin_code: 180
   direction: forward
 - to_id: cbdb:525858
-  type: 祖孫
-  note: 孫：毛與立（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：毛与立（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:128602
   type: 其他
-  note: 為對方作墓誌銘：林岳（CBDB 外部人物）
+  note: 为对方作墓志铭：林岳（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:130164
   type: 其他
-  note: 為對方作墓誌銘：郭東山（CBDB 外部人物）
+  note: 为对方作墓志铭：郭东山（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:131817
   type: 其他
-  note: 為對方作墓誌銘：楊峻（CBDB 外部人物）
+  note: 为对方作墓志铭：杨峻（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:132034
   type: 其他
-  note: 為對方作墓誌銘：虞臣（CBDB 外部人物）
+  note: 为对方作墓志铭：虞臣（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:132870
   type: 其他
-  note: 為對方作墓誌銘：劉溥（CBDB 外部人物）
+  note: 为对方作墓志铭：刘溥（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:33645
   type: 其他
-  note: 祭文由對方所作：羅欽順（CBDB 外部人物）
+  note: 祭文由对方所作：罗钦顺（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:126516
   type: 其他
-  note: 祭文由對方所作：王同祖（CBDB 外部人物）
+  note: 祭文由对方所作：王同祖（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:126976
   type: 其他
-  note: 祭文由對方所作：毛憲（CBDB 外部人物）
+  note: 祭文由对方所作：毛宪（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:129192
   type: 其他
-  note: 祭文由對方所作：柴奇（CBDB 外部人物）
+  note: 祭文由对方所作：柴奇（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:133523
   type: 其他
-  note: 書、畫由對方作跋：羅玘（CBDB 外部人物）
+  note: 书、画由对方作跋：罗玘（CBDB 外部人物）
   src: cbdb
   assoc_code: 150
   direction: forward
 - to_id: cbdb:24554
   type: 其他
-  note: 臨別得到對方所作贈言(送別詩、序)：林俊（CBDB 外部人物）
+  note: 临别得到对方所作赠言(送别诗、序)：林俊（CBDB 外部人物）
   src: cbdb
   assoc_code: 163
   direction: forward
 - to_id: cbdb:129780
   type: 其他
-  note: 為對方作神道碑：孫銘（CBDB 外部人物）
+  note: 为对方作神道碑：孙铭（CBDB 外部人物）
   src: cbdb
   assoc_code: 406
   direction: forward
 - to_id: cbdb:34580
   type: 其他
-  note: 行狀由對方所作：邵寶（CBDB 外部人物）
+  note: 行状由对方所作：邵宝（CBDB 外部人物）
   src: cbdb
   assoc_code: 425
   direction: forward
 - to_id: cbdb:131843
   type: 其他
-  note: 被致書由對方：楊廉（CBDB 外部人物）
+  note: 被致书由对方：杨廉（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

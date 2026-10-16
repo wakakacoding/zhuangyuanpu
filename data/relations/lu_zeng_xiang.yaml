@@ -2,7 +2,7 @@ from_id: lu_zeng_xiang
 relations:
 - to_id: cbdb:66056
   type: 友人
-  note: 友：周星譽（CBDB 外部人物）
+  note: 友：周星誉（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward

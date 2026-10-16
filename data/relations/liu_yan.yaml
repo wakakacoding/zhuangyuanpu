@@ -1,104 +1,104 @@
 from_id: liu_yan
 relations:
 - to_id: cbdb:237461
-  type: 祖孫
-  note: 曾祖：劉惟德（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：刘惟德（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:237462
-  type: 祖孫
-  note: 祖父：劉永寧（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：刘永宁（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:237463
   type: 父子
-  note: 父：劉原性（CBDB 外部人物）
+  note: 父：刘原性（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:237464
   type: 母子
-  note: 母：楊氏(劉儼母)（CBDB 外部人物）
+  note: 母：杨氏(刘俨母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:237467
   type: 兄弟
-  note: 兄：劉宣光（CBDB 外部人物）
+  note: 兄：刘宣光（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:237468
   type: 兄弟
-  note: 兄：劉宣昭（CBDB 外部人物）
+  note: 兄：刘宣昭（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:237466
   type: 夫妻
-  note: 妻子：王氏(劉儼妻)（CBDB 外部人物）
+  note: 妻子：王氏(刘俨妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:523915
   type: 父子
-  note: 子：劉即（CBDB 外部人物）
+  note: 子：刘即（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:523916
   type: 父子
-  note: 子：劉敉（CBDB 外部人物）
+  note: 子：刘敉（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:523914
-  type: 祖孫
-  note: 五世祖;高曾祖：劉天聲（CBDB 外部人物）
+  type: 祖孙
+  note: 五世祖;高曾祖：刘天声（CBDB 外部人物）
   src: cbdb
   kin_code: 397
   direction: forward
 - to_id: cbdb:67977
   type: 其他
-  note: 為對方作墓誌銘：羅如墉（CBDB 外部人物）
+  note: 为对方作墓志铭：罗如墉（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:127123
   type: 其他
-  note: 為對方作墓誌銘：丘嵩（CBDB 外部人物）
+  note: 为对方作墓志铭：丘嵩（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:132491
   type: 其他
-  note: 為對方作墓誌銘：鄧崙（CBDB 外部人物）
+  note: 为对方作墓志铭：邓仑（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:126765
   type: 其他
-  note: 為對方作傳：王業（CBDB 外部人物）
+  note: 为对方作传：王业（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward
 - to_id: cbdb:34493
   type: 其他
-  note: 神道碑由對方所作：王直（CBDB 外部人物）
+  note: 神道碑由对方所作：王直（CBDB 外部人物）
   src: cbdb
   assoc_code: 405
   direction: forward
 - to_id: cbdb:67602
   type: 其他
-  note: 神道碑由對方所作：呂原（CBDB 外部人物）
+  note: 神道碑由对方所作：吕原（CBDB 外部人物）
   src: cbdb
   assoc_code: 405
   direction: forward
 - to_id: cbdb:29603
   type: 其他
-  note: 墓表由對方所作：李賢（CBDB 外部人物）
+  note: 墓表由对方所作：李贤（CBDB 外部人物）
   src: cbdb
   assoc_code: 409
   direction: forward

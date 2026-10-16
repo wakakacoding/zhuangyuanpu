@@ -2,7 +2,7 @@ from_id: wang_zheng
 relations:
 - to_id: cbdb:217
   type: 其他
-  note: 被對方奏論：張方平（CBDB 外部人物）
+  note: 被对方奏论：张方平（CBDB 外部人物）
   src: cbdb
   assoc_code: 554
   direction: forward

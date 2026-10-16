@@ -2,7 +2,7 @@ from_id: he_chang_yan
 relations:
 - to_id: cbdb:3336
   type: 旁系
-  note: 從父;伯叔父：何正臣（CBDB 外部人物）
+  note: 从父;伯叔父：何正臣（CBDB 外部人物）
   src: cbdb
   kin_code: 79
   direction: forward
@@ -13,8 +13,8 @@ relations:
   kin_code: 126
   direction: forward
 - to_id: cbdb:24202
-  type: 祖孫
-  note: 玄孫;四世孫：何嵩之（CBDB 外部人物）
+  type: 祖孙
+  note: 玄孙;四世孙：何嵩之（CBDB 外部人物）
   src: cbdb
   kin_code: 263
   direction: forward

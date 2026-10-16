@@ -1,0 +1,111 @@
+person_id: luo_hongxian
+events:
+  - year: 1504
+    year_precision: exact
+    type: 出生
+    title: 生于吉水橙溪，父循官山东按察副使
+    description: >-
+      墓志：「公讳洪先，字达夫，念庵其号。厥初豫章人，三徙而居吉水之橙溪。曾祖良，
+      广海卫经历；祖玉，以子贵，赠奉直大夫兵部员外郎；考循，举进士，仕至山东按察副使。
+      尝抗逆瑾，侃侃著风节。娶李氏，封宜人。以宏治甲子十月十四日生公。」本传记其父循
+      「历兵部武选郎中……历知镇江、淮安二府，徐州兵备副使，咸有声」。本传另记「洪先幼慕
+      罗伦为人」——罗伦亦吉水人、成化二年状元，与罗洪先同里先后抡元。
+    source_ids: [src_nianangong_muzhiming, src_mingshi_luohongxian]
+  - year: 1529
+    year_precision: exact
+    type: 夺魁
+    title: 嘉靖八年己丑科状元，世宗批其文「宜擢之首者」
+    description: >-
+      墓志：「嘉靖己丑，举进士第一，世宗批其文学正有见，言谠而意必忠，宜擢之首者。
+      授翰林院修撰。」本传但记「嘉靖八年举进士第一，授修撰，即请告归」。夺魁之时，
+      外舅太仆曾直闻报喜曰「幸吾婿建此大事」，先生曰「丈夫事业更有许大在，此等三年
+      递一人，奚足为大事也」——语见本传与《明儒学案》。是科第二名程文德，后亦以讲学名。
+    source_ids: [src_nianangong_muzhiming, src_mingshi_luohongxian, src_mingruxuean_luohongxian]
+  - year: 1532
+    year_precision: exact
+    type: 授官
+    title: 以病痊起复，充经筵展书官；寻遭父丧母忧，苫块蔬食各三年
+    description: >-
+      墓志：「壬辰，以病痊，起充经筵展书官。」壬辰即嘉靖十一年。本传记其「居二年，
+      诏劾请告逾期者，乃赴官。寻遭父丧，苫块蔬食，不入室者三年；继遭母忧，亦如之」。
+      《明儒学案》则记为「明年告归……已丁父艰，苫块蔬食，不入室者三年。继丁内艰，
+      居后丧复如前丧」——告归之年与丁艰之次第，诸本表述略异，本站并举。
+    source_ids: [src_nianangong_muzhiming, src_mingshi_luohongxian, src_mingruxuean_luohongxian]
+  - year: 1539
+    year_precision: exact
+    type: 授官
+    title: 十八年简宫僚，召拜左春坊左赞善，充经筵讲官
+    description: >-
+      本传：「十八年简宫僚，召拜春坊左赞善。」《明儒学案》作「十八年召拜左春坊左赞善，
+      逾年至京」；墓志作「己亥，召拜赞善、经筵讲官，凡三立朝，皆不逾岁而归」。己亥即
+      嘉靖十八年。此为罗洪先第三次立朝，前后皆不满一年。
+    source_ids: [src_mingshi_luohongxian, src_mingruxuean_luohongxian, src_nianangong_muzhiming]
+  - year: 1540
+    year_precision: exact
+    type: 罢官
+    title: 与唐顺之、赵时春疏请东宫受朝贺，忤旨，三人并黜为民
+    description: >-
+      本传：「明年冬，与司谏唐顺之、校书赵时春疏请来岁朝正后，皇太子出御文华殿，受群臣
+      朝贺。时帝数称疾不视朝，讳言储贰临朝事，见洪先等疏，大怒曰：『是料朕必不起也。』
+      降手诏百余言切责之，遂除三人名。」《明儒学案》系于「十八年召拜……十二月至京」
+      之下，墓志则记其「三立朝皆不逾岁而归」。三翰林同黜，时论以为异数；本站从本传
+      「明年冬」之文，系于嘉靖十九年（1540）。
+    source_ids: [src_mingshi_luohongxian, src_mingruxuean_luohongxian, src_nianangong_muzhiming]
+  - year: 1541
+    year_precision: about
+    type: 隐居
+    title: 归后辟石莲洞，默坐三年不出户，以「主静」补良知之说
+    description: >-
+      本传：「洪先归，益寻求守仁学。甘淡泊，炼寒暑，跃马挽强，考图观史……山中有石洞，
+      旧为虎穴，葺茅居之，命曰石莲。谢客，默坐一榻，三年不出户。」《明儒学案》记其
+      「辟石莲洞居之，默坐半榻间，不出户者三年」，并录其答王畿（龙溪）「即如均赋一事，
+      从六月至今半年，终日纷纷，未尝敢厌倦……自谓此即是静定功夫」。本传、学案均不系年，
+      近人据门人胡直《念庵先生行状》系于嘉靖二十五年（1546）十月，两说并存，本站以约年视之。
+    source_ids: [src_mingshi_luohongxian, src_mingruxuean_luohongxian]
+  - year: 1543
+    year_precision: about
+    type: 实业
+    title: 居乡为邑中均田赋、建水次仓、赈饥、画策御流寇
+    description: >-
+      墓志：「邑故多虚粮，言于有司，尽丈邑中，计亩而税，宿弊顿革。建同水乡水次仓，
+      去邑之虚丁二万。民以不困于赋役。岁饥，移书郡县，得粟数千石，率士友躬赈给之。
+      闽广寇流吉安，握兵者不能制。公为划策，严守而力战，寇遁。」本传所记略同，
+      唯赈饥作「得粟数十石」——与墓志「数千石」异文并存。诸事本传、墓志均不系年，
+      约在嘉靖中；其自述「儒者学在经世，而以无欲为本」即指此类。
+    source_ids: [src_nianangong_muzhiming, src_mingshi_luohongxian]
+  - year: 1555
+    year_precision: about
+    type: 著作
+    title: 增订元人朱思本《舆地图》，成《广舆图》二卷
+    description: >-
+      《明史·艺文志》著录「罗洪先《增补朱思本广舆图》二卷」。其书本据元朱思本《舆地图》
+      增订而成，凡为图四十、副图六十有八，并新创图例符号以标山、河、路界、府州县驿，
+      为我国现存最早的刻本综合地图集；嘉靖四十三年（1564）其同年胡松增补日本、琉球二图
+      付梓，此后万历七年钱岱等递有翻刻。诸家书目于其初刻之年皆无定说（国图藏本著录即称
+      「自序不署年月，初刻于何时今不可考」），故本站不系确年。
+    source_ids: [src_mingshi_yiwenzhi_luohongxian, src_mingshi_luohongxian]
+  - year: 1558
+    year_precision: exact
+    type: 隐居
+    title: 三十七年严嵩欲以边才起用，以毕志林壑报之
+    description: >-
+      《明儒学案》：「三十七年，严相嵩起唐顺之为兵部主事，次及先生。先生以毕志林壑报之。」
+      本传同，并记「顺之应召，欲挽之出……皆力辞」；《明儒学案》录其对唐顺之语：「天下事
+      为之非甲则乙，某所欲为而未能者，有公为之，何必有我？」四库馆臣亦据以评曰「人品高洁，
+      严嵩欲荐之而不得，则可谓凤翔千仞者矣」。墓志另记其归后「江涨，坏其室，巡抚马森欲为
+      营之，固辞不可」。
+    source_ids: [src_mingruxuean_luohongxian, src_mingshi_luohongxian, src_siku_niananji]
+  - year: 1564
+    year_precision: exact
+    type: 卒
+    title: 八月十五卒于松原新第，年六十一；赠光禄寺少卿，谥文恭
+    description: >-
+      墓志：「甲子八月十五，卒于松原之新第，年六十一。」甲子即嘉靖四十三年。临终室如
+      悬罄；门人曾同亨记其「贫固自好」。嘉靖四十四年（乙丑）七月十九日，子世光葬公于
+      桐江赤石潭冲天飞凤形山之原。隆庆改元，赠奉议大夫、光禄寺少卿，谥文恭。
+      **两处异说并存**：① 卒年——《明史》本传作「隆庆初，卒」，然甲子（1564）去隆庆元年
+      （1567）尚三年，本传当系将赠谥之年混入卒年，本站从墓志与《明儒学案》「四十三年卒，
+      年六十一」；② 谥号——《明史》作「文庄」，墓志与《明儒学案》卷十八篇题、篇末并作
+      「文恭」，本站从墓志、学案，本传「文庄」之说并存备考。又《明儒学案》四库全书本
+      此处作「四十二年卒」，与生年不符，属版本之讹。
+    source_ids: [src_nianangong_muzhiming, src_mingshi_luohongxian, src_mingruxuean_luohongxian]

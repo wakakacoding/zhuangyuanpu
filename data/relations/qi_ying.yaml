@@ -2,7 +2,7 @@ from_id: qi_ying
 relations:
 - to_id: cbdb:184204
   type: 父子
-  note: 父：齊玘（CBDB 外部人物）
+  note: 父：齐玘（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -13,50 +13,50 @@ relations:
   kin_code: 76
   direction: forward
 - to_id: cbdb:15749
-  type: 祖孫
-  note: 直系後裔：齊安（CBDB 外部人物）
+  type: 祖孙
+  note: 直系后裔：齐安（CBDB 外部人物）
   src: cbdb
   kin_code: 303
   direction: forward
 - to_id: cbdb:31736
   type: 其他
-  note: 被對方推薦：盧杞（CBDB 外部人物），始年 781
+  note: 被对方推荐：卢杞（CBDB 外部人物），始年 781
   src: cbdb
   assoc_code: 14
   direction: forward
 - to_id: cbdb:24691
   type: 同僚
-  note: 為對方之幕僚：馬燧（CBDB 外部人物）
+  note: 为对方之幕僚：马燧（CBDB 外部人物）
   src: cbdb
   assoc_code: 66
   direction: forward
 - to_id: cbdb:32970
   type: 同僚
-  note: 為對方之幕僚：令狐彰（CBDB 外部人物）
+  note: 为对方之幕僚：令狐彰（CBDB 外部人物）
   src: cbdb
   assoc_code: 66
   direction: forward
 - to_id: cbdb:33096
   type: 同僚
-  note: 為對方之幕僚：張鎰（CBDB 外部人物）
+  note: 为对方之幕僚：张镒（CBDB 外部人物）
   src: cbdb
   assoc_code: 66
   direction: forward
 - to_id: cbdb:33487
   type: 其他
-  note: 收到對方的贈詩、文：李益（CBDB 外部人物）
+  note: 收到对方的赠诗、文：李益（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:92328
   type: 其他
-  note: 收到對方的贈詩、文：盧綸（CBDB 外部人物）
+  note: 收到对方的赠诗、文：卢纶（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:94240
   type: 其他
-  note: 收到對方的贈詩、文：顧況（CBDB 外部人物）
+  note: 收到对方的赠诗、文：顾况（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward

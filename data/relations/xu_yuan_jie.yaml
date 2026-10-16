@@ -2,13 +2,13 @@ from_id: xu_yuan_jie
 relations:
 - to_id: cbdb:22005
   type: 兄弟
-  note: 從兄弟;堂兄弟：徐元得（CBDB 外部人物）
+  note: 从兄弟;堂兄弟：徐元得（CBDB 外部人物）
   src: cbdb
   kin_code: 119
   direction: forward
 - to_id: cbdb:105540
   type: 旁系
-  note: 從子;姪子：徐九齡（CBDB 外部人物）
+  note: 从子;姪子：徐九龄（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
@@ -20,103 +20,103 @@ relations:
   direction: forward
 - to_id: cbdb:12820
   type: 同年
-  note: 同年友：葉大有（CBDB 外部人物）
+  note: 同年友：叶大有（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:47335
   type: 同年
-  note: 同年友：張濟之（CBDB 外部人物）
+  note: 同年友：张济之（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:3728
   type: 政敌
-  note: 反對/攻訐：史嵩之（CBDB 外部人物）
+  note: 反对/攻讦：史嵩之（CBDB 外部人物）
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:10948
   type: 其他
-  note: 書序由對方所作：趙汝騰（CBDB 外部人物）
+  note: 书序由对方所作：赵汝腾（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:10258
   type: 其他
-  note: 為對方學派的成員：真德秀（CBDB 外部人物），始年 1245
+  note: 为对方学派的成员：真德秀（CBDB 外部人物），始年 1245
   src: cbdb
   assoc_code: 34
   direction: forward
 - to_id: cbdb:22004
   type: 师生
-  note: 為對方之弟子：陳文蔚（CBDB 外部人物）
+  note: 为对方之弟子：陈文蔚（CBDB 外部人物）
   src: cbdb
   assoc_code: 36
   direction: forward
 - to_id: cbdb:22009
   type: 其他
-  note: 為對方作墓誌銘：王窳（CBDB 外部人物）
+  note: 为对方作墓志铭：王窳（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:37851
   type: 其他
-  note: 為對方作墓誌銘：方桂（CBDB 外部人物）
+  note: 为对方作墓志铭：方桂（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:38277
   type: 其他
-  note: 為對方作墓誌銘：方子方（CBDB 外部人物）
+  note: 为对方作墓志铭：方子方（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:35282
   type: 其他
-  note: 為對方作墓誌銘：吳如愚（CBDB 外部人物），始年 1245
+  note: 为对方作墓志铭：吴如愚（CBDB 外部人物），始年 1245
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:3257
   type: 其他
-  note: 為對方所著書作跋：朱熹（CBDB 外部人物）
+  note: 为对方所著书作跋：朱熹（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:25514
   type: 其他
-  note: 為對方所著書作跋：趙訓之（CBDB 外部人物）
+  note: 为对方所著书作跋：赵训之（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:26913
   type: 其他
-  note: 為對方所著書作跋：劉輝（CBDB 外部人物）
+  note: 为对方所著书作跋：刘辉（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:3595
   type: 其他
-  note: 祭文由對方所作：劉克莊（CBDB 外部人物），始年 1245
+  note: 祭文由对方所作：刘克庄（CBDB 外部人物），始年 1245
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:21180
   type: 其他
-  note: 祭文由對方所作：方岳（CBDB 外部人物），始年 1245
+  note: 祭文由对方所作：方岳（CBDB 外部人物），始年 1245
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:14973
   type: 其他
-  note: 臨別得到對方所作贈言(送別詩、序)：劉爚（CBDB 外部人物），始年 1245
+  note: 临别得到对方所作赠言(送别诗、序)：刘爚（CBDB 外部人物），始年 1245
   src: cbdb
   assoc_code: 163
   direction: forward
 - to_id: cbdb:22004
   type: 其他
-  note: 臨別得到對方所作贈言(送別詩、序)：陳文蔚（CBDB 外部人物），始年 1245
+  note: 临别得到对方所作赠言(送别诗、序)：陈文蔚（CBDB 外部人物），始年 1245
   src: cbdb
   assoc_code: 163
   direction: forward
@@ -128,79 +128,79 @@ relations:
   direction: forward
 - to_id: cbdb:1391
   type: 其他
-  note: 為對方作畫贊(畫像記)：龐籍（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：庞籍（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:7055
   type: 其他
-  note: 為對方作畫贊(畫像記)：呂祖謙（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：吕祖谦（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:11811
   type: 其他
-  note: 為對方作畫贊(畫像記)：劉韐（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：刘韐（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:20584
   type: 其他
-  note: 為對方作畫贊(畫像記)：陸九齡（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：陆九龄（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:25265
   type: 其他
-  note: 為對方作畫贊(畫像記)：趙士礽（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：赵士礽（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:25269
   type: 其他
-  note: 為對方作畫贊(畫像記)：趙不逿（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：赵不逿（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:26262
   type: 其他
-  note: 為對方作畫贊(畫像記)：祝可久（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：祝可久（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:30359
   type: 其他
-  note: 為對方作畫贊(畫像記)：辛棄疾（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：辛弃疾（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:49291
   type: 其他
-  note: 為對方作畫贊(畫像記)：賈逸祖（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：贾逸祖（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:46059
   type: 其他
-  note: 為對方之建築物題詠、記、命名：金衡（CBDB 外部人物）
+  note: 为对方之建筑物题咏、记、命名：金衡（CBDB 外部人物）
   src: cbdb
   assoc_code: 443
   direction: forward
 - to_id: cbdb:10831
   type: 其他
-  note: 為對方乞某事：李心傳（CBDB 外部人物）
+  note: 为对方乞某事：李心传（CBDB 外部人物）
   src: cbdb
   assoc_code: 551
   direction: forward
 - to_id: cbdb:24854
   type: 其他
-  note: 為對方乞某事：劉漢弻（CBDB 外部人物）
+  note: 为对方乞某事：刘汉弻（CBDB 外部人物）
   src: cbdb
   assoc_code: 551
   direction: forward
 - to_id: cbdb:11087
   type: 其他
-  note: 祠記由對方所作：林希逸（CBDB 外部人物）
+  note: 祠记由对方所作：林希逸（CBDB 外部人物）
   src: cbdb
   assoc_code: 561
   direction: forward

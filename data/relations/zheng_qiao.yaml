@@ -2,7 +2,7 @@ from_id: zheng_qiao
 relations:
 - to_id: cbdb:11054
   type: 父子
-  note: 子：鄭寅（CBDB 外部人物）
+  note: 子：郑寅（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
@@ -13,27 +13,27 @@ relations:
   kin_code: 181
   direction: forward
 - to_id: cbdb:12980
-  type: 祖孫
-  note: 玄孫;四世孫：鄭杓（CBDB 外部人物）
+  type: 祖孙
+  note: 玄孙;四世孙：郑杓（CBDB 外部人物）
   src: cbdb
   kin_code: 263
   direction: forward
 - to_id: cbdb:11016
-  type: 祖孫
-  note: 直系祖先：鄭露（CBDB 外部人物）
+  type: 祖孙
+  note: 直系祖先：郑露（CBDB 外部人物）
   src: cbdb
   kin_code: 303
   direction: reverse
   note_code: 2
 - to_id: cbdb:13982
   type: 同年
-  note: 同年友：張貴謨（CBDB 外部人物）
+  note: 同年友：张贵谟（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:16783
   type: 同年
-  note: 同年友：范仲藝（CBDB 外部人物）
+  note: 同年友：范仲艺（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -57,37 +57,37 @@ relations:
   direction: forward
 - to_id: cbdb:49974
   type: 同年
-  note: 同年友：廖俁（CBDB 外部人物）
+  note: 同年友：廖俣（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:10566
   type: 其他
-  note: 被對方推薦：楊萬里（CBDB 外部人物），始年 1199
+  note: 被对方推荐：杨万里（CBDB 外部人物），始年 1199
   src: cbdb
   assoc_code: 14
   direction: forward
 - to_id: cbdb:7197
   type: 其他
-  note: 書跋由對方所作：周必大（CBDB 外部人物）
+  note: 书跋由对方所作：周必大（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:14833
   type: 其他
-  note: 祭文由對方所作：彭龜年（CBDB 外部人物），始年 1199
+  note: 祭文由对方所作：彭龟年（CBDB 外部人物），始年 1199
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:37205
   type: 其他
-  note: 佛寺記由對方所作：曾耒（CBDB 外部人物）
+  note: 佛寺记由对方所作：曾耒（CBDB 外部人物）
   src: cbdb
   assoc_code: 240
   direction: forward
 - to_id: cbdb:3257
   type: 其他
-  note: 被致書由對方：朱熹（CBDB 外部人物）
+  note: 被致书由对方：朱熹（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

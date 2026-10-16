@@ -1,13 +1,13 @@
 from_id: fan_ying_qi
 relations:
 - to_id: cbdb:329383
-  type: 祖孫
-  note: 曾祖：范縉（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：范缙（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:329384
-  type: 祖孫
+  type: 祖孙
   note: 祖父：范完（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -20,25 +20,25 @@ relations:
   direction: forward
 - to_id: cbdb:329386
   type: 母子
-  note: 母：陸氏(范應期母)（CBDB 外部人物）
+  note: 母：陆氏(范应期母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:329389
   type: 兄弟
-  note: 弟：范應明（CBDB 外部人物）
+  note: 弟：范应明（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:329390
   type: 兄弟
-  note: 弟：范應光（CBDB 外部人物）
+  note: 弟：范应光（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:329391
   type: 兄弟
-  note: 弟：范輝（CBDB 外部人物）
+  note: 弟：范辉（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -56,25 +56,25 @@ relations:
   direction: forward
 - to_id: cbdb:329388
   type: 夫妻
-  note: 妻子：沈氏(范應期妻)（CBDB 外部人物）
+  note: 妻子：沈氏(范应期妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:127609
   type: 其他
-  note: 為對方作墓誌銘：沈楠（CBDB 外部人物）
+  note: 为对方作墓志铭：沈楠（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:35262
   type: 其他
-  note: 臨別得到對方所作贈言(送別詩、序)：袁尊尼（CBDB 外部人物）
+  note: 临别得到对方所作赠言(送别诗、序)：袁尊尼（CBDB 外部人物）
   src: cbdb
   assoc_code: 163
   direction: forward
 - to_id: cbdb:130300
   type: 其他
-  note: 被致書由對方：敖文禎（CBDB 外部人物）
+  note: 被致书由对方：敖文祯（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

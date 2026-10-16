@@ -2,85 +2,85 @@ from_id: qian_wei_cheng
 relations:
 - to_id: cbdb:86449
   type: 父子
-  note: 父：錢人麟（CBDB 外部人物）
+  note: 父：钱人麟（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:54999
   type: 翁婿
-  note: 岳父：金祖靜（CBDB 外部人物）
+  note: 岳父：金祖静（CBDB 外部人物）
   src: cbdb
   kin_code: 76
   direction: forward
 - to_id: cbdb:86585
   type: 兄弟
-  note: 弟：錢維喬（CBDB 外部人物）
+  note: 弟：钱维乔（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:699872
   type: 夫妻
-  note: 妻子：金氏(錢維城妻)（CBDB 外部人物）
+  note: 妻子：金氏(钱维城妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:54990
   type: 父女
-  note: 女兒：錢孟鈿（CBDB 外部人物）
+  note: 女儿：钱孟钿（CBDB 外部人物）
   src: cbdb
   kin_code: 176
   direction: forward
 - to_id: cbdb:516183
   type: 父子
-  note: 子：錢中鈺（CBDB 外部人物）
+  note: 子：钱中钰（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:516184
   type: 父子
-  note: 子：錢中銑（CBDB 外部人物）
+  note: 子：钱中铣（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:86619
   type: 旁系
-  note: 族子：錢履坦（CBDB 外部人物）
+  note: 族子：钱履坦（CBDB 外部人物）
   src: cbdb
   kin_code: 210
   direction: forward
 - to_id: cbdb:54988
-  type: 祖孫
-  note: 孫女：錢湘（CBDB 外部人物）
+  type: 祖孙
+  note: 孙女：钱湘（CBDB 外部人物）
   src: cbdb
   kin_code: 251
   direction: forward
 - to_id: cbdb:57670
   type: 师生
-  note: 為對方之學生：董邦達（CBDB 外部人物）
+  note: 为对方之学生：董邦达（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:29951
   type: 师生
-  note: 學生為對方：朱筠（CBDB 外部人物）
+  note: 学生为对方：朱筠（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:54990
   type: 其他
-  note: 為對方所著書作序：錢孟鈿（CBDB 外部人物）
+  note: 为对方所著书作序：钱孟钿（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:29876
   type: 其他
-  note: 為對方之考官：錢大昕（CBDB 外部人物）
+  note: 为对方之考官：钱大昕（CBDB 外部人物）
   src: cbdb
   assoc_code: 558
   direction: forward
 - to_id: cbdb:30080
   type: 其他
-  note: 為對方之考官：紀昀（CBDB 外部人物），始年 1754
+  note: 为对方之考官：纪昀（CBDB 外部人物），始年 1754
   src: cbdb
   assoc_code: 558
   direction: forward

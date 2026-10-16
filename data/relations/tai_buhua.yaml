@@ -8,133 +8,133 @@ relations:
     direction: forward
   - to_id: cbdb:113215
     type: 其他
-    note: 欣賞/器重：釋性澄（CBDB 外部人物）
+    note: 欣赏/器重：释性澄（CBDB 外部人物）
     src: cbdb
     assoc_code: 18
     direction: forward
   - to_id: cbdb:10801
     type: 其他
-    note: 書、畫由對方作跋：虞集（CBDB 外部人物）
+    note: 书、画由对方作跋：虞集（CBDB 外部人物）
     src: cbdb
     assoc_code: 150
     direction: forward
   - to_id: cbdb:10389
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：袁桷（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：袁桷（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:27957
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：吳師道（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：吴师道（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:27965
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：鄭元祐（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：郑元祐（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:27988
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：傅若金（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：傅若金（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28338
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：柯九思（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：柯九思（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28414
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：李孝光（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：李孝光（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28616
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：錢惟善（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：钱惟善（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28800
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：朱德潤（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：朱德润（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:102419
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：吳克恭（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：吴克恭（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:109730
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：葉懋（CBDB 外部人物）
+    note: 临别得到对方所作赠言(送别诗、序)：叶懋（CBDB 外部人物）
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:27948
     type: 其他
-    note: 哀辭由對方所作：劉基（CBDB 外部人物）
+    note: 哀辞由对方所作：刘基（CBDB 外部人物）
     src: cbdb
     assoc_code: 166
     direction: forward
   - to_id: cbdb:105079
     type: 其他
-    note: 哀辭由對方所作：范秋蟾（CBDB 外部人物）
+    note: 哀辞由对方所作：范秋蟾（CBDB 外部人物）
     src: cbdb
     assoc_code: 166
     direction: forward
   - to_id: cbdb:28022
     type: 其他
-    note: 挽詩、詞由對方所作：危素（CBDB 外部人物）
+    note: 挽诗、词由对方所作：危素（CBDB 外部人物）
     src: cbdb
     assoc_code: 423
     direction: forward
   - to_id: cbdb:110067
     type: 其他
-    note: 為對方作挽詩、詞：鄔庚（CBDB 外部人物）
+    note: 为对方作挽诗、词：邬庚（CBDB 外部人物）
     src: cbdb
     assoc_code: 424
     direction: forward
   - to_id: cbdb:102303
     type: 其他
-    note: 贈詩、文：吳善（CBDB 外部人物）
+    note: 赠诗、文：吴善（CBDB 外部人物）
     src: cbdb
     assoc_code: 437
     direction: forward
   - to_id: cbdb:35488
     type: 其他
-    note: 收到對方的贈詩、文：迺賢（CBDB 外部人物）
+    note: 收到对方的赠诗、文：迺贤（CBDB 外部人物）
     src: cbdb
     assoc_code: 438
     direction: forward
   - to_id: cbdb:107887
     type: 其他
-    note: 收到對方的贈詩、文：郯韶（CBDB 外部人物）
+    note: 收到对方的赠诗、文：郯韶（CBDB 外部人物）
     src: cbdb
     assoc_code: 438
     direction: forward
   - to_id: cbdb:117433
     type: 其他
-    note: 收到對方的贈詩、文：雅琥（CBDB 外部人物）
+    note: 收到对方的赠诗、文：雅琥（CBDB 外部人物）
     src: cbdb
     assoc_code: 438
     direction: forward
   - to_id: cbdb:10792
     type: 其他
-    note: 詩文跋由對方所作：蘇天爵（CBDB 外部人物）
+    note: 诗文跋由对方所作：苏天爵（CBDB 外部人物）
     src: cbdb
     assoc_code: 470
     direction: forward
   - to_id: cbdb:27998
     type: 其他
-    note: 詩文跋由對方所作：宋褧（CBDB 外部人物）
+    note: 诗文跋由对方所作：宋褧（CBDB 外部人物）
     src: cbdb
     assoc_code: 470
     direction: forward

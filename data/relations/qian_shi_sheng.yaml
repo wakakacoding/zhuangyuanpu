@@ -1,56 +1,56 @@
 from_id: qian_shi_sheng
 relations:
 - to_id: cbdb:70522
-  type: 祖孫
-  note: 孫女：錢復（CBDB 外部人物）
+  type: 祖孙
+  note: 孙女：钱复（CBDB 外部人物）
   src: cbdb
   kin_code: 251
   direction: forward
 - to_id: cbdb:438840
   type: 友人
-  note: 友：許重熙（CBDB 外部人物）
+  note: 友：许重熙（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:30849
   type: 其他
-  note: 為對方作神道碑：高攀龍（CBDB 外部人物）
+  note: 为对方作神道碑：高攀龙（CBDB 外部人物）
   src: cbdb
   assoc_code: 406
   direction: forward
 - to_id: cbdb:56535
   type: 其他
-  note: 被致書由對方：姚希孟（CBDB 外部人物）
+  note: 被致书由对方：姚希孟（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:124068
   type: 其他
-  note: 被致書由對方：沈演（CBDB 外部人物）
+  note: 被致书由对方：沈演（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:128182
   type: 其他
-  note: 被致書由對方：吳宗達（CBDB 外部人物）
+  note: 被致书由对方：吴宗达（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:134778
   type: 其他
-  note: 被致書由對方：陳懿典（CBDB 外部人物）
+  note: 被致书由对方：陈懿典（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:135569
   type: 其他
-  note: 被致書由對方：方應祥（CBDB 外部人物）
+  note: 被致书由对方：方应祥（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:34742
   type: 其他
-  note: 收到對方的答書：顧憲成（CBDB 外部人物）
+  note: 收到对方的答书：顾宪成（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward

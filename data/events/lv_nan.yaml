@@ -1,0 +1,120 @@
+person_id: lv_nan
+events:
+  - year: 1479
+    year_precision: exact
+    type: 出生
+    title: 生于陕西高陵
+    description: >-
+      成化十五年（1479）四月二十一日生。李开先《泾野吕亚卿传》：「生则成化己亥四月
+      二十一日，享年六十四。」父吕溥有隐德。因居泾水之阳（水北曰阳），故自号泾野，
+      学者称泾野先生。
+    source_ids: [src_likaixian_lvnan, src_mingruxuean_lvnan]
+  - year: 1508
+    year_precision: exact
+    type: 夺魁
+    title: 正德三年戊辰科一甲一名进士（状元），授翰林院修撰
+    description: >-
+      《明史》本传：「正德三年登进士第一，授修撰。」《明儒学案》：「正德戊辰举进士第一，
+      授翰林修撰。」时刘瑾用事，以柟为同乡欲致之，谢不往。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1509
+    year_precision: about
+    type: 罢官
+    title: 疏请帝入宫亲政，忤刘瑾，引疾去
+    description: >-
+      因西夏犯边事，疏请武宗入宫亲理政事、潜消祸本。刘瑾恶其直，欲杀之，遂引疾去。
+      《明儒学案》：「逆瑾以乡人致贺，却之，瑾不悦。已请上还宫中，御经筵，亲政事，
+      益不为瑾所容，遂引去。」引去之年文献未系，约在正德四、五年间。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1510
+    year_precision: exact
+    type: 授官
+    title: 刘瑾诛，以荐复官
+    description: >-
+      正德五年（1510）八月刘瑾伏诛，柟以荐起复原官。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1514
+    year_precision: exact
+    type: 罢官
+    title: 乾清宫灾，应诏陈六事；是年秋以父病归
+    description: >-
+      乾清宫灾，应诏陈六事。据《明儒学案》所纪其目：逐日临朝、还处宫寝、躬亲大祀、
+      日朝两宫、遣去义子番僧边军、撤回镇守中官——皆武宗之荒政，尤为人所不敢言。
+      不报，是年秋以父病归。都御史盛应期、御史朱节等累疏荐之。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1522
+    year_precision: exact
+    type: 授官
+    title: 世宗嗣位，首召还，上疏劝勤学
+    description: >-
+      世宗入继大统，首召吕柟还朝，复官。上疏劝勤学以为新政之助：「克己慎独，上对天心；
+      亲贤远谗，下通民志，庶太平之业可致。」次年任会试考官。
+    source_ids: [src_mingshi_lvnan]
+  - year: 1524
+    year_precision: exact
+    type: 贬谪
+    title: 大礼议下诏狱，谪解州判官
+    description: >-
+      嘉靖三年（1524）大礼议兴，与张璁、桂萼忤。以十三事自陈，中大礼未定、谄言日进，
+      引为己罪。上怒，下诏狱，谪解州判官。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1526
+    year_precision: about
+    type: 授官
+    title: 摄行解州事三年，行《吕氏乡约》及《文公家礼》
+    description: >-
+      不以迁客自解，摄守州事，恤茕独、减丁役、劝农桑、兴水利、筑堤护盐池；行
+      《吕氏乡约》及《文公家礼》，求卜子夏之后，建司马温公祠。四方学者日至，御史
+      为辟解梁书院以居之，选民间俊秀歌诗习礼。在解三年，未尝言及朝廷事。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1528
+    year_precision: about
+    type: 升迁
+    title: 升南京宗人府经历，历南考功郎中、尚宝司卿
+    description: >-
+      三年后御史卢焕等累荐，升南京宗人府经历，迁南京吏部考功郎中、尚宝司卿。
+      仕履序列据《明儒学案》与《国朝献征录》所载马汝骥行状，二源一致。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan, src_xianzhenglu_lvnan]
+  - year: 1532
+    year_precision: about
+    type: 升迁
+    title: 升南京太常寺少卿
+    description: >-
+      《明史》本传作「南京太仆寺少卿」，而《明儒学案》《国朝献征录》所载行状、
+      《明实录类纂》三源均作「南京太常寺少卿」——三源同证，本站从「太常寺」，
+      本传「太仆」疑传抄之误。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan, src_xianzhenglu_lvnan]
+  - year: 1535
+    year_precision: about
+    type: 升迁
+    title: 入为国子监祭酒
+    description: >-
+      整顿监规，公侯子弟亦乐听讲。此前九载南都，与湛若水、邹守益共主讲席三十余年，
+      吴、楚、闽、越士从者百余人，东南学者尽出其门。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1536
+    year_precision: about
+    type: 升迁
+    title: 转南京礼部右侍郎，署吏部事
+    description: >-
+      公卿谒孝陵着绯，柟曰「望墓生哀，不宜吉服」，遂令易素。世宗将躬祀显陵，累疏
+      劝止，不报。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1539
+    year_precision: about
+    type: 致仕
+    title: 乞致仕归，讲学北泉精舍
+    description: >-
+      会奉先殿灾，九卿自陈，夏言（贵溪）遂准其致仕。归后仍讲学不辍，门下合约千余人，
+      几与阳明氏中分其盛。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan]
+  - year: 1542
+    year_precision: exact
+    type: 卒
+    title: 嘉靖二十一年七月一日卒，年六十四；赐谥文简
+    description: >-
+      六月左臂痈发，坐卧北泉精舍，七月一日卒，年六十四。高陵人为罢市者三日；
+      解梁及四方学者闻之，皆设位，持心丧。讣闻，上辍朝一日，赐祭葬。《明儒学案》
+      记其「壬寅七月朔卒，年六十四，赐谥文简」，可补本传未载之月日与谥号。
+      万历、崇祯间李祯、赵锦等先后请以从祀孔庙，下部议，未及行。
+    source_ids: [src_mingshi_lvnan, src_mingruxuean_lvnan, src_likaixian_lvnan]

@@ -1,8 +1,8 @@
 from_id: zhu_chang_yi
 relations:
 - to_id: cbdb:74236
-  type: 祖孫
-  note: 祖父：朱星煒（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：朱星炜（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
@@ -20,13 +20,13 @@ relations:
   direction: forward
 - to_id: cbdb:691350
   type: 父子
-  note: 長子; 第一子：朱燮元（CBDB 外部人物）
+  note: 长子; 第一子：朱燮元（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:55411
   type: 兄弟
-  note: 從妹：朱嶼（CBDB 外部人物）
+  note: 从妹：朱屿（CBDB 外部人物）
   src: cbdb
   kin_code: 416
   direction: forward
@@ -38,13 +38,13 @@ relations:
   direction: forward
 - to_id: cbdb:74291
   type: 师生
-  note: 為對方之門人：朱葵之（CBDB 外部人物）
+  note: 为对方之门人：朱葵之（CBDB 外部人物）
   src: cbdb
   assoc_code: 19
   direction: forward
 - to_id: cbdb:55411
   type: 其他
-  note: 為對方所著書作序：朱嶼（CBDB 外部人物）
+  note: 为对方所著书作序：朱屿（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward

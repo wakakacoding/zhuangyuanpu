@@ -1,14 +1,14 @@
 from_id: ding_shi_mei
 relations:
 - to_id: cbdb:322950
-  type: 祖孫
-  note: 曾祖：丁進（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：丁进（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:322951
-  type: 祖孫
-  note: 祖父：丁鳳（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：丁凤（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
@@ -44,7 +44,7 @@ relations:
   direction: forward
 - to_id: cbdb:322956
   type: 夫妻
-  note: 第二任妻：李氏(丁士美繼妻)（CBDB 外部人物）
+  note: 第二任妻：李氏(丁士美继妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 163
   direction: forward
@@ -56,7 +56,7 @@ relations:
   direction: forward
 - to_id: cbdb:126359
   type: 其他
-  note: 祭文由對方所作：于愼行（CBDB 外部人物）
+  note: 祭文由对方所作：于愼行（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward

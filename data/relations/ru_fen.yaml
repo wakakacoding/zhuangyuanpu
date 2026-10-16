@@ -2,7 +2,7 @@ from_id: ru_fen
 relations:
 - to_id: cbdb:53957
   type: 其他
-  note: 為對方作畫贊(畫像記)：甘立媃（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：甘立媃（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward

@@ -1,7 +1,7 @@
 from_id: zhou_tan
 relations:
 - to_id: cbdb:137910
-  type: 祖孫
+  type: 祖孙
   note: 祖父：周揖（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -26,19 +26,19 @@ relations:
   direction: forward
 - to_id: cbdb:42961
   type: 父子
-  note: 子：周明復（CBDB 外部人物）
+  note: 子：周明复（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:42464
   type: 同年
-  note: 同年友：邵澤（CBDB 外部人物）
+  note: 同年友：邵泽（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:25127
   type: 其他
-  note: 為對方作諡議：羅從彥（CBDB 外部人物）
+  note: 为对方作谥议：罗从彦（CBDB 外部人物）
   src: cbdb
   assoc_code: 188
   direction: forward

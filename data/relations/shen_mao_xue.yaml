@@ -1,32 +1,32 @@
 from_id: shen_mao_xue
 relations:
 - to_id: cbdb:215447
-  type: 祖孫
-  note: 曾祖：沈謙（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：沈谦（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:215449
-  type: 祖孫
+  type: 祖孙
   note: 祖父：沈璞（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:34923
   type: 父子
-  note: 父：沈寵（CBDB 外部人物）
+  note: 父：沈宠（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:215450
   type: 父子
-  note: 父：沈寵（CBDB 外部人物）
+  note: 父：沈宠（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:215451
   type: 母子
-  note: 母：崔氏(沈懋學母)（CBDB 外部人物）
+  note: 母：崔氏(沈懋学母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
@@ -56,151 +56,151 @@ relations:
   direction: forward
 - to_id: cbdb:215453
   type: 夫妻
-  note: 妻子：王氏(沈懋學妻)（CBDB 外部人物）
+  note: 妻子：王氏(沈懋学妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:207635
   type: 父子
-  note: 子：沈有則（CBDB 外部人物）
+  note: 子：沈有则（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:34920
   type: 翁婿
-  note: 女婿：屠金樞（CBDB 外部人物）
+  note: 女婿：屠金枢（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:34925
   type: 父女
-  note: 三女：沈天孫（CBDB 外部人物）
+  note: 三女：沈天孙（CBDB 外部人物）
   src: cbdb
   kin_code: 329
   direction: forward
 - to_id: cbdb:215452
   type: 母子
-  note: 繼母：葛氏(沈懋學繼母)（CBDB 外部人物）
+  note: 继母：葛氏(沈懋学继母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:131205
   type: 其他
-  note: 墓誌銘由對方所作：湯賓尹（CBDB 外部人物）
+  note: 墓志铭由对方所作：汤宾尹（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:34919
   type: 其他
-  note: 傳記作者為對方：屠隆（CBDB 外部人物）
+  note: 传记作者为对方：屠隆（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:66032
   type: 其他
-  note: 傳記作者為對方：朱彝尊（CBDB 外部人物），始年 1596
+  note: 传记作者为对方：朱彝尊（CBDB 外部人物），始年 1596
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:34717
   type: 其他
-  note: 祭文由對方所作：王世貞（CBDB 外部人物）
+  note: 祭文由对方所作：王世贞（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:130250
   type: 其他
-  note: 祭文由對方所作：梅鼎祚（CBDB 外部人物）
+  note: 祭文由对方所作：梅鼎祚（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:130605
   type: 其他
-  note: 祭文由對方所作：張鳳翼（CBDB 外部人物）
+  note: 祭文由对方所作：张凤翼（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:131252
   type: 其他
-  note: 祭文由對方所作：曾朝節（CBDB 外部人物）
+  note: 祭文由对方所作：曾朝节（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:132148
   type: 其他
-  note: 祭文由對方所作：趙用賢（CBDB 外部人物）
+  note: 祭文由对方所作：赵用贤（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:131250
   type: 其他
-  note: 向對方致賀：曾乾亨（CBDB 外部人物）
+  note: 向对方致贺：曾乾亨（CBDB 外部人物）
   src: cbdb
   assoc_code: 390
   direction: forward
 - to_id: cbdb:30240
   type: 其他
-  note: 被致書由對方：馮夢禎（CBDB 外部人物）
+  note: 被致书由对方：冯梦祯（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:35112
   type: 其他
-  note: 被致書由對方：吳國倫（CBDB 外部人物）
+  note: 被致书由对方：吴国伦（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:118816
   type: 其他
-  note: 被致書由對方：茅坤（CBDB 外部人物）
+  note: 被致书由对方：茅坤（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:124891
   type: 其他
-  note: 被致書由對方：耿定向（CBDB 外部人物）
+  note: 被致书由对方：耿定向（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:127530
   type: 其他
-  note: 被致書由對方：汪道昆（CBDB 外部人物）
+  note: 被致书由对方：汪道昆（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:129544
   type: 其他
-  note: 被致書由對方：馬玉麟（CBDB 外部人物）
+  note: 被致书由对方：马玉麟（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:130015
   type: 其他
-  note: 被致書由對方：徐顯卿（CBDB 外部人物）
+  note: 被致书由对方：徐显卿（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:130600
   type: 其他
-  note: 被致書由對方：張維新（CBDB 外部人物）
+  note: 被致书由对方：张维新（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:34719
   type: 其他
-  note: 收到對方的答書：王世懋（CBDB 外部人物）
+  note: 收到对方的答书：王世懋（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward
 - to_id: cbdb:125136
   type: 其他
-  note: 贈詩、文：朱衡（CBDB 外部人物）
+  note: 赠诗、文：朱衡（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:126814
   type: 其他
-  note: 贈詩、文：王畿（CBDB 外部人物）
+  note: 赠诗、文：王畿（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward

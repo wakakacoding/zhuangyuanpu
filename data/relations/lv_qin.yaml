@@ -2,37 +2,37 @@ from_id: lv_qin
 relations:
 - to_id: cbdb:428
   type: 姻亲
-  note: 岳母之父：鄭文寶（CBDB 外部人物）
+  note: 岳母之父：郑文宝（CBDB 外部人物）
   src: cbdb
   kin_code: 67
   direction: forward
 - to_id: cbdb:15516
   type: 父子
-  note: 父：呂士元（CBDB 外部人物）
+  note: 父：吕士元（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:1384
   type: 其他
-  note: 被對方推薦：歐陽修（CBDB 外部人物），始年 1068
+  note: 被对方推荐：欧阳修（CBDB 外部人物），始年 1068
   src: cbdb
   assoc_code: 14
   direction: forward
 - to_id: cbdb:34
   type: 政敌
-  note: 反對/攻訐：陳執中（CBDB 外部人物）
+  note: 反对/攻讦：陈执中（CBDB 外部人物）
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:3676
   type: 其他
-  note: 傳記作者為對方：米芾（CBDB 外部人物）
+  note: 传记作者为对方：米芾（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:1488
   type: 其他
-  note: 收到對方的答啓：司馬光（CBDB 外部人物）
+  note: 收到对方的答启：司马光（CBDB 外部人物）
   src: cbdb
   assoc_code: 436
   direction: forward

@@ -1,32 +1,32 @@
 from_id: yao_wen_tian
 relations:
 - to_id: cbdb:514463
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：姚德升（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:514464
-  type: 祖孫
-  note: 曾祖：姚德謙（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：姚德谦（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:514456
-  type: 祖孫
+  type: 祖孙
   note: 祖父：姚世孝（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:56363
   type: 翁婿
-  note: 岳父：周鼎樞（CBDB 外部人物）
+  note: 岳父：周鼎枢（CBDB 外部人物）
   src: cbdb
   kin_code: 76
   direction: forward
 - to_id: cbdb:56362
   type: 夫妻
-  note: 妻子：周瑤（CBDB 外部人物）
+  note: 妻子：周瑶（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
@@ -49,26 +49,26 @@ relations:
   kin_code: 180
   direction: forward
 - to_id: cbdb:514459
-  type: 祖孫
-  note: 孫：姚經甸（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：姚经甸（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:514460
-  type: 祖孫
-  note: 孫：姚經炳（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：姚经炳（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:514461
-  type: 祖孫
-  note: 孫：姚經第（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：姚经第（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:514462
-  type: 祖孫
-  note: 孫：姚經輔（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：姚经辅（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
@@ -80,13 +80,13 @@ relations:
   direction: forward
 - to_id: cbdb:65949
   type: 友人
-  note: 友：惲敬（CBDB 外部人物）
+  note: 友：恽敬（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:66033
   type: 友人
-  note: 友：嚴可均（CBDB 外部人物）
+  note: 友：严可均（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -98,13 +98,13 @@ relations:
   direction: forward
 - to_id: cbdb:85551
   type: 友人
-  note: 友：姚學塽（CBDB 外部人物）
+  note: 友：姚学塽（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:124873
   type: 友人
-  note: 友：沈夢蘭（CBDB 外部人物）
+  note: 友：沈梦兰（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -116,19 +116,19 @@ relations:
   direction: forward
 - to_id: cbdb:86477
   type: 师生
-  note: 學生為對方：錢以同（CBDB 外部人物）
+  note: 学生为对方：钱以同（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: wang_yi_xian
   type: 其他
-  note: 同鄉（CBDB）
+  note: 同乡（CBDB）
   src: cbdb
   assoc_code: 94
   direction: forward
 - to_id: cbdb:550847
   type: 其他
-  note: 讚揚對方之學：胡清焣（CBDB 外部人物）
+  note: 赞扬对方之学：胡清焣（CBDB 外部人物）
   src: cbdb
   assoc_code: 140
   direction: forward

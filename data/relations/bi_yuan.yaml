@@ -1,86 +1,86 @@
 from_id: bi_yuan
 relations:
 - to_id: cbdb:516932
-  type: 祖孫
-  note: 曾祖：畢祖泰（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：毕祖泰（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:81043
-  type: 祖孫
-  note: 外曾祖父：張德純（CBDB 外部人物）
+  type: 祖孙
+  note: 外曾祖父：张德纯（CBDB 外部人物）
   src: cbdb
   kin_code: 52
   direction: forward
 - to_id: cbdb:54199
   type: 父子
-  note: 父：畢禮（CBDB 外部人物）
+  note: 父：毕礼（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:516938
   type: 父子
-  note: 父：畢鏞（CBDB 外部人物）
+  note: 父：毕镛（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:516928
   type: 旁系
-  note: 母舅：張少儀（CBDB 外部人物）
+  note: 母舅：张少仪（CBDB 外部人物）
   src: cbdb
   kin_code: 77
   direction: forward
 - to_id: cbdb:54191
   type: 母子
-  note: 母：張藻（CBDB 外部人物）
+  note: 母：张藻（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:516934
   type: 兄弟
-  note: 姊：畢湄（CBDB 外部人物）
+  note: 姊：毕湄（CBDB 外部人物）
   src: cbdb
   kin_code: 164
   direction: forward
 - to_id: cbdb:134237
   type: 夫妻
-  note: 妾：張絢霄（CBDB 外部人物）
+  note: 妾：张绚霄（CBDB 外部人物）
   src: cbdb
   kin_code: 168
   direction: forward
 - to_id: cbdb:54205
   type: 兄弟
-  note: 妹：畢汾（CBDB 外部人物）
+  note: 妹：毕汾（CBDB 外部人物）
   src: cbdb
   kin_code: 169
   direction: forward
 - to_id: cbdb:34014
   type: 父女
-  note: 女兒：畢慧（CBDB 外部人物）
+  note: 女儿：毕慧（CBDB 外部人物）
   src: cbdb
   kin_code: 176
   direction: forward
 - to_id: cbdb:516930
   type: 父子
-  note: 子：畢念曾（CBDB 外部人物）
+  note: 子：毕念曾（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:516935
   type: 父子
-  note: 子：畢鄂珠（CBDB 外部人物）
+  note: 子：毕鄂珠（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:516936
   type: 父子
-  note: 子：畢嵩珠（CBDB 外部人物）
+  note: 子：毕嵩珠（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:34015
   type: 翁婿
-  note: 女婿：陳暻（CBDB 外部人物）
+  note: 女婿：陈暻（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
@@ -91,50 +91,50 @@ relations:
   kin_code: 181
   direction: forward
 - to_id: cbdb:516931
-  type: 祖孫
-  note: 孫：畢芝祥（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：毕芝祥（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:516937
-  type: 祖孫
-  note: 孫：畢慶芝（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：毕庆芝（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:516939
-  type: 祖孫
-  note: 孫：畢蘭慶（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：毕兰庆（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:516929
-  type: 祖孫
-  note: 曾孫; 重孫：畢永滋（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：毕永滋（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:516933
-  type: 祖孫
-  note: 曾孫; 重孫：畢景緖（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：毕景緖（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:54196
-  type: 祖孫
-  note: 外祖母：顧英（CBDB 外部人物）
+  type: 祖孙
+  note: 外祖母：顾英（CBDB 外部人物）
   src: cbdb
   kin_code: 371
   direction: forward
 - to_id: cbdb:29876
   type: 友人
-  note: 友：錢大昕（CBDB 外部人物）
+  note: 友：钱大昕（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:33544
   type: 友人
-  note: 友：李調元（CBDB 外部人物）
+  note: 友：李调元（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -146,121 +146,121 @@ relations:
   direction: forward
 - to_id: cbdb:33851
   type: 友人
-  note: 友：盧文弨（CBDB 外部人物）
+  note: 友：卢文弨（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:34196
   type: 友人
-  note: 友：孫星衍（CBDB 外部人物）
+  note: 友：孙星衍（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:54119
   type: 友人
-  note: 友：嚴長明（CBDB 外部人物）
+  note: 友：严长明（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:65833
   type: 友人
-  note: 友：程晉芳（CBDB 外部人物）
+  note: 友：程晋芳（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:66037
   type: 友人
-  note: 友：江聲（CBDB 外部人物）
+  note: 友：江声（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:78506
   type: 友人
-  note: 友：吳泰來（CBDB 外部人物）
+  note: 友：吴泰来（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:30726
   type: 师生
-  note: 為對方之學生：惠棟（CBDB 外部人物）
+  note: 为对方之学生：惠栋（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:54319
   type: 师生
-  note: 為對方之學生：沈德潛（CBDB 外部人物）
+  note: 为对方之学生：沈德潜（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:30731
   type: 师生
-  note: 學生為對方：洪亮吉（CBDB 外部人物）
+  note: 学生为对方：洪亮吉（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:34196
   type: 师生
-  note: 學生為對方：孫星衍（CBDB 外部人物）
+  note: 学生为对方：孙星衍（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:54119
   type: 师生
-  note: 學生為對方：嚴長明（CBDB 外部人物）
+  note: 学生为对方：严长明（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:78506
   type: 师生
-  note: 學生為對方：吳泰來（CBDB 外部人物）
+  note: 学生为对方：吴泰来（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:511051
   type: 师生
-  note: 學生為對方：劭晉涵（CBDB 外部人物）
+  note: 学生为对方：劭晋涵（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:511679
   type: 师生
-  note: 學生為對方：程普芳（CBDB 外部人物）
+  note: 学生为对方：程普芳（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:29876
   type: 其他
-  note: 墓誌銘由對方所作：錢大昕（CBDB 外部人物），始年 1789
+  note: 墓志铭由对方所作：钱大昕（CBDB 外部人物），始年 1789
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:65634
   type: 同僚
-  note: 幕僚為對方：章學誠（CBDB 外部人物）
+  note: 幕僚为对方：章学诚（CBDB 外部人物）
   src: cbdb
   assoc_code: 67
   direction: forward
 - to_id: cbdb:65833
   type: 同僚
-  note: 幕僚為對方：程晉芳（CBDB 外部人物）
+  note: 幕僚为对方：程晋芳（CBDB 外部人物）
   src: cbdb
   assoc_code: 67
   direction: forward
 - to_id: cbdb:68998
   type: 同僚
-  note: 幕僚為對方：方正澍（CBDB 外部人物）
+  note: 幕僚为对方：方正澍（CBDB 外部人物）
   src: cbdb
   assoc_code: 67
   direction: forward
 - to_id: cbdb:511061
   type: 同僚
-  note: 幕僚為對方：史善良（CBDB 外部人物）
+  note: 幕僚为对方：史善良（CBDB 外部人物）
   src: cbdb
   assoc_code: 67
   direction: forward
 - to_id: cbdb:683876
   type: 同僚
-  note: 幕僚為對方：程敦槐（CBDB 外部人物）
+  note: 幕僚为对方：程敦槐（CBDB 外部人物）
   src: cbdb
   assoc_code: 67
   direction: forward

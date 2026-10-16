@@ -1,7 +1,7 @@
 from_id: shen_hui
 relations:
 - to_id: cbdb:1449
-  type: 祖孫
+  type: 祖孙
   note: 祖父：沈遘（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -20,13 +20,13 @@ relations:
   direction: forward
 - to_id: cbdb:24492
   type: 同年
-  note: 同年友：單時（CBDB 外部人物）
+  note: 同年友：单时（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:38909
   type: 同年
-  note: 同年友：方雲翼（CBDB 外部人物）
+  note: 同年友：方云翼（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -38,7 +38,7 @@ relations:
   direction: forward
 - to_id: cbdb:46807
   type: 同年
-  note: 同年友：張絢（CBDB 外部人物）
+  note: 同年友：张绚（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -50,49 +50,49 @@ relations:
   direction: forward
 - to_id: cbdb:50194
   type: 同年
-  note: 同年友：趙衛（CBDB 外部人物）
+  note: 同年友：赵卫（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:22849
   type: 其他
-  note: 被對方欣賞/器重：喻樗（CBDB 外部人物）
+  note: 被对方欣赏/器重：喻樗（CBDB 外部人物）
   src: cbdb
   assoc_code: 17
   direction: forward
 - to_id: cbdb:3624
   type: 其他
-  note: 書跋由對方所作：樓鑰（CBDB 外部人物）
+  note: 书跋由对方所作：楼钥（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:10289
   type: 其他
-  note: 書跋由對方所作：袁燮（CBDB 外部人物）
+  note: 书跋由对方所作：袁燮（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:38683
   type: 其他
-  note: 從遊者為對方：石安民（CBDB 外部人物）
+  note: 从游者为对方：石安民（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:1310
   type: 其他
-  note: 被致書由對方：呂頤浩（CBDB 外部人物）
+  note: 被致书由对方：吕颐浩（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:8079
   type: 其他
-  note: 被致書由對方：李光（CBDB 外部人物）
+  note: 被致书由对方：李光（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:14034
   type: 其他
-  note: 被致書由對方：鄭剛中（CBDB 外部人物）
+  note: 被致书由对方：郑刚中（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

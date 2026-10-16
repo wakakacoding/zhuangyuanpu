@@ -1,14 +1,14 @@
 from_id: shi_yun_yu
 relations:
 - to_id: cbdb:522705
-  type: 祖孫
-  note: 祖父：石邦楨（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：石邦桢（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:522709
   type: 父子
-  note: 父：石熙載（CBDB 外部人物）
+  note: 父：石熙载（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -26,139 +26,139 @@ relations:
   direction: forward
 - to_id: cbdb:522708
   type: 父子
-  note: 子：石嘉祿（CBDB 外部人物）
+  note: 子：石嘉禄（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:522703
-  type: 祖孫
-  note: 孫：石汝霖（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：石汝霖（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:522704
-  type: 祖孫
-  note: 孫：石屺莪（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：石屺莪（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:522707
-  type: 祖孫
-  note: 孫：石瑞苹（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：石瑞苹（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:522710
-  type: 祖孫
-  note: 孫：石巖英（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：石岩英（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:522711
-  type: 祖孫
-  note: 孫：石崐芝（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：石崐芝（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:693420
-  type: 祖孫
-  note: 孫：石峻華（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：石峻华（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:522696
-  type: 祖孫
-  note: 曾孫; 重孫：石守中（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：石守中（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:522697
-  type: 祖孫
-  note: 曾孫; 重孫：石守和（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：石守和（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:522698
-  type: 祖孫
-  note: 曾孫; 重孫：石守訓（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：石守训（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:522699
-  type: 祖孫
-  note: 曾孫; 重孫：石守清（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：石守清（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:522700
-  type: 祖孫
-  note: 曾孫; 重孫：石守經（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：石守经（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:522701
-  type: 祖孫
-  note: 曾孫; 重孫：石守樸（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：石守朴（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:522702
-  type: 祖孫
-  note: 曾孫; 重孫：石守彝（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：石守彝（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:54809
   type: 友人
-  note: 友：張問陶（CBDB 外部人物）
+  note: 友：张问陶（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:510919
   type: 友人
-  note: 友：王巳孫（CBDB 外部人物）
+  note: 友：王巳孙（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: peng_qi_feng
   type: 师生
-  note: 為對方之學生（CBDB）
+  note: 为对方之学生（CBDB）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:54712
   type: 其他
-  note: 為對方所著書作序：汪端（CBDB 外部人物）
+  note: 为对方所著书作序：汪端（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:54802
   type: 其他
-  note: 為對方所著書作序：楊繼端（CBDB 外部人物）
+  note: 为对方所著书作序：杨继端（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:56140
   type: 其他
-  note: 為對方作傳：葉小鸞（CBDB 外部人物）
+  note: 为对方作传：叶小鸾（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward
 - to_id: cbdb:35003
   type: 其他
-  note: 為對方作畫贊(畫像記)：董其昌（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：董其昌（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:132411
   type: 其他
-  note: 為對方作畫贊(畫像記)：鄭滿（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：郑满（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:59382
   type: 同僚
-  note: 上司為對方：費莫勒保（CBDB 外部人物）
+  note: 上司为对方：费莫勒保（CBDB 外部人物）
   src: cbdb
   assoc_code: 481
   direction: forward

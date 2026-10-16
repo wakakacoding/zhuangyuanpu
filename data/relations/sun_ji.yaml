@@ -8,13 +8,13 @@ relations:
   direction: forward
 - to_id: cbdb:17911
   type: 旁系
-  note: 族父：孫鎰（CBDB 外部人物）
+  note: 族父：孙镒（CBDB 外部人物）
   src: cbdb
   kin_code: 97
   direction: forward
 - to_id: sun_jin
   type: 其他
-  note: 同鄉（CBDB）
+  note: 同乡（CBDB）
   src: cbdb
   assoc_code: 94
   direction: forward

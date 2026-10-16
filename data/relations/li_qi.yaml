@@ -2,13 +2,13 @@ from_id: li_qi
 relations:
   - to_id: cbdb:28334
     type: 其他
-    note: 哀辭由對方所作：張翥（CBDB 外部人物）
+    note: 哀辞由对方所作：张翥（CBDB 外部人物）
     src: cbdb
     assoc_code: 166
     direction: forward
   - to_id: cbdb:28616
     type: 其他
-    note: 收到對方的贈詩、文：錢惟善（CBDB 外部人物）
+    note: 收到对方的赠诗、文：钱惟善（CBDB 外部人物）
     src: cbdb
     assoc_code: 438
     direction: forward

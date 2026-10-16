@@ -2,25 +2,25 @@ from_id: wang_shi_ze
 relations:
 - to_id: cbdb:573293
   type: 夫妻
-  note: 妻子：張氏(王世則妻)（CBDB 外部人物）
+  note: 妻子：张氏(王世则妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:38223
-  type: 祖孫
-  note: 曾孫; 重孫：王壽卿（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：王寿卿（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:606
   type: 同僚
-  note: 同僚：馮拯（CBDB 外部人物）
+  note: 同僚：冯拯（CBDB 外部人物）
   src: cbdb
   assoc_code: 197
   direction: forward
 - to_id: cbdb:38436
   type: 同僚
-  note: 同僚：尹黃裳（CBDB 外部人物）
+  note: 同僚：尹黄裳（CBDB 外部人物）
   src: cbdb
   assoc_code: 197
   direction: forward

@@ -26,7 +26,7 @@ relations:
   direction: forward
 - to_id: cbdb:29954
   type: 师生
-  note: 學生為對方：朱珪（CBDB 外部人物）
+  note: 学生为对方：朱珪（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward

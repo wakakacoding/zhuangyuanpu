@@ -2,43 +2,43 @@ from_id: wu_shu_gao
 relations:
 - to_id: cbdb:25817
   type: 父子
-  note: 父：吳元度（CBDB 外部人物）
+  note: 父：吴元度（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:41768
   type: 母子
-  note: 母：陳氏(吳叔告母)（CBDB 外部人物）
+  note: 母：陈氏(吴叔告母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:25819
   type: 父子
-  note: 長子; 第一子：吳起沃（CBDB 外部人物）
+  note: 长子; 第一子：吴起沃（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:3595
   type: 友人
-  note: 友：劉克莊（CBDB 外部人物）
+  note: 友：刘克庄（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:42680
   type: 同年
-  note: 同年友：林應炎（CBDB 外部人物）
+  note: 同年友：林应炎（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:43574
   type: 同年
-  note: 同年友：范東叟（CBDB 外部人物）
+  note: 同年友：范东叟（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:3595
   type: 其他
-  note: 墓誌銘由對方所作：劉克莊（CBDB 外部人物）
+  note: 墓志铭由对方所作：刘克庄（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward

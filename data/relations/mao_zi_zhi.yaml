@@ -2,13 +2,13 @@ from_id: mao_zi_zhi
 relations:
 - to_id: cbdb:27690
   type: 同年
-  note: 同年友：趙彥悈（CBDB 外部人物）
+  note: 同年友：赵彦悈（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:41647
   type: 同年
-  note: 同年友：李鳴鳳（CBDB 外部人物）
+  note: 同年友：李鸣凤（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -26,7 +26,7 @@ relations:
   direction: forward
 - to_id: cbdb:49462
   type: 同年
-  note: 同年友：楊璘（CBDB 外部人物）
+  note: 同年友：杨璘（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward

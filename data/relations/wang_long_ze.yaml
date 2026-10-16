@@ -1,38 +1,38 @@
 from_id: wang_long_ze
 relations:
 - to_id: cbdb:37891
-  type: 祖孫
-  note: 祖父：王若訥（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：王若讷（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:38424
   type: 兄弟
-  note: 弟：王龍友（CBDB 外部人物）
+  note: 弟：王龙友（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:43349
   type: 同年
-  note: 同年友：胡幼黃（CBDB 外部人物）
+  note: 同年友：胡幼黄（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:37892
   type: 师生
-  note: 為對方之學生：石一鰲（CBDB 外部人物）
+  note: 为对方之学生：石一鳌（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:386535
   type: 其他
-  note: 同學、同門：許文奎（CBDB 外部人物）
+  note: 同学、同门：许文奎（CBDB 外部人物）
   src: cbdb
   assoc_code: 117
   direction: forward
 - to_id: cbdb:20065
   type: 其他
-  note: 收到對方的贈詩、文：謝翱（CBDB 外部人物）
+  note: 收到对方的赠诗、文：谢翱（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward

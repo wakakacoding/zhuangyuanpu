@@ -1,14 +1,14 @@
 from_id: sun_he
 relations:
 - to_id: cbdb:17911
-  type: 祖孫
-  note: 祖父：孫鎰（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：孙镒（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:17912
   type: 父子
-  note: 父：孫庸（CBDB 外部人物）
+  note: 父：孙庸（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -20,37 +20,37 @@ relations:
   direction: forward
 - to_id: cbdb:17914
   type: 兄弟
-  note: 弟：孫侑（CBDB 外部人物）
+  note: 弟：孙侑（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:120002
   type: 父子
-  note: 子：孫言（CBDB 外部人物）
+  note: 子：孙言（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:1641
   type: 友人
-  note: 友：丁謂（CBDB 外部人物）
+  note: 友：丁谓（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:3997
   type: 其他
-  note: 被對方欣賞/器重：王禹偁（CBDB 外部人物）
+  note: 被对方欣赏/器重：王禹偁（CBDB 外部人物）
   src: cbdb
   assoc_code: 17
   direction: forward
 - to_id: sun_ji
   type: 其他
-  note: 同鄉（CBDB）
+  note: 同乡（CBDB）
   src: cbdb
   assoc_code: 94
   direction: forward
 - to_id: yang_hui_zhi
   type: 其他
-  note: 致書對方（CBDB）
+  note: 致书对方（CBDB）
   src: cbdb
   assoc_code: 429
   direction: forward

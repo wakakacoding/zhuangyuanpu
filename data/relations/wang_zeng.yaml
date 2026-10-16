@@ -8,7 +8,7 @@ relations:
   direction: forward
 - to_id: cbdb:119741
   type: 旁系
-  note: 從父;伯叔父：王宗元（CBDB 外部人物）
+  note: 从父;伯叔父：王宗元（CBDB 外部人物）
   src: cbdb
   kin_code: 79
   direction: forward
@@ -44,13 +44,13 @@ relations:
   direction: forward
 - to_id: cbdb:578082
   type: 兄弟
-  note: 妹：王氏(楊日休妻)（CBDB 外部人物）
+  note: 妹：王氏(杨日休妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 169
   direction: forward
 - to_id: cbdb:1824
   type: 旁系
-  note: 從子;姪子：王繹（CBDB 外部人物）
+  note: 从子;姪子：王绎（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
@@ -68,139 +68,139 @@ relations:
   direction: forward
 - to_id: cbdb:38331
   type: 父子
-  note: 子：王紹（CBDB 外部人物）
+  note: 子：王绍（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:7328
   type: 翁婿
-  note: 女婿：沈惟溫（CBDB 外部人物）
+  note: 女婿：沈惟温（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:119721
   type: 父子
-  note: 長子; 第一子：王縡（CBDB 外部人物）
+  note: 长子; 第一子：王縡（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:1824
   type: 父子
-  note: 過繼的嗣子：王繹（CBDB 外部人物）
+  note: 过继的嗣子：王绎（CBDB 外部人物）
   src: cbdb
   kin_code: 186
   direction: forward
 - to_id: cbdb:26534
   type: 姻亲
-  note: 孫女婿：李庠（CBDB 外部人物）
+  note: 孙女婿：李庠（CBDB 外部人物）
   src: cbdb
   kin_code: 244
   direction: forward
 - to_id: cbdb:3264
   type: 姻亲
-  note: 姪孫女之夫：朱述（CBDB 外部人物）
+  note: 姪孙女之夫：朱述（CBDB 外部人物）
   src: cbdb
   kin_code: 245
   direction: forward
 - to_id: cbdb:1802
-  type: 祖孫
-  note: 直系後裔：王蕃（CBDB 外部人物）
+  type: 祖孙
+  note: 直系后裔：王蕃（CBDB 外部人物）
   src: cbdb
   kin_code: 303
   direction: forward
 - to_id: cbdb:10760
-  type: 祖孫
-  note: 直系後裔：王闢之（CBDB 外部人物）
+  type: 祖孙
+  note: 直系后裔：王辟之（CBDB 外部人物）
   src: cbdb
   kin_code: 303
   direction: forward
 - to_id: cbdb:47466
   type: 其他
-  note: 推薦：陳耿（CBDB 外部人物）
+  note: 推荐：陈耿（CBDB 外部人物）
   src: cbdb
   assoc_code: 13
   direction: forward
 - to_id: cbdb:1885
   type: 其他
-  note: 推薦：王田（CBDB 外部人物），始年 1038
+  note: 推荐：王田（CBDB 外部人物），始年 1038
   src: cbdb
   assoc_code: 13
   direction: forward
 - to_id: cbdb:83
   type: 其他
-  note: 被對方推薦：陳恕（CBDB 外部人物）
+  note: 被对方推荐：陈恕（CBDB 外部人物）
   src: cbdb
   assoc_code: 14
   direction: forward
 - to_id: cbdb:8016
   type: 其他
-  note: 欣賞/器重：張昪（CBDB 外部人物）
+  note: 欣赏/器重：张昪（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:7019
   type: 其他
-  note: 欣賞/器重：嵇穎（CBDB 外部人物），始年 1038
+  note: 欣赏/器重：嵇颖（CBDB 外部人物），始年 1038
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:630
   type: 其他
-  note: 書序由對方所作：韓琦（CBDB 外部人物）
+  note: 书序由对方所作：韩琦（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:1558
   type: 其他
-  note: 墓誌銘由對方所作：宋祁（CBDB 外部人物）
+  note: 墓志铭由对方所作：宋祁（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:628
   type: 其他
-  note: 墓誌銘由對方所作：富弼（CBDB 外部人物），始年 1038
+  note: 墓志铭由对方所作：富弼（CBDB 外部人物），始年 1038
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:25127
   type: 其他
-  note: 傳記作者為對方：羅從彥（CBDB 外部人物）
+  note: 传记作者为对方：罗从彦（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:17233
   type: 其他
-  note: 其政策被對方反對/不支持：符惟忠（CBDB 外部人物）
+  note: 其政策被对方反对/不支持：符惟忠（CBDB 外部人物）
   src: cbdb
   assoc_code: 137
   direction: forward
 - to_id: cbdb:7104
   type: 其他
-  note: 祭文由對方所作：尹洙（CBDB 外部人物）
+  note: 祭文由对方所作：尹洙（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:3580
   type: 其他
-  note: 世系碑記由對方所作：劉敞（CBDB 外部人物）
+  note: 世系碑记由对方所作：刘敞（CBDB 外部人物）
   src: cbdb
   assoc_code: 152
   direction: forward
 - to_id: cbdb:17736
   type: 其他
-  note: 致書對方：王兼皇（CBDB 外部人物）
+  note: 致书对方：王兼皇（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:17935
   type: 其他
-  note: 被致書由對方：石介（CBDB 外部人物）
+  note: 被致书由对方：石介（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:53354
   type: 其他
-  note: 上奏論對方：釋宗秀（CBDB 外部人物）
+  note: 上奏论对方：释宗秀（CBDB 外部人物）
   src: cbdb
   assoc_code: 553
   direction: forward

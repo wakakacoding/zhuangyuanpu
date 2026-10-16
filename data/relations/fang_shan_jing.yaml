@@ -8,7 +8,7 @@ relations:
   direction: forward
 - to_id: cbdb:38792
   type: 母子
-  note: 母：孫氏(方季仁妻)（CBDB 外部人物）
+  note: 母：孙氏(方季仁妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward

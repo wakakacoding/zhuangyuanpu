@@ -1,50 +1,50 @@
 from_id: li_di
 relations:
 - to_id: cbdb:19144
-  type: 祖孫
-  note: 曾祖：李在欽（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：李在钦（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:1060
-  type: 祖孫
+  type: 祖孙
   note: 祖父：李令珣（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:3507
   type: 父子
-  note: 父：李護（CBDB 外部人物）
+  note: 父：李护（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:15886
   type: 兄弟
-  note: 兄弟：李邁（CBDB 外部人物）
+  note: 兄弟：李迈（CBDB 外部人物）
   src: cbdb
   kin_code: 118
   direction: forward
 - to_id: cbdb:1086
   type: 旁系
-  note: 從子;姪子：李肅之（CBDB 外部人物）
+  note: 从子;姪子：李肃之（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:3479
   type: 旁系
-  note: 從子;姪子：李及之（CBDB 外部人物）
+  note: 从子;姪子：李及之（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:41233
   type: 旁系
-  note: 從子;姪子：李成大（CBDB 外部人物）
+  note: 从子;姪子：李成大（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:19670
   type: 姻亲
-  note: 姪女之夫：孫復（CBDB 外部人物）
+  note: 姪女之夫：孙复（CBDB 外部人物）
   src: cbdb
   kin_code: 178
   direction: forward
@@ -56,19 +56,19 @@ relations:
   direction: forward
 - to_id: cbdb:3065
   type: 翁婿
-  note: 女婿：陳襲古（CBDB 外部人物）
+  note: 女婿：陈袭古（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:3124
   type: 翁婿
-  note: 女婿：張充（CBDB 外部人物）
+  note: 女婿：张充（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:3350
   type: 翁婿
-  note: 女婿：向絳（CBDB 外部人物）
+  note: 女婿：向绛（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
@@ -80,7 +80,7 @@ relations:
   direction: forward
 - to_id: cbdb:1104
   type: 父子
-  note: 長子; 第一子：李彥純（CBDB 外部人物）
+  note: 长子; 第一子：李彦纯（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
@@ -92,105 +92,105 @@ relations:
   direction: forward
 - to_id: cbdb:19154
   type: 父子
-  note: 三子：李補之（CBDB 外部人物）
+  note: 三子：李补之（CBDB 外部人物）
   src: cbdb
   kin_code: 184
   direction: forward
 - to_id: cbdb:333
-  type: 祖孫
-  note: 外孫：章惇（CBDB 外部人物）
+  type: 祖孙
+  note: 外孙：章惇（CBDB 外部人物）
   src: cbdb
   kin_code: 238
   direction: forward
 - to_id: cbdb:3503
   type: 旁系
-  note: 姪孫;從孫：李孝壽（CBDB 外部人物）
+  note: 姪孙;从孙：李孝寿（CBDB 外部人物）
   src: cbdb
   kin_code: 240
   direction: forward
 - to_id: cbdb:13065
-  type: 祖孫
-  note: 孫：李濤（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：李涛（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:19149
-  type: 祖孫
-  note: 孫：李孝基（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：李孝基（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:27430
-  type: 祖孫
-  note: 曾孫; 重孫：李佩（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：李佩（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:19151
-  type: 祖孫
-  note: 直系後裔：李敏之（CBDB 外部人物）
+  type: 祖孙
+  note: 直系后裔：李敏之（CBDB 外部人物）
   src: cbdb
   kin_code: 303
   direction: forward
 - to_id: cbdb:577858
-  type: 祖孫
-  note: 直系後裔：李氏(丁一謙妻)（CBDB 外部人物）
+  type: 祖孙
+  note: 直系后裔：李氏(丁一谦妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 303
   direction: forward
 - to_id: cbdb:40720
-  type: 祖孫
-  note: 曾祖母：潘氏(李在欽妻)（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖母：潘氏(李在钦妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 369
   direction: forward
 - to_id: cbdb:40726
-  type: 祖孫
+  type: 祖孙
   note: 祖母：白氏(李令珣妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 370
   direction: forward
 - to_id: cbdb:12452
-  type: 祖孫
-  note: 七世孫;仍孫：李宗甫（CBDB 外部人物）
+  type: 祖孙
+  note: 七世孙;仍孙：李宗甫（CBDB 外部人物）
   src: cbdb
   kin_code: 31
   direction: reverse
   note_code: 277
 - to_id: cbdb:11656
   type: 姻亲
-  note: 姪女之夫：趙（CBDB 外部人物）
+  note: 姪女之夫：赵（CBDB 外部人物）
   src: cbdb
   kin_code: 80
   direction: reverse
   note_code: 178
 - to_id: cbdb:1169
   type: 政敌
-  note: 反對/攻訐：林特（CBDB 外部人物）
+  note: 反对/攻讦：林特（CBDB 外部人物）
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:8043
   type: 其他
-  note: 祭文由對方所作：范仲淹（CBDB 外部人物），始年 1036
+  note: 祭文由对方所作：范仲淹（CBDB 外部人物），始年 1036
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:46642
   type: 同僚
-  note: 欲辟對方為幕僚但被拒絕：張庚（CBDB 外部人物）
+  note: 欲辟对方为幕僚但被拒绝：张庚（CBDB 外部人物）
   src: cbdb
   assoc_code: 261
   direction: forward
 - to_id: cbdb:217
   type: 其他
-  note: 神道碑由對方所作：張方平（CBDB 外部人物），始年 1036
+  note: 神道碑由对方所作：张方平（CBDB 外部人物），始年 1036
   src: cbdb
   assoc_code: 405
   direction: forward
 - to_id: cbdb:1558
   type: 其他
-  note: 被致書由對方：宋祁（CBDB 外部人物）
+  note: 被致书由对方：宋祁（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

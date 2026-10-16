@@ -2,7 +2,7 @@ from_id: yang_zhi
 relations:
 - to_id: cbdb:1994
   type: 兄弟
-  note: 兄：楊察（CBDB 外部人物）
+  note: 兄：杨察（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward

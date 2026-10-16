@@ -1,254 +1,254 @@
 from_id: yang_shen
 relations:
 - to_id: cbdb:275714
-  type: 祖孫
-  note: 曾祖：楊玟（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：杨玟（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:275715
-  type: 祖孫
-  note: 祖父：楊春（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：杨春（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:68092
   type: 父子
-  note: 父：楊廷和（CBDB 外部人物）
+  note: 父：杨廷和（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:275717
   type: 母子
-  note: 母：黃氏(楊慎母)（CBDB 外部人物）
+  note: 母：黄氏(杨慎母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:275721
   type: 兄弟
-  note: 弟：楊惇（CBDB 外部人物）
+  note: 弟：杨惇（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:275722
   type: 兄弟
-  note: 弟：楊愷（CBDB 外部人物）
+  note: 弟：杨恺（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:275723
   type: 兄弟
-  note: 弟：楊恆（CBDB 外部人物）
+  note: 弟：杨恒（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:275724
   type: 兄弟
-  note: 弟：楊恂（CBDB 外部人物）
+  note: 弟：杨恂（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:275725
   type: 兄弟
-  note: 弟：楊忱（CBDB 外部人物）
+  note: 弟：杨忱（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:275726
   type: 兄弟
-  note: 弟：楊悌（CBDB 外部人物）
+  note: 弟：杨悌（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:275727
   type: 兄弟
-  note: 弟：楊某（CBDB 外部人物）
+  note: 弟：杨某（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:525747
   type: 兄弟
-  note: 弟：楊怐（CBDB 外部人物）
+  note: 弟：杨怐（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:118846
   type: 夫妻
-  note: 妻子：黃氏(楊慎妻)（CBDB 外部人物）
+  note: 妻子：黄氏(杨慎妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:275720
   type: 夫妻
-  note: 妻子：王氏(楊慎妻)（CBDB 外部人物）
+  note: 妻子：王氏(杨慎妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:275718
   type: 母子
-  note: 繼母：喻氏(楊慎繼母)（CBDB 外部人物）
+  note: 继母：喻氏(杨慎继母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:34717
   type: 其他
-  note: 書序由對方所作：王世貞（CBDB 外部人物）
+  note: 书序由对方所作：王世贞（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:124893
   type: 其他
-  note: 書序由對方所作：李贄（CBDB 外部人物）
+  note: 书序由对方所作：李贽（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:127530
   type: 其他
-  note: 書序由對方所作：汪道昆（CBDB 外部人物）
+  note: 书序由对方所作：汪道昆（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:130797
   type: 其他
-  note: 書序由對方所作：陳文燭（CBDB 外部人物）
+  note: 书序由对方所作：陈文烛（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:133653
   type: 其他
-  note: 書序由對方所作：顧起元（CBDB 外部人物）
+  note: 书序由对方所作：顾起元（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:127479
   type: 其他
-  note: 為對方作墓誌銘：向信（CBDB 外部人物）
+  note: 为对方作墓志铭：向信（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:20065
   type: 其他
-  note: 為對方作傳：謝翱（CBDB 外部人物）
+  note: 为对方作传：谢翱（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward
 - to_id: cbdb:67821
   type: 其他
-  note: 為對方作祭文：劉春（CBDB 外部人物）
+  note: 为对方作祭文：刘春（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:67943
   type: 其他
-  note: 為對方作祭文：黃珂（CBDB 外部人物）
+  note: 为对方作祭文：黄珂（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:68064
   type: 其他
-  note: 為對方作祭文：王元正（CBDB 外部人物）
+  note: 为对方作祭文：王元正（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:68446
   type: 其他
-  note: 為對方作祭文：彭汝實（CBDB 外部人物）
+  note: 为对方作祭文：彭汝实（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:67304
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：姜龍（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：姜龙（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:338582
   type: 其他
-  note: 年譜由對方所作：簡紹芳（CBDB 外部人物）
+  note: 年谱由对方所作：简绍芳（CBDB 外部人物）
   src: cbdb
   assoc_code: 237
   direction: forward
 - to_id: cbdb:68196
   type: 其他
-  note: 為對方作神道碑：姚鏌（CBDB 外部人物）
+  note: 为对方作神道碑：姚镆（CBDB 外部人物）
   src: cbdb
   assoc_code: 406
   direction: forward
 - to_id: cbdb:68333
   type: 其他
-  note: 致書對方：歐陽重（CBDB 外部人物）
+  note: 致书对方：欧阳重（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:128739
   type: 其他
-  note: 致書對方：金臯（CBDB 外部人物）
+  note: 致书对方：金臯（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:28826
   type: 其他
-  note: 被致書由對方：張時徹（CBDB 外部人物）
+  note: 被致书由对方：张时彻（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:130490
   type: 其他
-  note: 被致書由對方：張袞（CBDB 外部人物）
+  note: 被致书由对方：张衮（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:131495
   type: 其他
-  note: 被致書由對方：費宷（CBDB 外部人物）
+  note: 被致书由对方：费宷（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:132583
   type: 其他
-  note: 被致書由對方：蔡汝楠（CBDB 外部人物）
+  note: 被致书由对方：蔡汝楠（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:68449
   type: 其他
-  note: 答對方書：劉繪（CBDB 外部人物）
+  note: 答对方书：刘绘（CBDB 外部人物）
   src: cbdb
   assoc_code: 431
   direction: forward
 - to_id: cbdb:129726
   type: 其他
-  note: 收到對方的答書：孫宜（CBDB 外部人物）
+  note: 收到对方的答书：孙宜（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward
 - to_id: cbdb:551423
   type: 其他
-  note: 贈詩、文：董思近（CBDB 外部人物）
+  note: 赠诗、文：董思近（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:130683
   type: 其他
-  note: 建築物得到對方的題詠、記、命名：張璧（CBDB 外部人物）
+  note: 建筑物得到对方的题咏、记、命名：张璧（CBDB 外部人物）
   src: cbdb
   assoc_code: 444
   direction: forward
 - to_id: cbdb:128905
   type: 其他
-  note: 為對方所作詩文作序：周滿（CBDB 外部人物）
+  note: 为对方所作诗文作序：周满（CBDB 外部人物）
   src: cbdb
   assoc_code: 479
   direction: forward
 - to_id: cbdb:30626
   type: 其他
-  note: 詩文序由對方所作：薛蕙（CBDB 外部人物）
+  note: 诗文序由对方所作：薛蕙（CBDB 外部人物）
   src: cbdb
   assoc_code: 480
   direction: forward
 - to_id: cbdb:128175
   type: 其他
-  note: 政績為對方所稱道：吳伯與（CBDB 外部人物）
+  note: 政绩为对方所称道：吴伯与（CBDB 外部人物）
   src: cbdb
   assoc_code: 539
   direction: forward

@@ -2,13 +2,13 @@ from_id: song_zhun
 relations:
 - to_id: cbdb:18306
   type: 父子
-  note: 父：宋鵬（CBDB 外部人物）
+  note: 父：宋鹏（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:18308
   type: 兄弟
-  note: 從弟：宋可觀（CBDB 外部人物）
+  note: 从弟：宋可观（CBDB 外部人物）
   src: cbdb
   kin_code: 130
   direction: forward

@@ -2,7 +2,7 @@ from_id: liang_gu
 relations:
 - to_id: cbdb:1133
   type: 父子
-  note: 父：梁顥（CBDB 外部人物）
+  note: 父：梁颢（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -14,7 +14,7 @@ relations:
   direction: forward
 - to_id: cbdb:1137
   type: 兄弟
-  note: 弟：梁適（CBDB 外部人物）
+  note: 弟：梁适（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -26,7 +26,7 @@ relations:
   direction: forward
 - to_id: cbdb:217
   type: 其他
-  note: 墓誌銘由對方所作：張方平（CBDB 外部人物）
+  note: 墓志铭由对方所作：张方平（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward

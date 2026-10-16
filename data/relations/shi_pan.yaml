@@ -1,13 +1,13 @@
 from_id: shi_pan
 relations:
 - to_id: cbdb:236584
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：施希敬（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:236585
-  type: 祖孫
+  type: 祖孙
   note: 祖父：施志方（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -26,31 +26,31 @@ relations:
   direction: forward
 - to_id: cbdb:236591
   type: 兄弟
-  note: 弟：施宗賢（CBDB 外部人物）
+  note: 弟：施宗贤（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:236590
   type: 夫妻
-  note: 妻子：吳氏(施槃妻)（CBDB 外部人物）
+  note: 妻子：吴氏(施槃妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:236589
   type: 母子
-  note: 繼母：嚴氏(施槃繼母)（CBDB 外部人物）
+  note: 继母：严氏(施槃继母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:66746
   type: 师生
-  note: 為對方之學生：楊溥（CBDB 外部人物）
+  note: 为对方之学生：杨溥（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:128218
   type: 其他
-  note: 為對方作傳：吳敏（CBDB 外部人物）
+  note: 为对方作传：吴敏（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward

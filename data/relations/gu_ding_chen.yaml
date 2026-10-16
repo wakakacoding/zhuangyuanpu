@@ -1,224 +1,224 @@
 from_id: gu_ding_chen
 relations:
 - to_id: cbdb:272690
-  type: 祖孫
-  note: 曾祖：顧大本（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：顾大本（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:266803
-  type: 祖孫
-  note: 祖父：顧良（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：顾良（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:272692
   type: 父子
-  note: 父：顧恂（CBDB 外部人物）
+  note: 父：顾恂（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:272697
   type: 兄弟
-  note: 兄：顧式（CBDB 外部人物）
+  note: 兄：顾式（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:272698
   type: 兄弟
-  note: 兄：顧宜之（CBDB 外部人物）
+  note: 兄：顾宜之（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:272696
   type: 夫妻
-  note: 妻子：朱氏(顧鼎成妻)（CBDB 外部人物）
+  note: 妻子：朱氏(顾鼎成妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:525947
   type: 父子
-  note: 子：顧履方（CBDB 外部人物）
+  note: 子：顾履方（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:525948
   type: 父子
-  note: 子：顧履吉（CBDB 外部人物）
+  note: 子：顾履吉（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:525949
   type: 父子
-  note: 子：顧履芳（CBDB 外部人物）
+  note: 子：顾履芳（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:525950
   type: 父子
-  note: 子：顧履貞（CBDB 外部人物）
+  note: 子：顾履贞（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:525951
-  type: 祖孫
-  note: 孫：顧謙亨（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：顾谦亨（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525952
-  type: 祖孫
-  note: 孫：顧謙益（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：顾谦益（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:577437
-  type: 祖孫
-  note: 孫：顧謙服（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：顾谦服（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:272694
   type: 母子
-  note: 私生子女之本生母：楊氏(顧鼎成生母)（CBDB 外部人物）
+  note: 私生子女之本生母：杨氏(顾鼎成生母)（CBDB 外部人物）
   src: cbdb
   kin_code: 377
   direction: forward
 - to_id: cbdb:272693
   type: 母子
-  note: 嫡母：吳氏(顧鼎成嫡母)（CBDB 外部人物）
+  note: 嫡母：吴氏(顾鼎成嫡母)（CBDB 外部人物）
   src: cbdb
   kin_code: 420
   direction: forward
 - to_id: cbdb:122820
   type: 旁系
-  note: 姪孫女：釋濟印（CBDB 外部人物）
+  note: 姪孙女：释济印（CBDB 外部人物）
   src: cbdb
   kin_code: 459
   direction: forward
 - to_id: cbdb:126663
   type: 其他
-  note: 為對方作墓誌銘：王倬（CBDB 外部人物）
+  note: 为对方作墓志铭：王倬（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:130361
   type: 其他
-  note: 為對方作傳：張汝舟（CBDB 外部人物）
+  note: 为对方作传：张汝舟（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward
 - to_id: cbdb:28825
   type: 其他
-  note: 祭文由對方所作：張邦奇（CBDB 外部人物）
+  note: 祭文由对方所作：张邦奇（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:126516
   type: 其他
-  note: 祭文由對方所作：王同祖（CBDB 外部人物）
+  note: 祭文由对方所作：王同祖（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:30204
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：方鵬（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：方鹏（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:130108
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：許立（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：许立（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:130568
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：張遇（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：张遇（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:130607
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：張潮（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：张潮（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:130612
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：張寬（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：张宽（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:131509
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：喻時（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：喻时（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:132292
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：管琪（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：管琪（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:133631
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：顧可學（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：顾可学（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:127802
   type: 其他
-  note: 為對方之家譜作序：李志學（CBDB 外部人物）
+  note: 为对方之家谱作序：李志学（CBDB 外部人物）
   src: cbdb
   assoc_code: 276
   direction: forward
 - to_id: cbdb:125411
   type: 其他
-  note: 神道碑由對方所作：嚴嵩（CBDB 外部人物）
+  note: 神道碑由对方所作：严嵩（CBDB 外部人物）
   src: cbdb
   assoc_code: 405
   direction: forward
 - to_id: cbdb:34643
   type: 其他
-  note: 為對方作墓表：杭淮（CBDB 外部人物）
+  note: 为对方作墓表：杭淮（CBDB 外部人物）
   src: cbdb
   assoc_code: 410
   direction: forward
 - to_id: cbdb:128250
   type: 其他
-  note: 為對方作墓表：吳愈（CBDB 外部人物）
+  note: 为对方作墓表：吴愈（CBDB 外部人物）
   src: cbdb
   assoc_code: 410
   direction: forward
 - to_id: cbdb:129603
   type: 其他
-  note: 為對方作墓表：耿明（CBDB 外部人物）
+  note: 为对方作墓表：耿明（CBDB 外部人物）
   src: cbdb
   assoc_code: 410
   direction: forward
 - to_id: cbdb:131825
   type: 其他
-  note: 為對方作墓表：楊惟康（CBDB 外部人物）
+  note: 为对方作墓表：杨惟康（CBDB 外部人物）
   src: cbdb
   assoc_code: 410
   direction: forward
 - to_id: cbdb:33841
   type: 其他
-  note: 行狀由對方所作：陸深（CBDB 外部人物）
+  note: 行状由对方所作：陆深（CBDB 外部人物）
   src: cbdb
   assoc_code: 425
   direction: forward
 - to_id: cbdb:126716
   type: 其他
-  note: 贈詩、文：王堯封（CBDB 外部人物）
+  note: 赠诗、文：王尧封（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:68140
   type: 其他
-  note: 為對方作學記（書院記）：李時（CBDB 外部人物）
+  note: 为对方作学记（书院记）：李时（CBDB 外部人物）
   src: cbdb
   assoc_code: 459
   direction: forward

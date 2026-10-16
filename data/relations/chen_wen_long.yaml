@@ -1,74 +1,74 @@
 from_id: chen_wen_long
 relations:
 - to_id: cbdb:10884
-  type: 祖孫
-  note: 祖父：陳俊卿（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：陈俊卿（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:11120
   type: 翁婿
-  note: 岳父：黃績（CBDB 外部人物）
+  note: 岳父：黄绩（CBDB 外部人物）
   src: cbdb
   kin_code: 76
   direction: forward
 - to_id: cbdb:15201
   type: 旁系
-  note: 從子;姪子：陳瓚（CBDB 外部人物）
+  note: 从子;姪子：陈瓒（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:15220
   type: 政敌
-  note: 彈劾：趙溍（CBDB 外部人物），始年 1277
+  note: 弹劾：赵溍（CBDB 外部人物），始年 1277
   src: cbdb
   assoc_code: 11
   direction: forward
 - to_id: cbdb:15221
   type: 政敌
-  note: 彈劾：黃萬石（CBDB 外部人物），始年 1277
+  note: 弹劾：黄万石（CBDB 外部人物），始年 1277
   src: cbdb
   assoc_code: 11
   direction: forward
 - to_id: cbdb:15214
   type: 政敌
-  note: 被對方彈劾：范文虎（CBDB 外部人物），始年 1277
+  note: 被对方弹劾：范文虎（CBDB 外部人物），始年 1277
   src: cbdb
   assoc_code: 12
   direction: forward
 - to_id: cbdb:10374
   type: 政敌
-  note: 遭對方排擠：賈似道（CBDB 外部人物）
+  note: 遭对方排挤：贾似道（CBDB 外部人物）
   src: cbdb
   assoc_code: 30
   direction: forward
 - to_id: cbdb:10374
   type: 其他
-  note: 為對方之門客：賈似道（CBDB 外部人物），始年 1277
+  note: 为对方之门客：贾似道（CBDB 外部人物），始年 1277
   src: cbdb
   assoc_code: 130
   direction: forward
 - to_id: cbdb:51275
   type: 其他
-  note: 門客為對方：鄭鉞（CBDB 外部人物）
+  note: 门客为对方：郑钺（CBDB 外部人物）
   src: cbdb
   assoc_code: 131
   direction: forward
 - to_id: cbdb:15214
   type: 其他
-  note: 反對/不支持對方的政策：范文虎（CBDB 外部人物）
+  note: 反对/不支持对方的政策：范文虎（CBDB 外部人物）
   src: cbdb
   assoc_code: 136
   direction: forward
 - to_id: cbdb:17112
   type: 其他
-  note: 被致書由對方：陸秀夫（CBDB 外部人物）
+  note: 被致书由对方：陆秀夫（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: wen_tianxiang
   type: 其他
-  note: 被致書由對方（CBDB）
+  note: 被致书由对方（CBDB）
   src: cbdb
   assoc_code: 430
   direction: forward

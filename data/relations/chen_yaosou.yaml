@@ -2,25 +2,25 @@ from_id: chen_yaosou
 relations:
 - to_id: cbdb:3083
   type: 父子
-  note: 父：陳省華（CBDB 外部人物）
+  note: 父：陈省华（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:1574
   type: 翁婿
-  note: 岳父：宋摶（CBDB 外部人物）
+  note: 岳父：宋抟（CBDB 外部人物）
   src: cbdb
   kin_code: 76
   direction: forward
 - to_id: cbdb:118924
   type: 母子
-  note: 母：馮氏(陳堯叟母)（CBDB 外部人物）
+  note: 母：冯氏(陈尧叟母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:98
   type: 兄弟
-  note: 弟：陳堯佐（CBDB 外部人物）
+  note: 弟：陈尧佐（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -32,25 +32,25 @@ relations:
   direction: forward
 - to_id: cbdb:14384
   type: 旁系
-  note: 從子;姪子：陳漸（CBDB 外部人物）
+  note: 从子;姪子：陈渐（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:3080
   type: 父子
-  note: 長子; 第一子：陳師古（CBDB 外部人物）
+  note: 长子; 第一子：陈师古（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:14531
   type: 父子
-  note: 次子：陳希古（CBDB 外部人物）
+  note: 次子：陈希古（CBDB 外部人物）
   src: cbdb
   kin_code: 183
   direction: forward
 - to_id: cbdb:14223
-  type: 祖孫
-  note: 孫：陳知言（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：陈知言（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
@@ -62,25 +62,25 @@ relations:
   direction: forward
 - to_id: cbdb:877
   type: 同僚
-  note: 幕僚為對方：任中師（CBDB 外部人物）
+  note: 幕僚为对方：任中师（CBDB 外部人物）
   src: cbdb
   assoc_code: 67
   direction: forward
 - to_id: cbdb:877
   type: 其他
-  note: 下屬為對方：任中師（CBDB 外部人物）
+  note: 下属为对方：任中师（CBDB 外部人物）
   src: cbdb
   assoc_code: 482
   direction: forward
 - to_id: cbdb:1488
   type: 其他
-  note: 祠記由對方所作：司馬光（CBDB 外部人物）
+  note: 祠记由对方所作：司马光（CBDB 外部人物）
   src: cbdb
   assoc_code: 561
   direction: forward
 - to_id: cbdb:7343
   type: 其他
-  note: 祠記由對方所作：孫覿（CBDB 外部人物）
+  note: 祠记由对方所作：孙觌（CBDB 外部人物）
   src: cbdb
   assoc_code: 561
   direction: forward

@@ -2,67 +2,67 @@ from_id: ye_zu_qia
 relations:
 - to_id: cbdb:14583
   type: 兄弟
-  note: 兄：葉祖誼（CBDB 外部人物）
+  note: 兄：叶祖谊（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:14585
   type: 旁系
-  note: 從子;姪子：葉兌（CBDB 外部人物）
+  note: 从子;姪子：叶兑（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:16916
   type: 旁系
-  note: 從子;姪子：葉D（CBDB 外部人物）
+  note: 从子;姪子：叶D（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:1707
   type: 其他
-  note: 恩主是對方：曾布（CBDB 外部人物），始年 1100
+  note: 恩主是对方：曾布（CBDB 外部人物），始年 1100
   src: cbdb
   assoc_code: 5
   direction: forward
 - to_id: cbdb:1647
   type: 政敌
-  note: 反對/攻訐：蔡確（CBDB 外部人物），始年 1100
+  note: 反对/攻讦：蔡确（CBDB 外部人物），始年 1100
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:1845
   type: 政敌
-  note: 反對/攻訐：王珪（CBDB 外部人物），始年 1100
+  note: 反对/攻讦：王珪（CBDB 外部人物），始年 1100
   src: cbdb
   assoc_code: 15
   direction: forward
 - to_id: cbdb:18424
   type: 师生
-  note: 為對方之學生：江側（CBDB 外部人物）
+  note: 为对方之学生：江侧（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:7005
   type: 其他
-  note: 為對方作墓誌銘：陳襄（CBDB 外部人物），始年 1100
+  note: 为对方作墓志铭：陈襄（CBDB 外部人物），始年 1100
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:18424
   type: 其他
-  note: 從對方遊：江側（CBDB 外部人物），始年 1100
+  note: 从对方游：江侧（CBDB 外部人物），始年 1100
   src: cbdb
   assoc_code: 49
   direction: forward
 - to_id: cbdb:1309
   type: 其他
-  note: 科舉次第由對方決定：呂惠卿（CBDB 外部人物），始年 1100
+  note: 科举次第由对方决定：吕惠卿（CBDB 外部人物），始年 1100
   src: cbdb
   assoc_code: 186
   direction: forward
 - to_id: cbdb:8051
   type: 其他
-  note: 收到對方的答啓：韓維（CBDB 外部人物）
+  note: 收到对方的答启：韩维（CBDB 外部人物）
   src: cbdb
   assoc_code: 436
   direction: forward

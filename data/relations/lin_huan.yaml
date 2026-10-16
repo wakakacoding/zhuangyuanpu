@@ -2,25 +2,25 @@ from_id: lin_huan
 relations:
 - to_id: cbdb:12519
   type: 旁系
-  note: 同族長輩：林葦（CBDB 外部人物）
+  note: 同族长辈：林苇（CBDB 外部人物）
   src: cbdb
   kin_code: 4
   direction: forward
 - to_id: cbdb:24562
   type: 旁系
-  note: 從子;姪子：林思承（CBDB 外部人物）
+  note: 从子;姪子：林思承（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:24566
   type: 父子
-  note: 子：林繼（CBDB 外部人物）
+  note: 子：林继（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:24573
   type: 父子
-  note: 子：林時讓（CBDB 外部人物）
+  note: 子：林时让（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
@@ -32,7 +32,7 @@ relations:
   direction: forward
 - to_id: cbdb:66729
   type: 其他
-  note: 祭文由對方所作：楊寓（CBDB 外部人物）
+  note: 祭文由对方所作：杨寓（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward

@@ -2,25 +2,25 @@ from_id: sun_jia_nai
 relations:
 - to_id: cbdb:59010
   type: 师生
-  note: 為對方之學生：李菡（CBDB 外部人物）
+  note: 为对方之学生：李菡（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:65002
   type: 师生
-  note: 學生為對方：愛新覺羅奕謨（CBDB 外部人物）
+  note: 学生为对方：爱新觉罗奕谟（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:693297
   type: 同僚
-  note: 幕僚為對方：胡朝賀（CBDB 外部人物）
+  note: 幕僚为对方：胡朝贺（CBDB 外部人物）
   src: cbdb
   assoc_code: 67
   direction: forward
 - to_id: cbdb:122327
   type: 其他
-  note: 鞫治：楊翠喜（CBDB 外部人物）
+  note: 鞫治：杨翠喜（CBDB 外部人物）
   src: cbdb
   assoc_code: 157
   direction: forward

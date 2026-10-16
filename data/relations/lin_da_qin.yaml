@@ -1,44 +1,44 @@
 from_id: lin_da_qin
 relations:
 - to_id: cbdb:290709
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：林山（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:290710
-  type: 祖孫
+  type: 祖孙
   note: 祖父：林?（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:290711
   type: 父子
-  note: 父：林烏（CBDB 外部人物）
+  note: 父：林乌（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:290712
   type: 母子
-  note: 母：劉氏(林大欽母)（CBDB 外部人物）
+  note: 母：刘氏(林大钦母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:290713
   type: 夫妻
-  note: 妻子：孫氏(林大欽妻)（CBDB 外部人物）
+  note: 妻子：孙氏(林大钦妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:68374
   type: 其他
-  note: 傳記作者為對方：薛侃（CBDB 外部人物）
+  note: 传记作者为对方：薛侃（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:128562
   type: 其他
-  note: 傳記作者為對方：林大春（CBDB 外部人物）
+  note: 传记作者为对方：林大春（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward

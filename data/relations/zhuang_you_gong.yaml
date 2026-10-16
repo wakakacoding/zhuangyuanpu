@@ -2,13 +2,13 @@ from_id: zhuang_you_gong
 relations:
 - to_id: cbdb:517451
   type: 父子
-  note: 父：莊資政（CBDB 外部人物）
+  note: 父：庄资政（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:517450
   type: 父子
-  note: 子：莊士斌（CBDB 外部人物）
+  note: 子：庄士斌（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
@@ -20,19 +20,19 @@ relations:
   direction: forward
 - to_id: cbdb:517452
   type: 翁婿
-  note: 女婿：羅永楠（CBDB 外部人物）
+  note: 女婿：罗永楠（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:78965
   type: 其他
-  note: 欣賞/器重：余觀德（CBDB 外部人物）
+  note: 欣赏/器重：余观德（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:29876
   type: 其他
-  note: 墓由對方題：錢大昕（CBDB 外部人物）
+  note: 墓由对方题：钱大昕（CBDB 外部人物）
   src: cbdb
   assoc_code: 518
   direction: forward

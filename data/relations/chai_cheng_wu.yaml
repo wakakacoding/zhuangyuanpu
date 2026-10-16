@@ -1,8 +1,8 @@
 from_id: chai_cheng_wu
 relations:
 - to_id: cbdb:3003
-  type: 祖孫
-  note: 高祖;四世祖：柴賡（CBDB 外部人物）
+  type: 祖孙
+  note: 高祖;四世祖：柴赓（CBDB 外部人物）
   src: cbdb
   kin_code: 39
   direction: forward
@@ -14,43 +14,43 @@ relations:
   direction: forward
 - to_id: cbdb:350
   type: 翁婿
-  note: 第一任妻父：趙齊（CBDB 外部人物）
+  note: 第一任妻父：赵齐（CBDB 外部人物）
   src: cbdb
   kin_code: 87
   direction: forward
 - to_id: cbdb:43275
   type: 父子
-  note: 子：柴貽範（CBDB 外部人物）
+  note: 子：柴贻范（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:7013
   type: 翁婿
-  note: 女婿：張太初（CBDB 外部人物）
+  note: 女婿：张太初（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:22954
   type: 旁系
-  note: 曾姪孫;從曾孫：柴有朋（CBDB 外部人物）
+  note: 曾姪孙;从曾孙：柴有朋（CBDB 外部人物）
   src: cbdb
   kin_code: 253
   direction: forward
 - to_id: cbdb:7097
   type: 其他
-  note: 墓誌銘由對方所作：楊億（CBDB 外部人物）
+  note: 墓志铭由对方所作：杨亿（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:39114
   type: 其他
-  note: 致書對方：王治（CBDB 外部人物）
+  note: 致书对方：王治（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:3997
   type: 其他
-  note: 被致書由對方：王禹偁（CBDB 外部人物）
+  note: 被致书由对方：王禹偁（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

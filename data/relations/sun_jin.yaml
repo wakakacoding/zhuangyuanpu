@@ -1,38 +1,38 @@
 from_id: sun_jin
 relations:
 - to_id: cbdb:1513
-  type: 祖孫
-  note: 祖父：孫沖（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：孙冲（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:17912
   type: 父子
-  note: 父：孫庸（CBDB 外部人物）
+  note: 父：孙庸（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:17914
   type: 兄弟
-  note: 弟：孫侑（CBDB 外部人物）
+  note: 弟：孙侑（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:700129
   type: 旁系
-  note: 從子;姪子：孫鑄（CBDB 外部人物）
+  note: 从子;姪子：孙铸（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:120004
   type: 父子
-  note: 子：孫和（CBDB 外部人物）
+  note: 子：孙和（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:20221
   type: 翁婿
-  note: 女婿：劉几（CBDB 外部人物）
+  note: 女婿：刘几（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward

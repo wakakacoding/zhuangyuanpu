@@ -1,86 +1,86 @@
 from_id: zhang_mao_xiu
 relations:
 - to_id: cbdb:218613
-  type: 祖孫
-  note: 曾祖：張鎮（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：张镇（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:218615
-  type: 祖孫
-  note: 祖父：張文明（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：张文明（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:69011
   type: 父子
-  note: 父：張居正（CBDB 外部人物）
+  note: 父：张居正（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:218617
   type: 母子
-  note: 母：吳氏(張懋修母)（CBDB 外部人物）
+  note: 母：吴氏(张懋修母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:206487
   type: 兄弟
-  note: 兄：張敬修（CBDB 外部人物）
+  note: 兄：张敬修（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:218622
   type: 兄弟
-  note: 兄：張嗣修（CBDB 外部人物）
+  note: 兄：张嗣修（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:130348
   type: 兄弟
-  note: 弟：張允修（CBDB 外部人物）
+  note: 弟：张允修（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:218621
   type: 兄弟
-  note: 弟：張靜修（CBDB 外部人物）
+  note: 弟：张静修（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:218623
   type: 兄弟
-  note: 弟：張簡修（CBDB 外部人物）
+  note: 弟：张简修（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:218624
   type: 兄弟
-  note: 弟：張慎修（CBDB 外部人物）
+  note: 弟：张慎修（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:218626
   type: 兄弟
-  note: 弟：張道修（CBDB 外部人物）
+  note: 弟：张道修（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:218620
   type: 夫妻
-  note: 妻子：高氏(張懋修妻)（CBDB 外部人物）
+  note: 妻子：高氏(张懋修妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:218618
   type: 母子
-  note: 繼母：顧氏(張懋修前母)（CBDB 外部人物）
+  note: 继母：顾氏(张懋修前母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:218619
   type: 母子
-  note: 私生子女之本生母：何氏(張懋修生母)（CBDB 外部人物）
+  note: 私生子女之本生母：何氏(张懋修生母)（CBDB 外部人物）
   src: cbdb
   kin_code: 377
   direction: forward

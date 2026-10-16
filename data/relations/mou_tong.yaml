@@ -1,20 +1,20 @@
 from_id: mou_tong
 relations:
 - to_id: cbdb:133370
-  type: 祖孫
-  note: 祖父：繆國維（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：缪国维（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:684573
   type: 父子
-  note: 父：繆慧隆（CBDB 外部人物）
+  note: 父：缪慧隆（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:34836
   type: 其他
-  note: 被對方推薦：湯斌（CBDB 外部人物）
+  note: 被对方推荐：汤斌（CBDB 外部人物）
   src: cbdb
   assoc_code: 14
   direction: forward

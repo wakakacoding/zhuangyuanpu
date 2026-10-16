@@ -1,62 +1,62 @@
 from_id: deng_zhong_yue
 relations:
 - to_id: cbdb:518480
-  type: 祖孫
-  note: 高祖;四世祖：鄧守漸（CBDB 外部人物）
+  type: 祖孙
+  note: 高祖;四世祖：邓守渐（CBDB 外部人物）
   src: cbdb
   kin_code: 39
   direction: forward
 - to_id: cbdb:518479
-  type: 祖孫
-  note: 祖父：鄧允燮（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：邓允燮（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:518484
   type: 父子
-  note: 父：鄧基哲（CBDB 外部人物）
+  note: 父：邓基哲（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:518485
   type: 兄弟
-  note: 弟：鄧鍾一（CBDB 外部人物）
+  note: 弟：邓钟一（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:518486
   type: 兄弟
-  note: 弟：鄧鍾音（CBDB 外部人物）
+  note: 弟：邓钟音（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:518487
   type: 兄弟
-  note: 弟：鄧鍾敘（CBDB 外部人物）
+  note: 弟：邓钟叙（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:518482
   type: 旁系
-  note: 從子;姪子：鄧汝賢（CBDB 外部人物）
+  note: 从子;姪子：邓汝贤（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:518481
   type: 父子
-  note: 子：鄧汝敏（CBDB 外部人物）
+  note: 子：邓汝敏（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:518483
-  type: 祖孫
-  note: 五世祖;高曾祖：鄧邦（CBDB 外部人物）
+  type: 祖孙
+  note: 五世祖;高曾祖：邓邦（CBDB 外部人物）
   src: cbdb
   kin_code: 397
   direction: forward
 - to_id: cbdb:700217
   type: 其他
-  note: 稱道對方之文章、學問：楊銘淇（CBDB 外部人物）
+  note: 称道对方之文章、学问：杨铭淇（CBDB 外部人物）
   src: cbdb
   assoc_code: 293
   direction: forward

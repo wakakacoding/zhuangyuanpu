@@ -8,37 +8,37 @@ relations:
   direction: forward
 - to_id: cbdb:121280
   type: 父女
-  note: 女兒：于氏(孔憲培妻)（CBDB 外部人物）
+  note: 女儿：于氏(孔宪培妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 176
   direction: forward
 - to_id: cbdb:514064
   type: 旁系
-  note: 從子;姪子：于時和（CBDB 外部人物）
+  note: 从子;姪子：于时和（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:514065
   type: 父子
-  note: 子：于齊賢（CBDB 外部人物）
+  note: 子：于齐贤（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:59685
   type: 翁婿
-  note: 女婿：孔憲培（CBDB 外部人物）
+  note: 女婿：孔宪培（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:81202
   type: 其他
-  note: 下屬為對方：陸伯焜（CBDB 外部人物）
+  note: 下属为对方：陆伯焜（CBDB 外部人物）
   src: cbdb
   assoc_code: 482
   direction: forward
 - to_id: cbdb:55004
   type: 其他
-  note: 為對方之考官：管世銘（CBDB 外部人物）
+  note: 为对方之考官：管世铭（CBDB 外部人物）
   src: cbdb
   assoc_code: 558
   direction: forward

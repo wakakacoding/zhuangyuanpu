@@ -2,7 +2,7 @@ from_id: wang_ang
 relations:
   - to_id: cbdb:44210
     type: 同年
-    note: 同年友：馬擴（CBDB 外部人物）
+    note: 同年友：马扩（CBDB 外部人物）
     src: cbdb
     assoc_code: 10
     direction: forward

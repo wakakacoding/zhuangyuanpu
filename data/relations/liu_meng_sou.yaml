@@ -2,37 +2,37 @@ from_id: liu_meng_sou
 relations:
 - to_id: cbdb:8091
   type: 父子
-  note: 父：劉熙古（CBDB 外部人物）
+  note: 父：刘熙古（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:18392
   type: 兄弟
-  note: 兄：劉蒙正（CBDB 外部人物）
+  note: 兄：刘蒙正（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:4179
   type: 父子
-  note: 子：劉宗誨（CBDB 外部人物）
+  note: 子：刘宗诲（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:18393
   type: 父子
-  note: 子：劉宗儒（CBDB 外部人物）
+  note: 子：刘宗儒（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:120100
   type: 父子
-  note: 次子：劉宗弼（CBDB 外部人物）
+  note: 次子：刘宗弼（CBDB 外部人物）
   src: cbdb
   kin_code: 183
   direction: forward
 - to_id: cbdb:360
   type: 其他
-  note: 臨別得到對方所作贈言(送別詩、序)：趙湘（CBDB 外部人物）
+  note: 临别得到对方所作赠言(送别诗、序)：赵湘（CBDB 外部人物）
   src: cbdb
   assoc_code: 163
   direction: forward

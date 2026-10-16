@@ -1,38 +1,38 @@
 from_id: jin_bang
 relations:
 - to_id: cbdb:577403
-  type: 祖孫
+  type: 祖孙
   note: 祖父：金茂宣（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:374226
   type: 父子
-  note: 父：金長溥（CBDB 外部人物）
+  note: 父：金长溥（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:684620
   type: 旁系
-  note: 從子;姪子：金應球（CBDB 外部人物）
+  note: 从子;姪子：金应球（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:530139
   type: 父子
-  note: 子：金應琛（CBDB 外部人物）
+  note: 子：金应琛（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:530140
   type: 父子
-  note: 子：金應瑭（CBDB 外部人物）
+  note: 子：金应瑭（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:577404
   type: 旁系
-  note: 伯;伯父：金長洪（CBDB 外部人物）
+  note: 伯;伯父：金长洪（CBDB 外部人物）
   src: cbdb
   kin_code: 516
   direction: forward
@@ -56,43 +56,43 @@ relations:
   direction: forward
 - to_id: cbdb:72460
   type: 其他
-  note: 欣賞/器重：方矩（CBDB 外部人物）
+  note: 欣赏/器重：方矩（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:33184
   type: 师生
-  note: 為對方之學生：江永（CBDB 外部人物）
+  note: 为对方之学生：江永（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:74894
   type: 师生
-  note: 為對方之學生：劉大櫆（CBDB 外部人物）
+  note: 为对方之学生：刘大櫆（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:34226
   type: 师生
-  note: 學生為對方：張惠言（CBDB 外部人物）
+  note: 学生为对方：张惠言（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:29954
   type: 其他
-  note: 書序由對方所作：朱珪（CBDB 外部人物）
+  note: 书序由对方所作：朱珪（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:65933
   type: 其他
-  note: 同鄉：戴震（CBDB 外部人物）
+  note: 同乡：戴震（CBDB 外部人物）
   src: cbdb
   assoc_code: 94
   direction: forward
 - to_id: cbdb:90063
   type: 其他
-  note: 同鄉：程瑤田（CBDB 外部人物）
+  note: 同乡：程瑶田（CBDB 外部人物）
   src: cbdb
   assoc_code: 94
   direction: forward

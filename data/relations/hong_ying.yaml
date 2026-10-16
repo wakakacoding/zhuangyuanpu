@@ -2,7 +2,7 @@ from_id: hong_ying
 relations:
 - to_id: cbdb:30858
   type: 其他
-  note: 與對方遊：顧廣圻（CBDB 外部人物）
+  note: 与对方游：顾广圻（CBDB 外部人物）
   src: cbdb
   assoc_code: 277
   direction: forward

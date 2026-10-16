@@ -2,19 +2,19 @@ from_id: wu_xi_ling
 relations:
 - to_id: cbdb:558317
   type: 兄弟
-  note: 從兄弟;堂兄弟：吳鶴齡（CBDB 外部人物）
+  note: 从兄弟;堂兄弟：吴鹤龄（CBDB 外部人物）
   src: cbdb
   kin_code: 119
   direction: forward
 - to_id: cbdb:558316
   type: 兄弟
-  note: 兄：吳昌齡（CBDB 外部人物）
+  note: 兄：吴昌龄（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:698489
   type: 兄弟
-  note: 兄：吳長齡（CBDB 外部人物）
+  note: 兄：吴长龄（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward

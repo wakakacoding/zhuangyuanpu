@@ -1,50 +1,50 @@
 from_id: sun_xian
 relations:
 - to_id: cbdb:247998
-  type: 祖孫
-  note: 曾祖：孫敬先（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：孙敬先（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:248009
-  type: 祖孫
-  note: 祖父：孫林（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：孙林（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:248020
   type: 父子
-  note: 父：孫興（CBDB 外部人物）
+  note: 父：孙兴（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:248031
   type: 母子
-  note: 母：李氏(孫賢母)（CBDB 外部人物）
+  note: 母：李氏(孙贤母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:248053
   type: 兄弟
-  note: 弟：孫貢（CBDB 外部人物）
+  note: 弟：孙贡（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:248064
   type: 兄弟
-  note: 弟：孫質（CBDB 外部人物）
+  note: 弟：孙质（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:248042
   type: 夫妻
-  note: 妻子：常氏(孫賢妻)（CBDB 外部人物）
+  note: 妻子：常氏(孙贤妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:127365
   type: 其他
-  note: 傳記作者為對方：朱睦㮮（CBDB 外部人物）
+  note: 传记作者为对方：朱睦㮮（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward

@@ -1,0 +1,169 @@
+person_id: wang_zeng
+events:
+  - year: 978
+    year_precision: exact
+    type: 出生
+    title: 生于青州益都，少孤鞠于仲父
+    description: >-
+      太平兴国三年（978）生。本传：「王曾，字孝先，青州益都人。少孤，鞠于仲父宗元，
+      从学于里人张震，善为文辞。」生年不见本传明文，据其卒「年六十一」（宝元元年 1038）
+      逆推。父王兼官著作佐郎。籍贯三说（青州益都、泉州晋江、祖上太原王氏）之取舍见轶事栏。
+    source_ids: [src_songshi_wangzeng, src_longpingji_wangzeng]
+  - year: 1002
+    year_precision: exact
+    type: 夺魁
+    title: 咸平五年壬寅科状元，青州发解、南省、廷试皆第一
+    description: >-
+      宋代继孙何之后第二位「连中三元」者。本传作「咸平中，由乡贡试礼部、廷对皆第一」，
+      系年据李心传《旧闻证误》引国史「沂公以咸平五年第进士」；《四库全书总目》亦记
+      「咸平五年乡贡、试礼部、廷对皆第一」——三元之说三源同证。殿试所试为《有物混成赋》，
+      《隆平集》称「天下以为赋格」；杨亿见其赋，叹曰「王佐器也」。
+    source_ids: [src_songshi_wangzeng, src_longpingji_wangzeng, src_dongxuan_bilu_wangzeng, src_jiuwen_zhengwu_wangzeng, src_siku_wangwenzheng_bilu]
+  - year: 1002
+    year_precision: exact
+    type: 授官
+    title: 解褐将作监丞、通判济州
+    description: >-
+      状元及第后首授此职。本传：「以将作监丞通判济州。」在济州凡三年，任满代还。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1006
+    year_precision: about
+    type: 升迁
+    title: 代还，特试政事堂，授秘书省著作郎、直史馆、三司户部判官
+    description: >-
+      本传：「代还，当召试学士院，宰相寇准奇之，特试政事堂，授秘书省著作郎、直史馆、
+      三司户部判官。」具体年份文献未系，据济州三年任满之次第系于此。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1007
+    year_precision: about
+    type: 升迁
+    title: 议国书之称；迁右正言、知制诰兼史馆修撰
+    description: >-
+      景德初宋与契丹通和，岁遣使致书称南朝、以契丹为北朝，曾曰「从其国号足矣」，业已
+      遣使，弗果易。寻迁右正言、知制诰兼史馆修撰。本传系于「景德初」，故置于此。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1009
+    year_precision: about
+    type: 升迁
+    title: 判大理寺、知审刑院，迁翰林学士；天书降，陈五害以谏玉清昭应宫之役
+    description: >-
+      时瑞应沓至，曾入对奏「此诚国家承平所致，然愿推而弗居，异日或有灾沴，则免舆议」。
+      真宗既受符命，大建玉清昭应宫，廷臣莫有言者，曾独陈五害以谏。旧用郎中官判大理寺，
+      帝欲重之，特命曾，赐钱三十万，因请自辟僚属、著为令，迁翰林学士。又知审刑院，
+      请违制之法分故失，非亲被制书者止以失论，帝卒从之。帝尝晚坐承明殿召对，使内侍谕
+      「向思卿甚，故不及朝服见卿」——其见尊礼如此。各事本传不系年月，约在大中祥符初。
+    source_ids: [src_songshi_wangzeng, src_longpingji_wangzeng]
+  - year: 1016
+    year_precision: exact
+    type: 升迁
+    title: 以右谏议大夫参知政事
+    description: >-
+      此前历知审官院、通进银台司、勾当三班院。本传未系参知政事之年，《隆平集》记
+      「大中祥符九年，参知政事」，是年九月除。时王钦若方挟符瑞、傅会帝意，又阴欲排
+      异己者。
+    source_ids: [src_longpingji_wangzeng, src_songshi_wangzeng]
+  - year: 1017
+    year_precision: about
+    type: 罢官
+    title: 为王钦若所排，罢为尚书礼部侍郎、判都省，出知应天府
+    description: >-
+      时宫观皆以辅臣为使，曾当使会灵，因以推钦若，帝始疑曾自异。及钦若拜相，会曾市
+      贺皇后家旧第而其家未徙去，曾令人舁土置门外，贺氏诉于禁中，遂罢曾。出知应天府。
+    source_ids: [src_songshi_wangzeng, src_longpingji_wangzeng]
+  - year: 1019
+    year_precision: about
+    type: 升迁
+    title: 徙天雄军，复参知政事，迁吏部侍郎兼太子宾客
+    description: >-
+      在应天府时，民间讹言有妖起若飞帽、夜搏人，自京师以南人皆恐；曾令夜开里门，
+      敢倡言者即捕之，卒无妖。本传仅记「徙天雄军，复参知政事」而无年，《隆平集》作
+      「天禧中」，故系于天禧末年。
+    source_ids: [src_songshi_wangzeng, src_longpingji_wangzeng]
+  - year: 1022
+    year_precision: exact
+    type: 授官
+    title: 真宗崩，草遗诏坚持留「权」字；仁宗立，迁礼部尚书
+    description: >-
+      真宗不豫，皇后居中预政，事皆决于后，中外以为忧。曾密语后戚钱惟演，劝其加恩太子
+      以安刘氏。帝崩，曾奉命入殿庐草遗诏：「以明肃皇后辅立皇太子，权听断军国大事。」
+      丁谓入，去「权」字；曾曰：「皇帝冲年，太后临朝，斯已国家否运。称『权』，犹足示后。
+      且增减制书有法，表则之地，先欲乱之邪？」遂不敢去。仁宗立，迁礼部尚书。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1022
+    year_precision: exact
+    type: 升迁
+    title: 拜中书侍郎、同中书门下平章事；定两宫垂帘之仪，丁谓既贬，朝廷倚以为重
+    description: >-
+      群臣议太后临朝仪，曾请如东汉故事，太后坐帝右、垂帘奏事；丁谓独欲帝朔望见群臣，
+      非大事令入内押班雷允恭传奏禁中、画可以下。曾曰「两宫异处，而柄归宦官，祸端兆矣」。
+      既而雷允恭坐诛、丁谓亦得罪，自是两宫垂帘、辅臣奏事如曾议。任中正为丁谓请如律
+      议功，曾曰「谓以不忠得罪宗庙，尚何议邪」。拜中书侍郎兼本官、同中书门下平章事、
+      集贤殿大学士、会灵观使。时真宗初崩，内外汹汹，曾正色独立，朝廷倚以为重。
+    source_ids: [src_songshi_wangzeng, src_longpingji_wangzeng]
+  - year: 1025
+    year_precision: exact
+    type: 升迁
+    title: 王钦若卒，以门下侍郎兼户部尚书为昭文馆大学士、监修国史
+    description: >-
+      本传：「王钦若卒，曾以门下侍郎兼户部尚书为昭文馆大学士、监修国史、玉清昭应宫使。」
+      又以帝初即位宜近师儒，即召孙奭、冯元劝讲崇政殿。天圣四年夏大雨，传言汴口决、
+      水且大至，都人恐欲东奔，曾曰「河决奏未至，第民间妖言尔」，已而果然；陕西转运使
+      置醋务以榷其利并请推法天下，曾请罢之。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1029
+    year_precision: exact
+    type: 贬谪
+    title: 玉清昭应宫灾，出知青州
+    description: >-
+      始，太后受册将御大安殿，曾执以为不可，长宁节上寿止供张便殿；太后左右姻家稍通
+      请谒，曾多所裁抑，太后滋不悦。会玉清昭应宫灾，乃出知青州。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1031
+    year_precision: about
+    type: 授官
+    title: 以彰信军节度使复知天雄军，契丹使者敛车徒而过
+    description: >-
+      契丹使者往还，必敛车徒而后过，无敢哗者；民乐其政，为画像而生祠之。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1033
+    year_precision: about
+    type: 授官
+    title: 改天平军节度使、同中书门下平章事，判河南府
+    description: >-
+      本传次第在知天雄军之后、景祐元年为枢密使之前。是年刘太后崩、仁宗亲政。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1034
+    year_precision: exact
+    type: 升迁
+    title: 景祐元年为枢密使
+    description: >-
+      本传：「景祐元年，为枢密使。」
+    source_ids: [src_songshi_wangzeng]
+  - year: 1035
+    year_precision: exact
+    type: 升迁
+    title: 拜右仆射兼门下侍郎、平章事，封沂国公
+    description: >-
+      本传：「明年，拜右仆射兼门下侍郎、平章事、集贤殿大学士，封沂国公。」《隆平集》
+      此事系于「景祐二年」，两说年份相合。此为其二度拜相。
+    source_ids: [src_songshi_wangzeng, src_longpingji_wangzeng]
+  - year: 1037
+    year_precision: exact
+    type: 罢官
+    title: 与吕夷简交论帝前，俱罢，以左仆射、资政殿大学士判郓州
+    description: >-
+      初，吕夷简参知政事，事曾谨甚，曾力荐为相；及夷简位曾上、任事久、多所专决，
+      曾不能堪，论议间有异同，遂求罢。会外传知秦州王继明纳赂夷简，曾因及之，二人
+      交论帝前，曾自陈亦有过，遂俱罢。
+    source_ids: [src_songshi_wangzeng]
+  - year: 1038
+    year_precision: exact
+    type: 卒
+    title: 宝元元年冬卒于郓州，年六十一；赠侍中，谥文正
+    description: >-
+      宝元元年冬，大星晨坠其寝，左右惊告，曾曰「后一月当知之」，如期而薨。赠侍中，
+      谥文正。《隆平集》记其卒「年六十」，与《宋史》「年六十一」并存备考。子嗣两书
+      用字不同：本传作「曾无子，养子曰縡。又以弟子融之子绎为后」，《隆平集》作「子纬，
+      幼，以侄绎为后」。身后事：皇祐中仁宗为其篆碑曰「旌贤之碑」并改其乡曰旌贤乡，
+      大臣赐碑篆自曾始；嘉祐八年（1063）诏择将相配享仁宗庙，以曾为第一。
+    source_ids: [src_songshi_wangzeng, src_longpingji_wangzeng]

@@ -52,8 +52,10 @@ EVENT_TYPES = {"出生", "应试", "中举", "夺魁", "授官", "留学", "升�
                "贬谪", "罢官", "被俘", "实业", "致仕", "隐居", "守节", "著作", "卒"}
 PRECISIONS = {"exact", "about", "range"}
 TIERS = {"A", "B", "C"}
-REL_TYPES = {"同年", "师生", "父子", "母子", "父女", "祖孫", "兄弟", "旁系",
+REL_TYPES = {"同年", "师生", "父子", "母子", "父女", "祖孙", "兄弟", "旁系",
              "翁婿", "夫妻", "姻亲", "政敌", "友人", "同僚", "其他"}
+# ⚠ 枚举值一律用简体：「祖孙」而非「祖孫」（2026-10-16 全站繁简一致性修复，
+#   与 build_network.py:TYPES / harvest_cbdb_relations.py 的 KIN_MAP 三处同步）。
 # 名录身份（R1.4-1）：缺省 = zhuangyuan；特例仅 tanhua / de_facto 两种
 ROLES = {"zhuangyuan", "tanhua", "de_facto"}
 EXT_TO_ID_RE = re.compile(r"^cbdb:\d+$")  # CBDB 外部人物标记

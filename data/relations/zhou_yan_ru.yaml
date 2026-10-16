@@ -20,97 +20,97 @@ relations:
   direction: forward
 - to_id: cbdb:123917
   type: 友人
-  note: 友：羅喻義（CBDB 外部人物）
+  note: 友：罗喻义（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:57565
   type: 同年
-  note: 同年友：馮銓（CBDB 外部人物）
+  note: 同年友：冯铨（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:512037
   type: 同年
-  note: 同年友：馮銓友（CBDB 外部人物）
+  note: 同年友：冯铨友（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:85255
   type: 政敌
-  note: 被對方彈劾：姜埰（CBDB 外部人物）
+  note: 被对方弹劾：姜采（CBDB 外部人物）
   src: cbdb
   assoc_code: 12
   direction: forward
 - to_id: cbdb:358130
   type: 政敌
-  note: 被對方彈劾：李永茂（CBDB 外部人物）
+  note: 被对方弹劾：李永茂（CBDB 外部人物）
   src: cbdb
   assoc_code: 12
   direction: forward
 - to_id: cbdb:557336
   type: 政敌
-  note: 被對方彈劾：熊开元（CBDB 外部人物）
+  note: 被对方弹劾：熊开元（CBDB 外部人物）
   src: cbdb
   assoc_code: 12
   direction: forward
 - to_id: cbdb:59649
   type: 师生
-  note: 學生為對方：范志完（CBDB 外部人物）
+  note: 学生为对方：范志完（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:59785
   type: 友人
-  note: 與他的交往導致對方受牽連：方士亮（CBDB 外部人物）
+  note: 与他的交往导致对方受牵连：方士亮（CBDB 外部人物）
   src: cbdb
   assoc_code: 244
   direction: forward
 - to_id: cbdb:56535
   type: 其他
-  note: 被致書由對方：姚希孟（CBDB 外部人物）
+  note: 被致书由对方：姚希孟（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:128097
   type: 其他
-  note: 被致書由對方：成基命（CBDB 外部人物）
+  note: 被致书由对方：成基命（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:128182
   type: 其他
-  note: 被致書由對方：吳宗達（CBDB 外部人物）
+  note: 被致书由对方：吴宗达（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:129528
   type: 其他
-  note: 被致書由對方：夏樹芳（CBDB 外部人物）
+  note: 被致书由对方：夏树芳（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:135275
   type: 其他
-  note: 被致書由對方：俞琬綸（CBDB 外部人物）
+  note: 被致书由对方：俞琬纶（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:131951
   type: 其他
-  note: 收到對方的答書：葉向高（CBDB 外部人物）
+  note: 收到对方的答书：叶向高（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward
 - to_id: cbdb:127102
   type: 其他
-  note: 為對方之考官：申佳胤（CBDB 外部人物）
+  note: 为对方之考官：申佳胤（CBDB 外部人物）
   src: cbdb
   assoc_code: 558
   direction: forward
 - to_id: cbdb:129545
   type: 其他
-  note: 為對方之考官：馬世奇（CBDB 外部人物）
+  note: 为对方之考官：马世奇（CBDB 外部人物）
   src: cbdb
   assoc_code: 558
   direction: forward

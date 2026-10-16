@@ -8,13 +8,13 @@ relations:
   direction: forward
 - to_id: cbdb:19715
   type: 同年
-  note: 同年友：李榘（CBDB 外部人物）
+  note: 同年友：李矩（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:25189
   type: 同年
-  note: 同年友：王辰應（CBDB 外部人物）
+  note: 同年友：王辰应（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward

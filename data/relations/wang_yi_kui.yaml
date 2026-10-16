@@ -1,13 +1,13 @@
 from_id: wang_yi_kui
 relations:
 - to_id: cbdb:309452
-  type: 祖孫
-  note: 曾祖：王以義（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：王以义（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:309463
-  type: 祖孫
+  type: 祖孙
   note: 祖父：王永亨（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -38,7 +38,7 @@ relations:
   direction: forward
 - to_id: cbdb:309540
   type: 兄弟
-  note: 兄：王璣（CBDB 外部人物）
+  note: 兄：王玑（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
@@ -50,85 +50,85 @@ relations:
   direction: forward
 - to_id: cbdb:309563
   type: 兄弟
-  note: 兄：王璉（CBDB 外部人物）
+  note: 兄：王琏（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:309574
   type: 兄弟
-  note: 兄：王達（CBDB 外部人物）
+  note: 兄：王达（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:309507
   type: 夫妻
-  note: 妻子：鄧氏(王一夔妻)（CBDB 外部人物）
+  note: 妻子：邓氏(王一夔妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:204892
-  type: 祖孫
-  note: 曾孫; 重孫：謝廷傑（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：谢廷杰（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:309485
   type: 母子
-  note: 繼母：安氏(王一夔前母)（CBDB 外部人物）
+  note: 继母：安氏(王一夔前母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:67539
   type: 其他
-  note: 墓誌銘由對方所作：尹直（CBDB 外部人物）
+  note: 墓志铭由对方所作：尹直（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:34522
   type: 其他
-  note: 行狀由對方所作：何喬新（CBDB 外部人物）
+  note: 行状由对方所作：何乔新（CBDB 外部人物）
   src: cbdb
   assoc_code: 425
   direction: forward
 - to_id: cbdb:127758
   type: 其他
-  note: 為對方作畫贊(畫像記)：李永通（CBDB 外部人物）
+  note: 为对方作画赞(画像记)：李永通（CBDB 外部人物）
   src: cbdb
   assoc_code: 428
   direction: forward
 - to_id: cbdb:66971
   type: 其他
-  note: 贈詩、文：周瑄（CBDB 外部人物）
+  note: 赠诗、文：周瑄（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:66998
   type: 其他
-  note: 贈詩、文：林鶚（CBDB 外部人物）
+  note: 赠诗、文：林鹗（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:127211
   type: 其他
-  note: 贈詩、文：艾福（CBDB 外部人物）
+  note: 赠诗、文：艾福（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:127543
   type: 其他
-  note: 贈詩、文：汪藻（CBDB 外部人物）
+  note: 赠诗、文：汪藻（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:131075
   type: 其他
-  note: 贈詩、文：婁謙（CBDB 外部人物）
+  note: 赠诗、文：娄谦（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:133044
   type: 其他
-  note: 贈詩、文：盧秩（CBDB 外部人物）
+  note: 赠诗、文：卢秩（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward

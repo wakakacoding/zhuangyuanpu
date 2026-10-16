@@ -1,44 +1,44 @@
 from_id: cai_qi
 relations:
 - to_id: cbdb:3867
-  type: 祖孫
-  note: 曾祖：蔡綰（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：蔡绾（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:12096
-  type: 祖孫
-  note: 祖父：蔡鄰（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：蔡邻（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:12098
   type: 父子
-  note: 父：蔡夢臣（CBDB 外部人物）
+  note: 父：蔡梦臣（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:119462
   type: 母子
-  note: 母：劉氏(蔡齊母)（CBDB 外部人物）
+  note: 母：刘氏(蔡齐母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:12099
   type: 兄弟
-  note: 從兄弟;堂兄弟：蔡稟（CBDB 外部人物）
+  note: 从兄弟;堂兄弟：蔡禀（CBDB 外部人物）
   src: cbdb
   kin_code: 119
   direction: forward
 - to_id: cbdb:562877
   type: 兄弟
-  note: 從兄弟;堂兄弟：蔡奕（CBDB 外部人物）
+  note: 从兄弟;堂兄弟：蔡奕（CBDB 外部人物）
   src: cbdb
   kin_code: 119
   direction: forward
 - to_id: cbdb:562908
   type: 兄弟
-  note: 從兄弟;堂兄弟：蔡亶（CBDB 外部人物）
+  note: 从兄弟;堂兄弟：蔡亶（CBDB 外部人物）
   src: cbdb
   kin_code: 119
   direction: forward
@@ -50,37 +50,37 @@ relations:
   direction: forward
 - to_id: cbdb:1662
   type: 旁系
-  note: 從子;姪子：蔡延慶（CBDB 外部人物）
+  note: 从子;姪子：蔡延庆（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:3854
   type: 旁系
-  note: 從子;姪子：蔡漸（CBDB 外部人物）
+  note: 从子;姪子：蔡渐（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:12100
   type: 旁系
-  note: 從子;姪子：蔡延禧（CBDB 外部人物）
+  note: 从子;姪子：蔡延禧（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:697054
   type: 旁系
-  note: 從子;姪子：蔡勖（CBDB 外部人物）
+  note: 从子;姪子：蔡勖（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:1200
   type: 翁婿
-  note: 女婿：劉庠（CBDB 外部人物）
+  note: 女婿：刘庠（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:19367
   type: 翁婿
-  note: 女婿：寇肅（CBDB 外部人物）
+  note: 女婿：寇肃（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
@@ -91,8 +91,8 @@ relations:
   kin_code: 183
   direction: forward
 - to_id: cbdb:51596
-  type: 祖孫
-  note: 曾孫; 重孫：南公（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：南公（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
@@ -104,73 +104,73 @@ relations:
   direction: forward
 - to_id: cbdb:942
   type: 其他
-  note: 是對方的恩主：郭勸（CBDB 外部人物），始年 1039
+  note: 是对方的恩主：郭劝（CBDB 外部人物），始年 1039
   src: cbdb
   assoc_code: 4
   direction: forward
 - to_id: cbdb:1232
   type: 其他
-  note: 是對方的恩主：劉隨（CBDB 外部人物），始年 1039
+  note: 是对方的恩主：刘随（CBDB 外部人物），始年 1039
   src: cbdb
   assoc_code: 4
   direction: forward
 - to_id: cbdb:1391
   type: 其他
-  note: 是對方的恩主：龐籍（CBDB 外部人物），始年 1039
+  note: 是对方的恩主：庞籍（CBDB 外部人物），始年 1039
   src: cbdb
   assoc_code: 4
   direction: forward
 - to_id: cbdb:2003
   type: 其他
-  note: 是對方的恩主：楊偕（CBDB 外部人物），始年 1039
+  note: 是对方的恩主：杨偕（CBDB 外部人物），始年 1039
   src: cbdb
   assoc_code: 4
   direction: forward
 - to_id: cbdb:8043
   type: 其他
-  note: 是對方的恩主：范仲淹（CBDB 外部人物），始年 1039
+  note: 是对方的恩主：范仲淹（CBDB 外部人物），始年 1039
   src: cbdb
   assoc_code: 4
   direction: forward
 - to_id: cbdb:1558
   type: 其他
-  note: 書序由對方所作：宋祁（CBDB 外部人物）
+  note: 书序由对方所作：宋祁（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:217
   type: 其他
-  note: 墓誌銘由對方所作：張方平（CBDB 外部人物），始年 1039
+  note: 墓志铭由对方所作：张方平（CBDB 外部人物），始年 1039
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:1384
   type: 其他
-  note: 墓誌銘由對方所作：歐陽修（CBDB 外部人物），始年 1039
+  note: 墓志铭由对方所作：欧阳修（CBDB 外部人物），始年 1039
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:1641
   type: 其他
-  note: 拒絕在對方主政的政府中任職：丁謂（CBDB 外部人物）
+  note: 拒绝在对方主政的政府中任职：丁谓（CBDB 外部人物）
   src: cbdb
   assoc_code: 106
   direction: forward
 - to_id: cbdb:22275
   type: 其他
-  note: 禮待：韋不伐（CBDB 外部人物）
+  note: 礼待：韦不伐（CBDB 外部人物）
   src: cbdb
   assoc_code: 363
   direction: forward
 - to_id: cbdb:17935
   type: 其他
-  note: 被致書由對方：石介（CBDB 外部人物）
+  note: 被致书由对方：石介（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:20628
   type: 其他
-  note: 下屬為對方：沈嚴（CBDB 外部人物）
+  note: 下属为对方：沈严（CBDB 外部人物）
   src: cbdb
   assoc_code: 482
   direction: forward

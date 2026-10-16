@@ -1,7 +1,7 @@
 from_id: cheng_su
 relations:
 - to_id: cbdb:15377
-  type: 祖孫
+  type: 祖孙
   note: 直系祖先：程C（CBDB 外部人物）
   src: cbdb
   kin_code: 2

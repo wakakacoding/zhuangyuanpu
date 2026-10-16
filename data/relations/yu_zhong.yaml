@@ -1,14 +1,14 @@
 from_id: yu_zhong
 relations:
 - to_id: cbdb:24491
-  type: 祖孫
-  note: 孫：余B（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：余B（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:15838
   type: 姻亲
-  note: 曾孫女婿：張汝幵（CBDB 外部人物）
+  note: 曾孙女婿：张汝幵（CBDB 外部人物）
   src: cbdb
   kin_code: 256
   direction: forward

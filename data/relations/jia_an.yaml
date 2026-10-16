@@ -2,31 +2,31 @@ from_id: jia_an
 relations:
 - to_id: cbdb:15860
   type: 父子
-  note: 父：賈汶（CBDB 外部人物）
+  note: 父：贾汶（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:807
   type: 翁婿
-  note: 岳父：薛紳（CBDB 外部人物）
+  note: 岳父：薛绅（CBDB 外部人物）
   src: cbdb
   kin_code: 76
   direction: forward
 - to_id: cbdb:809
   type: 翁婿
-  note: 岳父：薛顏（CBDB 外部人物）
+  note: 岳父：薛颜（CBDB 外部人物）
   src: cbdb
   kin_code: 76
   direction: forward
 - to_id: cbdb:120122
   type: 翁婿
-  note: 第二任妻父：任遜（CBDB 外部人物）
+  note: 第二任妻父：任逊（CBDB 外部人物）
   src: cbdb
   kin_code: 88
   direction: forward
 - to_id: cbdb:119343
   type: 母子
-  note: 母：陳氏(賈黯母)（CBDB 外部人物）
+  note: 母：陈氏(贾黯母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
@@ -38,49 +38,49 @@ relations:
   direction: forward
 - to_id: cbdb:11764
   type: 父子
-  note: 唯一幸存的兒子：賈士彥（CBDB 外部人物）
+  note: 唯一幸存的儿子：贾士彦（CBDB 外部人物）
   src: cbdb
   kin_code: 198
   direction: forward
 - to_id: cbdb:119449
   type: 母子
-  note: 嗣母：史氏(賈黯母)（CBDB 外部人物）
+  note: 嗣母：史氏(贾黯母)（CBDB 外部人物）
   src: cbdb
   kin_code: 378
   direction: forward
 - to_id: cbdb:24101
   type: 同年
-  note: 同年友：譚必（CBDB 外部人物）
+  note: 同年友：谭必（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:1845
   type: 其他
-  note: 墓誌銘由對方所作：王珪（CBDB 外部人物）
+  note: 墓志铭由对方所作：王珪（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:1220
   type: 其他
-  note: 墓誌銘由對方所作：劉攽（CBDB 外部人物），始年 1083
+  note: 墓志铭由对方所作：刘攽（CBDB 外部人物），始年 1083
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:3595
   type: 其他
-  note: 書跋由對方所作：劉克莊（CBDB 外部人物）
+  note: 书跋由对方所作：刘克庄（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:1384
   type: 其他
-  note: 收到對方的答啓：歐陽修（CBDB 外部人物）
+  note: 收到对方的答启：欧阳修（CBDB 外部人物）
   src: cbdb
   assoc_code: 436
   direction: forward
 - to_id: cbdb:20221
   type: 其他
-  note: 上奏論對方：劉几（CBDB 外部人物）
+  note: 上奏论对方：刘几（CBDB 外部人物）
   src: cbdb
   assoc_code: 553
   direction: forward

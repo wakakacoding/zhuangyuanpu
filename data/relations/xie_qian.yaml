@@ -1,302 +1,302 @@
 from_id: xie_qian
 relations:
 - to_id: cbdb:525585
-  type: 祖孫
-  note: 高祖;四世祖：謝見賢（CBDB 外部人物）
+  type: 祖孙
+  note: 高祖;四世祖：谢见贤（CBDB 外部人物）
   src: cbdb
   kin_code: 39
   direction: forward
 - to_id: cbdb:247581
-  type: 祖孫
-  note: 曾祖：謝原廣（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：谢原广（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:247582
-  type: 祖孫
-  note: 祖父：謝瑩（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：谢莹（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:247583
   type: 父子
-  note: 父：謝恩（CBDB 外部人物）
+  note: 父：谢恩（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:247584
   type: 母子
-  note: 母：鄒氏(謝遷母)（CBDB 外部人物）
+  note: 母：邹氏(谢迁母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:34577
   type: 兄弟
-  note: 弟：謝迪（CBDB 外部人物）
+  note: 弟：谢迪（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:247587
   type: 兄弟
-  note: 弟：謝選（CBDB 外部人物）
+  note: 弟：谢选（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:247588
   type: 兄弟
-  note: 弟：謝迪（CBDB 外部人物）
+  note: 弟：谢迪（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:247589
   type: 兄弟
-  note: 弟：謝遵（CBDB 外部人物）
+  note: 弟：谢遵（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:247585
   type: 夫妻
-  note: 妻子：徐氏(謝遷妻)（CBDB 外部人物）
+  note: 妻子：徐氏(谢迁妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:700005
   type: 旁系
-  note: 族人(輩分不詳)：謝道九（CBDB 外部人物）
+  note: 族人(辈分不详)：谢道九（CBDB 外部人物）
   src: cbdb
   kin_code: 147
   direction: forward
 - to_id: cbdb:34578
   type: 父子
-  note: 次子：謝丕（CBDB 外部人物）
+  note: 次子：谢丕（CBDB 外部人物）
   src: cbdb
   kin_code: 183
   direction: forward
 - to_id: cbdb:525569
-  type: 祖孫
-  note: 孫：謝用𣗖（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用𣗖（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525570
-  type: 祖孫
-  note: 孫：謝用柱（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用柱（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525571
-  type: 祖孫
-  note: 孫：謝用柷（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用柷（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525572
-  type: 祖孫
-  note: 孫：謝用栻（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用栻（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525573
-  type: 祖孫
-  note: 孫：謝用梯（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用梯（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525574
-  type: 祖孫
-  note: 孫：謝用梅（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用梅（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525575
-  type: 祖孫
-  note: 孫：謝用棖（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用枨（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525576
-  type: 祖孫
-  note: 孫：謝用楷（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用楷（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525577
-  type: 祖孫
-  note: 孫：謝用楨（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用桢（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525578
-  type: 祖孫
-  note: 孫：謝用楫（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用楫（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525579
-  type: 祖孫
-  note: 孫：謝用構（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用构（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525580
-  type: 祖孫
-  note: 孫：謝用樞（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用枢（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525581
-  type: 祖孫
-  note: 孫：謝用模（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用模（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525582
-  type: 祖孫
-  note: 孫：謝用檟（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用槚（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525583
-  type: 祖孫
-  note: 孫：謝用檳（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用槟（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525584
-  type: 祖孫
-  note: 孫：謝用樌（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：谢用樌（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:525586
-  type: 祖孫
-  note: 曾孫; 重孫：謝敏行（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：谢敏行（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:556956
-  type: 祖孫
-  note: 玄孫;四世孫：謝志望（CBDB 外部人物）
+  type: 祖孙
+  note: 玄孙;四世孙：谢志望（CBDB 外部人物）
   src: cbdb
   kin_code: 263
   direction: forward
 - to_id: cbdb:203551
   type: 其他
-  note: 欣賞/器重：陳絳（CBDB 外部人物）
+  note: 欣赏/器重：陈绛（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:573216
   type: 其他
-  note: 欣賞/器重：沈賓國（CBDB 外部人物）
+  note: 欣赏/器重：沈宾国（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:67789
   type: 其他
-  note: 墓誌銘由對方所作：楊守陳（CBDB 外部人物）
+  note: 墓志铭由对方所作：杨守陈（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:129227
   type: 其他
-  note: 為對方作墓誌銘：俞琳（CBDB 外部人物）
+  note: 为对方作墓志铭：俞琳（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:465525
   type: 其他
-  note: 同場屋/同應舉：張棨（CBDB 外部人物）
+  note: 同场屋/同应举：张棨（CBDB 外部人物）
   src: cbdb
   assoc_code: 120
   direction: forward
 - to_id: cbdb:33879
   type: 其他
-  note: 傳記作者為對方：毛奇齡（CBDB 外部人物）
+  note: 传记作者为对方：毛奇龄（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:556961
   type: 其他
-  note: 為對方作傳：韓銑（CBDB 外部人物）
+  note: 为对方作传：韩铣（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward
 - to_id: cbdb:68258
   type: 其他
-  note: 祭文由對方所作：黃綰（CBDB 外部人物）
+  note: 祭文由对方所作：黄绾（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:131301
   type: 其他
-  note: 祭文由對方所作：屠應埈（CBDB 外部人物）
+  note: 祭文由对方所作：屠应埈（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:24554
   type: 其他
-  note: 祝詞由對方所作：林俊（CBDB 外部人物）
+  note: 祝词由对方所作：林俊（CBDB 外部人物）
   src: cbdb
   assoc_code: 148
   direction: forward
 - to_id: cbdb:68236
   type: 其他
-  note: 臨別得到對方所作贈言(送別詩、序)：霍韜（CBDB 外部人物）
+  note: 临别得到对方所作赠言(送别诗、序)：霍韬（CBDB 外部人物）
   src: cbdb
   assoc_code: 163
   direction: forward
 - to_id: cbdb:28691
   type: 同僚
-  note: 同僚：李東陽（CBDB 外部人物）
+  note: 同僚：李东阳（CBDB 外部人物）
   src: cbdb
   assoc_code: 197
   direction: forward
 - to_id: cbdb:67830
   type: 同僚
-  note: 同僚：劉健（CBDB 外部人物）
+  note: 同僚：刘健（CBDB 外部人物）
   src: cbdb
   assoc_code: 197
   direction: forward
 - to_id: cbdb:28691
   type: 其他
-  note: 神道碑由對方所作：李東陽（CBDB 外部人物）
+  note: 神道碑由对方所作：李东阳（CBDB 外部人物）
   src: cbdb
   assoc_code: 405
   direction: forward
 - to_id: fei_hong
   type: 其他
-  note: 神道碑由對方所作（CBDB）
+  note: 神道碑由对方所作（CBDB）
   src: cbdb
   assoc_code: 405
   direction: forward
 - to_id: cbdb:29602
   type: 其他
-  note: 被致書由對方：程敏政（CBDB 外部人物）
+  note: 被致书由对方：程敏政（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:34532
   type: 其他
-  note: 被致書由對方：章懋（CBDB 外部人物）
+  note: 被致书由对方：章懋（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:34579
   type: 其他
-  note: 收到對方的答書：王鏊（CBDB 外部人物）
+  note: 收到对方的答书：王鏊（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward
 - to_id: cbdb:67166
   type: 其他
-  note: 收到對方的答書：謝鐸（CBDB 外部人物）
+  note: 收到对方的答书：谢铎（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward
 - to_id: cbdb:133383
   type: 其他
-  note: 贈詩、文：鍾禮（CBDB 外部人物）
+  note: 赠诗、文：钟礼（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward

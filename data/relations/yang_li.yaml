@@ -1,50 +1,50 @@
 from_id: yang_li
 relations:
 - to_id: cbdb:4050
-  type: 祖孫
-  note: 曾祖：楊守信（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：杨守信（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:119800
-  type: 祖孫
-  note: 祖父：楊知禮（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：杨知礼（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:119814
   type: 父子
-  note: 父：楊仁儼（CBDB 外部人物）
+  note: 父：杨仁俨（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:1999
   type: 父子
-  note: 長子; 第一子：楊嶠（CBDB 外部人物）
+  note: 长子; 第一子：杨峤（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:22432
   type: 父子
-  note: 次子：楊嶧（CBDB 外部人物）
+  note: 次子：杨峄（CBDB 外部人物）
   src: cbdb
   kin_code: 183
   direction: forward
 - to_id: cbdb:22433
   type: 父子
-  note: 三子：楊（CBDB 外部人物）
+  note: 三子：杨（CBDB 外部人物）
   src: cbdb
   kin_code: 184
   direction: forward
 - to_id: cbdb:119808
   type: 父子
-  note: 三子：楊峭（CBDB 外部人物）
+  note: 三子：杨峭（CBDB 外部人物）
   src: cbdb
   kin_code: 184
   direction: forward
 - to_id: cbdb:2033
   type: 父子
-  note: 四子：楊嵎（CBDB 外部人物）
+  note: 四子：杨嵎（CBDB 外部人物）
   src: cbdb
   kin_code: 185
   direction: forward

@@ -1,26 +1,26 @@
 from_id: ceng_yan
 relations:
 - to_id: cbdb:250692
-  type: 祖孫
-  note: 曾祖：曾文昇（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：曾文升（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:250693
-  type: 祖孫
-  note: 祖父：曾渙宗（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：曾涣宗（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:250694
   type: 父子
-  note: 父：曾廣相（CBDB 外部人物）
+  note: 父：曾广相（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:250696
   type: 母子
-  note: 母：蕭氏(曾彥母)（CBDB 外部人物）
+  note: 母：萧氏(曾彦母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
@@ -32,19 +32,19 @@ relations:
   direction: forward
 - to_id: cbdb:250701
   type: 兄弟
-  note: 弟：曾學（CBDB 外部人物）
+  note: 弟：曾学（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:250702
   type: 兄弟
-  note: 弟：曾華（CBDB 外部人物）
+  note: 弟：曾华（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:250703
   type: 兄弟
-  note: 弟：曾絢（CBDB 外部人物）
+  note: 弟：曾绚（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -56,25 +56,25 @@ relations:
   direction: forward
 - to_id: cbdb:250697
   type: 夫妻
-  note: 妻子：蕭氏(曾彥妻)（CBDB 外部人物）
+  note: 妻子：萧氏(曾彦妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:250699
   type: 夫妻
-  note: 第二任妻：吳氏(曾彥繼妻)（CBDB 外部人物）
+  note: 第二任妻：吴氏(曾彦继妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 163
   direction: forward
 - to_id: cbdb:250695
   type: 母子
-  note: 繼母：尹氏(曾彥前母)（CBDB 外部人物）
+  note: 继母：尹氏(曾彦前母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:34510
   type: 其他
-  note: 收到對方的贈詩、文：倪岳（CBDB 外部人物）
+  note: 收到对方的赠诗、文：倪岳（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward

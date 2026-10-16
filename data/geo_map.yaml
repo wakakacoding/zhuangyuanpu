@@ -335,7 +335,7 @@
   lng: 118.8
   chgis_id: null
   note: "宋建康府上元县"
-- hist: 上饒
+- hist: 上饶
   modern: 江西省上饶市
   lat: 28.45
   lng: 117.94
@@ -377,13 +377,13 @@
   lng: 120.17
   chgis_id: null
   note: "清杭州府仁和县"
-- hist: 仙遊
+- hist: 仙游
   modern: 福建省莆田市仙游县
   lat: 25.36
   lng: 118.69
   chgis_id: null
   note: "宋兴化军仙游县"
-- hist: 休寧
+- hist: 休宁
   modern: 安徽省黄山市休宁县
   lat: 29.79
   lng: 118.19
@@ -395,19 +395,19 @@
   lng: 119.3
   chgis_id: null
   note: "宋福州侯官县"
-- hist: 保寧
+- hist: 保宁
   modern: 四川省南充市阆中市
   lat: 31.56
   lng: 106.01
   chgis_id: null
   note: "宋阆州，后升保宁府；治今阆中"
-- hist: 儀徵
+- hist: 仪征
   modern: 江苏省扬州市仪征市
   lat: 32.27
   lng: 119.18
   chgis_id: null
   note: "清扬州府仪征县"
-- hist: 元和 / 崑山
+- hist: 元和 / 昆山
   modern: 江苏省苏州市
   lat: 31.3
   lng: 120.62
@@ -443,7 +443,7 @@
   lng: 112.53
   chgis_id: null
   note: "同上"
-- hist: 南陽
+- hist: 南阳
   modern: 河南省南阳市
   lat: 33.0
   lng: 112.53
@@ -467,31 +467,31 @@
   lng: 115.14
   chgis_id: null
   note: "明吉安府吉水县"
-- hist: 吳川
+- hist: 吴川
   modern: 广东省湛江市吴川市
   lat: 21.43
   lng: 110.78
   chgis_id: null
   note: "清高州府吴川县"
-- hist: 吳縣
+- hist: 吴县
   modern: 江苏省苏州市
   lat: 31.3
   lng: 120.62
   chgis_id: null
   note: "吴县治即今苏州主城区"
-- hist: 吳縣 / 元和
+- hist: 吴县 / 元和
   modern: 江苏省苏州市
   lat: 31.3
   lng: 120.62
   chgis_id: null
   note: "清苏州府吴县、元和县（同城）"
-- hist: 吳縣 / 吳縣 / 長洲
+- hist: 吴县 / 吴县 / 长洲
   modern: 江苏省苏州市
   lat: 31.3
   lng: 120.62
   chgis_id: null
   note: "同城三县"
-- hist: 吳縣 / 歙縣
+- hist: 吴县 / 歙县
   modern: 江苏省苏州市
   lat: 31.3
   lng: 120.62
@@ -503,7 +503,7 @@
   lng: 114.47
   chgis_id: null
   note: "宋开封府咸平县（今通许）"
-- hist: 咸陽
+- hist: 咸阳
   modern: 陕西省咸阳市
   lat: 34.33
   lng: 108.71
@@ -545,7 +545,7 @@
   lng: 116.3
   chgis_id: null
   note: "明顺天府固安县"
-- hist: 壽州
+- hist: 寿州
   modern: 安徽省淮南市寿县
   lat: 32.58
   lng: 116.79
@@ -563,25 +563,25 @@
   lng: 114.36
   chgis_id: null
   note: "清南安府大庾县（今大余）"
-- hist: 大興
+- hist: 大兴
   modern: 北京市
   lat: 39.9
   lng: 116.4
   chgis_id: null
   note: "元大都路大兴县"
-- hist: 天長
+- hist: 天长
   modern: 安徽省滁州市天长市
   lat: 32.68
   lng: 119.0
   chgis_id: null
   note: "清泗州天长县"
-- hist: 天門
+- hist: 天门
   modern: 湖北省天门市
   lat: 30.66
   lng: 113.17
   chgis_id: null
   note: "清安陆府天门县"
-- hist: 太倉直隸州 / 太倉直隸州直轄地方
+- hist: 太仓直隶州 / 太仓直隶州直辖地方
   modern: 江苏省苏州市太仓市
   lat: 31.46
   lng: 121.1
@@ -647,13 +647,13 @@
   lng: 116.4
   chgis_id: null
   note: "清顺天府宛平县"
-- hist: 宜祿
+- hist: 宜禄
   modern: 陕西省咸阳市长武县
   lat: 35.21
   lng: 107.8
   chgis_id: null
   note: "五代邠州宜禄县"
-- hist: 宜興
+- hist: 宜兴
   modern: 江苏省无锡市宜兴市
   lat: 31.36
   lng: 119.82
@@ -665,31 +665,31 @@
   lng: 118.76
   chgis_id: null
   note: "明宁国府宣城县"
-- hist: 寧德
+- hist: 宁德
   modern: 福建省宁德市
   lat: 26.66
   lng: 119.55
   chgis_id: null
   note: "同上"
-- hist: 寧晉
+- hist: 宁晋
   modern: 河北省邢台市宁晋县
   lat: 37.62
   lng: 114.92
   chgis_id: null
   note: "明真定府宁晋县"
-- hist: 寧陵
+- hist: 宁陵
   modern: 河南省商丘市宁陵县
   lat: 34.45
   lng: 115.32
   chgis_id: null
   note: "宋应天府宁陵县"
-- hist: 寶應
+- hist: 宝应
   modern: 江苏省扬州市宝应县
   lat: 33.24
   lng: 119.36
   chgis_id: null
   note: "清扬州府宝应县"
-- hist: 寶鼎
+- hist: 宝鼎
   modern: 山西省运城市万荣县
   lat: 35.42
   lng: 110.84
@@ -713,7 +713,7 @@
   lng: 118.48
   chgis_id: null
   note: "五代青州"
-- hist: 山東省 / 東昌府 / 聊城
+- hist: 山东省 / 东昌府 / 聊城
   modern: 山东省聊城市
   lat: 36.46
   lng: 115.99
@@ -725,13 +725,13 @@
   lng: 112.55
   chgis_id: null
   note: "宽泛：具体州县待考"
-- hist: 山陰
+- hist: 山阴
   modern: 浙江省绍兴市
   lat: 30.03
   lng: 120.58
   chgis_id: null
   note: "宋绍兴府山阴县"
-- hist: 山陰 / 山陰
+- hist: 山阴 / 山阴
   modern: 浙江省绍兴市
   lat: 30.03
   lng: 120.58
@@ -743,7 +743,7 @@
   lng: 107.62
   chgis_id: null
   note: "唐凤翔府岐山县"
-- hist: 崑山
+- hist: 昆山
   modern: 江苏省苏州市昆山市
   lat: 31.39
   lng: 120.96
@@ -755,7 +755,7 @@
   lng: 120.74
   chgis_id: null
   note: "清苏州府常熟县"
-- hist: 常熟州 / 開封
+- hist: 常熟州 / 开封
   modern: 江苏省苏州市常熟市
   lat: 31.65
   lng: 120.74
@@ -773,7 +773,7 @@
   lng: 113.7
   chgis_id: null
   note: "金平定州乐平县（今昔阳）"
-- hist: 平陽
+- hist: 平阳
   modern: 浙江省温州市平阳县
   lat: 27.66
   lng: 120.57
@@ -785,13 +785,13 @@
   lng: 113.14
   chgis_id: null
   note: "南汉南海县"
-- hist: 廬陵
+- hist: 庐陵
   modern: 江西省吉安市
   lat: 27.09
   lng: 114.99
   chgis_id: null
   note: "五代吉州庐陵县"
-- hist: 建陽
+- hist: 建阳
   modern: 福建省南平市建阳区
   lat: 27.33
   lng: 118.12
@@ -803,7 +803,7 @@
   lng: 114.31
   chgis_id: null
   note: "同上"
-- hist: 彭澤
+- hist: 彭泽
   modern: 江西省九江市彭泽县
   lat: 29.9
   lng: 116.55
@@ -827,7 +827,7 @@
   lng: 121.45
   chgis_id: null
   note: "宋明州慈溪县，县治今慈城"
-- hist: 慶元路
+- hist: 庆元路
   modern: 浙江省宁波市
   lat: 29.87
   lng: 121.55
@@ -845,7 +845,7 @@
   lng: 104.07
   chgis_id: null
   note: "元成都路"
-- hist: 掖縣
+- hist: 掖县
   modern: 山东省烟台市莱州市
   lat: 37.18
   lng: 119.94
@@ -869,13 +869,13 @@
   lng: 115.4
   chgis_id: null
   note: "宋临江军新淦县"
-- hist: 晉城
+- hist: 晋城
   modern: 山西省晋城市
   lat: 35.49
   lng: 112.85
   chgis_id: null
   note: "金泽州晋城县"
-- hist: 晉江
+- hist: 晋江
   modern: 福建省泉州市晋江市
   lat: 24.78
   lng: 118.55
@@ -893,13 +893,13 @@
   lng: 116.99
   chgis_id: null
   note: "唐兖州曲阜县"
-- hist: 會稽
+- hist: 会稽
   modern: 浙江省绍兴市
   lat: 30.03
   lng: 120.58
   chgis_id: null
   note: "明绍兴府会稽县"
-- hist: 杞縣
+- hist: 杞县
   modern: 河南省开封市杞县
   lat: 34.55
   lng: 114.78
@@ -911,7 +911,7 @@
   lng: 120.17
   chgis_id: null
   note: "清杭州府仁和县"
-- hist: 東陽
+- hist: 东阳
   modern: 浙江省金华市东阳市
   lat: 29.29
   lng: 120.24
@@ -923,13 +923,13 @@
   lng: 116.96
   chgis_id: null
   note: "清安庆府桐城县"
-- hist: 榮澤
+- hist: 荣泽
   modern: 河南省郑州市惠济区
   lat: 34.87
   lng: 113.63
   chgis_id: null
   note: "唐郑州荥泽县，治今古荥镇"
-- hist: 歙縣
+- hist: 歙县
   modern: 安徽省黄山市歙县
   lat: 29.87
   lng: 118.42
@@ -946,7 +946,7 @@
   lat: 34.26
   lng: 108.2
   chgis_id: null
-  note: "唐京兆武功县"
+  note: "唐京兆武功县；明属陕西西安府乾州"
 - hist: 武城
   modern: 山东省德州市武城县
   lat: 37.21
@@ -959,25 +959,25 @@
   lng: 115.98
   chgis_id: null
   note: "元晋州武强县"
-- hist: 武進
+- hist: 武进
   modern: 江苏省常州市
   lat: 31.81
   lng: 119.97
   chgis_id: null
   note: "宋常州武进县"
-- hist: 武進 / 陽湖
+- hist: 武进 / 阳湖
   modern: 江苏省常州市
   lat: 31.81
   lng: 119.97
   chgis_id: null
   note: "清常州府武进、阳湖县（同城）"
-- hist: 歷城
+- hist: 历城
   modern: 山东省济南市历城区
   lat: 36.65
   lng: 117.12
   chgis_id: null
   note: "唐齐州历城县"
-- hist: 歸安
+- hist: 归安
   modern: 浙江省湖州市
   lat: 30.89
   lng: 120.09
@@ -989,7 +989,7 @@
   lng: 120.69
   chgis_id: null
   note: "宋温州永嘉县，县治即今温州市区"
-- hist: 永嘉 / 萍鄉
+- hist: 永嘉 / 萍乡
   modern: 浙江省温州市永嘉县
   lat: 28.15
   lng: 120.69
@@ -1007,37 +1007,37 @@
   lng: 118.93
   chgis_id: null
   note: "宋福州永福县（今永泰）"
-- hist: 永豐
+- hist: 永丰
   modern: 江西省吉安市永丰县
   lat: 27.32
   lng: 115.42
   chgis_id: null
   note: "吉安府永丰县"
-- hist: 永豐 / 永豐
+- hist: 永丰 / 永丰
   modern: 江西省吉安市永丰县
   lat: 27.32
   lng: 115.42
   chgis_id: null
   note: "同上"
-- hist: 汝陽
+- hist: 汝阳
   modern: 河南省驻马店市汝南县
   lat: 33.0
   lng: 114.36
   chgis_id: null
   note: "宋蔡州汝阳县（治今汝南）"
-- hist: 江寧
+- hist: 江宁
   modern: 江苏省南京市
   lat: 32.06
   lng: 118.8
   chgis_id: null
   note: "应天府江宁县"
-- hist: 江寧 / 日照
+- hist: 江宁 / 日照
   modern: 江苏省南京市
   lat: 32.06
   lng: 118.8
   chgis_id: null
   note: "第二籍日照（今山东日照）"
-- hist: 江寧府
+- hist: 江宁府
   modern: 江苏省南京市
   lat: 32.06
   lng: 118.8
@@ -1061,7 +1061,7 @@
   lng: 119.41
   chgis_id: null
   note: "宋扬州江都县"
-- hist: 江陵 / 荊州衛
+- hist: 江陵 / 荆州卫
   modern: 湖北省荆州市江陵县
   lat: 30.04
   lng: 112.42
@@ -1091,7 +1091,7 @@
   lng: 112.45
   chgis_id: null
   note: "唐河南府"
-- hist: 河南 / 東武城
+- hist: 河南 / 东武城
   modern: 河南省洛阳市
   lat: 34.62
   lng: 112.45
@@ -1115,7 +1115,7 @@
   lng: 114.31
   chgis_id: null
   note: "五代开封府"
-- hist: 河陰
+- hist: 河阴
   modern: 河南省郑州市荥阳市
   lat: 34.79
   lng: 113.38
@@ -1127,19 +1127,19 @@
   lng: 114.91
   chgis_id: null
   note: "明吉安府泰和县"
-- hist: 泰寧
+- hist: 泰宁
   modern: 福建省三明市泰宁县
   lat: 26.9
   lng: 117.18
   chgis_id: null
   note: "宋邵武军泰宁县"
-- hist: 洛陽
+- hist: 洛阳
   modern: 河南省洛阳市
   lat: 34.62
   lng: 112.45
   chgis_id: null
   note: "唐河南府洛阳县"
-- hist: 洛陽 / 揚州
+- hist: 洛阳 / 扬州
   modern: 河南省洛阳市
   lat: 34.62
   lng: 112.45
@@ -1169,19 +1169,19 @@
   lng: 118.54
   chgis_id: null
   note: "五代南浦溪流域"
-- hist: 海陽
+- hist: 海阳
   modern: 广东省潮州市
   lat: 23.66
   lng: 116.62
   chgis_id: null
   note: "明潮州府海阳县（府治）"
-- hist: 海鹽
+- hist: 海盐
   modern: 浙江省嘉兴市海盐县
   lat: 30.53
   lng: 120.95
   chgis_id: null
   note: "清嘉兴府海盐县"
-- hist: 涉縣
+- hist: 涉县
   modern: 河北省邯郸市涉县
   lat: 36.58
   lng: 113.69
@@ -1211,13 +1211,13 @@
   lng: 116.23
   chgis_id: null
   note: "宋江州湖口县"
-- hist: 湘陰
+- hist: 湘阴
   modern: 湖南省岳阳市湘阴县
   lat: 28.68
   lng: 112.89
   chgis_id: null
   note: "宋潭州湘阴县"
-- hist: 溧陽
+- hist: 溧阳
   modern: 江苏省常州市溧阳市
   lat: 31.42
   lng: 119.49
@@ -1229,13 +1229,13 @@
   lng: 116.4
   chgis_id: null
   note: "旗籍，隶京师"
-- hist: 潛山
+- hist: 潜山
   modern: 安徽省安庆市潜山市
   lat: 30.63
   lng: 116.58
   chgis_id: null
   note: "明安庆府潜山县"
-- hist: 潛江
+- hist: 潜江
   modern: 湖北省潜江市
   lat: 30.4
   lng: 112.9
@@ -1253,55 +1253,55 @@
   lng: 111.76
   chgis_id: null
   note: "元澧州路"
-- hist: 濟寧直隸州
+- hist: 济宁直隶州
   modern: 山东省济宁市
   lat: 35.41
   lng: 116.59
   chgis_id: null
   note: "清济宁直隶州"
-- hist: 濟寧直隸州 / 濟寧直隸州直轄地方
+- hist: 济宁直隶州 / 济宁直隶州直辖地方
   modern: 山东省济宁市
   lat: 35.41
   lng: 116.59
   chgis_id: null
   note: "同上"
-- hist: 濟陰
+- hist: 济阴
   modern: 山东省菏泽市
   lat: 35.23
   lng: 115.48
   chgis_id: null
   note: "宋曹州济阴县"
-- hist: 濰縣
+- hist: 潍县
   modern: 山东省潍坊市
   lat: 36.71
   lng: 119.16
   chgis_id: null
   note: "清莱州府潍县"
-- hist: 烏程
+- hist: 乌程
   modern: 浙江省湖州市
   lat: 30.89
   lng: 120.09
   chgis_id: null
   note: "宋湖州乌程县"
-- hist: 無極
+- hist: 无极
   modern: 河北省石家庄市无极县
   lat: 38.18
   lng: 114.98
   chgis_id: null
   note: "元真定路无极县"
-- hist: 無為州
+- hist: 无为州
   modern: 安徽省芜湖市无为市
   lat: 31.3
   lng: 117.91
   chgis_id: null
   note: "明庐州府无为州"
-- hist: 無為軍
+- hist: 无为军
   modern: 安徽省芜湖市无为市
   lat: 31.3
   lng: 117.91
   chgis_id: null
   note: "宋无为军"
-- hist: 無錫
+- hist: 无锡
   modern: 江苏省无锡市
   lat: 31.49
   lng: 120.31
@@ -1319,7 +1319,7 @@
   lng: 113.26
   chgis_id: null
   note: "清广州府番禺县"
-- hist: 當塗
+- hist: 当涂
   modern: 安徽省马鞍山市当涂县
   lat: 31.55
   lng: 118.49
@@ -1373,43 +1373,43 @@
   lng: 120.71
   chgis_id: null
   note: "明嘉兴府秀水县"
-- hist: 義烏
+- hist: 义乌
   modern: 浙江省金华市义乌市
   lat: 29.31
   lng: 120.07
   chgis_id: null
   note: "宋婺州义乌县"
-- hist: 肅寧
+- hist: 肃宁
   modern: 河北省沧州市肃宁县
   lat: 38.42
   lng: 115.83
   chgis_id: null
   note: "元河间路肃宁县"
-- hist: 膠水
+- hist: 胶水
   modern: 山东省青岛市平度市
   lat: 36.78
   lng: 119.96
   chgis_id: null
   note: "宋莱州胶水县"
-- hist: 臨朐
+- hist: 临朐
   modern: 山东省潍坊市临朐县
   lat: 36.51
   lng: 118.54
   chgis_id: null
   note: "明青州府临朐县"
-- hist: 臨桂
+- hist: 临桂
   modern: 广西壮族自治区桂林市临桂区
   lat: 25.24
   lng: 110.2
   chgis_id: null
   note: "清桂林府临桂县"
-- hist: 臨海
+- hist: 临海
   modern: 浙江省台州市临海市
   lat: 28.86
   lng: 121.14
   chgis_id: null
   note: "宋台州临海县"
-- hist: 臨漳
+- hist: 临漳
   modern: 河北省邯郸市临漳县
   lat: 36.34
   lng: 114.62
@@ -1427,7 +1427,7 @@
   lng: 120.62
   chgis_id: null
   note: "唐苏州治"
-- hist: 范陽
+- hist: 范阳
   modern: 河北省保定市涿州市
   lat: 39.49
   lng: 115.98
@@ -1463,19 +1463,19 @@
   lng: 118.84
   chgis_id: null
   note: "金莒州"
-- hist: 華亭
+- hist: 华亭
   modern: 上海市松江区
   lat: 31.03
   lng: 121.23
   chgis_id: null
   note: "明松江府华亭县"
-- hist: 華容
+- hist: 华容
   modern: 湖南省岳阳市华容县
   lat: 29.52
   lng: 112.57
   chgis_id: null
   note: "明岳州府华容县"
-- hist: 華陰
+- hist: 华阴
   modern: 陕西省渭南市华阴市
   lat: 34.57
   lng: 110.09
@@ -1487,25 +1487,25 @@
   lng: 110.45
   chgis_id: null
   note: "唐河中府河东县"
-- hist: 蒲陰
+- hist: 蒲阴
   modern: 河北省保定市安国市
   lat: 38.42
   lng: 115.33
   chgis_id: null
   note: "元祁州蒲阴县（今安国）"
-- hist: 蕪湖
+- hist: 芜湖
   modern: 安徽省芜湖市
   lat: 31.35
   lng: 118.43
   chgis_id: null
   note: "宋太平州芜湖县"
-- hist: 蘄水
+- hist: 蕲水
   modern: 湖北省黄冈市浠水县
   lat: 30.45
   lng: 115.26
   chgis_id: null
   note: "清黄州府蕲水县（今浠水）"
-- hist: 蘭溪
+- hist: 兰溪
   modern: 浙江省金华市兰溪市
   lat: 29.21
   lng: 119.46
@@ -1541,7 +1541,7 @@
   lng: 115.08
   chgis_id: null
   note: "宋开封府襄邑县（今睢县）"
-- hist: 襄陽
+- hist: 襄阳
   modern: 湖北省襄阳市
   lat: 32.01
   lng: 112.14
@@ -1571,25 +1571,25 @@
   lng: 121.87
   chgis_id: null
   note: "宋庆元府象山县"
-- hist: 貴陽府 / 貴築
+- hist: 贵阳府 / 贵筑
   modern: 贵州省贵阳市
   lat: 26.65
   lng: 106.63
   chgis_id: null
   note: "清贵阳府贵筑县"
-- hist: 資陽
+- hist: 资阳
   modern: 四川省资阳市
   lat: 30.13
   lng: 104.63
   chgis_id: null
   note: "宋资州资阳县"
-- hist: 進賢
+- hist: 进贤
   modern: 江西省南昌市进贤县
   lat: 28.37
   lng: 116.24
   chgis_id: null
   note: "明南昌府进贤县"
-- hist: 遼東行中書省
+- hist: 辽东行中书省
   modern: 辽宁省沈阳市
   lat: 41.8
   lng: 123.43
@@ -1601,19 +1601,19 @@
   lng: 116.47
   chgis_id: null
   note: "同上"
-- hist: 鄒平
+- hist: 邹平
   modern: 山东省滨州市邹平市
   lat: 36.86
   lng: 117.74
   chgis_id: null
   note: "元济南路邹平县"
-- hist: 鄞縣
+- hist: 鄞县
   modern: 浙江省宁波市鄞州区
   lat: 29.82
   lng: 121.55
   chgis_id: null
   note: "宋庆元府鄞县"
-- hist: 鄠縣
+- hist: 鄠县
   modern: 陕西省西安市鄠邑区
   lat: 34.11
   lng: 108.61
@@ -1625,19 +1625,19 @@
   lng: 114.18
   chgis_id: null
   note: "五代开封府鄢陵县"
-- hist: 鄱陽
+- hist: 鄱阳
   modern: 江西省上饶市鄱阳县
   lat: 29.01
   lng: 116.7
   chgis_id: null
   note: "宋饶州鄱阳县"
-- hist: 金匱
+- hist: 金匮
   modern: 江苏省无锡市
   lat: 31.49
   lng: 120.31
   chgis_id: null
   note: "清常州府金匮县"
-- hist: 金壇
+- hist: 金坛
   modern: 江苏省常州市金坛区
   lat: 31.75
   lng: 119.57
@@ -1649,79 +1649,79 @@
   lng: 121.34
   chgis_id: null
   note: "清松江府金山县"
-- hist: 金華
+- hist: 金华
   modern: 浙江省金华市
   lat: 29.08
   lng: 119.65
   chgis_id: null
   note: "宋婺州"
-- hist: 錢塘
+- hist: 钱塘
   modern: 浙江省杭州市
   lat: 30.25
   lng: 120.17
   chgis_id: null
   note: "宋临安府钱塘县"
-- hist: 鎮洋 / 鎮洋
+- hist: 镇洋 / 镇洋
   modern: 江苏省苏州市太仓市
   lat: 31.46
   lng: 121.1
   chgis_id: null
   note: "清太仓州镇洋县"
-- hist: 長安
+- hist: 长安
   modern: 陕西省西安市
   lat: 34.27
   lng: 108.95
   chgis_id: null
   note: "唐京兆府长安县"
-- hist: 長樂
+- hist: 长乐
   modern: 福建省福州市长乐区
   lat: 25.96
   lng: 119.52
   chgis_id: null
   note: "明福州府长乐县"
-- hist: 長沙
+- hist: 长沙
   modern: 湖南省长沙市
   lat: 28.23
   lng: 112.94
   chgis_id: null
   note: "宋潭州长沙县"
-- hist: 長泰
+- hist: 长泰
   modern: 福建省漳州市长泰区
   lat: 24.62
   lng: 117.76
   chgis_id: null
   note: "明漳州府长泰县"
-- hist: 長洲
+- hist: 长洲
   modern: 江苏省苏州市
   lat: 31.3
   lng: 120.62
   chgis_id: null
   note: "宋平江府长洲县"
-- hist: 長洲 / 元和
+- hist: 长洲 / 元和
   modern: 江苏省苏州市
   lat: 31.3
   lng: 120.62
   chgis_id: null
   note: "清苏州府长洲、元和县（同城）"
-- hist: 長洲 / 江南道
+- hist: 长洲 / 江南道
   modern: 江苏省苏州市
   lat: 31.3
   lng: 120.62
   chgis_id: null
   note: "清苏州府长洲县"
-- hist: 開化
+- hist: 开化
   modern: 浙江省衢州市开化县
   lat: 29.14
   lng: 118.41
   chgis_id: null
   note: "宋衢州开化县"
-- hist: 開封
+- hist: 开封
   modern: 河南省开封市
   lat: 34.8
   lng: 114.31
   chgis_id: null
   note: "宋东京开封府"
-- hist: 閩縣
+- hist: 闽县
   modern: 福建省福州市
   lat: 26.08
   lng: 119.3
@@ -1757,25 +1757,25 @@
   lng: 114.78
   chgis_id: null
   note: "宋开封府雍丘县（今杞县）"
-- hist: 靈昌 / 博陵
+- hist: 灵昌 / 博陵
   modern: 河南省安阳市滑县
   lat: 35.58
   lng: 114.52
   chgis_id: null
   note: "唐滑州灵昌县；第二籍博陵（今河北定州）"
-- hist: 順德
+- hist: 顺德
   modern: 广东省佛山市顺德区
   lat: 22.81
   lng: 113.29
   chgis_id: null
   note: "明广州府顺德县"
-- hist: 須城
+- hist: 须城
   modern: 山东省泰安市东平县
   lat: 35.94
   lng: 116.47
   chgis_id: null
   note: "宋郓州须城县"
-- hist: 餘姚
+- hist: 余姚
   modern: 浙江省宁波市余姚市
   lat: 30.04
   lng: 121.15
@@ -1792,14 +1792,14 @@
   lat: 34.53
   lng: 109.09
   chgis_id: null
-  note: "唐京兆高陵县"
-- hist: 高陽
+  note: "唐京兆高陵县；明属陕西西安府"
+- hist: 高阳
   modern: 河北省保定市高阳县
   lat: 38.52
   lng: 115.78
   chgis_id: null
   note: "唐瀛州高阳县"
-- hist: 魏縣
+- hist: 魏县
   modern: 河北省邯郸市魏县
   lat: 36.36
   lng: 114.94
@@ -1811,13 +1811,13 @@
   lng: 107.59
   chgis_id: null
   note: "清都匀府麻哈州"
-- hist: 黃岡
+- hist: 黄冈
   modern: 湖北省黄冈市
   lat: 30.45
   lng: 114.87
   chgis_id: null
   note: "清黄州府黄冈县"
-- hist: 龍遊
+- hist: 龙游
   modern: 浙江省衢州市龙游县
   lat: 29.03
   lng: 119.17

@@ -1,13 +1,13 @@
 from_id: ceng_cong_long
 relations:
 - to_id: cbdb:21686
-  type: 祖孫
-  note: 曾祖：曾詳（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：曾详（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:21687
-  type: 祖孫
+  type: 祖孙
   note: 祖父：曾憕（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -20,7 +20,7 @@ relations:
   direction: forward
 - to_id: cbdb:21688
   type: 兄弟
-  note: 弟：曾治鳳（CBDB 外部人物）
+  note: 弟：曾治凤（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
@@ -38,31 +38,31 @@ relations:
   direction: forward
 - to_id: cbdb:44059
   type: 同年
-  note: 同年友：皇甫曄（CBDB 外部人物）
+  note: 同年友：皇甫晔（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:45115
   type: 其他
-  note: 推薦：徐鳳（CBDB 外部人物）
+  note: 推荐：徐凤（CBDB 外部人物）
   src: cbdb
   assoc_code: 13
   direction: forward
 - to_id: cbdb:3595
   type: 其他
-  note: 祭文由對方所作：劉克莊（CBDB 外部人物），始年 1229
+  note: 祭文由对方所作：刘克庄（CBDB 外部人物），始年 1229
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:4001
   type: 其他
-  note: 被致書由對方：魏了翁（CBDB 外部人物）
+  note: 被致书由对方：魏了翁（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:10258
   type: 其他
-  note: 建築物得到對方的題詠、記、命名：真德秀（CBDB 外部人物）
+  note: 建筑物得到对方的题咏、记、命名：真德秀（CBDB 外部人物）
   src: cbdb
   assoc_code: 444
   direction: forward

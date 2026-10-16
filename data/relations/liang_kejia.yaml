@@ -2,13 +2,13 @@ from_id: liang_kejia
 relations:
 - to_id: cbdb:14491
   type: 旁系
-  note: 從祖;伯叔祖：梁熙志（CBDB 外部人物）
+  note: 从祖;伯叔祖：梁熙志（CBDB 外部人物）
   src: cbdb
   kin_code: 64
   direction: forward
 - to_id: cbdb:14492
   type: 旁系
-  note: 從祖;伯叔祖：梁熙載（CBDB 外部人物）
+  note: 从祖;伯叔祖：梁熙载（CBDB 外部人物）
   src: cbdb
   kin_code: 64
   direction: forward
@@ -26,13 +26,13 @@ relations:
   direction: forward
 - to_id: cbdb:10939
   type: 父子
-  note: 子：梁億（CBDB 外部人物）
+  note: 子：梁亿（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:10892
   type: 翁婿
-  note: 女婿：陳宓（CBDB 外部人物）
+  note: 女婿：陈宓（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
@@ -49,20 +49,20 @@ relations:
   kin_code: 210
   direction: forward
 - to_id: cbdb:14494
-  type: 祖孫
-  note: 玄孫;四世孫：梁嗣昌（CBDB 外部人物）
+  type: 祖孙
+  note: 玄孙;四世孙：梁嗣昌（CBDB 外部人物）
   src: cbdb
   kin_code: 263
   direction: forward
 - to_id: cbdb:10011
   type: 同年
-  note: 同年友：丁時發（CBDB 外部人物）
+  note: 同年友：丁时发（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:17210
   type: 同年
-  note: 同年友：馮田（CBDB 外部人物）
+  note: 同年友：冯田（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -74,91 +74,91 @@ relations:
   direction: forward
 - to_id: cbdb:44372
   type: 同年
-  note: 同年友：楊恂（CBDB 外部人物）
+  note: 同年友：杨恂（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:45531
   type: 同年
-  note: 同年友：許克昌（CBDB 外部人物）
+  note: 同年友：许克昌（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:1164
   type: 其他
-  note: 欣賞/器重：林一鳴（CBDB 外部人物）
+  note: 欣赏/器重：林一鸣（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:23812
   type: 师生
-  note: 學生為對方：陳光（CBDB 外部人物）
+  note: 学生为对方：陈光（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:10892
   type: 其他
-  note: 書序由對方所作：陳宓（CBDB 外部人物）
+  note: 书序由对方所作：陈宓（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:23812
   type: 其他
-  note: 該學派的成員為對方：陳光（CBDB 外部人物），始年 1187
+  note: 该学派的成员为对方：陈光（CBDB 外部人物），始年 1187
   src: cbdb
   assoc_code: 35
   direction: forward
 - to_id: cbdb:7197
   type: 其他
-  note: 書跋由對方所作：周必大（CBDB 外部人物）
+  note: 书跋由对方所作：周必大（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:3640
   type: 其他
-  note: 祭文由對方所作：陸游（CBDB 外部人物），始年 1187
+  note: 祭文由对方所作：陆游（CBDB 外部人物），始年 1187
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:10585
   type: 其他
-  note: 祭文由對方所作：陳傅良（CBDB 外部人物），始年 1187
+  note: 祭文由对方所作：陈傅良（CBDB 外部人物），始年 1187
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:10565
   type: 其他
-  note: 被致書由對方：胡銓（CBDB 外部人物）
+  note: 被致书由对方：胡铨（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:10578
   type: 其他
-  note: 被致書由對方：薛季宣（CBDB 外部人物）
+  note: 被致书由对方：薛季宣（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:15270
   type: 其他
-  note: 被致書由對方：周孚（CBDB 外部人物）
+  note: 被致书由对方：周孚（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:15571
   type: 其他
-  note: 被致書由對方：曾丰（CBDB 外部人物）
+  note: 被致书由对方：曾丰（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:3257
   type: 其他
-  note: 收到對方的答書：朱熹（CBDB 外部人物）
+  note: 收到对方的答书：朱熹（CBDB 外部人物）
   src: cbdb
   assoc_code: 432
   direction: forward
 - to_id: cbdb:42611
   type: 其他
-  note: 聘對方執教官學、書院：林維屏（CBDB 外部人物）
+  note: 聘对方执教官学、书院：林维屏（CBDB 外部人物）
   src: cbdb
   assoc_code: 499
   direction: forward

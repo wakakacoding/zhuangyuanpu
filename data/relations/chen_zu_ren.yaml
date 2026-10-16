@@ -2,61 +2,61 @@ from_id: chen_zu_ren
 relations:
   - to_id: cbdb:28644
     type: 父子
-    note: 父：陳安國（CBDB 外部人物）
+    note: 父：陈安国（CBDB 外部人物）
     src: cbdb
     kin_code: 75
     direction: forward
   - to_id: cbdb:108214
     type: 兄弟
-    note: 弟：陳宗義（CBDB 外部人物）
+    note: 弟：陈宗义（CBDB 外部人物）
     src: cbdb
     kin_code: 126
     direction: forward
   - to_id: cbdb:28455
     type: 其他
-    note: 為對方作墓誌銘：李士瞻（CBDB 外部人物），始年 1368
+    note: 为对方作墓志铭：李士瞻（CBDB 外部人物），始年 1368
     src: cbdb
     assoc_code: 44
     direction: forward
   - to_id: cbdb:10818
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：趙汸（CBDB 外部人物），始年 1368
+    note: 临别得到对方所作赠言(送别诗、序)：赵汸（CBDB 外部人物），始年 1368
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28377
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：張以寧（CBDB 外部人物），始年 1368
+    note: 临别得到对方所作赠言(送别诗、序)：张以宁（CBDB 外部人物），始年 1368
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28640
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：張仲深（CBDB 外部人物），始年 1368
+    note: 临别得到对方所作赠言(送别诗、序)：张仲深（CBDB 外部人物），始年 1368
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28642
     type: 其他
-    note: 臨別得到對方所作贈言(送別詩、序)：成廷珪（CBDB 外部人物），始年 1368
+    note: 临别得到对方所作赠言(送别诗、序)：成廷珪（CBDB 外部人物），始年 1368
     src: cbdb
     assoc_code: 163
     direction: forward
   - to_id: cbdb:28410
     type: 其他
-    note: 哀辭由對方所作：王逢（CBDB 外部人物）
+    note: 哀辞由对方所作：王逢（CBDB 外部人物）
     src: cbdb
     assoc_code: 166
     direction: forward
   - to_id: cbdb:30337
     type: 其他
-    note: 被致書由對方：謝應芳（CBDB 外部人物）
+    note: 被致书由对方：谢应芳（CBDB 外部人物）
     src: cbdb
     assoc_code: 430
     direction: forward
   - to_id: cbdb:33562
     type: 其他
-    note: 詩文跋由對方所作：凌廷堪（CBDB 外部人物）
+    note: 诗文跋由对方所作：凌廷堪（CBDB 外部人物）
     src: cbdb
     assoc_code: 470
     direction: forward

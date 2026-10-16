@@ -1,0 +1,169 @@
+person_id: wang_shipeng
+events:
+  - year: 1112
+    year_precision: exact
+    type: 出生
+    title: 生于温州乐清，少颖悟强记
+    description: >-
+      本传：「王十朋，字龟龄，温州乐清人。资颖悟，日诵数千言。及长，有文行。」墓志：
+      「公少颖悟，强记博览，为文顷刻数千言。事亲尽孝。其居乡进止取予必以义，后学师尊之。」
+      生年不见本传与墓志明文，据卒「年六十」（乾道七年 1171）逆推得 1112；出生月日
+      （十月二十八日，今乐清梅溪村）见今人年谱与温州方志，非本批所引来源明文，姑系于年。
+      另：墓志记其族源「其先自钱塘徙，至朝散公始业儒有声」，与籍贯「温州乐清」不冲突。
+    source_ids: [src_songshi_wangshipeng, src_wangshipeng_muzhiming]
+  - year: 1141
+    year_precision: about
+    type: 应试
+    title: 聚徒梅溪，后入太学，主司异其文
+    description: >-
+      本传：「及长，有文行，聚徒梅溪，受业者以百数。入太学，主司异其文。」两事本传与墓志
+      均不系年，据其绍兴十年（1140）前后开馆授徒、翌年入太学之次第系于此，仍以约年视之。
+      梅溪即其后所取之号。
+    source_ids: [src_songshi_wangshipeng, src_wangshipeng_muzhiming]
+  - year: 1157
+    year_precision: exact
+    type: 夺魁
+    title: 绍兴二十七年丁丑科状元，以「权」为对擢第一
+    description: >-
+      秦桧死后高宗亲政，策士于廷，诏「对策中有指陈时事、鲠亮切直者，并置上列」。十朋以
+      「权」为对，略曰：「揽权者，非欲衡石程书如秦皇，传餐听政如隋文，强明自任、不任宰相
+      如唐德宗，精于吏事、以察为明如唐宣宗，盖欲陛下惩既往而戒未然，威福一出于上而已。」
+      又言「法之至公者莫如选士，名器之至重者莫如科第」，请正身以为本、任贤以为助、
+      博采兼听以收其效，几万余言。墓志记「上临定其文，以为经学淹通，议论纯正，可第一。
+      及唱名，则公也，士论翕然称惬」；本传称「学者争传诵其策，以拟古晁、董」。是年诏严
+      销金铺翠之禁，取交趾所贡翠羽焚于通衢，实自十朋之策发之。
+    source_ids: [src_songshi_wangshipeng, src_wangshipeng_muzhiming]
+  - year: 1157
+    year_precision: exact
+    type: 授官
+    title: 授左承事郎、签书建康军节度判官厅公事；特添差绍兴府签判
+    description: >-
+      状元及第后初授二职，为墓志详载、本传仅存其一：先授左承事郎、签书建康军节度判官厅
+      公事；又诏「王某系朕亲擢第一人，欲试以民事……可特添差绍兴府签判」，本传即作
+      「授绍兴府签判」。既至，或以书生易之，十朋裁决如神，吏奸不行。后重建签判厅之公堂，
+      作《民事堂赋》，「民事堂」之名由此。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng, src_siku_huijisanfu]
+  - year: 1160
+    year_precision: about
+    type: 授官
+    title: 秩满除秘书省校书郎，寻兼建王府小学教授
+    description: >-
+      墓志：「秩满，除秘省校书郎，寻兼建王府小学教授。」本传作「召为秘书郎兼建王府小学
+      教授」。时以四科求士，帅王师心谓十朋身兼四者，独以应诏。旧例教授入讲堂居宾位，
+      十朋不可，皇孙特加礼，而位教授中坐。系年据签判秩满之次第，本传与墓志均不著年。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng]
+  - year: 1161
+    year_precision: exact
+    type: 升迁
+    title: 轮对力陈备金用人，论三衙管军诸弊，其言大略施行
+    description: >-
+      金将渝盟，十朋因轮对言：御敌莫急于用人，用人之要莫先于人望，今有可为将相、可为
+      大帅者「或投闲置散，或老于藩郡」，愿起而用之，「盖指张浚、刘锜也」。又论三衙管军
+      久而不代、兵柄利权尽入其门，官至三公而枢密反班其下；并及诸军承受、皇城逻卒之弊。
+      墓志谓「三衙之将有言也，人皆危之，而上特开纳焉」，既而罢诸军承受，逻卒亦罢职，
+      更定枢密与管军班次，解杨存中兵权——「公以一言悟意，而事皆次第罢行」。本传另记
+      秦桧久塞言路，至是十朋与冯方、胡宪、查籥、李浩相继论事，太学生为「五贤诗」述其事。
+    source_ids: [src_songshi_wangshipeng, src_wangshipeng_muzhiming]
+  - year: 1161
+    year_precision: exact
+    type: 授官
+    title: 除著作佐郎（本传作著作郎），寻迁大宗正丞，得请主管台州崇道观
+    description: >-
+      墓志作「除著作佐郎，罢其兼职」，本传作「除著作郎」——任职本名两说，并存备考。
+      十朋以求去得迁，力辞不许。是年正月风雷雨雪交作，十朋以为阳不胜阴之验，遗书
+      陈康伯，冀以《春秋》灾异之说力陈于上，崇阳抑阴以弭天变。久之除大宗正丞，仍待次，
+      寻得请主管台州崇道观而归于乡。其后金犯边，朝廷起刘锜为江淮浙西制置、张浚帅金陵，
+      「悉如其言」。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng]
+  - year: 1162
+    year_precision: exact
+    type: 授官
+    title: 孝宗即位，起知严州，召对进「以舜协尧」之说；除司封员外郎兼国史院编修官
+    description: >-
+      孝宗受禅，起知严州，未赴即召对。十朋奏「太上皇帝非耄耆勌勤之时，而以天下授之
+      陛下，其贤于尧舜远矣」，请以舜之所以协于尧者行之，「以尽继述之道」；又言
+      「今和戎与战守之议未决，臣谓或战或守，当相时进退，而和决不可议也」。除司封员外郎
+      兼国史院编修官，又兼崇政殿说书，除国子司业。本传「拜司封郎中」与墓志「司封员外郎」
+      异，本站从墓志。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng]
+  - year: 1163
+    year_precision: exact
+    type: 升迁
+    title: 除侍御史，论史浩八罪、史正志、林安宅，皆罢去
+    description: >-
+      隆兴元年四月，除起居舍人，改兼侍讲；十朋奏史职四事（起居注录本勿进呈、史官侍立、
+      前殿侍立、直前奏事不必预牒閤门），皆从之。越月除侍御史，人皆曰「真御史矣」。
+      十二月前后疏论史浩八罪——「怀奸误国，植党盗权，忌言蔽贤，欺君讪上」，上为出浩
+      知绍兴府；再疏谓「陛下虽能如舜之去邪，未能如舜之正名定罪」，遂改与祠。又论史正志
+      「倾险奸邪，观时求进」、林安宅「出入史浩、龙大渊门，盗弄威福」，二人皆罢去。
+    source_ids: [src_songshi_wangshipeng, src_wangshipeng_muzhiming]
+  - year: 1163
+    year_precision: exact
+    type: 罢官
+    title: 江淮出师不利，张浚自劾，十朋上疏自劾乞赐窜殛，出知饶州
+    description: >-
+      江淮都督府出师进取宿州，金悉众来争，我师退守淮，都督张浚上表自劾，主和者乘此
+      唱异议。十朋上疏言「臣素不识浚，闻其天姿忠义，誓不与贼俱生，实敬慕之」，既以
+      一月三捷服陛下任浚之难，亦以横议蜂起为戒：「浚既待罪，臣其可尚居风宪之职？」
+      乞正妄言之罪、特加窜殛。诏以权吏部侍郎，辞不拜，乃以集英殿修撰知饶州。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng]
+  - year: 1165
+    year_precision: exact
+    type: 授官
+    title: 乾道元年七月移知夔州，寻除敷文阁待制；饶民断桥以留
+    description: >-
+      十朋知饶州凡郡事，布上恩、恤民隐，士之贤者以礼致之，朔望会诸生学宫讲经询政，
+      输租使自概量，讼至庭温词晓以理义。本传记「饶并湖，盗出没其间，闻十朋至，一夕
+      遁去」；又记丞相洪适请以故学基益其圃，十朋曰「先圣所居，十朋何敢予人」。乾道元年
+      七月移知夔州，寻除敷文阁待制。饶民走诸司乞留不得，至断其桥，乃以车从间道去，
+      众葺断桥，以「王公」名之。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng]
+  - year: 1167
+    year_precision: exact
+    type: 授官
+    title: 乾道三年七月移知湖州；户部责虚逋三十四万，请祠去
+    description: >-
+      本传：「移知湖州，召对，刘珙请留之，上曰：朕岂不知王十朋，顾湖州被水，非十朋
+      莫能镇抚。」至郡，户部责虚逋三十四万，命吏持券往辨，不听，即请祠去。墓志系于
+      「三年七月」，寻得请提举江州太平兴国宫。湖州任内遇久雨伤稼，入境即霁。
+    source_ids: [src_songshi_wangshipeng, src_wangshipeng_muzhiming]
+  - year: 1168
+    year_precision: about
+    type: 授官
+    title: 起知泉州，进直学士；割奉钱创贡闱
+    description: >-
+      墓志：「才数月，起知泉州，进直学士。」本传记「起知泉州，十朋前在湖割奉钱创贡闱，
+      又为泉建之，尤宏壮」。系年据墓志「才数月」之次第系于此。在泉州时硕人贾氏卒——
+      墓志称「硕人贾氏，有贤行，先公二年卒」，其自撰《令人贾氏墓志》记贾氏「乾道四年
+      十二月十日卒于泉之郡舍，享年五十五」。此为其四郡之最后一郡，本传所谓「凡历四郡」。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng]
+  - year: 1169
+    year_precision: about
+    type: 授官
+    title: 又移知台州，以病力辞，且乞致仕，乃复提举太平兴国宫
+    description: >-
+      墓志：「又移知台州。公以病力辞，且乞致仕，乃复提举太平兴国宫。」本传不载知台州
+      一节。系年从墓志所记泉州、台州、太平兴国宫之次第，仍以约年视之。
+    source_ids: [src_wangshipeng_muzhiming]
+  - year: 1171
+    year_precision: exact
+    type: 授官
+    title: 乾道七年三月除太子詹事，力疾造朝；三上章乞致仕，以龙图阁学士致仕
+    description: >-
+      东宫建，三月除太子詹事。诏旨敦趣，十朋力疾造朝，上特御选德殿，以足弱不能趋，
+      诏给扶减拜，且赐坐；又诏权免朝参，遣使以诰及金带就赐。本传记「谒东宫，太子以其
+      旧学，待遇有加」。公三上章乞致仕，乃诏以龙图阁学士致仕。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng]
+  - year: 1171
+    year_precision: exact
+    type: 卒
+    title: 七月卒于家，年六十；十二月葬左原白岩，绍熙三年谥忠文
+    description: >-
+      墓志：「命下而公薨矣，实七月丙子也。享年六十。上闻嗟悼，赙恤有加，令两浙路转运司
+      给葬事。」积阶至左朝奉郎，封乐清县开国男，至是赠左朝散大夫；遗戒丧事毋得用佛老教，
+      诸孤行之，以十二月丙午葬于县之左原白岩，前卒之硕人贾氏合祔。后二十一年，《宋史》
+      本传记「绍熙三年，谥曰忠文」；泉州后立「王忠文祠」以祀。谥号异文两处并存：
+      《宋史》四库全书本此句作「绍兴三年」（在十朋生前，显系传写之讹）；
+      《四库全书总目·会稽三赋》提要作「谥文忠」，与「忠文」互倒——本站从点校本《宋史》
+      作「绍熙三年，谥曰忠文」。
+    source_ids: [src_wangshipeng_muzhiming, src_songshi_wangshipeng, src_siku_huijisanfu]

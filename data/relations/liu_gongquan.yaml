@@ -2,13 +2,13 @@ from_id: liu_gongquan
 relations:
 - to_id: cbdb:33583
   type: 父子
-  note: 父：柳子溫（CBDB 外部人物）
+  note: 父：柳子温（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:33588
   type: 兄弟
-  note: 兄：柳公綽（CBDB 外部人物）
+  note: 兄：柳公绰（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
@@ -20,61 +20,61 @@ relations:
   direction: forward
 - to_id: cbdb:178244
   type: 父子
-  note: 子：柳仲憲（CBDB 外部人物）
+  note: 子：柳仲宪（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:94227
   type: 友人
-  note: 友：賈島（CBDB 外部人物）
+  note: 友：贾岛（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:42114
   type: 其他
-  note: 書風為對方所模仿：宗翼（CBDB 外部人物）
+  note: 书风为对方所模仿：宗翼（CBDB 外部人物）
   src: cbdb
   assoc_code: 379
   direction: forward
 - to_id: cbdb:175289
   type: 其他
-  note: 贈詩、文：李昂（CBDB 外部人物）
+  note: 赠诗、文：李昂（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:448287
   type: 其他
-  note: 贈詩、文：李炎（CBDB 外部人物）
+  note: 赠诗、文：李炎（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:450568
   type: 其他
-  note: 贈詩、文：朱審（CBDB 外部人物）
+  note: 赠诗、文：朱审（CBDB 外部人物）
   src: cbdb
   assoc_code: 437
   direction: forward
 - to_id: cbdb:32227
   type: 其他
-  note: 收到對方的贈詩、文：白居易（CBDB 外部人物）
+  note: 收到对方的赠诗、文：白居易（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:94227
   type: 其他
-  note: 收到對方的贈詩、文：賈島（CBDB 外部人物）
+  note: 收到对方的赠诗、文：贾岛（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:447146
   type: 其他
-  note: 收到對方的贈詩、文：魚又玄（CBDB 外部人物）
+  note: 收到对方的赠诗、文：鱼又玄（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:173750
   type: 同僚
-  note: 上司為對方：李聽（CBDB 外部人物）
+  note: 上司为对方：李听（CBDB 外部人物）
   src: cbdb
   assoc_code: 481
   direction: forward

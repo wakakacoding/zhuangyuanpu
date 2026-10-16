@@ -2,7 +2,7 @@ from_id: he_huan
 relations:
 - to_id: cbdb:220
   type: 同年
-  note: 同年友：張漢彥（CBDB 外部人物）
+  note: 同年友：张汉彦（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -14,7 +14,7 @@ relations:
   direction: forward
 - to_id: cbdb:21173
   type: 同年
-  note: 同年友：虞澐（CBDB 外部人物）
+  note: 同年友：虞沄（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward

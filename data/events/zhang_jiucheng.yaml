@@ -1,0 +1,118 @@
+person_id: zhang_jiucheng
+events:
+  - year: 1092
+    year_precision: exact
+    type: 出生
+    title: 生于钱塘（其先开封人，徙居钱塘）
+    description: >-
+      《宋史》本传：「张九成，字子韶，其先开封人，徙居钱塘。」《宋元学案》卷四十直作
+      「钱塘人」。本传不载生年，据《建炎以来系年要录》卷一百八十二「绍兴二十九年……卒，
+      年六十八」逆推为 1092。其父名张伸，见于 CBDB 与海宁地方资料，本传不载，未采为字段。
+    source_ids: [src_songshi_zhangjiucheng, src_songyuanxuean_hengpu, src_jianyan_yiluo_zhangjiucheng]
+  - year: 1115
+    year_precision: about
+    type: 应试
+    title: 游京师，从杨时学
+    description: >-
+      本传：「游京师，从杨时学。」杨时为程门高弟（龟山先生），故九成于二程为再传弟子
+      （《四库总目》「九成少师杨时，于程门为再传弟子」）。事不系年，据「宣和中游学京师」
+      之次第系于此，仍以约年视之。同时有权贵托人致币谓「肯从吾游，当荐之馆阁」，
+      九成笑而却之——此语见本传，已入轶事栏。
+    source_ids: [src_songshi_zhangjiucheng, src_siku_hengpuji]
+  - year: 1132
+    year_precision: exact
+    type: 夺魁
+    title: 绍兴二年壬子科进士第一，对策陈恢复大计、戒阉寺干政
+    description: >-
+      本传：「绍兴二年，上将策进士，诏考官，直言者置高等。」九成对策略曰：「祸乱之作，
+      天所以开圣人也。愿陛下以刚大为心，无以忧惊自沮。臣观金人有必亡之势，中国有必兴之理。
+      夫好战必亡，失其故俗必亡，人心不服必亡，金皆有焉。……前世中兴之主，大抵以刚德为尚。
+      去谗节欲，远佞防奸，皆中兴之本也。」又言：「阉寺闻名，国之不祥也……当使之安扫除之役，
+      凡结交往来者有禁，干预政事者必诛。」遂擢置首选。杨时遗书曰：「廷对自中兴以来未之有，
+      非刚大之气，不为得丧回屈，不能为也。」《四库总目》谓此策「极陈恢复大计，规戒高宗
+      安于和议之非……于阉宦干政，尤反复申明。其在当时，可称谠论」。
+    source_ids: [src_songshi_zhangjiucheng, src_siku_hengpuji, src_songyuanxuean_hengpu]
+  - year: 1132
+    year_precision: exact
+    type: 授官
+    title: 授镇东军签判；争盐禁忤提刑张宗臣，投檄归而讲学
+    description: >-
+      本传：「授镇东军签判，吏不能欺。民冒鹾禁，提刑张宗臣欲逮捕数十人，九成争之。
+      宗臣曰：『此事左相封来。』九成曰：『主上屡下恤刑之诏，公不体圣意而观望宰相耶？』
+      宗臣怒，九成即投檄归。从学者日众，出其门者多为闻人。」《宋元学案》作「佥判镇东军。
+      与监司不合，投檄而归，学士大夫簦笈云集，多执贽门下」。
+    source_ids: [src_songshi_zhangjiucheng, src_songyuanxuean_hengpu]
+  - year: 1135
+    year_precision: exact
+    type: 授官
+    title: 赵鼎荐召，为太常博士，改著作佐郎、迁著作郎；建言恤刑，除浙东提刑力辞
+    description: >-
+      本传：「赵鼎荐于朝，遂以太常博士召。既至，改著作佐郎，迁著作郎。」是年系年据
+      《建炎以来系年要录》卷八十四、九十（绍兴五年以太常博士召），迁著作郎据卷九十九（绍兴六年）。
+      在著作郎任上言：「我宋家法，曰仁而已。仁之发见，尤在于刑。陛下以省刑为急，而理官
+      不以恤刑为念。欲诏理官，活几人者与减磨勘。」从之。除浙东提刑，力辞，乃与祠以归。
+    source_ids: [src_songshi_zhangjiucheng, src_jianyan_yiluo_zhangjiucheng]
+  - year: 1138
+    year_precision: exact
+    type: 授官
+    title: 召除宗正少卿、权礼部侍郎兼侍讲，兼权刑部侍郎；覆实大辟冤案而辞赏
+    description: >-
+      本传：「未几，召除宗正少卿、权礼部侍郎兼侍讲，兼权刑部侍郎。」系年据《要录》
+      卷一百二十、一百二十一、一百二十三（绍兴八年）。任内「法寺以大辟成案上，九成阅始末
+      得其情，因请覆实，囚果诬服者。朝论欲以平反为赏，九成曰：『职在详刑，可邀赏乎？』辞之」。
+      《宋元学案》另记其尝谓高宗曰：「外议以臣为赵鼎之党，虽臣亦疑之。」帝问其故，曰：
+      「臣每造鼎，见其议论无滞，不觉坐久，则人言无足怪也。」
+    source_ids: [src_songshi_zhangjiucheng, src_songyuanxuean_hengpu, src_jianyan_yiluo_zhangjiucheng]
+  - year: 1138
+    year_precision: exact
+    type: 贬谪
+    title: 论和议不合，面折秦桧「未有枉己而能直人」，谪守邵州
+    description: >-
+      本传：「金人议和，九成谓赵鼎曰：『金实厌兵，而张虚声以撼中国。』因言十事，彼诚能
+      从吾所言，则与之和，使权在朝廷。鼎既罢，秦桧诱之曰：『且成桧此事。』九成曰：
+      『九成胡为异议，特不可轻易以苟安耳。』桧曰：『立朝须优游委曲。』九成曰：『未有枉己
+      而能直人。』上问以和议，九成曰：『敌情多诈，不可不察。』」因在经筵言西汉灾异事，
+      秦桧甚恶之，遂谪守邵州。
+    source_ids: [src_songshi_zhangjiucheng, src_songyuanxuean_hengpu]
+  - year: 1139
+    year_precision: about
+    type: 罢官
+    title: 邵州有治行而遭论劾落职；丁父忧，免丧后止与宫观
+    description: >-
+      本传：「既至（邵州），仓库虚乏，僚属请督酒租宿负、苗绢未输者，九成曰：『纵未能惠民，
+      其敢困民耶？』是岁，赋入更先他时。中丞何铸言其矫伪欺俗，倾附赵鼎，落职。」《宋元学案》
+      亦记「何铸劾以依附赵公鼎，落职」。其后「丁父忧，既免丧，秦桧取旨，上曰：『自古朋党
+      畏人主知之，此人独无所畏，可与宫观。』」系年据邵州之任与丁忧次第，仍以约年视之。
+    source_ids: [src_songshi_zhangjiucheng, src_songyuanxuean_hengpu]
+  - year: 1143
+    year_end: 1156
+    year_precision: range
+    type: 贬谪
+    title: 谪居南安军十四年：执书就明，倚立庭砖双趺隐然
+    description: >-
+      本传：「先是，径山僧宗杲善谈禅理，从游者众，九成时往来其间。桧恐其议己，令司谏詹大方
+      论其与宗杲谤讪朝政，谪居南安军。」系年据《要录》卷一百四十九（绍兴十三年谪南安军）。
+      「在南安十四年，每执书就明，倚立庭砖，岁久双趺隐然。广帅致籯金，九成曰：『吾何敢苟取。』
+      悉归之。」《宋元学案》记其「在谪居十四年，解释经义，目病，就明檐下，砖痕双趺隐然」，
+      是其一生经解多成于谪所之证。
+    source_ids: [src_songshi_zhangjiucheng, src_songyuanxuean_hengpu, src_jianyan_yiluo_zhangjiucheng]
+  - year: 1156
+    year_precision: exact
+    type: 授官
+    title: 秦桧死，起知温州；移书痛陈督军粮之弊，奉祠归
+    description: >-
+      本传：「桧死，起知温州。户部遣吏督军粮，民苦之，九成移书痛陈其弊，户部持之，
+      九成即丐祠归。」系年据《要录》卷一百七十一（绍兴二十六年起知温州）；秦桧卒于绍兴
+      二十五年（1155）十月，本传「桧死」与次年之命亦相合。
+    source_ids: [src_songshi_zhangjiucheng, src_jianyan_yiluo_zhangjiucheng]
+  - year: 1159
+    year_precision: exact
+    type: 卒
+    title: 绍兴二十九年六月卒，年六十八；宝庆初赠太师、封崇国公，谥文忠
+    description: >-
+      《要录》卷一百八十二：「绍兴二十九年己丑六月……秘阁修撰、提举江州太平兴国宫张九成卒，
+      年六十八。」《宋元学案》作「二十九年六月四日，卒，年六十八」。《宋史》本传记其
+      「数（月），病卒」，并谓「九成研思经学，多有训解，然早与学佛者游，故其议论多偏」。
+      卒后「宝庆初，特赠太师，封崇国公，谥『文忠』」。其葬地据海宁地方资料在临安府盐官县
+      （今浙江海宁盐官镇西），本批未获原始志乘核对，未入字段。
+    source_ids: [src_songshi_zhangjiucheng, src_songyuanxuean_hengpu, src_jianyan_yiluo_zhangjiucheng]

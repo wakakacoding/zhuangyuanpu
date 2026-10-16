@@ -1,0 +1,106 @@
+person_id: luo_lun
+events:
+  - year: 1431
+    year_precision: exact
+    type: 出生
+    title: 生于吉安永丰，五岁知让
+    description: >-
+      《明史》本传：「罗伦，字彝正，吉安永丰人。五岁尝随母入园，果落，众竞取，伦独赐而后受。」
+      本传不载生年，据《明儒学案》卷四十五「戊戌（成化十四年，1478）九月二十四日卒，年四十八」
+      逆推为 1431。《四库总目》作「别号一峰，江西永丰人」，与本传同。
+    source_ids: [src_mingshi_luolun, src_mingruxuean_luolun, src_siku_yifengji]
+  - year: 1455
+    year_precision: about
+    type: 应试
+    title: 家贫樵牧，挟书诵不辍；为诸生，志圣贤之学
+    description: >-
+      本传：「家贫樵牧，挟书诵不辍。及为诸生，志圣贤学，尝曰：『举业非能坏人，人自坏之耳。』
+      知府张瑄悯其贫，周之粟，谢不受。居父母丧，逾大祥，始食盐酪。」诸事两源均不系年，
+      据其成化二年（1466）登第之前之诸生时期系于此，仍以约年视之。《明儒学案》另记其
+      「刚介绝俗，生平不作和同之语，不为软巽之行」，可与本段互参。
+    source_ids: [src_mingshi_luolun, src_mingruxuean_luolun]
+  - year: 1466
+    year_precision: exact
+    type: 夺魁
+    title: 成化二年丙戌科廷试第一，对策万馀言直斥时弊
+    description: >-
+      本传：「成化二年，廷试，对策万馀言。直斥时弊，名震都下。擢进士第一，授翰林修撰。」
+      《明儒学案》补其对策之节：「引程正公语：人主一日之间，接贤士大夫之时多，亲宦官宫妾之时少。
+      执政欲节其下句，先生不从。奏名第一。」——可见其万言对策曾被删节，而「亲宦官宫妾之时少」
+      一语终得留存。《四库总目》亦记其「成化丙戌进士第一」。
+    source_ids: [src_mingshi_luolun, src_mingruxuean_luolun, src_siku_yifengji]
+  - year: 1466
+    year_precision: exact
+    type: 贬谪
+    title: 疏劾大学士李贤夺情起复，谪福建市舶司副提举
+    description: >-
+      本传：「逾二月，大学士李贤奔丧毕，奉诏还朝。伦诣贤沮之，不听。乃上疏曰：『臣闻朝廷援
+      杨溥故事，起复大学士李贤。臣窃谓贤大臣，起复大事，纲常风化系焉，不可不慎。……』」
+      疏中历举宋仁宗起复富弼而弼辞、孝宗起复刘珙而珙辞为「君能教臣以孝」之例，又斥当时
+      「缙绅以起复为美名，食稻衣锦之徒，接踵庙堂」，末请「许贤归家持服」。《明儒学案》记其
+      先「诣其私第，告以不可，待之数日，始上疏」——非徒激切，先礼而后言。疏入，谪福建市舶司
+      副提举（《明儒学案》《四库总目》并作「泉州市舶副提举」，福建市舶司治泉州，所指为一）。
+      《四库总目》记此事作「释褐甫三月」，与本传「逾二月」异，并存备考。御史陈选疏救不报，
+      御史杨琅申救被切责；尚书王翱以文彦博救唐介事讽李贤，贤曰「潞公市恩，归怨朝廷，
+      吾不可以效之」。
+    source_ids: [src_mingshi_luolun, src_mingruxuean_luolun, src_siku_yifengji]
+  - year: 1466
+    year_precision: about
+    type: 授官
+    title: 提举泉州市舶司：拒迁司于福州之议，聚徒讲学于净真观
+    description: >-
+      罗伦谪任福建市舶司（治泉州）副提举期间，「在任两袖清风」。据泉州掌故：成化二年巡按御史
+      朱贤奏请迁市舶司于福州柏衙，制已从，罗伦上言「衙门设立自有其地，迁移亦有其数。盖以柏衙
+      僻陋，非可设之地；岁数未穷，非可迁之时」，事遂寝。又于郡北净真观聚众讲学，「有司率诸生
+      从之，讲明正学」，四方士人从学如流。二事出泉州掌故与《福建市舶提举司记》之转引，
+      属二手材料，本批仅取其可与本传「谪福建市舶司副提举」相参者。
+    source_ids: [src_mingshi_luolun, src_quanzhou_luolun]
+  - year: 1467
+    year_precision: about
+    type: 罢官
+    title: 任提举时受涂棐案词连，赖镇抚司力持而免
+    description: >-
+      本传附记：「方伦为提举时，御史丰城涂棐巡按福建。司礼中官黄赐，延平人也，请见，棐不可。
+      泉州知府李宗学以受赇为棐所按，讦棐自解，赐从中主其奏。棐、宗学俱被征，词连伦，当并逮。
+      镇抚司某曰：『罗先生可至此乎？』即日鞫成上之。伦得免，棐亦复官。」系于其任提举期间，
+      仍以约年视之。
+    source_ids: [src_mingshi_luolun]
+  - year: 1467
+    year_precision: exact
+    type: 授官
+    title: 以学士商辂言召复原职，改南京翰林院
+    description: >-
+      本传：「亡何，贤卒。明年以学士商辂言召复原职，改南京。」《明儒学案》：「明年召还，
+      复修撰，改南京。」《四库总目》：「明年诏还，复原官，改南京供职。」三源同系于谪后之
+      「明年」，即成化三年（1467）；李贤卒于成化二年冬（本传「亡何，贤卒」）。
+    source_ids: [src_mingshi_luolun, src_mingruxuean_luolun, src_siku_yifengji]
+  - year: 1469
+    year_precision: exact
+    type: 罢官
+    title: 居南京二年，引疾归，遂不复出
+    description: >-
+      本传：「居二年，引疾归，遂不复出。」《明儒学案》：「寻以疾辞归，隐于金牛山，注意经学。」
+      《四库总目》：「寻以疾辞归，退居金牛山，授徒讲学以终。」按成化三年改南京、居二年计，
+      归在成化五年（1469）前后。
+    source_ids: [src_mingshi_luolun, src_mingruxuean_luolun, src_siku_yifengji]
+  - year: 1470
+    year_precision: about
+    type: 隐居
+    title: 筑室金牛山著书授徒，里居倡行乡约；于经学多所撰述
+    description: >-
+      本传：「伦为人刚正，严于律己。义所在，毅然必为，于富贵名利泊如也。里居倡行乡约，
+      相率无敢犯。……以金牛山人迹不至，筑室著书其中，四方从学者甚众。」《明儒学案》记其
+      在此「注意经学：《周易》多修传注，间补己意；《礼记》汇集儒先之见，而分章记礼，
+      则先生独裁；《春秋》则不取褒贬凡例之说」。系于归隐之后，仍以约年视之。
+    source_ids: [src_mingshi_luolun, src_mingruxuean_luolun, src_siku_yifengji]
+  - year: 1478
+    year_precision: exact
+    type: 卒
+    title: 成化十四年戊戌九月卒，年四十八；追赠左春坊谕德，谥文毅
+    description: >-
+      本传：「十四年卒，年四十八。嘉靖初，从御史唐龙请，追赠左春坊谕德，谥文毅。学者称一峰先生。」
+      《明儒学案》作「戊戌九月二十四日卒，年四十八」，卒日较本传为详；谥赠之年则作
+      「正德十六年，赠左谕德，谥文毅」——正德十六年（1521）为嘉靖元年（1522）之前一年，
+      两说相邻并存。《四库总目》记其「退居金牛山，授徒讲学以终」，并评其文「刚毅之气，
+      形于楮墨。诗亦磊砢不凡」。
+    source_ids: [src_mingshi_luolun, src_mingruxuean_luolun, src_siku_yifengji]

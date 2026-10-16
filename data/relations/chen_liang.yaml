@@ -1,20 +1,20 @@
 from_id: chen_liang
 relations:
 - to_id: cbdb:14041
-  type: 祖孫
-  note: 祖父：陳益（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：陈益（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:15049
   type: 旁系
-  note: 從祖;伯叔祖：陳持（CBDB 外部人物）
+  note: 从祖;伯叔祖：陈持（CBDB 外部人物）
   src: cbdb
   kin_code: 64
   direction: forward
 - to_id: cbdb:15045
   type: 父子
-  note: 父：陳次尹（CBDB 外部人物）
+  note: 父：陈次尹（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -32,37 +32,37 @@ relations:
   direction: forward
 - to_id: cbdb:47429
   type: 母子
-  note: 母：黃氏(陳亮母)（CBDB 外部人物）
+  note: 母：黄氏(陈亮母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:15044
   type: 兄弟
-  note: 弟：陳明（CBDB 外部人物）
+  note: 弟：陈明（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:27373
   type: 兄弟
-  note: 弟：陳充（CBDB 外部人物）
+  note: 弟：陈充（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:7055
   type: 兄弟
-  note: 族兄：呂祖謙（CBDB 外部人物）
+  note: 族兄：吕祖谦（CBDB 外部人物）
   src: cbdb
   kin_code: 143
   direction: forward
 - to_id: cbdb:20041
   type: 翁婿
-  note: 女婿：吳深（CBDB 外部人物）
+  note: 女婿：吴深（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:3341
   type: 姻亲
-  note: 妻弟：何大辯（CBDB 外部人物）
+  note: 妻弟：何大辩（CBDB 外部人物）
   src: cbdb
   kin_code: 385
   direction: forward
@@ -81,19 +81,19 @@ relations:
   direction: forward
 - to_id: cbdb:13895
   type: 友人
-  note: 友：范子該（CBDB 外部人物）
+  note: 友：范子该（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:17491
   type: 友人
-  note: 友：呂浩（CBDB 外部人物）
+  note: 友：吕浩（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:22412
   type: 友人
-  note: 友：吳竿（CBDB 外部人物）
+  note: 友：吴竿（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -105,7 +105,7 @@ relations:
   direction: forward
 - to_id: cbdb:30359
   type: 友人
-  note: 友：辛棄疾（CBDB 外部人物）
+  note: 友：辛弃疾（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -117,19 +117,19 @@ relations:
   direction: forward
 - to_id: cbdb:44747
   type: 友人
-  note: 友：凌堅（CBDB 外部人物）
+  note: 友：凌坚（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:3288
   type: 友人
-  note: 友：范子長（CBDB 外部人物），始年 1194
+  note: 友：范子长（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:16783
   type: 友人
-  note: 友：范仲藝（CBDB 外部人物），始年 1194
+  note: 友：范仲艺（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -147,7 +147,7 @@ relations:
   direction: forward
 - to_id: cbdb:18950
   type: 同年
-  note: 同年友：黃涇（CBDB 外部人物）
+  note: 同年友：黄泾（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -159,13 +159,13 @@ relations:
   direction: forward
 - to_id: cbdb:21569
   type: 同年
-  note: 同年友：滕強恕（CBDB 外部人物）
+  note: 同年友：滕强恕（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:24892
   type: 同年
-  note: 同年友：扈仲榮（CBDB 外部人物）
+  note: 同年友：扈仲荣（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -177,853 +177,853 @@ relations:
   direction: forward
 - to_id: cbdb:46459
   type: 同年
-  note: 同年友：康夢庚（CBDB 外部人物）
+  note: 同年友：康梦庚（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:50310
   type: 同年
-  note: 同年友：趙元孺（CBDB 外部人物）
+  note: 同年友：赵元孺（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:50850
   type: 同年
-  note: 同年友：趙時逢（CBDB 外部人物）
+  note: 同年友：赵时逢（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:20041
   type: 其他
-  note: 欣賞/器重：吳深（CBDB 外部人物）
+  note: 欣赏/器重：吴深（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:27779
   type: 其他
-  note: 欣賞/器重：倪樸（CBDB 外部人物）
+  note: 欣赏/器重：倪朴（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:51832
   type: 其他
-  note: 欣賞/器重：劉範（CBDB 外部人物）
+  note: 欣赏/器重：刘范（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:22412
   type: 其他
-  note: 欣賞/器重：吳竿（CBDB 外部人物），始年 1194
+  note: 欣赏/器重：吴竿（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:35014
   type: 其他
-  note: 欣賞/器重：杜旃（CBDB 外部人物），始年 1194
+  note: 欣赏/器重：杜旃（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:3187
   type: 师生
-  note: 學生為對方：章湜（CBDB 外部人物）
+  note: 学生为对方：章湜（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:42001
   type: 师生
-  note: 學生為對方：何堅（CBDB 外部人物）
+  note: 学生为对方：何坚（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:45114
   type: 师生
-  note: 學生為對方：章椿（CBDB 外部人物）
+  note: 学生为对方：章椿（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:49004
   type: 师生
-  note: 學生為對方：喻南強（CBDB 外部人物）
+  note: 学生为对方：喻南强（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:51439
   type: 师生
-  note: 學生為對方：樓應元（CBDB 外部人物）
+  note: 学生为对方：楼应元（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:25430
   type: 师生
-  note: 學生為對方：丁希亮（CBDB 外部人物），始年 1177
+  note: 学生为对方：丁希亮（CBDB 外部人物），始年 1177
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:44454
   type: 其他
-  note: 得到對方的支持：張垓（CBDB 外部人物）
+  note: 得到对方的支持：张垓（CBDB 外部人物）
   src: cbdb
   assoc_code: 26
   direction: forward
 - to_id: cbdb:10578
   type: 其他
-  note: 為對方所著書作序：薛季宣（CBDB 外部人物）
+  note: 为对方所著书作序：薛季宣（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:10592
   type: 其他
-  note: 為對方所著書作序：鄭伯熊（CBDB 外部人物）
+  note: 为对方所著书作序：郑伯熊（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:17527
   type: 其他
-  note: 為對方所著書作序：吳儆（CBDB 外部人物）
+  note: 为对方所著书作序：吴儆（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:39922
   type: 其他
-  note: 為對方所著書作序：沈棐（CBDB 外部人物）
+  note: 为对方所著书作序：沈棐（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:50215
   type: 其他
-  note: 為對方所著書作序：趙九齡（CBDB 外部人物）
+  note: 为对方所著书作序：赵九龄（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:51439
   type: 其他
-  note: 為對方所著書作序：樓應元（CBDB 外部人物）
+  note: 为对方所著书作序：楼应元（CBDB 外部人物）
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:2022
   type: 其他
-  note: 為對方所著書作序：楊時（CBDB 外部人物），始年 1194
+  note: 为对方所著书作序：杨时（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:7252
   type: 其他
-  note: 為對方所著書作序：胡宏（CBDB 外部人物），始年 1194
+  note: 为对方所著书作序：胡宏（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 32
   direction: forward
 - to_id: cbdb:35163
   type: 其他
-  note: 書序由對方所作：胡鳳丹（CBDB 外部人物）
+  note: 书序由对方所作：胡凤丹（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:10749
   type: 其他
-  note: 書序由對方所作：葉適（CBDB 外部人物），始年 1194
+  note: 书序由对方所作：叶适（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:3183
   type: 其他
-  note: 為對方作墓誌銘：章著（CBDB 外部人物）
+  note: 为对方作墓志铭：章著（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:3338
   type: 其他
-  note: 為對方作墓誌銘：何恢（CBDB 外部人物）
+  note: 为对方作墓志铭：何恢（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:5063
   type: 其他
-  note: 為對方作墓誌銘：翁氏(高子莫妻)（CBDB 外部人物）
+  note: 为对方作墓志铭：翁氏(高子莫妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:5277
   type: 其他
-  note: 為對方作墓誌銘：夏氏(呂師愈妻)（CBDB 外部人物）
+  note: 为对方作墓志铭：夏氏(吕师愈妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:5293
   type: 其他
-  note: 為對方作墓誌銘：杜氏(何松妻)（CBDB 外部人物）
+  note: 为对方作墓志铭：杜氏(何松妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:14041
   type: 其他
-  note: 為對方作墓誌銘：陳益（CBDB 外部人物）
+  note: 为对方作墓志铭：陈益（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:15044
   type: 其他
-  note: 為對方作墓誌銘：陳明（CBDB 外部人物）
+  note: 为对方作墓志铭：陈明（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:15238
   type: 其他
-  note: 為對方作墓誌銘：陳龜年（CBDB 外部人物）
+  note: 为对方作墓志铭：陈龟年（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:17598
   type: 其他
-  note: 為對方作墓誌銘：宗武（CBDB 外部人物）
+  note: 为对方作墓志铭：宗武（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:17639
   type: 其他
-  note: 為對方作墓誌銘：喻師（CBDB 外部人物）
+  note: 为对方作墓志铭：喻师（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:17660
   type: 其他
-  note: 為對方作墓誌銘：何大猷（CBDB 外部人物）
+  note: 为对方作墓志铭：何大猷（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:21360
   type: 其他
-  note: 為對方作墓誌銘：孫亶（CBDB 外部人物）
+  note: 为对方作墓志铭：孙亶（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:24828
   type: 其他
-  note: 為對方作墓誌銘：金大亨（CBDB 外部人物）
+  note: 为对方作墓志铭：金大亨（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:27357
   type: 其他
-  note: 為對方作墓誌銘：陳良能（CBDB 外部人物）
+  note: 为对方作墓志铭：陈良能（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:27365
   type: 其他
-  note: 為對方作墓誌銘：陳廷俊（CBDB 外部人物）
+  note: 为对方作墓志铭：陈廷俊（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:27367
   type: 其他
-  note: 為對方作墓誌銘：陳昌運（CBDB 外部人物）
+  note: 为对方作墓志铭：陈昌运（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:38807
   type: 其他
-  note: 為對方作墓誌銘：方彥老（CBDB 外部人物）
+  note: 为对方作墓志铭：方彦老（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:42643
   type: 其他
-  note: 為對方作墓誌銘：周若訥（CBDB 外部人物）
+  note: 为对方作墓志铭：周若讷（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:42926
   type: 其他
-  note: 為對方作墓誌銘：呂氏(胡括母)（CBDB 外部人物）
+  note: 为对方作墓志铭：吕氏(胡括母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:42979
   type: 其他
-  note: 為對方作墓誌銘：胡航（CBDB 外部人物）
+  note: 为对方作墓志铭：胡航（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:44354
   type: 其他
-  note: 為對方作墓誌銘：姚汝賢（CBDB 外部人物）
+  note: 为对方作墓志铭：姚汝贤（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:44515
   type: 其他
-  note: 為對方作墓誌銘：郎翥（CBDB 外部人物）
+  note: 为对方作墓志铭：郎翥（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:44751
   type: 其他
-  note: 為對方作墓誌銘：何道融(凌堅母)（CBDB 外部人物）
+  note: 为对方作墓志铭：何道融(凌坚母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:45120
   type: 其他
-  note: 為對方作墓誌銘：田氏(章椿母)（CBDB 外部人物）
+  note: 为对方作墓志铭：田氏(章椿母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:45370
   type: 其他
-  note: 為對方作墓誌銘：孫貫（CBDB 外部人物）
+  note: 为对方作墓志铭：孙贯（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:47429
   type: 其他
-  note: 為對方作墓誌銘：黃氏(陳亮母)（CBDB 外部人物）
+  note: 为对方作墓志铭：黄氏(陈亮母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:48013
   type: 其他
-  note: 為對方作墓誌銘：陳瑞中（CBDB 外部人物）
+  note: 为对方作墓志铭：陈瑞中（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:48997
   type: 其他
-  note: 為對方作墓誌銘：王氏(喻師妻)（CBDB 外部人物）
+  note: 为对方作墓志铭：王氏(喻师妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:49000
   type: 其他
-  note: 為對方作墓誌銘：王氏(喻民獻母)（CBDB 外部人物）
+  note: 为对方作墓志铭：王氏(喻民献母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:51631
   type: 其他
-  note: 為對方作墓誌銘：蔡彌邵（CBDB 外部人物）
+  note: 为对方作墓志铭：蔡弥邵（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:51892
   type: 其他
-  note: 為對方作墓誌銘：劉大聲（CBDB 外部人物）
+  note: 为对方作墓志铭：刘大声（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:52314
   type: 其他
-  note: 為對方作墓誌銘：錢廓（CBDB 外部人物）
+  note: 为对方作墓志铭：钱廓（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:52392
   type: 其他
-  note: 為對方作墓誌銘：謝達（CBDB 外部人物）
+  note: 为对方作墓志铭：谢达（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:17489
   type: 其他
-  note: 為對方作墓誌銘：呂師愈（CBDB 外部人物），始年 1189
+  note: 为对方作墓志铭：吕师愈（CBDB 外部人物），始年 1189
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:336
   type: 其他
-  note: 為對方作墓誌銘：章服（CBDB 外部人物），始年 1194
+  note: 为对方作墓志铭：章服（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:17640
   type: 其他
-  note: 為對方作墓誌銘：商錡（CBDB 外部人物），始年 1194
+  note: 为对方作墓志铭：商锜（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:17662
   type: 其他
-  note: 為對方作墓誌銘：劉叔向（CBDB 外部人物），始年 1194
+  note: 为对方作墓志铭：刘叔向（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:27370
   type: 其他
-  note: 為對方作墓誌銘：周晄（CBDB 外部人物），始年 1194
+  note: 为对方作墓志铭：周晄（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:27727
   type: 其他
-  note: 書跋由對方所作：方回（CBDB 外部人物）
+  note: 书跋由对方所作：方回（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:1384
   type: 其他
-  note: 為對方所著書作跋：歐陽修（CBDB 外部人物）
+  note: 为对方所著书作跋：欧阳修（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:3105
   type: 其他
-  note: 為對方所著書作跋：程頤（CBDB 外部人物）
+  note: 为对方所著书作跋：程颐（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:3257
   type: 其他
-  note: 為對方所著書作跋：朱熹（CBDB 外部人物）
+  note: 为对方所著书作跋：朱熹（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:3676
   type: 其他
-  note: 為對方所著書作跋：米芾（CBDB 外部人物）
+  note: 为对方所著书作跋：米芾（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:11655
   type: 其他
-  note: 為對方所著書作跋：焦千之（CBDB 外部人物）
+  note: 为对方所著书作跋：焦千之（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:17651
   type: 其他
-  note: 為對方所著書作跋：喻良弼（CBDB 外部人物）
+  note: 为对方所著书作跋：喻良弼（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:25514
   type: 其他
-  note: 為對方所著書作跋：趙訓之（CBDB 外部人物）
+  note: 为对方所著书作跋：赵训之（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:30359
   type: 其他
-  note: 為對方所著書作跋：辛棄疾（CBDB 外部人物）
+  note: 为对方所著书作跋：辛弃疾（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:1161
   type: 其他
-  note: 為對方所著書作跋：林勳（CBDB 外部人物），始年 1194
+  note: 为对方所著书作跋：林勋（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 46
   direction: forward
 - to_id: cbdb:17490
   type: 其他
-  note: 從遊者為對方：呂約（CBDB 外部人物）
+  note: 从游者为对方：吕约（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:37834
   type: 其他
-  note: 從遊者為對方：方坦（CBDB 外部人物）
+  note: 从游者为对方：方坦（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:39660
   type: 其他
-  note: 從遊者為對方：王弈（CBDB 外部人物）
+  note: 从游者为对方：王弈（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:42925
   type: 其他
-  note: 從遊者為對方：胡括（CBDB 外部人物）
+  note: 从游者为对方：胡括（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:44517
   type: 其他
-  note: 從遊者為對方：郎景明（CBDB 外部人物）
+  note: 从游者为对方：郎景明（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:45374
   type: 其他
-  note: 從遊者為對方：周擴（CBDB 外部人物）
+  note: 从游者为对方：周扩（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:45377
   type: 其他
-  note: 從遊者為對方：盧任（CBDB 外部人物）
+  note: 从游者为对方：卢任（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:386050
   type: 其他
-  note: 從遊者為對方：陳檜（CBDB 外部人物）
+  note: 从游者为对方：陈桧（CBDB 外部人物）
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:24829
   type: 其他
-  note: 從遊者為對方：金淵（CBDB 外部人物），始年 1194
+  note: 从游者为对方：金渊（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 50
   direction: forward
 - to_id: cbdb:35015
   type: 其他
-  note: 稱道對方的詩作：杜斿（CBDB 外部人物）
+  note: 称道对方的诗作：杜斿（CBDB 外部人物）
   src: cbdb
   assoc_code: 71
   direction: forward
 - to_id: cbdb:47964
   type: 其他
-  note: 論學：陳紹年（CBDB 外部人物）
+  note: 论学：陈绍年（CBDB 外部人物）
   src: cbdb
   assoc_code: 108
   direction: forward
 - to_id: cbdb:491
   type: 其他
-  note: 為對方之門客：周葵（CBDB 外部人物），始年 1163
+  note: 为对方之门客：周葵（CBDB 外部人物），始年 1163
   src: cbdb
   assoc_code: 130
   direction: forward
 - to_id: cbdb:3652
   type: 其他
-  note: 為對方作祭文：呂大器（CBDB 外部人物）
+  note: 为对方作祭文：吕大器（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:5097
   type: 其他
-  note: 為對方作祭文：朱氏(潘景憲妻)（CBDB 外部人物）
+  note: 为对方作祭文：朱氏(潘景宪妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:5177
   type: 其他
-  note: 為對方作祭文：杜氏(葉光祖妻)（CBDB 外部人物）
+  note: 为对方作祭文：杜氏(叶光祖妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:7055
   type: 其他
-  note: 為對方作祭文：呂祖謙（CBDB 外部人物）
+  note: 为对方作祭文：吕祖谦（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:10594
   type: 其他
-  note: 為對方作祭文：鄭伯英（CBDB 外部人物）
+  note: 为对方作祭文：郑伯英（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:17659
   type: 其他
-  note: 為對方作祭文：何恪（CBDB 外部人物）
+  note: 为对方作祭文：何恪（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:38826
   type: 其他
-  note: 為對方作祭文：施氏(王自中母)（CBDB 外部人物）
+  note: 为对方作祭文：施氏(王自中母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:39266
   type: 其他
-  note: 為對方作祭文：臧氏(丘經妻)（CBDB 外部人物）
+  note: 为对方作祭文：臧氏(丘经妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:41924
   type: 其他
-  note: 為對方作祭文：王氏(何恢母)（CBDB 外部人物）
+  note: 为对方作祭文：王氏(何恢母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:41929
   type: 其他
-  note: 為對方作祭文：喻氏(何恪妻)（CBDB 外部人物）
+  note: 为对方作祭文：喻氏(何恪妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:42980
   type: 其他
-  note: 為對方作祭文：胡勣（CBDB 外部人物）
+  note: 为对方作祭文：胡勣（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:46041
   type: 其他
-  note: 為對方作祭文：某氏(林大中母)（CBDB 外部人物）
+  note: 为对方作祭文：某氏(林大中母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:46092
   type: 其他
-  note: 為對方作祭文：胡勣（CBDB 外部人物）
+  note: 为对方作祭文：胡勣（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:46167
   type: 其他
-  note: 為對方作祭文：某氏(徐木母)（CBDB 外部人物）
+  note: 为对方作祭文：某氏(徐木母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:46239
   type: 其他
-  note: 為對方作祭文：宋氏(徐誼妻)（CBDB 外部人物）
+  note: 为对方作祭文：宋氏(徐谊妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:51352
   type: 其他
-  note: 為對方作祭文：某氏(鄭伯熊母)（CBDB 外部人物）
+  note: 为对方作祭文：某氏(郑伯熊母)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:52591
   type: 其他
-  note: 為對方作祭文：黃氏(薛叔似妻)（CBDB 外部人物）
+  note: 为对方作祭文：黄氏(薛叔似妻)（CBDB 外部人物）
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:3331
   type: 其他
-  note: 為對方作祭文：韓彥古（CBDB 外部人物），始年 1194
+  note: 为对方作祭文：韩彦古（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:3690
   type: 其他
-  note: 為對方作祭文：潘景憲（CBDB 外部人物），始年 1194
+  note: 为对方作祭文：潘景宪（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:3896
   type: 其他
-  note: 為對方作祭文：宗楷（CBDB 外部人物），始年 1194
+  note: 为对方作祭文：宗楷（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:10579
   type: 其他
-  note: 為對方作祭文：薛叔似（CBDB 外部人物），始年 1194
+  note: 为对方作祭文：薛叔似（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:13425
   type: 其他
-  note: 為對方作祭文：石斗文（CBDB 外部人物），始年 1194
+  note: 为对方作祭文：石斗文（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:18588
   type: 其他
-  note: 為對方作祭文：徐誼（CBDB 外部人物），始年 1194
+  note: 为对方作祭文：徐谊（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:33929
   type: 其他
-  note: 為對方作祭文：彭仲剛（CBDB 外部人物），始年 1194
+  note: 为对方作祭文：彭仲刚（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 145
   direction: forward
 - to_id: cbdb:39257
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：丘崈（CBDB 外部人物）
+  note: 为对方作临别赠言(送别诗、序)：丘崈（CBDB 外部人物）
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:27361
   type: 其他
-  note: 為對方作臨別贈言(送別詩、序)：徐木（CBDB 外部人物），始年 1194
+  note: 为对方作临别赠言(送别诗、序)：徐木（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 162
   direction: forward
 - to_id: cbdb:17987
   type: 其他
-  note: 為對方作哀辭：郭良臣（CBDB 外部人物）
+  note: 为对方作哀辞：郭良臣（CBDB 外部人物）
   src: cbdb
   assoc_code: 167
   direction: forward
 - to_id: cbdb:35013
   type: 其他
-  note: 稱道對方之文風：杜旟（CBDB 外部人物），始年 1194
+  note: 称道对方之文风：杜旟（CBDB 外部人物），始年 1194
   src: cbdb
   assoc_code: 172
   direction: forward
 - to_id: cbdb:27957
   type: 其他
-  note: 諡議由對方所作：吳師道（CBDB 外部人物）
+  note: 谥议由对方所作：吴师道（CBDB 外部人物）
   src: cbdb
   assoc_code: 187
   direction: forward
 - to_id: cbdb:3187
   type: 其他
-  note: 教授對方：章湜（CBDB 外部人物）
+  note: 教授对方：章湜（CBDB 外部人物）
   src: cbdb
   assoc_code: 232
   direction: forward
 - to_id: cbdb:17646
   type: 其他
-  note: 教授對方：喻偘（CBDB 外部人物）
+  note: 教授对方：喻偘（CBDB 外部人物）
   src: cbdb
   assoc_code: 232
   direction: forward
 - to_id: cbdb:42001
   type: 其他
-  note: 教授對方：何堅（CBDB 外部人物）
+  note: 教授对方：何坚（CBDB 外部人物）
   src: cbdb
   assoc_code: 232
   direction: forward
 - to_id: cbdb:45114
   type: 其他
-  note: 教授對方：章椿（CBDB 外部人物）
+  note: 教授对方：章椿（CBDB 外部人物）
   src: cbdb
   assoc_code: 232
   direction: forward
 - to_id: cbdb:45117
   type: 其他
-  note: 教授對方：章與（CBDB 外部人物）
+  note: 教授对方：章与（CBDB 外部人物）
   src: cbdb
   assoc_code: 232
   direction: forward
 - to_id: cbdb:45119
   type: 其他
-  note: 教授對方：章允（CBDB 外部人物）
+  note: 教授对方：章允（CBDB 外部人物）
   src: cbdb
   assoc_code: 232
   direction: forward
 - to_id: cbdb:53097
   type: 其他
-  note: 為對方作佛寺記：釋允禧（CBDB 外部人物）
+  note: 为对方作佛寺记：释允禧（CBDB 外部人物）
   src: cbdb
   assoc_code: 239
   direction: forward
 - to_id: cbdb:53236
   type: 其他
-  note: 為對方作佛寺記：釋如靖（CBDB 外部人物）
+  note: 为对方作佛寺记：释如靖（CBDB 外部人物）
   src: cbdb
   assoc_code: 239
   direction: forward
 - to_id: cbdb:53657
   type: 其他
-  note: 為對方作佛寺記：釋為才（CBDB 外部人物）
+  note: 为对方作佛寺记：释为才（CBDB 外部人物）
   src: cbdb
   assoc_code: 239
   direction: forward
 - to_id: cbdb:669
   type: 其他
-  note: 致書對方：韓元吉（CBDB 外部人物）
+  note: 致书对方：韩元吉（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:3136
   type: 其他
-  note: 致書對方：張枃（CBDB 外部人物）
+  note: 致书对方：张枃（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:3624
   type: 其他
-  note: 致書對方：樓鑰（CBDB 外部人物）
+  note: 致书对方：楼钥（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:3655
   type: 其他
-  note: 致書對方：呂祖儉（CBDB 外部人物）
+  note: 致书对方：吕祖俭（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:7197
   type: 其他
-  note: 致書對方：周必大（CBDB 外部人物）
+  note: 致书对方：周必大（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:7335
   type: 其他
-  note: 致書對方：石宗昭（CBDB 外部人物）
+  note: 致书对方：石宗昭（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:9011
   type: 其他
-  note: 致書對方：趙眘（CBDB 外部人物）
+  note: 致书对方：赵眘（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:10585
   type: 其他
-  note: 致書對方：陳傅良（CBDB 外部人物）
+  note: 致书对方：陈傅良（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:10697
   type: 其他
-  note: 致書對方：王淮（CBDB 外部人物）
+  note: 致书对方：王淮（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:14833
   type: 其他
-  note: 致書對方：彭龜年（CBDB 外部人物）
+  note: 致书对方：彭龟年（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:14856
   type: 其他
-  note: 致書對方：尤袤（CBDB 外部人物）
+  note: 致书对方：尤袤（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:15188
   type: 其他
-  note: 致書對方：林大中（CBDB 外部人物）
+  note: 致书对方：林大中（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:15192
   type: 其他
-  note: 致書對方：應孟明（CBDB 外部人物）
+  note: 致书对方：应孟明（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:16783
   type: 其他
-  note: 致書對方：范仲藝（CBDB 外部人物）
+  note: 致书对方：范仲艺（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:17491
   type: 其他
-  note: 致書對方：呂浩（CBDB 外部人物）
+  note: 致书对方：吕浩（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:22690
   type: 其他
-  note: 致書對方：葉衡（CBDB 外部人物）
+  note: 致书对方：叶衡（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:39201
   type: 其他
-  note: 致書對方：勾昌泰（CBDB 外部人物）
+  note: 致书对方：勾昌泰（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:45098
   type: 其他
-  note: 致書對方：章森（CBDB 外部人物）
+  note: 致书对方：章森（CBDB 外部人物）
   src: cbdb
   assoc_code: 429
   direction: forward
 - to_id: cbdb:49004
   type: 其他
-  note: 被致書由對方：喻南強（CBDB 外部人物）
+  note: 被致书由对方：喻南强（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

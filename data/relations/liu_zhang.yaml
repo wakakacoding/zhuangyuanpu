@@ -2,49 +2,49 @@ from_id: liu_zhang
 relations:
 - to_id: cbdb:20814
   type: 父子
-  note: 子：劉之衡（CBDB 外部人物）
+  note: 子：刘之衡（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:608
   type: 同年
-  note: 同年友：馮方（CBDB 外部人物）
+  note: 同年友：冯方（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:3678
   type: 同年
-  note: 同年友：莫濟（CBDB 外部人物）
+  note: 同年友：莫济（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:42848
   type: 同年
-  note: 同年友：林機（CBDB 外部人物）
+  note: 同年友：林机（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:8008
   type: 政敌
-  note: 遭對方排擠：秦檜（CBDB 外部人物）
+  note: 遭对方排挤：秦桧（CBDB 外部人物）
   src: cbdb
   assoc_code: 30
   direction: forward
 - to_id: cbdb:13809
   type: 其他
-  note: 書序由對方所作：吳泳（CBDB 外部人物），始年 1175
+  note: 书序由对方所作：吴泳（CBDB 外部人物），始年 1175
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:3624
   type: 其他
-  note: 書跋由對方所作：樓鑰（CBDB 外部人物）
+  note: 书跋由对方所作：楼钥（CBDB 外部人物）
   src: cbdb
   assoc_code: 45
   direction: forward
 - to_id: cbdb:8008
   type: 其他
-  note: 為對方之門客：秦檜（CBDB 外部人物），始年 1175
+  note: 为对方之门客：秦桧（CBDB 外部人物），始年 1175
   src: cbdb
   assoc_code: 130
   direction: forward

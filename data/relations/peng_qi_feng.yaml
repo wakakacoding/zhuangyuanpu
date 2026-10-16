@@ -8,19 +8,19 @@ relations:
   direction: forward
 - to_id: cbdb:89311
   type: 父子
-  note: 子：彭紹謙（CBDB 外部人物）
+  note: 子：彭绍谦（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:65748
   type: 父子
-  note: 四子：彭紹升（CBDB 外部人物）
+  note: 四子：彭绍升（CBDB 外部人物）
   src: cbdb
   kin_code: 185
   direction: forward
 - to_id: cbdb:57395
   type: 友人
-  note: 友：蔣炳（CBDB 外部人物）
+  note: 友：蒋炳（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -32,7 +32,7 @@ relations:
   direction: forward
 - to_id: cbdb:692941
   type: 其他
-  note: 聘對方主家之教席：李鎭（CBDB 外部人物）
+  note: 聘对方主家之教席：李镇（CBDB 外部人物）
   src: cbdb
   assoc_code: 214
   direction: forward

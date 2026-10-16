@@ -2,13 +2,13 @@ from_id: wang_ren_kan
 relations:
 - to_id: cbdb:89100
   type: 师生
-  note: 學生為對方：梁士詒（CBDB 外部人物）
+  note: 学生为对方：梁士诒（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:55540
   type: 其他
-  note: 為對方所著書作跋：左錫嘉（CBDB 外部人物）
+  note: 为对方所著书作跋：左锡嘉（CBDB 外部人物）
   src: cbdb
   assoc_code: 46
   direction: forward

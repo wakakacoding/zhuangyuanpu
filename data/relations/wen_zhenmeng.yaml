@@ -1,14 +1,14 @@
 from_id: wen_zhenmeng
 relations:
 - to_id: cbdb:34673
-  type: 祖孫
-  note: 曾祖：文徵明（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：文征明（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:34680
   type: 父子
-  note: 父：文元發（CBDB 外部人物）
+  note: 父：文元发（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -20,7 +20,7 @@ relations:
   direction: forward
 - to_id: cbdb:527950
   type: 旁系
-  note: 從子;姪子：文果（CBDB 外部人物）
+  note: 从子;姪子：文果（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
@@ -32,7 +32,7 @@ relations:
   direction: forward
 - to_id: cbdb:34684
   type: 父子
-  note: 長子; 第一子：文秉（CBDB 外部人物）
+  note: 长子; 第一子：文秉（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
@@ -43,20 +43,20 @@ relations:
   kin_code: 183
   direction: forward
 - to_id: cbdb:34686
-  type: 祖孫
-  note: 孫：文點（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：文点（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:565209
-  type: 祖孫
-  note: 曾孫; 重孫：沈承煥（CBDB 外部人物）
+  type: 祖孙
+  note: 曾孙; 重孙：沈承焕（CBDB 外部人物）
   src: cbdb
   kin_code: 255
   direction: forward
 - to_id: cbdb:565211
-  type: 祖孫
-  note: 直系後裔：釋于宋（CBDB 外部人物）
+  type: 祖孙
+  note: 直系后裔：释于宋（CBDB 外部人物）
   src: cbdb
   kin_code: 303
   direction: forward
@@ -68,19 +68,19 @@ relations:
   direction: forward
 - to_id: cbdb:700652
   type: 姻亲
-  note: 子婦;兒媳：周氏(文乘妻)（CBDB 外部人物）
+  note: 子妇;儿媳：周氏(文乘妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 396
   direction: forward
 - to_id: cbdb:65942
   type: 友人
-  note: 友：黃道周（CBDB 外部人物）
+  note: 友：黄道周（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:66070
   type: 友人
-  note: 友：鄭鄤（CBDB 外部人物）
+  note: 友：郑鄤（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
@@ -92,139 +92,139 @@ relations:
   direction: forward
 - to_id: cbdb:128192
   type: 其他
-  note: 被對方推薦：吳彥芳（CBDB 外部人物）
+  note: 被对方推荐：吴彦芳（CBDB 外部人物）
   src: cbdb
   assoc_code: 14
   direction: forward
 - to_id: cbdb:693740
   type: 师生
-  note: 門人為對方：邱民瞻（CBDB 外部人物）
+  note: 门人为对方：邱民瞻（CBDB 外部人物）
   src: cbdb
   assoc_code: 20
   direction: forward
 - to_id: cbdb:130120
   type: 师生
-  note: 學生為對方：許直（CBDB 外部人物）
+  note: 学生为对方：许直（CBDB 外部人物）
   src: cbdb
   assoc_code: 23
   direction: forward
 - to_id: cbdb:30713
   type: 其他
-  note: 墓誌銘由對方所作：黃宗羲（CBDB 外部人物），始年 1633
+  note: 墓志铭由对方所作：黄宗羲（CBDB 外部人物），始年 1633
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:56535
   type: 其他
-  note: 同學、同門：姚希孟（CBDB 外部人物）
+  note: 同学、同门：姚希孟（CBDB 外部人物）
   src: cbdb
   assoc_code: 117
   direction: forward
 - to_id: cbdb:35190
   type: 其他
-  note: 傳記作者為對方：汪琬（CBDB 外部人物）
+  note: 传记作者为对方：汪琬（CBDB 外部人物）
   src: cbdb
   assoc_code: 132
   direction: forward
 - to_id: cbdb:129669
   type: 其他
-  note: 為對方作傳：袁翼（CBDB 外部人物）
+  note: 为对方作传：袁翼（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward
 - to_id: cbdb:133651
   type: 其他
-  note: 為對方作傳：顧祖辰（CBDB 外部人物）
+  note: 为对方作传：顾祖辰（CBDB 外部人物）
   src: cbdb
   assoc_code: 133
   direction: forward
 - to_id: cbdb:130978
   type: 其他
-  note: 祭文由對方所作：陳際泰（CBDB 外部人物）
+  note: 祭文由对方所作：陈际泰（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:29707
   type: 其他
-  note: 被致書由對方：劉永澄（CBDB 外部人物）
+  note: 被致书由对方：刘永澄（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:33171
   type: 其他
-  note: 被致書由對方：祁承㸁（CBDB 外部人物）
+  note: 被致书由对方：祁承㸁（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:34750
   type: 其他
-  note: 被致書由對方：婁堅（CBDB 外部人物）
+  note: 被致书由对方：娄坚（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:34758
   type: 其他
-  note: 被致書由對方：魏大中（CBDB 外部人物）
+  note: 被致书由对方：魏大中（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:126634
   type: 其他
-  note: 被致書由對方：王庭譔（CBDB 外部人物）
+  note: 被致书由对方：王庭譔（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:128182
   type: 其他
-  note: 被致書由對方：吳宗達（CBDB 外部人物）
+  note: 被致书由对方：吴宗达（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:128441
   type: 其他
-  note: 被致書由對方：何喬遠（CBDB 外部人物）
+  note: 被致书由对方：何乔远（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:129528
   type: 其他
-  note: 被致書由對方：夏樹芳（CBDB 外部人物）
+  note: 被致书由对方：夏树芳（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:135569
   type: 其他
-  note: 被致書由對方：方應祥（CBDB 外部人物）
+  note: 被致书由对方：方应祥（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:439144
   type: 其他
-  note: 被致書由對方：張燮（CBDB 外部人物）
+  note: 被致书由对方：张燮（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:29575
   type: 其他
-  note: 收到對方的贈詩、文：陳仁錫（CBDB 外部人物）
+  note: 收到对方的赠诗、文：陈仁锡（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:30239
   type: 其他
-  note: 收到對方的贈詩、文：錢謙益（CBDB 外部人物）
+  note: 收到对方的赠诗、文：钱谦益（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:118174
   type: 其他
-  note: 收到對方的贈詩、文：張溥（CBDB 外部人物）
+  note: 收到对方的赠诗、文：张溥（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:125458
   type: 政敌
-  note: 被對方陷害：溫體仁（CBDB 外部人物）
+  note: 被对方陷害：温体仁（CBDB 外部人物）
   src: cbdb
   assoc_code: 472
   direction: forward

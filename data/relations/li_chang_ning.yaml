@@ -8,19 +8,19 @@ relations:
   direction: forward
 - to_id: cbdb:22981
   type: 翁婿
-  note: 岳父：秦詠（CBDB 外部人物）
+  note: 岳父：秦咏（CBDB 外部人物）
   src: cbdb
   kin_code: 76
   direction: forward
 - to_id: cbdb:27132
   type: 父子
-  note: 長子; 第一子：李弼（CBDB 外部人物）
+  note: 长子; 第一子：李弼（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:3043
   type: 其他
-  note: 墓誌銘由對方所作：秦觀（CBDB 外部人物）
+  note: 墓志铭由对方所作：秦观（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward

@@ -1,86 +1,86 @@
 from_id: zhang_sheng
 relations:
 - to_id: cbdb:242582
-  type: 祖孫
-  note: 曾祖：張循禮（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：张循礼（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:242583
-  type: 祖孫
-  note: 祖父：張德厚（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：张德厚（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:242584
   type: 父子
-  note: 父：張文質（CBDB 外部人物）
+  note: 父：张文质（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:242587
   type: 母子
-  note: 母：饒氏(張昇母)（CBDB 外部人物）
+  note: 母：饶氏(张升母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:242589
   type: 夫妻
-  note: 妻子：胡氏(張昇妻)（CBDB 外部人物）
+  note: 妻子：胡氏(张升妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:346715
   type: 父子
-  note: 長子; 第一子：張恩（CBDB 外部人物）
+  note: 长子; 第一子：张恩（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
 - to_id: cbdb:525503
-  type: 祖孫
-  note: 孫：張嵫（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：张嵫（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:242585
   type: 母子
-  note: 繼母：何氏(張昇前母)（CBDB 外部人物）
+  note: 继母：何氏(张升前母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:242588
   type: 母子
-  note: 繼母：江氏(張昇繼母)（CBDB 外部人物）
+  note: 继母：江氏(张升继母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:133523
   type: 其他
-  note: 墓誌銘由對方所作：羅玘（CBDB 外部人物）
+  note: 墓志铭由对方所作：罗玘（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:129830
   type: 其他
-  note: 為對方作墓誌銘：殷謙（CBDB 外部人物）
+  note: 为对方作墓志铭：殷谦（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:130010
   type: 其他
-  note: 為對方作墓誌銘：徐瓊（CBDB 外部人物）
+  note: 为对方作墓志铭：徐琼（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:34655
   type: 其他
-  note: 祭文由對方所作：夏良勝（CBDB 外部人物）
+  note: 祭文由对方所作：夏良胜（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: cbdb:34700
   type: 其他
-  note: 詩文序由對方所作：王慎中（CBDB 外部人物）
+  note: 诗文序由对方所作：王慎中（CBDB 外部人物）
   src: cbdb
   assoc_code: 480
   direction: forward

@@ -2,7 +2,7 @@ from_id: huo_duan_you
 relations:
 - to_id: cbdb:19488
   type: 父子
-  note: 父：霍寧（CBDB 外部人物）
+  note: 父：霍宁（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -20,13 +20,13 @@ relations:
   direction: forward
 - to_id: cbdb:19489
   type: 旁系
-  note: 姪孫;從孫：霍洞（CBDB 外部人物）
+  note: 姪孙;从孙：霍洞（CBDB 外部人物）
   src: cbdb
   kin_code: 240
   direction: forward
 - to_id: cbdb:7343
   type: 其他
-  note: 墓誌銘由對方所作：孫覿（CBDB 外部人物），始年 1115
+  note: 墓志铭由对方所作：孙觌（CBDB 外部人物），始年 1115
   src: cbdb
   assoc_code: 43
   direction: forward

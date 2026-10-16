@@ -2,13 +2,13 @@ from_id: xu_yan_fu
 relations:
 - to_id: cbdb:51963
   type: 同年
-  note: 同年友：劉良貴（CBDB 外部人物）
+  note: 同年友：刘良贵（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:15990
   type: 其他
-  note: 得罪對方：丁大全（CBDB 外部人物）
+  note: 得罪对方：丁大全（CBDB 外部人物）
   src: cbdb
   assoc_code: 515
   direction: forward

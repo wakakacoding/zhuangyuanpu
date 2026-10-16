@@ -14,7 +14,7 @@ relations:
   direction: forward
 - to_id: cbdb:132918
   type: 其他
-  note: 得罪對方：劉瑾（CBDB 外部人物）
+  note: 得罪对方：刘瑾（CBDB 外部人物）
   src: cbdb
   assoc_code: 515
   direction: forward

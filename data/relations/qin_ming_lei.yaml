@@ -1,20 +1,20 @@
 from_id: qin_ming_lei
 relations:
 - to_id: cbdb:291359
-  type: 祖孫
+  type: 祖孙
   note: 曾祖：秦宗傅（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:291360
-  type: 祖孫
-  note: 祖父：秦彥彬（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：秦彦彬（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:266298
   type: 父子
-  note: 父：秦禮（CBDB 外部人物）
+  note: 父：秦礼（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
@@ -26,103 +26,103 @@ relations:
   direction: forward
 - to_id: cbdb:305231
   type: 母子
-  note: 母：姚氏(秦鳴雷母)（CBDB 外部人物）
+  note: 母：姚氏(秦鸣雷母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:129691
   type: 兄弟
-  note: 兄：秦鳴夏（CBDB 外部人物）
+  note: 兄：秦鸣夏（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:291365
   type: 兄弟
-  note: 兄：秦鳴春（CBDB 外部人物）
+  note: 兄：秦鸣春（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:291366
   type: 兄弟
-  note: 兄：秦鳴秋（CBDB 外部人物）
+  note: 兄：秦鸣秋（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:291368
   type: 兄弟
-  note: 弟：秦鳴冬（CBDB 外部人物）
+  note: 弟：秦鸣冬（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:305233
   type: 夫妻
-  note: 妻子：趙氏(秦鳴雷妻)（CBDB 外部人物）
+  note: 妻子：赵氏(秦鸣雷妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:699531
   type: 父女
-  note: 女兒：秦氏(應存徵妻)（CBDB 外部人物）
+  note: 女儿：秦氏(应存征妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 176
   direction: forward
 - to_id: cbdb:323636
   type: 翁婿
-  note: 女婿：應存徵（CBDB 外部人物）
+  note: 女婿：应存征（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:305232
   type: 母子
-  note: 繼母：楊氏(秦鳴雷繼母)（CBDB 外部人物）
+  note: 继母：杨氏(秦鸣雷继母)（CBDB 外部人物）
   src: cbdb
   kin_code: 375
   direction: forward
 - to_id: cbdb:131205
   type: 其他
-  note: 書序由對方所作：湯賓尹（CBDB 外部人物）
+  note: 书序由对方所作：汤宾尹（CBDB 外部人物）
   src: cbdb
   assoc_code: 33
   direction: forward
 - to_id: cbdb:684850
   type: 其他
-  note: 從對方學：陳武（CBDB 外部人物）
+  note: 从对方学：陈武（CBDB 外部人物）
   src: cbdb
   assoc_code: 231
   direction: forward
 - to_id: cbdb:338504
   type: 其他
-  note: 行狀由對方所作：張鳯翼（CBDB 外部人物）
+  note: 行状由对方所作：张鳯翼（CBDB 外部人物）
   src: cbdb
   assoc_code: 425
   direction: forward
 - to_id: cbdb:69011
   type: 其他
-  note: 被致書由對方：張居正（CBDB 外部人物）
+  note: 被致书由对方：张居正（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:35065
   type: 其他
-  note: 收到對方的贈詩、文：王宗沐（CBDB 外部人物）
+  note: 收到对方的赠诗、文：王宗沐（CBDB 外部人物）
   src: cbdb
   assoc_code: 438
   direction: forward
 - to_id: cbdb:125302
   type: 其他
-  note: 為對方之考官：陳有年（CBDB 外部人物）
+  note: 为对方之考官：陈有年（CBDB 外部人物）
   src: cbdb
   assoc_code: 558
   direction: forward
 - to_id: cbdb:126439
   type: 其他
-  note: 為對方之考官：王一鶚（CBDB 外部人物）
+  note: 为对方之考官：王一鹗（CBDB 外部人物）
   src: cbdb
   assoc_code: 558
   direction: forward
 - to_id: cbdb:415555
   type: 其他
-  note: 為對方之考官：王鍚爵（CBDB 外部人物）
+  note: 为对方之考官：王钖爵（CBDB 外部人物）
   src: cbdb
   assoc_code: 558
   direction: forward

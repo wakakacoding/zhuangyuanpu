@@ -2,7 +2,7 @@ from_id: bai_zhu
 relations:
   - to_id: cbdb:10740
     type: 其他
-    note: 為對方所作詩文作序：黃溍（CBDB 外部人物）
+    note: 为对方所作诗文作序：黄溍（CBDB 外部人物）
     src: cbdb
     assoc_code: 479
     direction: forward

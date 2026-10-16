@@ -2,13 +2,13 @@ from_id: wang_jing_ming
 relations:
 - to_id: cbdb:65759
   type: 师生
-  note: 為對方之學生：王原祁（CBDB 外部人物）
+  note: 为对方之学生：王原祁（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:65759
   type: 其他
-  note: 畫風師法對方：王原祁（CBDB 外部人物）
+  note: 画风师法对方：王原祁（CBDB 外部人物）
   src: cbdb
   assoc_code: 473
   direction: forward

@@ -8,13 +8,13 @@ relations:
   direction: forward
 - to_id: cbdb:898
   type: 父子
-  note: 子：寇準（CBDB 外部人物）
+  note: 子：寇准（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:3436
-  type: 祖孫
-  note: 孫：寇隨（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：寇随（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward

@@ -1,62 +1,62 @@
 from_id: qian_fu
 relations:
 - to_id: cbdb:260902
-  type: 祖孫
-  note: 曾祖：錢復（CBDB 外部人物）
+  type: 祖孙
+  note: 曾祖：钱复（CBDB 外部人物）
   src: cbdb
   kin_code: 48
   direction: forward
 - to_id: cbdb:260904
-  type: 祖孫
-  note: 祖父：錢昌（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：钱昌（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:260905
   type: 父子
-  note: 父：錢中（CBDB 外部人物）
+  note: 父：钱中（CBDB 外部人物）
   src: cbdb
   kin_code: 75
   direction: forward
 - to_id: cbdb:260906
   type: 母子
-  note: 母：陸氏(錢福母)（CBDB 外部人物）
+  note: 母：陆氏(钱福母)（CBDB 外部人物）
   src: cbdb
   kin_code: 111
   direction: forward
 - to_id: cbdb:260908
   type: 兄弟
-  note: 兄：錢塘（CBDB 外部人物）
+  note: 兄：钱塘（CBDB 外部人物）
   src: cbdb
   kin_code: 125
   direction: forward
 - to_id: cbdb:260909
   type: 兄弟
-  note: 弟：錢祚（CBDB 外部人物）
+  note: 弟：钱祚（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:260907
   type: 夫妻
-  note: 妻子：顧氏(錢福妻)（CBDB 外部人物）
+  note: 妻子：顾氏(钱福妻)（CBDB 外部人物）
   src: cbdb
   kin_code: 135
   direction: forward
 - to_id: cbdb:68219
   type: 其他
-  note: 墓誌銘由對方所作：喬宇（CBDB 外部人物）
+  note: 墓志铭由对方所作：乔宇（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:129312
   type: 其他
-  note: 為對方作墓誌銘：姚旬（CBDB 外部人物）
+  note: 为对方作墓志铭：姚旬（CBDB 外部人物）
   src: cbdb
   assoc_code: 44
   direction: forward
 - to_id: cbdb:28691
   type: 其他
-  note: 墓表由對方所作：李東陽（CBDB 外部人物）
+  note: 墓表由对方所作：李东阳（CBDB 外部人物）
   src: cbdb
   assoc_code: 409
   direction: forward

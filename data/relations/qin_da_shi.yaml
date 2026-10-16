@@ -2,13 +2,13 @@ from_id: qin_da_shi
 relations:
 - to_id: cbdb:30080
   type: 友人
-  note: 友：紀昀（CBDB 外部人物）
+  note: 友：纪昀（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward
 - to_id: cbdb:55833
   type: 友人
-  note: 友：蔣士銓（CBDB 外部人物）
+  note: 友：蒋士铨（CBDB 外部人物）
   src: cbdb
   assoc_code: 9
   direction: forward

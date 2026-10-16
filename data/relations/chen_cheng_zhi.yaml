@@ -2,25 +2,25 @@ from_id: chen_cheng_zhi
 relations:
 - to_id: cbdb:14564
   type: 兄弟
-  note: 弟：陳賓（CBDB 外部人物）
+  note: 弟：陈宾（CBDB 外部人物）
   src: cbdb
   kin_code: 126
   direction: forward
 - to_id: cbdb:12588
   type: 旁系
-  note: 從子;姪子：陳端友（CBDB 外部人物）
+  note: 从子;姪子：陈端友（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:12587
   type: 父子
-  note: 子：陳峴（CBDB 外部人物）
+  note: 子：陈岘（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:13472
   type: 同年
-  note: 同年友：唐閱（CBDB 外部人物）
+  note: 同年友：唐阅（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
@@ -32,19 +32,19 @@ relations:
   direction: forward
 - to_id: cbdb:873
   type: 其他
-  note: 欣賞/器重：霍蠡（CBDB 外部人物）
+  note: 欣赏/器重：霍蠡（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:1156
   type: 其他
-  note: 祭文由對方所作：林之奇（CBDB 外部人物）
+  note: 祭文由对方所作：林之奇（CBDB 外部人物）
   src: cbdb
   assoc_code: 146
   direction: forward
 - to_id: wang_shipeng
   type: 其他
-  note: 被致書由對方（CBDB）
+  note: 被致书由对方（CBDB）
   src: cbdb
   assoc_code: 430
   direction: forward

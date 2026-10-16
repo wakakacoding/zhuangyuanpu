@@ -1,14 +1,14 @@
 from_id: qian_qi
 relations:
 - to_id: cbdb:55287
-  type: 祖孫
-  note: 高祖;四世祖：錢中諧（CBDB 外部人物）
+  type: 祖孙
+  note: 高祖;四世祖：钱中谐（CBDB 外部人物）
   src: cbdb
   kin_code: 39
   direction: forward
 - to_id: cbdb:100171
   type: 父女
-  note: 女兒：錢淑（CBDB 外部人物）
+  note: 女儿：钱淑（CBDB 外部人物）
   src: cbdb
   kin_code: 176
   direction: forward

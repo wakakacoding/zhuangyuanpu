@@ -2,19 +2,19 @@ from_id: wang_shi_dan
 relations:
 - to_id: cbdb:35054
   type: 旁系
-  note: 從子;姪子：王懋竑（CBDB 外部人物）
+  note: 从子;姪子：王懋竑（CBDB 外部人物）
   src: cbdb
   kin_code: 177
   direction: forward
 - to_id: cbdb:35055
-  type: 祖孫
-  note: 孫：王箴輿（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王箴舆（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward
 - to_id: cbdb:35056
-  type: 祖孫
-  note: 孫：王箴翼（CBDB 外部人物）
+  type: 祖孙
+  note: 孙：王箴翼（CBDB 外部人物）
   src: cbdb
   kin_code: 243
   direction: forward

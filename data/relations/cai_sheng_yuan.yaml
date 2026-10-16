@@ -2,13 +2,13 @@ from_id: cai_sheng_yuan
 relations:
 - to_id: cbdb:79348
   type: 其他
-  note: 欣賞/器重：汪芳藻（CBDB 外部人物）
+  note: 欣赏/器重：汪芳藻（CBDB 外部人物）
   src: cbdb
   assoc_code: 18
   direction: forward
 - to_id: cbdb:124926
   type: 其他
-  note: 同鄉：戚麟祥（CBDB 外部人物）
+  note: 同乡：戚麟祥（CBDB 外部人物）
   src: cbdb
   assoc_code: 94
   direction: forward

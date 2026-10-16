@@ -1,7 +1,7 @@
 from_id: yao_ying
 relations:
 - to_id: cbdb:10751
-  type: 祖孫
+  type: 祖孙
   note: 祖父：姚孚（CBDB 外部人物）
   src: cbdb
   kin_code: 62
@@ -20,13 +20,13 @@ relations:
   direction: forward
 - to_id: cbdb:10699
   type: 翁婿
-  note: 女婿：王儼（CBDB 外部人物）
+  note: 女婿：王俨（CBDB 外部人物）
   src: cbdb
   kin_code: 181
   direction: forward
 - to_id: cbdb:10753
   type: 父子
-  note: 長子; 第一子：姚元特（CBDB 外部人物）
+  note: 长子; 第一子：姚元特（CBDB 外部人物）
   src: cbdb
   kin_code: 182
   direction: forward
@@ -38,37 +38,37 @@ relations:
   direction: forward
 - to_id: cbdb:21049
   type: 同年
-  note: 同年友：曹莊（CBDB 外部人物）
+  note: 同年友：曹庄（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:42329
   type: 同年
-  note: 同年友：邵樸（CBDB 外部人物）
+  note: 同年友：邵朴（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:47472
   type: 同年
-  note: 同年友：陳晅（CBDB 外部人物）
+  note: 同年友：陈晅（CBDB 外部人物）
   src: cbdb
   assoc_code: 10
   direction: forward
 - to_id: cbdb:3624
   type: 其他
-  note: 墓誌銘由對方所作：樓鑰（CBDB 外部人物）
+  note: 墓志铭由对方所作：楼钥（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:10749
   type: 其他
-  note: 墓誌銘由對方所作：葉適（CBDB 外部人物）
+  note: 墓志铭由对方所作：叶适（CBDB 外部人物）
   src: cbdb
   assoc_code: 43
   direction: forward
 - to_id: cbdb:10289
   type: 其他
-  note: 墓誌銘由對方所作：袁燮（CBDB 外部人物），始年 1183
+  note: 墓志铭由对方所作：袁燮（CBDB 外部人物），始年 1183
   src: cbdb
   assoc_code: 43
   direction: forward

@@ -1,56 +1,56 @@
 from_id: liu_tong_sheng
 relations:
 - to_id: cbdb:527228
-  type: 祖孫
-  note: 祖父：劉芳興（CBDB 外部人物）
+  type: 祖孙
+  note: 祖父：刘芳兴（CBDB 外部人物）
   src: cbdb
   kin_code: 62
   direction: forward
 - to_id: cbdb:527224
   type: 父子
-  note: 子：劉仲錞（CBDB 外部人物）
+  note: 子：刘仲錞（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:527225
   type: 父子
-  note: 子：劉孟欽（CBDB 外部人物）
+  note: 子：刘孟钦（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:527226
   type: 父子
-  note: 子：劉季質（CBDB 外部人物）
+  note: 子：刘季质（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:527227
   type: 父子
-  note: 子：劉季鑛（CBDB 外部人物）
+  note: 子：刘季鑛（CBDB 外部人物）
   src: cbdb
   kin_code: 180
   direction: forward
 - to_id: cbdb:34747
   type: 师生
-  note: 為對方之學生：鄒元標（CBDB 外部人物）
+  note: 为对方之学生：邹元标（CBDB 外部人物）
   src: cbdb
   assoc_code: 22
   direction: forward
 - to_id: cbdb:65870
   type: 其他
-  note: 被致書由對方：湯顯祖（CBDB 外部人物）
+  note: 被致书由对方：汤显祖（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:65942
   type: 其他
-  note: 被致書由對方：黃道周（CBDB 外部人物）
+  note: 被致书由对方：黄道周（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward
 - to_id: cbdb:88407
   type: 其他
-  note: 被致書由對方：蕭士瑋（CBDB 外部人物）
+  note: 被致书由对方：萧士玮（CBDB 外部人物）
   src: cbdb
   assoc_code: 430
   direction: forward

@@ -1,5 +1,8 @@
 from_id: wang_ru_yang
 relations:
 - to_id: cbdb:136148
-  type: 父子
-  note: 曾祖：汪氏(孫炳奎妻)（CBDB 外部人物）
+  type: 祖孫
+  note: 曾孫女：汪氏(孫炳奎妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 347
+  direction: forward

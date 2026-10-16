@@ -61,9 +61,11 @@ Licensing Terms》R0-1 结论，这些 personid 建档于当前单机版发布�
   $PY scripts/harvest_cbdb_relations.py --sample wang_wei,lv_nan
   $PY scripts/harvest_cbdb_relations.py --export-codes    # 码表全量导出（R1.2-1a）
   $PY scripts/harvest_cbdb_relations.py --legacy-types    # 折回既有 9 类对照
-  $PY scripts/harvest_cbdb_relations.py --apply           # 真正落盘（R1.2-4c 用，本任务不用）
+  $PY scripts/harvest_cbdb_relations.py --apply           # 真正落盘
+  $PY scripts/harvest_cbdb_relations.py --purge-machine --dry-run   # 只出待删机器边清单（R1.2-4b）
+  $PY scripts/harvest_cbdb_relations.py --purge-machine --apply --y-fill other   # 清洗后全量重跑（R1.2-4c）
 
-未实现（属后续任务）：--purge-machine 旧机器边清洗（R1.2-4b）、build_network 适配（R1.2-5）。
+未实现（属后续任务）：build_network 适配（R1.2-5）、档案页机器边标注（R1.2-6）。
 """
 from __future__ import annotations
 
@@ -313,6 +315,9 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="只统计不写 data/（默认行为）")
     ap.add_argument("--apply", action="store_true", help="真正落盘（R1.2-4c 用；本任务不用）")
+    ap.add_argument("--purge-machine", action="store_true",
+                    help="R1.2-4b：先清掉旧机器边（note 含「CBDB」或 to_id 为 cbdb: 前缀）再收割；"
+                         "配合 --dry-run 只输出待删清单（默认），配合 --apply 真删后重跑")
     ap.add_argument("--sample", help="逗号分隔的锚点 slug 列表，只产出这些锚点的边")
     ap.add_argument("--sample-default", action="store_true", help="跑内置 10 锚点小样本（R1.2-1d）")
     ap.add_argument("--export-codes", action="store_true", help="额外打印码表导出摘要（R1.2-1a）")
@@ -400,6 +405,67 @@ def main() -> int:
                 manual_baseline.add(key)
     print(f"现有 data/relations：{sum(len((d or {}).get('relations') or []) for d in rel_docs.values())} 条边 / "
           f"{len(rel_docs)} 文件；其中人工边 {len(manual_baseline)} 条（防重基线）")
+
+    # ---------- R1.2-4b：旧机器边清洗（--purge-machine）----------
+    # 识别口径与防重基线一致：note 含「CBDB」或 to_id 为 cbdb: 前缀 ⇒ 机器边。
+    # 设 --purge-machine 后，后续一切统计/落盘都在**清洗后的视图**上进行，
+    # 故 dry-run 报出的候选边数字 = purge 后重跑的真实结果。
+    purge_plan: list[dict] = []
+    purged_docs: dict[str, dict] = {}
+    purged_slugs: set[str] = set()
+    n_machine = 0
+    for slug, doc in rel_docs.items():
+        keep: list = []
+        for r in doc.get("relations") or []:
+            to_id = str(r.get("to_id"))
+            is_machine = ("CBDB" in (r.get("note") or "")) or bool(MACHINE_TO_RE.match(to_id))
+            if is_machine:
+                n_machine += 1
+                if args.purge_machine:
+                    purged_slugs.add(slug)
+                    purge_plan.append({"from_id": slug, "to_id": to_id,
+                                       "type": r.get("type") or "", "note": r.get("note") or ""})
+                    continue
+            keep.append(r)
+        nd = dict(doc)
+        nd["relations"] = keep
+        purged_docs[slug] = nd
+
+    if args.purge_machine:
+        rel_docs = purged_docs
+        existing_all = set()
+        manual_baseline = set()
+        for slug, doc in rel_docs.items():
+            for r in doc.get("relations") or []:
+                key = (doc.get("from_id"), r.get("to_id"), r.get("type"))
+                existing_all.add(key)
+                manual_baseline.add(key)      # 清洗后剩下的全部是人工边
+        kept_files = sum(1 for d in rel_docs.values() if d.get("relations"))
+        emptied = [s for s, d in rel_docs.items() if not d.get("relations")]
+        print("─" * 62)
+        print(f"【--purge-machine】待删机器边 {n_machine} 条 / 涉及 "
+              f"{len({p['from_id'] for p in purge_plan})} 文件")
+        print(f"留存人工边 {len(manual_baseline)} 条 / {kept_files} 文件；"
+              f"清洗后变空、将被删除的机器专属文件 {len(emptied)} 个")
+        # 待删清单落盘（供人工签字），并打印边数最多的文件
+        with (report_dir / "purge_plan.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["from_id", "to_id", "type", "note"])
+            w.writeheader()
+            for row in sorted(purge_plan, key=lambda x: (x["from_id"], x["to_id"])):
+                w.writerow(row)
+        per_file = Counter(p["from_id"] for p in purge_plan)
+        print(f"待删清单已写入 {report_dir / 'purge_plan.csv'}；边数最多的人物：")
+        for slug, n in per_file.most_common(8):
+            print(f"    {slug:<24} {n} 条")
+        # 人工边留存清单（零损失核对用）
+        with (report_dir / "manual_edges_kept.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["from_id", "to_id", "type", "note"])
+            w.writeheader()
+            for slug, doc in sorted(rel_docs.items()):
+                for r in doc.get("relations") or []:
+                    w.writerow({"from_id": doc.get("from_id"), "to_id": r.get("to_id"),
+                                "type": r.get("type") or "", "note": r.get("note") or ""})
+        print(f"人工边留存清单：{report_dir / 'manual_edges_kept.csv'}")
 
     # ---------- CBDB（只读）----------
     conn = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
@@ -845,6 +911,24 @@ def main() -> int:
         return 0
 
     n_files = 0
+    # ① purge 落地：先按清洗后视图重写（或删除）全部现存关系文件
+    if args.purge_machine:
+        removed_files = 0
+        rewritten = 0
+        for slug in sorted(purged_slugs):
+            doc = purged_docs[slug]
+            path = REL_DIR / f"{slug}.yaml"
+            if doc.get("relations"):
+                path.write_text(yaml.safe_dump(doc, allow_unicode=True, sort_keys=False),
+                                encoding="utf-8")
+                rewritten += 1
+            elif path.exists():
+                path.unlink()
+                removed_files += 1
+        print(f"purge 落盘：清掉 {n_machine} 条机器边；保留人工边 "
+              f"{len(manual_baseline)} 条；重写 {rewritten} 个（含人工边）文件、"
+              f"删除变空文件 {removed_files} 个")
+    # ② 追加本次收割的机器边
     for slug, rels in new_edges.items():
         path = REL_DIR / f"{slug}.yaml"
         doc = rel_docs.get(slug) or {"from_id": slug, "relations": []}

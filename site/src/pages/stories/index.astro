@@ -1,6 +1,7 @@
 ---
 import { listStories } from '../../lib/story';
 import SeoHead from '../../components/SeoHead.astro';
+import SiteNav from '../../components/SiteNav.astro';
 import '../../styles/base.css';
 import '../../styles/story.css';
 import { BASE } from '../../lib/persons';
@@ -16,6 +17,7 @@ const stories = listStories();
       <header class="site-head">
         <h1>故事</h1>
         <p class="sub">一甲第一人——每个状元，都是一部时代断代史</p>
+        <SiteNav current="/stories/" />
       </header>
 
       {stories.length === 0 ? (

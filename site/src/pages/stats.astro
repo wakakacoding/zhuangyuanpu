@@ -3,6 +3,7 @@ import { allPersons, presentDynasties, fullProfileIds, zhuangyuanOnly, specialRo
 import { listStories } from '../lib/story';
 import { coverageStats, pct } from '../lib/coverage';
 import SeoHead from '../components/SeoHead.astro';
+import SiteNav from '../components/SiteNav.astro';
 import '../styles/base.css';
 import '../styles/stats.css';
 
@@ -73,14 +74,7 @@ const n = cov.zhuangyuan;
       <header class="site-head">
         <h1>统计仪表盘</h1>
         <p class="sub">数据截至构建时 · 覆盖率即「补全计划」公开看板</p>
-        <nav class="site-nav">
-          <a href={BASE}>首页</a>
-          <a href={`${BASE}search/`}>检索</a>
-          <a href={`${BASE}galaxy/`}>星图</a>
-          <a href={`${BASE}timeline/`}>时间线</a>
-          <a href={`${BASE}persons/`}>索引</a>
-          <a href={`${BASE}about/`}>关于</a>
-        </nav>
+        <SiteNav current="/stats/" />
       </header>
 
       <div class="stats">

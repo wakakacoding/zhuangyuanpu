@@ -3,15 +3,30 @@ relations:
 - to_id: cbdb:1649
   type: 政敌
   note: 彈劾：蔡京（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 11
+  direction: forward
 - to_id: cbdb:40330
   type: 其他
-  note: 為Y所著書作序：宋承之（CBDB 外部人物）
+  note: 為對方所著書作序：宋承之（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 32
+  direction: forward
 - to_id: cbdb:4001
   type: 其他
-  note: 書跋由Y所作：魏了翁（CBDB 外部人物）
+  note: 書跋由對方所作：魏了翁（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
 - to_id: cbdb:1649
   type: 其他
-  note: 忌/惡：蔡京（CBDB 外部人物）
+  note: 為對方所忌/惡：蔡京（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 84
+  direction: forward
 - to_id: cbdb:47349
   type: 同僚
   note: 同僚：張覺民（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 197
+  direction: forward

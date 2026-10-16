@@ -1,83 +1,155 @@
 from_id: song_ben
 relations:
-- to_id: tai_buhua
-  type: 同年
-  note: 1321 年同科
-- to_id: cbdb:28338
-  type: 友人
-  note: 友：柯九思（CBDB 外部人物）
-- to_id: cbdb:10792
-  type: 其他
-  note: 為Y所著書作序：蘇天爵（CBDB 外部人物）
-- to_id: cbdb:28543
-  type: 其他
-  note: 為Y所著書作序：許有壬（CBDB 外部人物）
-- to_id: cbdb:27998
-  type: 其他
-  note: 墓誌銘由Y所作：宋褧（CBDB 外部人物），始年 1334
-- to_id: cbdb:106393
-  type: 其他
-  note: 墓誌銘由Y所作：崔世榮（CBDB 外部人物）
-- to_id: cbdb:10801
-  type: 其他
-  note: 書跋由Y所作：虞集（CBDB 外部人物），始年 1334
-- to_id: cbdb:24523
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：馬祖常（CBDB 外部人物）
-- to_id: cbdb:10389
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：袁桷（CBDB 外部人物），始年 1327
-- to_id: cbdb:28334
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：張翥（CBDB 外部人物），始年 1346
-- to_id: cbdb:28415
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：釋大訢（CBDB 外部人物），始年 1343
-- to_id: cbdb:102618
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：宋沂（CBDB 外部人物）
-- to_id: cbdb:107261
-  type: 其他
-  note: 墓表由Y所作：張德林（CBDB 外部人物）
-- to_id: cbdb:110210
-  type: 其他
-  note: 墓表由Y所作：甄昌祖（CBDB 外部人物）
-- to_id: cbdb:28426
-  type: 其他
-  note: 挽詩、詞由Y所作：胡助（CBDB 外部人物）
-- to_id: cbdb:28450
-  type: 其他
-  note: 挽詩、詞由Y所作：余闕（CBDB 外部人物）
-- to_id: cbdb:101133
-  type: 其他
-  note: 為Y之建築物題詠、記、命名：王由義（CBDB 外部人物）
-- to_id: cbdb:111105
-  type: 其他
-  note: 為Y之建築物題詠、記、命名：劉瓚（CBDB 外部人物）
-- to_id: cbdb:28338
-  type: 其他
-  note: 為Y之詩文作跋：柯九思（CBDB 外部人物）
-- to_id: cbdb:106765
-  type: 其他
-  note: 政績為Y所稱道：張毅（CBDB 外部人物）
-- to_id: cbdb:112080
-  type: 其他
-  note: 為Y作祠記：穆?祖（CBDB 外部人物）
-- to_id: cbdb:28629
-  type: 父子
-  note: 父：宋誘（CBDB 外部人物）
-- to_id: cbdb:28632
-  type: 父子
-  note: 父：宋氏(杜儉妻)（CBDB 外部人物）
-- to_id: cbdb:28627
-  type: 父子
-  note: 父：宋楨（CBDB 外部人物）
-- to_id: cbdb:28633
-  type: 翁婿
-  note: 岳父：杜儉（CBDB 外部人物）
-- to_id: cbdb:27998
-  type: 兄弟
-  note: 兄：宋褧（CBDB 外部人物）
-- to_id: cbdb:28632
-  type: 其他
-  note: 長女：宋氏(杜儉妻)（CBDB 外部人物）
+  - to_id: cbdb:28627
+    type: 父子
+    note: 父：宋楨（CBDB 外部人物）
+    src: cbdb
+    kin_code: 75
+    direction: forward
+  - to_id: cbdb:27998
+    type: 兄弟
+    note: 弟：宋褧（CBDB 外部人物）
+    src: cbdb
+    kin_code: 126
+    direction: forward
+  - to_id: cbdb:28633
+    type: 翁婿
+    note: 女婿：杜儉（CBDB 外部人物）
+    src: cbdb
+    kin_code: 181
+    direction: forward
+  - to_id: cbdb:28629
+    type: 父子
+    note: 獨子：宋誘（CBDB 外部人物）
+    src: cbdb
+    kin_code: 193
+    direction: forward
+  - to_id: cbdb:28632
+    type: 父女
+    note: 長女：宋氏(杜儉妻)（CBDB 外部人物）
+    src: cbdb
+    kin_code: 327
+    direction: forward
+  - to_id: cbdb:28338
+    type: 友人
+    note: 友：柯九思（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 9
+    direction: forward
+  - to_id: cbdb:10792
+    type: 其他
+    note: 書序由對方所作：蘇天爵（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 33
+    direction: forward
+  - to_id: cbdb:28543
+    type: 其他
+    note: 書序由對方所作：許有壬（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 33
+    direction: forward
+  - to_id: cbdb:27998
+    type: 其他
+    note: 墓誌銘由對方所作：宋褧（CBDB 外部人物），始年 1334
+    src: cbdb
+    assoc_code: 43
+    direction: forward
+  - to_id: cbdb:106393
+    type: 其他
+    note: 為對方作墓誌銘：崔世榮（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 44
+    direction: forward
+  - to_id: cbdb:10801
+    type: 其他
+    note: 書跋由對方所作：虞集（CBDB 外部人物），始年 1334
+    src: cbdb
+    assoc_code: 45
+    direction: forward
+  - to_id: cbdb:24523
+    type: 其他
+    note: 為對方作臨別贈言(送別詩、序)：馬祖常（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 162
+    direction: forward
+  - to_id: cbdb:102618
+    type: 其他
+    note: 臨別得到對方所作贈言(送別詩、序)：宋沂（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 163
+    direction: forward
+  - to_id: cbdb:10389
+    type: 其他
+    note: 臨別得到對方所作贈言(送別詩、序)：袁桷（CBDB 外部人物），始年 1334
+    src: cbdb
+    assoc_code: 163
+    direction: forward
+  - to_id: cbdb:28334
+    type: 其他
+    note: 臨別得到對方所作贈言(送別詩、序)：張翥（CBDB 外部人物），始年 1334
+    src: cbdb
+    assoc_code: 163
+    direction: forward
+  - to_id: cbdb:28415
+    type: 其他
+    note: 臨別得到對方所作贈言(送別詩、序)：釋大訢（CBDB 外部人物），始年 1334
+    src: cbdb
+    assoc_code: 163
+    direction: forward
+  - to_id: cbdb:107261
+    type: 其他
+    note: 為對方作墓表：張德林（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 410
+    direction: forward
+  - to_id: cbdb:110210
+    type: 其他
+    note: 為對方作墓表：甄昌祖（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 410
+    direction: forward
+  - to_id: cbdb:28426
+    type: 其他
+    note: 挽詩、詞由對方所作：胡助（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 423
+    direction: forward
+  - to_id: cbdb:28450
+    type: 其他
+    note: 挽詩、詞由對方所作：余闕（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 423
+    direction: forward
+  - to_id: cbdb:101133
+    type: 其他
+    note: 為對方之建築物題詠、記、命名：王由義（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 443
+    direction: forward
+  - to_id: cbdb:111105
+    type: 其他
+    note: 為對方之建築物題詠、記、命名：劉瓚（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 443
+    direction: forward
+  - to_id: cbdb:28338
+    type: 其他
+    note: 詩文跋由對方所作：柯九思（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 470
+    direction: forward
+  - to_id: cbdb:106765
+    type: 其他
+    note: 稱道對方之政績：張毅（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 540
+    direction: forward
+  - to_id: cbdb:112080
+    type: 其他
+    note: 為對方作祠記：穆?祖（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 560
+    direction: forward
+  - to_id: tai_buhua
+    type: 同年
+    note: 1321 年同科

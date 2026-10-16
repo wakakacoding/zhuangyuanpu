@@ -1,221 +1,446 @@
 from_id: zhang_jiucheng
 relations:
-- to_id: cbdb:42733
-  type: 友人
-  note: 友：周煥卿（CBDB 外部人物）
-- to_id: cbdb:43194
-  type: 友人
-  note: 友：施德操（CBDB 外部人物）
-- to_id: cbdb:36
-  type: 同年
-  note: 同年友：陳之淵（CBDB 外部人物）
-- to_id: cbdb:3775
-  type: 同年
-  note: 同年友：孫雄飛（CBDB 外部人物）
-- to_id: cbdb:12972
-  type: 同年
-  note: 同年友：范寅賓（CBDB 外部人物）
-- to_id: cbdb:14382
-  type: 同年
-  note: 同年友：陳之茂（CBDB 外部人物）
-- to_id: cbdb:25314
-  type: 同年
-  note: 同年友：陳一鶚（CBDB 外部人物），始年 1162
-- to_id: cbdb:47930
-  type: 同年
-  note: 同年友：陳祖言（CBDB 外部人物）
-- to_id: cbdb:51426
-  type: 同年
-  note: 同年友：樓材（CBDB 外部人物）
-- to_id: cbdb:14382
-  type: 其他
-  note: 被Y欣賞/器重：陳之茂（CBDB 外部人物），始年 1162
-- to_id: cbdb:22849
-  type: 其他
-  note: 被Y欣賞/器重：喻樗（CBDB 外部人物）
-- to_id: cbdb:33308
-  type: 师生
-  note: 為Y之門人：郎曄（CBDB 外部人物）
-- to_id: cbdb:2022
-  type: 师生
-  note: 為Y之學生：楊時（CBDB 外部人物），始年 1159
-- to_id: cbdb:556
-  type: 师生
-  note: 為Y之學生：樊光遠（CBDB 外部人物）
-- to_id: cbdb:3302
-  type: 师生
-  note: 為Y之學生：方導（CBDB 外部人物），始年 1192
-- to_id: cbdb:20901
-  type: 师生
-  note: 為Y之學生：沈清臣（CBDB 外部人物）
-- to_id: cbdb:24787
-  type: 师生
-  note: 為Y之學生：倪稱（CBDB 外部人物）
-- to_id: cbdb:25315
-  type: 师生
-  note: 為Y之學生：陳自修（CBDB 外部人物），始年 1192
-- to_id: cbdb:38200
-  type: 师生
-  note: 為Y之學生：于憲（CBDB 外部人物）
-- to_id: cbdb:40835
-  type: 师生
-  note: 為Y之學生：李賓（CBDB 外部人物）
-- to_id: cbdb:46337
-  type: 师生
-  note: 為Y之學生：徐椿年（CBDB 外部人物）
-- to_id: cbdb:19667
-  type: 师生
-  note: 為Y之學生：黃珪（CBDB 外部人物）
-- to_id: cbdb:1719
-  type: 其他
-  note: 為Y所著書作序：都潔（CBDB 外部人物），始年 1159
-- to_id: cbdb:7045
-  type: 其他
-  note: 為Y所著書作序：劉安世（CBDB 外部人物），始年 1159
-- to_id: cbdb:29944
-  type: 其他
-  note: 為Y所著書作序：林表民（CBDB 外部人物）
-- to_id: cbdb:38184
-  type: 其他
-  note: 為Y所著書作序：于恕（CBDB 外部人物）
-- to_id: cbdb:21824
-  type: 其他
-  note: 為Y所著書作序：都郁（CBDB 外部人物），始年 1159
-- to_id: cbdb:20901
-  type: 其他
-  note: 為Y學派的成員：沈清臣（CBDB 外部人物），始年 1195
-- to_id: cbdb:18014
-  type: 师生
-  note: 為Y之弟子：郭浩（CBDB 外部人物）
-- to_id: cbdb:24787
-  type: 其他
-  note: 其志業由Y傳承：倪稱（CBDB 外部人物），始年 1159
-- to_id: cbdb:14352
-  type: 其他
-  note: 墓誌銘由Y所作：陳懿（CBDB 外部人物）
-- to_id: cbdb:19667
-  type: 其他
-  note: 墓誌銘由Y所作：黃珪（CBDB 外部人物）
-- to_id: cbdb:20079
-  type: 其他
-  note: 墓誌銘由Y所作：廖玖（CBDB 外部人物）
-- to_id: cbdb:36325
-  type: 其他
-  note: 墓誌銘由Y所作：潘氏(陳一鶚母)（CBDB 外部人物），始年 1139
-- to_id: cbdb:53424
-  type: 其他
-  note: 墓誌銘由Y所作：釋思淨（CBDB 外部人物）
-- to_id: cbdb:25313
-  type: 其他
-  note: 墓誌銘由Y所作：陳豫（CBDB 外部人物），始年 1115
-- to_id: cbdb:3257
-  type: 其他
-  note: 書跋由Y所作：朱熹（CBDB 外部人物）
-- to_id: cbdb:7197
-  type: 其他
-  note: 書跋由Y所作：周必大（CBDB 外部人物）
-- to_id: cbdb:10585
-  type: 其他
-  note: 書跋由Y所作：陳傅良（CBDB 外部人物）
-- to_id: cbdb:13
-  type: 其他
-  note: 書跋由Y所作：晁補之（CBDB 外部人物），始年 1110
-- to_id: cbdb:1488
-  type: 其他
-  note: 書跋由Y所作：司馬光（CBDB 外部人物）
-- to_id: cbdb:3676
-  type: 其他
-  note: 書跋由Y所作：米芾（CBDB 外部人物）
-- to_id: cbdb:3767
-  type: 其他
-  note: 書跋由Y所作：蘇軾（CBDB 外部人物）
-- to_id: cbdb:10703
-  type: 其他
-  note: 書跋由Y所作：呂本中（CBDB 外部人物）
-- to_id: cbdb:18685
-  type: 其他
-  note: 書跋由Y所作：戴栩（CBDB 外部人物）
-- to_id: cbdb:25776
-  type: 其他
-  note: 書跋由Y所作：徐鹿卿（CBDB 外部人物）
-- to_id: cbdb:28306
-  type: 其他
-  note: 書跋由Y所作：戴表元（CBDB 外部人物）
-- to_id: cbdb:38219
-  type: 其他
-  note: 書跋由Y所作：于有成（CBDB 外部人物）
-- to_id: jiao_hong
-  type: 其他
-  note: 書跋由Y所作（CBDB）
-- to_id: cbdb:3593
-  type: 其他
-  note: 從Y遊：劉荀（CBDB 外部人物），始年 1189
-- to_id: cbdb:17989
-  type: 其他
-  note: 從Y遊：郭欽止（CBDB 外部人物），始年 1185
-- to_id: cbdb:8008
-  type: 其他
-  note: 不合：秦檜（CBDB 外部人物），始年 1159
-- to_id: cbdb:33308
-  type: 其他
-  note: 同鄉：郎曄（CBDB 外部人物）
-- to_id: cbdb:3050
-  type: 其他
-  note: 為Y作祭文：陳長方（CBDB 外部人物），始年 1159
-- to_id: cbdb:8113
-  type: 其他
-  note: 為Y作祭文：史浩（CBDB 外部人物），始年 1175
-- to_id: cbdb:41823
-  type: 其他
-  note: 為Y作佛寺記：釋德諶（CBDB 外部人物）
-- to_id: cbdb:43364
-  type: 其他
-  note: 為Y建立祠廟：楊璿（CBDB 外部人物）
-- to_id: cbdb:38200
-  type: 其他
-  note: 與Y遊：于憲（CBDB 外部人物）
-- to_id: cbdb:46590
-  type: 其他
-  note: 拜訪：連世瑜（CBDB 外部人物）
-- to_id: cbdb:40712
-  type: 其他
-  note: 致書Y：釋宗杲（CBDB 外部人物）
-- to_id: cbdb:51803
-  type: 其他
-  note: 致書Y：劉愈（CBDB 外部人物）
-- to_id: cbdb:2022
-  type: 其他
-  note: 答Y書：楊時（CBDB 外部人物）
-- to_id: cbdb:23969
-  type: 其他
-  note: 為Y之建築物題詠、記、命名：方疇（CBDB 外部人物）
-- to_id: cbdb:17385
-  type: 其他
-  note: 學記（書院記）由Y所作：趙善繼（CBDB 外部人物）
-- to_id: cbdb:10289
-  type: 其他
-  note: 為Y作祠記：袁燮（CBDB 外部人物）
-- to_id: cbdb:13750
-  type: 父子
-  note: 直系祖先：張逢源（CBDB 外部人物）
-- to_id: cbdb:400470
-  type: 父子
-  note: 直系祖先：張奇齡（CBDB 外部人物）
 - to_id: cbdb:12430
   type: 父子
   note: 父：張伸（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
+- to_id: cbdb:385461
+  type: 夫妻
+  note: 妻子：馬氏(吳察妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:38184
+  type: 旁系
+  note: 外甥：于恕（CBDB 外部人物）
+  src: cbdb
+  kin_code: 179
+  direction: forward
+- to_id: cbdb:38200
+  type: 旁系
+  note: 外甥：于憲（CBDB 外部人物）
+  src: cbdb
+  kin_code: 179
+  direction: forward
 - to_id: cbdb:14008
   type: 父子
-  note: 父：張幼厚（CBDB 外部人物）
+  note: 子：張幼厚（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
 - to_id: cbdb:46965
   type: 父子
-  note: 父：張伯厚（CBDB 外部人物）
+  note: 子：張伯厚（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
 - to_id: cbdb:20901
   type: 翁婿
-  note: 岳父：沈清臣（CBDB 外部人物）
-- to_id: cbdb:385461
+  note: 女婿：沈清臣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:13750
+  type: 祖孫
+  note: 直系後裔：張逢源（CBDB 外部人物）
+  src: cbdb
+  kin_code: 303
+  direction: forward
+- to_id: cbdb:400470
+  type: 祖孫
+  note: 直系後裔：張奇齡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 303
+  direction: forward
+- to_id: cbdb:42733
+  type: 友人
+  note: 友：周煥卿（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
+- to_id: cbdb:43194
+  type: 友人
+  note: 友：施德操（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
+- to_id: cbdb:36
+  type: 同年
+  note: 同年友：陳之淵（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:3775
+  type: 同年
+  note: 同年友：孫雄飛（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:12972
+  type: 同年
+  note: 同年友：范寅賓（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:14382
+  type: 同年
+  note: 同年友：陳之茂（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:47930
+  type: 同年
+  note: 同年友：陳祖言（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:51426
+  type: 同年
+  note: 同年友：樓材（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:25314
+  type: 同年
+  note: 同年友：陳一鶚（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:22849
   type: 其他
-  note: 丈夫：馬氏(吳察妻)（CBDB 外部人物）
-- to_id: cbdb:385461
-  type: 父子
-  note: 妻子：馬氏(吳察妻)（CBDB 外部人物）
+  note: 被對方欣賞/器重：喻樗（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 17
+  direction: forward
+- to_id: cbdb:14382
+  type: 其他
+  note: 欣賞/器重：陳之茂（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 18
+  direction: forward
+- to_id: cbdb:33308
+  type: 师生
+  note: 門人為對方：郎曄（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 20
+  direction: forward
+- to_id: cbdb:19667
+  type: 师生
+  note: 為對方之學生：黃珪（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 22
+  direction: forward
+- to_id: cbdb:2022
+  type: 师生
+  note: 為對方之學生：楊時（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 22
+  direction: forward
+- to_id: cbdb:556
+  type: 师生
+  note: 學生為對方：樊光遠（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:20901
+  type: 师生
+  note: 學生為對方：沈清臣（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:24787
+  type: 师生
+  note: 學生為對方：倪稱（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:38200
+  type: 师生
+  note: 學生為對方：于憲（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:40835
+  type: 师生
+  note: 學生為對方：李賓（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:46337
+  type: 师生
+  note: 學生為對方：徐椿年（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:3302
+  type: 师生
+  note: 學生為對方：方導（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:25315
+  type: 师生
+  note: 學生為對方：陳自修（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:1719
+  type: 其他
+  note: 為對方所著書作序：都潔（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:7045
+  type: 其他
+  note: 為對方所著書作序：劉安世（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:21824
+  type: 其他
+  note: 為對方所著書作序：都郁（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:29944
+  type: 其他
+  note: 書序由對方所作：林表民（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 33
+  direction: forward
+- to_id: cbdb:38184
+  type: 其他
+  note: 書序由對方所作：于恕（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 33
+  direction: forward
+- to_id: cbdb:20901
+  type: 其他
+  note: 該學派的成員為對方：沈清臣（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 35
+  direction: forward
+- to_id: cbdb:18014
+  type: 师生
+  note: 弟子為對方：郭浩（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 37
+  direction: forward
+- to_id: cbdb:24787
+  type: 其他
+  note: 其志業由對方傳承：倪稱（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 40
+  direction: forward
+- to_id: cbdb:14352
+  type: 其他
+  note: 為對方作墓誌銘：陳懿（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:19667
+  type: 其他
+  note: 為對方作墓誌銘：黃珪（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:20079
+  type: 其他
+  note: 為對方作墓誌銘：廖玖（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:53424
+  type: 其他
+  note: 為對方作墓誌銘：釋思淨（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:25313
+  type: 其他
+  note: 為對方作墓誌銘：陳豫（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:36325
+  type: 其他
+  note: 為對方作墓誌銘：潘氏(陳一鶚母)（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:3257
+  type: 其他
+  note: 書跋由對方所作：朱熹（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
+- to_id: cbdb:7197
+  type: 其他
+  note: 書跋由對方所作：周必大（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
+- to_id: cbdb:10585
+  type: 其他
+  note: 書跋由對方所作：陳傅良（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
+- to_id: cbdb:18685
+  type: 其他
+  note: 書跋由對方所作：戴栩（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
+- to_id: cbdb:25776
+  type: 其他
+  note: 書跋由對方所作：徐鹿卿（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
+- to_id: cbdb:28306
+  type: 其他
+  note: 書跋由對方所作：戴表元（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
+- to_id: cbdb:38219
+  type: 其他
+  note: 書跋由對方所作：于有成（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
+- to_id: jiao_hong
+  type: 其他
+  note: 書跋由對方所作（CBDB）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
+- to_id: cbdb:1488
+  type: 其他
+  note: 為對方所著書作跋：司馬光（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 46
+  direction: forward
+- to_id: cbdb:3676
+  type: 其他
+  note: 為對方所著書作跋：米芾（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 46
+  direction: forward
+- to_id: cbdb:3767
+  type: 其他
+  note: 為對方所著書作跋：蘇軾（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 46
+  direction: forward
+- to_id: cbdb:10703
+  type: 其他
+  note: 為對方所著書作跋：呂本中（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 46
+  direction: forward
+- to_id: cbdb:13
+  type: 其他
+  note: 為對方所著書作跋：晁補之（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 46
+  direction: forward
+- to_id: cbdb:3593
+  type: 其他
+  note: 從遊者為對方：劉荀（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 50
+  direction: forward
+- to_id: cbdb:17989
+  type: 其他
+  note: 從遊者為對方：郭欽止（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 50
+  direction: forward
+- to_id: cbdb:8008
+  type: 其他
+  note: 不合：秦檜（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 61
+  direction: forward
+- to_id: cbdb:33308
+  type: 其他
+  note: 同鄉：郎曄（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 94
+  direction: forward
+- to_id: cbdb:3050
+  type: 其他
+  note: 為對方作祭文：陳長方（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 145
+  direction: forward
+- to_id: cbdb:8113
+  type: 其他
+  note: 祭文由對方所作：史浩（CBDB 外部人物），始年 1159
+  src: cbdb
+  assoc_code: 146
+  direction: forward
+- to_id: cbdb:41823
+  type: 其他
+  note: 為對方作佛寺記：釋德諶（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 239
+  direction: forward
+- to_id: cbdb:43364
+  type: 其他
+  note: 為對方建立祠廟：楊璿（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 252
+  direction: forward
+- to_id: cbdb:38200
+  type: 其他
+  note: 與對方遊：于憲（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 277
+  direction: forward
+- to_id: cbdb:46590
+  type: 其他
+  note: 拜訪：連世瑜（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 339
+  direction: forward
+- to_id: cbdb:40712
+  type: 其他
+  note: 致書對方：釋宗杲（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 429
+  direction: forward
+- to_id: cbdb:51803
+  type: 其他
+  note: 致書對方：劉愈（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 429
+  direction: forward
+- to_id: cbdb:2022
+  type: 其他
+  note: 收到對方的答書：楊時（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward
+- to_id: cbdb:23969
+  type: 其他
+  note: 為對方之建築物題詠、記、命名：方疇（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 443
+  direction: forward
+- to_id: cbdb:17385
+  type: 其他
+  note: 為對方作學記（書院記）：趙善繼（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 459
+  direction: forward
+- to_id: cbdb:10289
+  type: 其他
+  note: 祠記由對方所作：袁燮（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 561
+  direction: forward

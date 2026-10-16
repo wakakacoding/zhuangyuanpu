@@ -13,6 +13,7 @@ import path from 'node:path';
 import { BASE } from '../lib/persons';
 import { listStories } from '../lib/story';
 import SeoHead from '../components/SeoHead.astro';
+import SiteNav from '../components/SiteNav.astro';
 import '../styles/base.css';
 import '../styles/galaxy.css';
 import '../styles/network.css';
@@ -93,15 +94,7 @@ const clientData = {
         <p class="sub">
           {net.stats.nZy} 位状元 · {net.meta.innerPairs} 对关系（自 {net.meta.innerEntries} 条有向记录去重） · 名士层 {net.stats.nExt} 人 · 力导向自绘
         </p>
-        <nav class="site-nav">
-          <a href={BASE}>首页</a>
-          <a href={`${BASE}search/`}>检索</a>
-          <a href={`${BASE}map/`}>地图</a>
-          <a href={`${BASE}timeline/`}>时间线</a>
-          <a href={`${BASE}galaxy/`}>星图</a>
-          <a href={`${BASE}stats/`}>统计</a>
-          <a href={`${BASE}about/`}>关于</a>
-        </nav>
+        <SiteNav current="/network/" />
       </header>
 
       <p class="galaxy-guide">

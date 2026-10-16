@@ -1,35 +1,62 @@
 from_id: zhang_shi_de
 relations:
-- to_id: cbdb:8153
-  type: 政敌
-  note: 反對/攻訐：王旦（CBDB 外部人物）
-- to_id: cbdb:699339
-  type: 父子
-  note: 祖父：張立（CBDB 外部人物）
-- to_id: cbdb:699345
-  type: 父子
-  note: 祖父：張亶（CBDB 外部人物）
 - to_id: cbdb:119930
-  type: 父子
+  type: 祖孫
   note: 祖父：張裕（CBDB 外部人物）
-- to_id: zhang_qu_hua
-  type: 父子
-  note: 父（CBDB）
-- to_id: cbdb:205
-  type: 父子
-  note: 父：張景憲（CBDB 外部人物）
-- to_id: cbdb:119968
-  type: 父子
-  note: 父：張中憲（CBDB 外部人物）
-- to_id: cbdb:699340
-  type: 父子
-  note: 父：張景思（CBDB 外部人物）
-- to_id: cbdb:38676
-  type: 翁婿
-  note: 岳父：石用休（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:8076
   type: 翁婿
   note: 岳父：李沆（CBDB 外部人物）
+  src: cbdb
+  kin_code: 76
+  direction: forward
 - to_id: cbdb:282
   type: 兄弟
   note: 兄弟：張師顏（CBDB 外部人物）
+  src: cbdb
+  kin_code: 118
+  direction: forward
+- to_id: cbdb:119968
+  type: 父子
+  note: 子：張中憲（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:699340
+  type: 父子
+  note: 子：張景思（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:38676
+  type: 翁婿
+  note: 女婿：石用休（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:205
+  type: 父子
+  note: 次子：張景憲（CBDB 外部人物）
+  src: cbdb
+  kin_code: 183
+  direction: forward
+- to_id: cbdb:699339
+  type: 祖孫
+  note: 孫：張立（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:699345
+  type: 祖孫
+  note: 孫：張亶（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:8153
+  type: 政敌
+  note: 遭到對方的反對/攻訐：王旦（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 16
+  direction: forward

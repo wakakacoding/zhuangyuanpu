@@ -3,3 +3,6 @@ relations:
 - to_id: an_de_yu
   type: 父子
   note: 父（CBDB）
+  src: cbdb
+  kin_code: 75
+  direction: forward

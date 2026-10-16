@@ -3,3 +3,6 @@ relations:
 - to_id: cbdb:520638
   type: 父子
   note: 父：章忠型（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward

@@ -3,21 +3,42 @@ relations:
 - to_id: cbdb:42251
   type: 友人
   note: 友：林偉（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
 - to_id: cbdb:15037
   type: 同年
   note: 同年友：陳畏（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:16721
   type: 同年
   note: 同年友：劉棠（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:45415
   type: 同年
   note: 同年友：許文蔚（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:48325
   type: 同年
   note: 同年友：馮履（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:48494
   type: 同年
   note: 同年友：曾煥（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:52016
   type: 同年
   note: 同年友：劉致一（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward

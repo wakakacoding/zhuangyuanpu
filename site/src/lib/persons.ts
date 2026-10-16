@@ -41,6 +41,27 @@ export function allSources(): Record<string, any> {
   return cache.sources;
 }
 
+/**
+ * 姓名 → 繁体名（R3-2b 繁简双匹配用）。
+ * 来源：data/index/zhuangyuan_index.yaml 的 name_tw（build_index.py 用 OpenCC + 人名用字
+ * 保护表生成，比在前端把查询词转繁更稳）。索引与人物卡一律**按姓名**关联，勿按 slug。
+ * 特例收录者（探花／事实状元）不在状元索引里，繁体名在此补全——仅此两人，role 枚举不会增长。
+ */
+const SPECIAL_NAME_TW: Record<string, string> = { 商衍鎏: '商衍鎏', 赵楷: '趙楷' };
+
+export function traditionalNames(): Record<string, string> {
+  cache.nameTw ??= (() => {
+    const f = path.join(DATA_DIR, 'index', 'zhuangyuan_index.yaml');
+    const list: any[] = fs.existsSync(f) ? (loadYaml(f) as any[]) : [];
+    const map: Record<string, string> = {};
+    for (const e of list) {
+      if (e?.name && e?.name_tw) map[e.name] = e.name_tw;
+    }
+    return { ...map, ...SPECIAL_NAME_TW };
+  })();
+  return cache.nameTw;
+}
+
 /** 某人物的事件/著作/轶事/关系（无文件返回空数组） */
 export function subDocs(dir: 'events' | 'works' | 'anecdotes' | 'relations', id: string): any[] {
   const f = path.join(DATA_DIR, dir, `${id}.yaml`);

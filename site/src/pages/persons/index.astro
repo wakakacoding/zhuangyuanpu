@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
 import SeoHead from '../../components/SeoHead.astro';
+import SiteNav from '../../components/SiteNav.astro';
 import '../../styles/base.css';
 import { BASE, roleOf, ROLE_LABEL, ROLE_NOTE } from '../../lib/persons';
 
@@ -25,6 +26,7 @@ const nSpecial = persons.length - zy;
       <header class="site-head">
         <h1>全量索引</h1>
         <p class="sub">已录状元 {zy} 人 · 特例 {nSpecial} 人（探花／事实状元，卡面带徽标）· 按科年排序 · 缺载字段标「待考」——「待考」是整理进度，不冒充史料结论 · <a href={`${BASE}search/`}>去检索 →</a></p>
+        <SiteNav current="/persons/" />
       </header>
       <table class="list">
         <thead>

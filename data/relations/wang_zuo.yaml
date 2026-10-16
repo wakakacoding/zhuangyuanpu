@@ -1,53 +1,92 @@
 from_id: wang_zuo
 relations:
-- to_id: cbdb:51786
-  type: 其他
-  note: 推薦：劉鄂（CBDB 外部人物）
-- to_id: cbdb:3640
-  type: 其他
-  note: 墓誌銘由Y所作：陸游（CBDB 外部人物）
-- to_id: cbdb:15459
-  type: 其他
-  note: 傳記作者為Y：陳造（CBDB 外部人物）
-- to_id: cbdb:8008
-  type: 其他
-  note: 反對/不支持Y的政策：秦檜（CBDB 外部人物）
-- to_id: cbdb:3257
-  type: 其他
-  note: 致書Y：朱熹（CBDB 外部人物）
-- to_id: cbdb:10612
-  type: 其他
-  note: 致書Y：林光朝（CBDB 外部人物）
-- to_id: cbdb:10585
-  type: 其他
-  note: 答Y書：陳傅良（CBDB 外部人物）
-- to_id: cbdb:3624
-  type: 其他
-  note: 致Y啓：樓鑰（CBDB 外部人物）
-- to_id: cbdb:7197
-  type: 其他
-  note: 為Y之建築物題詠、記、命名：周必大（CBDB 外部人物）
 - to_id: cbdb:13476
   type: 父子
   note: 父：王俊彥（CBDB 外部人物）
-- to_id: cbdb:3145
-  type: 翁婿
-  note: 岳父：張孝曾（CBDB 外部人物）
-- to_id: cbdb:13480
-  type: 翁婿
-  note: 岳父：曾（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:134739
-  type: 其他
+  type: 母子
   note: 母：葉氏(王佐母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:22224
   type: 兄弟
-  note: 兄：王公袞（CBDB 外部人物）
+  note: 弟：王公袞（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:134740
-  type: 其他
-  note: 丈夫：高氏(王佐妻)（CBDB 外部人物）
-- to_id: cbdb:134740
-  type: 父子
+  type: 夫妻
   note: 妻子：高氏(王佐妻)（CBDB 外部人物）
-- to_id: cbdb:134739
-  type: 父子
-  note: 子：葉氏(王佐母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:13480
+  type: 翁婿
+  note: 女婿：曾（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:3145
+  type: 翁婿
+  note: 第二任女婿：張孝曾（CBDB 外部人物）
+  src: cbdb
+  kin_code: 201
+  direction: forward
+- to_id: cbdb:51786
+  type: 其他
+  note: 推薦：劉鄂（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 13
+  direction: forward
+- to_id: cbdb:3640
+  type: 其他
+  note: 墓誌銘由對方所作：陸游（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 43
+  direction: forward
+- to_id: cbdb:15459
+  type: 其他
+  note: 傳記作者為對方：陳造（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 132
+  direction: forward
+- to_id: cbdb:8008
+  type: 其他
+  note: 反對/不支持對方的政策：秦檜（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 136
+  direction: forward
+- to_id: cbdb:3257
+  type: 其他
+  note: 被致書由對方：朱熹（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:10612
+  type: 其他
+  note: 被致書由對方：林光朝（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:10585
+  type: 其他
+  note: 收到對方的答書：陳傅良（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward
+- to_id: cbdb:3624
+  type: 其他
+  note: 收到對方的啓：樓鑰（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 434
+  direction: forward
+- to_id: cbdb:7197
+  type: 其他
+  note: 建築物得到對方的題詠、記、命名：周必大（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 444
+  direction: forward

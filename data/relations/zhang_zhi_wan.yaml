@@ -1,32 +1,62 @@
 from_id: zhang_zhi_wan
 relations:
-- to_id: cbdb:89100
-  type: 师生
-  note: 為Y之學生：梁士詒（CBDB 外部人物）
-- to_id: cbdb:54414
-  type: 其他
-  note: 為Y所著書作序：嚴永華（CBDB 外部人物）
-- to_id: cbdb:62949
-  type: 同僚
-  note: 為Y之幕僚：朱壽鏞（CBDB 外部人物）
 - to_id: cbdb:518942
-  type: 父子
+  type: 祖孫
   note: 曾祖：張燕方（CBDB 外部人物）
-- to_id: cbdb:518936
-  type: 父子
-  note: 祖父：張元驥（CBDB 外部人物）
-- to_id: cbdb:518939
-  type: 父子
-  note: 祖父：張奎正（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:518938
-  type: 父子
+  type: 祖孫
   note: 祖父：張仲瑚（CBDB 外部人物）
-- to_id: cbdb:518940
-  type: 父子
-  note: 父：張瑞蔭（CBDB 外部人物）
-- to_id: cbdb:518941
-  type: 父子
-  note: 父：張嘉蔭（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:518937
   type: 父子
   note: 父：張玉冊（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
+- to_id: cbdb:518940
+  type: 父子
+  note: 子：張瑞蔭（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:518941
+  type: 父子
+  note: 子：張嘉蔭（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:518936
+  type: 祖孫
+  note: 孫：張元驥（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:518939
+  type: 祖孫
+  note: 孫：張奎正（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:89100
+  type: 师生
+  note: 學生為對方：梁士詒（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:54414
+  type: 其他
+  note: 為對方所著書作序：嚴永華（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:62949
+  type: 同僚
+  note: 幕僚為對方：朱壽鏞（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 67
+  direction: forward

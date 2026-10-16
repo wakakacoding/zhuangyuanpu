@@ -1,50 +1,93 @@
 from_id: zheng_qiao
 relations:
+- to_id: cbdb:11054
+  type: 父子
+  note: 子：鄭寅（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:10241
+  type: 翁婿
+  note: 女婿：王介（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:12980
+  type: 祖孫
+  note: 玄孫;四世孫：鄭杓（CBDB 外部人物）
+  src: cbdb
+  kin_code: 263
+  direction: forward
+- to_id: cbdb:11016
+  type: 祖孫
+  note: 直系祖先：鄭露（CBDB 外部人物）
+  src: cbdb
+  kin_code: 303
+  direction: reverse
+  note_code: 2
 - to_id: cbdb:13982
   type: 同年
   note: 同年友：張貴謨（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:16783
   type: 同年
   note: 同年友：范仲藝（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:19530
   type: 同年
   note: 同年友：雷孝友（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:20120
   type: 同年
   note: 同年友：林琰（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:20980
   type: 同年
   note: 同年友：施康年（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:49974
   type: 同年
   note: 同年友：廖俁（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:10566
   type: 其他
-  note: 推薦：楊萬里（CBDB 外部人物），始年 1184
-- to_id: wang_ying_chen
-  type: 师生
-  note: 為Y之學生（CBDB），始年 1199
+  note: 被對方推薦：楊萬里（CBDB 外部人物），始年 1199
+  src: cbdb
+  assoc_code: 14
+  direction: forward
 - to_id: cbdb:7197
   type: 其他
-  note: 書跋由Y所作：周必大（CBDB 外部人物）
+  note: 書跋由對方所作：周必大（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
 - to_id: cbdb:14833
   type: 其他
-  note: 為Y作祭文：彭龜年（CBDB 外部人物），始年 1201
+  note: 祭文由對方所作：彭龜年（CBDB 外部人物），始年 1199
+  src: cbdb
+  assoc_code: 146
+  direction: forward
 - to_id: cbdb:37205
   type: 其他
-  note: 為Y作佛寺記：曾耒（CBDB 外部人物）
+  note: 佛寺記由對方所作：曾耒（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 240
+  direction: forward
 - to_id: cbdb:3257
   type: 其他
-  note: 致書Y：朱熹（CBDB 外部人物）
-- to_id: cbdb:12980
-  type: 父子
-  note: 高祖;四世祖：鄭杓（CBDB 外部人物）
-- to_id: cbdb:11054
-  type: 父子
-  note: 父：鄭寅（CBDB 外部人物）
-- to_id: cbdb:10241
-  type: 翁婿
-  note: 第二任妻父：王介（CBDB 外部人物）
-- to_id: cbdb:11016
-  type: 父子
-  note: 直系後裔：鄭露（CBDB 外部人物）
+  note: 被致書由對方：朱熹（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward

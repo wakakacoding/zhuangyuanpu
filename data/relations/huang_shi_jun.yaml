@@ -1,14 +1,26 @@
 from_id: huang_shi_jun
 relations:
-- to_id: cbdb:56535
-  type: 其他
-  note: 致書Y：姚希孟（CBDB 外部人物）
-- to_id: cbdb:128182
-  type: 其他
-  note: 致書Y：吳宗達（CBDB 外部人物）
-- to_id: cbdb:350281
-  type: 其他
-  note: 致書Y：傅振商（CBDB 外部人物）
 - to_id: cbdb:521553
   type: 父子
-  note: 父：黃昌禎（CBDB 外部人物）
+  note: 子：黃昌禎（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:56535
+  type: 其他
+  note: 被致書由對方：姚希孟（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:128182
+  type: 其他
+  note: 被致書由對方：吳宗達（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:350281
+  type: 其他
+  note: 被致書由對方：傅振商（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward

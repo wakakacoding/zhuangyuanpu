@@ -1,29 +1,44 @@
 from_id: ma_duo
 relations:
-- to_id: cbdb:66729
-  type: 其他
-  note: 墓誌銘由Y所作：楊寓（CBDB 外部人物）
 - to_id: cbdb:286448
-  type: 父子
+  type: 祖孫
   note: 曾祖：馬源夫（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:286449
-  type: 父子
+  type: 祖孫
   note: 祖父：馬伯載（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:286450
   type: 父子
   note: 父：馬谷進（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:286454
-  type: 其他
-  note: 丈夫：鄭氏(馬鐸妻)（CBDB 外部人物）
-- to_id: cbdb:286454
-  type: 父子
+  type: 夫妻
   note: 妻子：鄭氏(馬鐸妻)（CBDB 外部人物）
-- to_id: cbdb:286452
-  type: 父子
-  note: 子：卓氏(馬鐸嫡母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
 - to_id: cbdb:286453
-  type: 父子
-  note: 私生子：林氏(馬鐸生母)（CBDB 外部人物）
+  type: 母子
+  note: 私生子女之本生母：林氏(馬鐸生母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 377
+  direction: forward
 - to_id: cbdb:286452
-  type: 其他
+  type: 母子
   note: 嫡母：卓氏(馬鐸嫡母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 420
+  direction: forward
+- to_id: cbdb:66729
+  type: 其他
+  note: 墓誌銘由對方所作：楊寓（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 43
+  direction: forward

@@ -1,5 +1,8 @@
 from_id: lu_ken_tang
 relations:
 - to_id: cbdb:689224
-  type: 父子
-  note: 曾祖：陸企曾（CBDB 外部人物）
+  type: 祖孫
+  note: 曾孫; 重孫：陸企曾（CBDB 外部人物）
+  src: cbdb
+  kin_code: 255
+  direction: forward

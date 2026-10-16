@@ -1,14 +1,17 @@
 from_id: pu_yan_bu_hua
 relations:
-- to_id: zhang_shi_jian
-  type: 同年
-  note: 1345 年同科
-- to_id: cbdb:35502
-  type: 其他
-  note: 政績為Y所稱道：周霆震（CBDB 外部人物）
-- to_id: cbdb:113699
-  type: 其他
-  note: 丈夫：阿魯真（CBDB 外部人物）
-- to_id: cbdb:113699
-  type: 父子
-  note: 妻子：阿魯真（CBDB 外部人物）
+  - to_id: cbdb:113699
+    type: 夫妻
+    note: 妻子：阿魯真（CBDB 外部人物）
+    src: cbdb
+    kin_code: 135
+    direction: forward
+  - to_id: cbdb:35502
+    type: 其他
+    note: 政績為對方所稱道：周霆震（CBDB 外部人物）
+    src: cbdb
+    assoc_code: 539
+    direction: forward
+  - to_id: zhang_shi_jian
+    type: 同年
+    note: 1345 年同科

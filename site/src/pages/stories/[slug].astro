@@ -1,6 +1,7 @@
 ---
 import { listStories, renderStory } from '../../lib/story';
 import SeoHead from '../../components/SeoHead.astro';
+import SiteNav from '../../components/SiteNav.astro';
 import '../../styles/base.css';
 import '../../styles/story.css';
 import { BASE, profileStatusText, roleOf, ROLE_LABEL, ROLE_NOTE } from '../../lib/persons';
@@ -23,9 +24,7 @@ const desc = meta.intro ?? `${meta.title}——${personNames}的故事。`;
   </head>
   <body>
     <div class="container">
-      <nav style="font-size:0.82rem; margin-bottom:1.4rem;">
-        <a href={BASE}>首页</a> / <a href={`${BASE}stories/`}>故事</a> / <a href={`${BASE}persons/`}>人物索引</a>
-      </nav>
+      <SiteNav current="/stories/" />
 
       <header class="story-hero">
         <h1>{meta.title}</h1>

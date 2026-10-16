@@ -1,62 +1,116 @@
 from_id: yang_hui_zhi
 relations:
-- to_id: cbdb:898
-  type: 政敌
-  note: 反對/攻訐：寇準（CBDB 外部人物）
-- to_id: cbdb:1950
-  type: 政敌
-  note: 反對/攻訐：溫仲舒（CBDB 外部人物）
-- to_id: cbdb:8116
-  type: 其他
-  note: 墓誌銘由Y所作：蘇頌（CBDB 外部人物），始年 986
-- to_id: cbdb:12236
-  type: 其他
-  note: 為Y作祭文：徐鉉（CBDB 外部人物），始年 992
-- to_id: cbdb:8075
-  type: 其他
-  note: 同會：李昉（CBDB 外部人物），始年 995
-- to_id: cbdb:1575
-  type: 其他
-  note: 得到Y的喜爱：宋綬（CBDB 外部人物）
-- to_id: cbdb:7097
-  type: 其他
-  note: 行狀由Y所作：楊億（CBDB 外部人物）
-- to_id: cbdb:49981
-  type: 其他
-  note: 贈詩、文：廖融（CBDB 外部人物）
-- to_id: cbdb:447390
-  type: 其他
-  note: 贈詩、文：江爲（CBDB 外部人物）
-- to_id: cbdb:450377
-  type: 其他
-  note: 贈詩、文：鄭起（CBDB 外部人物）
-- to_id: cbdb:10258
-  type: 其他
-  note: 為Y之建築物題詠、記、命名：真德秀（CBDB 外部人物）
-- to_id: cbdb:7097
-  type: 父子
-  note: 從祖;伯叔祖：楊億（CBDB 外部人物）
-- to_id: cbdb:119797
-  type: 父子
-  note: 從祖;伯叔祖：楊集（CBDB 外部人物）
-- to_id: cbdb:119812
-  type: 父子
-  note: 從祖;伯叔祖：楊偃（CBDB 外部人物）
-- to_id: cbdb:1575
-  type: 父子
-  note: 外祖父：宋綬（CBDB 外部人物）
 - to_id: cbdb:12938
   type: 父子
   note: 父：楊澄（CBDB 外部人物）
-- to_id: cbdb:12940
-  type: 翁婿
-  note: 岳父：宋皋（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:2131
   type: 翁婿
   note: 第一任妻父：王澣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 87
+  direction: forward
 - to_id: cbdb:49637
-  type: 其他
-  note: 丈夫：王氏(楊徽之妻)（CBDB 外部人物）
-- to_id: cbdb:49637
-  type: 父子
+  type: 夫妻
   note: 妻子：王氏(楊徽之妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:12940
+  type: 翁婿
+  note: 女婿：宋皋（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:1575
+  type: 祖孫
+  note: 外孫：宋綬（CBDB 外部人物）
+  src: cbdb
+  kin_code: 238
+  direction: forward
+- to_id: cbdb:7097
+  type: 旁系
+  note: 姪孫;從孫：楊億（CBDB 外部人物）
+  src: cbdb
+  kin_code: 240
+  direction: forward
+- to_id: cbdb:119797
+  type: 旁系
+  note: 姪孫;從孫：楊集（CBDB 外部人物）
+  src: cbdb
+  kin_code: 240
+  direction: forward
+- to_id: cbdb:119812
+  type: 旁系
+  note: 姪孫;從孫：楊偃（CBDB 外部人物）
+  src: cbdb
+  kin_code: 240
+  direction: forward
+- to_id: cbdb:898
+  type: 政敌
+  note: 反對/攻訐：寇準（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 15
+  direction: forward
+- to_id: cbdb:1950
+  type: 政敌
+  note: 反對/攻訐：溫仲舒（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 15
+  direction: forward
+- to_id: cbdb:8116
+  type: 其他
+  note: 墓誌銘由對方所作：蘇頌（CBDB 外部人物），始年 986
+  src: cbdb
+  assoc_code: 43
+  direction: forward
+- to_id: cbdb:12236
+  type: 其他
+  note: 為對方作祭文：徐鉉（CBDB 外部人物），始年 992
+  src: cbdb
+  assoc_code: 145
+  direction: forward
+- to_id: cbdb:8075
+  type: 其他
+  note: 同會：李昉（CBDB 外部人物），始年 995
+  src: cbdb
+  assoc_code: 268
+  direction: forward
+- to_id: cbdb:1575
+  type: 其他
+  note: 喜爱：宋綬（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 359
+  direction: forward
+- to_id: cbdb:7097
+  type: 其他
+  note: 行狀由對方所作：楊億（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 425
+  direction: forward
+- to_id: cbdb:49981
+  type: 其他
+  note: 贈詩、文：廖融（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 437
+  direction: forward
+- to_id: cbdb:447390
+  type: 其他
+  note: 贈詩、文：江爲（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 437
+  direction: forward
+- to_id: cbdb:450377
+  type: 其他
+  note: 贈詩、文：鄭起（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 437
+  direction: forward
+- to_id: cbdb:10258
+  type: 其他
+  note: 建築物得到對方的題詠、記、命名：真德秀（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 444
+  direction: forward

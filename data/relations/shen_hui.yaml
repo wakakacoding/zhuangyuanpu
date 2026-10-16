@@ -1,50 +1,98 @@
 from_id: shen_hui
 relations:
+- to_id: cbdb:1449
+  type: 祖孫
+  note: 祖父：沈遘（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:7028
   type: 同年
   note: 同年友：范雩（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:8055
   type: 同年
   note: 同年友：何若（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:24492
   type: 同年
   note: 同年友：單時（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:38909
   type: 同年
   note: 同年友：方雲翼（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:43552
   type: 同年
   note: 同年友：高布（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:46807
   type: 同年
   note: 同年友：張絢（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:48154
   type: 同年
   note: 同年友：常明（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:50194
   type: 同年
   note: 同年友：趙衛（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:22849
   type: 其他
-  note: 被Y欣賞/器重：喻樗（CBDB 外部人物）
+  note: 被對方欣賞/器重：喻樗（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 17
+  direction: forward
 - to_id: cbdb:3624
   type: 其他
-  note: 書跋由Y所作：樓鑰（CBDB 外部人物）
+  note: 書跋由對方所作：樓鑰（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
 - to_id: cbdb:10289
   type: 其他
-  note: 書跋由Y所作：袁燮（CBDB 外部人物）
+  note: 書跋由對方所作：袁燮（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 45
+  direction: forward
 - to_id: cbdb:38683
   type: 其他
-  note: 從Y遊：石安民（CBDB 外部人物）
+  note: 從遊者為對方：石安民（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 50
+  direction: forward
 - to_id: cbdb:1310
   type: 其他
-  note: 致書Y：呂頤浩（CBDB 外部人物）
+  note: 被致書由對方：呂頤浩（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
 - to_id: cbdb:8079
   type: 其他
-  note: 致書Y：李光（CBDB 外部人物）
+  note: 被致書由對方：李光（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
 - to_id: cbdb:14034
   type: 其他
-  note: 致書Y：鄭剛中（CBDB 外部人物）
-- to_id: cbdb:1449
-  type: 父子
-  note: 祖父：沈遘（CBDB 外部人物）
+  note: 被致書由對方：鄭剛中（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward

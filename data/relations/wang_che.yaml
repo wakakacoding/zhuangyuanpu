@@ -1,5 +1,0 @@
-from_id: wang_che
-relations:
-  - to_id: liang_song
-    type: 同年
-    note: 925 年同科

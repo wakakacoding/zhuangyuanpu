@@ -3,9 +3,18 @@ relations:
 - to_id: cbdb:220
   type: 同年
   note: 同年友：張漢彥（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:11887
   type: 同年
   note: 同年友：游操（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
 - to_id: cbdb:21173
   type: 同年
   note: 同年友：虞澐（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward

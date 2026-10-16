@@ -1,11 +1,17 @@
 ---
-import { allPersons, presentDynasties, fullProfileIds, roleOf, ROLE_LABEL, ROLE_NOTE, BASE} from '../lib/persons';
+import { allPersons, presentDynasties, fullProfileIds, roleOf, ROLE_LABEL, ROLE_NOTE, BASE, traditionalNames} from '../lib/persons';
 import SeoHead from '../components/SeoHead.astro';
+import SiteNav from '../components/SiteNav.astro';
 import '../styles/base.css';
 import '../styles/search.css';
 
 const persons = allPersons();
 const fullIds = fullProfileIds();
+
+// 繁简双匹配（R3-2b）：姓名 → 繁体名取自 data/index/zhuangyuan_index.yaml 的 name_tw，
+// 构建期注入检索 idx，于是「劉春霖」与「刘春霖」都能命中同一张卡。
+// 比在前端用 OpenCC 转换查询词更稳：查询词不必变，两侧写法都在索引里。
+const nameTw = traditionalNames();
 
 // 单页最多渲染的结果条数：超出则列表顶部提示，引导用户加筛选条件
 const RESULT_LIMIT = 500;
@@ -18,6 +24,8 @@ const nSpecial = persons.length - nZhuangyuan;
 const index = persons.map((p) => ({
   id: p.id,
   n: p.name,
+  // 繁体别名：仅在异于简体名时写入，省字节（多数姓名 418/597 会不同）
+  tw: nameTw[p.name] && nameTw[p.name] !== p.name ? nameTw[p.name] : '',
   zi: p.zi ?? '',
   hao: p.hao ?? '',
   d: p.dynasty,
@@ -51,13 +59,7 @@ const yMax = Math.max(...years);
       <header class="site-head">
         <h1>检索</h1>
         <p class="sub">状元 {nZhuangyuan} 人 · 特例 {nSpecial} 人（探花／事实状元，见卡面徽标） · 朝代 / 科年 / 籍贯 / 标签自由组合</p>
-        <nav class="site-nav">
-          <a href={BASE}>首页</a>
-          <a href={`${BASE}persons/`}>全量索引</a>
-          <a href={`${BASE}stories/`}>故事</a>
-          <a href={`${BASE}galaxy/`}>星图</a>
-          <a href={`${BASE}about/`}>关于</a>
-        </nav>
+        <SiteNav current="/search/" />
       </header>
 
       <section class="filters">
@@ -136,7 +138,8 @@ const yMax = Math.max(...years);
         if (tagEl.value && !p.tg.includes(tagEl.value)) return false;
         const q = qEl.value.trim();
         if (q) {
-          const hay = [p.n, p.zi, p.hao, p.nh, p.nm, p.kc, p.rk, p.bio, p.tg.join(' ')].join(' ');
+          // p.tw = 繁体别名（见文件头 frontmatter），与简体名同列，故「劉春霖」可直接命中刘春霖
+          const hay = [p.n, p.tw, p.zi, p.hao, p.nh, p.nm, p.kc, p.rk, p.bio, p.tg.join(' ')].join(' ');
           if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
         }
         return true;
@@ -144,6 +147,14 @@ const yMax = Math.max(...years);
 
       function esc(s) {
         return s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      }
+
+      // 繁体模式下，结果区是运行期重绘的简体文本，须按当前语言再过一次转换
+      //（转换器与人名保护表都在 SeoHead 里懒加载，这里只借用，不重复实现）。
+      // 与 R3-2c 有关：重绘只重建列表 DOM，**从不触碰任何筛选控件**，故切语言不丢筛选状态。
+      function syncLang() {
+        const api = (window as any).__zypLang;
+        if (api) api.convert(listEl);
       }
 
       function render() {
@@ -169,6 +180,7 @@ const yMax = Math.max(...years);
           </li>`).join('');
         }
         toHash();
+        syncLang();
       }
 
       document.querySelectorAll('.chip').forEach((chip) => {

@@ -1,17 +1,32 @@
 from_id: zhang_guan
 relations:
-- to_id: cbdb:8122
-  type: 政敌
-  note: 彈劾：湯思退（CBDB 外部人物）
-- to_id: cbdb:1953
-  type: 其他
-  note: 為Y所著書作序：文彥博（CBDB 外部人物）
-- to_id: cbdb:46556
-  type: 其他
-  note: 合撰(編)著作：郭稹（CBDB 外部人物）
-- to_id: cbdb:17738
-  type: 父子
-  note: 父：張仲莊（CBDB 外部人物）
 - to_id: cbdb:17737
   type: 父子
   note: 父：張居業（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
+- to_id: cbdb:17738
+  type: 父子
+  note: 子：張仲莊（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:8122
+  type: 政敌
+  note: 彈劾：湯思退（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 11
+  direction: forward
+- to_id: cbdb:1953
+  type: 其他
+  note: 書序由對方所作：文彥博（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 33
+  direction: forward
+- to_id: cbdb:46556
+  type: 其他
+  note: 合撰(編)著作：郭稹（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 251
+  direction: forward

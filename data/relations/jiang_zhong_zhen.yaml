@@ -1,29 +1,56 @@
 from_id: jiang_zhong_zhen
 relations:
-- to_id: cbdb:10297
-  type: 同年
-  note: 同年友：袁商（CBDB 外部人物）
-- to_id: cbdb:15249
-  type: 同年
-  note: 同年友：趙與汶（CBDB 外部人物）
-- to_id: cbdb:15335
-  type: 同年
-  note: 同年友：鄭起潛（CBDB 外部人物）
-- to_id: cbdb:50116
-  type: 同年
-  note: 同年友：趙發（CBDB 外部人物）
-- to_id: cbdb:50218
-  type: 同年
-  note: 同年友：趙子直（CBDB 外部人物）
-- to_id: cbdb:4001
-  type: 其他
-  note: 致書Y：魏了翁（CBDB 外部人物）
-- to_id: cbdb:41511
-  type: 其他
-  note: 答Y書：吳泳（CBDB 外部人物）
 - to_id: cbdb:3198
-  type: 父子
+  type: 祖孫
   note: 祖父：趙弘殷（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:48424
   type: 翁婿
   note: 岳父：湯璹（CBDB 外部人物）
+  src: cbdb
+  kin_code: 76
+  direction: forward
+- to_id: cbdb:10297
+  type: 同年
+  note: 同年友：袁商（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:15249
+  type: 同年
+  note: 同年友：趙與汶（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:15335
+  type: 同年
+  note: 同年友：鄭起潛（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:50116
+  type: 同年
+  note: 同年友：趙發（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:50218
+  type: 同年
+  note: 同年友：趙子直（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:4001
+  type: 其他
+  note: 被致書由對方：魏了翁（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:41511
+  type: 其他
+  note: 收到對方的答書：吳泳（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward

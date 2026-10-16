@@ -1,50 +1,98 @@
 from_id: jin_bang
 relations:
-- to_id: cbdb:34187
-  type: 友人
-  note: 友：洪榜（CBDB 外部人物）
-- to_id: cbdb:65933
-  type: 友人
-  note: 友：戴震（CBDB 外部人物）
-- to_id: cbdb:69174
-  type: 友人
-  note: 友：王灼（CBDB 外部人物）
-- to_id: cbdb:72460
-  type: 其他
-  note: 被Y欣賞/器重：方矩（CBDB 外部人物）
-- to_id: cbdb:33184
-  type: 师生
-  note: 為Y之學生：江永（CBDB 外部人物）
-- to_id: cbdb:74894
-  type: 师生
-  note: 為Y之學生：劉大櫆（CBDB 外部人物）
-- to_id: cbdb:34226
-  type: 师生
-  note: 為Y之學生：張惠言（CBDB 外部人物）
-- to_id: cbdb:29954
-  type: 其他
-  note: 為Y所著書作序：朱珪（CBDB 外部人物）
-- to_id: cbdb:65933
-  type: 其他
-  note: 同鄉：戴震（CBDB 外部人物）
-- to_id: cbdb:90063
-  type: 其他
-  note: 同鄉：程瑤田（CBDB 外部人物）
 - to_id: cbdb:577403
-  type: 父子
+  type: 祖孫
   note: 祖父：金茂宣（CBDB 外部人物）
-- to_id: cbdb:530139
-  type: 父子
-  note: 父：金應琛（CBDB 外部人物）
-- to_id: cbdb:530140
-  type: 父子
-  note: 父：金應瑭（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:374226
   type: 父子
   note: 父：金長溥（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:684620
+  type: 旁系
+  note: 從子;姪子：金應球（CBDB 外部人物）
+  src: cbdb
+  kin_code: 177
+  direction: forward
+- to_id: cbdb:530139
   type: 父子
-  note: 從父;伯叔父：金應球（CBDB 外部人物）
+  note: 子：金應琛（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:530140
+  type: 父子
+  note: 子：金應瑭（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
 - to_id: cbdb:577404
-  type: 父子
-  note: 從子;姪子：金長洪（CBDB 外部人物）
+  type: 旁系
+  note: 伯;伯父：金長洪（CBDB 外部人物）
+  src: cbdb
+  kin_code: 516
+  direction: forward
+- to_id: cbdb:34187
+  type: 友人
+  note: 友：洪榜（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
+- to_id: cbdb:65933
+  type: 友人
+  note: 友：戴震（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
+- to_id: cbdb:69174
+  type: 友人
+  note: 友：王灼（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
+- to_id: cbdb:72460
+  type: 其他
+  note: 欣賞/器重：方矩（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 18
+  direction: forward
+- to_id: cbdb:33184
+  type: 师生
+  note: 為對方之學生：江永（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 22
+  direction: forward
+- to_id: cbdb:74894
+  type: 师生
+  note: 為對方之學生：劉大櫆（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 22
+  direction: forward
+- to_id: cbdb:34226
+  type: 师生
+  note: 學生為對方：張惠言（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:29954
+  type: 其他
+  note: 書序由對方所作：朱珪（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 33
+  direction: forward
+- to_id: cbdb:65933
+  type: 其他
+  note: 同鄉：戴震（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 94
+  direction: forward
+- to_id: cbdb:90063
+  type: 其他
+  note: 同鄉：程瑤田（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 94
+  direction: forward

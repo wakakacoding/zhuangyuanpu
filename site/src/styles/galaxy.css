@@ -8,8 +8,16 @@ body { background: #0e1420; color: #e8e2d0; }
 .galaxy-head h1 { font-size: 1.8rem; color: #e8d9a8; letter-spacing: 0.15em; margin: 0 0 0.4rem; }
 .galaxy-head .sub { color: rgba(232, 226, 208, 0.6); font-size: 0.88rem; margin: 0 0 1rem; }
 .galaxy-page .site-nav { margin: 0.8rem 0 1.2rem; }
-.galaxy-page .site-nav a { color: rgba(212, 175, 55, 0.85); font-size: 0.86rem; text-decoration: none; margin-right: 1.1rem; }
+.galaxy-page .site-nav a {
+  color: rgba(212, 175, 55, 0.85); font-size: 0.86rem; text-decoration: none;
+  margin-right: 1.1rem;
+  /* 覆盖 base.css 里宣纸风胶囊样式（SiteNav 组件在夜模式页仍是同一份 DOM） */
+  border: 0; background: none; padding: 0;
+}
 .galaxy-page .site-nav a:hover { color: #d4af37; }
+.galaxy-page .site-nav a[aria-current="page"] { color: #f0e2b0; border-bottom: 1px solid #d4af37; }
+.galaxy-page .site-nav .nav-rss { color: #d4af37; }
+.galaxy-page .site-nav .nav-rss::before { background: #d4af37; }
 
 .galaxy-guide {
   border-left: 3px solid #a98b3f; padding: 0.5rem 0 0.5rem 0.9rem;

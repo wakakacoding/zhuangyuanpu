@@ -11,6 +11,7 @@ import path from 'node:path';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import { BASE } from '../../lib/persons';
 import SeoHead from '../../components/SeoHead.astro';
+import SiteNav from '../../components/SiteNav.astro';
 import '../../styles/base.css';
 
 const apiDir = path.resolve(process.cwd(), 'public/api');
@@ -57,17 +58,7 @@ const endpoints = [
           数据即正文的可机读形态：{counts.persons ?? '—'} 张人物卡（按 <code>role</code> 字段可分离状元与特例）的生平事件、著作、轶事与关系。
           全部构建期生成，无密钥、无速率限制。
         </p>
-        <nav class="site-nav">
-          <a href={BASE}>首页</a>
-          <a href={`${BASE}stories/`}>故事</a>
-          <a href={`${BASE}search/`}>检索</a>
-          <a href={`${BASE}map/`}>籍贯地图</a>
-          <a href={`${BASE}galaxy/`}>星图</a>
-          <a href={`${BASE}timeline/`}>时间线</a>
-          <a href={`${BASE}stats/`}>统计</a>
-          <a href={`${BASE}persons/`}>索引</a>
-          <a href={`${BASE}about/#download`}>数据下载</a>
-        </nav>
+        <SiteNav current="/api/" />
       </header>
 
       <section class="dl-top">
@@ -88,14 +79,6 @@ const endpoints = [
     </div>
 
     <style>
-      .site-nav { margin-top: 0.9rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
-      .site-nav a {
-        font-size: 0.8rem; text-decoration: none; color: var(--ink);
-        border: 1px solid var(--line); padding: 0.1rem 0.6rem; border-radius: 2px;
-        background: #fbf8f0;
-      }
-      .site-nav a:hover { color: var(--cinnabar); border-color: var(--cinnabar); }
-
       .dl-grid { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
       .dl-card {
         display: block; text-decoration: none; color: inherit;

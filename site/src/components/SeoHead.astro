@@ -30,6 +30,14 @@ const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
 <meta property="og:site_name" content="状元谱" />
 <meta name="twitter:card" content="summary_large_image" />
 
+<!-- RSS 订阅源：让浏览器／阅读器自动发现（页面上的可见入口在 SiteNav 组件） -->
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="状元谱 · 故事"
+  href={new URL(base + '/rss.xml', site).href}
+/>
+
 <!-- 繁简切换（全站共用入口）：浮动印章按钮，懒加载 OpenCC，人名占位符保护 -->
 <button id="cc-toggle" type="button" aria-label="切换繁体">繁</button>
 <style>
@@ -85,8 +93,16 @@ const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
     }
 
     function convertPage() {
+      convertSubtree(document.body);
+      document.documentElement.lang = 'zh-Hant';
+      btn.textContent = '简';
+      btn.setAttribute('aria-label', '切换简体');
+    }
+
+    // 只转一棵子树（页面整页转繁 = convertSubtree(body)，另见 convertPage）
+    function convertSubtree(root) {
       const walker = document.createTreeWalker(
-        document.body, NodeFilter.SHOW_TEXT,
+        root, NodeFilter.SHOW_TEXT,
         { acceptNode: (n) => {
             const p = n.parentElement;
             if (!p || /^(SCRIPT|STYLE|TEXTAREA|CODE|PRE|NOSCRIPT)$/.test(p.tagName)) return NodeFilter.FILTER_REJECT;
@@ -99,10 +115,18 @@ const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
         const [text, tokens] = shield(n.nodeValue);
         n.nodeValue = unshield(converter(text), tokens);
       }
-      document.documentElement.lang = 'zh-Hant';
-      btn.textContent = '简';
-      btn.setAttribute('aria-label', '切换简体');
     }
+
+    // 给「运行期会重绘 DOM」的页面用的接口（当前是 /search/ 的结果列表）：
+    // 重绘出来的永远是构建期的简体文本，须按当前语言再过一次转换，否则整页繁、结果区简。
+    // 人名受 protected_names.json 屏蔽，转换前后一致——与全站人名口径一致。
+    window.__zypLang = {
+      isHant: () => document.documentElement.lang === 'zh-Hant',
+      convert: (root) => {
+        if (document.documentElement.lang !== 'zh-Hant' || !root) return;
+        loadDeps().then(() => convertSubtree(root)).catch(() => { /* 字典缺失则静默保持简体 */ });
+      },
+    };
 
     function activate() {
       loadDeps().then(() => { convertPage(); localStorage.setItem(KEY, 't'); })

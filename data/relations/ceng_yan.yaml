@@ -1,50 +1,80 @@
 from_id: ceng_yan
 relations:
-- to_id: cbdb:34510
-  type: 其他
-  note: 贈詩、文：倪岳（CBDB 外部人物）
 - to_id: cbdb:250692
-  type: 父子
+  type: 祖孫
   note: 曾祖：曾文昇（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:250693
-  type: 父子
+  type: 祖孫
   note: 祖父：曾渙宗（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:250694
   type: 父子
   note: 父：曾廣相（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:250696
-  type: 其他
+  type: 母子
   note: 母：蕭氏(曾彥母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:250700
   type: 兄弟
-  note: 兄：曾某（CBDB 外部人物）
+  note: 弟：曾某（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:250701
   type: 兄弟
-  note: 兄：曾學（CBDB 外部人物）
+  note: 弟：曾學（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:250702
   type: 兄弟
-  note: 兄：曾華（CBDB 外部人物）
+  note: 弟：曾華（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:250703
   type: 兄弟
-  note: 兄：曾絢（CBDB 外部人物）
+  note: 弟：曾絢（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:250704
   type: 兄弟
-  note: 兄：曾韶（CBDB 外部人物）
+  note: 弟：曾韶（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:250697
-  type: 其他
-  note: 丈夫：蕭氏(曾彥妻)（CBDB 外部人物）
-- to_id: cbdb:250699
-  type: 其他
-  note: 丈夫：吳氏(曾彥繼妻)（CBDB 外部人物）
-- to_id: cbdb:250697
-  type: 父子
+  type: 夫妻
   note: 妻子：蕭氏(曾彥妻)（CBDB 外部人物）
-- to_id: cbdb:250696
-  type: 父子
-  note: 子：蕭氏(曾彥母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:250699
+  type: 夫妻
+  note: 第二任妻：吳氏(曾彥繼妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 163
+  direction: forward
 - to_id: cbdb:250695
-  type: 父子
-  note: 繼子：尹氏(曾彥前母)（CBDB 外部人物）
-- to_id: cbdb:250695
-  type: 其他
+  type: 母子
   note: 繼母：尹氏(曾彥前母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 375
+  direction: forward
+- to_id: cbdb:34510
+  type: 其他
+  note: 收到對方的贈詩、文：倪岳（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 438
+  direction: forward

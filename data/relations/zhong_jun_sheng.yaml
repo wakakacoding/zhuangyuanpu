@@ -1,8 +1,14 @@
 from_id: zhong_jun_sheng
 relations:
-- to_id: cbdb:55540
-  type: 其他
-  note: 書跋由Y所作：左錫嘉（CBDB 外部人物）
 - to_id: cbdb:84891
   type: 父子
   note: 父：鍾世耀（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
+- to_id: cbdb:55540
+  type: 其他
+  note: 為對方所著書作跋：左錫嘉（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 46
+  direction: forward

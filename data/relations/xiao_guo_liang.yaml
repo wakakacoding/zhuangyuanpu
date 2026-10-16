@@ -1,26 +1,50 @@
 from_id: xiao_guo_liang
 relations:
-- to_id: cbdb:15024
-  type: 同年
-  note: 同年友：陳損之（CBDB 外部人物）
-- to_id: cbdb:21819
-  type: 同年
-  note: 同年友：崔淵（CBDB 外部人物）
-- to_id: cbdb:46110
-  type: 同年
-  note: 同年友：奚商衡（CBDB 外部人物）
-- to_id: cbdb:10566
-  type: 其他
-  note: 推薦：楊萬里（CBDB 外部人物），始年 1184
 - to_id: cbdb:25111
-  type: 父子
+  type: 旁系
   note: 從祖;伯叔祖：蕭磐（CBDB 外部人物）
-- to_id: cbdb:26025
-  type: 翁婿
-  note: 岳父：陳宗亮（CBDB 外部人物）
-- to_id: cbdb:25116
-  type: 兄弟
-  note: 從弟：蕭說（CBDB 外部人物）
+  src: cbdb
+  kin_code: 64
+  direction: forward
 - to_id: cbdb:25117
   type: 兄弟
   note: 從弟：蕭國馨（CBDB 外部人物）
+  src: cbdb
+  kin_code: 130
+  direction: forward
+- to_id: cbdb:25116
+  type: 兄弟
+  note: 從兄：蕭說（CBDB 外部人物）
+  src: cbdb
+  kin_code: 131
+  direction: forward
+- to_id: cbdb:26025
+  type: 翁婿
+  note: 女婿：陳宗亮（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:15024
+  type: 同年
+  note: 同年友：陳損之（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:21819
+  type: 同年
+  note: 同年友：崔淵（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:46110
+  type: 同年
+  note: 同年友：奚商衡（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:10566
+  type: 其他
+  note: 被對方推薦：楊萬里（CBDB 外部人物），始年 1196
+  src: cbdb
+  assoc_code: 14
+  direction: forward

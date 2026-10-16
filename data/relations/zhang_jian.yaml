@@ -3,15 +3,30 @@ relations:
 - to_id: cbdb:62752
   type: 友人
   note: 友：博爾濟吉特瑞澂（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
 - to_id: cbdb:66590
   type: 友人
   note: 友：倪文蔚（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
 - to_id: cbdb:125484
   type: 友人
   note: 友：蕭允文（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 9
+  direction: forward
 - to_id: cbdb:65890
   type: 师生
-  note: 為Y之學生：張裕釗（CBDB 外部人物）
+  note: 為對方之學生：張裕釗（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 22
+  direction: forward
 - to_id: cbdb:120933
   type: 友人
   note: 相唱和：呂美蓀（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 114
+  direction: forward

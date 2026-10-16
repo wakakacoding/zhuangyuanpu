@@ -1,14 +1,26 @@
 from_id: xu_an_shi
 relations:
-- to_id: cbdb:8098
-  type: 其他
-  note: 從Y遊：陸佃（CBDB 外部人物）
 - to_id: cbdb:11962
   type: 父子
   note: 父：許拯（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:1435
   type: 翁婿
   note: 岳父：邵亢（CBDB 外部人物）
+  src: cbdb
+  kin_code: 76
+  direction: forward
 - to_id: cbdb:11979
-  type: 父子
+  type: 旁系
   note: 族父：許昌齡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 97
+  direction: forward
+- to_id: cbdb:8098
+  type: 其他
+  note: 從對方遊：陸佃（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 49
+  direction: forward

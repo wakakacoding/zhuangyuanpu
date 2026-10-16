@@ -1,17 +1,32 @@
 from_id: zhan_kui
 relations:
-- to_id: cbdb:3088
-  type: 同年
-  note: 同年友：陳宗召（CBDB 外部人物）
-- to_id: cbdb:11848
-  type: 同年
-  note: 同年友：湯碩（CBDB 外部人物）
-- to_id: cbdb:48155
-  type: 同年
-  note: 同年友：常建（CBDB 外部人物）
-- to_id: cbdb:3624
-  type: 其他
-  note: 答Y啓：樓鑰（CBDB 外部人物）
 - to_id: cbdb:13437
   type: 父子
   note: 父：詹林宗（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
+- to_id: cbdb:3088
+  type: 同年
+  note: 同年友：陳宗召（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:11848
+  type: 同年
+  note: 同年友：湯碩（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:48155
+  type: 同年
+  note: 同年友：常建（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 10
+  direction: forward
+- to_id: cbdb:3624
+  type: 其他
+  note: 收到對方的答啓：樓鑰（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 436
+  direction: forward

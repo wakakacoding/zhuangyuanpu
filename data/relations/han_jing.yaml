@@ -1,83 +1,140 @@
 from_id: han_jing
 relations:
-- to_id: cbdb:129997
-  type: 其他
-  note: 為Y所著書作序：徐學聚（CBDB 外部人物）
-- to_id: cbdb:65870
-  type: 其他
-  note: 致書Y：湯顯祖（CBDB 外部人物）
-- to_id: cbdb:124068
-  type: 其他
-  note: 致書Y：沈演（CBDB 外部人物）
-- to_id: cbdb:129528
-  type: 其他
-  note: 致書Y：夏樹芳（CBDB 外部人物）
-- to_id: cbdb:35223
-  type: 其他
-  note: 答Y書：袁中道（CBDB 外部人物）
-- to_id: cbdb:35266
-  type: 其他
-  note: 答Y書：岳元聲（CBDB 外部人物）
-- to_id: cbdb:118893
-  type: 其他
-  note: 答Y書：虞淳熙（CBDB 外部人物）
-- to_id: cbdb:131951
-  type: 其他
-  note: 答Y書：葉向高（CBDB 外部人物）
-- to_id: cbdb:132550
-  type: 其他
-  note: 答Y書：蔣孟育（CBDB 外部人物）
-- to_id: cbdb:133498
-  type: 其他
-  note: 答Y書：譚元春（CBDB 外部人物）
-- to_id: cbdb:360451
-  type: 其他
-  note: 答Y書：戴澳（CBDB 外部人物）
 - to_id: cbdb:236050
-  type: 父子
+  type: 祖孫
   note: 曾祖：韓繼（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:236051
-  type: 父子
+  type: 祖孫
   note: 祖父：韓志孝（CBDB 外部人物）
-- to_id: cbdb:122861
-  type: 父子
-  note: 父：韓智玥（CBDB 外部人物）
-- to_id: cbdb:236058
-  type: 父子
-  note: 父：韓尉祖（CBDB 外部人物）
-- to_id: cbdb:236059
-  type: 父子
-  note: 父：韓懌祖（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:236052
   type: 父子
   note: 父：韓紹（CBDB 外部人物）
-- to_id: cbdb:122867
-  type: 翁婿
-  note: 岳父：于鑾（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:236053
-  type: 其他
+  type: 母子
   note: 母：沈氏(韓敬母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:236056
   type: 兄弟
   note: 兄：韓敏求（CBDB 外部人物）
+  src: cbdb
+  kin_code: 125
+  direction: forward
 - to_id: cbdb:236057
   type: 兄弟
   note: 兄：韓敏德（CBDB 外部人物）
+  src: cbdb
+  kin_code: 125
+  direction: forward
 - to_id: cbdb:122968
-  type: 其他
-  note: 丈夫：瞿寄安（CBDB 外部人物）
-- to_id: cbdb:236055
-  type: 其他
-  note: 丈夫：沈氏(韓敬妻)（CBDB 外部人物）
-- to_id: cbdb:122968
-  type: 父子
+  type: 夫妻
   note: 妻子：瞿寄安（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
 - to_id: cbdb:236055
-  type: 父子
+  type: 夫妻
   note: 妻子：沈氏(韓敬妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
 - to_id: cbdb:122861
-  type: 其他
+  type: 父女
   note: 女兒：韓智玥（CBDB 外部人物）
-- to_id: cbdb:236053
+  src: cbdb
+  kin_code: 176
+  direction: forward
+- to_id: cbdb:236058
   type: 父子
-  note: 子：沈氏(韓敬母)（CBDB 外部人物）
+  note: 子：韓尉祖（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:236059
+  type: 父子
+  note: 子：韓懌祖（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:122867
+  type: 翁婿
+  note: 女婿：于鑾（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:129997
+  type: 其他
+  note: 為對方所著書作序：徐學聚（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:65870
+  type: 其他
+  note: 被致書由對方：湯顯祖（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:124068
+  type: 其他
+  note: 被致書由對方：沈演（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:129528
+  type: 其他
+  note: 被致書由對方：夏樹芳（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:35223
+  type: 其他
+  note: 收到對方的答書：袁中道（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward
+- to_id: cbdb:35266
+  type: 其他
+  note: 收到對方的答書：岳元聲（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward
+- to_id: cbdb:118893
+  type: 其他
+  note: 收到對方的答書：虞淳熙（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward
+- to_id: cbdb:131951
+  type: 其他
+  note: 收到對方的答書：葉向高（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward
+- to_id: cbdb:132550
+  type: 其他
+  note: 收到對方的答書：蔣孟育（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward
+- to_id: cbdb:133498
+  type: 其他
+  note: 收到對方的答書：譚元春（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward
+- to_id: cbdb:360451
+  type: 其他
+  note: 收到對方的答書：戴澳（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward

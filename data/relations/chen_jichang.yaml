@@ -1,26 +1,50 @@
 from_id: chen_jichang
 relations:
-- to_id: cbdb:56508
-  type: 其他
-  note: 為Y所著書作序：李如蕙（CBDB 外部人物）
-- to_id: cbdb:91440
-  type: 其他
-  note: 從Y學：潘諮（CBDB 外部人物）
 - to_id: cbdb:57786
-  type: 父子
+  type: 祖孫
   note: 祖父：陳宏謀（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:520416
   type: 父子
   note: 父：陳元燾（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:520417
   type: 兄弟
-  note: 兄：陳奎昌（CBDB 外部人物）
+  note: 弟：陳奎昌（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:520418
-  type: 父子
-  note: 從子;姪子：陳鼎勳（CBDB 外部人物）
+  type: 旁系
+  note: 叔;叔父：陳鼎勳（CBDB 外部人物）
+  src: cbdb
+  kin_code: 517
+  direction: forward
 - to_id: cbdb:520419
-  type: 父子
-  note: 姪孫;從孫：陳蘭謁（CBDB 外部人物）
+  type: 旁系
+  note: 叔祖;叔祖父：陳蘭謁（CBDB 外部人物）
+  src: cbdb
+  kin_code: 519
+  direction: forward
 - to_id: cbdb:520420
-  type: 父子
-  note: 姪孫;從孫：陳蘭簪（CBDB 外部人物）
+  type: 旁系
+  note: 叔祖;叔祖父：陳蘭簪（CBDB 外部人物）
+  src: cbdb
+  kin_code: 519
+  direction: forward
+- to_id: cbdb:56508
+  type: 其他
+  note: 為對方所著書作序：李如蕙（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:91440
+  type: 其他
+  note: 從對方學：潘諮（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 231
+  direction: forward

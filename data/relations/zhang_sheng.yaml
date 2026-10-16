@@ -1,56 +1,86 @@
 from_id: zhang_sheng
 relations:
-- to_id: cbdb:129830
-  type: 其他
-  note: 墓誌銘由Y所作：殷謙（CBDB 外部人物）
-- to_id: cbdb:130010
-  type: 其他
-  note: 墓誌銘由Y所作：徐瓊（CBDB 外部人物）
-- to_id: cbdb:133523
-  type: 其他
-  note: 墓誌銘由Y所作：羅玘（CBDB 外部人物）
-- to_id: cbdb:34655
-  type: 其他
-  note: 為Y作祭文：夏良勝（CBDB 外部人物）
-- to_id: cbdb:34700
-  type: 其他
-  note: 為Y所作詩文作序：王慎中（CBDB 外部人物）
 - to_id: cbdb:242582
-  type: 父子
+  type: 祖孫
   note: 曾祖：張循禮（CBDB 外部人物）
-- to_id: cbdb:525503
-  type: 父子
-  note: 祖父：張嵫（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:242583
-  type: 父子
+  type: 祖孫
   note: 祖父：張德厚（CBDB 外部人物）
-- to_id: cbdb:346715
-  type: 父子
-  note: 父：張恩（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:242584
   type: 父子
   note: 父：張文質（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:242587
-  type: 其他
+  type: 母子
   note: 母：饒氏(張昇母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:242589
-  type: 其他
-  note: 丈夫：胡氏(張昇妻)（CBDB 外部人物）
-- to_id: cbdb:242589
-  type: 父子
+  type: 夫妻
   note: 妻子：胡氏(張昇妻)（CBDB 外部人物）
-- to_id: cbdb:242587
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:346715
   type: 父子
-  note: 子：饒氏(張昇母)（CBDB 外部人物）
+  note: 長子; 第一子：張恩（CBDB 外部人物）
+  src: cbdb
+  kin_code: 182
+  direction: forward
+- to_id: cbdb:525503
+  type: 祖孫
+  note: 孫：張嵫（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
 - to_id: cbdb:242585
-  type: 父子
-  note: 繼子：何氏(張昇前母)（CBDB 外部人物）
-- to_id: cbdb:242588
-  type: 父子
-  note: 繼子：江氏(張昇繼母)（CBDB 外部人物）
-- to_id: cbdb:242585
-  type: 其他
+  type: 母子
   note: 繼母：何氏(張昇前母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 375
+  direction: forward
 - to_id: cbdb:242588
-  type: 其他
+  type: 母子
   note: 繼母：江氏(張昇繼母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 375
+  direction: forward
+- to_id: cbdb:133523
+  type: 其他
+  note: 墓誌銘由對方所作：羅玘（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 43
+  direction: forward
+- to_id: cbdb:129830
+  type: 其他
+  note: 為對方作墓誌銘：殷謙（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:130010
+  type: 其他
+  note: 為對方作墓誌銘：徐瓊（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:34655
+  type: 其他
+  note: 祭文由對方所作：夏良勝（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 146
+  direction: forward
+- to_id: cbdb:34700
+  type: 其他
+  note: 詩文序由對方所作：王慎中（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 480
+  direction: forward

@@ -1,38 +1,62 @@
 from_id: ding_shi_mei
 relations:
-- to_id: cbdb:126359
-  type: 其他
-  note: 為Y作祭文：于愼行（CBDB 外部人物）
 - to_id: cbdb:322950
-  type: 父子
+  type: 祖孫
   note: 曾祖：丁進（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:322951
-  type: 父子
+  type: 祖孫
   note: 祖父：丁鳳（CBDB 外部人物）
-- to_id: cbdb:34289
-  type: 父子
-  note: 父：丁有殷（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:34288
   type: 父子
   note: 父：丁儒（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:322953
   type: 父子
   note: 父：丁儒（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:322954
-  type: 其他
+  type: 母子
   note: 母：仲氏(丁士美母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:322957
   type: 兄弟
-  note: 兄：丁士良（CBDB 外部人物）
+  note: 弟：丁士良（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:322955
-  type: 其他
-  note: 丈夫：周氏(丁士美妻)（CBDB 外部人物）
-- to_id: cbdb:322956
-  type: 其他
-  note: 丈夫：李氏(丁士美繼妻)（CBDB 外部人物）
-- to_id: cbdb:322955
-  type: 父子
+  type: 夫妻
   note: 妻子：周氏(丁士美妻)（CBDB 外部人物）
-- to_id: cbdb:322954
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:322956
+  type: 夫妻
+  note: 第二任妻：李氏(丁士美繼妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 163
+  direction: forward
+- to_id: cbdb:34289
   type: 父子
-  note: 子：仲氏(丁士美母)（CBDB 外部人物）
+  note: 子：丁有殷（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:126359
+  type: 其他
+  note: 祭文由對方所作：于愼行（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 146
+  direction: forward

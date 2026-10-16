@@ -1,26 +1,50 @@
 from_id: weng_zheng_chun
 relations:
-- to_id: cbdb:131951
-  type: 其他
-  note: 為Y所著書作序：葉向高（CBDB 外部人物）
-- to_id: cbdb:132022
-  type: 其他
-  note: 神道碑由Y所作：董應擧（CBDB 外部人物）
 - to_id: cbdb:232241
-  type: 父子
+  type: 祖孫
   note: 曾祖：翁弼（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:527236
-  type: 父子
+  type: 祖孫
   note: 曾祖：翁弼鄉（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:232242
-  type: 父子
+  type: 祖孫
   note: 祖父：翁朝建（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:232243
   type: 父子
   note: 父：翁賢（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:527237
   type: 父子
   note: 父：翁興賢（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:527235
-  type: 父子
-  note: 從父;伯叔父：翁廷隆（CBDB 外部人物）
+  type: 旁系
+  note: 從子;姪子：翁廷隆（CBDB 外部人物）
+  src: cbdb
+  kin_code: 177
+  direction: forward
+- to_id: cbdb:131951
+  type: 其他
+  note: 書序由對方所作：葉向高（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 33
+  direction: forward
+- to_id: cbdb:132022
+  type: 其他
+  note: 神道碑由對方所作：董應擧（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 405
+  direction: forward

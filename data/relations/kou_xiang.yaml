@@ -1,11 +1,20 @@
 from_id: kou_xiang
 relations:
-- to_id: cbdb:3436
-  type: 父子
-  note: 祖父：寇隨（CBDB 外部人物）
 - to_id: cbdb:19359
   type: 父子
   note: 父：寇延良（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:898
   type: 父子
-  note: 父：寇準（CBDB 外部人物）
+  note: 子：寇準（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:3436
+  type: 祖孫
+  note: 孫：寇隨（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward

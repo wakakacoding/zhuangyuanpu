@@ -1,20 +1,38 @@
 from_id: mo_chou
 relations:
-- to_id: cbdb:15274
-  type: 政敌
-  note: 反對/攻訐：鄭億年（CBDB 外部人物）
-- to_id: cbdb:7343
-  type: 其他
-  note: 為Y所著書作序：孫覿（CBDB 外部人物），始年 1139
-- to_id: cbdb:1978
-  type: 其他
-  note: 反對/不支持Y的政策：吳懋（CBDB 外部人物）
-- to_id: cbdb:1979
-  type: 同僚
-  note: 同僚：吳幵（CBDB 外部人物）
 - to_id: cbdb:16379
   type: 父子
   note: 父：莫卞（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:7165
   type: 翁婿
-  note: 岳父：張濤（CBDB 外部人物）
+  note: 女婿：張濤（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:15274
+  type: 政敌
+  note: 反對/攻訐：鄭億年（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 15
+  direction: forward
+- to_id: cbdb:7343
+  type: 其他
+  note: 書序由對方所作：孫覿（CBDB 外部人物），始年 1148
+  src: cbdb
+  assoc_code: 33
+  direction: forward
+- to_id: cbdb:1978
+  type: 其他
+  note: 其政策被對方反對/不支持：吳懋（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 137
+  direction: forward
+- to_id: cbdb:1979
+  type: 同僚
+  note: 同僚：吳幵（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 197
+  direction: forward

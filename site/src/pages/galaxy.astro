@@ -4,6 +4,7 @@ import path from 'node:path';
 import { BASE, REIGNS, allPersons, specialRoles } from '../lib/persons';
 import { listStories } from '../lib/story';
 import SeoHead from '../components/SeoHead.astro';
+import SiteNav from '../components/SiteNav.astro';
 import '../styles/base.css';
 import '../styles/galaxy.css';
 
@@ -84,14 +85,7 @@ const nSpecial = specialRoles(allPersons()).length;
       <header class="galaxy-head">
         <h1>状元星图</h1>
         <p class="sub">{stars.length} 星 · {galaxy.xr[0]}—{galaxy.xr[1]} · 金亮 {counts.story} · 拖拽平移，滚轮缩放</p>
-        <nav class="site-nav">
-          <a href={BASE}>首页</a>
-          <a href={`${BASE}search/`}>检索</a>
-          <a href={`${BASE}map/`}>地图</a>
-          <a href={`${BASE}timeline/`}>时间线</a>
-          <a href={`${BASE}stats/`}>统计</a>
-          <a href={`${BASE}about/`}>关于</a>
-        </nav>
+        <SiteNav current="/galaxy/" />
       </header>
 
       <p class="galaxy-guide">

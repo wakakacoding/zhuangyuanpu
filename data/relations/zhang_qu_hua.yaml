@@ -1,65 +1,128 @@
 from_id: zhang_qu_hua
 relations:
-- to_id: cbdb:7097
-  type: 其他
-  note: 推薦：楊億（CBDB 外部人物），始年 984
-- to_id: cbdb:13682
-  type: 父子
-  note: 直系祖先：張良臣（CBDB 外部人物）
-- to_id: cbdb:699339
-  type: 父子
-  note: 曾祖：張立（CBDB 外部人物）
-- to_id: cbdb:205
-  type: 父子
-  note: 祖父：張景憲（CBDB 外部人物）
-- to_id: cbdb:26513
-  type: 父子
-  note: 祖父：張景觀（CBDB 外部人物）
-- to_id: cbdb:33294
-  type: 父子
-  note: 祖父：張景山（CBDB 外部人物）
-- to_id: cbdb:45189
-  type: 父子
-  note: 祖父：張氏(晏成裕妻)（CBDB 外部人物）
-- to_id: cbdb:700146
-  type: 父子
-  note: 祖父：張景晟（CBDB 外部人物）
-- to_id: cbdb:4144
-  type: 父子
-  note: 妻之祖父：晏成裕（CBDB 外部人物）
-- to_id: cbdb:282
-  type: 父子
-  note: 父：張師顏（CBDB 外部人物）
-- to_id: cbdb:13674
-  type: 父子
-  note: 父：張師錫（CBDB 外部人物）
-- to_id: cbdb:13675
-  type: 父子
-  note: 父：張師皋（CBDB 外部人物）
-- to_id: cbdb:13676
-  type: 父子
-  note: 父：張師古（CBDB 外部人物）
-- to_id: cbdb:26518
-  type: 父子
-  note: 父：張師雄（CBDB 外部人物）
-- to_id: cbdb:39731
-  type: 父子
-  note: 父：張氏(向敏中妻)（CBDB 外部人物）
-- to_id: cbdb:119954
-  type: 父子
-  note: 父：張師顔（CBDB 外部人物）
 - to_id: cbdb:13673
   type: 父子
   note: 父：張誼（CBDB 外部人物）
-- to_id: cbdb:11666
+  src: cbdb
+  kin_code: 75
+  direction: forward
+- to_id: cbdb:39731
+  type: 父女
+  note: 女兒：張氏(向敏中妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 176
+  direction: forward
+- to_id: cbdb:282
   type: 父子
-  note: 嗣父：張汝士（CBDB 外部人物）
+  note: 子：張師顏（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:13674
+  type: 父子
+  note: 子：張師錫（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:13675
+  type: 父子
+  note: 子：張師皋（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:13676
+  type: 父子
+  note: 子：張師古（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:26518
+  type: 父子
+  note: 子：張師雄（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
 - to_id: cbdb:705
   type: 翁婿
-  note: 第二任妻父：向敏中（CBDB 外部人物）
-- to_id: cbdb:39731
-  type: 其他
-  note: 女兒：張氏(向敏中妻)（CBDB 外部人物）
+  note: 女婿：向敏中（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:119954
+  type: 父子
+  note: 三子：張師顔（CBDB 外部人物）
+  src: cbdb
+  kin_code: 184
+  direction: forward
+- to_id: cbdb:11666
+  type: 父子
+  note: 過繼的嗣子：張汝士（CBDB 外部人物）
+  src: cbdb
+  kin_code: 186
+  direction: forward
+- to_id: zhang_shi_de
+  type: 父子
+  note: 十子（CBDB）
+  src: cbdb
+  kin_code: 195
+  direction: forward
+- to_id: cbdb:11666
+  type: 旁系
+  note: 族子：張汝士（CBDB 外部人物）
+  src: cbdb
+  kin_code: 210
+  direction: forward
+- to_id: cbdb:205
+  type: 祖孫
+  note: 孫：張景憲（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:26513
+  type: 祖孫
+  note: 孫：張景觀（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:33294
+  type: 祖孫
+  note: 孫：張景山（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:700146
+  type: 祖孫
+  note: 孫：張景晟（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
 - to_id: cbdb:4144
-  type: 翁婿
+  type: 姻亲
   note: 孫女婿：晏成裕（CBDB 外部人物）
+  src: cbdb
+  kin_code: 244
+  direction: forward
+- to_id: cbdb:45189
+  type: 祖孫
+  note: 孫女：張氏(晏成裕妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 251
+  direction: forward
+- to_id: cbdb:699339
+  type: 祖孫
+  note: 曾孫; 重孫：張立（CBDB 外部人物）
+  src: cbdb
+  kin_code: 255
+  direction: forward
+- to_id: cbdb:13682
+  type: 祖孫
+  note: 直系後裔：張良臣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 303
+  direction: forward
+- to_id: cbdb:7097
+  type: 其他
+  note: 被對方推薦：楊億（CBDB 外部人物），始年 984
+  src: cbdb
+  assoc_code: 14
+  direction: forward

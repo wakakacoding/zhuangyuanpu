@@ -1,23 +1,44 @@
 from_id: zhang_heng
 relations:
-- to_id: cbdb:14027
-  type: 其他
-  note: 為Y作字說、名述：章望之（CBDB 外部人物）
-- to_id: cbdb:3767
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：蘇軾（CBDB 外部人物），始年 1095
-- to_id: cbdb:7005
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：陳襄（CBDB 外部人物），始年 1072
-- to_id: cbdb:13460
-  type: 其他
-  note: 致書Y：華鎮（CBDB 外部人物）
-- to_id: cbdb:27769
-  type: 其他
-  note: 致書Y：郭祥正（CBDB 外部人物）
 - to_id: cbdb:12963
   type: 父子
   note: 父：章訢（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:333
-  type: 父子
+  type: 旁系
   note: 從父;伯叔父：章惇（CBDB 外部人物）
+  src: cbdb
+  kin_code: 79
+  direction: forward
+- to_id: cbdb:14027
+  type: 其他
+  note: 字說、名述由對方所作：章望之（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 89
+  direction: forward
+- to_id: cbdb:3767
+  type: 其他
+  note: 臨別得到對方所作贈言(送別詩、序)：蘇軾（CBDB 外部人物），始年 1087
+  src: cbdb
+  assoc_code: 163
+  direction: forward
+- to_id: cbdb:7005
+  type: 其他
+  note: 臨別得到對方所作贈言(送別詩、序)：陳襄（CBDB 外部人物），始年 1087
+  src: cbdb
+  assoc_code: 163
+  direction: forward
+- to_id: cbdb:27769
+  type: 其他
+  note: 致書對方：郭祥正（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 429
+  direction: forward
+- to_id: cbdb:13460
+  type: 其他
+  note: 被致書由對方：華鎮（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward

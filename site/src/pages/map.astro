@@ -1,6 +1,7 @@
 ---
 import { allPersons, fullProfileIds, roleOf, ROLE_LABEL, specialRoles, zhuangyuanOnly, BASE} from '../lib/persons';
 import SeoHead from '../components/SeoHead.astro';
+import SiteNav from '../components/SiteNav.astro';
 import '../styles/base.css';
 import '../styles/map.css';
 
@@ -123,14 +124,7 @@ const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
           <h1>籍贯地图</h1>
           <p class="sub">{pts.length} 个坐标点位（状元 {nZyOnMap} + 特例 {specials.length}）· 拖动朝代滑块，看状元产地重心千年南移</p>
         </div>
-        <nav class="site-nav">
-          <a href={BASE}>首页</a>
-          <a href={`${BASE}search/`}>检索</a>
-          <a href={`${BASE}galaxy/`}>星图</a>
-          <a href={`${BASE}timeline/`}>时间线</a>
-          <a href={`${BASE}stats/`}>统计</a>
-          <a href={`${BASE}about/`}>关于</a>
-        </nav>
+        <SiteNav current="/map/" />
       </header>
 
       <div class="map-controls">

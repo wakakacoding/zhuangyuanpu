@@ -2,13 +2,25 @@ from_id: li_jun_min
 relations:
 - to_id: cbdb:29141
   type: 其他
-  note: 為Y所著書作序：史秉直（CBDB 外部人物），始年 1235
+  note: 書序由對方所作：史秉直（CBDB 外部人物），始年 1235
+  src: cbdb
+  assoc_code: 33
+  direction: forward
 - to_id: cbdb:35373
   type: 其他
-  note: 傳記作者為Y：楊奐（CBDB 外部人物）
+  note: 傳記作者為對方：楊奐（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 132
+  direction: forward
 - to_id: cbdb:104109
   type: 其他
-  note: 為Y作世系碑記：孟攀鱗（CBDB 外部人物）
+  note: 為對方作世系碑記：孟攀鱗（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 151
+  direction: forward
 - to_id: cbdb:29145
   type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：段直（CBDB 外部人物），始年 1235
+  note: 為對方作臨別贈言(送別詩、序)：段直（CBDB 外部人物），始年 1235
+  src: cbdb
+  assoc_code: 162
+  direction: forward

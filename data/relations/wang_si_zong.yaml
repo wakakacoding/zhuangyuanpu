@@ -1,47 +1,92 @@
 from_id: wang_si_zong
 relations:
-- to_id: cbdb:44818
-  type: 其他
-  note: 推薦：孫鍇（CBDB 外部人物）
-- to_id: cbdb:46869
-  type: 其他
-  note: 推薦：張維（CBDB 外部人物）
-- to_id: cbdb:8116
-  type: 其他
-  note: 諡議由Y所作：蘇頌（CBDB 外部人物）
-- to_id: cbdb:332
-  type: 其他
-  note: 答Y書：張詠（CBDB 外部人物）
 - to_id: cbdb:22170
-  type: 父子
+  type: 祖孫
   note: 曾祖：王同節（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:22171
-  type: 父子
+  type: 祖孫
   note: 祖父：王待價（CBDB 外部人物）
-- to_id: cbdb:697006
-  type: 父子
-  note: 從祖;伯叔祖：王正民（CBDB 外部人物）
-- to_id: cbdb:697032
-  type: 父子
-  note: 從祖;伯叔祖：王信民（CBDB 外部人物）
-- to_id: cbdb:22173
-  type: 父子
-  note: 父：王堯臣（CBDB 外部人物）
-- to_id: cbdb:22174
-  type: 父子
-  note: 父：王唐臣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:22172
   type: 父子
   note: 父：王夢證（CBDB 外部人物）
-- to_id: cbdb:22175
-  type: 父子
-  note: 從父;伯叔父：王舜臣（CBDB 外部人物）
-- to_id: cbdb:22176
-  type: 父子
-  note: 從父;伯叔父：王禹臣（CBDB 外部人物）
-- to_id: cbdb:696905
-  type: 父子
-  note: 從父;伯叔父：王九言（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:696907
   type: 兄弟
   note: 兄弟：王嗣慶（CBDB 外部人物）
+  src: cbdb
+  kin_code: 118
+  direction: forward
+- to_id: cbdb:22175
+  type: 旁系
+  note: 從子;姪子：王舜臣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 177
+  direction: forward
+- to_id: cbdb:22176
+  type: 旁系
+  note: 從子;姪子：王禹臣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 177
+  direction: forward
+- to_id: cbdb:696905
+  type: 旁系
+  note: 從子;姪子：王九言（CBDB 外部人物）
+  src: cbdb
+  kin_code: 177
+  direction: forward
+- to_id: cbdb:22173
+  type: 父子
+  note: 子：王堯臣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:22174
+  type: 父子
+  note: 子：王唐臣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:697006
+  type: 旁系
+  note: 姪孫;從孫：王正民（CBDB 外部人物）
+  src: cbdb
+  kin_code: 240
+  direction: forward
+- to_id: cbdb:697032
+  type: 旁系
+  note: 姪孫;從孫：王信民（CBDB 外部人物）
+  src: cbdb
+  kin_code: 240
+  direction: forward
+- to_id: cbdb:44818
+  type: 其他
+  note: 推薦：孫鍇（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 13
+  direction: forward
+- to_id: cbdb:46869
+  type: 其他
+  note: 推薦：張維（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 13
+  direction: forward
+- to_id: cbdb:8116
+  type: 其他
+  note: 諡議由對方所作：蘇頌（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 187
+  direction: forward
+- to_id: cbdb:332
+  type: 其他
+  note: 收到對方的答書：張詠（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 432
+  direction: forward

@@ -1,113 +1,212 @@
 from_id: shu_fen
 relations:
-- to_id: cbdb:34522
-  type: 其他
-  note: 為Y所著書作序：何喬新（CBDB 外部人物）
-- to_id: cbdb:127342
-  type: 其他
-  note: 為Y所著書作序：朱寔昌（CBDB 外部人物）
-- to_id: cbdb:127912
-  type: 其他
-  note: 墓誌銘由Y所作：李紹賢（CBDB 外部人物）
-- to_id: cbdb:128598
-  type: 其他
-  note: 墓誌銘由Y所作：林泮（CBDB 外部人物）
-- to_id: cbdb:132268
-  type: 其他
-  note: 墓誌銘由Y所作：熊桂（CBDB 外部人物）
-- to_id: cbdb:563129
-  type: 其他
-  note: 墓誌銘由Y所作：裘翱（CBDB 外部人物）
-- to_id: cbdb:30627
-  type: 其他
-  note: 傳記作者為Y：薛應旂（CBDB 外部人物）
-- to_id: cbdb:131817
-  type: 其他
-  note: 傳記作者為Y：楊峻（CBDB 外部人物）
-- to_id: cbdb:133482
-  type: 其他
-  note: 傳記作者為Y：魏紳（CBDB 外部人物）
-- to_id: cbdb:338589
-  type: 其他
-  note: 傳記作者為Y：舒修（CBDB 外部人物）
-- to_id: cbdb:338590
-  type: 其他
-  note: 傳記作者為Y：舒琛（CBDB 外部人物）
-- to_id: cbdb:67154
-  type: 其他
-  note: 為Y作祭文：林瀚（CBDB 外部人物）
-- to_id: cbdb:67762
-  type: 其他
-  note: 為Y作祭文：王鼎（CBDB 外部人物）
-- to_id: cbdb:24554
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：林俊（CBDB 外部人物）
-- to_id: cbdb:68092
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：楊廷和（CBDB 外部人物）
-- to_id: cbdb:68300
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：萬鏜（CBDB 外部人物）
-- to_id: cbdb:68391
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：鄭洛書（CBDB 外部人物）
-- to_id: cbdb:68415
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：劉最（CBDB 外部人物）
-- to_id: cbdb:128607
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：林炫（CBDB 外部人物）
-- to_id: cbdb:129409
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：高應冕（CBDB 外部人物）
-- to_id: cbdb:129852
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：倫以訓（CBDB 外部人物）
-- to_id: cbdb:130929
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：陳策（CBDB 外部人物）
-- to_id: cbdb:131123
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：符錫（CBDB 外部人物）
-- to_id: cbdb:132588
-  type: 其他
-  note: 為Y作臨別贈言(送別詩、序)：蔡宗兗（CBDB 外部人物）
-- to_id: cbdb:34655
-  type: 其他
-  note: 致書Y：夏良勝（CBDB 外部人物）
-- to_id: cbdb:128596
-  type: 其他
-  note: 致書Y：林希元（CBDB 外部人物）
-- to_id: cbdb:126621
-  type: 其他
-  note: 致書Y：王紀（CBDB 外部人物）
-- to_id: cbdb:30374
-  type: 其他
-  note: 答Y書：王守仁（CBDB 外部人物）
 - to_id: cbdb:525455
-  type: 父子
+  type: 祖孫
   note: 直系祖先：舒文英（CBDB 外部人物）
+  src: cbdb
+  kin_code: 2
+  direction: forward
 - to_id: cbdb:279355
-  type: 父子
+  type: 祖孫
   note: 曾祖：舒溥震（CBDB 外部人物）
-- to_id: cbdb:525456
-  type: 父子
-  note: 祖父：舒琛（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:279356
-  type: 父子
+  type: 祖孫
   note: 祖父：舒庭式（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:279357
   type: 父子
   note: 父：舒法（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:279358
-  type: 其他
+  type: 母子
   note: 母：聶氏(舒芬母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:279359
-  type: 其他
-  note: 丈夫：齊氏(舒芬妻)（CBDB 外部人物）
-- to_id: cbdb:279359
-  type: 父子
+  type: 夫妻
   note: 妻子：齊氏(舒芬妻)（CBDB 外部人物）
-- to_id: cbdb:279358
-  type: 父子
-  note: 子：聶氏(舒芬母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:525456
+  type: 祖孫
+  note: 孫：舒琛（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:34522
+  type: 其他
+  note: 為對方所著書作序：何喬新（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:127342
+  type: 其他
+  note: 為對方所著書作序：朱寔昌（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:127912
+  type: 其他
+  note: 為對方作墓誌銘：李紹賢（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:128598
+  type: 其他
+  note: 為對方作墓誌銘：林泮（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:132268
+  type: 其他
+  note: 為對方作墓誌銘：熊桂（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:563129
+  type: 其他
+  note: 為對方作墓誌銘：裘翱（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 44
+  direction: forward
+- to_id: cbdb:30627
+  type: 其他
+  note: 傳記作者為對方：薛應旂（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 132
+  direction: forward
+- to_id: cbdb:338589
+  type: 其他
+  note: 傳記作者為對方：舒修（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 132
+  direction: forward
+- to_id: cbdb:338590
+  type: 其他
+  note: 傳記作者為對方：舒琛（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 132
+  direction: forward
+- to_id: cbdb:131817
+  type: 其他
+  note: 為對方作傳：楊峻（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 133
+  direction: forward
+- to_id: cbdb:133482
+  type: 其他
+  note: 為對方作傳：魏紳（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 133
+  direction: forward
+- to_id: cbdb:67154
+  type: 其他
+  note: 為對方作祭文：林瀚（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 145
+  direction: forward
+- to_id: cbdb:67762
+  type: 其他
+  note: 為對方作祭文：王鼎（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 145
+  direction: forward
+- to_id: cbdb:24554
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：林俊（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:68092
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：楊廷和（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:68300
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：萬鏜（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:68391
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：鄭洛書（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:68415
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：劉最（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:128607
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：林炫（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:129409
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：高應冕（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:129852
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：倫以訓（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:130929
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：陳策（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:131123
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：符錫（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:132588
+  type: 其他
+  note: 為對方作臨別贈言(送別詩、序)：蔡宗兗（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 162
+  direction: forward
+- to_id: cbdb:34655
+  type: 其他
+  note: 致書對方：夏良勝（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 429
+  direction: forward
+- to_id: cbdb:126621
+  type: 其他
+  note: 致書對方：王紀（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 429
+  direction: forward
+- to_id: cbdb:128596
+  type: 其他
+  note: 被致書由對方：林希元（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:30374
+  type: 其他
+  note: 答對方書：王守仁（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 431
+  direction: forward

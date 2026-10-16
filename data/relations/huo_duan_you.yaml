@@ -1,17 +1,32 @@
 from_id: huo_duan_you
 relations:
-- to_id: cbdb:7343
-  type: 其他
-  note: 墓誌銘由Y所作：孫覿（CBDB 外部人物），始年 1115
-- to_id: cbdb:19489
-  type: 父子
-  note: 從祖;伯叔祖：霍洞（CBDB 外部人物）
-- to_id: cbdb:21638
-  type: 父子
-  note: 父：霍瀛（CBDB 外部人物）
 - to_id: cbdb:19488
   type: 父子
   note: 父：霍寧（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:19482
   type: 翁婿
   note: 岳父：郭瑑（CBDB 外部人物）
+  src: cbdb
+  kin_code: 76
+  direction: forward
+- to_id: cbdb:21638
+  type: 父子
+  note: 子：霍瀛（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:19489
+  type: 旁系
+  note: 姪孫;從孫：霍洞（CBDB 外部人物）
+  src: cbdb
+  kin_code: 240
+  direction: forward
+- to_id: cbdb:7343
+  type: 其他
+  note: 墓誌銘由對方所作：孫覿（CBDB 外部人物），始年 1115
+  src: cbdb
+  assoc_code: 43
+  direction: forward

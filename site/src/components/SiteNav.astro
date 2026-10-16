@@ -1,0 +1,51 @@
+---
+/**
+ * 全站统一导航（R3-4）
+ *
+ * 此前导航在 13 个页面模板里各自硬编码，入口集合还不一致（有的缺「关系网络」、
+ * 全站都不见 RSS）。这里收敛成唯一来源：改一处，全站生效。
+ *
+ * 约定：
+ *   · 样式定义在 base.css 的 .site-nav（全局），**不写在本组件的 scoped style 里**——
+ *     /galaxy/ 与 /network/ 的夜模式由 galaxy.css 的 `.galaxy-page .site-nav` 覆盖，
+ *     若走 scoped style，两者的优先级相同（同为 0,2,1），落谁头上取决于样式表顺序。
+ *   · 高亮用 aria-current="page"，只影响样式与无障碍，不改 DOM 结构。
+ */
+import { BASE } from '../lib/persons';
+
+interface Props {
+  /** 当前页路径（相对 base 的根，如 '/search/'；首页传 '/'），用于高亮当前项 */
+  current?: string;
+}
+
+const { current = '' } = Astro.props;
+
+const links = [
+  { href: `${BASE}`, label: '首页', key: '/' },
+  { href: `${BASE}stories/`, label: '故事', key: '/stories/' },
+  { href: `${BASE}search/`, label: '检索', key: '/search/' },
+  { href: `${BASE}map/`, label: '籍贯地图', key: '/map/' },
+  { href: `${BASE}galaxy/`, label: '星图', key: '/galaxy/' },
+  { href: `${BASE}network/`, label: '关系网络', key: '/network/' },
+  { href: `${BASE}timeline/`, label: '时间线', key: '/timeline/' },
+  { href: `${BASE}stats/`, label: '统计', key: '/stats/' },
+  { href: `${BASE}persons/`, label: '索引', key: '/persons/' },
+  { href: `${BASE}api/`, label: '数据下载', key: '/api/' },
+  { href: `${BASE}corrections/`, label: '勘误', key: '/corrections/' },
+  { href: `${BASE}about/`, label: '关于', key: '/about/' },
+];
+
+const isCurrent = (key: string) =>
+  key === '/' ? current === '/' : current === key || current.startsWith(key);
+---
+<nav class="site-nav" aria-label="站内导航">
+  {links.map((l) => (
+    <a href={l.href} aria-current={isCurrent(l.key) ? 'page' : undefined}>{l.label}</a>
+  ))}
+  <a
+    class="nav-rss"
+    href={`${BASE}rss.xml`}
+    type="application/rss+xml"
+    title="订阅故事更新（RSS）"
+  >RSS 订阅</a>
+</nav>

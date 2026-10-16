@@ -1,47 +1,86 @@
 from_id: qian_wei_cheng
 relations:
-- to_id: cbdb:29951
-  type: 师生
-  note: 為Y之學生：朱筠（CBDB 外部人物）
-- to_id: cbdb:57670
-  type: 师生
-  note: 為Y之學生：董邦達（CBDB 外部人物）
-- to_id: cbdb:54990
-  type: 其他
-  note: 為Y所著書作序：錢孟鈿（CBDB 外部人物）
-- to_id: cbdb:29876
-  type: 其他
-  note: 為Y之考官：錢大昕（CBDB 外部人物）
-- to_id: cbdb:30080
-  type: 其他
-  note: 為Y之考官：紀昀（CBDB 外部人物），始年 1754
-- to_id: cbdb:54988
-  type: 父子
-  note: 祖父：錢湘（CBDB 外部人物）
-- to_id: cbdb:54990
-  type: 父子
-  note: 父：錢孟鈿（CBDB 外部人物）
-- to_id: cbdb:516183
-  type: 父子
-  note: 父：錢中鈺（CBDB 外部人物）
-- to_id: cbdb:516184
-  type: 父子
-  note: 父：錢中銑（CBDB 外部人物）
 - to_id: cbdb:86449
   type: 父子
   note: 父：錢人麟（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:54999
   type: 翁婿
   note: 岳父：金祖靜（CBDB 外部人物）
-- to_id: cbdb:86619
-  type: 父子
-  note: 族父：錢履坦（CBDB 外部人物）
+  src: cbdb
+  kin_code: 76
+  direction: forward
 - to_id: cbdb:86585
   type: 兄弟
-  note: 兄：錢維喬（CBDB 外部人物）
+  note: 弟：錢維喬（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:699872
-  type: 其他
-  note: 丈夫：金氏(錢維城妻)（CBDB 外部人物）
-- to_id: cbdb:699872
-  type: 父子
+  type: 夫妻
   note: 妻子：金氏(錢維城妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:54990
+  type: 父女
+  note: 女兒：錢孟鈿（CBDB 外部人物）
+  src: cbdb
+  kin_code: 176
+  direction: forward
+- to_id: cbdb:516183
+  type: 父子
+  note: 子：錢中鈺（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:516184
+  type: 父子
+  note: 子：錢中銑（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:86619
+  type: 旁系
+  note: 族子：錢履坦（CBDB 外部人物）
+  src: cbdb
+  kin_code: 210
+  direction: forward
+- to_id: cbdb:54988
+  type: 祖孫
+  note: 孫女：錢湘（CBDB 外部人物）
+  src: cbdb
+  kin_code: 251
+  direction: forward
+- to_id: cbdb:57670
+  type: 师生
+  note: 為對方之學生：董邦達（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 22
+  direction: forward
+- to_id: cbdb:29951
+  type: 师生
+  note: 學生為對方：朱筠（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 23
+  direction: forward
+- to_id: cbdb:54990
+  type: 其他
+  note: 為對方所著書作序：錢孟鈿（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 32
+  direction: forward
+- to_id: cbdb:29876
+  type: 其他
+  note: 為對方之考官：錢大昕（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 558
+  direction: forward
+- to_id: cbdb:30080
+  type: 其他
+  note: 為對方之考官：紀昀（CBDB 外部人物），始年 1754
+  src: cbdb
+  assoc_code: 558
+  direction: forward

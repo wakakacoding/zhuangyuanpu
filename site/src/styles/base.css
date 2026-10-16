@@ -29,6 +29,24 @@ a { color: inherit; }
   background: var(--cinnabar); color: #fff; font-size: 0.75rem; border-radius: 2px;
 }
 
+/* 全站统一导航（components/SiteNav.astro）——样式集中在此，各页不再各写一份。
+   夜模式页（/galaxy/、/network/）由 galaxy.css 的 `.galaxy-page .site-nav` 覆盖。 */
+.site-nav { margin-top: 0.9rem; display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; }
+.site-nav a {
+  font-size: 0.8rem; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--line); padding: 0.1rem 0.6rem; border-radius: 2px;
+  background: #fbf8f0;
+}
+.site-nav a:hover { color: var(--cinnabar); border-color: var(--cinnabar); }
+.site-nav a[aria-current="page"] { color: #fff; background: var(--cinnabar); border-color: var(--cinnabar); }
+/* RSS 入口：始终可见，靠右独立成组 */
+.site-nav .nav-rss { margin-left: auto; color: var(--gold); border-color: var(--gold); }
+.site-nav .nav-rss:hover { color: #fff; background: var(--gold); border-color: var(--gold); }
+.site-nav .nav-rss::before {
+  content: ""; display: inline-block; width: 0.42em; height: 0.42em; border-radius: 50%;
+  background: currentColor; margin-right: 0.42em; vertical-align: 0.08em;
+}
+
 .stats { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
 .stats b { display: block; font-size: 1.6rem; color: var(--cinnabar); }
 .stats span { font-size: 0.8rem; color: var(--ink-soft); }

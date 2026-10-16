@@ -1,8 +1,14 @@
 from_id: xu_tao_zhang
 relations:
 - to_id: cbdb:129962
-  type: 父子
+  type: 祖孫
   note: 直系祖先：徐源（CBDB 外部人物）
+  src: cbdb
+  kin_code: 2
+  direction: forward
 - to_id: cbdb:353981
   type: 兄弟
   note: 兄：徐模（CBDB 外部人物）
+  src: cbdb
+  kin_code: 125
+  direction: forward

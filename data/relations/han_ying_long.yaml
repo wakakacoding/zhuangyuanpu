@@ -1,38 +1,62 @@
 from_id: han_ying_long
 relations:
 - to_id: cbdb:294968
-  type: 父子
+  type: 祖孫
   note: 曾祖：韓孟退（CBDB 外部人物）
+  src: cbdb
+  kin_code: 48
+  direction: forward
 - to_id: cbdb:294969
-  type: 父子
+  type: 祖孫
   note: 祖父：韓廣（CBDB 外部人物）
+  src: cbdb
+  kin_code: 62
+  direction: forward
 - to_id: cbdb:294970
   type: 父子
   note: 父：韓暹（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:294971
-  type: 其他
+  type: 母子
   note: 母：沈氏(韓應龍母)（CBDB 外部人物）
-- to_id: cbdb:294977
-  type: 兄弟
-  note: 兄：韓應奎（CBDB 外部人物）
-- to_id: cbdb:294978
-  type: 兄弟
-  note: 兄：韓應元（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:294974
   type: 兄弟
   note: 兄：韓榮華（CBDB 外部人物）
+  src: cbdb
+  kin_code: 125
+  direction: forward
 - to_id: cbdb:294975
   type: 兄弟
   note: 兄：韓應富（CBDB 外部人物）
+  src: cbdb
+  kin_code: 125
+  direction: forward
 - to_id: cbdb:294976
   type: 兄弟
   note: 兄：韓應貴（CBDB 外部人物）
+  src: cbdb
+  kin_code: 125
+  direction: forward
+- to_id: cbdb:294977
+  type: 兄弟
+  note: 弟：韓應奎（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
+- to_id: cbdb:294978
+  type: 兄弟
+  note: 弟：韓應元（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:294972
-  type: 其他
-  note: 丈夫：傅氏(韓應龍妻)（CBDB 外部人物）
-- to_id: cbdb:294972
-  type: 父子
+  type: 夫妻
   note: 妻子：傅氏(韓應龍妻)（CBDB 外部人物）
-- to_id: cbdb:294971
-  type: 父子
-  note: 子：沈氏(韓應龍母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 135
+  direction: forward

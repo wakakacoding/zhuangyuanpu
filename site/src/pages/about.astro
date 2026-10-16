@@ -3,6 +3,7 @@ import { allPersons, fullProfileIds, BASE } from '../lib/persons';
 import { listStories } from '../lib/story';
 import { coverageStats, GOALS, pct } from '../lib/coverage';
 import SeoHead from '../components/SeoHead.astro';
+import SiteNav from '../components/SiteNav.astro';
 import '../styles/base.css';
 
 const persons = allPersons();
@@ -50,17 +51,7 @@ const lin = {
       <header class="site-head">
         <h1>关于本站</h1>
         <p class="sub">每条信息都该经得起追问：本站是什么、数据从哪来、凭什么可信。</p>
-        <nav class="site-nav">
-          <a href={BASE}>首页</a>
-          <a href={`${BASE}stories/`}>故事</a>
-          <a href={`${BASE}search/`}>检索</a>
-          <a href={`${BASE}map/`}>籍贯地图</a>
-          <a href={`${BASE}galaxy/`}>星图</a>
-          <a href={`${BASE}timeline/`}>时间线</a>
-          <a href={`${BASE}stats/`}>统计</a>
-          <a href={`${BASE}persons/`}>索引</a>
-          <a href={`${BASE}corrections/`}>勘误</a>
-        </nav>
+        <SiteNav current="/about/" />
       </header>
 
       <section>
@@ -330,14 +321,6 @@ const lin = {
     </div>
 
     <style>
-      .site-nav { margin-top: 0.9rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
-      .site-nav a {
-        font-size: 0.8rem; text-decoration: none; color: var(--ink);
-        border: 1px solid var(--line); padding: 0.1rem 0.6rem; border-radius: 2px;
-        background: #fbf8f0;
-      }
-      .site-nav a:hover { color: var(--cinnabar); border-color: var(--cinnabar); }
-
       section p { font-size: 0.95rem; }
       .sub-title { font-size: 1rem; margin: 1.6rem 0 0.6rem; }
 

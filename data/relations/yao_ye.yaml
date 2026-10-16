@@ -2,4 +2,7 @@ from_id: yao_ye
 relations:
 - to_id: cbdb:2039
   type: 父子
-  note: 父：姚仲孫（CBDB 外部人物）
+  note: 子：姚仲孫（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward

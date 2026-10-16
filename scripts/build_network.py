@@ -64,14 +64,16 @@ EDGE_WARN = 100           # 状元间边数低于此值打告警
 LABEL_MAX = 26            # 关系标签截断长度
 
 # ── 类型表（顺序即前端色板顺序）──────────────────────────────
-TYPES = ['同年', '师生', '父子', '兄弟', '翁婿', '友人', '同僚', '政敌', '文字缘', '亲缘', '其他']
+# R1.2-5/R1.2-3：亲缘边新增 6 个枚举（收自 CBDB 收割，母子/父女/祖孫/旁系/夫妻/姻亲）。
+TYPES = ['同年', '师生', '父子', '母子', '父女', '祖孫', '兄弟', '旁系', '翁婿', '夫妻',
+         '姻亲', '友人', '同僚', '政敌', '文字缘', '亲缘', '其他']
 TYPE_IDX = {t: i for i, t in enumerate(TYPES)}
 
-# ── 筛选组（chips 即按组渲染；亲缘组收拢父子/兄弟/翁婿/亲缘四类）────
+# ── 筛选组（chips 即按组渲染；亲缘组收拢全部亲属类边）────
 GROUPS = [
     ('同年', ['同年']),
     ('师生', ['师生']),
-    ('亲缘', ['父子', '兄弟', '翁婿', '亲缘']),
+    ('亲缘', ['父子', '母子', '父女', '祖孫', '兄弟', '旁系', '翁婿', '夫妻', '姻亲', '亲缘']),
     ('友人', ['友人']),
     ('同僚', ['同僚']),
     ('政敌', ['政敌']),
@@ -210,11 +212,12 @@ def main():
     rel_files = [f for f in sorted(glob.glob(os.path.join(ROOT, 'data', 'relations', '*.yaml')))
                  if not os.path.basename(f).startswith('_')]
 
-    inner_entries = []            # (from, to, type, label, note)
-    outer_entries = []            # (from, ext_id, type, label, name)
+    inner_entries = []            # (from, to, type, label, note, is_cbdb)
+    outer_entries = []            # (from, ext_id, type, label, name, is_cbdb)
     self_loops = []               # (from_id, type, note) —— 源数据缺陷，剔除并报出
     type_raw = collections.Counter()
     type_final_all = collections.Counter()
+    src_raw = collections.Counter()
     unmatched_from = set()
 
     for path in rel_files:
@@ -231,6 +234,9 @@ def main():
                 continue
             raw_type = r.get('type') or '其他'
             type_raw[raw_type] += 1
+            # R1.2-5：机器边标记（src: cbdb）——供「仅史料关系」筛选
+            is_cbdb = (r.get('src') == 'cbdb')
+            src_raw['cbdb' if is_cbdb else ('manual' if r.get('src') else 'manual')] += 1
             label, name = split_label(r.get('note'))
             t = classify(raw_type, r.get('note'))
             type_final_all[t] += 1
@@ -238,24 +244,26 @@ def main():
                 if tid == fid:
                     self_loops.append((fid, raw_type, clean_note(r.get('note'))))
                     continue
-                inner_entries.append((fid, tid, t, label, clean_note(r.get('note'))))
+                inner_entries.append((fid, tid, t, label, clean_note(r.get('note')), is_cbdb))
             else:
-                outer_entries.append((fid, tid, t, label, name))
+                outer_entries.append((fid, tid, t, label, name, is_cbdb))
 
     # 状元↔状元：源数据大量「互指」（A→B 与 B→A 各一条），无向去重
     pair_map = {}
-    for fid, tid, t, label, note in inner_entries:
+    for fid, tid, t, label, note, is_cbdb in inner_entries:
         key = (min(fid, tid), max(fid, tid))
-        pair_map.setdefault(key, {'type': t, 'label': label, 'notes': []})
+        pm = pair_map.setdefault(key, {'type': t, 'label': label, 'notes': [], 'cbdb': False})
+        pm['cbdb'] = pm['cbdb'] or is_cbdb
         txt = clean_note(note) or label          # 展示用全文（互指记录去重后并列）
-        if txt and txt not in pair_map[key]['notes']:
-            pair_map[key]['notes'].append(txt)
+        if txt and txt not in pm['notes']:
+            pm['notes'].append(txt)
     inner_pairs = [(a, b, v) for (a, b), v in sorted(pair_map.items())]
 
     # 外部人物度（以状元为计数单位；同一状元重复关系只记一次）
-    ext_pairs = {}   # (from, ext) → {'type','label','name'}
-    for fid, tid, t, label, name in outer_entries:
-        ext_pairs.setdefault((fid, tid), {'type': t, 'label': label, 'name': name})
+    ext_pairs = {}   # (from, ext) → {'type','label','name','cbdb'}
+    for fid, tid, t, label, name, is_cbdb in outer_entries:
+        rec = ext_pairs.setdefault((fid, tid), {'type': t, 'label': label, 'name': name, 'cbdb': False})
+        rec['cbdb'] = rec['cbdb'] or is_cbdb
     ext_deg = collections.Counter()
     ext_name = {}
     ext_partners = collections.defaultdict(set)
@@ -322,16 +330,23 @@ def main():
                 return gi
         return len(GROUPS) - 1
 
+    # 边元组第 6 位 = 1/0：该边是否至少含一条 `src: cbdb` 机器边（供「仅史料关系」筛选；
+    # 前端 NetEdge 只读到第 5 位，追加第 6 位向后兼容，无需改页面）
+    cbdb_inner = cbdb_ext = 0
     for a, b, v in inner_pairs:                     # 状元—状元
         edges.append([index[a], index[b], group_of(v['type']), TYPE_IDX[v['type']],
-                      (' · '.join(v['notes'])[:LABEL_MAX] if v['notes'] else v['type'])])
+                      (' · '.join(v['notes'])[:LABEL_MAX] if v['notes'] else v['type']),
+                      1 if v['cbdb'] else 0])
+        cbdb_inner += 1 if v['cbdb'] else 0
         deg[a] += 1
         deg[b] += 1
     for (fid, tid), v in sorted(ext_pairs.items()):  # 状元—名士（仅取中选者）
         if tid not in ext_set:
             continue
         a, b = index[fid], index[tid]
-        edges.append([a, b, group_of(v['type']), TYPE_IDX[v['type']], clean_note(v['label'])])
+        edges.append([a, b, group_of(v['type']), TYPE_IDX[v['type']], clean_note(v['label']),
+                      1 if v['cbdb'] else 0])
+        cbdb_ext += 1 if v['cbdb'] else 0
         deg[fid] += 1
         deg[tid] += 1
     for nd in nodes:
@@ -372,6 +387,10 @@ def main():
             'extMinDeg': EXT_MIN_DEG,
             'maxNodes': MAX_NODES,
             'typesRaw': dict(sorted(type_raw.items(), key=lambda kv: -kv[1])),
+            'srcRaw': dict(src_raw),
+            'cbdbInner': cbdb_inner,
+            'cbdbExt': cbdb_ext,
+            'cbdbEdges': cbdb_inner + cbdb_ext,
         },
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -393,6 +412,9 @@ def main():
           f' | 状元→外部条目 {len(outer_entries)}'
           f'（外部人物 {len(ext_deg)} 人，取度数 ≥{EXT_MIN_DEG} 者 {len(ext_set)} 人）')
     print(f'[network] 原类型分布: {doc["meta"]["typesRaw"]}')
+    print(f'[network] 来源分布: {doc["meta"]["srcRaw"]}（cbdb = 收割机器边，渲染为「CBDB 数据库（未经逐条人工核验）」）')
+    print(f'[network] 入图边含 cbdb 机器边：状元间 {cbdb_inner}/{len(inner_pairs)}，'
+          f'状元—名士 {cbdb_ext}/{len(edges) - len(inner_pairs)}（第 6 位标记，供「仅史料关系」筛选）')
     print(f'[network] 细分后·状元间边: {dict(t_inner)}')
     print(f'[network] 细分后·入图边: {dict(t_final)}')
     print(f'[network] 「其他」细分：源 {type_raw.get("其他", 0)} 条 → 文字缘 '

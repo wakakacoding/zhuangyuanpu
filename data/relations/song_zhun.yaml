@@ -3,18 +3,36 @@ relations:
 - to_id: cbdb:18306
   type: 父子
   note: 父：宋鵬（CBDB 外部人物）
-- to_id: cbdb:1558
-  type: 父子
-  note: 父：宋祁（CBDB 外部人物）
-- to_id: cbdb:18309
-  type: 父子
-  note: 父：宋大年（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:18308
   type: 兄弟
   note: 從弟：宋可觀（CBDB 外部人物）
+  src: cbdb
+  kin_code: 130
+  direction: forward
 - to_id: cbdb:1558
   type: 兄弟
   note: 族兄：宋祁（CBDB 外部人物）
+  src: cbdb
+  kin_code: 143
+  direction: forward
 - to_id: cbdb:121501
   type: 兄弟
   note: 族兄：宋郊（CBDB 外部人物）
+  src: cbdb
+  kin_code: 143
+  direction: forward
+- to_id: cbdb:18309
+  type: 父子
+  note: 子：宋大年（CBDB 外部人物）
+  src: cbdb
+  kin_code: 180
+  direction: forward
+- to_id: cbdb:1558
+  type: 父子
+  note: 三子：宋祁（CBDB 外部人物）
+  src: cbdb
+  kin_code: 184
+  direction: forward

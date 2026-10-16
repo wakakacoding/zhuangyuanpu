@@ -1,14 +1,26 @@
 from_id: zhang_tang_qing
 relations:
-- to_id: cbdb:630
-  type: 其他
-  note: 被Y欣賞/器重：韓琦（CBDB 外部人物）
-- to_id: cbdb:21212
-  type: 其他
-  note: 墓表由Y所作：司馬炫（CBDB 外部人物）
 - to_id: cbdb:3161
   type: 父子
   note: 父：張思（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:295
   type: 兄弟
-  note: 兄：張唐民（CBDB 外部人物）
+  note: 弟：張唐民（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
+- to_id: cbdb:630
+  type: 其他
+  note: 被對方欣賞/器重：韓琦（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 17
+  direction: forward
+- to_id: cbdb:21212
+  type: 其他
+  note: 為對方作墓表：司馬炫（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 410
+  direction: forward

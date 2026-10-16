@@ -1,11 +1,20 @@
 from_id: sun_ji
 relations:
-- to_id: sun_he
-  type: 其他
-  note: 同鄉（CBDB）
 - to_id: lv_mengzheng
   type: 翁婿
   note: 岳父（CBDB）
+  src: cbdb
+  kin_code: 76
+  direction: forward
 - to_id: cbdb:17911
-  type: 父子
+  type: 旁系
   note: 族父：孫鎰（CBDB 外部人物）
+  src: cbdb
+  kin_code: 97
+  direction: forward
+- to_id: sun_jin
+  type: 其他
+  note: 同鄉（CBDB）
+  src: cbdb
+  assoc_code: 94
+  direction: forward

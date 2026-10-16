@@ -1,35 +1,56 @@
 from_id: xu_duo
 relations:
-- to_id: cbdb:11239
-  type: 其他
-  note: 黨羽為Y：方天若（CBDB 外部人物），始年 1106
-- to_id: cbdb:11372
-  type: 政敌
-  note: 彈劾：豐稷（CBDB 外部人物），始年 1092
-- to_id: cbdb:468
-  type: 同僚
-  note: 同僚：蹇序辰（CBDB 外部人物）
-- to_id: cbdb:13460
-  type: 其他
-  note: 致書Y：華鎮（CBDB 外部人物）
-- to_id: cbdb:5005
-  type: 父子
-  note: 父：徐氏(錢觀復妻)（CBDB 外部人物）
 - to_id: cbdb:18608
   type: 父子
   note: 父：徐模（CBDB 外部人物）
-- to_id: cbdb:7143
-  type: 翁婿
-  note: 岳父：錢觀復（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:46257
-  type: 其他
+  type: 母子
   note: 母：陳氏(徐鐸母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:18583
   type: 兄弟
   note: 兄：徐銳（CBDB 外部人物）
+  src: cbdb
+  kin_code: 125
+  direction: forward
 - to_id: cbdb:5005
-  type: 其他
+  type: 父女
   note: 女兒：徐氏(錢觀復妻)（CBDB 外部人物）
-- to_id: cbdb:46257
-  type: 父子
-  note: 子：陳氏(徐鐸母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 176
+  direction: forward
+- to_id: cbdb:7143
+  type: 翁婿
+  note: 女婿：錢觀復（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:11239
+  type: 其他
+  note: 黨羽為對方：方天若（CBDB 外部人物），始年 1106
+  src: cbdb
+  assoc_code: 7
+  direction: forward
+- to_id: cbdb:11372
+  type: 政敌
+  note: 彈劾：豐稷（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 11
+  direction: forward
+- to_id: cbdb:468
+  type: 同僚
+  note: 同僚：蹇序辰（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 197
+  direction: forward
+- to_id: cbdb:13460
+  type: 其他
+  note: 被致書由對方：華鎮（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward

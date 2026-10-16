@@ -3,3 +3,6 @@ relations:
 - to_id: cbdb:32880
   type: 父子
   note: 父：歸融（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward

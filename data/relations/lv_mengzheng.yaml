@@ -1,95 +1,176 @@
 from_id: lv_mengzheng
 relations:
-- to_id: cbdb:2105
-  type: 其他
-  note: 推薦：袁逢吉（CBDB 外部人物）
-- to_id: cbdb:8013
-  type: 其他
-  note: 推薦：張宏（CBDB 外部人物），始年 1007
-- to_id: cbdb:628
-  type: 其他
-  note: 被Y欣賞/器重：富弼（CBDB 外部人物）
-- to_id: cbdb:1169
-  type: 其他
-  note: 辟：林特（CBDB 外部人物）
-- to_id: cbdb:46567
-  type: 其他
-  note: 從Y遊：郭延卿（CBDB 外部人物）
-- to_id: cbdb:3997
-  type: 其他
-  note: 致書Y：王禹偁（CBDB 外部人物）
-- to_id: cbdb:18341
-  type: 其他
-  note: 致書Y：柳開（CBDB 外部人物）
-- to_id: cbdb:33861
-  type: 父子
-  note: 六世祖;太祖：呂愿中（CBDB 外部人物）
-- to_id: cbdb:21323
-  type: 父子
-  note: 曾祖：呂仲衍（CBDB 外部人物）
-- to_id: cbdb:1301
-  type: 父子
-  note: 祖父：呂仲甫（CBDB 外部人物）
-- to_id: cbdb:27077
-  type: 父子
-  note: 祖父：呂昌齡（CBDB 外部人物）
-- to_id: cbdb:512461
-  type: 父子
-  note: 祖父：呂氏(錢勰妻)（CBDB 外部人物）
-- to_id: cbdb:1300
-  type: 父子
-  note: 父：呂居簡（CBDB 外部人物）
-- to_id: cbdb:13100
-  type: 父子
-  note: 父：呂務簡（CBDB 外部人物）
-- to_id: cbdb:17906
-  type: 父子
-  note: 父：呂行簡（CBDB 外部人物）
-- to_id: cbdb:17922
-  type: 父子
-  note: 父：呂知簡（CBDB 外部人物）
-- to_id: cbdb:17923
-  type: 父子
-  note: 父：呂承簡（CBDB 外部人物）
-- to_id: cbdb:17930
-  type: 父子
-  note: 父：呂師簡（CBDB 外部人物）
-- to_id: cbdb:17932
-  type: 父子
-  note: 父：呂惟簡（CBDB 外部人物）
-- to_id: cbdb:17933
-  type: 父子
-  note: 父：呂從簡（CBDB 外部人物）
 - to_id: cbdb:13094
   type: 父子
   note: 父：呂龜圖（CBDB 外部人物）
-- to_id: cbdb:8176
-  type: 翁婿
-  note: 岳父：趙安仁（CBDB 外部人物）
-- to_id: cbdb:8100
-  type: 父子
-  note: 從父;伯叔父：呂夷簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 75
+  direction: forward
 - to_id: cbdb:13096
-  type: 父子
+  type: 旁系
   note: 從父;伯叔父：呂龜祥（CBDB 外部人物）
-- to_id: cbdb:1640
-  type: 翁婿
-  note: 第二任妻父：丁度（CBDB 外部人物）
+  src: cbdb
+  kin_code: 79
+  direction: forward
 - to_id: cbdb:119466
-  type: 其他
+  type: 母子
   note: 母：劉氏(呂蒙正母)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 111
+  direction: forward
 - to_id: cbdb:13095
   type: 兄弟
-  note: 兄：呂蒙休（CBDB 外部人物）
+  note: 弟：呂蒙休（CBDB 外部人物）
+  src: cbdb
+  kin_code: 126
+  direction: forward
 - to_id: cbdb:7054
   type: 兄弟
   note: 從弟：呂蒙亨（CBDB 外部人物）
+  src: cbdb
+  kin_code: 130
+  direction: forward
 - to_id: cbdb:119434
-  type: 其他
-  note: 丈夫：宋氏(呂蒙正妻)（CBDB 外部人物）
-- to_id: cbdb:119434
-  type: 父子
+  type: 夫妻
   note: 妻子：宋氏(呂蒙正妻)（CBDB 外部人物）
-- to_id: cbdb:119466
+  src: cbdb
+  kin_code: 135
+  direction: forward
+- to_id: cbdb:8100
+  type: 旁系
+  note: 從子;姪子：呂夷簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 177
+  direction: forward
+- to_id: cbdb:1640
+  type: 翁婿
+  note: 女婿：丁度（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:8176
+  type: 翁婿
+  note: 女婿：趙安仁（CBDB 外部人物）
+  src: cbdb
+  kin_code: 181
+  direction: forward
+- to_id: cbdb:17933
   type: 父子
-  note: 子：劉氏(呂蒙正母)（CBDB 外部人物）
+  note: 長子; 第一子：呂從簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 182
+  direction: forward
+- to_id: cbdb:17922
+  type: 父子
+  note: 次子：呂知簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 183
+  direction: forward
+- to_id: cbdb:17932
+  type: 父子
+  note: 三子：呂惟簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 184
+  direction: forward
+- to_id: cbdb:17923
+  type: 父子
+  note: 四子：呂承簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 185
+  direction: forward
+- to_id: cbdb:17906
+  type: 父子
+  note: 五子：呂行簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 191
+  direction: forward
+- to_id: cbdb:13100
+  type: 父子
+  note: 七子：呂務簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 196
+  direction: forward
+- to_id: cbdb:1300
+  type: 父子
+  note: 八子：呂居簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 199
+  direction: forward
+- to_id: cbdb:17930
+  type: 父子
+  note: 九子：呂師簡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 206
+  direction: forward
+- to_id: cbdb:1301
+  type: 祖孫
+  note: 孫：呂仲甫（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:27077
+  type: 祖孫
+  note: 孫：呂昌齡（CBDB 外部人物）
+  src: cbdb
+  kin_code: 243
+  direction: forward
+- to_id: cbdb:512461
+  type: 祖孫
+  note: 孫女：呂氏(錢勰妻)（CBDB 外部人物）
+  src: cbdb
+  kin_code: 251
+  direction: forward
+- to_id: cbdb:21323
+  type: 祖孫
+  note: 曾孫; 重孫：呂仲衍（CBDB 外部人物）
+  src: cbdb
+  kin_code: 255
+  direction: forward
+- to_id: cbdb:33861
+  type: 祖孫
+  note: 六世孫;昆孫：呂愿中（CBDB 外部人物）
+  src: cbdb
+  kin_code: 272
+  direction: forward
+- to_id: cbdb:2105
+  type: 其他
+  note: 推薦：袁逢吉（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 13
+  direction: forward
+- to_id: cbdb:8013
+  type: 其他
+  note: 推薦：張宏（CBDB 外部人物），始年 1007
+  src: cbdb
+  assoc_code: 13
+  direction: forward
+- to_id: cbdb:628
+  type: 其他
+  note: 欣賞/器重：富弼（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 18
+  direction: forward
+- to_id: cbdb:1169
+  type: 其他
+  note: 辟：林特（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 24
+  direction: forward
+- to_id: cbdb:46567
+  type: 其他
+  note: 從遊者為對方：郭延卿（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 50
+  direction: forward
+- to_id: cbdb:3997
+  type: 其他
+  note: 被致書由對方：王禹偁（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward
+- to_id: cbdb:18341
+  type: 其他
+  note: 被致書由對方：柳開（CBDB 外部人物）
+  src: cbdb
+  assoc_code: 430
+  direction: forward

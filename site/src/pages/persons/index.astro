@@ -28,6 +28,7 @@ const nSpecial = persons.length - zy;
         <p class="sub">已录状元 {zy} 人 · 特例 {nSpecial} 人（探花／事实状元，卡面带徽标）· 按科年排序 · 缺载字段标「待考」——「待考」是整理进度，不冒充史料结论 · <a href={`${BASE}search/`}>去检索 →</a></p>
         <SiteNav current="/persons/" />
       </header>
+      <div class="list-wrap">
       <table class="list">
         <thead>
           <tr><th>姓名</th><th>朝代</th><th>科年</th><th>干支</th><th>榜次</th><th>籍贯（历史）</th></tr>
@@ -50,6 +51,7 @@ const nSpecial = persons.length - zy;
           ))}
         </tbody>
       </table>
+      </div>
       <a class="back" href={BASE}>← 返回首页</a>
     </div>
   </body>

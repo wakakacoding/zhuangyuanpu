@@ -73,6 +73,8 @@
 }
 
 /* 各数据源条目数表 */
+/* 极窄屏与 200% 字号下表格会比容器宽。滚动限定在表格自身，不要带着整页横滚。 */
+.src-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .src-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-top: 0.6rem; }
 .src-table th, .src-table td {
   padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle;

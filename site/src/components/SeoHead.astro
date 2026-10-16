@@ -38,25 +38,45 @@ const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
   href={new URL(base + '/rss.xml', site).href}
 />
 
-<!-- 繁简切换（全站共用入口）：浮动印章按钮，懒加载 OpenCC，人名占位符保护 -->
-<button id="cc-toggle" type="button" aria-label="切换繁体">繁</button>
-<style>
-  #cc-toggle {
-    position: fixed; right: 1.1rem; bottom: 1.1rem; z-index: 9999;
-    width: 2.5rem; height: 2.5rem; border-radius: 6px;
-    border: 1px solid rgba(158, 43, 34, 0.55);
-    background: rgba(158, 43, 34, 0.92); color: #f7f3e8;
-    font: 600 1.05rem/1 "Songti SC", "STSong", serif;
-    cursor: pointer; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    opacity: 0.85; transition: opacity 0.2s;
-  }
-  #cc-toggle:hover { opacity: 1; }
-</style>
+<!-- 繁简切换（全站共用入口）：浮动印章按钮，懒加载 OpenCC，人名占位符保护。
+     按钮不进 head 静态输出（head 只留元信息），由下方脚本在运行时挂载到 document.body -->
 <script is:inline define:vars={{ base }}>
   (function () {
     const KEY = 'zyp-lang';
-    const btn = document.getElementById('cc-toggle');
+    const STATE_KEY = 'zyp-ui-state';
+    let btn = null;
     let converter = null, names = null, loading = null;
+    let uiState = 'idle'; // idle | loading | error（按钮三态）
+
+    // 按钮三态：加载中禁用 + 提示；失败提示 + 可点重试；正常按当前语言显示 繁/简
+    function setState(s) {
+      uiState = s;
+      if (!btn) return;
+      if (s === 'loading') {
+        btn.disabled = true;
+        btn.dataset.state = 'loading';
+        btn.textContent = '…';
+        btn.setAttribute('aria-label', '繁体字典加载中');
+        btn.title = '繁体字典加载中…';
+      } else if (s === 'error') {
+        btn.disabled = false;
+        btn.dataset.state = 'error';
+        btn.textContent = '重试';
+        btn.setAttribute('aria-label', '繁体字典加载失败，点击重试');
+        btn.title = '繁体字典加载失败，点击重试';
+      } else {
+        btn.disabled = false;
+        btn.dataset.state = '';
+        btn.title = '';
+        if (document.documentElement.lang === 'zh-Hant') {
+          btn.textContent = '简';
+          btn.setAttribute('aria-label', '切换简体');
+        } else {
+          btn.textContent = '繁';
+          btn.setAttribute('aria-label', '切换繁体');
+        }
+      }
+    }
 
     function loadDeps() {
       if (loading) return loading;
@@ -64,15 +84,81 @@ const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
         new Promise((res, rej) => {
           const s = document.createElement('script');
           s.src = base + '/vendor/opencc/cn2t.js';
-          s.onload = res; s.onerror = rej;
+          s.onload = res;
+          s.onerror = () => { s.remove(); rej(new Error('opencc')); };
           document.head.appendChild(s);
         }),
         fetch(base + '/data/protected_names.json').then((r) => r.json()),
       ]).then(([, list]) => {
         converter = OpenCC.Converter({ from: 'cn', to: 't' });
         names = list;
+      }).catch((err) => {
+        loading = null; // 失败不缓存 rejected Promise：下次点击重新发起请求
+        throw err;
       });
       return loading;
+    }
+
+    // ── 切换前后保护交互状态（勘误草稿 / 地图朝代筛选 / 网络图类型与开关）──
+    // 全部经 DOM 读取与回放（派发页面原生事件），不需要各页暴露内部变量。
+    function snapshotState() {
+      const s = { path: location.pathname };
+      if (document.getElementById('corrForm')) {
+        s.corr = {};
+        for (const id of ['f-kind', 'f-id', 'f-field', 'f-reporter', 'f-current', 'f-proposed', 'f-evidence']) {
+          const el = document.getElementById(id);
+          if (el) s.corr[id] = el.value;
+        }
+      }
+      const dyn = document.getElementById('dynRange');
+      if (dyn) s.dyn = dyn.value;
+      const chips = document.querySelectorAll('#netTools .chip[data-g]');
+      if (chips.length) {
+        const ext = document.getElementById('extToggle');
+        const hist = document.getElementById('histToggle');
+        s.net = {
+          g: Array.from(chips).map((c) => c.getAttribute('aria-pressed') === 'true'),
+          ext: ext ? ext.checked : false,
+          hist: hist ? hist.checked : false,
+        };
+      }
+      if (Object.keys(s).length > 1) {
+        try { sessionStorage.setItem(STATE_KEY, JSON.stringify(s)); } catch (e) { /* 存储不可用时跳过保护 */ }
+      }
+    }
+
+    function restoreState() {
+      let s = null;
+      try { s = JSON.parse(sessionStorage.getItem(STATE_KEY) || 'null'); } catch (e) { /* 坏快照按无快照处理 */ }
+      if (!s) return;
+      sessionStorage.removeItem(STATE_KEY); // 一次性消费，路径不符也清掉避免残留
+      if (s.path !== location.pathname) return;
+      if (s.corr) {
+        for (const id of Object.keys(s.corr)) {
+          const el = document.getElementById(id);
+          if (el && el.value !== s.corr[id]) {
+            el.value = s.corr[id];
+            el.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        }
+      }
+      if (s.dyn != null) {
+        const dyn = document.getElementById('dynRange');
+        if (dyn && dyn.value !== String(s.dyn)) {
+          dyn.value = s.dyn;
+          dyn.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      }
+      if (s.net) {
+        document.querySelectorAll('#netTools .chip[data-g]').forEach((c) => {
+          const want = !!s.net.g[+c.dataset.g];
+          if (want !== (c.getAttribute('aria-pressed') === 'true')) c.click();
+        });
+        const ext = document.getElementById('extToggle');
+        if (ext && !!s.net.ext !== ext.checked) ext.click();
+        const hist = document.getElementById('histToggle');
+        if (hist && !!s.net.hist !== hist.checked) hist.click();
+      }
     }
 
     // 人名 → 占位符（私有区字符，OpenCC 不会动）
@@ -129,25 +215,76 @@ const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
     };
 
     function activate() {
-      loadDeps().then(() => { convertPage(); localStorage.setItem(KEY, 't'); })
-        .catch(() => { /* 字典加载失败时静默：保持简体 */ });
+      setState('loading');
+      snapshotState(); // 切换前存草稿/筛选（本页有对应控件才写）
+      loadDeps().then(() => {
+        convertPage();
+        localStorage.setItem(KEY, 't'); // 成功后才写语言偏好；失败不落
+        restoreState(); // 原地转繁不动表单值，此步为幂等兜底
+        setState('idle');
+      }).catch(() => {
+        setState('error'); // 失败：按钮转为可点的重试态，偏好不改写
+      });
     }
 
-    btn.addEventListener('click', () => {
-      if (localStorage.getItem(KEY) === 't') {
-        localStorage.removeItem(KEY);
-        location.reload(); // 回到简体 = 重载原始 HTML，避免双向转换误差
-      } else {
-        activate();
-      }
-    });
+    // 运行时挂载：样式与按钮都进 body 一侧，head 静态输出保持纯元信息。
+    // class/id/z-index 与视觉样式与原 head 内 <style> 完全一致。
+    function mountButton() {
+      if (document.getElementById('cc-toggle')) return;
+      const style = document.createElement('style');
+      style.textContent =
+        '#cc-toggle{' +
+        'position:fixed;right:max(1.1rem, env(safe-area-inset-right));' +
+        'bottom:max(1.1rem, env(safe-area-inset-bottom));z-index:80;' +
+        'width:2.5rem;height:2.5rem;border-radius:6px;' +
+        'border:1px solid rgba(158,43,34,0.55);' +
+        'background:rgba(158,43,34,0.92);color:#f7f3e8;' +
+        'font:600 1.05rem/1 "Songti SC","STSong",serif;' +
+        'cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.25);' +
+        'opacity:0.85;transition:opacity 0.2s;}' +
+        '#cc-toggle:hover{opacity:1;}' +
+        '#cc-toggle:disabled{cursor:wait;opacity:0.6;}' +
+        '#cc-toggle[data-state="error"]{font-size:0.85rem;border-color:#f7f3e8;}' +
+        'html.cc-kb #cc-toggle{display:none;}';
+      document.head.appendChild(style);
+      btn = document.createElement('button');
+      btn.id = 'cc-toggle';
+      btn.type = 'button';
+      btn.setAttribute('aria-label', '切换繁体');
+      btn.textContent = '繁';
+      document.body.appendChild(btn);
 
-    if (localStorage.getItem(KEY) === 't') {
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', activate);
-      } else {
-        activate();
+      // 软键盘展开时按钮会盖住输入框底部。可视区被键盘吃掉超过 120px 就先收起，键盘收起再回来。
+      if (window.visualViewport) {
+        const syncKb = () => {
+          const covered = window.innerHeight - window.visualViewport.height;
+          document.documentElement.classList.toggle('cc-kb', covered > 120);
+        };
+        window.visualViewport.addEventListener('resize', syncKb);
       }
+
+      btn.addEventListener('click', () => {
+        if (uiState === 'error') { activate(); return; } // 失败态点击 = 重试，不看偏好
+        if (localStorage.getItem(KEY) === 't') {
+          snapshotState(); // 重载回简体前存草稿/筛选，onReady 一侧恢复
+          localStorage.removeItem(KEY);
+          location.reload(); // 回到简体 = 重载原始 HTML，避免双向转换误差
+        } else {
+          activate();
+        }
+      });
+    }
+
+    function onReady() {
+      mountButton();
+      restoreState(); // 简体重载回来：恢复切换前存的草稿/筛选
+      if (localStorage.getItem(KEY) === 't') activate();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', onReady);
+    } else {
+      onReady();
     }
   })();
 </script>

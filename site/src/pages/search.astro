@@ -75,9 +75,13 @@ const yMax = Math.max(...years);
             {dynasties.map((d) => <button type="button" class="chip" data-d={d}>{d}</button>)}
           </div>
           <div class="year-range">
-            <input id="yFrom" type="number" placeholder={String(yMin)} min={yMin} max={yMax} />
+            <input id="yFrom" type="number" placeholder={String(yMin)} min={yMin} max={yMax} aria-describedby="yearWarn" />
             <span>—</span>
-            <input id="yTo" type="number" placeholder={String(yMax)} min={yMin} max={yMax} />
+            <input id="yTo" type="number" placeholder={String(yMax)} min={yMin} max={yMax} aria-describedby="yearWarn" />
+            <p id="yearWarn" class="year-warn" hidden>
+              起始年晚于结束年
+              <button id="yearSwap" type="button">交换</button>
+            </p>
           </div>
         </div>
         <div class="f-row f-meta">
@@ -99,10 +103,13 @@ const yMax = Math.max(...years);
       const LIMIT = parseInt(document.getElementById('idx').dataset.limit, 10) || 500;
       const $ = (s) => document.querySelector(s);
       const qEl = $('#q'), tagEl = $('#tag'), yFromEl = $('#yFrom'), yToEl = $('#yTo'),
-            countEl = $('#count'), listEl = $('#results'), fullEl = $('#fullOnly');
+            countEl = $('#count'), listEl = $('#results'), fullEl = $('#fullOnly'),
+            yearWarnEl = $('#yearWarn');
       const activeDyn = new Set();
 
       // URL hash 同步：#q=..&dyn=唐宋&y=1400-1500&tag=..&full=1
+      // 程序写 hash 时置位，避免 replaceState 之外的自身回声触发二次重置。
+      let applyingHash = false;
       function toHash() {
         const p = new URLSearchParams();
         if (qEl.value.trim()) p.set('q', qEl.value.trim());
@@ -111,21 +118,42 @@ const yMax = Math.max(...years);
         if (yf || yt) p.set('y', `${yf || ''}-${yt || ''}`);
         if (tagEl.value) p.set('tag', tagEl.value);
         if (fullEl.checked) p.set('full', '1');
-        history.replaceState(null, '', p.toString() ? '#' + p : location.pathname);
+        const next = p.toString() ? '#' + p : '';
+        if ((location.hash || '') === next) return;
+        applyingHash = true;
+        history.replaceState(null, '', next || location.pathname);
+        applyingHash = false;
+      }
+      // 先清空全部条件，再按 hash 应用，避免同页改 hash / 前进后退时旧条件残留。
+      function clearFilters() {
+        qEl.value = ''; tagEl.value = ''; yFromEl.value = ''; yToEl.value = '';
+        fullEl.checked = false; activeDyn.clear();
+        document.querySelectorAll('.chip.on').forEach((c) => c.classList.remove('on'));
       }
       function fromHash() {
+        clearFilters();
         const p = new URLSearchParams(location.hash.slice(1));
         if (p.get('q')) qEl.value = p.get('q');
         if (p.get('dyn')) p.get('dyn').split(',').forEach((c) => {
-          const chip = document.querySelector(`.chip[data-d="${c}"]`);
+          const chip = document.querySelector(`.chip[data-d="${CSS.escape(c)}"]`);
           if (chip && !activeDyn.has(c)) { activeDyn.add(c); chip.classList.add('on'); }
         });
         if (p.get('y')) {
-          const [a, b] = p.get('y').split('-');
-          yFromEl.value = a || ''; yToEl.value = b || '';
+          const y = p.get('y');
+          const cut = y.indexOf('-');
+          // 只按第一个连字符切开，负年号不会被拆碎；无连字符视为仅起始年。
+          yFromEl.value = cut < 0 ? y : y.slice(0, cut);
+          yToEl.value = cut < 0 ? '' : y.slice(cut + 1);
         }
         if (p.get('tag')) tagEl.value = p.get('tag');
         if (p.get('full') === '1') fullEl.checked = true;
+      }
+      // 两端都填且起始年晚于结束年：就地提示，不走结果区「无命中」。空端点 = 不限制。
+      function yearInverted() {
+        if (yFromEl.value === '' || yToEl.value === '') return false;
+        const yf = parseInt(yFromEl.value, 10);
+        const yt = parseInt(yToEl.value, 10);
+        return Number.isFinite(yf) && Number.isFinite(yt) && yf > yt;
       }
 
       function match(p) {
@@ -158,6 +186,16 @@ const yMax = Math.max(...years);
       }
 
       function render() {
+        const inverted = yearInverted();
+        yearWarnEl.hidden = !inverted;
+        yFromEl.setAttribute('aria-invalid', inverted ? 'true' : 'false');
+        yToEl.setAttribute('aria-invalid', inverted ? 'true' : 'false');
+        if (inverted) {
+          countEl.textContent = '';
+          listEl.innerHTML = '';
+          toHash();
+          return;
+        }
         const hits = idx.filter(match);
         countEl.textContent = `命中 ${hits.length} / ${idx.length} 人`;
         if (!hits.length) {
@@ -196,11 +234,32 @@ const yMax = Math.max(...years);
         el.addEventListener('change', render);
       });
       $('#reset').addEventListener('click', () => {
-        qEl.value = ''; tagEl.value = ''; yFromEl.value = ''; yToEl.value = '';
-        fullEl.checked = false; activeDyn.clear();
-        document.querySelectorAll('.chip.on').forEach((c) => c.classList.remove('on'));
+        clearFilters();
         render();
       });
+      $('#yearSwap').addEventListener('click', () => {
+        const a = yFromEl.value;
+        yFromEl.value = yToEl.value;
+        yToEl.value = a;
+        render();
+      });
+
+      // 同文档改 hash、以及前进/后退：完整重置后再按 hash 恢复。
+      // 后退改 hash 时 popstate 与 hashchange 会连续到，合并成一次恢复。
+      // replaceState 不触发这两个事件；自身写 hash 期间忽略回声。
+      let restoreQueued = false;
+      function restoreFromLocation() {
+        if (applyingHash || restoreQueued) return;
+        restoreQueued = true;
+        queueMicrotask(() => {
+          restoreQueued = false;
+          if (applyingHash) return;
+          fromHash();
+          render();
+        });
+      }
+      window.addEventListener('hashchange', restoreFromLocation);
+      window.addEventListener('popstate', restoreFromLocation);
 
       fromHash();
       render();

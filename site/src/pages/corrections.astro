@@ -6,7 +6,11 @@ import SeoHead from '../components/SeoHead.astro';
 import SiteNav from '../components/SiteNav.astro';
 import '../styles/base.css';
 import '../styles/corrections.css';
-import { BASE } from '../lib/persons';
+import { BASE, allPersons } from '../lib/persons';
+
+// R5-T16：人物页「站内勘误此卡」跳本会带 ?id=<person.id>，构建期注入 id→姓名映射，
+// 让表单默认显示人物姓名、读者全程无需接触机器 id
+const personNames = Object.fromEntries(allPersons().map((p: any) => [p.id, p.name]));
 
 const cdir = path.resolve(process.cwd(), '../data/corrections');
 const corrections = fs.readdirSync(cdir)
@@ -51,7 +55,7 @@ const dateStr = (d: unknown) =>
       <section class="flow-note">
         <h2 class="section-title">处理流程</h2>
         <ol>
-          <li><b>提交</b>：用下方表单生成勘误单，再点「在 GitHub 提交」一键开出 Issue（内容已预填，72 小时内响应）。</li>
+          <li><b>提交</b>：用下方表单生成勘误单，再点「前往提交页」打开 GitHub 提交页（正文按当前表单预填，需在该页确认；72 小时内响应）。</li>
           <li><b>比对</b>：人工核对原始出处；A 级结论须双独立来源支撑。</li>
           <li><b>留痕</b>：采信 / 驳回 / 异说备录，均写入本站勘误记录并随版本库公开。</li>
         </ol>
@@ -82,7 +86,7 @@ const dateStr = (d: unknown) =>
 
       <section class="submit">
         <h2 class="section-title">提交勘误</h2>
-        <p class="note-line">填写后点「生成勘误单」，再点「在 GitHub 提交此勘误」——内容已预填为 Issue，确认提交即可（需 GitHub 账号）。「复制文本」留作备用。</p>
+        <p class="note-line">填写后点「生成勘误单」。预览、复制与跳转链接始终跟当前表单一致；改任一字段会立刻重算。「前往提交页」只打开 GitHub 提交页（正文按当时表单预填，需在该页确认，需 GitHub 账号），并不等于已经提交。「复制文本」留作备用。</p>
         <form id="corrForm">
           <div class="row">
             <label>对象类型
@@ -116,7 +120,7 @@ const dateStr = (d: unknown) =>
           </label>
           <div class="row">
             <button type="submit">生成勘误单</button>
-            <a id="issueBtn" class="issue-link" hidden target="_blank" rel="noopener">在 GitHub 提交此勘误 →</a>
+            <a id="issueBtn" class="issue-link" hidden target="_blank" rel="noopener">前往提交页 →</a>
             <button type="button" id="copyBtn" disabled>复制文本</button>
           </div>
         </form>
@@ -126,43 +130,137 @@ const dateStr = (d: unknown) =>
       <a class="back" href={BASE}>← 返回首页</a>
     </div>
 
+    <script type="application/json" id="personNames" set:html={JSON.stringify(personNames)} />
     <script>
       const form = document.getElementById('corrForm');
       const out = document.getElementById('output');
       const copyBtn = document.getElementById('copyBtn');
       const issueBtn = document.getElementById('issueBtn');
       const v = (id) => document.getElementById(id).value.trim();
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
+
+      // R5-T16：人物页「站内勘误此卡」带 ?id= 进入。命中时默认显示人物姓名、
+      // 隐藏机器标识（高级输入里仍可看与改），对象类型锁为人物。
+      const NAMES = JSON.parse(document.getElementById('personNames').textContent);
+      const pid = new URLSearchParams(location.search).get('id');
+      if (pid && NAMES[pid]) {
+        document.getElementById('f-kind').value = 'person';
+        const idInput = document.getElementById('f-id');
+        idInput.value = pid;
+        idInput.setAttribute('readonly', 'readonly');
+        const nameLabel = document.createElement('label');
+        nameLabel.textContent = '人物姓名';
+        const nameInput = document.createElement('input');
+        nameInput.id = 'f-name';
+        nameInput.value = NAMES[pid];
+        nameInput.readOnly = true;
+        nameLabel.appendChild(nameInput);
+        idInput.parentElement.before(nameLabel);
+        idInput.parentElement.hidden = true;
+        const adv = document.createElement('details');
+        adv.className = 'note-line';
+        adv.innerHTML = '<summary>高级：查看或修改机器标识</summary>';
+        adv.appendChild(idInput.parentElement);
+        nameLabel.after(adv);
+      }
+
+      // 字段选项中文化：读者选中文，生成物仍写机器字段名（落库口径不变）
+      const FIELD_LABELS = {
+        record: '整卡记录', birth_year: '出生年', death_year: '逝世年',
+        native: '籍贯', exam_year: '科年', zi: '字', hao: '号', name: '姓名',
+      };
+      const fieldInput = document.getElementById('f-field');
+      const fieldSel = document.createElement('select');
+      fieldSel.id = 'f-field';
+      for (const [val, label] of Object.entries(FIELD_LABELS)) {
+        const o = document.createElement('option');
+        o.value = val; o.textContent = label;
+        fieldSel.appendChild(o);
+      }
+      const customOpt = document.createElement('option');
+      customOpt.value = '__custom__'; customOpt.textContent = '其他字段…';
+      fieldSel.appendChild(customOpt);
+      const customInput = document.createElement('input');
+      customInput.placeholder = '填写原始字段标识';
+      customInput.hidden = true;
+      fieldSel.addEventListener('change', () => { customInput.hidden = fieldSel.value !== '__custom__'; });
+      fieldInput.replaceWith(fieldSel);
+      fieldSel.after(customInput);
+      const origV = v;
+      const v2 = (id) => id === 'f-field'
+        ? (fieldSel.value === '__custom__' ? customInput.value.trim() : fieldSel.value)
+        : origV(id);
+      // 单一数据源：预览、复制、跳转链接都从当前表单字段现算，不缓存上一次生成结果
+      // 生成物为面向读者的 Markdown（字段标签对齐 Issue 表单模板 correction.yml）：
+      // 多行、冒号、# 等字符在 Markdown 下无解析陷阱；直拼 YAML 标量会被这些输入破坏结构
+      const KIND_LABEL = { person: '人物', source: '出处', site: '站点页面', external: '外部数据源' };
+      const buildText = () => {
         const today = new Date().toISOString().slice(0, 10);
-        const y = [
-          `# 读者勘误（待编号）`,
-          `id: corr_pending`,
-          `target: ${v('f-kind')}:${v('f-id')}`,
-          `field: ${v('f-field') || 'record'}`,
-          `current: ${v('f-current')}`,
-          `proposed: ${v('f-proposed')}`,
-          `reason: （请补充理由）`,
-          `evidence: ${v('f-evidence')}`,
-          `status: pending`,
-          `reporter: ${v('f-reporter') || '匿名'}`,
-          `created: ${today}`,
+        const kind = v('f-kind');
+        const section = (label, text) => `**${label}**\n\n${text}`;
+        return [
+          '## 勘误单（读者提交）',
+          '',
+          `- 对象类型：${KIND_LABEL[kind] || kind}（${kind}）`,
+          `- 对象标识：${v('f-id')}${document.getElementById('f-name') ? '（' + document.getElementById('f-name').value + '）' : ''}`,
+          `- 涉及字段：${v2('f-field') || 'record'}`,
+          `- 署名：${v('f-reporter') || '匿名'}`,
+          `- 提交日期：${today}`,
+          '',
+          section('现状（站内当前记载原文）', v('f-current')),
+          '',
+          section('建议修正为', v('f-proposed')),
+          '',
+          section('依据（书名卷次 / 链接；A/B 级依据优先）', v('f-evidence')),
+          '',
+          section('理由', '（请补充理由）'),
         ].join('\n');
+      };
+      const sync = () => {
+        const y = buildText();
         out.textContent = y;
-        out.hidden = false;
-        copyBtn.disabled = false;
-        // 一键开 Issue：文本式模板认 ?title=&body=（表单式只认字段 id 预填）
-        const issueUrl = 'https://github.com/wakakacoding/zhuangyuanpu/issues/new'
+        // 文本式模板认 ?title=&body=（表单式只认字段 id 预填）；此链接只打开提交页，不代表已提交
+        issueBtn.href = 'https://github.com/wakakacoding/zhuangyuanpu/issues/new'
           + '?template=correction-text.md'
           + `&title=${encodeURIComponent(`[勘误] ${v('f-id')}`)}`
           + `&body=${encodeURIComponent(y)}`;
-        issueBtn.href = issueUrl;
+      };
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        sync();
+        out.hidden = false;
+        copyBtn.disabled = false;
         issueBtn.hidden = false;
       });
+      form.addEventListener('input', () => {
+        if (out.hidden) return;
+        sync();
+      });
+      const flash = (msg, ms) => {
+        copyBtn.textContent = msg;
+        setTimeout(() => (copyBtn.textContent = '复制文本'), ms);
+      };
+      // 复制兜底：无剪贴板能力或写入被拒时，全选生成物让读者手动 Ctrl/⌘+C
+      const selectOutput = () => {
+        const range = document.createRange();
+        range.selectNodeContents(out);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+      };
       copyBtn.addEventListener('click', async () => {
-        await navigator.clipboard.writeText(out.textContent);
-        copyBtn.textContent = '已复制 ✓';
-        setTimeout(() => (copyBtn.textContent = '复制文本'), 1500);
+        sync();
+        if (!navigator.clipboard || !navigator.clipboard.writeText) {
+          selectOutput();
+          flash('浏览器不支持自动复制：已全选，请按 Ctrl/⌘+C', 4000);
+          return;
+        }
+        try {
+          await navigator.clipboard.writeText(out.textContent);
+          flash('已复制 ✓', 1500);
+        } catch {
+          selectOutput();
+          flash('复制失败：已全选，请按 Ctrl/⌘+C', 4000);
+        }
       });
     </script>
   </body>

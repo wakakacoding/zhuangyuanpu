@@ -103,29 +103,35 @@ const nSpecial = specialRoles(allPersons()).length;
         <span><i class="lg-plain"></i>确认 / 存疑 / 失考（{stars.length - counts.story - counts.full}）</span>
       </div>
 
-      {/* 移动端降级：竖滚朝代分带列表 */}
-      <div class="band-list">
-        {bandGroups.map((g) => (
-          <section>
-            <h2>{g.band}<span>{g.list.length} 人</span></h2>
-            <ul>
-              {g.list.map((s) => (
-                <li>
-                  <a href={`${BASE}persons/${s.s}/`}>
-                    {s.t === 0 && <span class="bl-star">★</span>}{s.n}
-                  </a>
-                  <span class="bl-year">{s.y}{s.ry ? ` · ${s.ry}` : ''}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+      {/* 人物列表：全屏宽可切换。桌面默认收起，窄屏默认展开。
+          列表项是按钮，Enter 打开信息卡；卡内链接进档案。 */}
+      <div class="band-list" id="bandList">
+        <button type="button" class="bl-toggle" id="bandToggle" aria-expanded="false" aria-controls="bandPanel">
+          人物列表（{stars.length}）
+        </button>
+        <div class="bl-panel" id="bandPanel" hidden>
+          {bandGroups.map((g) => (
+            <section>
+              <h2>{g.band}<span>{g.list.length} 人</span></h2>
+              <ul>
+                {g.list.map((s) => (
+                  <li>
+                    <button type="button" class="bl-pick" data-slug={s.s}>
+                      {s.t === 0 && <span class="bl-star" aria-hidden="true">★</span>}{s.n}
+                    </button>
+                    <span class="bl-year">{s.y}{s.ry ? ` · ${s.ry}` : ''}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
       </div>
     </div>
 
     <div id="galaxyTip" role="tooltip"></div>
-    <div id="galaxyCard">
-      <button class="tie-close" aria-label="关闭">✕</button>
+    <div id="galaxyCard" role="region" aria-labelledby="galaxyCardTitle">
+      <button class="tie-close" type="button" aria-label="关闭">✕</button>
       <div class="pop" id="galaxyCardBody"></div>
     </div>
 
@@ -140,25 +146,60 @@ const nSpecial = specialRoles(allPersons()).length;
       const tip = document.getElementById('galaxyTip');
       const card = document.getElementById('galaxyCard');
       const cardBody = document.getElementById('galaxyCardBody');
+      const cardClose = card.querySelector('.tie-close');
+      const bandList = document.getElementById('bandList');
+      const bandToggle = document.getElementById('bandToggle');
+      const bandPanel = document.getElementById('bandPanel');
+      const bySlug = new Map(STARS.map((s) => [s.s, s]));
+      // 打开信息卡的触发项。关闭后焦点回到这里（R5-T6）。非模态，不锁背景。
+      let cardTrigger = null;
 
       // 视图：世界坐标 → 屏幕。view = {x, y} 世界中心偏移（屏幕左上对应的世界点）+ scale
       let view = { x: 0, y: 0, scale: 1 };
       let dpr = 1, cw = 0, ch = 0;
       let screenPts = []; // 每帧缓存屏幕坐标供命中检测
       let raf = 0, dirty = true;
+      // 宽度≤760px 时画布 display:none，clientWidth/Height 为 0。
+      // 此时 fit 会把 scale 打成 0、x/y 打成 NaN，且之后 resize 只改尺寸不重适配。
+      let fitted = false;
+
+      function canvasHidden() {
+        if (!canvas) return true;
+        const cs = getComputedStyle(canvas);
+        if (cs.display === 'none' || cs.visibility === 'hidden') return true;
+        return canvas.clientWidth < 1 || canvas.clientHeight < 1;
+      }
 
       function resize() {
+        const wasHidden = cw < 1 || ch < 1;
+        if (canvasHidden()) {
+          cw = 0; ch = 0;
+          return;
+        }
         dpr = Math.min(window.devicePixelRatio || 1, 2);
         cw = canvas.clientWidth; ch = canvas.clientHeight;
-        canvas.width = cw * dpr; canvas.height = ch * dpr;
-        dirty = true; schedule();
+        if (!(cw >= 1 && ch >= 1)) {
+          cw = 0; ch = 0;
+          return;
+        }
+        canvas.width = Math.round(cw * dpr); canvas.height = Math.round(ch * dpr);
+        // 从零尺寸跨到有效尺寸（窄屏初开后拉宽）必须重新 fit，否则视图仍是 scale=0 / NaN
+        if (wasHidden || !fitted) fitView();
+        else { dirty = true; schedule(); }
       }
 
       function fitView() {
+        if (!(cw >= 1 && ch >= 1) || !(WW > 0) || !(WH > 0)) return;
         const sx = cw / WW, sy = ch / WH;
-        view.scale = Math.min(sx, sy) * 0.96;
-        view.x = (WW - cw / view.scale) / 2;
-        view.y = (WH - ch / view.scale) / 2;
+        const scale = Math.min(sx, sy) * 0.96;
+        if (!Number.isFinite(scale) || scale <= 0) return;
+        const x = (WW - cw / scale) / 2;
+        const y = (WH - ch / scale) / 2;
+        if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+        view.scale = scale;
+        view.x = x;
+        view.y = y;
+        fitted = true;
         dirty = true; schedule();
       }
 
@@ -170,10 +211,17 @@ const nSpecial = specialRoles(allPersons()).length;
         { r: 1.7, color: '#e8e2d0', alpha: 0.35 },            // missing
       ];
 
+      function viewUsable() {
+        return cw >= 1 && ch >= 1
+          && Number.isFinite(view.scale) && view.scale > 0
+          && Number.isFinite(view.x) && Number.isFinite(view.y);
+      }
+
       function render() {
         raf = 0;
         if (!dirty) return;
         dirty = false;
+        if (!viewUsable() || !ctx) return;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
         // 底：玄青黛蓝渐变
         const g = ctx.createLinearGradient(0, 0, 0, ch);
@@ -240,6 +288,7 @@ const nSpecial = specialRoles(allPersons()).length;
       });
       canvas.addEventListener('pointermove', (e) => {
         if (drag) {
+          if (!viewUsable()) { drag = null; return; }
           const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
           if (Math.abs(dx) + Math.abs(dy) > 3) moved = true;
           view.x -= dx / view.scale; view.y -= dy / view.scale;
@@ -258,11 +307,15 @@ const nSpecial = specialRoles(allPersons()).length;
       // ---- 滚轮缩放（以指针为中心）----
       canvas.addEventListener('wheel', (e) => {
         e.preventDefault();
+        if (!viewUsable()) return;
         const rect = canvas.getBoundingClientRect();
         const mx = e.clientX - rect.left, my = e.clientY - rect.top;
         const wx = view.x + mx / view.scale, wy = view.y + my / view.scale;
-        view.scale = Math.min(9, Math.max(0.35, view.scale * (e.deltaY < 0 ? 1.16 : 1 / 1.16)));
-        view.x = wx - mx / view.scale; view.y = wy - my / view.scale;
+        const next = Math.min(9, Math.max(0.35, view.scale * (e.deltaY < 0 ? 1.16 : 1 / 1.16)));
+        if (!Number.isFinite(next) || next <= 0) return;
+        const nx = wx - mx / next, ny = wy - my / next;
+        if (!Number.isFinite(nx) || !Number.isFinite(ny)) return;
+        view.scale = next; view.x = nx; view.y = ny;
         dirty = true; schedule(); hideTip();
       }, { passive: false });
 
@@ -295,11 +348,23 @@ const nSpecial = specialRoles(allPersons()).length;
 
       // ---- 点击弹「帖」 ----
       const TIER_NAME = ['有故事', '全档案', '已确认', '存疑', '失考'];
-      function click(e) {
-        const p = pick(e);
-        if (!p) { card.style.display = 'none'; return; }
-        const s = p.s;
-        let html = `<b>${s.n}</b><span class="pop-badge">${TIER_NAME[s.t]}</span>` +
+      function cardOpen() {
+        return card.style.display === 'block';
+      }
+      function closeCard(restore) {
+        if (!cardOpen()) return;
+        card.style.display = 'none';
+        const back = cardTrigger;
+        cardTrigger = null;
+        if (restore && back && typeof back.focus === 'function') back.focus();
+      }
+      function placeCard(x, y) {
+        const w = 240, h = card.offsetHeight || 160;
+        card.style.left = Math.min(Math.max(8, x), window.innerWidth - w - 12) + 'px';
+        card.style.top = Math.min(Math.max(8, y), window.innerHeight - h - 12) + 'px';
+      }
+      function openCard(s, x, y, trigger) {
+        let html = `<b id="galaxyCardTitle">${s.n}</b><span class="pop-badge">${TIER_NAME[s.t]}</span>` +
           `<div class="pop-meta">${s.d} · ${s.y} 年` +
           (s.ry ? `<br>${s.ry}` : '') + (s.gz ? ` · ${s.gz}` : '') + `</div>` +
           `<a href="${base}persons/${s.s}/">档案页 →</a>`;
@@ -310,15 +375,89 @@ const nSpecial = specialRoles(allPersons()).length;
         }
         cardBody.innerHTML = html;
         card.style.display = 'block';
-        const w = 240, h = card.offsetHeight || 160;
-        card.style.left = Math.min(e.clientX + 12, window.innerWidth - w - 12) + 'px';
-        card.style.top = Math.min(e.clientY + 12, window.innerHeight - h - 12) + 'px';
+        placeCard(x, y);
+        cardTrigger = trigger || null;
+        // 焦点进标题，屏幕阅读器随 aria-labelledby 读出人名；标题不可聚焦时落到关闭按钮。
+        const title = document.getElementById('galaxyCardTitle');
+        if (title) {
+          title.tabIndex = -1;
+          title.focus();
+        } else {
+          cardClose.focus();
+        }
       }
-      card.querySelector('.tie-close').addEventListener('click', () => { card.style.display = 'none'; });
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') card.style.display = 'none'; });
+      function click(e) {
+        const p = pick(e);
+        if (!p) { closeCard(false); return; }
+        openCard(p.s, e.clientX + 12, e.clientY + 12, null);
+      }
+      cardClose.addEventListener('click', () => closeCard(true));
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && cardOpen()) {
+          e.preventDefault();
+          closeCard(true);
+        }
+      });
+
+      // ---- 人物列表：桌面默认收起，窄屏默认展开。按钮打开同一张信息卡。 ----
+      const wideList = window.matchMedia('(min-width: 761px)');
+      function syncPickTab() {
+        // 桌面收起时面板是 display:none，但子按钮仍留在 Tab 序里。收起就摘掉。
+        const open = bandList.classList.contains('is-open') && !bandPanel.hidden;
+        for (const el of bandPanel.querySelectorAll('button')) el.tabIndex = open ? 0 : -1;
+      }
+      function syncListChrome() {
+        const wide = wideList.matches;
+        if (!wide) {
+          bandList.classList.add('is-open');
+          bandPanel.hidden = false;
+          bandToggle.setAttribute('aria-expanded', 'true');
+          bandToggle.hidden = true;
+        } else {
+          bandToggle.hidden = false;
+          if (!bandList.classList.contains('is-open')) {
+            bandPanel.hidden = true;
+            bandToggle.setAttribute('aria-expanded', 'false');
+          }
+        }
+        syncPickTab();
+      }
+      bandToggle.addEventListener('click', () => {
+        const open = !bandList.classList.contains('is-open');
+        bandList.classList.toggle('is-open', open);
+        bandPanel.hidden = !open;
+        bandToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        bandToggle.textContent = open ? `收起人物列表（${STARS.length}）` : `人物列表（${STARS.length}）`;
+        syncPickTab();
+      });
+      bandList.addEventListener('click', (e) => {
+        const btn = e.target.closest('.bl-pick');
+        if (!btn) return;
+        const s = bySlug.get(btn.dataset.slug);
+        if (!s) return;
+        const r = btn.getBoundingClientRect();
+        openCard(s, r.left, r.bottom + 8, btn);
+      });
+      syncListChrome();
+      if (wideList.addEventListener) wideList.addEventListener('change', syncListChrome);
+      else if (wideList.addListener) wideList.addListener(syncListChrome);
 
       window.addEventListener('resize', resize);
-      resize(); fitView();
+      // 断点由媒体查询切换（display:none ↔ block）。resize 在部分浏览器上会晚一拍，
+      // 故再挂一次 change；零尺寸时 resize() 直接返回，可见后再 fit。
+      const mq = window.matchMedia('(max-width: 760px)');
+      if (mq.addEventListener) mq.addEventListener('change', resize);
+      else if (mq.addListener) mq.addListener(resize);
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          if (entries.some((en) => en.isIntersecting && en.intersectionRect.width >= 1 && en.intersectionRect.height >= 1)) {
+            resize();
+          }
+        });
+        io.observe(canvas);
+      }
+      resize();
+      if (!fitted) fitView();
     </script>
   </body>
 </html>

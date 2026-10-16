@@ -1,7 +1,8 @@
 /* 故事页排版：章节式长文 + 轶事卡三级视觉（在 base.css 变量之上） */
 
 /* ---------- 故事页骨架 ---------- */
-.story-hero { border-bottom: 2px solid var(--ink); padding-bottom: 1.2rem; margin-bottom: 1.6rem; }
+/* 上置导航（SiteNav）本身只有上间距；标题上边距为 0，320–375px 下两者贴得太近。给 hero 补一档下间距。 */
+.story-hero { border-bottom: 2px solid var(--ink); padding-bottom: 1.2rem; margin: var(--space-5) 0 1.6rem; }
 .story-hero h1 { margin: 0 0 0.4rem; font-size: 1.9rem; line-height: 1.4; letter-spacing: 0.06em; }
 .story-hero .subtitle { color: var(--ink-soft); font-size: 1.02rem; margin: 0 0 0.6rem; }
 .story-hero .meta { font-size: 0.82rem; color: var(--ink-soft); display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -50,15 +51,17 @@
 .s-card-title { margin: 0.2rem 0 0.4rem; font-size: 1rem; }
 .s-card-body { margin: 0.3rem 0; }
 
-.s-card.tier-A { border-left: 4px solid var(--gold); }
-.s-card.tier-A .s-chip { background: var(--gold); }
-.s-card.tier-B { border-left: 4px solid var(--ink-soft); }
-.s-card.tier-B .s-chip { background: var(--ink-soft); }
+/* 三级卡边条/徽标一律接 base.css 语义变量（--tier-* 颜色+线型），不再写字面色值。
+   .s-chip 承载白字：A 级用 --gold-text（白字 5.45:1；装饰金 --gold 仅 3.25:1 不达标），与 base.css 的 .tier.tier-A 对齐。 */
+.s-card.tier-A { border-left: 4px var(--tier-a-style) var(--tier-a); }
+.s-card.tier-A .s-chip { background: var(--gold-text); }
+.s-card.tier-B { border-left: 4px var(--tier-b-style) var(--tier-b); }
+.s-card.tier-B .s-chip { background: var(--tier-b); }
 /* 传说卡：朱砂 + 虚线，与史实物理隔离的视觉承诺 */
 .s-card.tier-C {
-  border: 1px dashed var(--cinnabar); border-left-width: 4px; background: #f8efe9;
+  border: 1px var(--tier-c-style) var(--tier-c); border-left-width: 4px; background: #f8efe9;
 }
-.s-card.tier-C .s-chip { background: var(--cinnabar); }
+.s-card.tier-C .s-chip { background: var(--tier-c); }
 
 .s-card-srcs { margin-top: 0.5rem; }
 .s-card-srcs .src { margin: 0.25rem 0; }
@@ -68,11 +71,9 @@
   background: var(--paper-deep); font-size: 0.86rem;
 }
 .s-card-srcs .note { font-size: 0.8rem; color: var(--ink-soft); margin: 0.3rem 0; }
-.tier { display: inline-block; padding: 0 0.35rem; border-radius: 2px; color: #fff; font-size: 0.72rem; }
-.tier.tier-A { background: var(--gold); }
-.tier.tier-B { background: var(--ink-soft); }
-.tier.tier-C { background: var(--cinnabar); }
-.s-note { font-size: 0.8rem; color: var(--ink-soft); margin: 0.4rem 0 0; }
+/* .tier 徽章样式唯一来源是 base.css（.tier / .tier.tier-A/B/C，A 级用 --gold-text）。
+   此处原先重复定义且 A 级用 var(--gold)，与 base.css 同特异度、颜色取决于加载顺序 —— 已删除。 */
+.s-note { font-size: 0.84rem; color: var(--ink-soft); margin: var(--space-2) 0 0; }
 .s-card.s-missing { border: 1px dashed var(--cinnabar); background: transparent; }
 
 /* ---------- 出场人物互链卡 ---------- */

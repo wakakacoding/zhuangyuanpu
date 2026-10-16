@@ -355,6 +355,7 @@ const correctionUrl = `https://github.com/wakakacoding/zhuangyuanpu/issues/new?$
         </p>
       )}
 
+      <div class="fact-table-wrap">
       <table class="fact-table">
         <tbody>
           <tr><th>生卒</th><td>{(person.birth_year || person.death_year) ? `${person.birth_year || '？'}–${person.death_year ?? '？'}（${person.birth_year ? ganzhiOf(person.birth_year) : '？'}–${person.death_year ? ganzhiOf(person.death_year) : '？'}）` : <span class="quelu">待考</span>}</td></tr>
@@ -365,6 +366,7 @@ const correctionUrl = `https://github.com/wakakacoding/zhuangyuanpu/issues/new?$
           <tr><th>籍贯（今）</th><td>{person.native_modern ?? <span class="quelu">待考</span>}{person.lat != null && `（${person.lat}, ${person.lng}）`}</td></tr>
         </tbody>
       </table>
+      </div>
 
       <p class={`bio bio-${bio.status}`}>{bio.label}</p>
       {bio.hint && <p class="bio-hint">{bio.hint}</p>}
@@ -493,12 +495,15 @@ const correctionUrl = `https://github.com/wakakacoding/zhuangyuanpu/issues/new?$
         </>
       )}
 
-      {/* 勘误此卡（R3-3b）：带人物 id 与页面路径跳 GitHub Issue 表单 */}
+      {/* 勘误此卡：站内捷径（R5-T16，带人物 id 跳 corrections，姓名自动带出）+ 既有 GitHub 预填表单（R3-3b），两入口并存 */}
       <div class="page-foot">
-        <a class="err-btn" href={correctionUrl} target="_blank" rel="noopener noreferrer">
-          勘误此卡 · 去 GitHub 提 Issue →
+        <a class="err-btn" href={`${BASE}corrections/?id=${person.id}`}>
+          站内勘误此卡 →
         </a>
-        <span class="page-foot-note">预填卡号 {person.id} 与页面地址；提交前请附原文与依据。</span>
+        <a class="err-btn" style="margin-left: 0.5rem;" href={correctionUrl} target="_blank" rel="noopener noreferrer">
+          去 GitHub 提 Issue →
+        </a>
+        <span class="page-foot-note">站内入口自动带出本卡人物姓名，无需填写编号；GitHub 入口仍为原预填表单。提交前请附原文与依据。</span>
       </div>
 
       <a class="back" href={`${BASE}persons/`}>← 返回索引</a>

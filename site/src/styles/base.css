@@ -7,6 +7,67 @@
   --cinnabar: #9e2b22;
   --gold: #a98b3f;
   --line: #d8cfbc;
+
+  /* R5-T8 语义变量层。R5-T9/T10 起金色拆分（--gold-decor/--gold-text）与 --tier-*
+     已在 base.css / profile.css 落地引用；--paper/--ink/--gold 等原取值一律不动。 */
+
+  /* 文字 / 边框 / 强调。纸色主题映射现有色板。 */
+  --text-primary: var(--ink);       /* #2b2a26 */
+  --text-secondary: var(--ink-soft); /* #6a6558 */
+  --text-link: var(--cinnabar);     /* #9e2b22；当前 a 仍是 color: inherit，本变量未接入 */
+  --border: var(--line);            /* #d8cfbc */
+  --accent: var(--cinnabar);        /* #9e2b22 */
+  --danger: var(--cinnabar);        /* #9e2b22 */
+  --success: #3d6b4f;               /* 纸色板无成功色，预留，未接入 */
+
+  /* 金色拆分。装饰金 = 现有 --gold；文字金同色相加深，承载文字的金色（徽章/标签/链接文字）
+     一律用 --gold-text，纯装饰（边框、左边条、描边）用 --gold-decor。
+     #7d672f 相对亮度 0.1427。WCAG 2.x：对 #fbf8f0（0.9394）= 5.14:1，对 #f5f0e4（0.8733）= 4.79:1，均 ≥ 4.5:1。
+     对照：现有 #a98b3f 对这两底分别为 3.07:1、2.86:1。 */
+  --gold-decor: #a98b3f;
+  --gold-text: #7d672f;
+
+  /* 间距档 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* 可信度（出处 A/B/C）。颜色沿用现有徽章约定：A 金 / B 墨 / C 朱砂；
+     容器/时间线左边框与线型已接入（profile.css）。承载白字的 A 级徽章用 --gold-text，不用本变量。
+     可信度必须同时有文字标识，不只靠颜色。 */
+  --tier-a: var(--gold-decor);      /* #a98b3f，实线 */
+  --tier-a-style: solid;
+  --tier-b: var(--ink-soft);        /* #6a6558，实线 */
+  --tier-b-style: solid;
+  --tier-c: var(--cinnabar);        /* #9e2b22，虚线 */
+  --tier-c-style: dashed;
+
+  /* 中文正文回退栈：base.css 与 galaxy.css 两栈的并集，系统宋体优先、开源宋体其次、宋体末位兜底。
+     body / .galaxy-page 仍写死原栈，本变量未接入。 */
+  --font-body: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+}
+
+/* 深色主题（星图 / 关系网络）语义变量。作用域与页壳 .galaxy-page 一致，色值取自 galaxy.css / network.css 现用色，不新增可见样式。 */
+.galaxy-page {
+  --text-primary: #e8e2d0;          /* 正文 */
+  --text-secondary: rgba(232, 226, 208, 0.65); /* 导语 / 元信息，约 0.6–0.75 */
+  --text-link: #d4af37;             /* 导航与卡片链接 */
+  --border: rgba(169, 139, 63, 0.35); /* 画布描边 */
+  --accent: #d4af37;
+  --danger: #9e2b22;                /* 图例 .lg-full，现为色点不是文字 */
+  --success: #7d9a78;               /* 夜色板无成功色，预留，未接入 */
+  --gold-decor: #a98b3f;            /* 帖面顶边 / 引导线 */
+  --gold-text: #e8d9a8;             /* 标题用浅金；深底上不沿用纸色的加深金 */
+  --tier-a: #d4af37;
+  --tier-a-style: solid;
+  --tier-b: rgba(232, 226, 208, 0.65);
+  --tier-b-style: solid;
+  --tier-c: #9e2b22;
+  --tier-c-style: dashed;
+  --font-body: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -17,6 +78,11 @@ body {
   font-family: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
   line-height: 1.85;
   letter-spacing: 0.02em;
+  overflow-wrap: break-word;
+}
+/* 320px 与 200% 字号下，标题的大字距会把单个字顶出右缘。窄屏取消额外字距，桌面不动。 */
+@media (max-width: 640px) {
+  h1, h2, .site-head h1 { letter-spacing: 0; }
 }
 .container { max-width: 880px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
 a { color: inherit; }
@@ -35,13 +101,15 @@ a { color: inherit; }
 .site-nav a {
   font-size: 0.8rem; text-decoration: none; color: var(--ink);
   border: 1px solid var(--line); padding: 0.1rem 0.6rem; border-radius: 2px;
-  background: #fbf8f0;
+  background: #fbf8f0; white-space: normal;
 }
 .site-nav a:hover { color: var(--cinnabar); border-color: var(--cinnabar); }
 .site-nav a[aria-current="page"] { color: #fff; background: var(--cinnabar); border-color: var(--cinnabar); }
 /* RSS 入口：始终可见，靠右独立成组 */
-.site-nav .nav-rss { margin-left: auto; color: var(--gold); border-color: var(--gold); }
-.site-nav .nav-rss:hover { color: #fff; background: var(--gold); border-color: var(--gold); }
+/* RSS 入口：始终可见，靠右独立成组。文字用 --gold-text（原装饰金对 #fbf8f0 仅 3.07:1）；
+   静态描边为纯装饰，保留 --gold-decor；hover 深底浅字，白字对 --gold-text = 5.45:1 */
+.site-nav .nav-rss { margin-left: auto; color: var(--gold-text); border-color: var(--gold-decor); }
+.site-nav .nav-rss:hover { color: #fff; background: var(--gold-text); border-color: var(--gold-text); }
 .site-nav .nav-rss::before {
   content: ""; display: inline-block; width: 0.42em; height: 0.42em; border-radius: 50%;
   background: currentColor; margin-right: 0.42em; vertical-align: 0.08em;
@@ -64,13 +132,15 @@ a { color: inherit; }
 .card .bio { margin: 0.5rem 0 0; font-size: 0.88rem; }
 .tags { margin-top: 0.6rem; }
 .tags span {
-  font-size: 0.72rem; border: 1px solid var(--gold); color: var(--gold);
+  font-size: 0.72rem; border: 1px solid var(--gold-decor); color: var(--gold-text);
   padding: 0 0.4rem; border-radius: 999px; margin-right: 0.35rem;
 }
 
 /* 人物档案页 */
 .profile-head h1 { font-size: 2.2rem; margin: 0; }
 .profile-head .zhi { color: var(--ink-soft); font-size: 0.95rem; margin-left: 0.75rem; }
+/* 人物表格：窄屏与大字号下单元格内容可能超出容器，滚动只发生在表格上 */
+.fact-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .fact-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0 2rem; font-size: 0.92rem; }
 .fact-table th, .fact-table td { border: 1px solid var(--line); padding: 0.45rem 0.7rem; text-align: left; vertical-align: top; }
 .fact-table th { width: 7.5em; background: var(--paper-deep); font-weight: normal; color: var(--ink-soft); }
@@ -86,23 +156,34 @@ a { color: inherit; }
 .src summary { cursor: pointer; color: var(--ink-soft); }
 .src blockquote {
   margin: 0.4rem 0 0.2rem; padding: 0.4rem 0.8rem; background: var(--paper-deep);
-  border-left: 3px solid var(--gold); font-size: 0.85rem;
+  border-left: 3px solid var(--gold-decor); font-size: 0.85rem;
 }
 .src .note { color: var(--ink-soft); font-size: 0.8rem; }
+
+/* 统一说明文字（.note-line）：字号 / 色彩 / 段前后间距全站一致。
+   原定义散见于 corrections.css:6 与 timeline.css:108（均 0.84rem + ink-soft 同值），
+   但 about / stats / map 等页未加载那两个文件、裸用该类 → 上提 base.css 供全站。
+   corrections.css / timeline.css 中的同值定义保留（范围外文件），重复无害。 */
+.note-line { font-size: 0.84rem; color: var(--ink-soft); margin: var(--space-3) 0; }
+
 .tier { display: inline-block; padding: 0 0.35rem; border-radius: 2px; font-size: 0.72rem; color: #fff; }
 /* 全站统一三级约定（与故事页 cards.ts 一致）：A 金 / B 墨 / C 朱砂
-   选择器须双类 .tier.tier-X，避免单词命中时间线等容器上的 tier-X 类 */
-.tier.tier-A { background: var(--gold); }
+   选择器须双类 .tier.tier-X，避免单词命中时间线等容器上的 tier-X 类。
+   A 级徽章承载白字，用 --gold-text（白字 5.45:1）；装饰性 tier 色（边框/左条）走 --tier-a。 */
+.tier.tier-A { background: var(--gold-text); }
 .tier.tier-B { background: var(--ink-soft); }
 .tier.tier-C { background: var(--cinnabar); }
 
+/* 轶事卡 = 传说层（C 级）容器。与故事页 .s-card.tier-C、档案页 .src-tier-C 同一语义：
+   朱砂 + 虚线 + 浅朱底，与史实物理隔离；颜色/线型一律走 --tier-c* 变量，不另起色。 */
 .anecdote {
-  border: 1px dashed #8a8577; border-radius: 4px; padding: 0.8rem 1rem; margin-bottom: 0.8rem;
-  background: rgba(138, 133, 119, 0.06);
+  border: 1px var(--tier-c-style) var(--tier-c); border-left-width: 4px; border-radius: 4px;
+  padding: 0.8rem 1rem; margin-bottom: 0.8rem;
+  background: #f8efe9;
 }
 .anecdote h3 { margin: 0; font-size: 0.98rem; }
 .anecdote .legend-tag {
-  font-size: 0.7rem; color: #8a8577; border: 1px solid #8a8577;
+  font-size: 0.7rem; color: var(--tier-c); border: 1px var(--tier-c-style) var(--tier-c);
   border-radius: 999px; padding: 0 0.45rem; margin-left: 0.5rem; vertical-align: middle;
 }
 .anecdote p { margin: 0.4rem 0 0; font-size: 0.88rem; }
@@ -115,7 +196,7 @@ a { color: inherit; }
 .role-badge {
   display: inline-block; margin-left: 0.45rem; vertical-align: 0.08em;
   font-size: 0.68rem; font-weight: normal; line-height: 1.7; padding: 0 0.5rem;
-  border-radius: 999px; border: 1px solid var(--gold); color: var(--gold);
+  border-radius: 999px; border: 1px solid var(--gold-decor); color: var(--gold-text);
   letter-spacing: 0.08em; white-space: nowrap;
 }
 .role-badge.role-de_facto { border-color: var(--cinnabar); color: var(--cinnabar); }
@@ -126,6 +207,7 @@ a { color: inherit; }
 .bio-pending .status-mark { border-bottom: 1px dashed var(--line); padding-bottom: 1px; }
 .bio-absent { color: var(--ink-soft); font-style: italic; }
 
+.list-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table.list { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 table.list th, table.list td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.6rem; text-align: left; }
 table.list th { color: var(--ink-soft); font-weight: normal; font-size: 0.8rem; }

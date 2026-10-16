@@ -49,12 +49,19 @@ const groupInner = groupEdges.map((g) => g.filter(isInner).sort((a, b) => (N[a[0
 const hubList = N.map((nd, i) => ({ ...nd, i }))
   .filter((nd) => nd.k === 1)
   .sort((a, b) => b.g - a.g || (a.s < b.s ? -1 : 1));
+const nodeIndex = new Map(N.map((nd, i) => [nd.s, i]));
 const hubs = hubList.slice(0, 40).map((h) => {
   const seen = new Set<string>();
   const partners = E.filter((e) => e[0] === h.i || e[1] === h.i)
     .map((e) => N[e[0] === h.i ? e[1] : e[0]])
-    .filter((p) => p.k === 0 && !seen.has(p.s) && seen.add(p.s));
-  return { ...h, partners };
+    .filter((p) => p.k === 0 && !seen.has(p.s) && seen.add(p.s))
+    .map((p) => ({ ...p, i: nodeIndex.get(p.s) ?? -1 }));
+  // 枢纽行的来源标注（R5-T5）：该枢纽全部边按第 6 位实测归类，不写死
+  const hubEdges = E.filter((e) => e[0] === h.i || e[1] === h.i);
+  const allCbdb = hubEdges.every((e) => e[5] === 1);
+  const allHist = hubEdges.every((e) => e[5] === 0);
+  const src = allCbdb ? 'cbdb' : allHist ? 'hist' : 'mix';
+  return { ...h, partners, src };
 });
 
 // tier=0（有故事）节点的故事 slug，供弹卡「阅读他的故事」导流
@@ -160,23 +167,36 @@ const clientData = {
         {net.meta.selfLoops > 0 && `源数据有 ${net.meta.selfLoops} 条自环（to_id 与 from_id 相同）已剔除。`}
       </p>
 
-      {/* 移动端降级：按类型分组的关系清单 */}
-      <div class="rel-list">
+      {/* 人物列表：全屏宽可切换。桌面默认收起，窄屏默认展开。
+          分组骨架由构建期落盘，逐条显隐由脚本按同一 visibleE 重算，不再写一套筛选。
+          逐条来源徽标（R5-T5）构建期按边元组第 6 位落盘：
+          e[5]===1 标 CBDB，否则标本站编纂；显隐与徽标无关，徽标始终随条目走。
+          人名是按钮：Enter 打开信息卡；卡内链接进档案。 */}
+      <div class="rel-list" id="relList">
+        <button type="button" class="rl-toggle" id="relToggle" aria-expanded="false" aria-controls="relPanel">
+          人物列表
+        </button>
+        <div class="rl-panel" id="relPanel" hidden>
         <p class="rl-lead">
-          移动端降级为关系清单（网络图需桌面端）。状元间 {net.meta.innerPairs} 对关系来自 {net.meta.innerEntries} 条有向记录——
+          窄屏降级为关系清单（网络图需宽屏）。状元间 {net.meta.innerPairs} 对关系来自 {net.meta.innerEntries} 条有向记录——
           源数据里同年、兄弟等多为双向互指，去重后即成一对；被剔除的 {net.meta.selfLoops} 条自环亦未计入。
+          上方类型与来源开关与画布同一口径：关掉的类型、隐去的机器边、未展开的名士层，这里也不出现。
+          每条末尾徽标标来源：<span class="rl-src hist">本站编纂</span>为同年、亲手考订的往来，<span class="rl-src cbdb">CBDB</span>为数据库机器导出、未经逐条人工核验，只作线索。
+          点人名打开信息卡，卡内链接进入档案；直接点往来姓名则跳过信息卡。
         </p>
+        <p class="rl-stat" id="relStat"></p>
 
         {net.gname.map((g, gi) =>
           groupInner[gi].length > 0 && (
-            <section>
-              <h2>{g}<span>{groupInner[gi].length} 对状元</span></h2>
+            <section data-rl-g={gi} hidden>
+              <h2>{g}<span data-rl-count></span></h2>
               <ul>
                 {groupInner[gi].map((e) => (
-                  <li>
-                    <a href={`${BASE}persons/${N[e[0]].s}/`}>{N[e[0]].n}</a>
+                  <li data-rl-edge={`${e[0]}-${e[1]}-${gi}`}>
+                    <button type="button" class="rl-pick" data-i={e[0]}>{N[e[0]].n}</button>
                     <span class="pair-arrow">—</span>
-                    <a href={`${BASE}persons/${N[e[1]].s}/`}>{N[e[1]].n}</a>
+                    <button type="button" class="rl-pick" data-i={e[1]}>{N[e[1]].n}</button>
+                    <span class={`rl-src ${e[5] === 1 ? 'cbdb' : 'hist'}`}>{e[5] === 1 ? 'CBDB' : '本站编纂'}</span>
                     <span class="rl-note">{e[4]}</span>
                   </li>
                 ))}
@@ -185,30 +205,37 @@ const clientData = {
           ),
         )}
 
-        <section>
-          <h2>名士层<span>度数 top {hubs.length} / 共 {net.stats.nExt} 人</span></h2>
+        <section data-rl-ext hidden>
+          <h2>名士层<span data-rl-ext-count></span></h2>
           <ul>
             {hubs.map((h) => (
-              <li>
+              <li data-rl-hub={h.i}>
                 <span class="rl-ext">{h.n}</span>
+                <span class={`rl-src ${h.src}`}>{h.src === 'cbdb' ? 'CBDB' : h.src === 'hist' ? '本站编纂' : '编纂+CBDB'}</span>
                 <span class="rl-hub">
-                  与 {h.g} 位状元有往来：
-                  {h.partners.slice(0, 8).map((p) => (
-                    <a href={`${BASE}persons/${p.s}/`}>{p.n}</a>
+                  与 <em data-rl-hub-deg></em> 位状元有往来：
+                  {h.partners.slice(0, 8).map((p, pi) => (
+                    <span data-rl-partner={p.s}>
+                      {pi > 0 && <span data-rl-sep>、</span>}
+                      <button type="button" class="rl-pick" data-i={p.i}>{p.n}</button>
+                      <a href={`${BASE}persons/${p.s}/`}>档案</a>
+                    </span>
                   ))}
-                  {h.partners.length > 8 && ` 等 ${h.partners.length} 人`}
+                  {h.partners.length > 8 && <span data-rl-hub-more hidden></span>}
                 </span>
               </li>
             ))}
           </ul>
         </section>
+        <p class="rl-empty" id="relEmpty" hidden>当前筛选下没有关系可列，请重新勾选类型或关掉「仅史料关系」。</p>
+        </div>
       </div>
     </div>
 
     {/* 沿用 galaxy 的提示条与弹卡 id / class（见文件头注释），样式全部来自 galaxy.css */}
     <div id="galaxyTip" role="tooltip"></div>
-    <div id="galaxyCard">
-      <button class="tie-close" aria-label="关闭">✕</button>
+    <div id="galaxyCard" role="region" aria-labelledby="galaxyCardTitle">
+      <button class="tie-close" type="button" aria-label="关闭">✕</button>
       <div class="pop" id="galaxyCardBody"></div>
     </div>
 
@@ -230,6 +257,9 @@ const clientData = {
       const tip = document.getElementById('galaxyTip');
       const card = document.getElementById('galaxyCard');
       const cardBody = document.getElementById('galaxyCardBody');
+      const cardClose = card.querySelector('.tie-close');
+      // 打开信息卡的触发项。关闭后焦点回到这里（R5-T6）。非模态，不锁背景。
+      let cardTrigger = null;
       const stat = document.getElementById('netStat');
       const empty = document.getElementById('netEmpty');
       const tools = document.getElementById('netTools');
@@ -265,8 +295,12 @@ const clientData = {
       let onlyHist = false;
       /** 按当前层过滤：纯状元视图下隐去一切状元—名士关系 */
       const inLayer = (e) => showExt || isInnerEdge(e);
-      /** 可见性总闸：层 + 来源两重筛选（相邻、弹卡、读数一律走这里，勿各自实现） */
-      const visibleE = (e) => inLayer(e) && !(onlyHist && e[5] === 1);
+      /**
+       * 当前可见的唯一判定（R5-T4）。类型、来源、层级三条一起看：
+       * 画布边集、邻居高亮、悬浮提示、弹卡「当前筛选」、状态栏与 chips 计数、窄屏清单都走这里。
+       * 别再在调用处单独补 onG 或另写一套过滤。
+       */
+      const visibleE = (e) => onG[e[2]] && inLayer(e) && !(onlyHist && e[5] === 1);
 
       // 视图：世界坐标 → 屏幕（view = 屏幕左上角对应的世界点 + 缩放）
       const view = { x: 0, y: 0, scale: 1 };
@@ -294,12 +328,12 @@ const clientData = {
         return s;
       }
 
-      // ── 图集：按当前层与类型勾选取可见边、可见节点 ──
+      // ── 图集：可见边、可见节点只认 visibleE，不再单独看类型 ──
       function visibleSets() {
         const pr = [];
         const keep = new Set();
         for (const e of E) {
-          if (!onG[e[2]] || !visibleE(e)) continue;
+          if (!visibleE(e)) continue;
           pr.push(e);
           keep.add(e[0]);
           keep.add(e[1]);
@@ -369,7 +403,7 @@ const clientData = {
         hover = -1;
         picked = -1;
         markSet = new Set();
-        card.style.display = 'none';
+        closeCard(false);
         fitView();
         updateHud();
         dirty = true;
@@ -513,6 +547,103 @@ const clientData = {
         for (const b of tools.querySelectorAll('.chip')) {
           b.querySelector('em').textContent = String(c[+b.dataset.g]);
         }
+        syncList();
+      }
+
+      /**
+       * 窄屏清单与画布同源（R5-T4）。逐条按 visibleE 显隐，分组计数重算；
+       * 名士层只在展开时出现，并只保留当前筛选下仍有往来的枢纽。
+       * 逐条来源徽标（R5-T5）构建期已落盘进 DOM，此处只管显隐，不动徽标。
+       */
+      const relList = document.getElementById('relList');
+      const relStat = document.getElementById('relStat');
+      const relEmpty = document.getElementById('relEmpty');
+      const relToggle = document.getElementById('relToggle');
+      const relPanel = document.getElementById('relPanel');
+      const edgeByKey = new Map();
+      for (const e of E) edgeByKey.set(`${e[0]}-${e[1]}-${e[2]}`, e);
+
+      function syncList() {
+        if (!relList) return;
+        const groupCount = new Array(GNAME.length).fill(0);
+        let listed = 0;
+        for (const li of relList.querySelectorAll('[data-rl-edge]')) {
+          const e = edgeByKey.get(li.dataset.rlEdge);
+          const on = !!(e && visibleE(e));
+          li.hidden = !on;
+          if (on) {
+            groupCount[e[2]]++;
+            listed++;
+          }
+        }
+        for (const sec of relList.querySelectorAll('[data-rl-g]')) {
+          const gi = +sec.dataset.rlG;
+          const n = groupCount[gi] || 0;
+          sec.hidden = n === 0;
+          const label = sec.querySelector('[data-rl-count]');
+          if (label) label.textContent = `${n} 对状元`;
+        }
+
+        const extSec = relList.querySelector('[data-rl-ext]');
+        let hubsOn = 0;
+        if (extSec) {
+          for (const li of extSec.querySelectorAll('[data-rl-hub]')) {
+            const i = +li.dataset.rlHub;
+            const keep = new Set();
+            if (showExt) {
+              for (const e of ADJ[i]) {
+                if (!visibleE(e)) continue;
+                const o = e[0] === i ? e[1] : e[0];
+                if (N[o].k === 0) keep.add(N[o].s);
+              }
+            }
+            li.hidden = keep.size === 0;
+            if (keep.size === 0) continue;
+            hubsOn++;
+            const deg = li.querySelector('[data-rl-hub-deg]');
+            if (deg) deg.textContent = String(keep.size);
+            let shown = 0;
+            let firstOn = true;
+            for (const a of li.querySelectorAll('[data-rl-partner]')) {
+              const on = keep.has(a.dataset.rlPartner);
+              a.hidden = !on;
+              if (!on) continue;
+              const sep = a.querySelector('[data-rl-sep]');
+              if (sep) sep.hidden = firstOn;
+              firstOn = false;
+              shown++;
+            }
+            const more = li.querySelector('[data-rl-hub-more]');
+            if (more) {
+              const extra = keep.size - shown;
+              more.hidden = extra <= 0;
+              if (extra > 0) more.textContent = ` 等 ${keep.size} 人`;
+            }
+          }
+          extSec.hidden = hubsOn === 0;
+          const extLabel = extSec.querySelector('[data-rl-ext-count]');
+          if (extLabel) extLabel.textContent = `当前 ${hubsOn} 人`;
+        }
+
+        if (relStat) {
+          relStat.textContent = showExt
+            ? `当前筛选：状元间 ${listed} 对 · 名士 ${hubsOn} 人`
+            : `当前筛选：状元间 ${listed} 对`;
+        }
+        if (relEmpty) relEmpty.hidden = listed > 0 || hubsOn > 0;
+        const label = showExt
+          ? `人物列表（${listed} 对 · 名士 ${hubsOn}）`
+          : `人物列表（${listed} 对）`;
+        if (relToggle) {
+          relToggle.textContent = relList.classList.contains('is-open') ? `收起${label}` : label;
+        }
+        // 面板收起时整表不可 Tab；展开时只把当前可见的按钮与链接放回 Tab 序。
+        // 不要在这里再调 syncPickTab：那边展开时会回来重算筛选。
+        const open = relList.classList.contains('is-open') && relPanel && !relPanel.hidden;
+        for (const el of relList.querySelectorAll('.rl-panel button, .rl-panel a')) {
+          const row = el.closest('[hidden]');
+          el.tabIndex = open && !row ? 0 : -1;
+        }
       }
 
       // ── 命中检测 ──
@@ -539,31 +670,74 @@ const clientData = {
       }
 
       // ── 弹「帖」 ──
-      function showCard(i, ev) {
-        const nd = N[i];
-        const rel = ADJ[i].filter(visibleE);
+      // 默认只列当前筛选（与画布同一 visibleE）。全部关系另开一节，供对照，不混进默认列表。
+      function relLine(e, i) {
+        const o = N[e[0] === i ? e[1] : e[0]];
+        return o.k === 0
+          ? `<a href="${BASE}persons/${o.s}/">${GNAME[e[2]]} · ${o.n}</a>`
+          : `<span class="pop-ext">${GNAME[e[2]]} · ${o.n}</span>`;
+      }
+      function breakdownOf(rel) {
         const byGroup = new Map();
         for (const e of rel) byGroup.set(e[2], (byGroup.get(e[2]) || 0) + 1);
-        const breakdown = Array.from(byGroup.entries())
+        return Array.from(byGroup.entries())
           .sort((a, b) => b[1] - a[1])
           .slice(0, 4)
           .map(([g, c]) => `${GNAME[g]} ${c}`)
           .join(' · ');
+      }
+      function cardOpen() {
+        return card.style.display === 'block';
+      }
+      function closeCard(restore) {
+        if (!cardOpen()) return;
+        card.style.display = 'none';
+        const back = cardTrigger;
+        cardTrigger = null;
+        if (restore && back && typeof back.focus === 'function') back.focus();
+      }
+      function placeCard(x, y) {
+        const w = 268;
+        const h = card.offsetHeight || 180;
+        card.style.left = Math.min(Math.max(8, x), window.innerWidth - w - 12) + 'px';
+        card.style.top = Math.min(Math.max(8, y), window.innerHeight - h - 12) + 'px';
+      }
+      function focusCard() {
+        // 焦点进标题，屏幕阅读器随 aria-labelledby 读出人名；标题不可聚焦时落到关闭按钮。
+        const title = document.getElementById('galaxyCardTitle');
+        if (title) {
+          title.tabIndex = -1;
+          title.focus();
+        } else {
+          cardClose.focus();
+        }
+      }
+      function showCard(i, ev, trigger) {
+        const nd = N[i];
+        const shown = ADJ[i].filter(visibleE);
+        const all = ADJ[i].slice();
+        const breakdown = breakdownOf(shown);
 
         let html = nd.k === 1
-          ? `<b>${nd.n}</b><span class="pop-badge" style="background:#8e9aab;color:#10152a">名士</span>`
-          : `<b>${nd.n}</b><span class="pop-badge">${TIER_NAME[nd.t]}</span>`;
-        html += nd.k === 1
-          ? `<div class="pop-meta">外朝人物 · 与 ${rel.length} 位本谱进士有往来<br>${breakdown}</div>`
-          : `<div class="pop-meta">${nd.d}${nd.ey ? ` · ${nd.ey} 年` : ''} · 关系 ${rel.length} 条<br>${breakdown}</div>`;
+          ? `<b id="galaxyCardTitle">${nd.n}</b><span class="pop-badge" style="background:#8e9aab;color:#10152a">名士</span>`
+          : `<b id="galaxyCardTitle">${nd.n}</b><span class="pop-badge">${TIER_NAME[nd.t]}</span>`;
+        const head = nd.k === 1
+          ? `外朝人物 · 当前筛选 ${shown.length} 条`
+          : `${nd.d}${nd.ey ? ` · ${nd.ey} 年` : ''} · 当前筛选 ${shown.length} 条`;
+        html += `<div class="pop-meta">${head}${breakdown ? `<br>${breakdown}` : ''}</div>`;
 
-        const tops = rel.slice(0, 6).map((e) => {
-          const o = N[e[0] === i ? e[1] : e[0]];
-          return o.k === 0
-            ? `<a href="${BASE}persons/${o.s}/">${GNAME[e[2]]} · ${o.n}</a>`
-            : `<span style="color:#c8d2de;font-size:0.8rem;margin-right:0.6rem">${GNAME[e[2]]} · ${o.n}</span>`;
-        }).join('');
-        if (tops) html += `<div class="pop-meta" style="margin-top:0.5rem">${tops}</div>`;
+        const tops = shown.slice(0, 6).map((e) => relLine(e, i)).join('');
+        html += `<div class="pop-sec"><span class="pop-sec-h">当前筛选（${shown.length}）</span>`;
+        html += tops
+          ? `<div class="pop-meta">${tops}</div>`
+          : `<div class="pop-meta">当前筛选下没有关系。</div>`;
+        html += `</div>`;
+
+        if (all.length !== shown.length) {
+          const rest = all.filter((e) => !visibleE(e));
+          html += `<details class="pop-all"><summary>全部关系（${all.length}）</summary>`;
+          html += `<div class="pop-meta">${rest.map((e) => relLine(e, i)).join('')}</div></details>`;
+        }
 
         if (nd.k === 0) {
           html += `<a href="${BASE}persons/${nd.s}/">档案页 →</a>`;
@@ -575,10 +749,15 @@ const clientData = {
         }
         cardBody.innerHTML = html;
         card.style.display = 'block';
-        const w = 252;
-        const h = card.offsetHeight || 180;
-        card.style.left = Math.min(ev.clientX + 12, window.innerWidth - w - 12) + 'px';
-        card.style.top = Math.min(ev.clientY + 12, window.innerHeight - h - 12) + 'px';
+        const at = ev && typeof ev.clientX === 'number'
+          ? { x: ev.clientX + 12, y: ev.clientY + 12 }
+          : (() => {
+              const r = trigger && trigger.getBoundingClientRect ? trigger.getBoundingClientRect() : { left: 24, bottom: 24 };
+              return { x: r.left, y: r.bottom + 8 };
+            })();
+        placeCard(at.x, at.y);
+        cardTrigger = trigger || null;
+        focusCard();
       }
 
       // ── 交互：拖拽平移 / 滚轮缩放 / 悬浮 / 点选 ──
@@ -616,7 +795,7 @@ const clientData = {
         const types = Array.from(new Set(rel.map((e) => GNAME[e[2]]))).slice(0, 3).join('、');
         tip.innerHTML = `<b>${nd.n}</b> <span class="tip-meta">${
           nd.k === 1 ? '名士' : `${nd.d}${nd.ey ? ` · ${nd.ey} 年` : ''}`
-        }</span><br><span class="tip-meta">关系 ${rel.length} 条${types ? ` · ${types}` : ''}</span>`;
+        }</span><br><span class="tip-meta">当前筛选 ${rel.length} 条${types ? ` · ${types}` : ''}</span>`;
         tip.style.display = 'block';
         tip.style.left = Math.min(ev.clientX + 14, window.innerWidth - 200) + 'px';
         tip.style.top = Math.min(ev.clientY + 14, window.innerHeight - 80) + 'px';
@@ -630,7 +809,7 @@ const clientData = {
         if (!p) {
           picked = -1;
           markSet = new Set();
-          card.style.display = 'none';
+          closeCard(false);
           dirty = true;
           schedule();
           return;
@@ -639,7 +818,7 @@ const clientData = {
         markSet = neighborsOf(p.i);
         dirty = true;
         schedule();
-        showCard(p.i, ev);
+        showCard(p.i, ev, null);
       });
       canvas.addEventListener('pointerleave', () => {
         hideTip();
@@ -659,10 +838,58 @@ const clientData = {
         schedule();
         hideTip();
       }, { passive: false });
-      card.querySelector('.tie-close').addEventListener('click', () => { card.style.display = 'none'; });
+      cardClose.addEventListener('click', () => closeCard(true));
       document.addEventListener('keydown', (ev) => {
-        if (ev.key === 'Escape') card.style.display = 'none';
+        if (ev.key === 'Escape' && cardOpen()) {
+          ev.preventDefault();
+          closeCard(true);
+        }
       });
+
+      // ── 人物列表：桌面默认收起，窄屏默认展开。条目显隐仍只走 syncList / visibleE。 ──
+      const wideList = window.matchMedia('(min-width: 761px)');
+      function syncListChrome() {
+        if (!relList || !relToggle || !relPanel) return;
+        const wide = wideList.matches;
+        if (!wide) {
+          relList.classList.add('is-open');
+          relPanel.hidden = false;
+          relToggle.setAttribute('aria-expanded', 'true');
+          relToggle.hidden = true;
+        } else {
+          relToggle.hidden = false;
+          if (!relList.classList.contains('is-open')) {
+            relPanel.hidden = true;
+            relToggle.setAttribute('aria-expanded', 'false');
+          }
+        }
+        syncList();
+      }
+      if (relToggle) {
+        relToggle.addEventListener('click', () => {
+          const open = !relList.classList.contains('is-open');
+          relList.classList.toggle('is-open', open);
+          relPanel.hidden = !open;
+          relToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          syncList();
+        });
+      }
+      if (relList) {
+        relList.addEventListener('click', (ev) => {
+          const btn = ev.target.closest('.rl-pick');
+          if (!btn || btn.hidden) return;
+          const i = +btn.dataset.i;
+          if (!N[i]) return;
+          picked = i;
+          markSet = neighborsOf(i);
+          dirty = true;
+          schedule();
+          showCard(i, null, btn);
+        });
+      }
+      syncListChrome();
+      if (wideList.addEventListener) wideList.addEventListener('change', syncListChrome);
+      else if (wideList.addListener) wideList.addListener(syncListChrome);
 
       // ── 类型 chips / 名士层开关 / 预设 ──
       tools.addEventListener('click', (ev) => {
@@ -706,7 +933,12 @@ const clientData = {
 
       function boot() {
         resize();
-        if (cw <= 0) { stat.textContent = '移动端已降级为关系清单'; return; } // 画布被媒体查询隐藏
+        if (cw <= 0) {
+          // 画布被媒体查询隐藏：不算布局，但清单仍按当前筛选重算，口径与宽屏一致
+          stat.textContent = '窄屏已降级为关系清单';
+          syncList();
+          return;
+        }
         if (inited) { fitView(); return; }
         inited = true;
         relayout(true);

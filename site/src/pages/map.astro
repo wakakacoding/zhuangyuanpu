@@ -104,18 +104,6 @@ const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
 <html lang="zh-CN">
   <head>
     <SeoHead title="籍贯地图" description="历代状元籍贯分布地图：朝代滑块拖动，看状元产地重心千年南移。" path="/map/" />
-    <!-- 腾讯地图 GL JS：本地预览走 WorkBuddy 密钥代理（占位符由运行时替换）；
-         生产部署使用自申的腾讯位置服务 key（下方 else 分支） -->
-    <script is:inline type="text/javascript">
-      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
-        window._TMapSecurityConfig = {
-          serviceHost: 'http://127.0.0.1:__WB_HTTP_PORT__/_TMapService/_wbt/__WB_TMAP_SECRET__',
-        };
-        document.write('<script src="https://map.qq.com/api/gljs?v=1.exp"><\/script>');
-      } else {
-        document.write('<script src="https://map.qq.com/api/gljs?v=1.exp&key=APBBZ-OWDKI-CLNGD-U4VJL-2FNCF-RFBJV"><\/script>');
-      }
-    </script>
   </head>
   <body>
     <div class="map-page">
@@ -139,7 +127,29 @@ const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
         </div>
       </div>
 
-      <div id="map" class="map-box"></div>
+      <div class="map-stage">
+        <div id="map" class="map-box"></div>
+        <div id="mapStatus" class="map-status" data-state="loading" role="status" aria-live="polite">
+          <p id="mapStatusText" class="map-status-text">地图加载中…</p>
+          <p id="mapStatusDetail" class="map-status-detail" hidden></p>
+          <button type="button" id="mapRetry" class="map-retry" hidden>重试</button>
+        </div>
+      </div>
+
+      <section id="mapFallback" class="map-fallback" hidden>
+        <h2>籍贯人物列表</h2>
+        <p class="fb-lead">底图暂不可用。下列与地图点位同一批人，拖动上方朝代滑块仍可筛选，点姓名进入档案。</p>
+        <ul id="mapFallbackList">
+          {pts.map((p) => (
+            <li data-d={p.d}>
+              <a href={`${BASE}persons/${p.id}/`}>{p.n}</a>
+              <span class="fb-meta">{p.d}{p.y != null ? ` · ${p.y}` : ''}{(p.nm || p.nh) ? ` · ${p.nm || p.nh}` : ''}</span>
+              {p.roLabel ? <span class="fb-role">{p.roLabel}</span> : null}
+              {p.full ? <span class="fb-full">全档案</span> : null}
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section class="map-guide">
         <h2 class="section-title">读图指南</h2>
@@ -161,6 +171,7 @@ const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
         <p class="note-line">
           底图：腾讯地图（GCJ-02 坐标系，点位已偏移对齐）。坐标为县治级约数，误差以县境为度；
           状元未上图者 {zy.length - nZyOnMap} 人（已上图状元 {nZyOnMap} 人，另有 {specials.length} 位特例收录者亦在图上，以青灰点标注）。
+          同一坐标有多人时，点位合并为较大的朱砂点，点击显示「此地 N 人」并逐人链接档案，不会被同乡的其他人盖住。
         </p>
       </section>
     </div>
@@ -171,46 +182,191 @@ const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
       const pts = JSON.parse(document.getElementById('pts').textContent);
       const cents = JSON.parse(document.getElementById('cents').textContent);
       const DYNS = ['唐', '五代十国', '宋', '辽', '金', '元', '明', '清'];
+      const SDK_TIMEOUT_MS = 12000;
+      const SDK_ID = 'tmap-sdk';
 
-      const map = new TMap.Map('map', {
-        zoom: 4.6,
-        center: new TMap.LatLng(34.8, 110.5),
-      });
+      let dynIdx = 0;
+      let map = null;
+      let infoWin = null;
+      let markerLayer = null, centroidLayer = null, labelLayer = null;
+      let booting = false;
+
+      function visiblePts() {
+        return dynIdx === 0 ? pts : pts.filter((p) => p.d === DYNS[dynIdx - 1]);
+      }
+
+      // 筛选口径与原来一致：0 = 全部，其余按 DYNS 下标取朝代。先改文案与兜底列表，不等待 SDK。
+      function syncChrome() {
+        const show = visiblePts();
+        document.getElementById('dynName').textContent = dynIdx === 0 ? '全部' : DYNS[dynIdx - 1];
+        document.getElementById('dynCount').textContent = show.length + ' 人';
+        document.querySelectorAll('#mapFallbackList [data-d]').forEach((li) => {
+          li.hidden = dynIdx !== 0 && li.getAttribute('data-d') !== DYNS[dynIdx - 1];
+        });
+      }
+
+      function showLoading() {
+        const box = document.getElementById('mapStatus');
+        box.hidden = false;
+        box.dataset.state = 'loading';
+        document.getElementById('mapStatusText').textContent = '地图加载中…';
+        document.getElementById('mapStatusDetail').hidden = true;
+        document.getElementById('mapRetry').hidden = true;
+        document.getElementById('mapFallback').hidden = true;
+      }
+
+      function showError(kind) {
+        const box = document.getElementById('mapStatus');
+        box.hidden = false;
+        box.dataset.state = 'error';
+        document.getElementById('mapStatusText').textContent = '底图未能载入';
+        const detail = document.getElementById('mapStatusDetail');
+        detail.hidden = false;
+        detail.textContent = '原因类别：' + (kind === 'network' ? '网络' : '脚本加载失败');
+        document.getElementById('mapRetry').hidden = false;
+        document.getElementById('mapFallback').hidden = false;
+      }
+
+      function showReady() {
+        document.getElementById('mapStatus').hidden = true;
+        document.getElementById('mapFallback').hidden = true;
+      }
+
+      // key 与地址与原来一致：本地走密钥代理占位符，生产用自申 key。不用 document.write，以便 onerror / 超时可捕获。
+      function sdkSrc() {
+        if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+          window._TMapSecurityConfig = {
+            serviceHost: 'http://127.0.0.1:__WB_HTTP_PORT__/_TMapService/_wbt/__WB_TMAP_SECRET__',
+          };
+          return 'https://map.qq.com/api/gljs?v=1.exp';
+        }
+        return 'https://map.qq.com/api/gljs?v=1.exp&key=APBBZ-OWDKI-CLNGD-U4VJL-2FNCF-RFBJV';
+      }
+
+      function loadSdk() {
+        if (window.TMap && window.TMap.Map) return Promise.resolve();
+        return new Promise((resolve, reject) => {
+          const prev = document.getElementById(SDK_ID);
+          if (prev) prev.remove();
+          const s = document.createElement('script');
+          s.id = SDK_ID;
+          s.src = sdkSrc();
+          s.async = true;
+          let settled = false;
+          const timer = setTimeout(() => {
+            if (settled) return;
+            settled = true;
+            s.onload = null;
+            s.onerror = null;
+            reject(new Error('network'));
+          }, SDK_TIMEOUT_MS);
+          s.onload = () => {
+            if (settled) return;
+            settled = true;
+            clearTimeout(timer);
+            if (window.TMap && window.TMap.Map) resolve();
+            else reject(new Error('script'));
+          };
+          s.onerror = () => {
+            if (settled) return;
+            settled = true;
+            clearTimeout(timer);
+            reject(new Error('script'));
+          };
+          document.head.appendChild(s);
+        });
+      }
 
       // 点样式：普通朱砂点 / 全字段档案金点 / 特例收录者青灰点（inline SVG，不引外部图）
       const dotSvg = (color, r) =>
         'data:image/svg+xml,' + encodeURIComponent(
           `<svg xmlns="http://www.w3.org/2000/svg" width="${r*4}" height="${r*4}"><circle cx="${r*2}" cy="${r*2}" r="${r}" fill="${color}" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/></svg>`);
 
-      const infoWin = new TMap.InfoWindow({ map, enableCustom: true, position: new TMap.LatLng(0, 0), offset: { x: 0, y: -14 } });
-      infoWin.close();
+      function initMap() {
+        map = new TMap.Map('map', {
+          zoom: 4.6,
+          center: new TMap.LatLng(34.8, 110.5),
+        });
+        infoWin = new TMap.InfoWindow({ map, enableCustom: true, position: new TMap.LatLng(0, 0), offset: { x: 0, y: -14 } });
+        infoWin.close();
+      }
 
-      let markerLayer = null, centroidLayer = null, labelLayer = null;
+      // 同坐标多人：县治级约数会把同乡人叠成一点，后画的 Marker 把先画的完全盖住，点击只能打开最上一人。
+      // 按当前筛选后的经纬度分组，一人一点；多人合成「此地 N 人」，弹卡列出每人的档案链接。
+      function clusterGeometries(show) {
+        const groups = new Map();
+        for (const p of show) {
+          const key = p.lat + ',' + p.lng;
+          const g = groups.get(key);
+          if (g) g.push(p);
+          else groups.set(key, [p]);
+        }
+        const geos = [];
+        for (const list of groups.values()) {
+          if (list.length === 1) {
+            const p = list[0];
+            geos.push({
+              id: p.id,
+              styleId: p.ro ? 'special' : (p.full ? 'full' : 'dot'),
+              position: new TMap.LatLng(p.lat, p.lng),
+              properties: { kind: 'one', p },
+            });
+          } else {
+            const p0 = list[0];
+            geos.push({
+              id: 'g:' + p0.lat + ',' + p0.lng,
+              styleId: 'cluster',
+              position: new TMap.LatLng(p0.lat, p0.lng),
+              properties: { kind: 'many', list, n: list.length },
+            });
+          }
+        }
+        return geos;
+      }
+
+      function personCard(p) {
+        return `<div class="pop">
+          <b>${p.n}</b>${p.ro ? `<span class="pop-badge pop-badge-role">${p.roLabel}</span>` : ''}${p.full ? '<span class="pop-badge">全档案</span>' : ''}
+          <div class="pop-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ''}</div>
+          <div class="pop-native">${p.nm || p.nh}</div>
+          <a href="${base}persons/${p.id}/">查看档案 →</a>
+        </div>`;
+      }
+
+      function clusterCard(list) {
+        const place = list[0].nm || list[0].nh || '同一坐标';
+        const rows = list.map((p) =>
+          `<li><a href="${base}persons/${p.id}/">${p.n}</a>` +
+          `<span class="pop-meta">${p.d}${p.y ? ' · ' + p.y : ''}</span></li>`
+        ).join('');
+        return `<div class="pop pop-cluster">
+          <b>此地 ${list.length} 人</b>
+          <div class="pop-native">${place}</div>
+          <ul class="pop-people">${rows}</ul>
+        </div>`;
+      }
 
       function bindClick() {
         markerLayer.on('click', (evt) => {
-          const p = evt.geometry.properties;
-          infoWin.setContent(`
-            <div class="pop">
-              <b>${p.n}</b>${p.ro ? `<span class="pop-badge pop-badge-role">${p.roLabel}</span>` : ''}${p.full ? '<span class="pop-badge">全档案</span>' : ''}
-              <div class="pop-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ''}</div>
-              <div class="pop-native">${p.nm || p.nh}</div>
-              <a href="${base}persons/${p.id}/">查看档案 →</a>
-            </div>`);
-          infoWin.setPosition(new TMap.LatLng(p.lat, p.lng));
+          const prop = evt.geometry.properties;
+          const html = prop.kind === 'many' ? clusterCard(prop.list) : personCard(prop.p);
+          const pos = prop.kind === 'many'
+            ? new TMap.LatLng(prop.list[0].lat, prop.list[0].lng)
+            : new TMap.LatLng(prop.p.lat, prop.p.lng);
+          infoWin.setContent(html);
+          infoWin.setPosition(pos);
           infoWin.open();
         });
       }
 
-      function renderLayer(dynIdx) {
+      function renderLayer(idx) {
+        if (!map || !infoWin) return;
         if (markerLayer) markerLayer.setMap(null);
         if (centroidLayer) centroidLayer.setMap(null);
         if (labelLayer) labelLayer.setMap(null);
         infoWin.close();
 
-        const show = dynIdx === 0 ? pts : pts.filter((p) => p.d === DYNS[dynIdx - 1]);
-        document.getElementById('dynName').textContent = dynIdx === 0 ? '全部' : DYNS[dynIdx - 1];
-        document.getElementById('dynCount').textContent = show.length + ' 人';
+        const show = idx === 0 ? pts : pts.filter((p) => p.d === DYNS[idx - 1]);
 
         markerLayer = new TMap.MultiMarker({
           map,
@@ -218,19 +374,15 @@ const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
             dot: new TMap.MarkerStyle({ width: 16, height: 16, src: dotSvg('#9e2b22', 6), anchor: { x: 8, y: 8 } }),
             full: new TMap.MarkerStyle({ width: 22, height: 22, src: dotSvg('#a98b3f', 8.5), anchor: { x: 11, y: 11 } }),
             special: new TMap.MarkerStyle({ width: 18, height: 18, src: dotSvg('#6a6558', 6.5), anchor: { x: 9, y: 9 } }),
+            cluster: new TMap.MarkerStyle({ width: 26, height: 26, src: dotSvg('#9e2b22', 10), anchor: { x: 13, y: 13 } }),
           },
-          geometries: show.map((p) => ({
-            id: p.id,
-            styleId: p.ro ? 'special' : (p.full ? 'full' : 'dot'),
-            position: new TMap.LatLng(p.lat, p.lng),
-            properties: p,
-          })),
+          geometries: clusterGeometries(show),
         });
         bindClick();
 
         // 质心虚线（仅「全部」视图）：串起各朝代重心，南移一目了然。
         // cents 已在构建期按最小样本阈值过滤；不足两点时连线无意义，直接不画。
-        if (dynIdx === 0 && cents.length >= 2) {
+        if (idx === 0 && cents.length >= 2) {
           centroidLayer = new TMap.MultiPolyline({
             map,
             styles: { c: new TMap.PolylineStyle({ color: '#a98b3f', width: 2, dashStyle: 'dash' }) },
@@ -240,7 +392,7 @@ const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
             }],
           });
         }
-        if (dynIdx === 0) {
+        if (idx === 0) {
           labelLayer = new TMap.MultiLabel({
             map,
             styles: { l: new TMap.LabelStyle({ color: '#6a6558', size: 12, offset: { x: 0, y: -22 } }) },
@@ -253,8 +405,30 @@ const nZyOnMap = zy.filter((p) => p.lat != null && p.lng != null).length;
         }
       }
 
-      document.getElementById('dynRange').addEventListener('input', (e) => renderLayer(+e.target.value));
-      renderLayer(0);
+      function bootMap() {
+        if (booting) return;
+        booting = true;
+        showLoading();
+        loadSdk().then(() => {
+          if (!window.TMap || !window.TMap.Map) throw new Error('script');
+          if (!map) initMap();
+          renderLayer(dynIdx);
+          showReady();
+        }).catch((err) => {
+          showError(err && err.message === 'network' ? 'network' : 'script');
+        }).then(() => {
+          booting = false;
+        });
+      }
+
+      document.getElementById('dynRange').addEventListener('input', (e) => {
+        dynIdx = +e.target.value;
+        syncChrome();
+        renderLayer(dynIdx);
+      });
+      document.getElementById('mapRetry').addEventListener('click', bootMap);
+      syncChrome();
+      bootMap();
     </script>
   </body>
 </html>

@@ -47,7 +47,8 @@ body { background: #0e1420; color: #e8e2d0; }
 
 /* 「帖」式速览卡：复用 map.astro 弹卡样式体系（pop 结构 + 金 badge），改为深色帖面 */
 #galaxyCard {
-  position: fixed; z-index: 70; display: none; width: 240px;
+  position: fixed; z-index: 90; display: none; width: min(240px, calc(100vw - 24px));
+  max-height: calc(100vh - 24px); overflow: auto;
   background: #1a2233; border: 1px solid rgba(169, 139, 63, 0.55); border-top: 3px solid #a98b3f;
   border-radius: 3px; padding: 0.9rem 1rem 0.8rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
@@ -66,6 +67,12 @@ body { background: #0e1420; color: #e8e2d0; }
   font-size: 0.9rem; cursor: pointer; background: none; border: none; padding: 2px 4px;
 }
 #galaxyCard .tie-close:hover { color: #e8e2d0; }
+#galaxyCard .tie-close:focus-visible,
+.band-list button:focus-visible {
+  outline: 2px solid #d4af37; outline-offset: 2px;
+}
+/* 弹卡与触发项共用的可见焦点环（键盘路径，R5-T6） */
+.band-list button:focus-visible { border-radius: 2px; }
 
 .galaxy-legend { display: flex; gap: 1.4rem; margin-top: 0.8rem; font-size: 0.78rem; color: rgba(232, 226, 208, 0.6); flex-wrap: wrap; }
 .galaxy-legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 0.35rem; vertical-align: -0.05em; }
@@ -73,18 +80,35 @@ body { background: #0e1420; color: #e8e2d0; }
 .lg-full { background: #9e2b22; }
 .lg-plain { background: #e8e2d0; opacity: 0.7; }
 
-/* 移动端降级：竖滚朝代分带列表（桌面隐藏） */
-.band-list { display: none; }
+/* 人物列表：全屏宽可用。桌面默认收起（只留展开按钮），窄屏默认展开。
+   列表项是按钮：Tab 到达，Enter 打开信息卡，卡内链接进档案。 */
+.band-list { margin-top: 1.4rem; }
+.band-list .bl-toggle {
+  font-family: inherit; font-size: 0.84rem; color: #e8d9a8;
+  background: none; border: 1px solid rgba(169, 139, 63, 0.45); border-radius: 999px;
+  padding: 0.2rem 0.85rem; cursor: pointer; letter-spacing: 0.06em;
+}
+.band-list .bl-toggle:hover { border-color: #d4af37; color: #f0e2b0; }
+.band-list .bl-panel[hidden] { display: none; }
+.band-list h2 { font-size: 1.05rem; color: #e8d9a8; letter-spacing: 0.12em; margin: 1.6rem 0 0.5rem; border-bottom: 1px solid rgba(169, 139, 63, 0.35); padding-bottom: 0.3rem; }
+.band-list h2 span { font-size: 0.74rem; color: rgba(232, 226, 208, 0.5); font-weight: normal; margin-left: 0.5rem; }
+.band-list ul { list-style: none; margin: 0; padding: 0; }
+.band-list li { display: flex; justify-content: space-between; align-items: baseline; padding: 0.32rem 0; border-bottom: 1px dashed rgba(232, 226, 208, 0.12); font-size: 0.88rem; gap: 0.8rem; }
+.band-list .bl-pick {
+  font-family: inherit; font-size: inherit; color: #e8e2d0;
+  background: none; border: none; padding: 0; cursor: pointer; text-align: left;
+}
+.band-list .bl-pick:hover { color: #d4af37; }
+.band-list .bl-year { color: rgba(232, 226, 208, 0.5); font-size: 0.76rem; white-space: nowrap; }
+.band-list .bl-star { color: #d4af37; margin-right: 0.3rem; }
 
 @media (max-width: 760px) {
-  #galaxyCanvas, .galaxy-hint, #galaxyTip, #galaxyCard, .galaxy-legend { display: none !important; }
-  .band-list { display: block; }
-  .band-list h2 { font-size: 1.05rem; color: #e8d9a8; letter-spacing: 0.12em; margin: 1.6rem 0 0.5rem; border-bottom: 1px solid rgba(169, 139, 63, 0.35); padding-bottom: 0.3rem; }
-  .band-list h2 span { font-size: 0.74rem; color: rgba(232, 226, 208, 0.5); font-weight: normal; margin-left: 0.5rem; }
-  .band-list ul { list-style: none; margin: 0; padding: 0; }
-  .band-list li { display: flex; justify-content: space-between; align-items: baseline; padding: 0.32rem 0; border-bottom: 1px dashed rgba(232, 226, 208, 0.12); font-size: 0.88rem; }
-  .band-list a { color: #e8e2d0; text-decoration: none; }
-  .band-list a:active { color: #d4af37; }
-  .band-list .bl-year { color: rgba(232, 226, 208, 0.5); font-size: 0.76rem; }
-  .band-list .bl-star { color: #d4af37; margin-right: 0.3rem; }
+  /* 画布、悬浮提示、图例隐藏；信息卡不隐藏——键盘从列表打开后仍要能读。
+     未打开时卡片 display:none（脚本控制），不会露在窄屏上。 */
+  #galaxyCanvas, .galaxy-hint, #galaxyTip, .galaxy-legend { display: none !important; }
+}
+@media (min-width: 761px) {
+  /* 桌面默认收起：只留下一个可 Tab 的展开按钮 */
+  .band-list .bl-panel { display: none; }
+  .band-list.is-open .bl-panel { display: block; }
 }

@@ -7,12 +7,12 @@
 
 .bio { font-size: 0.98rem; }
 .bio-hint { margin: -0.4rem 0 1.2rem; font-size: 0.8rem; color: var(--ink-soft); }
-.reign-mark { color: var(--gold); font-size: 0.85rem; margin-left: 0.4rem; }
+.reign-mark { color: var(--gold-text); font-size: 0.85rem; margin-left: 0.4rem; }
 
 /* ---- 名录身份说明（R1.4-2）：仅特例（探花／事实状元）渲染 ---- */
 .role-flag {
   font-size: 0.85rem; color: var(--ink-soft); line-height: 1.75;
-  border-left: 3px solid var(--gold);
+  border-left: 3px solid var(--gold-decor);
   background: #f7f3e6;
   padding: 0.55rem 0.8rem; margin: 0 0 1.25rem;
 }
@@ -46,12 +46,12 @@
   width: 9px; height: 9px; border-radius: 50%;
   background: var(--paper); border: 2px solid var(--ink-soft);
 }
-/* 时间线左边条随该事件最高出处等级着色 */
-.tl-item.tier-A { border-left-color: var(--gold); }
-.tl-item.tier-A::before { border-color: var(--gold); }
-.tl-item.tier-B { border-left-color: var(--ink-soft); }
-.tl-item.tier-C { border-left-color: var(--cinnabar); border-left-style: dashed; }
-.tl-item.tier-C::before { border-color: var(--cinnabar); }
+/* 时间线左边条随该事件最高出处等级着色（纯装饰，接 --tier-* 变量） */
+.tl-item.tier-A { border-left-color: var(--tier-a); }
+.tl-item.tier-A::before { border-color: var(--tier-a); }
+.tl-item.tier-B { border-left-color: var(--tier-b); }
+.tl-item.tier-C { border-left-color: var(--tier-c); border-left-style: var(--tier-c-style); }
+.tl-item.tier-C::before { border-color: var(--tier-c); }
 
 /* 夺魁高光节点 */
 .tl-item.peak { background: linear-gradient(to right, rgba(169, 139, 63, 0.08), transparent 70%); }
@@ -102,18 +102,25 @@
   margin: 0 0.7rem 0.5rem;
   padding: 0.45rem 0.8rem;
   background: var(--paper-deep);
-  border-left: 2px solid var(--gold);
+  border-left: 2px solid var(--gold-decor);
   font-size: 0.85rem;
 }
 .src-panel .src .note { margin: 0 0.7rem 0.5rem; font-size: 0.8rem; color: var(--ink-soft); }
 
-.src-tier-A { border-left-color: var(--gold); }
-.src-tier-B { border-left-color: var(--ink-soft); }
-.src-tier-C { border-left-color: var(--cinnabar); border-style: dashed; border-left-style: dashed; background: #f8efe9; }
+/* 分级容器：选择器须与组件同结构（.src-panel .src.src-tier-X，特异度 0-3-0），
+   否则被上方 .src-panel .src（0-2-0）的 border/background 整体覆盖，分级边框与 C 级虚线/底色失效 */
+.src-panel .src.src-tier-A { border-left-color: var(--tier-a); border-left-style: var(--tier-a-style); }
+.src-panel .src.src-tier-B { border-left-color: var(--tier-b); border-left-style: var(--tier-b-style); }
+.src-panel .src.src-tier-C {
+  border-left-color: var(--tier-c);
+  border-style: var(--tier-c-style);
+  background: #f8efe9;
+}
 
-/* tier 徽章与故事页统一：A 金 / B 墨 / C 朱砂（双类选择器防误伤容器） */
+/* tier 徽章与故事页统一：A 金 / B 墨 / C 朱砂（双类选择器防误伤容器）。
+   A 级徽章承载白字，底色用 --gold-text（深金），白字对比度 5.45:1（原装饰金 3.25:1 不达标） */
 .tier { display: inline-block; padding: 0 0.35rem; border-radius: 2px; color: #fff; font-size: 0.72rem; }
-.tier.tier-A { background: var(--gold); }
+.tier.tier-A { background: var(--gold-text); }
 .tier.tier-B { background: var(--ink-soft); }
 .tier.tier-C { background: var(--cinnabar); }
 .src-kind { font-size: 0.72rem; color: var(--ink-soft); margin: 0 0.5rem 0 0.3rem; }
@@ -127,14 +134,14 @@
   display: inline-block; font-size: 0.68rem; line-height: 1.6;
   padding: 0 0.4rem; border-radius: 2px; vertical-align: 0.08em; white-space: nowrap;
 }
-.rel-tag-own { background: var(--gold); color: #fff; }
+.rel-tag-own { background: var(--gold-text); color: #fff; }
 .rel-tag-cbdb { background: #8a8577; color: #fff; font-style: italic; }
 .rel-tag-ext { border: 1px dashed #8a8577; color: var(--ink-soft); }
 
 .rel-list-v2 { list-style: none; margin: 0; padding: 0; }
 .rel-item {
   padding: 0.32rem 0 0.32rem 0.7rem;
-  border-left: 3px solid var(--gold);
+  border-left: 3px solid var(--gold-decor);
   border-bottom: 1px dashed var(--line);
   font-size: 0.9rem; line-height: 1.8;
 }

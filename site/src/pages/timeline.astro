@@ -11,7 +11,7 @@ const fullIds = fullProfileIds();
 const zy = zhuangyuanOnly(persons);
 const nSpecial = specialRoles(persons).length;
 
-// ---- 朝代泳道定义（起讫年为史家通行纪年）----
+// ---- 朝代泳道定义（起迄年为史家通行纪年）----
 const LANES: Array<{ name: string; start: number; end: number }> = [
   { name: '唐', start: 618, end: 907 },
   { name: '五代十国', start: 907, end: 979 },
@@ -23,7 +23,7 @@ const LANES: Array<{ name: string; start: number; end: number }> = [
   { name: '清', start: 1644, end: 1912 },
 ];
 
-// ---- 坐标系 ----
+// ---- 坐标系（布局常数不动；命中区是交互层，不改坐标）----
 const X0 = 600, X1 = 1920;           // 轴覆盖年份
 const PX = 1.1;                      // px / 年
 const leftPad = 92, topPad = 40, laneH = 34, laneGap = 10, bottomPad = 30;
@@ -32,6 +32,11 @@ const laneY = (i: number) => topPad + i * (laneH + laneGap);
 const H = laneY(LANES.length) + bottomPad;
 const x = (y: number) => leftPad + (y - X0) * PX;
 
+// 视觉 44×44 触控目标：命中圆用用户单位定径，不跟 SVG 用户坐标一起缩放
+const HIT_CSS_PX = 44;
+// 密集区按「十年一档」切，不按命中圆直径串联——后者会把一整朝并成一份名单
+const CLUSTER_SPAN = 10;
+
 // ---- 数据 ----
 const byDynasty = new Map(LANES.map((l) => [l.name, [] as any[]]));
 for (const p of zy) {
@@ -39,7 +44,6 @@ for (const p of zy) {
 }
 
 // 明清年号分段（REIGNS 中落在明清区间的）
-const MING_QING: Record<string, [number, number]> = { 明: [1368, 1644], 清: [1644, 1912] };
 const reignBlocks = Object.entries(REIGNS)
   .map(([name, [s, e]]) => {
     const dyn = s >= 1644 ? '清' : s >= 1368 ? '明' : null;
@@ -51,10 +55,62 @@ const reignBlocks = Object.entries(REIGNS)
 const ticks: number[] = [];
 for (let y = 650; y <= 1900; y += 50) ticks.push(y);
 
-const tickTitle = (p: any) => {
-  const ry = p.exam_year ? reignYearOf(p.exam_year) : null;
-  return `${p.name} · ${p.exam_year}（${p.ganzhi ?? (p.exam_year ? ganzhiOf(p.exam_year) : '？')}${ry ? ` · ${ry}` : ''}）`;
+type Dot = {
+  id: string;
+  name: string;
+  dynasty: string;
+  year: number;
+  ganzhi: string;
+  reign: string;
+  full: boolean;
+  href: string;
+  cx: number;
+  cy: number;
 };
+
+function toDot(p: any, cy: number): Dot {
+  const year = p.exam_year as number;
+  const ry = reignYearOf(year);
+  return {
+    id: p.id,
+    name: p.name,
+    dynasty: p.dynasty,
+    year,
+    ganzhi: p.ganzhi ?? ganzhiOf(year),
+    reign: ry ?? '',
+    full: fullIds.has(p.id),
+    href: `${BASE}persons/${p.id}/`,
+    cx: x(year),
+    cy,
+  };
+}
+
+/** 同泳道按科年升序，再按十年一档分组；一档两人及以上即为密集区 */
+function clusterLane(list: any[], cy: number): Dot[][] {
+  const dated = list
+    .filter((p) => p.exam_year)
+    .slice()
+    .sort((a, b) => a.exam_year - b.exam_year || String(a.name).localeCompare(String(b.name), 'zh'));
+  const buckets = new Map<number, Dot[]>();
+  for (const p of dated) {
+    const dot = toDot(p, cy);
+    const key = Math.floor(dot.year / CLUSTER_SPAN) * CLUSTER_SPAN;
+    const bucket = buckets.get(key);
+    if (bucket) bucket.push(dot);
+    else buckets.set(key, [dot]);
+  }
+  return [...buckets.values()];
+}
+
+const lanes = LANES.map((lane, i) => {
+  const y = laneY(i);
+  const list = byDynasty.get(lane.name) ?? [];
+  const groups = clusterLane(list, y + laneH / 2);
+  return { lane, i, y, list, groups };
+});
+
+const denseCount = lanes.reduce((n, l) => n + l.groups.filter((g) => g.length >= 2).length, 0);
+const plotted = lanes.reduce((n, l) => n + l.groups.reduce((m, g) => m + g.length, 0), 0);
 ---
 <html lang="zh-CN">
   <head>
@@ -64,12 +120,12 @@ const tickTitle = (p: any) => {
     <div class="container container-wide">
       <header class="site-head">
         <h1>朝代时间线</h1>
-        <p class="sub">622 孙伏伽 — 1904 刘春霖 · 状元 {zy.length} 人{ nSpecial > 0 && <>（另有特例 {nSpecial} 人，未入泳道）</>} · 朱砂点 = 已建全字段档案 · 悬浮查看公元/干支/年号</p>
+        <p class="sub">622 孙伏伽 — 1904 刘春霖 · 状元 {zy.length} 人{ nSpecial > 0 && <>（另有特例 {nSpecial} 人，未入泳道）</>} · 朱砂点 = 已建全字段档案 · 点击圆点看摘要，密集区可展开名单</p>
         <SiteNav current="/timeline/" />
       </header>
 
-      <div class="tl-scroll">
-        <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} role="img" aria-label="历代状元时间线">
+      <div class="tl-scroll" id="tl-scroll">
+        <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} role="img" aria-label="历代状元时间线，共 {plotted} 人，其中 {denseCount} 处密集区可展开名单">
           {/* 刻度尺 */}
           {ticks.map((y) => (
             <g>
@@ -79,43 +135,63 @@ const tickTitle = (p: any) => {
           ))}
 
           {/* 泳道 */}
-          {LANES.map((lane, i) => {
-            const y = laneY(i);
-            const list = byDynasty.get(lane.name) ?? [];
-            return (
-              <g>
-                <text x={leftPad - 10} y={y + laneH / 2 + 4} class="lane-name" text-anchor="end">{lane.name}</text>
-                <rect x={x(lane.start)} y={y} width={(lane.end - lane.start) * PX} height={laneH} class={`lane-band lane-${i % 2}`} rx="3" />
-                {/* 明清泳道叠加年号分段 */}
-                {reignBlocks.filter((r) => r.dyn === lane.name).map((r, j) => (
-                  <g>
-                    <rect x={x(r.s)} y={y} width={(r.e - r.s) * PX} height={laneH}
-                      class={j % 2 ? 'reign-alt' : 'reign-plain'} />
-                    {(r.e - r.s) * PX > 34 && (
-                      <text x={x(r.s) + (r.e - r.s) * PX / 2} y={y + laneH / 2 + 3.5} class="reign-label" text-anchor="middle">{r.name}</text>
+          {lanes.map(({ lane, i, y, list, groups }) => (
+            <g>
+              <text x={leftPad - 10} y={y + laneH / 2 + 4} class="lane-name" text-anchor="end">{lane.name}</text>
+              <rect x={x(lane.start)} y={y} width={(lane.end - lane.start) * PX} height={laneH} class={`lane-band lane-${i % 2}`} rx="3" />
+              {/* 明清泳道叠加年号分段 */}
+              {reignBlocks.filter((r) => r.dyn === lane.name).map((r, j) => (
+                <g>
+                  <rect x={x(r.s)} y={y} width={(r.e - r.s) * PX} height={laneH}
+                    class={j % 2 ? 'reign-alt' : 'reign-plain'} />
+                  {(r.e - r.s) * PX > 34 && (
+                    <text x={x(r.s) + (r.e - r.s) * PX / 2} y={y + laneH / 2 + 3.5} class="reign-label" text-anchor="middle">{r.name}</text>
+                  )}
+                </g>
+              ))}
+              {/* 状元点：可视圆不放大；透明命中圆以 CSS 像素定径 44px */}
+              {groups.map((group, gi) => {
+                const anchor = group[Math.floor((group.length - 1) / 2)];
+                const dense = group.length >= 2;
+                const label = dense
+                  ? `${lane.name} ${group[0].year}–${group[group.length - 1].year}，${group.length} 人，展开名单`
+                  : `${anchor.name}，${lane.name}，${anchor.year} 年`;
+                return (
+                  <g class="tl-hit"
+                    tabindex="0"
+                    role="button"
+                    data-mode={dense ? 'list' : 'card'}
+                    data-key={`${lane.name}-${gi}`}
+                    aria-label={label}
+                    aria-expanded="false"
+                    aria-controls="tl-pop">
+                    {group.map((p, pi) => (
+                      <circle class={p === anchor ? 'tl-hit-area tl-anchor' : 'tl-hit-area'} data-i={pi} cx={p.cx} cy={p.cy} r="1" />
+                    ))}
+                    {group.map((p) => (
+                      <circle cx={p.cx} cy={p.cy}
+                        r={p.full ? 4 : 2.4}
+                        class={p.full ? 'dot dot-full' : 'dot'} />
+                    ))}
+                    {dense && (
+                      <text class="tl-badge" x={anchor.cx} y={anchor.cy - 8} text-anchor="middle">{group.length}</text>
                     )}
+                    <script type="application/json" is:inline set:html={JSON.stringify(group).replace(/</g, '\\u003c')} />
                   </g>
-                ))}
-                {/* 状元点 */}
-                {list.filter((p) => p.exam_year).map((p) => (
-                  <a href={`${BASE}persons/${p.id}/`}>
-                    <circle cx={x(p.exam_year)} cy={y + laneH / 2}
-                      r={fullIds.has(p.id) ? 4 : 2.4}
-                      class={fullIds.has(p.id) ? 'dot dot-full' : 'dot'}>
-                      <title>{tickTitle(p)}</title>
-                    </circle>
-                  </a>
-                ))}
-                <text x={x(lane.end) + 6} y={y + laneH / 2 + 4} class="lane-count">{list.length}</text>
-              </g>
-            );
-          })}
+                );
+              })}
+              <text x={x(lane.end) + 6} y={y + laneH / 2 + 4} class="lane-count">{list.length}</text>
+            </g>
+          ))}
         </svg>
       </div>
 
+      <div id="tl-pop" class="tl-pop" hidden role="dialog" aria-modal="false"></div>
+      <p class="tl-live" aria-live="polite"></p>
+
       <section class="era-table">
         <h2 class="section-title">纪年对照（明清）</h2>
-        <p class="note-line">鼠标悬浮时间线上的圆点可见该科公元 / 干支 / 年号三套纪年；明清年号分段已直接绘于泳道。</p>
+        <p class="note-line">点击或键盘聚焦圆点后先出摘要（姓名、朝代、科年），再从卡内进入档案；同一泳道上按十年一档，一档有两人及以上即展开名单，逐人可达。明清年号分段已直接绘于泳道。</p>
         <table class="list">
           <thead><tr><th>年号</th><th>公元区间</th><th>历时</th><th>首年干支</th></tr></thead>
           <tbody>
@@ -133,5 +209,161 @@ const tickTitle = (p: any) => {
 
       <a class="back" href={BASE}>← 返回首页</a>
     </div>
+
+    <script is:inline define:vars={{ HIT_CSS_PX }}>
+      const scroll = document.getElementById('tl-scroll');
+      const svg = scroll.querySelector('svg');
+      const pop = document.getElementById('tl-pop');
+      const live = document.querySelector('.tl-live');
+      const hits = Array.from(svg.querySelectorAll('.tl-hit'));
+      let openEl = null;
+
+      function peopleOf(el) {
+        const node = el.querySelector('script');
+        return JSON.parse(node.textContent || '[]');
+      }
+
+      function svgScale() {
+        const rect = svg.getBoundingClientRect();
+        const vb = svg.viewBox.baseVal;
+        return rect.width / vb.width;
+      }
+
+      function placeHitAreas() {
+        const scale = svgScale();
+        if (!scale) return;
+        const r = (HIT_CSS_PX / 2) / scale;
+        for (const area of svg.querySelectorAll('.tl-hit-area')) {
+          area.setAttribute('r', String(r));
+        }
+      }
+
+      /** 触点落在重叠命中圆里时，取用户坐标上最近的那个人，而不是最上层的圆 */
+      function nearestHit(clientX, clientY) {
+        const scale = svgScale();
+        if (!scale) return null;
+        const ctm = svg.getScreenCTM();
+        if (!ctm) return null;
+        const pt = svg.createSVGPoint();
+        pt.x = clientX;
+        pt.y = clientY;
+        const local = pt.matrixTransform(ctm.inverse());
+        const limit = (HIT_CSS_PX / 2) / scale;
+        let best = null;
+        let bestD = limit;
+        for (const area of svg.querySelectorAll('.tl-hit-area')) {
+          const dx = local.x - Number(area.getAttribute('cx'));
+          const dy = local.y - Number(area.getAttribute('cy'));
+          const d = Math.hypot(dx, dy);
+          if (d <= bestD) {
+            bestD = d;
+            best = area.parentNode;
+          }
+        }
+        return best;
+      }
+
+      function closePop() {
+        if (!openEl) return;
+        openEl.setAttribute('aria-expanded', 'false');
+        openEl.classList.remove('is-open');
+        openEl = null;
+        pop.hidden = true;
+        pop.innerHTML = '';
+      }
+
+      function cardHtml(p) {
+        const yearBits = [String(p.year), p.ganzhi, p.reign].filter(Boolean).join(' · ');
+        return (
+          '<p class="tl-pop-name">' + p.name + '</p>' +
+          '<p class="tl-pop-meta">' + p.dynasty + ' · ' + yearBits + '</p>' +
+          '<a class="tl-enter" href="' + p.href + '">进入档案</a>'
+        );
+      }
+
+      function openAt(el) {
+        if (openEl === el) { closePop(); return; }
+        if (openEl) {
+          openEl.setAttribute('aria-expanded', 'false');
+          openEl.classList.remove('is-open');
+        }
+        openEl = el;
+        el.setAttribute('aria-expanded', 'true');
+        el.classList.add('is-open');
+        const people = peopleOf(el);
+        const dense = el.dataset.mode === 'list';
+        let html;
+        if (dense) {
+          const a = people[0];
+          const z = people[people.length - 1];
+          html = '<p class="tl-pop-name">' + a.dynasty + ' ' + a.year + '–' + z.year + '</p>' +
+            '<p class="tl-pop-meta">该区域 ' + people.length + ' 人，逐人可达</p>' +
+            '<ul class="tl-pop-list">' +
+            people.map((p) => {
+              const yearBits = [String(p.year), p.ganzhi, p.reign].filter(Boolean).join(' · ');
+              return '<li><a href="' + p.href + '">' + p.name +
+                '<span>' + p.dynasty + ' · ' + yearBits + '</span></a></li>';
+            }).join('') +
+            '</ul>';
+        } else {
+          html = cardHtml(people[0]);
+        }
+        pop.innerHTML = html;
+        pop.hidden = false;
+        const anchor = el.querySelector('.tl-anchor') || el.querySelector('.tl-hit-area');
+        const box = anchor.getBoundingClientRect();
+        const popW = pop.offsetWidth;
+        const popH = pop.offsetHeight;
+        let left = box.left + box.width / 2 - popW / 2;
+        let top = box.bottom + 8;
+        left = Math.max(8, Math.min(left, window.innerWidth - popW - 8));
+        if (top + popH > window.innerHeight - 8) top = Math.max(8, box.top - popH - 8);
+        pop.style.left = left + 'px';
+        pop.style.top = top + 'px';
+        const first = pop.querySelector('a');
+        if (first) first.focus();
+        if (live) live.textContent = dense
+          ? '已展开 ' + people.length + ' 人名单'
+          : '已打开 ' + people[0].name + ' 的摘要';
+      }
+
+      svg.addEventListener('click', (ev) => {
+        const el = nearestHit(ev.clientX, ev.clientY);
+        if (!el) return;
+        ev.preventDefault();
+        ev.stopPropagation();
+        openAt(el);
+      });
+      for (const el of hits) {
+        el.addEventListener('keydown', (ev) => {
+          if (ev.key === 'Enter' || ev.key === ' ') {
+            ev.preventDefault();
+            openAt(el);
+          }
+        });
+      }
+
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape' && openEl) {
+          const back = openEl;
+          closePop();
+          back.focus();
+        }
+      });
+      document.addEventListener('click', (ev) => {
+        if (!openEl) return;
+        if (pop.contains(ev.target) || openEl.contains(ev.target)) return;
+        closePop();
+      });
+      scroll.addEventListener('scroll', () => { if (openEl) closePop(); }, { passive: true });
+      window.addEventListener('resize', () => {
+        placeHitAreas();
+        if (openEl) closePop();
+      });
+      if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(placeHitAreas).observe(svg);
+      }
+      placeHitAreas();
+    </script>
   </body>
 </html>

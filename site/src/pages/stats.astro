@@ -183,6 +183,7 @@ const n = cov.zhuangyuan;
 
       <h2 class="section-title">各数据源条目数</h2>
       <p class="note-line">数据底座逐条登记于 <code>data/</code>，以 YAML + Git 版本管理；下表为构建期实测条目数。轶事与史实物理隔离，故分列。条形长度为条目数的开平方取相对值（各表量级相差数千倍，线性比例下小表不可见），仅作目视排序，数值请看数字。</p>
+      <div class="src-table-wrap">
       <table class="src-table">
         <thead>
           <tr><th>数据源</th><th class="st-n">条目数</th><th class="st-bar"></th><th>说明</th></tr>
@@ -198,6 +199,7 @@ const n = cov.zhuangyuan;
           ))}
         </tbody>
       </table>
+      </div>
       <p class="note-line">
         完整数据可经<a href={`${BASE}about/#download`}>公开数据 API</a>下载：人物卡 {cov.persons} 张（状元 {cov.zhuangyuan} · 特例 {cov.roles.special}）的全量 JSON 与 CSV，
         字段含义与 CC BY-SA 许可说明见<a href={`${BASE}api/`}>数据字典</a>。

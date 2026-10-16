@@ -48,7 +48,7 @@
 .chip:hover { border-color: var(--gold); color: var(--gold); }
 .chip.on { background: var(--cinnabar); border-color: var(--cinnabar); color: #fff; }
 
-.year-range { display: flex; align-items: center; gap: 0.4rem; color: var(--ink-soft); }
+.year-range { display: flex; align-items: center; gap: 0.4rem; color: var(--ink-soft); flex-wrap: wrap; }
 .year-range input {
   font: inherit;
   width: 5.5em;
@@ -57,6 +57,26 @@
   border-radius: 3px;
   background: #fff;
   color: var(--ink);
+}
+/* 科年倒置：就地提示，不复用结果区「无命中」 */
+.year-warn {
+  margin: 0;
+  flex-basis: 100%;
+  font-size: 0.8rem;
+  font-style: normal;
+  color: var(--cinnabar);
+}
+.year-warn[hidden] { display: none; }
+#yearSwap {
+  font: inherit;
+  font-size: 0.8rem;
+  margin-left: 0.4rem;
+  border: none;
+  background: none;
+  color: var(--cinnabar);
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
 }
 
 .full-only { display: flex; align-items: center; gap: 0.3rem; cursor: pointer; }

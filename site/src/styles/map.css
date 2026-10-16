@@ -9,19 +9,63 @@
   border: 1px solid var(--line); background: #fbf8f0; border-radius: 4px;
   padding: 0.8rem 1.1rem 0.5rem; margin-bottom: 0.8rem;
 }
-.dyn-slider { display: flex; align-items: center; gap: 0.9rem; }
+.dyn-slider { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
 .ds-label { font-size: 0.85rem; color: var(--ink-soft); flex: 0 0 auto; }
-#dynRange { flex: 1; accent-color: var(--cinnabar); height: 2px; cursor: pointer; }
+#dynRange { flex: 1 1 8rem; min-width: 0; accent-color: var(--cinnabar); height: 2px; cursor: pointer; }
 .ds-name { font-size: 1.05rem; font-weight: bold; color: var(--cinnabar); min-width: 3.5em; text-align: center; }
-.ds-count { font-size: 0.82rem; color: var(--ink-soft); min-width: 4.5em; }
+.ds-count { font-size: 0.82rem; color: var(--ink-soft); }
 .dyn-ticks { display: flex; font-size: 0.72rem; color: var(--ink-soft); margin-top: 0.2rem; }
 .dyn-ticks span { flex: 1; text-align: center; }
 
-/* 地图容器：固定高度（腾讯地图要求） */
+/* 地图容器：固定高度（腾讯地图要求）。状态层在容器外，避免被 TMap 初始化清掉。 */
+.map-stage { position: relative; }
 .map-box {
   width: 100%; height: 62vh; min-height: 420px;
   border: 1px solid var(--line); border-radius: 4px;
 }
+.map-status {
+  position: absolute; inset: 0; z-index: 5;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.55rem;
+  background: rgba(251, 248, 240, 0.94);
+  color: var(--ink);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+.map-status[hidden] { display: none; }
+.map-status-text { margin: 0; font-size: 1.05rem; letter-spacing: 0.12em; }
+.map-status-detail { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+.map-retry {
+  font-family: inherit; font-size: 0.92rem; letter-spacing: 0.2em;
+  color: #fff; background: var(--cinnabar); border: 0; border-radius: 2px;
+  padding: 0.35rem 1.3rem; cursor: pointer;
+}
+.map-retry:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+.map-fallback {
+  margin-top: 0.8rem;
+  border: 1px solid var(--line); background: #fbf8f0; border-radius: 4px;
+  padding: 0.9rem 1.1rem 0.4rem;
+}
+.map-fallback[hidden] { display: none; }
+.map-fallback h2 { margin: 0 0 0.25rem; font-size: 1.05rem; letter-spacing: 0.14em; }
+.map-fallback .fb-lead { margin: 0 0 0.55rem; color: var(--ink-soft); font-size: 0.86rem; }
+#mapFallbackList {
+  list-style: none; margin: 0; padding: 0;
+  max-height: 42vh; overflow: auto;
+}
+#mapFallbackList li {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem;
+  padding: 0.32rem 0; border-top: 1px solid var(--line); font-size: 0.9rem;
+}
+#mapFallbackList li[hidden] { display: none; }
+#mapFallbackList a { color: var(--cinnabar); text-decoration: none; font-weight: bold; }
+.fb-meta { color: var(--ink-soft); font-size: 0.82rem; }
+.fb-role, .fb-full {
+  font-size: 0.66rem; color: #fff; border-radius: 2px; padding: 0 0.3rem;
+}
+.fb-role { background: #6a6558; }
+.fb-full { background: var(--gold); }
 
 /* 弹卡 */
 .pop { font-family: "Songti SC", "Noto Serif CJK SC", serif; min-width: 150px; }
@@ -34,6 +78,18 @@
 .pop-badge-role { background: #6a6558; }
 .pop-meta { font-size: 0.78rem; color: #6a6558; margin-top: 0.15rem; }
 .pop-native { font-size: 0.82rem; margin-top: 0.2rem; }
+/* 同坐标聚合弹卡：人数多的县治（苏州 22 人一级）需要自己滚动，不要把整页撑出视口 */
+.pop-cluster { max-width: 240px; }
+.pop-people {
+  list-style: none; margin: 0.35rem 0 0; padding: 0;
+  max-height: 220px; overflow: auto;
+}
+.pop-people li {
+  display: flex; justify-content: space-between; gap: 0.6rem;
+  padding: 0.18rem 0; border-top: 1px solid #eadfca; font-size: 0.86rem;
+}
+.pop-people a { color: var(--cinnabar); text-decoration: none; }
+.pop-people .pop-meta { margin: 0; white-space: nowrap; }
 .pop a { color: #9e2b22; font-size: 0.82rem; text-decoration: none; display: inline-block; margin-top: 0.35rem; }
 
 .map-guide { margin-top: 1.5rem; }

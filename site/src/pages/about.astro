@@ -325,7 +325,8 @@ const lin = {
       .sub-title { font-size: 1rem; margin: 1.6rem 0 0.6rem; }
 
       /* 数据源卡片 */
-      .src-grid { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); margin: 1rem 0 0.8rem; }
+      /* 300px 硬底在 320px 视口（容器左右各 1.25rem，内宽约 280px）会把卡片撑出右边。最小宽随容器收缩。 */
+      .src-grid { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); margin: 1rem 0 0.8rem; }
       .src-card {
         border: 1px solid var(--line); background: #fbf8f0;
         border-radius: 4px; padding: 1rem 1.1rem;
@@ -361,11 +362,11 @@ const lin = {
       .bar-fill.hit { background: #4a7c59; }
       .bar-target { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--ink); }
       .bar-num { flex: 0 0 auto; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
-      .bar-note { flex: 0 0 100%; margin: -0.35rem 0 0 calc(4.5em + 0.7rem); font-size: 0.75rem; color: var(--ink-soft); }
+      .bar-note { flex: 1 1 100%; min-width: 0; margin: -0.35rem 0 0 calc(4.5em + 0.7rem); font-size: 0.75rem; color: var(--ink-soft); }
 
       /* 数据下载 */
       .download { border-top: 2px solid var(--ink); padding-top: 0.2rem; }
-      .dl-grid { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); margin: 1rem 0 1.4rem; }
+      .dl-grid { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); margin: 1rem 0 1.4rem; }
       .dl-card {
         display: block; text-decoration: none; color: inherit;
         border: 1px solid var(--line); border-left: 4px solid var(--gold);

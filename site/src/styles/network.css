@@ -81,32 +81,95 @@
 }
 .net-empty.show { display: flex; }
 
-/* ── 移动端降级：关系清单（桌面隐藏） ── */
-.rel-list { display: none; }
+/* ── 人物列表：全屏宽可用。桌面默认收起，窄屏默认展开。
+   显隐与画布共用 visibleE（R5-T4）；逐条来源徽标仍构建期落盘（R5-T5）。
+   列表项是按钮：Tab 到达，Enter 打开信息卡，卡内链接进档案。 ── */
+.rel-list { margin-top: 1.2rem; }
+.rel-list .rl-toggle {
+  font-family: inherit; font-size: 0.84rem; color: #e8d9a8;
+  background: none; border: 1px solid rgba(169, 139, 63, 0.45); border-radius: 999px;
+  padding: 0.2rem 0.85rem; cursor: pointer; letter-spacing: 0.06em;
+}
+.rel-list .rl-toggle:hover { border-color: #d4af37; color: #f0e2b0; }
+.rel-list .rl-toggle:focus-visible,
+.rel-list .rl-pick:focus-visible {
+  outline: 2px solid #d4af37; outline-offset: 2px; border-radius: 2px;
+}
+.rel-list .rl-panel[hidden] { display: none; }
+/* 清单正文全屏宽都要有样式：桌面展开后不能只靠窄屏媒体查询。
+   [hidden] 必须压过 display，否则被筛掉的条目在桌面展开后仍露出来。 */
+.rel-list [hidden] { display: none !important; }
+.rel-list .rl-stat {
+  font-size: 0.74rem; color: rgba(232, 217, 168, 0.8);
+  margin: 0.7rem 0 0.8rem; font-variant-numeric: tabular-nums;
+}
+.rel-list .rl-empty {
+  color: rgba(232, 226, 208, 0.5); font-size: 0.84rem; margin: 0.6rem 0 1rem;
+}
+.rel-list .rl-lead {
+  border-left: 3px solid #a98b3f; padding: 0.4rem 0 0.4rem 0.8rem; margin: 0.9rem 0 1.4rem;
+  color: rgba(232, 226, 208, 0.62); font-size: 0.8rem; line-height: 1.8;
+}
+.rel-list h2 {
+  font-size: 1.02rem; color: #e8d9a8; letter-spacing: 0.12em;
+  margin: 1.6rem 0 0.5rem; padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(169, 139, 63, 0.35);
+}
+.rel-list h2 span { font-size: 0.72rem; color: rgba(232, 226, 208, 0.5); font-weight: normal; margin-left: 0.5rem; }
+.rel-list ul { list-style: none; margin: 0; padding: 0; }
+.rel-list li {
+  padding: 0.4rem 0; border-bottom: 1px dashed rgba(232, 226, 208, 0.12); font-size: 0.86rem;
+  line-height: 1.7;
+}
+.rel-list li a { color: #e8d9a8; text-decoration: none; }
+.rel-list li a:hover,
+.rel-list li a:active { color: #d4af37; }
+.rel-list .pair-arrow { color: rgba(232, 226, 208, 0.35); margin: 0 0.25rem; }
+/* 逐条来源徽标（R5-T5）：本站编纂暖金、CBDB 冷灰（机器边、未经逐条人工核验）、混合两色 */
+.rel-list .rl-src {
+  display: inline-block; font-size: 0.66rem; line-height: 1.5;
+  padding: 0 0.4rem; margin-left: 0.35rem; border-radius: 999px;
+  border: 1px solid; vertical-align: 0.08em; white-space: nowrap;
+}
+.rel-list .rl-src.hist { color: #e8d9a8; border-color: rgba(169, 139, 63, 0.55); }
+.rel-list .rl-src.cbdb { color: #aeb9c6; border-color: rgba(200, 210, 222, 0.38); }
+.rel-list .rl-src.mix { color: #c9b78f; border-color: rgba(190, 175, 140, 0.45); }
+.rel-list .rl-ext { color: #c8d2de; }
+.rel-list .rl-note { display: block; font-style: normal; font-size: 0.74rem; color: rgba(232, 226, 208, 0.45); }
+.rel-list .rl-hub { display: block; font-size: 0.74rem; color: rgba(232, 226, 208, 0.5); }
+.rel-list .rl-hub a { color: rgba(212, 175, 55, 0.8); }
+.rel-list .rl-hub a:hover { color: #d4af37; }
+/* 列表行内的选人按钮（打开信息卡；伙伴姓名链接直接进档案） */
+.rel-list .rl-pick {
+  font-family: inherit; font-size: inherit; color: #e8d9a8;
+  background: none; border: none; padding: 0; cursor: pointer;
+}
+.rel-list .rl-pick:hover { color: #d4af37; }
+
+/* 弹卡两节（R5-T4）：默认「当前筛选」，「全部关系」默认收起。
+   网络页弹卡沿用 #galaxyCard，此处只补两节，不改星图弹卡。 */
+.galaxy-page #galaxyCard { width: min(268px, calc(100vw - 24px)); max-height: min(70vh, calc(100vh - 24px)); overflow: auto; }
+.galaxy-page #galaxyCard .pop-sec { margin-top: 0.45rem; }
+.galaxy-page #galaxyCard .pop-sec-h {
+  display: block; font-size: 0.68rem; letter-spacing: 0.08em;
+  color: rgba(232, 217, 168, 0.72); margin-bottom: 0.1rem;
+}
+.galaxy-page #galaxyCard .pop-ext { color: #c8d2de; font-size: 0.8rem; margin-right: 0.6rem; }
+.galaxy-page #galaxyCard .pop-all { margin-top: 0.35rem; font-size: 0.74rem; color: rgba(232, 226, 208, 0.55); }
+.galaxy-page #galaxyCard .pop-all summary { cursor: pointer; color: rgba(212, 175, 55, 0.8); }
+.galaxy-page #galaxyCard .pop-all summary:hover { color: #d4af37; }
 
 @media (max-width: 760px) {
-  #netCanvas, .galaxy-hint, .network-tools, .net-preset, .net-empty, .galaxy-legend { display: none !important; }
-  .rel-list { display: block; }
-  .rel-list .rl-lead {
-    border-left: 3px solid #a98b3f; padding: 0.4rem 0 0.4rem 0.8rem; margin-bottom: 1.4rem;
-    color: rgba(232, 226, 208, 0.62); font-size: 0.8rem; line-height: 1.8;
-  }
-  .rel-list h2 {
-    font-size: 1.02rem; color: #e8d9a8; letter-spacing: 0.12em;
-    margin: 1.6rem 0 0.5rem; padding-bottom: 0.3rem;
-    border-bottom: 1px solid rgba(169, 139, 63, 0.35);
-  }
-  .rel-list h2 span { font-size: 0.72rem; color: rgba(232, 226, 208, 0.5); font-weight: normal; margin-left: 0.5rem; }
-  .rel-list ul { list-style: none; margin: 0; padding: 0; }
-  .rel-list li {
-    padding: 0.4rem 0; border-bottom: 1px dashed rgba(232, 226, 208, 0.12); font-size: 0.86rem;
-    line-height: 1.7;
-  }
-  .rel-list li a { color: #e8d9a8; text-decoration: none; }
-  .rel-list li a:active { color: #d4af37; }
-  .rel-list .pair-arrow { color: rgba(232, 226, 208, 0.35); margin: 0 0.25rem; }
-  .rel-list .rl-ext { color: #c8d2de; }
-  .rel-list .rl-note { display: block; font-style: normal; font-size: 0.74rem; color: rgba(232, 226, 208, 0.45); }
-  .rel-list .rl-hub { display: block; font-size: 0.74rem; color: rgba(232, 226, 208, 0.5); }
-  .rel-list .rl-hub a { color: rgba(212, 175, 55, 0.8); }
+  /* 筛选条与人物列表留下：窄屏清单与画布共用同一组开关（R5-T4）。画布、图例、空态隐藏。
+     信息卡不隐藏——键盘从列表打开后仍要能读。未打开时由脚本 display:none。 */
+  #netCanvas, .galaxy-hint, .net-empty, .galaxy-legend { display: none !important; }
+  .network-tools { margin-bottom: 0.4rem; }
+  .net-stat { display: none; }
+  .net-preset { margin-bottom: 0.6rem; }
+}
+@media (min-width: 761px) {
+  /* 桌面默认收起：只留下一个可 Tab 的展开按钮。
+     展开后 is-open 压过这里的 display:none；[hidden] 仍由上面的 !important 兜住筛选。 */
+  .rel-list .rl-panel { display: none; }
+  .rel-list.is-open .rl-panel { display: block; }
 }

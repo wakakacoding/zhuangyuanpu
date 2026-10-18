@@ -1,0 +1,26 @@
+person_id: zhang_youxin
+events:
+  - year: 814
+    year_precision: exact
+    type: 夺魁
+    title: 元和九年及第，状元之说另有来源
+    description: >-
+      《新唐书》本传只说「元和中，及进士高第」。《煎茶水记》自述「元和九年春，予初成名」。
+      《四库全书总目》写「元和九年进士第一」，并注明第一名据元人《氏族大全》，不是本传原文。
+      三元及第故事里的「张三头」不写入本条。
+    source_ids: [src_xintangshu_zhangyouxin, src_jianchashuiji, src_siku_jianchashuiji]
+  - year: 814
+    year_precision: about
+    type: 授官
+    title: 历左右补阙
+    description: >-
+      本传：「历左右补阙。」未写始年，系在及第之后。
+    source_ids: [src_xintangshu_zhangyouxin]
+  - year: 843
+    year_precision: about
+    type: 著作
+    title: 刺九江时整理《煎茶水记》
+    description: >-
+      书中自述刺九江时检出旧稿。《四库全书总目》据书中「刺九江」定其任江州，
+      并指出新、旧《唐书》作汀州，二字形近。任年未在本次核到的原文里写明，作约年。
+    source_ids: [src_jianchashuiji, src_siku_jianchashuiji]

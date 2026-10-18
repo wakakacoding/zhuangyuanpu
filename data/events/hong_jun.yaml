@@ -1,0 +1,39 @@
+person_id: hong_jun
+events:
+  - year: 1868
+    year_precision: exact
+    type: 夺魁
+    title: 同治七年一甲一名
+    description: >-
+      《清史稿》：「同治七年一甲一名进士，授修撰。」
+    source_ids: [src_qingshigao_hongjun]
+  - year: 1868
+    year_precision: about
+    type: 授官
+    title: 授翰林院修撰
+    description: >-
+      与上条同出本传。未写始任月份，系在及第之后。
+    source_ids: [src_qingshigao_hongjun]
+  - year: 1887
+    year_precision: about
+    type: 升迁
+    title: 出使俄、德、奥、比四国
+    description: >-
+      本传：「出使俄德奥比四国大臣，晋兵部左侍郎。」
+      出使始年未在这一句里写明，按光绪十三年常说作约年，不改成确年。
+    source_ids: [src_qingshigao_hongjun]
+  - year: 1893
+    year_precision: exact
+    type: 卒
+    title: 光绪十九年卒
+    description: >-
+      本传：「十九年，卒，予优恤。」人物卡卒年 1893 与此同年。
+    source_ids: [src_qingshigao_hongjun]
+  - year: 1893
+    year_precision: about
+    type: 著作
+    title: 撰《元史释文证补》
+    description: >-
+      本传：「尝譔元史释文证补，取材域外，时论称之。」
+      书名以传文为准。后世常作《元史译文证补》，两名并存，本次不改传文。
+    source_ids: [src_qingshigao_hongjun]

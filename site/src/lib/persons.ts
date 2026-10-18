@@ -70,6 +70,45 @@ export function subDocs(dir: 'events' | 'works' | 'anecdotes' | 'relations', id:
   return doc?.[dir] ?? [];
 }
 
+/**
+ * 档案页关系：本人文件里的出边，加上别人文件里指向本人、而本人文件没有同一条回边的入边。
+ * 同一对人物的不同关系类型、不同来源都保留。不把外部 cbdb 人物生成站内链接。
+ */
+const INBOUND_TYPE: Record<string, string> = {
+  父子: '父子',
+  师生: '师生',
+  翁婿: '翁婿',
+  祖孙: '祖孙',
+};
+
+export function profileRelations(id: string): any[] {
+  const own = subDocs('relations', id).map((r) => ({ ...r, inbound: false }));
+  const seen = new Set(own.map((r) => `${r.to_id}|${r.type}|${r.src ?? ''}|${r.note ?? ''}`));
+  const dir = path.join(DATA_DIR, 'relations');
+  if (!fs.existsSync(dir)) return own;
+  const extra: any[] = [];
+  for (const file of fs.readdirSync(dir)) {
+    if (!file.endsWith('.yaml') || file.startsWith('_') || file === `${id}.yaml`) continue;
+    const doc: any = loadYaml(path.join(dir, file));
+    const fromId = doc?.from_id ?? file.replace(/\.yaml$/, '');
+    for (const r of doc?.relations ?? []) {
+      if (r?.to_id !== id) continue;
+      const type = INBOUND_TYPE[r.type] ?? r.type;
+      const key = `${fromId}|${type}|${r.src ?? ''}|${r.note ?? ''}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      extra.push({
+        ...r,
+        to_id: fromId,
+        type,
+        inbound: true,
+        note: r.note ? `对方所记：${r.note}` : '对方所记',
+      });
+    }
+  }
+  return own.concat(extra);
+}
+
 /** 已建全字段档案的人物 id 集（有 events 文件即算） */
 export function fullProfileIds(): Set<string> {
   cache.fullIds ??= new Set(

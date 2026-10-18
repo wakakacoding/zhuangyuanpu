@@ -1,0 +1,10 @@
+person_id: xue_chao_wu
+events:
+  - year: 1354
+    year_precision: exact
+    type: 夺魁
+    title: 至正十四年廷试，赐进士及第
+    description: >-
+      《元史》顺帝本纪：至正十四年三月己巳，「廷试进士六十二人，赐薛朝晤、牛继志进士及第，
+      余授官出身有差。」本纪不写左右榜。字子颙、辽东籍沿用人物卡旧注，本条不另立。
+    source_ids: [src_yuanshi_xuechaowu]

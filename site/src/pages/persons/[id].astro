@@ -11,7 +11,7 @@
  *
  * 数据一律构建期实测——本页不写死任何统计数字。
  */
-import { allPersons, allSources, subDocs, ganzhiOf, reignYearOf, profileStatusText, roleOf, ROLE_LABEL, ROLE_NOTE, fullProfileIds, BASE } from '../../lib/persons';
+import { allPersons, allSources, subDocs, profileRelations, ganzhiOf, reignYearOf, profileStatusText, roleOf, ROLE_LABEL, ROLE_NOTE, fullProfileIds, BASE } from '../../lib/persons';
 import { listStories } from '../../lib/story';
 import SeoHead from '../../components/SeoHead.astro';
 import CareerRiver from '../../components/CareerRiver.astro';
@@ -28,7 +28,7 @@ export function getStaticPaths() {
       events: subDocs('events', person.id),
       works: subDocs('works', person.id),
       anecdotes: subDocs('anecdotes', person.id),
-      relations: subDocs('relations', person.id),
+      relations: profileRelations(person.id),
       sources,
     },
   }));

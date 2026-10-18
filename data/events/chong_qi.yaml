@@ -1,0 +1,25 @@
+person_id: chong_qi
+events:
+  - year: 1864
+    year_precision: exact
+    type: 夺魁
+    title: 一甲一名进士
+    description: >-
+      《清史稿》本传先书同治三年都兴阿奏调、兵部疏留，接写「是岁成一甲一名进士」。
+      人物卡科年作同治四年（1865）。本条取传文的同治三年，不改卡上科年。
+    source_ids: [src_qingshigao_chongqi]
+  - year: 1864
+    year_precision: exact
+    type: 授官
+    title: 满、蒙人试汉文获授修撰，仅此一人
+    description: >-
+      本传：「立国二百数十年，满、蒙人试汉文获授修撰者，止崇绮一人，士论荣之。」
+    source_ids: [src_qingshigao_chongqi]
+  - year: 1900
+    year_precision: about
+    type: 卒
+    title: 随荣禄走保定，自缢于莲池书院
+    description: >-
+      本传系于光绪二十六年事败之后：「随荣禄走保定，居莲池书院，自缢死。」
+      传文未写卒日。人物卡卒年 1900 与此同年，保留。
+    source_ids: [src_qingshigao_chongqi]

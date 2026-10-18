@@ -13,7 +13,11 @@ import { listStories } from './story';
  * 因此 599 张卡 = 状元 597 + 特例 2，两者不可混用。
  */
 
-/** 阶段目标（来自《下一阶段开发计划》：名录 600、全字段档案 50、故事 15 篇） */
+/**
+ * 看板目标，不是本轮内容验收目标。
+ * 名录 600、事件档案 50、故事 15 来自开发计划。
+ * 下一轮另有「40 人内容验收」阶段目标，源码没有对应的自动计数，不并入这里。
+ */
 export const GOALS = {
   persons: 600,
   fullProfile: 50,
@@ -185,10 +189,10 @@ export function coverageStats(): CoverageStats {
     {
       key: 'coords',
       label: '坐标覆盖',
-      cur: zyList.filter((p) => p.lat != null && p.lng != null).length,
+      cur: zyList.filter((p) => p.lat != null && p.lng != null && p.lng >= 72.004 && p.lng <= 137.8347 && p.lat >= 0.8293 && p.lat <= 55.8271).length,
       total: GOALS.persons,
       target: TARGETS.coords,
-      note: '达标线 60%，解锁完整籍贯地图；分子分母均限状元',
+      note: '达标线 60%。分子是坐标落在中国范围内的状元，分母是看板目标 600，不是 597',
     },
     {
       key: 'starYear',
@@ -196,7 +200,7 @@ export function coverageStats(): CoverageStats {
       cur: zyList.filter((p) => p.birth_year || p.fl_year).length,
       total: zy,
       target: TARGETS.starYear,
-      note: '生年或 CBDB 估算活动年（fl_year）者占比；达标线 50%，解锁星图，图上按精确/估算分色',
+      note: '生年或活动年。0 不算有。分母是状元人数，不含特例。达标线 50%',
     },
     {
       key: 'lifespan',
@@ -204,7 +208,7 @@ export function coverageStats(): CoverageStats {
       cur: zyList.filter((p) => p.birth_year && p.death_year).length,
       total: zy,
       target: null,
-      note: '史书多只记卒年，生年常阙如',
+      note: '生年与卒年都非 0。0 是空值，不算双全。不含特例',
     },
     {
       key: 'bio',
@@ -216,12 +220,12 @@ export function coverageStats(): CoverageStats {
     },
     {
       key: 'fullProfile',
-      label: '全字段档案',
+      label: '事件档案',
       cur: fullIds.size,
       total: GOALS.fullProfile,
       target: null,
       goal: true,
-      note: '含仕途时间线（events）者；有 data/events/<id>.yaml 即计入',
+      note: '有事件文件即计入。这是结构覆盖，不是内容验收。内容验收另有 40 人阶段目标，此处不自动计数',
     },
     {
       key: 'stories',

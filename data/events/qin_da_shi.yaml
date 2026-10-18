@@ -1,0 +1,19 @@
+person_id: qin_da_shi
+events:
+  - year: 1752
+    year_precision: about
+    type: 应试
+    title: 未贵时卖字自给
+    description: >-
+      陈康祺：「精篆隶行草之学，未贵时，卖字以自给，求者踵至。
+      客有知公贫，以厚币请者，微察其有德色，遽还之。」
+      年份不详，系在及第之前。
+    source_ids: [src_langqian_qindashi]
+  - year: 1752
+    year_precision: exact
+    type: 夺魁
+    title: 乾隆十七年殿试第一
+    description: >-
+      同书：「侍讲学士江宁秦公大士，乾隆十七年殿试第一人也。」
+      秦侪后人、岳飞墓前诗句，本条不采。
+    source_ids: [src_langqian_qindashi]

@@ -27,7 +27,7 @@ interface NetDoc {
   v: number; gen: string; types: string[]; groups: number[][]; gname: string[]; def: number[];
   nodes: NetNode[]; edges: NetEdge[];
   stats: { nZy: number; nZyAll: number; nExt: number; eInner: number; eExt: number; relFiles: number; zyTotal: number; zyWithRel: number };
-  meta: { innerEntries: number; innerEntriesValid: number; innerPairs: number; selfLoops: number; extEntries: number; extAll: number; extMinDeg: number; maxNodes: number };
+  meta: { innerEntries: number; innerEntriesValid: number; innerPairs: number; selfLoops: number; extEntries: number; extAll: number; extMinDeg: number; maxNodes: number; cbdbInner: number; cbdbExt: number; cbdbEdges: number };
 }
 
 const net = JSON.parse(
@@ -245,29 +245,33 @@ const clientData = {
       import { newLayout, placeDisc, placeCentroid, relax, separate, bounds } from '../scripts/network-layout.js';
 
       const BASE = import.meta.env.BASE_URL;
-      const DATA = JSON.parse(document.getElementById('netData').textContent);
+      const netDataEl = document.getElementById('netData') as HTMLScriptElement;
+      const DATA = JSON.parse(netDataEl.textContent || '{}');
       const N = DATA.nodes;
       const E = DATA.edges;
       const GNAME = DATA.gname;
+      // 边元组（与前端模板块的 NetEdge 同构；内联 script 是独立编译单元，需自带声明）
+      type NetEdge = [number, number, number, number, string, number];
+
       const COLORS = DATA.colors;
       const STORIES = DATA.stories;
 
-      const canvas = document.getElementById('netCanvas');
-      const ctx = canvas.getContext('2d');
-      const tip = document.getElementById('galaxyTip');
-      const card = document.getElementById('galaxyCard');
-      const cardBody = document.getElementById('galaxyCardBody');
-      const cardClose = card.querySelector('.tie-close');
+      const canvas = document.getElementById('netCanvas') as HTMLCanvasElement;
+      const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
+      const tip = document.getElementById('galaxyTip') as HTMLElement;
+      const card = document.getElementById('galaxyCard') as HTMLElement;
+      const cardBody = document.getElementById('galaxyCardBody') as HTMLElement;
+      const cardClose = card.querySelector('.tie-close') as HTMLElement;
       // 打开信息卡的触发项。关闭后焦点回到这里（R5-T6）。非模态，不锁背景。
-      let cardTrigger = null;
-      const stat = document.getElementById('netStat');
-      const empty = document.getElementById('netEmpty');
-      const tools = document.getElementById('netTools');
-      const extSwitch = document.getElementById('extSwitch');
-      const extToggle = document.getElementById('extToggle');
-      const histSwitch = document.getElementById('histSwitch');
-      const histToggle = document.getElementById('histToggle');
-      const histHint = document.getElementById('histHint');
+      let cardTrigger: HTMLElement | null = null;
+      const stat = document.getElementById('netStat') as HTMLElement;
+      const empty = document.getElementById('netEmpty') as HTMLElement;
+      const tools = document.getElementById('netTools') as HTMLElement;
+      const extSwitch = document.getElementById('extSwitch') as HTMLElement;
+      const extToggle = document.getElementById('extToggle') as HTMLInputElement;
+      const histSwitch = document.getElementById('histSwitch') as HTMLElement;
+      const histToggle = document.getElementById('histToggle') as HTMLInputElement;
+      const histHint = document.getElementById('histHint') as HTMLElement;
 
       const TIER_NAME = ['有故事', '全档案', '已确认', '存疑', '失考'];
       // 状元沿用 galaxy 的金色阶梯（亮度随证据递减）；名士为冷银，两层一眼可分
@@ -282,56 +286,56 @@ const clientData = {
       const EXT_HUB_C = '#f2f6fc';
 
       // 邻接表（弹卡与高亮都要频繁查邻居，构建期建一次）
-      const ADJ = N.map(() => []);
+      const ADJ: NetEdge[][] = N.map(() => []);
       for (const e of E) {
         ADJ[e[0]].push(e);
         ADJ[e[1]].push(e);
       }
-      const isInnerEdge = (e) => N[e[0]].k === 0 && N[e[1]].k === 0;
+      const isInnerEdge = (e: NetEdge) => N[e[0]].k === 0 && N[e[1]].k === 0;
 
       const onG = DATA.def.map(Boolean);
       let showExt = false;
       /** 仅史料关系（R1.2-6）：隐去含 src: cbdb 的机器边，只留本站编纂边 */
       let onlyHist = false;
       /** 按当前层过滤：纯状元视图下隐去一切状元—名士关系 */
-      const inLayer = (e) => showExt || isInnerEdge(e);
+      const inLayer = (e: NetEdge) => showExt || isInnerEdge(e);
       /**
        * 当前可见的唯一判定（R5-T4）。类型、来源、层级三条一起看：
        * 画布边集、邻居高亮、悬浮提示、弹卡「当前筛选」、状态栏与 chips 计数、窄屏清单都走这里。
        * 别再在调用处单独补 onG 或另写一套过滤。
        */
-      const visibleE = (e) => onG[e[2]] && inLayer(e) && !(onlyHist && e[5] === 1);
+      const visibleE = (e: NetEdge) => onG[e[2]] && inLayer(e) && !(onlyHist && e[5] === 1);
 
       // 视图：世界坐标 → 屏幕（view = 屏幕左上角对应的世界点 + 缩放）
       const view = { x: 0, y: 0, scale: 1 };
       let dpr = 1, cw = 0, ch = 0;
-      let screenPts = [];
+      let screenPts: { i: number; sx: number; sy: number; r: number }[] = [];
       let raf = 0, dirty = true;
-      let hover = -1, picked = -1, markSet = new Set();
+      let hover = -1, picked = -1, markSet = new Set<number>();
 
       // 布局状态
       let L = newLayout(N.length);
-      let active = [];
-      let pairs = [];
+      let active: number[] = [];
+      let pairs: NetEdge[] = [];
       let layoutMs = 0;
       let inited = false;
 
-      const radius = (i) => (N[i].k === 1
+      const radius = (i: number) => (N[i].k === 1
         ? Math.min(3.0 + N[i].g * 0.48, 8.6)
         : 4.2 + Math.min(N[i].g, 8) * 0.7 + (N[i].t === 0 ? 1.4 : 0));
       /** 点半径随缩放微调并设下限：缩到最小时也保证看得见 */
       const zoomK = () => Math.max(1, Math.min(Math.sqrt(view.scale) * 1.15, 2.1));
 
-      function neighborsOf(i) {
-        const s = new Set();
+      function neighborsOf(i: number) {
+        const s = new Set<number>();
         for (const e of ADJ[i]) if (visibleE(e)) s.add(e[0] === i ? e[1] : e[0]);
         return s;
       }
 
       // ── 图集：可见边、可见节点只认 visibleE，不再单独看类型 ──
       function visibleSets() {
-        const pr = [];
-        const keep = new Set();
+        const pr: NetEdge[] = [];
+        const keep = new Set<number>();
         for (const e of E) {
           if (!visibleE(e)) continue;
           pr.push(e);
@@ -345,13 +349,13 @@ const clientData = {
       // 状元按科年排进一个圆盘（螺线由内向外即年代由早到晚，年代近者先天相邻）；
       // 名士落到其关联状元的质心（先放进他认识的人中间，再由力导向微调）。
       const SEED_R = 0.56;
-      function seed(act, pr) {
+      function seed(act: number[], pr: NetEdge[]) {
         L = newLayout(N.length);
         const zy = act.filter((i) => N[i].k === 0)
           .sort((a, b) => (N[a].ey || 9999) - (N[b].ey || 9999) || (N[a].s < N[b].s ? -1 : 1));
         placeDisc(L, zy, SEED_R * Math.min(L.w, L.h));
         if (showExt) {
-          const adj = new Map();
+          const adj = new Map<number, number[]>();
           for (const e of pr) {
             const a = e[0], b = e[1];
             if (N[a].k === 0 && N[b].k === 1) { const l = adj.get(b) || []; l.push(a); adj.set(b, l); }
@@ -367,34 +371,35 @@ const clientData = {
       }
 
       // 类型筛选变化时保留既有位置，只把新露面的节点靠到已落位的邻居处
-      function ensurePlaced(act) {
+      function ensurePlaced(act: number[]) {
         const need = act.filter((i) => !L.placed[i]);
         if (!need.length) return;
-        const nb = new Map();
+        const nb = new Map<number, number[]>();
         for (const e of pairs) {
-          for (const [a, b] of [[e[0], e[1]], [e[1], e[0]]]) {
+          for (const [a, b] of ([[e[0], e[1]], [e[1], e[0]]] as [number, number][])) {
             if (!nb.has(a)) nb.set(a, []);
-            nb.get(a).push(b);
+            (nb.get(a) as number[]).push(b);
           }
         }
         let s = 1;
         for (const i of need) placeCentroid(L, i, (nb.get(i) || []).filter((j) => L.placed[j]), s++ * 23 + i);
       }
 
-      function relayout(structural) {
+      function relayout(structural: boolean) {
         const t0 = performance.now();
         const v = visibleSets();
         active = v.act;
         pairs = v.pr;
         if (structural) {
           seed(active, pairs);
-          relax(L, active, pairs, 200); // 迭代 200 次后静止，不跑动画帧
+          // relax 只吃下标对（见 network-layout.js 签名），从 NetEdge 投影前两位
+          relax(L, active, pairs.map((e) => [e[0], e[1]]), 200); // 迭代 200 次后静止，不跑动画帧
         } else {
           ensurePlaced(active);
-          relax(L, active, pairs, 60);
+          relax(L, active, pairs.map((e) => [e[0], e[1]]), 60);
         }
         // 去重叠 → 适配 → 再去重叠：点半径是屏幕像素，去重叠须知道缩放，故交替两轮收敛
-        const gapR = (i) => radius(i) * zoomK();
+        const gapR = (i: number) => radius(i) * zoomK();
         fitView();
         separate(L, active, { radius: gapR, scale: view.scale, gap: 4 });
         fitView();
@@ -402,7 +407,7 @@ const clientData = {
         layoutMs = performance.now() - t0; // 「布局耗时」= 布点 + 迭代 + 去重叠 + 适配 全程
         hover = -1;
         picked = -1;
-        markSet = new Set();
+        markSet = new Set<number>();
         closeCard(false);
         fitView();
         updateHud();
@@ -448,8 +453,8 @@ const clientData = {
         ctx.fillStyle = bg;
         ctx.fillRect(0, 0, cw, ch);
 
-        const toSX = (wx) => (wx - view.x) * view.scale;
-        const toSY = (wy) => (wy - view.y) * view.scale;
+        const toSX = (wx: number) => (wx - view.x) * view.scale;
+        const toSY = (wy: number) => (wy - view.y) * view.scale;
         const zk = zoomK();
         const focus = picked >= 0 ? picked : hover;
 
@@ -544,8 +549,9 @@ const clientData = {
         stat.innerHTML = `节点 <b>${active.length}</b> · 边 <b>${pairs.length}</b> · 布局 <b>${layoutMs.toFixed(1)}</b> ms`;
         const c = new Array(GNAME.length).fill(0);
         for (const e of pairs) c[e[2]]++;
-        for (const b of tools.querySelectorAll('.chip')) {
-          b.querySelector('em').textContent = String(c[+b.dataset.g]);
+        for (const b of tools.querySelectorAll<HTMLElement>('.chip')) {
+          const em = b.querySelector('em');
+          if (em) em.textContent = String(c[+(b.dataset.g ?? 0)]);
         }
         syncList();
       }
@@ -555,20 +561,20 @@ const clientData = {
        * 名士层只在展开时出现，并只保留当前筛选下仍有往来的枢纽。
        * 逐条来源徽标（R5-T5）构建期已落盘进 DOM，此处只管显隐，不动徽标。
        */
-      const relList = document.getElementById('relList');
-      const relStat = document.getElementById('relStat');
-      const relEmpty = document.getElementById('relEmpty');
-      const relToggle = document.getElementById('relToggle');
-      const relPanel = document.getElementById('relPanel');
-      const edgeByKey = new Map();
+      const relList = document.getElementById('relList') as HTMLElement;
+      const relStat = document.getElementById('relStat') as HTMLElement;
+      const relEmpty = document.getElementById('relEmpty') as HTMLElement;
+      const relToggle = document.getElementById('relToggle') as HTMLElement;
+      const relPanel = document.getElementById('relPanel') as HTMLElement;
+      const edgeByKey = new Map<string, NetEdge>();
       for (const e of E) edgeByKey.set(`${e[0]}-${e[1]}-${e[2]}`, e);
 
       function syncList() {
         if (!relList) return;
         const groupCount = new Array(GNAME.length).fill(0);
         let listed = 0;
-        for (const li of relList.querySelectorAll('[data-rl-edge]')) {
-          const e = edgeByKey.get(li.dataset.rlEdge);
+        for (const li of relList.querySelectorAll<HTMLElement>('[data-rl-edge]')) {
+          const e = li.dataset.rlEdge ? edgeByKey.get(li.dataset.rlEdge) : undefined;
           const on = !!(e && visibleE(e));
           li.hidden = !on;
           if (on) {
@@ -576,20 +582,20 @@ const clientData = {
             listed++;
           }
         }
-        for (const sec of relList.querySelectorAll('[data-rl-g]')) {
-          const gi = +sec.dataset.rlG;
+        for (const sec of relList.querySelectorAll<HTMLElement>('[data-rl-g]')) {
+          const gi = +(sec.dataset.rlG ?? 0);
           const n = groupCount[gi] || 0;
           sec.hidden = n === 0;
           const label = sec.querySelector('[data-rl-count]');
           if (label) label.textContent = `${n} 对状元`;
         }
 
-        const extSec = relList.querySelector('[data-rl-ext]');
+        const extSec = relList.querySelector<HTMLElement>('[data-rl-ext]');
         let hubsOn = 0;
         if (extSec) {
-          for (const li of extSec.querySelectorAll('[data-rl-hub]')) {
-            const i = +li.dataset.rlHub;
-            const keep = new Set();
+          for (const li of extSec.querySelectorAll<HTMLElement>('[data-rl-hub]')) {
+            const i = +(li.dataset.rlHub ?? 0);
+            const keep = new Set<string>();
             if (showExt) {
               for (const e of ADJ[i]) {
                 if (!visibleE(e)) continue;
@@ -600,20 +606,20 @@ const clientData = {
             li.hidden = keep.size === 0;
             if (keep.size === 0) continue;
             hubsOn++;
-            const deg = li.querySelector('[data-rl-hub-deg]');
+            const deg = li.querySelector<HTMLElement>('[data-rl-hub-deg]');
             if (deg) deg.textContent = String(keep.size);
             let shown = 0;
             let firstOn = true;
-            for (const a of li.querySelectorAll('[data-rl-partner]')) {
-              const on = keep.has(a.dataset.rlPartner);
+            for (const a of li.querySelectorAll<HTMLElement>('[data-rl-partner]')) {
+              const on = !!a.dataset.rlPartner && keep.has(a.dataset.rlPartner);
               a.hidden = !on;
               if (!on) continue;
-              const sep = a.querySelector('[data-rl-sep]');
+              const sep = a.querySelector<HTMLElement>('[data-rl-sep]');
               if (sep) sep.hidden = firstOn;
               firstOn = false;
               shown++;
             }
-            const more = li.querySelector('[data-rl-hub-more]');
+            const more = li.querySelector<HTMLElement>('[data-rl-hub-more]');
             if (more) {
               const extra = keep.size - shown;
               more.hidden = extra <= 0;
@@ -621,7 +627,7 @@ const clientData = {
             }
           }
           extSec.hidden = hubsOn === 0;
-          const extLabel = extSec.querySelector('[data-rl-ext-count]');
+          const extLabel = extSec.querySelector<HTMLElement>('[data-rl-ext-count]');
           if (extLabel) extLabel.textContent = `当前 ${hubsOn} 人`;
         }
 
@@ -640,14 +646,14 @@ const clientData = {
         // 面板收起时整表不可 Tab；展开时只把当前可见的按钮与链接放回 Tab 序。
         // 不要在这里再调 syncPickTab：那边展开时会回来重算筛选。
         const open = relList.classList.contains('is-open') && relPanel && !relPanel.hidden;
-        for (const el of relList.querySelectorAll('.rl-panel button, .rl-panel a')) {
+        for (const el of relList.querySelectorAll<HTMLElement>('.rl-panel button, .rl-panel a')) {
           const row = el.closest('[hidden]');
           el.tabIndex = open && !row ? 0 : -1;
         }
       }
 
       // ── 命中检测 ──
-      function pick(ev) {
+      function pick(ev: PointerEvent) {
         const rect = canvas.getBoundingClientRect();
         const mx = ev.clientX - rect.left;
         const my = ev.clientY - rect.top;
@@ -661,7 +667,7 @@ const clientData = {
 
       function hideTip() { tip.style.display = 'none'; }
 
-      function setHover(i) {
+      function setHover(i: number) {
         if (i === hover) return;
         hover = i;
         markSet = i >= 0 ? neighborsOf(i) : (picked >= 0 ? neighborsOf(picked) : new Set());
@@ -671,13 +677,13 @@ const clientData = {
 
       // ── 弹「帖」 ──
       // 默认只列当前筛选（与画布同一 visibleE）。全部关系另开一节，供对照，不混进默认列表。
-      function relLine(e, i) {
+      function relLine(e: NetEdge, i: number) {
         const o = N[e[0] === i ? e[1] : e[0]];
         return o.k === 0
           ? `<a href="${BASE}persons/${o.s}/">${GNAME[e[2]]} · ${o.n}</a>`
           : `<span class="pop-ext">${GNAME[e[2]]} · ${o.n}</span>`;
       }
-      function breakdownOf(rel) {
+      function breakdownOf(rel: NetEdge[]) {
         const byGroup = new Map();
         for (const e of rel) byGroup.set(e[2], (byGroup.get(e[2]) || 0) + 1);
         return Array.from(byGroup.entries())
@@ -689,14 +695,14 @@ const clientData = {
       function cardOpen() {
         return card.style.display === 'block';
       }
-      function closeCard(restore) {
+      function closeCard(restore: boolean) {
         if (!cardOpen()) return;
         card.style.display = 'none';
         const back = cardTrigger;
         cardTrigger = null;
         if (restore && back && typeof back.focus === 'function') back.focus();
       }
-      function placeCard(x, y) {
+      function placeCard(x: number, y: number) {
         const w = 268;
         const h = card.offsetHeight || 180;
         card.style.left = Math.min(Math.max(8, x), window.innerWidth - w - 12) + 'px';
@@ -712,7 +718,7 @@ const clientData = {
           cardClose.focus();
         }
       }
-      function showCard(i, ev, trigger) {
+      function showCard(i: number, ev: PointerEvent | null, trigger: HTMLElement | null) {
         const nd = N[i];
         const shown = ADJ[i].filter(visibleE);
         const all = ADJ[i].slice();
@@ -761,7 +767,7 @@ const clientData = {
       }
 
       // ── 交互：拖拽平移 / 滚轮缩放 / 悬浮 / 点选 ──
-      let drag = null, moved = false;
+      let drag: { x: number; y: number } | null = null, moved = false;
       canvas.addEventListener('pointerdown', (ev) => {
         drag = { x: ev.clientX, y: ev.clientY };
         moved = false;
@@ -876,9 +882,9 @@ const clientData = {
       }
       if (relList) {
         relList.addEventListener('click', (ev) => {
-          const btn = ev.target.closest('.rl-pick');
+          const btn = (ev.target as HTMLElement).closest<HTMLElement>('.rl-pick');
           if (!btn || btn.hidden) return;
-          const i = +btn.dataset.i;
+          const i = +(btn.dataset.i ?? 0);
           if (!N[i]) return;
           picked = i;
           markSet = neighborsOf(i);
@@ -893,9 +899,9 @@ const clientData = {
 
       // ── 类型 chips / 名士层开关 / 预设 ──
       tools.addEventListener('click', (ev) => {
-        const b = ev.target.closest('.chip');
+        const b = (ev.target as HTMLElement).closest<HTMLElement>('.chip');
         if (!b) return;
-        const gi = +b.dataset.g;
+        const gi = +(b.dataset.g ?? 0);
         onG[gi] = !onG[gi];
         b.setAttribute('aria-pressed', onG[gi] ? 'true' : 'false');
         relayout(false);
@@ -918,14 +924,14 @@ const clientData = {
         strong: [1, 1, 1, 1, 1, 1, 0, 0], // 去掉文字缘与「其他」，只看同年/师生/亲缘/友人/同僚/政敌
         none: [0, 0, 0, 0, 0, 0, 0, 0],
       };
-      for (const b of document.querySelectorAll('[data-preset]')) {
+      for (const b of document.querySelectorAll<HTMLElement>('[data-preset]')) {
         b.addEventListener('click', () => {
-          const p = b.dataset.preset;
+          const p = b.dataset.preset as keyof typeof PRESETS | 'fit' | undefined;
           if (p === 'fit') { fitView(); return; }
-          const cfg = PRESETS[p];
+          const cfg = PRESETS[p as keyof typeof PRESETS] || PRESETS.none;
           for (let i = 0; i < cfg.length; i++) onG[i] = !!cfg[i];
-          for (const el of tools.querySelectorAll('.chip')) {
-            el.setAttribute('aria-pressed', onG[+el.dataset.g] ? 'true' : 'false');
+          for (const el of tools.querySelectorAll<HTMLElement>('.chip')) {
+            el.setAttribute('aria-pressed', onG[+(el.dataset.g ?? 0)] ? 'true' : 'false');
           }
           relayout(false);
         });

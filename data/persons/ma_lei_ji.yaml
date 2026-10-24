@@ -1,11 +1,10 @@
 # 麻勒吉 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 勘误 corr_004：生年不详（CBDB 1653/1643 两说均与科年 1652 矛盾，从阙如）
 # 来源：zhuangyuan_index.yaml z0483 | 比对状态：suspect（朝代互证唯一候选，CBDB 未载科年（待碑录/登科记考补）） | 备考：满榜状元；CBDB 作瓜尔佳麻勒吉
 id: ma_lei_ji
 name: 麻勒吉
 zi: null
 hao: null
-birth_year: 0   # 生年不详（corr_004）
+birth_year: null   # 生年不详（corr_004：CBDB 1653/1643 两说均与科年 1652 矛盾，从阙如）
 death_year: 1689
 native_hist: 满洲正黄旗
 native_modern: 北京市

@@ -11,6 +11,35 @@
  */
 import { buildRiver, MIN_NODES, labelText, shortLabel } from '../lib/river.js';
 
+// buildRiver 返回值的形状（river.js 无 JSDoc 类型，astro check 推断成 object，
+// 此接口按 river.js 的 return 逐字段对齐；改动那边须同步这里）
+interface RiverNode {
+  event: Record<string, unknown>;
+  year: number;
+  yearPrecision: string;
+  type: string;
+  title: string;
+  tier: string;
+  demoted: boolean;
+  level: number;
+  levelFrom: number | null;
+  x: number; y: number; hw: number;
+  labelShow: boolean; labelX: number; labelY: number; labelAnchor: string;
+  short: string;
+}
+interface RiverResult {
+  width: number; height: number; padL: number; padR: number; padT: number; padB: number;
+  nodes: RiverNode[];
+  spans: { band: string; line: string; demoted: boolean }[];
+  ticks: { x: number; year: number }[];
+  bands: { yTop: number; yBottom: number; yMid: number; label: string; used: boolean }[];
+  axis: { x0: number; x1: number; yTop: number; yBottom: number; lastX: number };
+  qukuiYear: number | null; qukuiX: number | null; deathX: number | null;
+  excludedPosthumous: { year: number; title: string }[];
+  peak: { year: number; level: number } | null;
+  minLevel: number; maxLevel: number;
+}
+
 const {
   events = [],
   deathYear = null,
@@ -18,7 +47,7 @@ const {
   personName = '',
 } = Astro.props;
 
-const r = buildRiver(events, { deathYear, sources, width: 760, height: 320 });
+const r = buildRiver(events, { deathYear, sources, width: 760, height: 320 }) as RiverResult | null;
 
 const TYPE_HINT = { 授官: '除授', 升迁: '迁转', 贬谪: '贬谪', 致仕: '致仕' };
 
@@ -119,7 +148,7 @@ const aria = r
           <a class="rv-step-head" href={n.anchor ? `#${n.anchor}` : undefined}>
             <span class="rv-step-year">{n.year}{n.yearPrecision === 'about' ? '（约）' : ''}</span>
             <span class={`tier tier-${n.tier}`}>{n.tier}</span>
-            <span class="rv-step-type">{TYPE_HINT[n.type] ?? n.type}</span>
+            <span class="rv-step-type">{TYPE_HINT[n.type as keyof typeof TYPE_HINT] ?? n.type}</span>
             <span class="rv-step-title">{n.short}</span>
           </a>
           <span class="rv-step-track">

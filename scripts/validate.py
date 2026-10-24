@@ -177,6 +177,10 @@ for stem, p in persons.items():
     # R1.1-5 身份未核者不应带生卒：suspect 卡的生卒系 CBDB 候选人数据（见 schema/SCHEMA.md）
     if p.get("identity_status") == "suspect" and (p.get("birth_year") or p.get("death_year")):
         warn(f"person {pid}: 身份匹配存疑（suspect）却带生卒——须人工核验后补，或回退为 null 并写 identity_note")
+    # 生卒不可考必须写 null（渲染为「待考」）；0 会穿透 ?? 兜底渲染成「生年–0」（2026-10-25 清洗定规）
+    for fld in ("birth_year", "death_year"):
+        if p.get(fld) == 0:
+            err(f"person {pid}: {fld} 为 0——不可考请写 null（CBDB 的 0 = 阙如），0 会渲染成「生年–0」")
     for opt in ("exam_year", "native_hist", "rank_detail"):
         if p.get(opt) is None:
             warn(f"person {pid}: 建议字段 {opt} 缺失（未考出可忽略——缺载是合法状态）")

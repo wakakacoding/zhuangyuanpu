@@ -99,12 +99,19 @@ const yMax = Math.max(...years);
     <script type="application/json" id="idx" data-limit={String(RESULT_LIMIT)} set:html={JSON.stringify(index)} />
     <script>
       const BASE = import.meta.env.BASE_URL;
-      const idx = JSON.parse(document.getElementById('idx').textContent);
-      const LIMIT = parseInt(document.getElementById('idx').dataset.limit, 10) || 500;
-      const $ = (s) => document.querySelector(s);
-      const qEl = $('#q'), tagEl = $('#tag'), yFromEl = $('#yFrom'), yToEl = $('#yTo'),
-            countEl = $('#count'), listEl = $('#results'), fullEl = $('#fullOnly'),
-            yearWarnEl = $('#yearWarn');
+      const idxEl = document.getElementById('idx') as HTMLScriptElement;
+      const idx = JSON.parse(idxEl.textContent || '[]');
+      const LIMIT = parseInt((idxEl.dataset.limit as string) || '', 10) || 500;
+      const qEl = document.getElementById('q') as HTMLInputElement;
+      const tagEl = document.getElementById('tag') as HTMLSelectElement;
+      const yFromEl = document.getElementById('yFrom') as HTMLInputElement;
+      const yToEl = document.getElementById('yTo') as HTMLInputElement;
+      const countEl = document.getElementById('count') as HTMLElement;
+      const listEl = document.getElementById('results') as HTMLUListElement;
+      const fullEl = document.getElementById('fullOnly') as HTMLInputElement;
+      const yearWarnEl = document.getElementById('yearWarn') as HTMLElement;
+      const resetEl = document.getElementById('reset') as HTMLButtonElement;
+      const yearSwapEl = document.getElementById('yearSwap') as HTMLButtonElement;
       const activeDyn = new Set();
 
       // URL hash 同步：#q=..&dyn=唐宋&y=1400-1500&tag=..&full=1
@@ -133,19 +140,20 @@ const yMax = Math.max(...years);
       function fromHash() {
         clearFilters();
         const p = new URLSearchParams(location.hash.slice(1));
-        if (p.get('q')) qEl.value = p.get('q');
-        if (p.get('dyn')) p.get('dyn').split(',').forEach((c) => {
+        if (p.get('q')) qEl.value = p.get('q') || '';
+        if (p.get('dyn')) (p.get('dyn') || '').split(',').forEach((c: string) => {
           const chip = document.querySelector(`.chip[data-d="${CSS.escape(c)}"]`);
           if (chip && !activeDyn.has(c)) { activeDyn.add(c); chip.classList.add('on'); }
         });
-        if (p.get('y')) {
-          const y = p.get('y');
-          const cut = y.indexOf('-');
+        const yRaw = p.get('y');
+        if (yRaw) {
+          const cut = yRaw.indexOf('-');
           // 只按第一个连字符切开，负年号不会被拆碎；无连字符视为仅起始年。
-          yFromEl.value = cut < 0 ? y : y.slice(0, cut);
-          yToEl.value = cut < 0 ? '' : y.slice(cut + 1);
+          yFromEl.value = cut < 0 ? yRaw : yRaw.slice(0, cut);
+          yToEl.value = cut < 0 ? '' : yRaw.slice(cut + 1);
         }
-        if (p.get('tag')) tagEl.value = p.get('tag');
+        const tagRaw = p.get('tag');
+        if (tagRaw) tagEl.value = tagRaw;
         if (p.get('full') === '1') fullEl.checked = true;
       }
       // 两端都填且起始年晚于结束年：就地提示，不走结果区「无命中」。空端点 = 不限制。
@@ -156,7 +164,8 @@ const yMax = Math.max(...years);
         return Number.isFinite(yf) && Number.isFinite(yt) && yf > yt;
       }
 
-      function match(p) {
+      interface IdxPerson { n: string; tw?: string; zi?: string; hao?: string; nh?: string; nm?: string; kc?: string; rk?: string; bio?: string; d: string; y: number | null; gz?: string; tg: string[]; full?: boolean; s?: string; id?: string; role?: string; roleNote?: string; roleLabel?: string; }
+      function match(p: IdxPerson) {
         if (fullEl.checked && !p.full) return false;
         if (activeDyn.size && !activeDyn.has(p.d)) return false;
         const yf = parseInt(yFromEl.value) || -Infinity;
@@ -173,8 +182,8 @@ const yMax = Math.max(...years);
         return true;
       }
 
-      function esc(s) {
-        return s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      function esc(s: string) {
+        return s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] as string));
       }
 
       // 繁体模式下，结果区是运行期重绘的简体文本，须按当前语言再过一次转换
@@ -196,7 +205,7 @@ const yMax = Math.max(...years);
           toHash();
           return;
         }
-        const hits = idx.filter(match);
+        const hits = (idx as IdxPerson[]).filter(match);
         countEl.textContent = `命中 ${hits.length} / ${idx.length} 人`;
         if (!hits.length) {
           listEl.innerHTML = '<li class="none">无命中——换个条件试试。「阙如」亦是史料的一部分。</li>';
@@ -209,7 +218,7 @@ const yMax = Math.max(...years);
           <li class="hit">
             <a href="${BASE}persons/${p.id}/">
               <b>${esc(p.n)}</b>
-              ${p.role ? `<span class="role-badge role-${esc(p.role)}" title="${esc(p.roleNote)}">${esc(p.roleLabel)}</span>` : ''}
+              ${p.role ? `<span class="role-badge role-${esc(p.role)}" title="${esc(p.roleNote || '')}">${esc(p.roleLabel || '')}</span>` : ''}
               ${p.full ? '<span class="full-badge">全档案</span>' : ''}
               <span class="hit-meta">${p.d}${p.y ? ` · ${p.y}（${p.gz}）` : ' · 科年阙如'}${p.nh ? ` · ${esc(p.nh)}` : ''}</span>
               ${p.tg.length ? `<span class="hit-tags">${p.tg.map((t) => `<i>${esc(t)}</i>`).join('')}</span>` : ''}
@@ -221,9 +230,9 @@ const yMax = Math.max(...years);
         syncLang();
       }
 
-      document.querySelectorAll('.chip').forEach((chip) => {
+      document.querySelectorAll<HTMLElement>('.chip').forEach((chip) => {
         chip.addEventListener('click', () => {
-          const d = chip.dataset.d;
+          const d = (chip.dataset.d as string) || '';
           activeDyn.has(d) ? activeDyn.delete(d) : activeDyn.add(d);
           chip.classList.toggle('on');
           render();
@@ -233,11 +242,11 @@ const yMax = Math.max(...years);
         el.addEventListener('input', render);
         el.addEventListener('change', render);
       });
-      $('#reset').addEventListener('click', () => {
+      resetEl.addEventListener('click', () => {
         clearFilters();
         render();
       });
-      $('#yearSwap').addEventListener('click', () => {
+      yearSwapEl.addEventListener('click', () => {
         const a = yFromEl.value;
         yFromEl.value = yToEl.value;
         yToEl.value = a;

@@ -4,8 +4,8 @@ id: ding_shi_mei
 name: 丁士美
 zi: 邦彦
 hao: 后溪
-birth_year: 0
-death_year: 0
+birth_year: null
+death_year: null
 fl_year: 1529
 native_hist: 清河
 native_modern: 江苏省淮安市

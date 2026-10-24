@@ -334,7 +334,7 @@ const correctionUrl = `https://github.com/wakakacoding/zhuangyuanpu/issues/new?$
             <span class="zhi">{person.zi ? `字${person.zi}` : ''}{person.zi && person.hao ? '，' : ''}{person.hao ? `号${person.hao}` : ''}</span>
           )}
         </h1>
-        {person.tags?.length > 0 && <div class="tags">{person.tags.map((t) => <span>{t}</span>)}</div>}
+        {person.tags?.length ? <div class="tags">{person.tags.map((t: string) => <span>{t}</span>)}</div> : null}
         {/* 全站统一导航（R3-4）：档案页此前漏接，导致本页无法直达 /network/ */}
         <SiteNav current="/persons/" />
       </header>

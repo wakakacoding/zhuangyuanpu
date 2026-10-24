@@ -142,8 +142,8 @@
   native_roster: 河内（今河南沁阳）
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 長安
   cbdb_dynasty: 唐
   cbdb_id: 33070
@@ -237,8 +237,8 @@
   native_roster: null
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 長安
   cbdb_dynasty: 唐
   cbdb_id: 32472
@@ -484,8 +484,8 @@
   native_roster: null
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 華陰
   cbdb_dynasty: 唐
   cbdb_id: 31434
@@ -560,8 +560,8 @@
   native_roster: 京兆（今陕西西安）
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 長安
   cbdb_dynasty: 唐
   cbdb_id: 3006
@@ -1548,8 +1548,8 @@
   native_roster: 洛阳（今河南洛阳）
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 高陵
   cbdb_dynasty: 唐
   cbdb_id: 31503
@@ -1852,8 +1852,8 @@
   native_roster: 吴县（归仁绍弟）
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 吳縣
   cbdb_dynasty: 唐
   cbdb_id: 32885
@@ -2099,8 +2099,8 @@
   native_roster: null
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: null
   cbdb_dynasty: 唐
   cbdb_id: 449319
@@ -2289,8 +2289,8 @@
   native_roster: null
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 鄢陵
   cbdb_dynasty: 後唐
   cbdb_id: 17727
@@ -2327,8 +2327,8 @@
   native_roster: 山东莘县
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 博平
   cbdb_dynasty: 宋
   cbdb_id: 37837
@@ -2403,8 +2403,8 @@
   native_roster: null
   zi: 昭夢
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 莆田
   cbdb_dynasty: 閩國
   cbdb_id: 18582
@@ -2441,8 +2441,8 @@
   native_roster: null
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 下邽
   cbdb_dynasty: 五代
   cbdb_id: 19360
@@ -2973,8 +2973,8 @@
   native_roster: 河南
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 河南府
   cbdb_dynasty: 宋
   cbdb_id: 39363
@@ -3068,8 +3068,8 @@
   native_roster: 滨州渤海（今山东滨州）
   zi: 周父
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 渤海
   cbdb_dynasty: 宋
   cbdb_id: 828
@@ -3106,8 +3106,8 @@
   native_roster: 桂林永福（今广西永福）
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 長沙
   cbdb_dynasty: 宋
   cbdb_id: 38429
@@ -3144,8 +3144,8 @@
   native_roster: 衢州开化（今浙江开化）
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 開化
   cbdb_dynasty: 宋
   cbdb_id: 15781
@@ -3220,8 +3220,8 @@
   native_roster: 河南汝州
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 汝陽
   cbdb_dynasty: 宋
   cbdb_id: 7342
@@ -3239,8 +3239,8 @@
   native_roster: 阆州阆中
   zi: 嘉謨
   hao: 小由基
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 管城
   cbdb_dynasty: 宋
   cbdb_id: 99
@@ -3296,8 +3296,8 @@
   native_roster: 河南商水
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 商水
   cbdb_dynasty: 宋
   cbdb_id: 24285
@@ -3334,8 +3334,8 @@
   native_roster: null
   zi: 尚賢
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 洛陽
   cbdb_dynasty: 宋
   cbdb_id: 280
@@ -3411,7 +3411,7 @@
   zi: 子齊
   hao: null
   birth_year: 970
-  death_year: 0
+  death_year: null
   native_cbdb: 咸陽
   cbdb_dynasty: 宋
   cbdb_id: 37821
@@ -3619,8 +3619,8 @@
   native_roster: null
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 象山
   cbdb_dynasty: 宋
   cbdb_id: 20405
@@ -3638,8 +3638,8 @@
   native_roster: null
   zi: 康侯
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 掖縣
   cbdb_dynasty: 宋
   cbdb_id: 37918
@@ -3733,8 +3733,8 @@
   native_roster: 宜兴（今江苏宜兴）
   zi: 正道；行老
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 宜興
   cbdb_dynasty: 宋
   cbdb_id: 4133
@@ -3752,8 +3752,8 @@
   native_roster: 莆田（今福建莆田）
   zi: 振文；振甫
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 平陽
   cbdb_dynasty: 宋
   cbdb_id: 7248
@@ -3847,8 +3847,8 @@
   native_roster: null
   zi: 巨濟
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 保寧
   cbdb_dynasty: 宋
   cbdb_id: 25031
@@ -3866,8 +3866,8 @@
   native_roster: 荆州潜江（今湖北潜江）
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 潛江
   cbdb_dynasty: 宋
   cbdb_id: 24813
@@ -3961,8 +3961,8 @@
   native_roster: 湖州乌程（今浙江湖州）
   zi: 居仁
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 烏程
   cbdb_dynasty: 宋
   cbdb_id: 434
@@ -4019,7 +4019,7 @@
   zi: 叔興
   hao: null
   birth_year: 1089
-  death_year: 0
+  death_year: null
   native_cbdb: 成都
   cbdb_dynasty: 宋
   cbdb_id: 1763
@@ -4075,8 +4075,8 @@
   native_roster: 扬州（今江苏扬州）
   zi: 順之
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 江都
   cbdb_dynasty: 宋
   cbdb_id: 33311
@@ -4151,8 +4151,8 @@
   native_roster: 闽县（今福建福州）
   zi: 景明
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 閩縣
   cbdb_dynasty: 宋
   cbdb_id: 8002
@@ -4284,8 +4284,8 @@
   native_roster: 永嘉（今浙江温州）
   zi: 蘊之
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 永嘉
   cbdb_dynasty: 宋
   cbdb_id: 38511
@@ -4303,8 +4303,8 @@
   native_roster: 永福（今福建永泰）
   zi: 挺之
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 永福
   cbdb_dynasty: 宋
   cbdb_id: 25115
@@ -4322,8 +4322,8 @@
   native_roster: 莆田（今福建莆田）
   zi: 惠叔
   hao: 回溪
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 仙遊
   cbdb_dynasty: 宋
   cbdb_id: 11053
@@ -4360,8 +4360,8 @@
   native_roster: 遂安（今浙江淳安）
   zi: 晉卿
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 山陰
   cbdb_dynasty: 宋
   cbdb_id: 13439
@@ -4436,8 +4436,8 @@
   native_roster: null
   zi: 南強
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 湘陰
   cbdb_dynasty: 宋
   cbdb_id: 38389
@@ -4512,8 +4512,8 @@
   native_roster: 晋江（今福建晋江）
   zi: 君錫
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 晉江
   cbdb_dynasty: 宋
   cbdb_id: 3911
@@ -4550,8 +4550,8 @@
   native_roster: 富川（今广西富川）
   zi: null
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 西安
   cbdb_dynasty: 宋
   cbdb_id: 38535
@@ -4626,8 +4626,8 @@
   native_roster: 宁国（今安徽宁国）
   zi: 毅夫
   hao: 履齋
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: null
   cbdb_dynasty: 宋
   cbdb_id: 1959
@@ -4684,7 +4684,7 @@
   zi: 君遇
   hao: null
   birth_year: 1192
-  death_year: 0
+  death_year: null
   native_cbdb: 臨海
   cbdb_dynasty: 宋
   cbdb_id: 22047
@@ -4911,8 +4911,8 @@
   native_roster: 慈溪（今浙江慈溪）
   zi: 子高
   hao: 硯庵；硯菴
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 慈溪
   cbdb_dynasty: 元
   cbdb_id: 38467
@@ -7590,8 +7590,8 @@
   native_roster: 福建莆田
   zi: 崇璧
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 莆田
   cbdb_dynasty: 明
   cbdb_id: 24561
@@ -8065,7 +8065,7 @@
   native_roster: 浙江余姚
   zi: 德輝
   hao: null
-  birth_year: 0
+  birth_year: null
   death_year: 1522
   native_cbdb: 餘姚
   cbdb_dynasty: 明
@@ -8160,8 +8160,8 @@
   native_roster: 直隶昆山
   zi: 懋忠
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 崑山
   cbdb_dynasty: 明
   cbdb_id: 28807
@@ -8559,8 +8559,8 @@
   native_roster: 直隶清河
   zi: 邦彥
   hao: 後溪
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 清河
   cbdb_dynasty: 明
   cbdb_id: 34287
@@ -8711,7 +8711,7 @@
   native_roster: 浙江秀水
   zi: 兆隆
   hao: 養淳
-  birth_year: 0
+  birth_year: null
   death_year: 1624
   native_cbdb: 秀水
   cbdb_dynasty: 明
@@ -9452,8 +9452,8 @@
   native_roster: 浙江秀水
   zi: 元衡
   hao: null
-  birth_year: 0
-  death_year: 0
+  birth_year: null
+  death_year: null
   native_cbdb: 秀水
   cbdb_dynasty: 清
   cbdb_id: 35192

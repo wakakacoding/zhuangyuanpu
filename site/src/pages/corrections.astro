@@ -13,9 +13,14 @@ import { BASE, allPersons } from '../lib/persons';
 const personNames = Object.fromEntries(allPersons().map((p: any) => [p.id, p.name]));
 
 const cdir = path.resolve(process.cwd(), '../data/corrections');
+interface Correction {
+  id: string; target: string; field: string; status: string;
+  created: Date | string; current: string; proposed: string; evidence: string;
+  resolution?: string; reporter: string;
+}
 const corrections = fs.readdirSync(cdir)
   .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
-  .map((f) => yaml.load(fs.readFileSync(path.join(cdir, f), 'utf8')))
+  .map((f) => yaml.load(fs.readFileSync(path.join(cdir, f), 'utf8')) as Correction)
   .sort((a, b) => String(a.id).localeCompare(String(b.id)));
 
 const STATUS: Record<string, { label: string; desc: string }> = {
@@ -132,19 +137,20 @@ const dateStr = (d: unknown) =>
 
     <script type="application/json" id="personNames" set:html={JSON.stringify(personNames)} />
     <script>
-      const form = document.getElementById('corrForm');
-      const out = document.getElementById('output');
-      const copyBtn = document.getElementById('copyBtn');
-      const issueBtn = document.getElementById('issueBtn');
-      const v = (id) => document.getElementById(id).value.trim();
+      const form = document.getElementById('corrForm') as HTMLFormElement;
+      const out = document.getElementById('output') as HTMLElement;
+      const copyBtn = document.getElementById('copyBtn') as HTMLButtonElement;
+      const issueBtn = document.getElementById('issueBtn') as HTMLAnchorElement;
+      const v = (id: string) => (document.getElementById(id) as HTMLInputElement).value.trim();
 
       // R5-T16：人物页「站内勘误此卡」带 ?id= 进入。命中时默认显示人物姓名、
       // 隐藏机器标识（高级输入里仍可看与改），对象类型锁为人物。
-      const NAMES = JSON.parse(document.getElementById('personNames').textContent);
+      const NAMES: Record<string, string> = JSON.parse(
+        (document.getElementById('personNames') as HTMLScriptElement).textContent || '{}');
       const pid = new URLSearchParams(location.search).get('id');
       if (pid && NAMES[pid]) {
-        document.getElementById('f-kind').value = 'person';
-        const idInput = document.getElementById('f-id');
+        (document.getElementById('f-kind') as HTMLSelectElement).value = 'person';
+        const idInput = document.getElementById('f-id') as HTMLInputElement;
         idInput.value = pid;
         idInput.setAttribute('readonly', 'readonly');
         const nameLabel = document.createElement('label');
@@ -154,12 +160,13 @@ const dateStr = (d: unknown) =>
         nameInput.value = NAMES[pid];
         nameInput.readOnly = true;
         nameLabel.appendChild(nameInput);
-        idInput.parentElement.before(nameLabel);
-        idInput.parentElement.hidden = true;
+        const idRow = idInput.parentElement as HTMLElement;
+        idRow.before(nameLabel);
+        idRow.hidden = true;
         const adv = document.createElement('details');
         adv.className = 'note-line';
         adv.innerHTML = '<summary>高级：查看或修改机器标识</summary>';
-        adv.appendChild(idInput.parentElement);
+        adv.appendChild(idRow);
         nameLabel.after(adv);
       }
 
@@ -168,7 +175,7 @@ const dateStr = (d: unknown) =>
         record: '整卡记录', birth_year: '出生年', death_year: '逝世年',
         native: '籍贯', exam_year: '科年', zi: '字', hao: '号', name: '姓名',
       };
-      const fieldInput = document.getElementById('f-field');
+      const fieldInput = document.getElementById('f-field') as HTMLElement;
       const fieldSel = document.createElement('select');
       fieldSel.id = 'f-field';
       for (const [val, label] of Object.entries(FIELD_LABELS)) {
@@ -186,7 +193,7 @@ const dateStr = (d: unknown) =>
       fieldInput.replaceWith(fieldSel);
       fieldSel.after(customInput);
       const origV = v;
-      const v2 = (id) => id === 'f-field'
+      const v2 = (id: string) => id === 'f-field'
         ? (fieldSel.value === '__custom__' ? customInput.value.trim() : fieldSel.value)
         : origV(id);
       // 单一数据源：预览、复制、跳转链接都从当前表单字段现算，不缓存上一次生成结果
@@ -196,12 +203,12 @@ const dateStr = (d: unknown) =>
       const buildText = () => {
         const today = new Date().toISOString().slice(0, 10);
         const kind = v('f-kind');
-        const section = (label, text) => `**${label}**\n\n${text}`;
+        const section = (label: string, text: string) => `**${label}**\n\n${text}`;
         return [
           '## 勘误单（读者提交）',
           '',
-          `- 对象类型：${KIND_LABEL[kind] || kind}（${kind}）`,
-          `- 对象标识：${v('f-id')}${document.getElementById('f-name') ? '（' + document.getElementById('f-name').value + '）' : ''}`,
+          `- 对象类型：${KIND_LABEL[kind as keyof typeof KIND_LABEL] || kind}（${kind}）`,
+          `- 对象标识：${v('f-id')}${(() => { const nm = document.getElementById('f-name') as HTMLInputElement | null; return nm ? `（${nm.value}）` : ''; })()}`,
           `- 涉及字段：${v2('f-field') || 'record'}`,
           `- 署名：${v('f-reporter') || '匿名'}`,
           `- 提交日期：${today}`,
@@ -235,7 +242,7 @@ const dateStr = (d: unknown) =>
         if (out.hidden) return;
         sync();
       });
-      const flash = (msg, ms) => {
+      const flash = (msg: string, ms: number) => {
         copyBtn.textContent = msg;
         setTimeout(() => (copyBtn.textContent = '复制文本'), ms);
       };
@@ -244,8 +251,10 @@ const dateStr = (d: unknown) =>
         const range = document.createRange();
         range.selectNodeContents(out);
         const sel = window.getSelection();
-        sel.removeAllRanges();
-        sel.addRange(range);
+        if (sel) {
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }
       };
       copyBtn.addEventListener('click', async () => {
         sync();

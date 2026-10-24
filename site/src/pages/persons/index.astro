@@ -8,9 +8,14 @@ import '../../styles/base.css';
 import { BASE, roleOf, ROLE_LABEL, ROLE_NOTE } from '../../lib/persons';
 
 const dataDir = path.resolve(process.cwd(), '../data');
+interface PersonCard {
+  id: string; name: string; dynasty: string;
+  exam_year: number | null; ganzhi: string | null;
+  rank_detail: string | null; native_hist: string | null;
+}
 const persons = fs.readdirSync(path.join(dataDir, 'persons'))
   .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
-  .map((f) => yaml.load(fs.readFileSync(path.join(dataDir, 'persons', f), 'utf8')))
+  .map((f) => yaml.load(fs.readFileSync(path.join(dataDir, 'persons', f), 'utf8')) as PersonCard)
   .sort((a, b) => (a.exam_year ?? 9999) - (b.exam_year ?? 9999));
 
 // 口径（R1.4-2）：名录是状元；人物卡另含特例（探花／事实状元），须分列且带徽标

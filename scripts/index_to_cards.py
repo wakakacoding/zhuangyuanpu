@@ -76,8 +76,9 @@ def main() -> None:
             "name": name,
             "zi": e.get("zi"),
             "hao": e.get("hao"),
-            "birth_year": e.get("birth_year"),
-            "death_year": e.get("death_year"),
+            # 生卒不可考一律 null（红线：CBDB 的 0 = 阙如，不落盘为 0，否则渲染成「–0」）
+            "birth_year": e.get("birth_year") or None,
+            "death_year": e.get("death_year") or None,
             "native_hist": hist,
             "native_modern": modern,
             "dynasty": e["dynasty"],

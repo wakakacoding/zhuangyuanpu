@@ -32,7 +32,7 @@ const CBDB_TERMS = 'https://cbdb.hsites.harvard.edu/cbdb-data-licensing-terms';
 const CBDB_HOME = 'https://cbdb.hsites.harvard.edu/';
 const CBDB_RELEASE = 'cbdb_20261010';
 
-const cnt = (f) => persons.filter(f).length;
+const cnt = (f: (p: any) => unknown) => persons.filter(f).length;
 const lin = {
   fl: cnt((p) => p.fl_year),
   birth: cnt((p) => p.birth_year),

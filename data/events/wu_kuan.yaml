@@ -1,0 +1,64 @@
+person_id: wu_kuan
+events:
+  - year: 1435
+    year_precision: about
+    type: 出生
+    title: 生于苏州长洲
+    description: >-
+      本传：「吴宽，字原博，长洲人。以文行有声诸生间。」生年据卒于弘治十七年（1504）
+      「年七十」逆推为宣德十年（1435）。少时遍读《左传》《史记》《汉书》及唐宋诸大家之文，
+      因好古文鄙时文，乡试屡败，三十岁始以贡入太学（此段据今人传记，不列入事件正文依据）。
+    source_ids: [src_mingshi_wukuan, src_shendao_wukuan]
+  - year: 1471
+    year_precision: exact
+    type: 中举
+    title: 应天乡试第二
+    description: >-
+      成化七年辛卯科应天乡试中举，名次第二（据今人传记整理，本传不载乡试事）。
+    source_ids: [src_mingshi_wukuan]
+  - year: 1472
+    year_precision: exact
+    type: 夺魁
+    title: 成化八年壬辰科状元：会试、廷试皆第一
+    description: >-
+      本传：「成化八年，会试、廷试皆第一，授修撰。」明代少数会元兼状元之一。
+    source_ids: [src_mingshi_wukuan]
+  - year: 1472
+    year_precision: exact
+    type: 授官
+    title: 授翰林院修撰，侍孝宗东宫
+    description: >-
+      「授修撰。侍孝宗东宫，秩满进右谕德。」自状元及第即任东宫讲官，为孝宗旧学之师。
+    source_ids: [src_mingshi_wukuan]
+  - year: 1488
+    year_precision: exact
+    type: 升迁
+    title: 孝宗即位，以旧学迁左庶子，预修《宪宗实录》
+    description: >-
+      「孝宗即位，以旧学迁左庶子，预修《宪宗实录》，进少詹事兼侍读学士。」
+    source_ids: [src_mingshi_wukuan]
+  - year: 1495
+    year_precision: exact
+    type: 升迁
+    title: 擢吏部右侍郎；丁继母忧，帝命虚位以待
+    description: >-
+      「弘治八年擢吏部右侍郎。丁继母忧，吏部员缺，命虚位待之。服满还任，转左，
+      改掌詹事府，入东阁，专典诰敕，仍侍武宗东宫。」虚位待之为人臣殊遇。
+    source_ids: [src_mingshi_wukuan]
+  - year: 1503
+    year_precision: exact
+    type: 升迁
+    title: 进礼部尚书；议周太后别庙礼
+    description: >-
+      「十六年进礼部尚书，余如故。」孝肃周太后崩将祔庙，帝以并祔为疑，下礼官集议。
+      「宽言《鲁颂·閟宫》、《春秋》考仲子之宫皆别庙，汉、唐亦然。」大臣多主别庙，帝乃从之。
+    source_ids: [src_mingshi_wukuan]
+  - year: 1504
+    year_precision: exact
+    type: 卒
+    title: 卒于官，年七十；赠太子太保，谥文定
+    description: >-
+      「年七十，数引疾，辄慰留，竟卒于官。赠太子太保，谥文定。授长子奭中书舍人，
+      补次子奂国子生，异数也。」神道碑系卒日为弘治甲子（十七年）七月十日，
+      「讣闻，先帝震悼，命有司治葬，谕祭者四」。
+    source_ids: [src_mingshi_wukuan, src_shendao_wukuan]

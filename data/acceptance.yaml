@@ -74,3 +74,187 @@ accepted:
     report: outputs/状元谱-质量收口与史料专项-2026-10-24.md
     four_set: full
     note: 光绪《吴川县志》影印（B 级）+ 政府志页（C 级旁证）；卒年 1872/1873 农历跨年两说
+  # —— 2026-10-24 存量复核批次（机器检查 + 内容抽查，报告：outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md）——
+  - id: chen_jichang
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: no_works
+    note: 清末最后一位三元及第；轶事 1 条（桂林三元坊）
+  - id: fu_shan_xiang
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: no_works
+    note: suspect/confirmed 身份三 confirmed 之一；轶事 4 条
+  - id: huang_guan
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: no_works
+    note: 轶事 2 条
+  - id: liang_hao
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: no_works
+    note: confirmed（八十状元谣言考主角）；事件 13 条
+  - id: liu_chunlin
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 末代状元；事件 10 条
+  - id: shang_lu
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 明代三元；「譔/珵/郕」为传文与人名保真
+  - id: sun_fujia
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: no_works
+    note: confirmed（唐初第一状元）；事件 10 条
+  - id: wang_ang
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 政和八年本科名分状元（赵楷抑置后递补）
+  - id: wang_wei
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 关系 116 条全外部（T9 边界用例）
+  - id: wen_tianxiang
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 事件 17 条
+  - id: xiao_guo_liang
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 「翀峰」为山名保真
+  - id: yang_shen
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 事件 10 条
+  - id: zhang_jian
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 轶事 1 条（冷籍）；年谱 quote 待补为存量警示
+  - id: zhao_kai
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: no_works
+    note: de_facto 特例；轶事 3 条含民间叙事辨伪
+  - id: zhong_fang_li
+    batch: 2026-10-24-存量复核
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: no_works
+    note: 太平天国名录待考条目；轶事 2 条均为考辨型
+  # —— 2026-10-24 新批次升格（陈亮/吴宽/袁甫，史料检索驱动）——
+  - id: chen_liang
+    batch: 2026-10-24-新批次
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 《宋史》436 本传 A 级 + 叶适墓志/李幼武言行录 B 级；生年 1143 据享年五十五逆推；卒年 1194 有言行录系年
+  - id: wu_kuan
+    batch: 2026-10-24-新批次
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 《明史》184 本传 A 级 + 王鏊神道碑 B 级（卒日弘治甲子七月十日）；「祔」「閟宫」为术语/篇名保真
+  - id: yuan_fu
+    batch: 2026-10-24-新批次
+    date: 2026-10-24
+    report: outputs/状元谱-存量25人复核与新批次升格-2026-10-24.md
+    four_set: full
+    note: 《宋史》405 本传 A 级；生卒 1174-1240 据徽州府志「年六十七」+嘉熙四年卒互证，1179-1257 说无原始出处（轶事栏存异说）
+  # —— 2026-10-24 轶事补齐批（T3/T4 事件档 + 老档案补轶事，10 人）——
+  - id: chong_qi
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: no_works
+    note: 《清史稿》468 本传 A 级（旗人状元唯一+阖门死难两段核心）；政治污点直书不隐
+  - id: fei_hong
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: no_works
+    note: 拒宁王事出《明史》本传 A 级；父责状元轶事 C 级（地方文化整理，原始出处待溯）
+  - id: hong_jun
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: full
+    note: 主体《清史稿》A 级；三码电法/西籍书目今人传记互证 C 级；《孽海花》仅作文学背景不作史实
+  - id: liang_gu
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: no_works
+    note: 让还恩荫事出《宋史》本传；卒年三十三与 CBDB 987-1019 异说并存
+  - id: qin_da_shi
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: no_works
+    note: 「一朝天子一朝臣」出《清朝野史大观》C 级；「愧姓秦」联从《清稗类钞》袁枚代拟说；秦桧后裔三说并存不独断
+  - id: shang_yanliu
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: full
+    note: tanhua 特例收录；口径说明条目入轶事层
+  - id: tai_buhua
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: no_works
+    note: 「甘受诛戮」语出《元史》本传；双砚堂细节 C 级；王林洋中槊死为元右榜状元唯一战死者
+  - id: wang_ying_chen
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: no_works
+    note: 16 事件档最厚；十八岁状元+忤秦桧十七年+治蜀有声三段皆《宋史》A 级
+  - id: xue_chao_wu
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: no_works
+    note: 史料最薄状元；左右榜判定赖清人方志考据（B 级）
+  - id: zhang_youxin
+    batch: 2026-10-24-轶事补齐
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: full
+    note: 「张三头」出《唐摭言》；「八关十六子」出《旧唐书·裴度传》；suspect 身份与三元叙事错位均注记
+  # —— 2026-10-24 新批次 2（40 人目标达成）——
+  - id: wei_jing
+    batch: 2026-10-24-新批次2
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: full
+    note: 《宋史》无本传——今人汇编（据后乐集行状年谱+地方志）B 级；「侂」为韩侂胄人名保真、「淸叔」已统一为清叔
+  - id: chen_xun
+    batch: 2026-10-24-新批次2
+    date: 2026-10-24
+    report: outputs/状元谱-40人目标冲刺-2026-10-24.md
+    four_set: full
+    note: 《明史》168 本传 A 级全 quote；易储受金/构陷考官等过并书不讳；「额森」为也先异译从本传

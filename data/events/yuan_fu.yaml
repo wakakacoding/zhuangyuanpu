@@ -1,0 +1,85 @@
+person_id: yuan_fu
+events:
+  - year: 1174
+    year_precision: about
+    type: 出生
+    title: 生于庆元府鄞县，袁燮之子
+    description: >-
+      本传：「袁甫，字广微，宝文阁直学士燮之子。」籍贯鄞县（今浙江宁波）。生年据
+      「卒年六十七」（弘治《徽州府志》，转引《全宋诗》小传）与嘉熙四年（1240）卒逆推。
+      少承家学，又从杨简问学，自谓「吾观草木之发生，听禽鸟之和鸣，与我心契，其乐无涯」。
+    source_ids: [src_songshi_yuanfu]
+  - year: 1214
+    year_precision: exact
+    type: 夺魁
+    title: 嘉定七年甲戌科状元
+    description: >-
+      本传：「嘉定七年进士第一。」父袁燮为陆学「甬上四先生」之一，父子皆为南宋名臣。
+    source_ids: [src_songshi_yuanfu]
+  - year: 1214
+    year_precision: exact
+    type: 授官
+    title: 签书建康军节度判官厅公事，授秘书省正字
+    description: >-
+      「签书建康军节度判官厅公事，授秘书省正字。」入对时论「人主统治天下，
+      一日不可无惧之心」，陈可惧之事五条（据传文上疏内容节述）。
+    source_ids: [src_songshi_yuanfu]
+  - year: 1219
+    year_precision: about
+    type: 授官
+    title: 出知徽州，蠲减婺源绸绢茶租诸赋
+    description: >-
+      历秘书郎、著作佐郎后出知徽州，「请蠲减婺源绸绢一万七千余匹，茶租折帛钱一万五千余贯，
+      月桩钱六千余贯」，崇学校，访便民事上之。嘉定十六年到官，十七年闰八月丁父忧去职
+      （弘治《徽州府志》，据传文次序系年）。
+    source_ids: [src_songshi_yuanfu]
+  - year: 1228
+    year_precision: about
+    type: 授官
+    title: 服除知衢州，立旬讲、益义庄
+    description: >-
+      「丁父忧，服除，知衢州。立旬讲，务以理义淑士心，岁拨助养士千缗。
+      郡有义庄，买良田二百亩益之。」
+    source_ids: [src_songshi_yuanfu]
+  - year: 1230
+    year_precision: about
+    type: 升迁
+    title: 移提举江东常平、提点刑狱，荒政活民
+    description: >-
+      「移提举江东常平。适岁旱，亟发库廪之积……前后持节江东五年，所活殆不可数计。」
+      移司鄱阳，所至诣学宫讲说。江东荒政为其治绩之最。
+    source_ids: [src_songshi_yuanfu]
+  - year: 1234
+    year_precision: exact
+    type: 升迁
+    title: 知建宁府兼福建转运判官；迁秘书少监
+    description: >-
+      理宗亲政，「以直徽猷阁知建宁府，明年，兼福建转运判官……迁秘书少监」。
+      在朝屡论边事，反对进史嵩之为刑部尚书。
+    source_ids: [src_songshi_yuanfu]
+  - year: 1240
+    year_precision: exact
+    type: 升迁
+    title: 权兵部尚书，暂兼吏部尚书
+    description: >-
+      历起居舍人、中书舍人、兵部侍郎兼给事中、吏部侍郎兼国子祭酒，
+      至「权兵部尚书，暂兼吏部尚书」。嘉熙四年元旦除授（据行实编年，本传不载月日）。
+    source_ids: [src_songshi_yuanfu]
+  - year: 1240
+    year_precision: exact
+    type: 卒
+    title: 卒于任，年六十七；赠通奉大夫，谥正肃
+    description: >-
+      本传：「卒，赠通奉大夫，谥『正肃』。」卒年六十七据弘治《徽州府志》卷四
+      （转引《全宋诗》小传）；嘉熙四年（1240）三月卒于任。史臣论赞：「袁甫学有本原，
+      善达其用，持节所过，其民至今思之。」
+    source_ids: [src_songshi_yuanfu]
+  - year: 1240
+    year_precision: about
+    type: 著作
+    title: 著《蒙斋集》及《孝说》《孟子解》《江东荒政录》等
+    description: >-
+      本传：「有《孝说》、《孟子解》、《后省封驳》、《信安志》、《江东荒政录》、
+      《防拓录》、《乐事录》及文集行世。」文集久佚，清四库馆臣自《永乐大典》辑为
+      《蒙斋集》二十卷。
+    source_ids: [src_songshi_yuanfu]

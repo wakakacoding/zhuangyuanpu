@@ -1,0 +1,87 @@
+person_id: wei_jing
+events:
+  - year: 1159
+    year_precision: about
+    type: 出生
+    title: 生于昆山石浦，祖籍嘉兴华亭
+    description: >-
+      先世唐末自齐地南迁秀州，祖卫阗政和八年进士，著籍昆山石浦。卫泾字清叔，
+      少有大志，师从李去智。生年据卒于宝庆二年（1226）「享年六十八」逆推。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1184
+    year_precision: exact
+    type: 夺魁
+    title: 淳熙十一年甲辰科状元——昆山历史上第一位状元
+    description: >-
+      淳熙十一年（1184）进士第一。廷对策直言朝廷「崇尚虚文，不究实用，
+      徒应故事」，请孝宗「振纪纲以张国势，作气节以厉偷惰」。昆山自隋唐设科
+      以来无状元，「潮至夷亭出状元」之谶至是而验（传说层）。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1184
+    year_precision: exact
+    type: 授官
+    title: 授承事郎、添差镇东军签判；三上表辞「添差」
+    description: >-
+      添差为宋代只拿俸禄不任事的虚衔。卫泾认为徒挂虚名，一连三次上表要求去掉
+      添差、依资历待次补缺，孝宗特允——状元上任第一件事是辞去额外的俸禄。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1187
+    year_precision: exact
+    type: 升迁
+    title: 任满不通书宰相王淮，徘徊六和塔下三月
+    description: >-
+      按惯例状元任满当通书执政宰相致谢方可获召。卫泾不谒宰相王淮，虽有降召之命，
+      有司不令入国门，「整天徘徊六和塔下，将近三个月不能够被召见」。终以直声闻，
+      授秘书省正字。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1190
+    year_precision: exact
+    type: 贬谪
+    title: 借灾异上疏极言奸佞误国，贬淮东浙东提举
+    description: >-
+      光宗即位，卫泾借自然灾异上疏朝廷，极言奸佞误国之可畏，被贬出朝，
+      提举淮东、浙东二路。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1195
+    year_precision: about
+    type: 升迁
+    title: 尚书右选郎官、起居舍人权工部尚书；使金言自强
+    description: >-
+      庆元初召还。后出使金国，归而奏言「金国虽有危亡之兆，而我无自治之策，
+      当发愤自强」。授直焕章阁、知庆元府沿海制置使，旋遭弹劾罢官，
+      家居十年——辟西园、名堂「后乐」（取范仲淹语），自号后乐居士。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1205
+    year_precision: exact
+    type: 升迁
+    title: 入朝授中书舍人兼直学士院
+    description: >-
+      开禧元年得旨入朝。三年自吏部尚书拜御史中丞，封昆山开国伯。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1207
+    year_precision: exact
+    type: 升迁
+    title: 参与谋诛韩侂胄，进参知政事
+    description: >-
+      开禧三年参与谋诛韩侂胄、罢右丞相陈自强，除签书枢密院事兼参知政事。
+      韩侂胄以伪学之名排斥朱熹；韩死后，卫泾奏请召还朱熹——朱熹已卒于庆元六年，
+      遂移檄刊刻朱熹诸经及四书注。与朱熹友善是其学术底色。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1208
+    year_precision: about
+    type: 贬谪
+    title: 为史弥远所忌，罢知潭州
+    description: >-
+      韩侂胄死后史弥远专权，卫泾深以为患欲去之，事未成反遭排斥，
+      出知潭州，后起知扬州、拜资政殿学士致仕。皇帝因卫泾三世同居，
+      御书「友顺」二字赐之。
+    source_ids: [src_kunshan_weijing_zhuan]
+  - year: 1226
+    year_precision: exact
+    type: 卒
+    title: 卒于家，年六十八；赠太师，谥文节
+    description: >-
+      宝庆二年（1226）九月病逝于家。理宗辍朝一日，追赠太师，封秦国公，
+      谥文节。昆山百姓于马鞍山立文笔峰纪念。清沈德潜叹：「其人之挺然独立，
+      百折不回，有如金石之坚贞者，而《宋史》不为立传，可怪也。」
+    source_ids: [src_kunshan_weijing_zhuan]

@@ -1,0 +1,86 @@
+person_id: chen_liang
+events:
+  - year: 1143
+    year_precision: about
+    type: 出生
+    title: 生于婺州永康
+    description: >-
+      本传：「陈亮，字同父，婺州永康人。生而目光有芒，为人才气超迈，喜谈兵，论议风生，
+      下笔数千言立就。」生年不见本传明文，据言行录「享年五十有五」逆推为绍兴十三年（1143）。
+    source_ids: [src_songshi_chenliang, src_yeshi_yanxinglu]
+  - year: 1163
+    year_precision: about
+    type: 著作
+    title: 著《酌古论》，郡守周葵奇之曰「他日国士也」
+    description: >-
+      「尝考古人用兵成败之迹，著《酌古论》。郡守周葵得之，相与论难，奇之，曰：『他日国士也。』
+      请为上客。」周葵后为执政，朝士白事必指令揖亮，因得交一时豪俊；又授以《中庸》《大学》。
+      隆兴初（1163 前后）金人约和，「天下忻然幸得苏息，独亮持不可」，以解头被荐，上《中兴五论》，奏入不报。
+    source_ids: [src_songshi_chenliang]
+  - year: 1178
+    year_precision: exact
+    type: 应试
+    title: 诣阙上书孝宗，欲榜朝堂以励群臣
+    description: >-
+      淳熙五年更名同，诣阙上书，论恢复大计。「孝宗赫然震动，欲榜朝堂以励群臣」，将擢用之，
+      为曾觌及大臣所沮。帝欲官之，亮笑曰：「吾欲为社稷开数百年之基，宁用以博一官乎！」亟渡江而归。
+      十日后再诣阙上书，又上书陈变通之道有三，均不报。
+    source_ids: [src_songshi_chenliang]
+  - year: 1178
+    year_precision: about
+    type: 贬谪
+    title: 第一次下狱：醉中大言，孝宗「划其牍于地」得免
+    description: >-
+      「日落魄醉酒，与邑之狂士饮，醉中戏为大言，言涉犯上。」为何澹所构，下大理，
+      「笞掠亮无完肤，诬服为不轨」。孝宗曰：「秀才醉后妄言，何罪之有！」划其牍于地，得免。
+    source_ids: [src_songshi_chenliang]
+  - year: 1183
+    year_precision: about
+    type: 贬谪
+    title: 第二次下狱：家僮杀人案，辛弃疾罗点力救
+    description: >-
+      亮家僮杀人于境，被杀者尝辱亮父次尹，其家疑事由亮；囚亮父于州狱，亮下大理。
+      「时丞相淮知帝欲生亮，而辛弃疾、罗点素高亮才，援之尤力，复得不死。」
+      年份文献未系，在淳熙年间第一次与第三次之间。
+    source_ids: [src_songshi_chenliang]
+  - year: 1192
+    year_precision: about
+    type: 贬谪
+    title: 第三次下狱：毒羹疑案，郑汝谐力言于光宗
+    description: >-
+      乡人会宴，特置胡椒于亮羹中（村俚敬待异礼），同坐者归而暴死，疑食异味有毒，已入大理。
+      会吕兴、何念四殴人且死，恨曰「陈上舍使杀我」，众意必死。少卿郑汝谐曰：「此天下奇材也。
+      国家若无罪而杀士，上干天和，下伤国脉矣。」力言于光宗，遂得免。
+    source_ids: [src_songshi_chenliang]
+  - year: 1193
+    year_precision: exact
+    type: 夺魁
+    title: 绍熙四年癸丑科状元：奏名第三，御笔擢第一
+    description: >-
+      光宗策进士，问以礼乐刑政之要，亮以君道、师道对。时光宗不朝重华宫，群臣更进迭谏皆不听，
+      得亮策乃大喜，「以为善处父子之间。奏名第三，御笔擢第一。既知为亮，则大喜曰：『朕擢果不谬。』」
+      孝宗在南内、宁宗在东宫闻知皆喜。赐第告词曰：「尔蚤以艺文首贤能之书……殆天留以遗朕也。」
+    source_ids: [src_songshi_chenliang, src_yeshi_chenliang_muzhi]
+  - year: 1193
+    year_precision: exact
+    type: 授官
+    title: 授佥书建康府判官厅公事
+    description: >-
+      「授佥书建康府判官厅公事。未至官，一夕，卒。」叶适墓志作「授建康军签判」，
+      「同甫虽据高第，忧患困抑，精泽内耗，形体外离，未至官，病，一夕卒」。
+    source_ids: [src_songshi_chenliang, src_yeshi_chenliang_muzhi]
+  - year: 1194
+    year_precision: exact
+    type: 卒
+    title: 未至官一夕而卒，享年五十五
+    description: >-
+      卒于绍熙五年（1194），享年五十有五（言行录）。本传：「未至官，一夕，卒。
+      卒之后，吏部侍郎叶适请于朝，命补一子官，非故典也。」
+    source_ids: [src_songshi_chenliang, src_yeshi_yanxinglu, src_yeshi_chenliang_muzhi]
+  - year: 1234
+    year_precision: exact
+    type: 升迁
+    title: 身后：端平初谥文毅
+    description: >-
+      「端平初，谥文毅，更与一子官。」谥在卒后四十年；叶适请于朝命补一子官在前。
+    source_ids: [src_songshi_chenliang]

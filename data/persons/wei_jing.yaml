@@ -2,7 +2,7 @@
 # 来源：zhuangyuan_index.yaml z0233 | 比对状态：confirmed（name+year）
 id: wei_jing
 name: 卫泾
-zi: 淸叔；清叔
+zi: 清叔；清叔
 hao: 后乐；西园居士
 birth_year: 1159
 death_year: 1226
@@ -15,6 +15,6 @@ exam_year: 1184
 ganzhi: 甲辰
 ke_ci: 淳熙十一年甲辰科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 南宋淳熙十一年状元，昆山历史上第一位状元。三上表辞添差虚衔、任满不谒宰相王淮，直声早著；开禧三年参与谋诛韩侂胄，进参知政事，后为史弥远所忌出知潭州。与朱熹友善，韩死奏请召还朱熹，已卒则移檄刊刻其四书注。家居十年名堂「后乐」，自号后乐居士。卒赠太师，谥文节，《宋史》不为其立传，沈德潜叹「可怪也」。
+tags: [昆山首位状元, 直臣, 与朱熹友善]
 status: published

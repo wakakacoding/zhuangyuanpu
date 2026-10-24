@@ -1,0 +1,117 @@
+# 张孝祥事件档案（R4-T1 批次 4，2026-10-24）
+# 严格按年升序；每条 source_ids 非空
+person_id: zhang_xiao_xiang
+events:
+  - year: 1132
+    year_precision: about
+    type: 出生
+    title: 生于明州鄞县桃源乡，本贯历阳乌江
+    description: >-
+      生年据本传「年三十八」与乾道五年（1169）卒逆推。本传只书「历阳乌江人」；
+      鄞县志系统与今人考述作生于明州鄞县桃源乡（今宁波海曙区横街镇）——
+      建炎间金兵南侵，父张祁携家避地鄞西，孝祥生于彼处。两说不互斥：
+      历阳乌江为本贯，鄞县为出生地，芜湖为成长地。
+    source_ids: [src_songshi_zhangxiaoxiang, src_yinxianzhi_zhangxiaoxiang]
+  - year: 1147
+    year_precision: about
+    type: 应试
+    title: 年十六领乡书，再举冠里选
+    description: >-
+      本传：「读书过一目不忘，下笔顷刻数千言。年十六，领乡书，再举冠里选。」
+      少年时已以文章俊逸、顷刻千言著称于乡里。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1154
+    year_precision: exact
+    type: 夺魁
+    title: 绍兴二十四年甲戌科状元——高宗抑秦埙而亲擢
+    description: >-
+      廷试策问，考官已定秦桧之孙秦埙第一、孝祥次之。高宗读埙策「皆秦桧语」，
+      擢孝祥第一而埙第三，谕宰相曰：「张孝祥词翰俱美。」
+      笔记层（《四朝见闻录》系统）记其「宿酲未解，濡毫答圣问，立就万言，未尝加点，
+      字画遒劲，卓然颜鲁」，高宗「疑其为谪仙，亲擢首选」——细节入轶事栏，不与正史混写。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1154
+    year_precision: exact
+    type: 授官
+    title: 上书为岳飞辩冤，拒不婚秦党，父张祁被诬系狱
+    description: >-
+      夺魁未几，上疏请「亟复其爵，厚恤其家，表其忠义，播告中外」，为岳飞鸣冤——
+      时岳飞冤死方十二年，朝野侧目而孝祥以新科状元言之。秦桧党曹泳欲以女妻之，
+      拒不答。桧「既知孝祥乃祁之子，祁与胡寅厚，桧素憾寅」，风言者诬张祁有反谋，
+      系诏狱。父狱与己疏，皆因忤桧。上疏事出笔记层（《金佗稡编》所收疏文系统），
+      本传只记系狱与秦桧之怒，两源处置见轶事栏。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1156
+    year_precision: about
+    type: 授官
+    title: 秦桧死，起为秘书省正字
+    description: >-
+      「会桧死，魏良臣密奏散狱释罪，遂以孝祥为秘书省正字。」父张祁得释，
+      孝祥入仕自馆职始。其后累迁秘书郎、著作郎、起居舍人。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1160
+    year_precision: about
+    type: 罢官
+    title: 为御史中丞汪澈所劾罢
+    description: >-
+      孝祥出汤思退之门而素不喜汪澈，与澈同为馆职时「年少气锐，往往陵拂之」。
+      至是澈为御史中丞，首劾孝祥「奸不在卢杞下」，遂罢。罢后退居芜湖两年余，
+      闻采石之战（1161，同榜虞允文立功）作《水调歌头·闻采石矶战胜》，
+      「我欲乘风去，击楫誓中流」。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1162
+    year_precision: about
+    type: 授官
+    title: 知抚州——「年未三十，莅事精确」
+    description: >-
+      「寻除知抚州。年未三十，莅事精确，老于州县者所不及。」任上平兵乱、
+      抚凋瘵，离任时父老夹道相送（今人考述，原书待核）。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1163
+    year_precision: about
+    type: 升迁
+    title: 知平江府，张浚荐召赴行在，陈二相同心论
+    description: >-
+      孝宗即位，知平江府。「事繁剧，孝祥剖决，庭无滞讼。属邑大姓为奸利，孝祥捕治，
+      籍其家得谷粟数万。明年，吴中大饥，迄赖以济。」张浚自蜀还朝荐之，召赴行在。
+      素出汤思退之门而受浚荐，思退不悦；入对乃陈「二相当同心戮力，以副陛下恢复之志」，
+      且言「靖康以来，惟和战两言遗无穷祸，要先立自治之策以应之」。上嘉之，
+      除中书舍人、直学士院兼都督府参赞军事。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1164
+    year_precision: about
+    type: 授官
+    title: 兼领建康留守，席上赋《六州歌头》
+    description: >-
+      俄兼领建康留守。隆兴北伐及符离之败后，和议声起，留守席上赋《六州歌头·长淮望断》，
+      「闻道中原遗老，常南望、翠葆霓旌；使行人到此，忠愤气填膺，有泪如倾」——
+      主人张浚读之罢席（说郛引《朝野遗记》）。词成于其主战立场最孤悬之时，
+      后世推为南宋爱国词压卷。
+    source_ids: [src_chaoyeyiji_zhangxiaoxiang, src_yinxianzhi_zhangxiaoxiang]
+  - year: 1165
+    year_precision: about
+    type: 罢官
+    title: 陈金人要盟之说遭劾落职，起知静江府
+    description: >-
+      「会金再犯边，孝祥陈金之势不过欲要盟。宣谕使劾孝祥落职，罢。」
+      复集英殿修撰、知静江府、广南西路经略安抚使，「治有声绩，复以言者罢」——
+      两起两落，皆因言事。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1168
+    year_precision: about
+    type: 授官
+    title: 知潭州、徙荆湖北路安抚使，筑寸金堤、置万盈仓
+    description: >-
+      「俄起知潭州，为政简易，时以威济之，湖南遂以无事。复待制，徙荆湖北路安抚使。
+      筑寸金堤，自是荆州无水患，置万盈仓以储诸漕之运。」荆州水利与漕运为其
+      最后的治绩，民德之。
+    source_ids: [src_songshi_zhangxiaoxiang]
+  - year: 1169
+    year_precision: exact
+    type: 致仕
+    title: 进显谟阁直学士致仕，归次芜湖中暑卒，年三十八
+    description: >-
+      「请祠，以疾卒，年三十八。孝宗惜之，有用才不尽之叹。」鄞县志补卒地：
+      「归次芜湖，中暑卒。」致仕在是年三月（请祠侍亲获准），卒在同年夏，
+      归途未及家。葬江浦老山（今南京浦口，今人考述）。
+    source_ids: [src_songshi_zhangxiaoxiang, src_yinxianzhi_zhangxiaoxiang]

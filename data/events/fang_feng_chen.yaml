@@ -1,0 +1,93 @@
+# 方逢辰事件档案（R4-T1 批次 4，2026-10-24）
+# 无《宋史》本传：主干=墓志铭（B）+吹剑四录（B）+今人考订汇编（B），系统皆待核原文
+person_id: fang_feng_chen
+events:
+  - year: 1221
+    year_precision: exact
+    type: 出生
+    title: 生于严州淳安，嘉定辛巳九月二十九日
+    description: >-
+      墓志铭：「考之年谱，公生于嘉定辛巳九月二十九日午时。」初名梦魁。
+      自幼随父习字学文，读书常通宵达旦；「右足跛，左目瞽」为先天所遗
+      （《吹剑四录》唱名现场描述），少年就以才学为乡里推重。
+    source_ids: [src_muzhiming_fangfengchen, src_chuijian_silu]
+  - year: 1250
+    year_precision: exact
+    type: 夺魁
+    title: 淳祐十年庚戌科状元——理宗赐名「逢辰」
+    description: >-
+      廷对敷陈鲠亮，理宗临轩亲擢第一，见其名「梦魁」而赐名「逢辰」，
+      遂以「君锡」为字。《吹剑四录》记唱名现场：「唱名状元严州方梦魁，
+      赐名逢辰，右足跛，左目瞽。第四名川人杨潮，南省元泉州陈应雷皆瞽一目」——
+      一榜三个独眼、一个跛足，状元仍是足跛目眇之人，宋季取士重才不重貌的实录。
+    source_ids: [src_chuijian_silu, src_muzhiming_fangfengchen]
+  - year: 1250
+    year_precision: exact
+    type: 授官
+    title: 授承事郎、签书平江军节度判官厅公事
+    description: >-
+      状元初授，循例签书平江军节度判官厅公事。宝祐元年（1253）入为秘书省正字。
+    source_ids: [src_jiaofengwenji_fangfengchen]
+  - year: 1255
+    year_precision: about
+    type: 罢官
+    title: 校书郎任上以言事忤理宗，称疾辞归
+    description: >-
+      宝祐间迁校书郎，密集上疏：请擒捕海盗、指斥内竖窃权、加强北边守备，
+      「言语激烈，惹得理宗很不高兴」，遂称疾求去。这是他第一次以退职
+      守住言责——此后「以言罢」成了他仕途的主旋律。
+    source_ids: [src_jiaofengwenji_fangfengchen]
+  - year: 1260
+    year_precision: about
+    type: 罢官
+    title: 开庆间召为著作郎，忤贾似道罢
+    description: >-
+      开庆元年（1259）召为著作郎，次年兼权尚书左郎官，居官不久以言事忤权相
+      贾似道罢官。应聘婺州书堂开讲授徒，「生徒从游者数百人」。
+    source_ids: [src_jiaofengwenji_fangfengchen]
+  - year: 1261
+    year_precision: exact
+    type: 隐居
+    title: 归里创家塾——石峡书院之始
+    description: >-
+      知婺州之命甫下又遭贾党论罢，遂归淳安「即家创塾」，是为石峡书院前身。
+      今人考订：书院创建于景定二年（1261），方逢辰四十一岁——纠正了
+      「建于淳熙元年（1174）」「方逢辰肄业其中」两说流行之误：
+      他不是书院的学生，是创办人。咸淳五年（1269）度宗以「儒硕创家塾，
+      以程朱之学淑其徒」书赐「石峡书院」四字。
+    source_ids: [src_jiaofengwenji_fangfengchen]
+  - year: 1265
+    year_precision: about
+    type: 授官
+    title: 度宗即位复起，历司封郎官、秘书少监、江东提刑
+    description: >-
+      咸淳元年（1265）度宗即位复起：司封郎官兼直舍人院、实录院检讨，
+      寻迁秘书少监、起居舍人；历秘阁修撰，三年（1267）出为江东提刑，
+      徙江西转运副使。所至以教务为先——吴中和靖书堂、金华婺州书堂、
+      东阳义学、江西鄱江书堂、东湖书院、宗濂书院，皆其公暇讲学之地。
+    source_ids: [src_jiaofengwenji_fangfengchen]
+  - year: 1271
+    year_precision: exact
+    type: 授官
+    title: 权兵部侍郎、迁吏部侍郎，丁母忧去国
+    description: >-
+      咸淳五年权兵部侍郎，七年（1271）迁吏部侍郎，以丁母忧去国。
+      此后又丁父忧，除官均不拜，以与生徒讲道终其身。
+    source_ids: [src_jiaofengwenji_fangfengchen]
+  - year: 1275
+    year_precision: about
+    type: 守节
+    title: 德祐初拜礼部尚书，未及赴而宋亡；元世祖诏起，坚拒
+    description: >-
+      德祐间历荆、湖、四川宣抚司参谋官，累官至户部尚书；后改礼、吏部尚书，
+      俱不受——宋亡在即，征命已无意义。入元，元世祖曾诏御史中丞崔彧起用，
+      严辞拒之。遗言「以深衣殓，不尚异教」，以故国衣冠下葬。
+    source_ids: [src_muzhiming_fangfengchen, src_jiaofengwenji_fangfengchen]
+  - year: 1291
+    year_precision: exact
+    type: 卒
+    title: 至元辛卯正月初三卒于家，年七十一
+    description: >-
+      墓志铭：「卒于至元辛卯正月初三日申时。」享年七十一。
+      葬于淳安故里。弟方逢振同榜进士，宋亡亦不仕元，兄弟并以义节称。
+    source_ids: [src_muzhiming_fangfengchen]

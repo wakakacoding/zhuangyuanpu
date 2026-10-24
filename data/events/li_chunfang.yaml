@@ -1,0 +1,95 @@
+# 李春芳事件档案（R4-T1 批次 4，2026-10-24）
+person_id: li_chunfang
+events:
+  - year: 1510
+    year_precision: about
+    type: 出生
+    title: 生于南直隶扬州府兴化县，祖籍句容
+    description: >-
+      生年据本传「年七十五」与卒年万历间逆推（1510 或 1511 两说，取与享年自洽之
+      1510，详见 persons 注释）。祖籍句容，少时家贫，相传曾借灯读书于句容茅山
+      华阳洞（地方叙事，B/C 层）。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1547
+    year_precision: exact
+    type: 夺魁
+    title: 嘉靖二十六年丁未科状元
+    description: >-
+      本传：「嘉靖二十六年举进士第一，除修撰。」同科有张居正（二甲进士），
+      二人后来同阁而处遇迥异——此为明代科举史著名对照。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1547
+    year_precision: exact
+    type: 授官
+    title: 简入西苑撰青词，大被帝眷
+    description: >-
+      「简入西苑撰青词，大被帝眷，与侍读严讷超擢翰林学士。」嘉靖帝晚年专意玄修，
+      青词（醮斋告天文）写得好坏几成阁员进身之阶——春芳与严讷、郭朴、袁炜
+      并称「青词宰相」。此途为清议所轻，然春芳此后施政恰以安静平实见称。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1556
+    year_precision: about
+    type: 升迁
+    title: 代严讷为礼部尚书，考订《宗藩条例》
+    description: >-
+      历太常少卿、礼部右侍郎、左侍郎、转吏部，代讷为礼部尚书。「时宗室蕃衍，
+      岁禄苦不继。春芳考故事，为书上之。诸吉凶大礼及岁时给赐，皆严为之制。
+      帝嘉之，赐名《宗藩条例》。」明代宗室禄米成为财政黑洞，此书为有明一代
+      宗藩管理制度化的关键文献。寻加太子太保。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1565
+    year_precision: exact
+    type: 升迁
+    title: 兼武英殿大学士入阁
+    description: >-
+      「四十四年命兼武英殿大学士，与讷并参机务。世宗眷侍直诸臣厚，凡迁除皆出特旨。
+      春芳自学士至柄政，凡六迁，未尝一由廷推。」——六次升迁全出皇帝特旨，
+      廷推（朝臣公推）一次未与，青词之路的极致，也是其在朝无奥援的注脚。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1567
+    year_precision: exact
+    type: 升迁
+    title: 隆庆初谏止翔凤楼之修
+    description: >-
+      「隆庆元年春，有诏修翔凤楼，春芳曰：『上新即位，而遽兴土木，可乎？』事遂止。」
+      新君即位首件谏止的大工，与徐阶共同当国的开局姿态。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1568
+    year_precision: about
+    type: 升迁
+    title: 代徐阶为首辅，「益务以安静」
+    description: >-
+      齐康劾徐阶语侵春芳，春芳疏辨求去，帝慰留之。及代阶为首辅，「益务以安静，
+      称帝意」。时同列者陈以勤、张居正；居正「恃才凌物，视春芳蔑如也」。
+      徐阶以言罢去时，春芳叹曰：「徐公尚尔，我安能久？容旦夕乞身耳。」
+      居正遽曰：「如此，庶保令名。」——这句话史家读作逼宫，春芳「愕然」。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1570
+    year_precision: about
+    type: 授官
+    title: 与高拱、张居正即帝前决俺答封贡
+    description: >-
+      「俺答款塞求封，春芳偕拱、居正即帝前决之。」把汉那吉降明引发边境危机，
+      三阁臣当面定策受封互市，是为隆庆和议——明蒙此后数十年无大战。
+      首辅在其中的作用是「决之」：不揽功，也不留难。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1571
+    year_precision: about
+    type: 致仕
+    title: 为高拱所凌，累疏乞归获准，赐敕乘传
+    description: >-
+      高拱再入直，「凌春芳出其上，春芳不能与争，谨自饬而已」。累加少师兼太子太师、
+      吏部尚书、改中极殿，「度拱辈终不容己，两疏请归养，不允」。南京给事中王祯
+      希拱意疏诋之，「春芳求去益力」，遂获准，「赐敕乘传，遣官护行」。
+      阅一岁，拱复为居正所挤，几不免——而春芳已抽身。
+    source_ids: [src_mingshi_lichunfang]
+  - year: 1585
+    year_precision: about
+    type: 卒
+    title: 卒于家，年七十五，赠太师谥文定
+    description: >-
+      「而春芳归，父母尚无恙，晨夕置酒食为乐，乡里艳之。父母殁数年乃卒，年七十五，
+      赠太师，谥文定。」去位后奉亲十四年，是中国历史上少见的「回家比当国久」的
+      首辅。卒年万历间，今人通说万历十二年（1584）或十三年（1585），两说并存
+      （详见 persons 注释）。
+    source_ids: [src_mingshi_lichunfang]

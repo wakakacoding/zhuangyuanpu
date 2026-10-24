@@ -258,3 +258,28 @@ accepted:
     report: outputs/状元谱-40人目标冲刺-2026-10-24.md
     four_set: full
     note: 《明史》168 本传 A 级全 quote；易储受金/构陷考官等过并书不讳；「额森」为也先异译从本传
+  # —— R4-T1 批次 4（2026-10-24）——
+  - id: zhang_xiao_xiang
+    batch: R4-T1-批次4
+    date: 2026-10-24
+    report: 状元谱R4-T1-批次4-全档案升格与故事收口-交付报告.md
+    four_set: full
+    note: 籍贯由芜湖改历阳乌江（本传口径，geo_map 补条目）；卒年 1170→1169（享年三十八）；上疏救岳飞为笔记层入轶事栏不入 events
+  - id: li_chunfang
+    batch: R4-T1-批次4
+    date: 2026-10-24
+    report: 状元谱R4-T1-批次4-全档案升格与故事收口-交付报告.md
+    four_set: full
+    note: 《明史》卷193 A 级全 quote；生年 1511→1510（与年七十五自洽，1511 说并存）；补字号子实/石麓
+  - id: fang_feng_chen
+    batch: R4-T1-批次4
+    date: 2026-10-24
+    report: 状元谱R4-T1-批次4-全档案升格与故事收口-交付报告.md
+    four_set: full
+    note: 无《宋史》本传——墓志铭（文及翁）+吹剑四录+今人考订三源 B 级；生卒 1221/1291 墓志坐实；「彧」人名保真
+  - id: yao_mian
+    batch: R4-T1-批次4
+    date: 2026-10-24
+    report: 状元谱R4-T1-批次4-全档案升格与故事收口-交付报告.md
+    four_set: full
+    note: 享年两说（祭文 47/序 46）从 47；两斗奸相皆 B 级封事奏札；「弃之雪地」传说层入轶事栏；「玠禥」人名保真

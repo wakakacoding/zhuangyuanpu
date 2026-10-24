@@ -1,0 +1,85 @@
+# 姚勉事件档案（R4-T1 批次 4，2026-10-24）
+person_id: yao_mian
+events:
+  - year: 1216
+    year_precision: about
+    type: 出生
+    title: 生于瑞州新昌县灵源村
+    description: >-
+      生年嘉定九年（1216），与卒年景定三年（1262）及享年四十七自洽。
+      乳名二郎，学名冲，因避讳改勉。地方叙事谓初生被弃山野雪地、获救后
+      自号「雪坡」以志不忘（传说层，见轶事栏）。少颖悟，「日诵数千言，
+      居常作文有魁天下之志」（《新昌县志》）；移居丰城海觉寺，从江西诗派
+      诗人乐雷发习文。
+    source_ids: [src_yifeng_yaomian]
+  - year: 1252
+    year_precision: exact
+    type: 中举
+    title: 淳祐十二年举于乡
+    description: >-
+      屡试不第之后，淳祐十二年（1252）中举。次年入京应试。
+    source_ids: [src_yifeng_yaomian]
+  - year: 1253
+    year_precision: exact
+    type: 夺魁
+    title: 宝祐元年癸丑科状元——廷对「惟在用人、听言」
+    description: >-
+      廷对万言，据胡思敬《盐乘》：言朝政纲领「惟在用人、听言，兼及守帅数易
+      之弊。群小闻者侧目」——策论一开篇就把刀口对准用人失察，
+      「群小侧目」四字预演了他整个仕途。理宗擢为进士第一。
+    source_ids: [src_yifeng_yaomian]
+  - year: 1253
+    year_precision: exact
+    type: 授官
+    title: 授承事郎、平江军节度判官厅公事，旋丁父忧
+    description: >-
+      状元初授平江节度判官厅公事，「归家一月，父死居丧」——《中国文学家
+      大辞典》此六字，是他与同期状元际遇的第一个分岔：别人的状元初仕
+      是起步，他的是守丧。
+    source_ids: [src_jiwen_yaomian]
+  - year: 1256
+    year_precision: exact
+    type: 罢官
+    title: 除秘书省正字，上封事救太学生，语切直遂归
+    description: >-
+      宝祐四年九月服阕，召赴行在除秘书省正字。途闻太学生陈宗等因论丁大全
+      被逐，遂辞召上封事，弹劾丁大全、袁玠「朋奸罔上」——袁玠抓渔湖土豪
+      催逼税银，逼反渔户以渔船资敌，江防危机正由此起。「语甚切直」，
+      触怒当道，遂归。以六品以下小官之身挑战当朝宰相，宋季仅见。
+    source_ids: [src_yifeng_yaomian, src_xuepoji_yaomian]
+  - year: 1259
+    year_precision: about
+    type: 授官
+    title: 吴潜入相，召为校书郎兼沂靖惠王府教授、太子舍人
+    description: >-
+      开庆元年丁大全罢相，吴潜入相，姚勉被召回：校书郎，兼沂靖惠王府教授、
+      太子舍人——成了未来皇帝（忠王赵禥，即后来的度宗）的老师圈里的人。
+    source_ids: [src_yifeng_yaomian]
+  - year: 1260
+    year_precision: about
+    type: 罢官
+    title: 讲《否》卦指斥权奸，忤贾似道，被劾为吴潜党而罢
+    description: >-
+      为太子讲《周易》至否卦——「不利君子贞，大往小来」——借题指斥权奸。
+      时贾似道以鄂州「议和之功」加官右丞相，气焰正盛；姚勉被劾为吴潜党，
+      罢归。两次斗奸相（丁大全、贾似道），两次被罢官，仕途总计不满三年。
+    source_ids: [src_yifeng_yaomian]
+  - year: 1262
+    year_precision: exact
+    type: 卒
+    title: 授处州通判未赴，病卒，年四十七
+    description: >-
+      景定三年授处州通判，「因病而未能赴任，当年谢世」。享年两说：
+      胡仲云《祭雪坡姚公文》「年四十七」（从之），本集文及翁序作「年四十六」，
+      并存备考。吴潜前一年贬死循州，姚勉绝意仕途、闭门读书——
+      未及见老师沉冤昭雪（吴潜平反已是德祐元年，1275）。
+    source_ids: [src_jiwen_yaomian, src_yifeng_yaomian]
+  - year: 1263
+    year_precision: about
+    type: 著作
+    title: 遗著由侄姚龙起编为《雪坡集》五十卷
+    description: >-
+      遗著由侄龙起编为《雪坡集》五十卷（本集卷首文及翁序）。今存影宋抄本、
+      四库全书本、豫章丛书本。《四库总目》：「观其所上封事、奏札以及廷对诸篇，
+      论时政之谬、辨宰相之奸，皆侃侃而不阿。」
+    source_ids: [src_xuepoji_yaomian]

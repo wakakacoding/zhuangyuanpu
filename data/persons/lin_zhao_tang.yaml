@@ -2,10 +2,10 @@
 # 来源：zhuangyuan_index.yaml z0556 | 比对状态：confirmed（name+year） | 备考：CBDB 状元标记误作杜召棠，待补核
 id: lin_zhao_tang
 name: 林召棠
-zi: null
-hao: null
+zi: 爱封
+hao: 芾南（谥文恭）
 birth_year: 1786
-death_year: 1873
+death_year: 1872
 native_hist: 吴川
 native_modern: 广东省湛江市吴川市
 lat: 21.43
@@ -15,6 +15,8 @@ exam_year: 1823
 ganzhi: 癸未
 ke_ci: 道光三年科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 粤西唯一状元，及第后主讲端溪书院十五年，终身从事教育。
+tags:
+- 粤西唯一状元
+- 书院主讲
 status: published

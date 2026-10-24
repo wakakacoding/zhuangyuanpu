@@ -38,6 +38,18 @@ const fullTitle = title.includes('状元谱') ? title : `${title} · 状元谱`;
   href={new URL(base + '/rss.xml', site).href}
 />
 
+<!-- 隐私友好访问统计（Cloudflare Web Analytics）：无 cookie、不收集个人信息。
+     仅当构建环境提供 PUBLIC_CF_BEACON_TOKEN 时注入；未配置则本区块静默跳过，
+     本地预览与开源复刻均零负担。开通步骤见 site/ANALYTICS.md。 -->
+{import.meta.env.PUBLIC_CF_BEACON_TOKEN && (
+  <script
+    is:inline
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon={JSON.stringify({ token: import.meta.env.PUBLIC_CF_BEACON_TOKEN })}
+  />
+)}
+
 <!-- 繁简切换（全站共用入口）：浮动印章按钮，懒加载 OpenCC，人名占位符保护。
      按钮不进 head 静态输出（head 只留元信息），由下方脚本在运行时挂载到 document.body -->
 <script is:inline define:vars={{ base }}>

@@ -1,0 +1,93 @@
+person_id: lin_zhao_tang
+events:
+  - year: 1803
+    year_precision: exact
+    type: 应试
+    title: 十七岁中秀才，学使姚文田赞为「海滨俊才」
+    description: >-
+      光绪《吴川县志》：年十八应童试，学使姚文田称「海滨俊才」。政府人物志系年作
+      嘉庆八年（1803，十七岁）。「十八」为虚岁口径，两处并存，本条取志页系年。
+    source_ids: [src_wuchuan_xianzhi_lin, src_wuchuan_renwu_lin]
+  - year: 1816
+    year_precision: exact
+    type: 中举
+    title: 嘉庆二十一年应顺天乡试中举人
+    description: >-
+      县志影印可辨「二十一年应顺天乡试中举」。
+    source_ids: [src_wuchuan_xianzhi_lin, src_wuchuan_renwu_lin]
+  - year: 1823
+    year_precision: exact
+    type: 夺魁
+    title: 道光三年癸未科一甲第一名及第
+    description: >-
+      县志影印：「道光三年癸未成进士……一甲第一名及第」。科年、名次与
+      《明清进士题名碑录》本站名录一致。道光阅卷朱批「今科得一佳元，一字笔误偏旁，
+      非关学问」出后世记述，备录于轶事，不入本条。
+    source_ids: [src_wuchuan_xianzhi_lin, src_wuchuan_renwu_lin]
+  - year: 1823
+    year_precision: exact
+    type: 授官
+    title: 授翰林院修撰，充国史馆纂修官
+    description: >-
+      县志影印可辨「授翰林院修撰」；纂修官见政府人物志页。
+    source_ids: [src_wuchuan_xianzhi_lin, src_wuchuan_renwu_lin]
+  - year: 1825
+    year_precision: exact
+    type: 隐居
+    title: 父丧返家丁忧
+    description: >-
+      政府人物志：「五年（1825年），父丧返家丁忧。」县志影印「旋丁」云云残漫，
+      以志页系年为准。丁忧守制归里，事件类型从「隐居」（守制离任）。
+    source_ids: [src_wuchuan_renwu_lin]
+    note: 仅有政府志页（C 级）系年；县志影印此句残漫不可辨。史实可信（方志系统同源），保留 C 级警示。
+  - year: 1827
+    year_precision: exact
+    type: 授官
+    title: 就聘高州府高文书院主讲
+    description: >-
+      政府人物志：「七年（1827年）就聘高州府高文书院主讲。翌年返京供职。」
+    source_ids: [src_wuchuan_renwu_lin]
+    note: 县志影印未及此句，暂仅政府志页（C 级）系年，保留警示。
+  - year: 1831
+    year_precision: exact
+    type: 授官
+    title: 充陕甘乡试正主考官
+    description: >-
+      县志影印可辨「充陕甘乡试正考官」。是科取举人六十五名，后中进士者十一人。
+    source_ids: [src_wuchuan_xianzhi_lin, src_wuchuan_renwu_lin]
+  - year: 1832
+    year_precision: exact
+    type: 致仕
+    title: 以奉母为由告假还乡，终身不复出
+    description: >-
+      政府人物志：「第二年，深感官场污浊，以终生奉母为名告假还乡。」
+      「穆彰阿索贿」等节出后世演绎，本条不采。
+    source_ids: [src_wuchuan_renwu_lin]
+    note: 仅政府志页（C 级）系年。告退缘由诸说（奉母/避穆党）不一，正文只录奉母说。
+  - year: 1833
+    year_precision: exact
+    type: 隐居
+    title: 受聘主讲肇庆端溪书院，连续十五年
+    description: >-
+      县志影印：「主讲端溪十有五年」。政府人物志系年道光十三年（1833）。
+      培育罗惇衍（官至尚书）、冯誉骥（官至巡抚）等，见志页。
+    source_ids: [src_wuchuan_xianzhi_lin, src_wuchuan_renwu_lin]
+  - year: 1839
+    year_precision: exact
+    type: 隐居
+    title: 林则徐来粤禁烟，与召棠书信论民生吏治，赠联一副
+    description: >-
+      政府人物志：「道光十九年（1839年），林则徐来粤查禁鸦片，与召棠书信来往，
+      咨询谈论民生吏治，并赠召棠一联：『綵衣荣似三公衮，珂第祥留五色云。』」
+      时召棠主讲端溪书院，系于其乡居讲学生涯。
+    source_ids: [src_wuchuan_renwu_lin]
+    note: 赠联文字仅见政府志页（方志系统转录，C 级），未核《林则徐全集》书信原卷，保留警示。
+  - year: 1872
+    year_precision: exact
+    type: 卒
+    title: 卒于家中，年八十七
+    description: >-
+      县志影印可辨「卒年凡八十（七）」；政府人物志作（1786~1872年），今人传记称
+      同治十一年农历十二月卒。人物卡卒年从志页作 1872（农历卒年）；
+      农历十二月已跨公历 1873 年 1 月，故旧资料或作 1873，两说系纪年口径之差。
+    source_ids: [src_wuchuan_xianzhi_lin, src_wuchuan_renwu_lin]

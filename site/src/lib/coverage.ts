@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
-import { DATA_DIR, allPersons, fullProfileIds, zhuangyuanOnly } from './persons';
+import { DATA_DIR, allPersons, fullProfileIds, acceptedIds, zhuangyuanOnly } from './persons';
 import { listStories } from './story';
 
 /**
@@ -76,6 +76,8 @@ export interface CoverageStats {
   items: CoverageItem[];
   stories: { published: number; goal: number };
   fullProfile: { cur: number; goal: number };
+  /** 内容验收（data/acceptance.yaml 登记数）——阶段目标 40 人的口径 */
+  accepted: { cur: number; goal: number };
   relations: {
     files: number;
     total: number;
@@ -166,7 +168,8 @@ export function coverageStats(): CoverageStats {
       if (!f.endsWith('.yaml') || f.startsWith('_')) continue;
       const s: any = yaml.load(fs.readFileSync(path.join(srcDir, f), 'utf8'));
       srcTotal++;
-      if (s?.tier === 'A' || s?.tier === 'B' || s?.tier === 'C') tierCount[s.tier]++;
+      const tier: string = s?.tier;
+      if (tier === 'A' || tier === 'B' || tier === 'C') tierCount[tier as 'A' | 'B' | 'C']++;
     }
   }
 
@@ -225,7 +228,16 @@ export function coverageStats(): CoverageStats {
       total: GOALS.fullProfile,
       target: null,
       goal: true,
-      note: '有事件文件即计入。这是结构覆盖，不是内容验收。内容验收另有 40 人阶段目标，此处不自动计数',
+      note: '有事件文件即计入。这是结构覆盖，不是内容验收',
+    },
+    {
+      key: 'accepted',
+      label: '内容验收',
+      cur: acceptedIds().size,
+      total: 40,
+      target: null,
+      goal: true,
+      note: '按批次人工验收通过并登记于 data/acceptance.yaml 的人数（R4 阶段目标 40 人）。与「事件档案」是两个口径：先有档案、再走验收',
     },
     {
       key: 'stories',
@@ -300,6 +312,7 @@ export function coverageStats(): CoverageStats {
     items,
     stories: { published: stories.length, goal: GOALS.stories },
     fullProfile: { cur: fullIds.size, goal: GOALS.fullProfile },
+    accepted: { cur: acceptedIds().size, goal: 40 },
     relations: {
       files: relFiles,
       total: relTotal,

@@ -1,0 +1,90 @@
+person_id: qian_qi
+events:
+  - year: 1779
+    year_precision: exact
+    type: 中举
+    title: 乾隆四十四年乡试第一名（解元）
+    description: >-
+      《满汉大臣列传》：「乾隆四十四年乡试中式第一名举人。」
+    source_ids: [src_manhan_qianqi]
+  - year: 1781
+    year_precision: exact
+    type: 夺魁
+    title: 乾隆四十六年连中会元、状元
+    description: >-
+      本传：「四十六年会试第一名进士。殿试一甲一名，授职修撰。」
+      乡试第一、会试第一、殿试第一三连俱见本传明书——清代首位「三元及第」的 A 级依据。
+    source_ids: [src_manhan_qianqi]
+  - year: 1781
+    year_precision: exact
+    type: 授官
+    title: 授职翰林院修撰
+    description: >-
+      与夺魁同年，见本传「殿试一甲一名，授职修撰」。
+    source_ids: [src_manhan_qianqi]
+  - year: 1786
+    year_precision: exact
+    type: 授官
+    title: 充顺天乡试同考官
+    description: >-
+      本传：「五十一年八月，充顺天乡试同考官。」
+    source_ids: [src_manhan_qianqi]
+  - year: 1787
+    year_precision: exact
+    type: 升迁
+    title: 奉旨在尚书房行走
+    description: >-
+      本传：「五十二年九月，奉旨在尚书房行走。」侍教皇子。
+    source_ids: [src_manhan_qianqi]
+  - year: 1789
+    year_precision: exact
+    type: 罢官
+    title: 尚书房旷职案，革职留任
+    description: >-
+      本传：乾隆五十四年三月，因皇子师傅「全行未到」旷职一案，皇帝交部严处，
+      「棨等奉旨俱著革职留任，八年无过，方准开复」。
+      网络流传「和珅暗算」一说不见于本传，本条只录本传文字。
+    source_ids: [src_manhan_qianqi]
+  - year: 1793
+    year_precision: exact
+    type: 升迁
+    title: 擢右赞善
+    description: >-
+      本传：「五十八年，擢右赞善。」
+    source_ids: [src_manhan_qianqi]
+  - year: 1795
+    year_precision: exact
+    type: 升迁
+    title: 擢中允，瀳升侍读，充日讲起居注官
+    description: >-
+      本传：「六十年，擢中允，瀳升侍读，充日讲起居注官。」「瀳升」即荐升。
+    source_ids: [src_manhan_qianqi]
+  - year: 1797
+    year_precision: exact
+    type: 升迁
+    title: 擢右庶子，转左庶子
+    description: >-
+      本传：「嘉庆二年，擢右庶子，寻转左庶子。」
+    source_ids: [src_manhan_qianqi]
+  - year: 1798
+    year_precision: exact
+    type: 升迁
+    title: 擢侍讲学士，充云南乡试正考官，提督云南学政
+    description: >-
+      本传：「三年三月，擢侍讲学士，寻转侍读学士。五月，充云南乡试正考官。七月，命提督云南学政。」
+    source_ids: [src_manhan_qianqi]
+  - year: 1799
+    year_precision: exact
+    type: 升迁
+    title: 擢内阁学士兼礼部侍郎，仍留学政任
+    description: >-
+      本传：「四年三月，擢内阁学士兼礼部侍郎，仍留学政任。」
+    source_ids: [src_manhan_qianqi]
+  - year: 1799
+    year_precision: exact
+    type: 卒
+    title: 触受瘴湿成疾，八月卒于云南任上
+    description: >-
+      本传：「寻以按试徵江、临安等府，触受瘴湿，成蛊疾。七月旋省，犹力疾视事。八月卒。」
+      总督富纲奏称其「考试各属，拔取公平，舆论翕服」。人物卡卒年 1799 与此同年。
+    source_ids: [src_manhan_qianqi]

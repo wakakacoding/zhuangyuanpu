@@ -119,6 +119,21 @@ export function fullProfileIds(): Set<string> {
   return cache.fullIds;
 }
 
+/**
+ * 内容验收登记（data/acceptance.yaml）：按批次人工验收通过的人物 id 集。
+ * 与 fullProfileIds()（结构覆盖）是两个口径——前者须验收登记，后者有文件即算。
+ * 文件缺失时返回空集（构建不因登记文件未建而失败）。
+ */
+export function acceptedIds(): Set<string> {
+  cache.accepted ??= (() => {
+    const f = path.join(DATA_DIR, 'acceptance.yaml');
+    if (!fs.existsSync(f)) return new Set<string>();
+    const doc = loadYaml(f) as any;
+    return new Set<string>((doc?.accepted ?? []).map((a: any) => a?.id).filter(Boolean));
+  })();
+  return cache.accepted;
+}
+
 /** 朝代顺序表（时间线/检索筛选共用） */
 export const DYNASTY_ORDER = ['唐', '五代十国', '宋', '辽', '金', '元', '明', '清'];
 

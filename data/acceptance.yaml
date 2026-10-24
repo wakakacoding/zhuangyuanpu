@@ -1,0 +1,76 @@
+# 内容验收登记（R4-T1 起用，2026-10-24 建）
+# 口径：区分「结构覆盖」（有 events 文件即计）与「内容验收」（按批次人工验收通过并在此登记）。
+# 结构覆盖看 data/events/ 目录；本表只登记通过内容验收的人物，两者永远不相等是常态。
+# 验收标准（R4-T1 各批次交付报告实测表）：
+#   1) 四件套齐备：persons + events + anecdotes（works 缺为可接受阙如，须注明）
+#   2) events 每条 source_ids 非空；年份严格升序
+#   3) 繁简自检通过（展示层 0 繁体；sources[].quote 原文保真除外）
+#   4) validate 0 错误
+# 字段说明：
+#   id            人物卡 id（须存在 data/persons/）
+#   batch         验收批次标识（对应交付报告）
+#   date          验收日期
+#   report        验收依据的交付报告路径
+#   four_set      四件套状态：full（persons+events+anecdotes+works）/ no_works（缺 works）
+#   note          备注（异说、保留事项等）
+accepted:
+  - id: wang_zeng
+    batch: R4-T1-批次1
+    date: 2026-10-16
+    report: 状元谱R4-T1-批次1-全档案升格-交付报告.md
+    four_set: full
+    note: 王曾籍贯三说裁并已处置
+  - id: lv_nan
+    batch: R4-T1-批次1
+    date: 2026-10-16
+    report: 状元谱R4-T1-批次1-全档案升格-交付报告.md
+    four_set: full
+    note: 太常寺/太仆寺互校成果
+  - id: wang_shipeng
+    batch: R4-T1-批次2
+    date: 2026-10-16
+    report: 状元谱R4-T1-批次2-全档案升格-交付报告.md
+    four_set: full
+    note: 生年据「享年六十」逆推（同 liang_hao/wang_zeng 写法）
+  - id: luo_hongxian
+    batch: R4-T1-批次2
+    date: 2026-10-16
+    report: 状元谱R4-T1-批次2-全档案升格-交付报告.md
+    four_set: full
+    note: 卒年与谥号《明史》本传误，据墓志改；师承辨正
+  - id: kang_hai
+    batch: R4-T1-批次2
+    date: 2026-10-16
+    report: 状元谱R4-T1-批次2-全档案升格-交付报告.md
+    four_set: full
+    note: 享年三说并存
+  - id: jiao_hong
+    batch: R4-T1-批次3
+    date: 2026-10-16
+    report: 状元谱R4-T1-批次3-全档案升格-交付报告.md
+    four_set: full
+    note: 卒年异说并存
+  - id: zhang_jiucheng
+    batch: R4-T1-批次3
+    date: 2026-10-16
+    report: 状元谱R4-T1-批次3-全档案升格-交付报告.md
+    four_set: full
+    note: 籍贯由开封府改钱塘（三源依据）；字段口径变更待复核项
+  - id: luo_lun
+    batch: R4-T1-批次3
+    date: 2026-10-16
+    report: 状元谱R4-T1-批次3-全档案升格-四种升格-交付报告.md
+    four_set: full
+    note: 「还金」母题与焦竑同型，已互相标注不互证
+  - id: qian_qi
+    batch: 2026-10-24-史料小专项
+    date: 2026-10-24
+    report: outputs/状元谱-质量收口与史料专项-2026-10-24.md
+    four_set: full
+    note: 依据《满汉大臣列传》本传（A 级）；「六元」中小三元出后世方志，B 级备录
+  - id: lin_zhao_tang
+    batch: 2026-10-24-史料小专项
+    date: 2026-10-24
+    report: outputs/状元谱-质量收口与史料专项-2026-10-24.md
+    four_set: full
+    note: 光绪《吴川县志》影印（B 级）+ 政府志页（C 级旁证）；卒年 1872/1873 农历跨年两说

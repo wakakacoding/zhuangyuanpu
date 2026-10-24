@@ -1,0 +1,19 @@
+person_id: lin_zhao_tang
+works:
+  - title: 心亭亭居诗存
+    type: 诗文
+    status: 存世
+    note: >-
+      县志传著录「心亭亭居」诸集。今人整理本载《吴川文存》（2020）等多种传抄本；
+      肇庆七星岩尚存其手书五言诗碑（俗称「状元碑」）。出处见 src_wuchuan_xianzhi_lin。
+  - title: 心亭亭居文存
+    type: 诗文
+    status: 存世
+    note: >-
+      同上，县志著录系统。内含《吴川县宾兴刍议》《重建金莲庵记》等篇目
+      （篇名见今人整理记述）。
+  - title: 心亭亭居笔记
+    type: 学术
+    status: 存世
+    note: >-
+      同上系统著录，手抄本传世。出处见 src_wuchuan_renwu_lin（著述段）。

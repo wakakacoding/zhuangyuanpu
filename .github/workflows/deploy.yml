@@ -39,7 +39,7 @@ jobs:
           node node_modules/@astrojs/check/bin/astro-check.js
 
       - uses: withastro/action@v3
-        with: |
+        with:
           path: ./site
           node-version: 22
 

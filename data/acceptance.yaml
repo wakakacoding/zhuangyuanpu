@@ -283,3 +283,27 @@ accepted:
     report: 状元谱R4-T1-批次4-全档案升格与故事收口-交付报告.md
     four_set: full
     note: 享年两说（祭文 47/序 46）从 47；两斗奸相皆 B 级封事奏札；「弃之雪地」传说层入轶事栏；「玠禥」人名保真
+  - id: xie_qian
+    batch: R4-T1-批次5
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次5-全档案升格-交付报告.md
+    four_set: full
+    note: 生年据「年八十有三」逆推（1531 卒）；明史 181 全 quote 维基文库核对
+  - id: song_xiang
+    batch: R4-T1-批次5
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次5-全档案升格-交付报告.md
+    four_set: full
+    note: 生年两说（索引 996/CBDB 997）主值 996 备考；宋史 284 全 quote 核对；祖籍安陆徙雍丘注卡
+  - id: bi_yuan
+    batch: R4-T1-批次5
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次5-全档案升格-交付报告.md
+    four_set: full
+    note: 清史稿 332 全 quote 核对；字号三写以本传纕蘅为主并列；幕府著作条多待核
+  - id: gu_ding_chen
+    batch: R4-T1-批次5
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次5-全档案升格-交付报告.md
+    four_set: full
+    note: 生年据「年六十八」逆推（1540 卒）；明史 193 全 quote 核对

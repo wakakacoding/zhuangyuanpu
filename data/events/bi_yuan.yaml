@@ -1,0 +1,97 @@
+
+person_id: bi_yuan
+events:
+- year: 1730
+  year_precision: about
+  type: 出生
+  title: 生于江南太仓镇洋
+  description: 本传：「毕沅，字纕蘅，江南镇洋人。」生年 1730 为通行说（本传不载）。 镇洋县为清雍正二年分太仓州置，今属江苏太仓。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1760
+  year_precision: exact
+  type: 夺魁
+  title: 乾隆二十五年一甲一名进士
+  description: 本传：「乾隆十八年举人，授内阁中书，充军机处章京。二十五年一甲一名进士， 授修撰。」以军机章京身份中状元，是清代状元中少见的「中枢历练在先」路径。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1766
+  year_precision: about
+  type: 授官
+  title: 出任甘肃巩秦阶道，从勘屯田
+  description: 三十一年授甘肃巩秦阶道，从总督明山出关勘屯田，调安肃道。擢陕西按察使。 上东巡视行在，备言甘肃旱，谕治赈并免逋赋四百万——面陈民瘼而获减免， 是其疆吏生涯的第一次亮色。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1773
+  year_precision: about
+  type: 升迁
+  title: 金川督馑授巡抚，河洛渭并涨治赈
+  description: 师征金川，遣沅督馑，「军无匮，授巡抚」。河、洛、渭并涨，朝邑被水， 治赈全活甚众。募民垦兴平、盩厔、扶风、武功荒地得田八十余顷， 浚泾阳龙洞渠溉民田。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1776
+  year_precision: about
+  type: 授官
+  title: 修华岳庙收碑碣储学宫，置姬氏五经博士
+  description: 修华岳庙暨汉唐以来名迹，「收碑碣储学宫」——金石学者的本能施于地方文教。 置姬氏五经博士，奉祀文武成康四王及周公陵墓；嘉峪关外镇西、迪化士子 赴乡会试者奏请给驿马。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1781
+  year_precision: exact
+  type: 贬谪
+  title: 甘肃冒赈案发，钱沣劾其瞻徇降三品
+  description: 四十六年甘肃撒拉尔回苏四十三为乱，沅会兵讨之，事平论功赐一品顶带； 旋甘肃冒赈事发，御史钱沣劾沅瞻徇，降三品顶戴。四十八年复原品， 寻实授巡抚——功过同岁并至，清代吏治整顿的经典案例。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1784
+  year_precision: about
+  type: 授官
+  title: 抚陕十年陈农田水利疏（议未行）
+  description: 「沅先后抚陕西十年」，尝奏关右大川（泾渭灞浐沣滈河洛漆沮等）疏引筑堰 开渠、云中北地五原上郡畜牧诸策，「耕作与畜牧相兼，实为边土无穷之利」—— 议未行。清代西北开发思想的先行文献。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1786
+  year_precision: about
+  type: 升迁
+  title: 调河南巡抚，授湖广总督
+  description: 五十年调河南巡抚，奏留漕粮二十万备赈、缓征民欠钱粮并展赈，「上温谕嘉之」。 命诣胎簪山求淮水真源，御制淮源记以赐。五十一年赐黄马褂，授湖广总督。 伊阳盗秦国栋戕官，上责沅捕治未得，命仍回巡抚——总督任上因捕盗不力
+    降回巡抚，旋五十三年复授湖广总督。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1788
+  year_precision: about
+  type: 授官
+  title: 荆州江决，发帑百万治工
+  description: 江决荆州，发帑百万治工。沅奏于万城堤对岸筑杨林洲土坝、鸡嘴石坝 「逼溜南趋，刷洲沙无致壅遏」；又请修襄阳老龙堤、常德石柜堤、潜江仙人堤， 凿四川湖北大江险滩便云南铜运——清代长江中游水利工程系统的总纲。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1794
+  year_precision: about
+  type: 贬谪
+  title: 邪教案降授山东巡抚，蠲积逋四百八十七万
+  description: 五十九年陕西安康、四川大宁邪教并起称传自湖北，沅赴襄阳郧阳按治， 降授山东巡抚。上以明年归政令督抚察民欠钱粮豁免，沅奏蠲山东积逋 四百八十七万、常平社仓米谷五十万四千余石——乾隆禅位前大蠲免的
+    山东执行者。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1796
+  year_precision: exact
+  type: 授官
+  title: 嘉庆元年白莲教起，督军饷复总督予世职
+  description: 六十年仍授湖广总督。湖南苗石三保等为乱，赴荆州常德督馑赐孔雀翎。 嘉庆元年枝江聂人杰等挟邪教为乱破保康竹山围襄阳，当阳又陷，上命解沅总督； 旋克当阳获乱渠张正谟等，复命为总督如故，予二等轻车都尉世职。
+    寻获石柳邓，上命驰赴湖南镇抚。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1797
+  year_precision: exact
+  type: 卒
+  title: 嘉庆二年卒，赠太子太保
+  description: 「二年，请以提督移辰州，增设总兵驻花园汛。寻报疾作，手足不仁，赐活络丸。 旋卒，赠太子太保。」卒于湖广总督任上，军务未平而身先殁。
+  source_ids:
+  - src_qingshigao_biyuan
+- year: 1799
+  year_precision: exact
+  type: 卒
+  title: 嘉庆四年追论失察贻误，夺世职籍家
+  description: 「四年，追论沅教匪初起失察贻误，滥用军需帑项，夺世职，籍其家。」 身后两年追夺——本传考语：「沅以文学起，爱才下士，职事修举；然不长于治军， 又易为属吏所蔽，功名遂不终。」文人与疆臣的角色错位，史笔如刀。
+  source_ids:
+  - src_qingshigao_biyuan

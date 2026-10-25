@@ -1,20 +1,27 @@
-# 毕沅 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0526 | 比对状态：confirmed（rank1） | 备考：著名学者，《续资治通鉴》主修
+# 毕沅 —— R4-T1 批次 5 升格（2026-10-25）
+# 来源：zhuangyuan_index.yaml z0526 | 比对状态：confirmed（rank1） | 备考：《续资治通鉴》主修
+# 生卒：本传「（嘉慶）二年……旋卒，贈太子太保」= 1797 卒；生年 1730 为通行说（本传不载）
+# 字号：本传「字纕蘅」。索引录「湘蘅；秋帆；纕蘅」三字——秋帆实为通行表字（今人著述惯称毕秋帆），
+# 湘蘅或为纕蘅之异写。卡从索引三字并列，note 备本传仅见纕蘅。
 id: bi_yuan
 name: 毕沅
-zi: 湘蘅；秋帆；纕蘅
-hao: 经训堂；灵岩山人；灵岩山馆；静逸园
+zi: 纕蘅（本传）；秋帆（通行）；湘蘅（异写）
+hao: 经训堂；灵岩山人
 birth_year: 1730
 death_year: 1797
-native_hist: 镇洋 / 镇洋
+native_hist: 镇洋县
 native_modern: 江苏省苏州市太仓市
 lat: 31.46
 lng: 121.1
 dynasty: 清
+reign: 乾隆
 exam_year: 1760
 ganzhi: 庚辰
-ke_ci: 乾隆二十五年科
+ke_ci: 乾隆二十五年庚辰科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 军机章京任上中状元，抚陕十年兴水利垦荒，官至湖广总督。主修《续资治通鉴》，幕府之盛冠绝一时。嘉庆二年卒于军次，四年追论夺世职籍家，《清史稿》考语「功名遂不终」。
+tags:
+- 疆吏
+- 金石学家
+- 幕府养士
 status: published

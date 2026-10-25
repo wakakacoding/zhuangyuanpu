@@ -1,7 +1,9 @@
+# 谢迁 —— R4-T1 批次 5 升格（2026-10-25）
+# 生卒：本传「十年卒於家，年八十有三」（嘉靖十年 1531 卒）逆推生 1449，与 CBDB 一致
 id: xie_qian
 name: 谢迁
-zi: null
-hao: null
+zi: 于乔
+hao: 木斋
 birth_year: 1449
 death_year: 1531
 native_hist: 浙江绍兴府余姚县
@@ -14,7 +16,8 @@ exam_year: 1475
 ganzhi: 乙未
 ke_ci: 成化十一年乙未科
 rank_detail: 一甲第一名（状元）
-bio_short: 「弘治三君子」之一。
+bio_short: 「弘治三君子」之一。成化十年乡试第一、十一年状元，与刘健、李东阳同辅政，时人语「李公谋，刘公断，谢公尤侃侃」。嘉靖六年以七十九岁再起入阁，卒谥文正。
 tags:
 - 名相
+- 谥文正
 status: published

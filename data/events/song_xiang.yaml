@@ -1,0 +1,83 @@
+# 宋庠事件档案（R4-T1 批次 5，2026-10-25）
+person_id: song_xiang
+events:
+- year: 996
+  year_precision: about
+  type: 出生
+  title: 生于安州安陆，后徙开封雍丘
+  description: 本传：「宋庠，字公序，安州安陆人，后徙开封之雍丘。」生年两说（索引 996 / CBDB 997），本传不载，取索引主值 996，异说记 persons 注释。其母钟氏祷于庐阜，
+    梦道士授《小戴礼》，已而庠生——本传所载感生传说，史家当作神道叙事读。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1024
+  year_precision: exact
+  type: 夺魁
+  title: 天圣二年开封试、礼部皆第一
+  description: 本传：「庠天圣初举进士，开封试、礼部皆第一，擢大理评事、同判襄州。」 开封试（解试）与礼部试（省试）连中第一，殿试后成名动京师的状元 （本传不载殿试名次，殿试第一系宋代科年第录口径）。与弟宋祁俱以文学名
+    擅天下，「二宋」并称自此始。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1033
+  year_precision: about
+  type: 授官
+  title: 郭皇后废，伏阁争论坐罚金
+  description: 郭皇后废，庠与御史伏阁争论，坐罚金。久之，知制诰。时亲策贤良、茂才等科 而命与武举人杂视，庠言「非所以待天下士」，诏从之——文武分试的礼制之争， 庠以侍士之礼立论。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1038
+  year_precision: about
+  type: 授官
+  title: 宝元中以右谏议大夫参知政事
+  description: 密州豪王澥私酿酒案：宰相陈尧佐右澥，庠力争，卒抵澥死——州豪杀邻人父子 四人而独不死的翻案。仁宗欲以庠为右谏议大夫、同知枢密院事，中书言故事无 自知制诰除执政者，乃诏为翰林学士。宝元中参知政事。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1040
+  year_precision: about
+  type: 贬谪
+  title: 吕夷简指为朋党，出知扬州
+  description: 庠与宰相吕夷简论数不同，凡庠与善者（郑戬、叶清臣等）皆被指为朋党出之， 乃以庠知扬州。「朋党」之名在庆历前后是足以逐人的政治标签，庠首当其冲。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1045
+  year_precision: about
+  type: 升迁
+  title: 帝雅意在庠，复召参知政事
+  description: 范仲淹去位，帝问宰相章得象谁可代，得象荐宋祁，「帝雅意在庠，复召为参知政事」。 庆历七年春旱，用汉灾异策免三公故事，罢宰相贾昌朝，辅臣皆削一官，以庠为 右谏议大夫。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1049
+  year_precision: about
+  type: 升迁
+  title: 拜相同中书门下平章事
+  description: 皇祐中，拜兵部侍郎、同中书门下平章事、集贤殿大学士。享明堂，迁工部尚书。 尝请复群臣家庙，议者不一，卒不果复——宋代礼制史上著名的悬案之一。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1051
+  year_precision: exact
+  type: 贬谪
+  title: 包拯劾其不戢子弟，请去
+  description: 皇祐三年，宋祁子与越国夫人曹氏客张彦方游，彦方伪造敕牒为人补官论死。 谏官包拯奏庠不戢子弟，又言庠在政府无所建明，庠亦请去。乃以刑部尚书、 观文殿大学士知河南府——弹劾者为包拯，是宋代台谏制度的经典一幕。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1056
+  year_precision: about
+  type: 升迁
+  title: 再充枢密使，封莒国公
+  description: 徙许州、河阳，再迁兵部尚书。入觐，诏缀中书门下班。以检校太尉、同平章事 充枢密使，封莒国公。数言「国家当慎固根本，畿辅宿兵常盈四十万……祖宗初谋也， 不苟轻改」。既而与副使程戡不协，御史言庠昏惰，乃以河阳三城节度、同平章事
+    判郑州，徙相州。
+  source_ids:
+  - src_songshi_songxiang
+- year: 1064
+  year_precision: about
+  type: 致仕
+  title: 英宗朝以司空致仕
+  description: 英宗即位，移镇武宁军，改封郑国公。在相州即上章请老，「帝以大臣故，未忍遽从」， 出判亳州。至亳请老益坚，以司空致仕。晚年「爱信幼子，多与小人游，不谨」， 御史吕晦请敕庠不得以二子随，帝曰：「庠老矣，奈何不使其子从之。」
+  source_ids:
+  - src_songshi_songxiang
+- year: 1066
+  year_precision: exact
+  type: 卒
+  title: 卒赠太尉兼侍中，谥元献
+  description: 「卒，赠太尉兼侍中，谥元献。帝为篆其墓碑曰『忠规德范之碑』。」英宗（或神宗初） 亲篆墓碑，人臣哀荣。「俭约不好声色，读书至老不倦」，尝曰： 「逆诈恃明，残人矜才，吾终身不为也。」
+  source_ids:
+  - src_songshi_songxiang

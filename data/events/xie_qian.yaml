@@ -1,0 +1,90 @@
+
+person_id: xie_qian
+events:
+- year: 1449
+  year_precision: about
+  type: 出生
+  title: 生于浙江余姚
+  description: 生年据本传「十年卒于家，年八十有三」逆推（嘉靖十年 1531 卒，虚岁八十三 → 生 1449），与 CBDB 一致。字于乔，余姚人。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1474
+  year_precision: exact
+  type: 夺魁
+  title: 成化十年乡试第一，十一年连中会试状元
+  description: 本传：「成化十年乡试第一。明年举进士，复第一。」乡试解元与会试状元连中， 明代士林盛事。授修撰，累迁左庶子。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1488
+  year_precision: exact
+  type: 授官
+  title: 弘治初谏止预选妃嫔，「务积诚开帝意」
+  description: 弘治元年春，中官郭镛请豫选妃嫔备六宫。迁上言：「山陵未毕，礼当有待。 祥禫之期，岁亦不远。陛下富于春秋，请俟谅阴既终，徐议未晚。」尚书周洪谟等 如迁议，从之。迁为东宫旧讲官，「前夕必正衣冠习诵，及进讲，敷词详切，
+    帝数称善」，进少詹事兼侍讲学士。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1495
+  year_precision: about
+  type: 升迁
+  title: 居忧后入阁，与刘健李东阳同辅政
+  description: 弘治八年诏同李东阳入内阁参预机务，迁时居忧力辞，服除始拜命。加太子少保、 兵部尚书兼东阁大学士。三人辅政格局就此形成——「李公谋，刘公断，谢公尤侃侃」， 天下称贤相。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1499
+  year_precision: about
+  type: 授官
+  title: 谏阻加征南方两税折银
+  description: 尚书马文升以大同边警饷馈不足，请加南方两税折银。迁曰：「先朝以南方赋重， 故折银以宽之。若复议加，恐民不堪命。且足国在节用，用度无节，虽加赋奚益。」 尚书倪岳亦争之，议遂寝。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1503
+  year_precision: about
+  type: 升迁
+  title: 孝宗晚年乘间言内府积蠹，拟旨禁约
+  description: 孝宗晚年慨然欲厘弊政。内府诸库及仓场、马坊中官作奸骫法；御马监、腾骧四卫 勇士自以禁军不隶兵部，率空名支饷。迁乘间言之，且曰：「虚言设禁无益， 宜令曹司搜剔弊端，明白奏闻。然后严立条约，有犯必诛，庶积蠹可去。」帝俞允之。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1506
+  year_precision: exact
+  type: 贬谪
+  title: 请诛刘瑾不克，与刘健同致仕
+  description: 武宗嗣位，迁屡加少傅兼太子太傅，数谏不听，因天变求去甚力。及请诛刘瑾不克， 遂与刘健同致仕归。焦芳附瑾入阁，憾迁尝举王鏊、吴宽自代不及己， 取中旨勒罢其弟兵部主事谢迪、斥其子编修谢丕为民。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1509
+  year_precision: exact
+  type: 贬谪
+  title: 余姚之士案：词连健迁，人皆危之而围棋自若
+  description: 正德四年二月，浙江应诏所举怀才抱德士周礼等四人皆余姚人（迁同乡）， 矫旨谓「余姚隐士何多，此必徇私援引」，下礼等诏狱，词连刘健、谢迁。 焦芳厉声「纵轻贷，亦当除名」，健迁除名，礼等咸戍边；且诏自今余姚人
+    毋选京官，著为令。夺诰命者六百七十五人。「当是时，人皆为迁危， 而迁与客围棋、赋诗自若。」
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1510
+  year_precision: exact
+  type: 升迁
+  title: 瑾诛复职致仕
+  description: 刘瑾伏诛，谢迁复职，仍致仕家居。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1527
+  year_precision: exact
+  type: 升迁
+  title: 嘉靖六年以七十九岁再起入阁
+  description: 世宗即位遣使存问。嘉靖六年，大学士费宏举迁自代，杨一清欲阻张璁亦力举迁。 帝遣行人赍手敕即家起之，「迁年七十九矣，不得已拜命」。比至而张璁已入阁， 一清以官尊于迁无相下意。迁居位数月力求去；帝待之愈厚——天寒免朝参、
+    除夕赐御制诗、病则遣医赐药饵，「使者相望于道」。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1528
+  year_precision: exact
+  type: 致仕
+  title: 次年三月辞归
+  description: 迁竟以嘉靖七年三月辞归。
+  source_ids:
+  - src_mingshi_xieqian
+- year: 1531
+  year_precision: exact
+  type: 卒
+  title: 嘉靖十年卒于家，赠太傅谥文正
+  description: 「十年卒于家，年八十有三。赠太傅，谥文正。」明代文臣谥号以「文正」为极荣， 有明一代得此谥者寥寥；状元而谥文正，谢迁与后来者同列士林仰望之位。
+  source_ids:
+  - src_mingshi_xieqian

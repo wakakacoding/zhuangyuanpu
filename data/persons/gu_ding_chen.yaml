@@ -1,20 +1,24 @@
-# 顾鼎臣 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
+# 顾鼎臣 —— R4-T1 批次 5 升格（2026-10-25）
 # 来源：zhuangyuan_index.yaml z0433 | 比对状态：confirmed（rank1）
+# 生卒：本传「十九年十月卒官，年六十八」（嘉靖十九年 1540 卒）逆推生 1473，与 CBDB 一致
 id: gu_ding_chen
 name: 顾鼎臣
 zi: 九和
 hao: 未斋
 birth_year: 1473
 death_year: 1540
-native_hist: 昆山
+native_hist: 昆山县
 native_modern: 江苏省苏州市昆山市
 lat: 31.39
 lng: 120.96
 dynasty: 明
+reign: 弘治
 exam_year: 1505
 ganzhi: 乙丑
-ke_ci: 弘治十八年科
+ke_ci: 弘治十八年乙丑科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 弘治十八年状元。进《步虚词》七章，「词臣以青词结主知，由鼎臣倡也」。嘉靖十七年入阁，夏言当国下充位而已。官侍从时屡陈东南赋役之弊促成欧阳铎厘定，又倡筑昆山城，嘉靖末倭乱起而昆山获全，乡人立祠。
+tags:
+- 青词内阁
+- 谥文康
 status: published

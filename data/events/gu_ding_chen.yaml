@@ -1,0 +1,74 @@
+# 顾鼎臣事件档案（R4-T1 批次 5，2026-10-25）
+person_id: gu_ding_chen
+events:
+- year: 1473
+  year_precision: about
+  type: 出生
+  title: 生于南直隶苏州府昆山县
+  description: 生年据本传「十九年十月卒官，年六十八」逆推（嘉靖十九年 1540 卒，虚岁 六十八 → 生 1473），与 CBDB 一致。字九和，昆山人。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1505
+  year_precision: exact
+  type: 夺魁
+  title: 弘治十八年进士第一
+  description: 本传：「弘治十八年进士第一。授修撰。」本科为弘治朝最后一科， 与杨慎（同科二甲）同榜。正德初再迁左谕德。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1524
+  year_precision: about
+  type: 授官
+  title: 进讲《心箴》特受眷，被劾污佞而帝救之
+  description: 嘉靖初直经筵，进讲范浚《心箴》敷陈剀切，「帝悦，乃自为注释， 而鼎臣特受眷」。给事中刘世扬、李仁劾鼎臣污佞，帝下世扬等狱， 「以鼎臣救，得薄谴」——反常的处置方向，受眷之深可见。拜礼部右侍郎。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1528
+  year_precision: about
+  type: 授官
+  title: 进《步虚词》七章——青词结主知之倡
+  description: 「帝好长生术，内殿设斋醮。鼎臣进《步虚词》七章，且列上坛中应行事。 帝优诏褒答，悉从之。词臣以青词结主知，由鼎臣倡也。」嘉靖朝「青词政治」 的开端被本传系于鼎臣——后来李春芳等「青词宰相」的进身之路，源头在此。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1530
+  year_precision: about
+  type: 授官
+  title: 请令曾子后授五经博士；大同军变主不用兵
+  description: 改吏部左侍郎掌詹事府。请令曾子后授五经博士比三氏（孔颜孟）子孙，从之。 大同军变，张孚敬主用兵，鼎臣言不可，帝嘉纳。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1534
+  year_precision: exact
+  type: 授官
+  title: 享庙捧主之争，夏言极诋其非
+  description: 十三年孟冬享庙，命鼎臣及霍韬捧主。二人有期功服当辞，乃上言「古礼， 诸侯绝期。今公卿即古诸侯，请得毋避」——礼部尚书夏言极诋其非，乃已。 寻进礼部尚书仍掌府事。京师淫雨四方多水灾，请振饥弭盗报可。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1538
+  year_precision: exact
+  type: 升迁
+  title: 嘉靖十七年兼文渊阁大学士入参机务
+  description: 十七年八月以本官兼文渊阁大学士入参机务，寻加少保、太子太傅、进武英殿。 「初，李时为首辅，夏言次之，鼎臣又次之。时卒，言当国专甚，鼎臣素柔媚， 不能有为，充位而已。」夏言专国下的「充位」阁员——入阁而不得行其志。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1539
+  year_precision: exact
+  type: 授官
+  title: 辅太子监国，张潮案不问
+  description: 帝将南巡立皇太子，命夏言扈行，鼎臣辅太子监国。御史萧祥曜劾吏部侍郎张潮 受鼎臣属，「帝下承学诏狱，鼎臣不问」——荐主牵连而独得不问，帝眷未衰。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1540
+  year_precision: exact
+  type: 卒
+  title: 嘉靖十九年卒官，赠太保谥文康
+  description: 「十九年十月卒官，年六十八。赠太保，谥文康。」卒于任上。
+  source_ids:
+  - src_mingshi_gudingchen
+- year: 1556
+  year_precision: about
+  type: 卒
+  title: 身后：谏筑昆山城，倭乱起而昆山获全
+  description: 「鼎臣官侍从时，悯东南赋役失均，屡陈其弊，帝为饬抚按。巡抚欧阳铎厘定之。 昆山无城，言于当事为筑城。后倭乱起，昆山获全，乡人立祠祀焉。」 嘉靖中期东南赋役改革（欧阳铎厘定）的先声；其谏筑之城在嘉靖末倭乱中
+    保住昆山——乡人立祠，是一个状元对乡邦最长久的馈赠。
+  source_ids:
+  - src_mingshi_gudingchen

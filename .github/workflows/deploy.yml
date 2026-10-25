@@ -29,8 +29,17 @@ jobs:
           python3 -m pip install --quiet --disable-pip-version-check pyyaml
           python3 scripts/validate.py
 
+      # 类型检查（2026-10-25 收编）：astro check 0 errors 才进构建。
+      # devDependencies 已进 package.json/package-lock（npm ci 可复现），不再依赖
+      # 交互确认的 npx；直调 node 规避 astro check CLI 的 Y/n 提示挂起。
+      - name: 类型检查（astro check）
+        working-directory: ./site
+        run: |
+          npm ci --no-audit --no-fund
+          node node_modules/@astrojs/check/bin/astro-check.js
+
       - uses: withastro/action@v3
-        with:
+        with: |
           path: ./site
           node-version: 22
 

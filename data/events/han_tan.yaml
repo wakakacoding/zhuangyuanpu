@@ -1,0 +1,74 @@
+# 韩菼事件档案（R4-T1 批次 6，2026-10-25）
+person_id: han_tan
+events:
+- year: 1637
+  year_precision: about
+  type: 出生
+  title: 生于江南长洲
+  description: 本传：「韩菼，字元少，江南长洲人。」生年 1637 为通行逆推（康熙四十三年 1704 卒）。读书通五经，恬旷好山水，「朋游饮酒，欢谐终日，而制行清严」—— 好游好饮而行止清严，性格的一体两面。
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1673
+  year_precision: exact
+  type: 夺魁
+  title: 康熙十二年会试殿试皆第一
+  description: 本传：「应顺天乡试，尚书徐干学拔之遗卷中。康熙十二年，会试、殿试皆第一， 授修撰，充日讲起居注官。」从落卷里被捞起的乡试，到会状连元——清代科场 伯乐故事的代表。
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1674
+  year_precision: about
+  type: 授官
+  title: 命撰太极图说，召入弘德殿讲大学，专任纂修孝经衍义
+  description: 圣祖知其能文，命撰太极图说以进，复谕进所作制举文，召入弘德殿讲大学。 初世祖命纂孝经衍义未成，至是以菼专任纂修——帝王经学工程的担纲者。
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1685
+  year_precision: exact
+  type: 升迁
+  title: 上亲试翰林列第二，擢内阁学士
+  description: 二十四年上亲试翰林，菼列第二，迁侍讲学士，寻擢内阁学士。
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1687
+  year_precision: about
+  type: 贬谪
+  title: 假归筑室西山，点勘诸经注疏八年
+  description: 二十六年再假归，筑室西山，「点勘诸经注疏，旁逮诸史。居八年」—— 权力中心的主动退场，换来八年经史功夫。
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1695
+  year_precision: exact
+  type: 升迁
+  title: 总裁一统志，持不可于达海从祀文庙之议
+  description: 三十四年召至京，命以原官总裁一统志。迁礼部侍郎兼掌院学士。祭酒阿理瑚请以 故大学士达海从祀文庙，菼谓：「从祀鉅典，论定匪易。达海造国书，一艺耳。」 持不可——从祀文庙的门槛问题，敢对满洲勋旧说不。
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1698
+  year_precision: about
+  type: 授官
+  title: 驳道府捐纳与国子监遣归议，「太学且空，非国体」
+  description: 永定河工开事例户部请推广得捐纳道府，菼谓道府不当捐纳。御史郑维孜疏言国子监 生多江浙人有冒籍请尽发原籍肄业，菼曰：「京师首善地，远人乡化，方且闻风慕义 而来。若因一二不肖，辄更定制，悉为驱除，太学且空，非国体。」事得寝。
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1700
+  year_precision: exact
+  type: 升迁
+  title: 授礼部尚书，赐「笃志经学、润色鸿业」榜
+  description: 三十九年充经筵讲官，授礼部尚书，教习庶吉士。四十一年上疏乞解职专意纂辑， 诏慰留之并赐「笃志经学、润色鸿业」榜。帝尝曰：「韩菼天下才，美风度， 奏对诚实。」
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1703
+  year_precision: about
+  type: 贬谪
+  title: 张万禄案语为忌者增益，上由是疏菼
+  description: 江宁布政使张万禄蚀帑金三十余万，总督阿山庇之谓费由南巡。下廷臣议，有言阿山 与有连妄语罪当死，「菼谓纵有连，情私而语公。忌者增益其语入告，上由是疏菼」—— 一句公道话经添油加醋传到皇帝耳中，恩眷自此而衰。
+  source_ids:
+  - src_qingshigao_hantan
+- year: 1704
+  year_precision: exact
+  type: 卒
+  title: 康熙四十三年卒，乾隆间追谥文懿
+  description: 再谢病，诏责其教习庶吉士每日率以饮酒多废学、九卿集议不为国事直言。 「菼意不自得，病甚，饮不辍，至卒。」乾隆十七年高宗谕奖「菼雅学绩文， 湛深经术。所撰制义，清真雅正，开风气之先，为艺林楷则」，追谥文懿——
+    身后近五十年，文章之价始定。
+  source_ids:
+  - src_qingshigao_hantan

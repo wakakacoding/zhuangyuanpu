@@ -1,6 +1,6 @@
 id: han_tan
 name: 韩菼
-zi: null
+zi: 元少
 hao: null
 birth_year: 1637
 death_year: 1704
@@ -14,6 +14,8 @@ exam_year: 1673
 ganzhi: 癸丑
 ke_ci: 康熙十二年癸丑科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 徐乾学自遗卷拔起，康熙十二年会试殿试皆第一。特工制举文，纂《孝经衍义》、总裁《一统志》，官至礼部尚书。以「情私而语公」一语为忌者所增益，恩眷渐衰，饮不辍至卒。乾隆间追谥文懿，制义「清真雅正，开风气之先」。
+tags:
+- 制义宗师
+- 追谥文懿
 status: published

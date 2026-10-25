@@ -1,0 +1,93 @@
+# 李迪事件档案（R4-T1 批次 6，2026-10-25）
+person_id: li_di
+events:
+- year: 971
+  year_precision: about
+  type: 出生
+  title: 生于濮州（先赵郡，徙幽州，避乱徙濮）
+  description: 本传：「李迪，字复古，其先赵郡人，后徙幽州。曾祖在钦，避五代乱，又徙家濮。」 生年据「薨，年七十七」（卒 1047）逆推 971。深厚有器局，尝携文见柳开， 开奇之曰：「公辅材也。」
+  source_ids:
+  - src_songshi_lidi
+- year: 1005
+  year_precision: exact
+  type: 夺魁
+  title: 景德二年举进士第一
+  description: 本传：「举进士第一，授将作监丞，历通判徐、兖州。」景德二年乙巳科状元， 与卡 exam_year 1005 合。北宋前期名臣型状元的代表。
+  source_ids:
+  - src_songshi_lidi
+- year: 1016
+  year_precision: about
+  type: 授官
+  title: 知亳州擒剿亡卒，召对论边迁翰林学士
+  description: 真宗幸亳为留守判官遂知亳州。亡卒群剽城邑发兵捕之久不得，迪至悉罢所发兵， 阴听察知贼区处，部勒骁锐士擒贼斩以徇。会唃厮啰叛帝忧关中，进右谏议大夫 知永兴军，徙陕西都转运使，入为翰林学士。
+  source_ids:
+  - src_songshi_lidi
+- year: 1019
+  year_precision: about
+  type: 授官
+  title: 请发内藏库佐国用，「何必曰借」
+  description: 时频岁蝗旱，帝问何以济，迪请发内藏库以佐国用，「则赋敛宽，民不劳矣」。 帝欲借金帛数百万与三司，迪曰：「天子于财无内外，愿下诏赐三司，以示恩德， 何必曰借。」帝悦。又谏东封以来土木之役「过往时几百倍。今蝗旱之灾，
+    殆天意所以儆陛下也」。
+  source_ids:
+  - src_songshi_lidi
+- year: 1020
+  year_precision: about
+  type: 授官
+  title: 料曹玮三都谷必胜，「颇、牧在禁中」
+  description: 帝谓曹玮怯欲代之，迪力言玮知唃厮啰欲入寇请益兵为备非怯，「且瑋有谋略， 诸将皆非其比，何可代」。帝问关右兵几何，对曰「臣向在陕西，以方寸小册书兵粮数 备调发，今犹置佩囊中」——袖中册子当场具疏分兵。帝顾曰：「真所谓颇、牧在禁中矣。」
+    未几三都谷果大胜；迪又以「以逸待劳」释其必胜之由，帝益重之。
+  source_ids:
+  - src_songshi_lidi
+- year: 1020
+  year_precision: about
+  type: 授官
+  title: 谏立章献后，「不可母天下」
+  description: 初上将立章献后（刘娥），迪屡上疏谏，「以章献起于寒微，不可母天下。章献深衔之」。 直言的代价在十年后太后临朝时兑付。
+  source_ids:
+  - src_songshi_lidi
+- year: 1022
+  year_precision: about
+  type: 升迁
+  title: 「陛下有几子」救太子，拜相
+  description: 周怀政之诛帝怒甚欲责及太子，群臣莫敢言。「迪从容奏曰：『陛下有几子？ 乃欲为此计。』上大寤，由是独诛怀政等。」帝欲相迪迪固辞；一日对滋福殿， 皇太子出拜曰：「陛下用宾客为宰相，敢以谢。」拜吏部侍郎兼太子少傅、
+    同中书门下平章事。
+  source_ids:
+  - src_songshi_lidi
+- year: 1024
+  year_precision: about
+  type: 贬谪
+  title: 与丁谓廷争，「迪起布衣至宰相，死犹不恨」
+  description: 真宗不豫，寇准议皇太子总军国事迪赞其策，丁谓以为不便。谓浸擅权用事至除吏 不以闻，「迪愤然语同列曰：『迪起布衣至宰相，有以报国，死犹不恨，安能附权幸 为自安计邪！』」遂当面发丁谓「罔上弄权，私林特、钱惟演而嫉寇准」，愿与谓
+    俱罢付御史台劾正。帝怒留制不下，左迁户部侍郎，出知郓州。
+  source_ids:
+  - src_songshi_lidi
+- year: 1023
+  year_precision: about
+  type: 贬谪
+  title: 仁宗朝贬衡州，丁谓「天下惜之」之对
+  description: 仁宗即位太后预政，贬寇准雷州，以迪朋党傅会贬衡州团练副使。谓使人迫之， 或讽谓曰：「迪若贬死，公如士论何？」谓曰：「异日诸生记事，不过曰『天下 惜之』而已。」——丁谓的冷血名对，反衬李迪之冤。
+  source_ids:
+  - src_songshi_lidi
+- year: 1033
+  year_precision: exact
+  type: 升迁
+  title: 太后崩后再拜同中书门下平章事
+  description: 谓败起为秘书监知舒州，历江宁府兖州青州。太后垂帘语迪曰「卿向不欲吾预国事， 殆过矣」，迪对以「臣受先帝厚恩，今日见天子明圣，臣不知皇太后盛德，乃至于此」 ——得体而不失节。太后崩召为资政殿学士判尚书都省，未几复拜同中书门下平章事、
+    集贤殿大学士。
+  source_ids:
+  - src_songshi_lidi
+- year: 1040
+  year_precision: about
+  type: 授官
+  title: 元昊攻延州，请老臣守边，「甚壮其意」
+  description: 景祐中坐范讽姻党罢知亳州改相州；素恶吕夷简，奏其私交荆王元俨事降知密州。 元昊攻延州武事久弛，守将或为他名以避兵，「迪愿守边，诏不许，然甚壮其意」。 除彰信军节度使知天雄军，徙青州。
+  source_ids:
+  - src_songshi_lidi
+- year: 1047
+  year_precision: exact
+  type: 卒
+  title: 以太子太傅致仕，薨年七十七，谥文定，帝篆「遗直之碑」
+  description: 请老以太子太傅致仕归濮州。子柬之奉迪来京师，帝数遣使问劳欲召见以疾辞。 「薨，年七十七。赠司空、侍中，谥文定。帝篆其墓碑曰『遗直之碑』， 又改所葬邓侯乡曰遗直乡。」仁宗亲篆墓碑并改乡名——「遗直」二字是
+    帝王对直臣的最高褒辞。
+  source_ids:
+  - src_songshi_lidi

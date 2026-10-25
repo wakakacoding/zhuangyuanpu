@@ -1,0 +1,66 @@
+# 张元忭事件档案（R4-T1 批次 6，2026-10-25）
+person_id: zhang_yuan_bian
+events:
+- year: 1538
+  year_precision: about
+  type: 出生
+  title: 生于绍兴山阴
+  description: 本传：「张元忭，字子藎，绍兴山阴人。」生年 1538 为通行说（本传不载年数， 卒年 1588 亦通行说，persons 注记备考）。素羸弱，母戒毋过劳，「乃藏灯幕中， 俟母寝始诵」——把灯藏在帐幕里，等母亲睡下才读书。
+  source_ids:
+  - src_mingshi_zhangyuanbian
+- year: 1553
+  year_precision: about
+  type: 授官
+  title: 少年闻杨继盛死，为文遥诔，慷慨泣下
+  description: 十余岁时以气节自负。闻杨继盛（劾严嵩下狱死）死，为文遥诔之，慷慨泣下—— 少年张元忭的第一次政治表态，对象是当朝权奸的牺牲者。
+  source_ids:
+  - src_mingshi_zhangyuanbian
+- year: 1567
+  year_precision: about
+  type: 贬谪
+  title: 万里护父赴云南对簿，驰诣阙下白冤
+  description: 父张天复官云南副使，击武定贼凤继祖有功；后贼还袭武定官军败绩。隆庆初议者 追理前失，逮天复赴云南对簿。元忭适下第还，「万里护行，发尽白」；已而复驰诣 阙下白冤，当事怜之，天复得削籍归。
+  source_ids:
+  - src_mingshi_zhangyuanbian
+- year: 1571
+  year_precision: exact
+  type: 夺魁
+  title: 隆庆五年廷试第一
+  description: 本传：「而元忭以廷试第一，授修撰。」同科邓以赞举会试第一、廷试第三—— 合传开篇「二人皆生有异质」的对照至此揭晓。按：隆庆五年辛未科状元， 科年第录同口径。
+  source_ids:
+  - src_mingshi_zhangyuanbian
+- year: 1575
+  year_precision: about
+  type: 授官
+  title: 抗疏救御史胡涍，请进讲《列女传》
+  description: 「元忭尝抗疏救御史胡涍，又请进讲《列女传》于两宫，修《二南》之化，皆不省。」 两疏皆不报——言路上的张元忭并不顺遂。
+  source_ids:
+  - src_mingshi_zhangyuanbian
+- year: 1582
+  year_precision: exact
+  type: 卒
+  title: 万历十年奉使楚府，心动驰归五日而母卒
+  description: 「万历十年奉使楚府还，过家省母，既行心动，辄驰归，仅五日，母卒。」 奉使归途中心悸而折返，五日后母亲去世。此后奉二亲疾「汤药非口尝弗进」， 居丧毁瘠遵用古礼，乡人多化之。
+  source_ids:
+  - src_mingshi_zhangyuanbian
+- year: 1585
+  year_precision: about
+  type: 升迁
+  title: 服阕起故官，进左谕德直经筵
+  description: 服阕起故官，进左谕德，直经筵。先是元忭以帝登极恩请复父官，诏许给冠带； 至是复申前请，格不从。
+  source_ids:
+  - src_mingshi_zhangyuanbian
+- year: 1588
+  year_precision: about
+  type: 卒
+  title: 请复父官不遂，悒悒得疾卒，追谥文恭
+  description: 「元忭泣曰：『吾无以下见父母矣。』遂悒悒得疾卒。天启初，追谥文恭。」 卒年通行说万历十六年（1588）。以未能为父复官为终身之憾，泣尽而卒—— 孝行贯穿了这位状元的一生。
+  source_ids:
+  - src_mingshi_zhangyuanbian
+- year: 1621
+  year_precision: about
+  type: 卒
+  title: 天启初追谥文恭；儒林定评「无流入禅寂之弊」
+  description: 天启初追谥文恭。本传合传考语：「以赞、元忭自未第时即从王畿游，传良知之学， 然皆笃于孝行，躬行实践。……而元忭矩矱俨然，无流入禅寂之弊。」——阳明后学中 守规矩而不堕禅的一员，《明史》把他放进儒林传而非文学传，定位即在学术。
+  source_ids:
+  - src_mingshi_zhangyuanbian

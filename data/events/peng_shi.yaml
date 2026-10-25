@@ -1,0 +1,73 @@
+# 彭时事件档案（R4-T1 批次 6，2026-10-25）
+person_id: peng_shi
+events:
+- year: 1416
+  year_precision: about
+  type: 出生
+  title: 生于江西吉安府安福县
+  description: 本传：「彭时，字纯道，安福人。」生年据「年六十」（成化十一年 1475 卒）逆推 1416，与卡一致。
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1448
+  year_precision: exact
+  type: 夺魁
+  title: 正统十三年进士第一
+  description: 本传：「正统十三年进士第一，授修撰。」本科次年即遇土木之变，状元的翰林 生涯被国变打断。
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1449
+  year_precision: exact
+  type: 授官
+  title: 郕王监国，释褐逾年即入阁参预机务
+  description: 「明年，郕王监国，令同商輅入阁预机务。闻继母忧，力辞，不允，乃拜命。 释褐逾年参大政，前此未有也。」释褐（脱去布衣）才一年多就参预大政， 明代无此前例——国难造成的破格。
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1457
+  year_precision: exact
+  type: 升迁
+  title: 天顺元年帝亲擢再入阁，「汝非朕所擢状元乎」
+  description: 徐有贞得罪，岳正、许彬相继罢。帝坐文华殿召见时曰：「汝非朕所擢状元乎？」 时顿首。明日仍命入阁。「阁臣自三杨后，进退礼甚轻。为帝所亲擢者，唯时与正二人。」 李贤雅重时，退必咨之；时引义争可否或至失色，贤久亦服其谅直：「彭公，真君子也。」
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1464
+  year_precision: exact
+  type: 授官
+  title: 宪宗即位，两宫尊号之争力持正议
+  description: 议上两宫尊号，中官夏时希周贵妃旨言钱后不当称太后。时曰「朝廷所以服天下， 在正纲常」，中官厉声怵以危语，「时拱手向天曰：『太祖、太宗神灵在上，孰敢有二心！ ……若推大孝之心，则两宫并尊为宜。』议遂定」。钱后得尊慈懿皇太后。
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1468
+  year_precision: exact
+  type: 授官
+  title: 慈懿太后崩，力争合葬祔庙，伏文华门泣请
+  description: 四年慈懿太后崩，诏议山陵。时及商辂、刘定之力主「梓宫当合葬裕陵，主当祔庙」， 引汉薄太后、宋李宸妃故事。帝犹重违太后意，「时偕朝臣伏文华门泣请。帝与太后 皆感动，始从时议」——明代礼制史上著名的一争。
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1470
+  year_precision: about
+  type: 授官
+  title: 彗星见，直言帝专宠万贵妃「均恩爱，为宗社大计」
+  description: 彗见三台，时等言「今嫔嫱众多，维熊无兆。必陛下爱有所专，而专宠者已过生育之 期故也。望均恩爱，为宗社大计」。时帝专宠万贵妃，妃年已近四十，时故云然。 又言大臣黜陟宜断自宸衷不可悉委臣下——「帝虽不能从，而心嘉其忠」。
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1471
+  year_precision: about
+  type: 授官
+  title: 满四之役料敌制胜，「人乃大服」
+  description: 都御史项忠讨满四不利，朝议遣京军，朱永多所邀请。时度军可无行第令整装待， 且断言「事成败，冬月决矣」「若闻别遣禁军，将退避不敢任」。至冬贼果平， 人乃大服。文臣料敌的样板。
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1473
+  year_precision: about
+  type: 授官
+  title: 疏陈政本七事，切中时弊
+  description: 七年冬彗复见，时言政本七事：毋惑佛事糜金钱、传旨专委司礼监以防诈伪、 延见大臣议政事、戒淫刑僭赏、虚怀受谏、戒廷臣毋依违、清理牧马草地减退 势要庄田——皆切中时弊。
+  source_ids:
+  - src_mingshi_pengshi
+- year: 1475
+  year_precision: exact
+  type: 卒
+  title: 成化十一年卒，年六十，赠太师谥文宪
+  description: 「十一年正月，以秩满进少保。逾月卒，年六十。赠太师，谥文宪。」本传考语： 「时立朝三十年，孜孜奉国，持正存大体……非其义不取，有古大臣风。」
+  source_ids:
+  - src_mingshi_pengshi

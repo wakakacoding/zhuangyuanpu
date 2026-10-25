@@ -1,0 +1,61 @@
+# 徐元杰事件档案（R4-T1 批次 6，2026-10-25）
+person_id: xu_yuan_jie
+events:
+- year: 1193
+  year_precision: about
+  type: 出生
+  title: 生于信州上饶
+  description: 本传：「徐元杰，字仁伯，信州上饶人。」生年 1193 为通行逆推（本传不载年数）。 幼颖悟，诵书日数千言，每冥思精索。
+  source_ids:
+  - src_songshi_xuyuanjie
+- year: 1210
+  year_precision: about
+  type: 授官
+  title: 师陈文蔚，后师真德秀
+  description: 闻陈文蔚讲书铅山（实朱熹门人），往师之；后师事真德秀。学术谱系上承朱学 一脉——这层师承是后来轮对攻史嵩之时的士论后盾。
+  source_ids:
+  - src_songshi_xuyuanjie
+- year: 1232
+  year_precision: exact
+  type: 夺魁
+  title: 绍定五年进士及第
+  description: 本传：「绍定五年，进士及第。签书镇东军节判官厅公事。」绍定五年壬辰科 状元（科年第录口径），与卡 exam_year 1232 合。
+  source_ids:
+  - src_songshi_xuyuanjie
+- year: 1238
+  year_precision: exact
+  type: 授官
+  title: 嘉熙中奏否泰剥复之理，力请外不许
+  description: 嘉熙二年召为秘书省正字，迁校书郎。奏否泰、剥复之理，言右辖久虚非骨鲠耆艾 不可轻畀；又言皇子竑当置后及蚤立太子。时谏官蒋岘方力排竑置后之说，遂力请外 不许，即谒告归丐祠，章十二上。
+  source_ids:
+  - src_songshi_xuyuanjie
+- year: 1241
+  year_precision: exact
+  type: 授官
+  title: 知南剑州擒寇兴学，「侯不来，我辈鱼肉矣」
+  description: 淳祐元年差知南剑州。会峡阳寇作，擒渠魁八人斩之余释不问。父老相语： 「侯不来，我辈鱼肉矣。」郡有延平书院，率郡博士会诸生亲为讲说；民讼率呼至 以理化诲，多感悦而去。丁母忧去官，众遮道跪留。
+  source_ids:
+  - src_songshi_xuyuanjie
+- year: 1244
+  year_precision: exact
+  type: 授官
+  title: 轮对攻史嵩之起复，疏出朝野传诵
+  description: 丞相史嵩之丁父忧有诏起复，中外莫敢言，惟学校叩阍力争。元杰时适轮对， 言「陛下乌得而不悔悟，大臣乌得而不坚忍？臣恳恳纳忠……特为陛下爱惜民彝， 为大臣爱惜名节而已」。「疏出，朝野传诵」，未几夜降御笔黜四不才台谏，
+    起复之命遂寝——一文动朝局的实战案例。
+  source_ids:
+  - src_songshi_xuyuanjie
+- year: 1245
+  year_precision: exact
+  type: 升迁
+  title: 拜太常少卿兼给事中国子祭酒，裁书挥涕
+  description: 元老旧德次第收召，元杰兼右司郎官，拜太常少卿，兼给事中、国子祭酒， 权中书舍人。杜范入相复延议军国事，为书无虑数十，「每裁书至宗社隐忧处， 辄阁笔挥泪，书就随削稿，虽子弟无有知者」——草稿随写随焚，连子弟都不让看。
+  source_ids:
+  - src_songshi_xuyuanjie
+- year: 1245
+  year_precision: exact
+  type: 卒
+  title: 淳祐五年暴疾卒，太学讼冤，赐谥忠愍
+  description: 六月朔轮当侍立，以暴疾谒告；特拜工部侍郎随乞纳，诏转一官致仕。「夜四鼓。 遂卒。」是夕俄热大作，诘朝不能造朝，指爪忽裂以死。帝震悼。太学诸生伏阙诉 其为中毒：「昔小人有倾君子者，不过使之自死于蛮烟瘴雨之乡，今蛮烟瘴雨不在
+    领海，而在陛下之朝廷。」三学诸生相继叩阍讼冤，台谏交疏论奏；然狱迄无成， 海内人士伤之。赐官田五百亩、缗钱五千给其家，赐谥忠愍——南宋政治疑案的标本。
+  source_ids:
+  - src_songshi_xuyuanjie

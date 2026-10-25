@@ -307,3 +307,33 @@ accepted:
     report: 状元谱R4-T1-批次5-全档案升格-交付报告.md
     four_set: full
     note: 生年据「年六十八」逆推（1540 卒）；明史 193 全 quote 核对
+  - id: zhang_yuan_bian
+    batch: R4-T1-批次6
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次6-全档案升格-交付报告.md
+    four_set: full
+    note: 明史283儒林传（附鄧以贊传）全 quote 核对；生卒本传无年数，通行说 1538–1588 备考
+  - id: peng_shi
+    batch: R4-T1-批次6
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次6-全档案升格-交付报告.md
+    four_set: full
+    note: 明史176全quote核对；生年据享年60逆推1416；补字纯道
+  - id: xu_yuan_jie
+    batch: R4-T1-批次6
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次6-全档案升格-交付报告.md
+    four_set: full
+    note: 宋史424全quote核对；中毒疑案录案存疑不强断；生年1193通行逆推
+  - id: han_tan
+    batch: R4-T1-批次6
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次6-全档案升格-交付报告.md
+    four_set: full
+    note: 清史稿266全quote核对；生年1637通行逆推；补字元少
+  - id: li_di
+    batch: R4-T1-批次6
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次6-全档案升格-交付报告.md
+    four_set: full
+    note: 宋史310全quote核对；生年据享年77逆推971；籍贯三徙（赵郡→幽州→濮）注卡头

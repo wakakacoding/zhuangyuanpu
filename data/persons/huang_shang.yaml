@@ -1,7 +1,7 @@
 id: huang_shang
 name: 黄裳
-zi: null
-hao: null
+zi: 冕仲
+hao: 紫元翁
 birth_year: 1044
 death_year: 1130
 native_hist: 南剑州剑浦县
@@ -14,6 +14,8 @@ exam_year: 1082
 ganzhi: 壬戌
 ke_ci: 元丰五年壬戌科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 元丰五年进士第一。宋史无传（《演山集》四库提要明言）。累官礼部尚书，赠资政殿大学士，谥忠文。政和宣和间上书斥三舍法「宜近不宜远，宜少不宜老，宜富不宜贫」，人以为确论。自称紫元翁，著《演山集》六十卷宋刊原帙。
+tags:
+- 宋史无传
+- 谥忠文
 status: published

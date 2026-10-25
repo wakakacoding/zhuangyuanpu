@@ -1,0 +1,89 @@
+# 文震孟事件档案（R4-T1 批次 7，2026-10-25）
+person_id: wen_zhenmeng
+events:
+- year: 1574
+  year_precision: about
+  type: 出生
+  title: 生于南直隶苏州府吴县，文征明曾孙
+  description: 本传：「文震孟，字文起，吴县人，待诏征明曾孙也。」祖文彭、父文元发并 有名行。生年 1574 为通行逆推（本传不载年数）。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1592
+  year_precision: about
+  type: 授官
+  title: 弱冠以《春秋》举于乡，十赴会试
+  description: 震孟弱冠以《春秋》举于乡，此后「十赴会试」——从举人到中状元走了整整 三十年，明代科场罕见的马拉松。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1622
+  year_precision: exact
+  type: 夺魁
+  title: 天启二年殿试第一
+  description: 本传：「至天启二年，殿试第一，授修撰。」天启二年壬戌科状元。十次落第 换来的大魁，时年已四十九岁。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1622
+  year_precision: exact
+  type: 贬谪
+  title: 上《勤政讲学疏》，「傀儡登场」四字招廷杖八十
+  description: 时魏忠贤渐用事。震孟十月上《勤政讲学疏》，痛陈朝会「如傀儡登场已耳」、 经筵「如蒙师诵说已耳」。忠贤屏不即奏，乘帝观剧摘「傀儡登场」语，谓比帝 于偶人，「不杀无以示天下，帝颔之」。讲筵毕传旨廷杖八十。首辅叶向高在告，
+    次辅韩爌力争；内批俱贬秩调外，震孟不赴调而归。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1626
+  year_precision: exact
+  type: 贬谪
+  title: 悼熊廷弼诗案波及，与陈仁锡郑鄤并斥为民
+  description: 六年冬太仓进士顾同寅等坐以诗悼惜熊廷弼，为兵马司缉获，御史门克新指为 妖言，波及震孟，「与编修陈仁锡、庶吉士郑鄤并斥为民」。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1628
+  year_precision: exact
+  type: 授官
+  title: 崇祯元年以侍读召，抗疏纠逆党翻案
+  description: 崇祯元年以侍读召，改左中允充日讲官。三年春逆党王永光辈乘机报复， 震孟抗疏纠之；再疏指实「杀名贤者，故吏部郎周顺昌」诸事。「然群小翻案之谋 亦由是中沮」。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1629
+  year_precision: about
+  type: 授官
+  title: 讲筵最严正，时称「真讲官」
+  description: 震孟在讲筵最严正。讲《鲁论》「君使臣以礼」一章反复规讽，帝即降旨出 尚书乔允升等于狱；帝尝足加于膝，适讲《五子之歌》至「为人上者，奈何不敬」， 以目视帝足，「帝即袖掩之，徐为引下」。时称「真讲官」。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1630
+  year_precision: about
+  type: 授官
+  title: 疏请改正《光宗实录》，为温体仁所沮
+  description: 天启时魏忠贤使党重修《光宗实录》，是非倒置。震孟摘尤谬者数条疏请改正。 帝特御平台召廷臣面议，「卒为温体仁、王应熊所沮」——与温体仁的梁子 由此结成。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1635
+  year_precision: exact
+  type: 升迁
+  title: 八年正月贼犯凤阳皇陵，历陈致乱之源
+  description: 贼犯凤阳皇陵。震孟历陈致乱之源：「当事诸臣，不能忧国奉公，一统之朝， 强分畛域，加膝坠渊，总由恩怨。」请帝「奋然一怒，发哀痛之诏」。「帝优旨报之， 然亦不能尽行也。」《春秋》名家进讲果称帝旨。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1635
+  year_precision: exact
+  type: 升迁
+  title: 特擢礼部左侍郎兼东阁大学士，不投刺司礼监
+  description: 六月帝将增置阁臣，七月特擢震孟入阁预政。故事阁臣被命即投刺司礼大奄 兼致仪状，「震孟独否」——掌司礼曹化淳雅慕震孟辗转道意，卒不往。 入直后温体仁每拟旨必商之，既而所拟不当辄令改，不从则径抹去；
+    「震孟大愠，以诸疏掷体仁前」。
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1635
+  year_precision: exact
+  type: 贬谪
+  title: 落职闲住——入阁仅三月
+  description: 许誉卿之贬，震孟争之不得，咈然曰「科道为民，是天下极荣事，赖公玉成之」， 体仁遽以闻。帝果怒，责徇私挠乱，吾骥罢，震孟落职闲住。本传慨叹： 「震孟刚方贞介，有古大臣风，惜三月而斥，未竟其用。」
+  source_ids:
+  - src_mingshi_wenzhenmeng
+- year: 1636
+  year_precision: exact
+  type: 卒
+  title: 归半岁哭甥恸卒，福王时追谥文肃
+  description: 归半岁，会甥姚希孟卒，「哭之恸，亦卒」。廷臣请恤不允。崇祯十二年诏复 故官，十五年赠礼部尚书，福王时追谥文肃。子文乘遭国变死于难—— 一家的结局，便是明清之际的缩影。
+  source_ids:
+  - src_mingshi_wenzhenmeng

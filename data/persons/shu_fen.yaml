@@ -1,5 +1,4 @@
 # 舒芬 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0437 | 比对状态：confirmed（rank1） | 备考：以直谏著名
 id: shu_fen
 name: 舒芬
 zi: 国裳
@@ -15,6 +14,9 @@ exam_year: 1517
 ganzhi: 丁丑
 ke_ci: 正德十二年科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 正德十二年状元。谏南巡跪阙五日杖三十（「吾官此，即死此耳」），大礼议再杖。精《周礼》，卒年四十四，世称「忠孝状元」，学者称梓溪先生，万历中追谥文节。
+tags:
+- 忠孝状元
+- 谥文节
+- 大礼议
 status: published

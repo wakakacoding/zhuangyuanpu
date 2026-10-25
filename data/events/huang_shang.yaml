@@ -1,0 +1,39 @@
+# 黄裳事件档案（R4-T1 批次 7，2026-10-25）
+person_id: huang_shang
+events:
+- year: 1044
+  year_precision: about
+  type: 出生
+  title: 生于南剑州剑浦（今福建南平）
+  description: 四库提要：「裳字冕仲南平人。」南平即南剑州（州治剑浦），卡沿索引作 剑浦县，提要作南平，两书名并注。生年 1044 为通行说（提要未载生卒）。 素喜道家秘书，自称紫元翁。
+  source_ids:
+  - src_siku_yanshanji
+- year: 1082
+  year_precision: exact
+  type: 夺魁
+  title: 元丰五年进士第一
+  description: 提要：「元丰五年进士第一。」元丰五年壬戌科状元。本科同榜有著名词人 贺铸等。是科殿试题为《天下一家》，黄裳对策称旨（细节待核原书）。
+  source_ids:
+  - src_siku_yanshanji
+- year: 1083
+  year_precision: about
+  type: 授官
+  title: 仕履：历官至礼部尚书
+  description: 提要：「累官礼部尚书。」北宋黄裳历神宗哲宗徽宗三朝，仕履细节宋史无传 不详，通行叙述谓曾任越州签判、秘书省等（待核）。政和间以龙图阁直学士 致仕之说见方志（待核）。
+  source_ids:
+  - src_siku_yanshanji
+- year: 1117
+  year_precision: about
+  type: 授官
+  title: 政和宣和间上书斥三舍法之弊
+  description: 提要引福建通志：「政和宣和间三舍法行裳上书谓宜近不宜远宜少不宜老宜富 不宜贫不如遵祖宗科举之制人以为确论。」三舍法以学校升贡取代科举，实际 上把入仕机会向富贵子弟倾斜——黄裳的四句概括成为对这项制度的经典批评。
+    「盖亦伉直有守之士。」
+  source_ids:
+  - src_siku_yanshanji
+- year: 1130
+  year_precision: about
+  type: 卒
+  title: 卒赠资政殿大学士，谥忠文
+  description: 提要：「赠资政殿大学士谥忠文。」卒年 1130 为通行说（提要未载）。 其集六十卷见陈振孙书录解题，季子黄玠乾道初裒辑、廖挺订误刻于建昌军学， 即今传《演山集》——宋刊原帙。
+  source_ids:
+  - src_siku_yanshanji

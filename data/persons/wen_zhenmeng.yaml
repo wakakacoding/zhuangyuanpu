@@ -1,6 +1,6 @@
 id: wen_zhenmeng
 name: 文震孟
-zi: null
+zi: 文起
 hao: null
 birth_year: 1574
 death_year: 1636
@@ -14,6 +14,9 @@ exam_year: 1622
 ganzhi: 壬戌
 ke_ci: 天启二年壬戌科
 rank_detail: 一甲第一名（状元）
-bio_short: 文征明曾孙。
-tags: []
+bio_short: 文征明曾孙，弱冠举乡试后十赴会试，天启二年四十九岁大魁。劾魏忠贤「傀儡登场」遭廷杖，崇祯朝「真讲官」，八年入阁三月为温体仁所排落职，哭甥恸卒。福王时追谥文肃。
+tags:
+- 文征明后
+- 谥文肃
+- 廷杖直臣
 status: published

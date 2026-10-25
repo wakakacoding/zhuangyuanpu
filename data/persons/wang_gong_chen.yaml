@@ -1,5 +1,4 @@
 # 王拱辰 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0183 | 比对状态：confirmed（name+year）
 id: wang_gong_chen
 name: 王拱辰
 zi: 君贶
@@ -15,6 +14,8 @@ exam_year: 1030
 ganzhi: 庚午
 ke_ci: 天圣八年庚午科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 天圣八年十九岁举进士第一，仁宗赐名拱辰。驳契丹塘泊夸言、答关南国书，御史中丞引裾谏罢夏竦；晚年抗言保甲之害，第五等户得免。卒年七十四，谥懿恪。
+tags:
+- 少年状元
+- 谥懿恪
 status: published

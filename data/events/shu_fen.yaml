@@ -1,0 +1,68 @@
+# 舒芬事件档案（R4-T1 批次 7，2026-10-25）
+person_id: shu_fen
+events:
+- year: 1484
+  year_precision: about
+  type: 出生
+  title: 生于江西南昌府进贤县
+  description: 本传：「舒芬，字国裳，进贤人。」生年据「年四十四」（嘉靖六年 1527 卒） 逆推 1484，与卡一致。
+  source_ids:
+  - src_mingshi_shufen
+- year: 1495
+  year_precision: about
+  type: 授官
+  title: 十二岁献《驯雁赋》知名
+  description: 「年十二，献《驯雁赋》于知府祝瀚，遂知名。」少年成名。
+  source_ids:
+  - src_mingshi_shufen
+- year: 1517
+  year_precision: exact
+  type: 夺魁
+  title: 正德十二年举进士第一
+  description: 「正德十二年举进士第一，授修撰。」正德十二年丁丑科状元。同年马汝骥、 崔桐皆成日后谏南巡的同案人。
+  source_ids:
+  - src_mingshi_shufen
+- year: 1518
+  year_precision: about
+  type: 授官
+  title: 谏武宗微行宣府，「舍大辂衮冕而羸车亵服」
+  description: 武宗数微行畋游无度，孝贞皇后崩甫逾月又欲幸宣府。芬上言「陛下三年之内 当深居不出」「以天子之尊下同庶人……非所以辨上下、定礼仪」。不听。 又谏迎主祔庙由长安门旁门入——「将使孝贞有不得正终之嫌」。不报，乞归养
+    不许。
+  source_ids:
+  - src_mingshi_shufen
+- year: 1519
+  year_precision: exact
+  type: 贬谪
+  title: 谏南巡跪阙五日杖三十，「吾官此，即死此耳」
+  description: 帝议南巡，宁王宸濠久蓄异谋人情惶惧。芬偕崔桐、江晖、王廷陈、马汝骥、 曹嘉、汪应轸连章入谏，疏斥「宗藩蓄刘濞之衅，大臣怀冯道之心」。陆完迎劝 「勿归过君上，沽直名」，芬不应；邀陈九川酌酒曰「匹夫不可夺志，君辈可遂已
+    乎？」明日复连疏入。帝大怒，跪阙下五日期满杖三十，创甚几毙，舁至翰林院。 掌院者命摽出之，「芬曰：『吾官此，即死此耳。』」竟谪福建市舶副提举，裹创就道。
+  source_ids:
+  - src_mingshi_shufen
+- year: 1521
+  year_precision: about
+  type: 授官
+  title: 世宗即位召复故官，谏昭圣太后寿旦免朝贺夺俸
+  description: 世宗即位召复故官。嘉靖三年春昭圣太后寿旦诏免诸命妇朝贺，芬言轻重失宜， 帝怒夺俸三月。
+  source_ids:
+  - src_mingshi_shufen
+- year: 1524
+  year_precision: exact
+  type: 贬谪
+  title: 大礼议再杖——与杨慎同伏左顺门哭争
+  description: 帝欲尊崇本生，芬偕僚连章极谏；张璁桂萼骤擢学士，芬与杨维聪羞与同列 拜疏乞罢；未几复偕杨慎等伏左顺门哭争。「帝怒，下狱廷杖，夺俸如初。」 大礼议杖毙十七人的一役，芬在跪哭者之列。
+  source_ids:
+  - src_mingshi_shufen
+- year: 1527
+  year_precision: exact
+  type: 卒
+  title: 遭母丧归卒于家，年四十四，世称「忠孝状元」
+  description: 旋遭母丧归，卒于家，「年四十四。世称『忠孝状元』」。夜间计过自讼， 以倡明绝学为己任；疾革惟以未及表章《周礼》为恨。学者称梓溪先生。
+  source_ids:
+  - src_mingshi_shufen
+- year: 1573
+  year_precision: about
+  type: 卒
+  title: 万历中追谥文节；福建士大夫祀芬配罗伦
+  description: 万历中追谥文节。先是修撰罗伦以谏谪福建提举，逾六十年而芬继之——同乡 同官，所谪地与官又同，「福建士大夫遂祀芬配伦」。两次廷杖、一生直谏的 状元，身后与同调者同祀。
+  source_ids:
+  - src_mingshi_shufen

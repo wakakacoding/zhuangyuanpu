@@ -1,5 +1,4 @@
 # 蔡齐 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0179 | 比对状态：confirmed（name+year）
 id: cai_qi
 name: 蔡齐
 zi: 子思
@@ -15,6 +14,8 @@ exam_year: 1015
 ganzhi: 乙卯
 ke_ci: 大中祥符八年乙卯科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 大中祥符八年状元，「状元给驺自齐始」。拒内侍罗崇勋以参政为饵的诱记，谏止杨太妃同裁制军国，抵太后姻亲王齐雄罪（「以恩废法，如朝廷何」），磨去枢密题名「逆准不书」还寇准清白。所荐庞籍等后为名臣。谥文忠。
+tags:
+- 宰相
+- 谥文忠
 status: published

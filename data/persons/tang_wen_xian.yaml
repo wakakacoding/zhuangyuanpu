@@ -1,5 +1,4 @@
 # 唐文献 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0460 | 比对状态：confirmed（rank1）
 id: tang_wen_xian
 name: 唐文献
 zi: 元征；道征
@@ -16,6 +15,7 @@ exam_year: 1586
 ganzhi: 丙戌
 ke_ci: 万历十四年科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 万历十四年状元。妖书案直犯首辅沈一贯救郭正域（「何辞以谢天下」），掖廷杖的李沂出宫资给汤药，救华钰于诏狱，掌翰林考察拒执政请托。卒官赠礼部尚书，谥文恪。
+tags:
+- 谥文恪
 status: published

@@ -1,0 +1,46 @@
+# 唐文献事件档案（R4-T1 批次 8，2026-10-25）
+person_id: tang_wen_xian
+events:
+- year: 1549
+  year_precision: about
+  type: 出生
+  title: 生于南直隶松江府华亭县
+  description: 本传：「唐文献，字元征，华亭人。」生年 1549 为通行说（本传不载年数）， 卒 1605，persons 注记备考。
+  source_ids:
+  - src_mingshi_tangwenxian
+- year: 1586
+  year_precision: exact
+  type: 夺魁
+  title: 万历十四年进士第一
+  description: 「万历十四年进士第一。授修撰，历詹事。」万历十四年丙戌科状元。 出赵用贤门，「以名节相矜许」——东林先驱的门下士。
+  source_ids:
+  - src_mingshi_tangwenxian
+- year: 1603
+  year_precision: about
+  type: 授官
+  title: 妖书案直犯沈一贯救郭正域
+  description: 沈一贯以「妖书」事倾尚书郭正域持之急。文献偕杨道宾、周如砥、陶望龄往见 一贯：「郭公将不免，人谓公实有意杀之。」一贯酹地为誓，文献曰「亦知公无意 杀之也，第台省承风下石，而公不早讫此狱，何辞以谢天下」——「一贯敛容谢之，
+    狱得稍解。然文献等以是失政府意」。
+  source_ids:
+  - src_mingshi_tangwenxian
+- year: 1603
+  year_precision: about
+  type: 授官
+  title: 掖廷杖的李沂出宫，救华钰于诏狱
+  description: 同年生给事中李沂劾张鲸被廷杖，「文献掖之出，资给其汤药」。荆州推官华钰 忤税监逮下诏狱，「文献力周旋，得无死」——对受难者的两次援手，皆本传 明文。
+  source_ids:
+  - src_mingshi_tangwenxian
+- year: 1605
+  year_precision: about
+  type: 授官
+  title: 拜礼部右侍郎掌翰林院，考察拒执政请托
+  description: 拜礼部右侍郎掌翰林院事。掌翰林日当考察，「执政欲庇一人，执不许」—— 最后一任上的拒绝。
+  source_ids:
+  - src_mingshi_tangwenxian
+- year: 1605
+  year_precision: about
+  type: 卒
+  title: 卒官赠礼部尚书，谥文恪
+  description: 「卒官。赠礼部尚书，谥文恪。」卒于任上。
+  source_ids:
+  - src_mingshi_tangwenxian

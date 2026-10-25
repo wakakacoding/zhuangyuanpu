@@ -1,0 +1,88 @@
+# 吕蒙正事件档案（R4-T1 批次 8，2026-10-25）
+person_id: lv_mengzheng
+events:
+- year: 944
+  year_precision: about
+  type: 出生
+  title: 生于河南府（洛阳），幼年被逐窘乏
+  description: 本传：「吕蒙正，字圣功，河南人。」生年据「年六十八」（卒 1011）逆推 944， 与卡一致。父龟图多内宠，「并蒙正出之，颇沦踬窘乏」——状元里的寒门典型， 后迎二亲「同堂异室，奉养备至」。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 977
+  year_precision: exact
+  type: 夺魁
+  title: 太平兴国二年擢进士第一
+  description: 「蒙正，太平兴国二年，擢进士第一，授将作监丞，通判升州。」太宗特旨： 民事有不便者许骑置以闻，赐钱二十万。本科为宋初取士最盛之一科， 同榜多后来名臣。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 983
+  year_precision: about
+  type: 升迁
+  title: 拜参知政事，「不若毋知之为愈」
+  description: 入为翰林学士擢左谏议大夫、参知政事。初入朝堂有朝士指之曰「此子亦参政耶」， 蒙正阳为不闻；同列诘其姓名，「蒙正遽止之曰：『若一知其姓名，则终身不能忘， 不若毋知之为愈也。』时皆服其量」。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 988
+  year_precision: exact
+  type: 升迁
+  title: 拜相；奏定宰相子止授九品京官
+  description: 李昉罢相，蒙正拜中书侍郎兼户部尚书、平章事。先是宰相子起家即授水部员外郎 已成惯例，蒙正奏「今臣男始离襁褓，膺此宠命，恐罹阴谴，乞以臣释褐时官补之」 ——「自是宰相子止授九品京官，遂为定制」。以自身示范，削掉一项荫补特权。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 988
+  year_precision: about
+  type: 授官
+  title: 古镜之对——「吾面不过楪子大」
+  description: 朝士有藏古镜者自言能照二百里，欲献以求知。「蒙正笑曰：『吾面不过楪子大， 安用照二百里哉？』闻者叹服。」拒贿的千古名对。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 993
+  year_precision: about
+  type: 贬谪
+  title: 妻族坐法罢相，寻复相
+  description: 淳化中左正言宋沆（蒙正妻族）上疏忤旨，坐是罢为吏部尚书。四年昉罢， 蒙正复以本官入相。论及征伐，对以「治国之要，在内修政事，则远人来归」， 上韪之。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 995
+  year_precision: about
+  type: 授官
+  title: 灯夕直谏——「都城外不数里，饥寒而死者甚众」
+  description: 灯夕设宴，太宗自夸「乃知理乱在人」。蒙正避席曰：「臣尝见都城外不数里， 饥寒而死者甚众，不必尽然。愿陛下视近以及远，苍生之幸也。」「上变色不言。 蒙正侃然复位，同列多其直谅。」盛世颂歌面前唱反调的宰相。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 996
+  year_precision: about
+  type: 授官
+  title: 三问三对不媚，「蒙正气量，我不如」
+  description: 上欲遣人使朔方，三问，三以其人对。上曰「卿何执耶」，蒙正曰「臣不欲用 媚道妄随人主意，以害国事」。「上退谓左右曰：『蒙正气量，我不如。』 既而卒用蒙正所荐，果称职。」
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 998
+  year_precision: exact
+  type: 升迁
+  title: 真宗即位进左仆射，奉家财三百万助营熙陵
+  description: 真宗即位进左仆射。会营奉熙陵（太宗陵），蒙正追感先朝不次之遇， 「奉家财三百余万以助用」——三入相的大臣自掏家财修先帝陵。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 1001
+  year_precision: exact
+  type: 升迁
+  title: 咸平四年三入相，「国朝以来惟赵普与蒙正」
+  description: 以本官同平章事、昭文馆大学士。「国朝以来三入相者，惟赵普与蒙正焉。」
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 1005
+  year_precision: exact
+  type: 致仕
+  title: 景德二年表请归洛，荐侄夷简「宰相才也」
+  description: 表请归洛。陛辞日肩舆至东园门，命二子掖以升殿，言「远人请和，弭兵省财， 古今上策，惟愿陛下以百姓为念」。后太宗问「卿诸子孰可用」，对曰「诸子皆 不足用。有侄夷简……宰相才也」——不用儿子用侄子。又识富弼于少年，
+    「此儿他日名位与吾相似，而勋业远过于吾」，后弼两入相，果验。
+  source_ids:
+  - src_songshi_lvmengzheng
+- year: 1011
+  year_precision: exact
+  type: 卒
+  title: 许国之命甫下而卒，年六十八，谥文穆
+  description: 封许国公，「许国之命甫下而卒，年六十八。赠中书令，谥曰文穆」。 传又记其不辩张绅之诬、待中贵人不少贬，「时人重焉」。
+  source_ids:
+  - src_songshi_lvmengzheng

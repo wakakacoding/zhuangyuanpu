@@ -1,0 +1,66 @@
+# 吴潜事件档案（R4-T1 批次 8，2026-10-25）
+person_id: wu_qian
+events:
+- year: 1196
+  year_precision: about
+  type: 出生
+  title: 生于宣州宁国，秘阁修撰吴柔胜季子
+  description: 本传：「吴潜，字毅夫，宣州宁国人。秘阁修撰柔胜之季子。」生年 1196 为通行说 （本传不载，惟卒前自言「臣年将七十」与景定三年 1262 卒相合），persons 注记备考。
+  source_ids:
+  - src_songshi_wuqian
+- year: 1217
+  year_precision: exact
+  type: 夺魁
+  title: 嘉定十年进士第一
+  description: 「嘉定十年进士第一，授承事郎、签镇东军节度判官。」嘉定十年丁丑科状元。 与兄吴渊并称，后兄弟皆至宰执。
+  source_ids:
+  - src_songshi_wuqian
+- year: 1231
+  year_precision: exact
+  type: 授官
+  title: 绍定四年都城大火，上疏论致灾之由
+  description: 都城大火，潜上疏直指「阉官之窃弄威福者勿亲，女宠之根萌祸患者勿昵」， 请帝「菲衣恶食」「疏损声色」，以「培国家一线之脉，以救生民一旦之命」。 又贻书史弥远论事六条（格君心、节奉给、振恤都民、用老成、用良将、革吏弊）。
+  source_ids:
+  - src_songshi_wuqian
+- year: 1234
+  year_precision: exact
+  type: 授官
+  title: 谏用兵复河南，「取之若易，守之实难」
+  description: 告执政论用兵复河南不可轻易：「法当以和为形，以守为实，以战为应。」 「自后，兴师入洛，溃败失亡不赀，潜之言率验」——端平入洛的失败 证实了他的预判。
+  source_ids:
+  - src_songshi_wuqian
+- year: 1234
+  year_precision: exact
+  type: 授官
+  title: 端平元年诏求直言，陈九事
+  description: 潜所陈九事：顾天命、植国本、笃人伦、正学术、广畜人才、实恤民力、 边事当鉴前辙、楮币当权新制、盗贼当探祸端。「以直论忤时相，罢奉千秋 鸿禧祠。」
+  source_ids:
+  - src_songshi_wuqian
+- year: 1251
+  year_precision: exact
+  type: 升迁
+  title: 淳祐十一年拜右丞相兼枢密使
+  description: 入为参知政事，拜右丞相兼枢密使。判庆元府时「积钱百四十七万三千八百有奇， 代民输帛，前后所蠲五百四十九万一千七百有奇」——以个人任上筹措代全郡 输帛，蠲免之巨为南宋罕见。
+  source_ids:
+  - src_songshi_wuqian
+- year: 1259
+  year_precision: exact
+  type: 升迁
+  title: 开庆元年鄂州之围，拜左丞相
+  description: 大元兵渡江攻鄂州，别将由大理下交趾。潜奏「臣年将七十，捐躯致命， 所不敢辞」，又论「奸臣憸士设为虚议，迷国误军」。拜特进、左丞相， 进封庆国公，改封许国公。
+  source_ids:
+  - src_songshi_wuqian
+- year: 1260
+  year_precision: about
+  type: 贬谪
+  title: 密奏「臣无弥远之材，忠王无陛下之福」，忤帝落职
+  description: 属将立度宗为太子，潜密奏反对立忠王（赵禥，即后来的度宗）——「帝怒潜， 卒以炎论劾落职」。中书舍人洪芹缴还词头不报。谪建昌军，寻徙潮州， 责授化州团练使、循州安置。
+  source_ids:
+  - src_songshi_wuqian
+- year: 1262
+  year_precision: exact
+  type: 卒
+  title: 景定三年循州端坐而逝，德祐间追复赠少师
+  description: 「潜预知死日，语人曰：『吾将逝矣，夜必雷风大作。』已而果然，四鼓开霁， 撰遗表，作诗颂，端坐而逝。」时景定三年五月。循人咨嗟悲恸。德祐元年 追复元官，明年特赠少师——南宋末年朝廷为这位被贬死的状元丞相平反。
+  source_ids:
+  - src_songshi_wuqian

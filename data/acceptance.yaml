@@ -361,3 +361,27 @@ accepted:
     report: 状元谱R4-T1-批次7-全档案升格-交付报告.md
     four_set: full
     note: 宋史无传（四库提要明言），主干降 B 级（演山集提要全quote）；生卒1044-1130通行说备考
+  - id: wu_qian
+    batch: R4-T1-批次8
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次8-全档案升格-交付报告.md
+    four_set: full
+    note: 宋史418全quote核对；生卒补1196-1262（「臣年将七十」与卒年合）；词人身份补档
+  - id: lv_mengzheng
+    batch: R4-T1-批次8
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次8-全档案升格-交付报告.md
+    four_set: full
+    note: 宋史265全quote核对；享年68逆推944✓；寒窑赋托名公案录入轶事层
+  - id: cai_qi
+    batch: R4-T1-批次8
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次8-全档案升格-交付报告.md
+    four_set: full
+    note: 宋史286全quote核对；享年52逆推988✓；「状元给驺自齐始」制度起点入档
+  - id: tang_wen_xian
+    batch: R4-T1-批次8
+    date: 2026-10-25
+    report: 状元谱R4-T1-批次8-全档案升格-交付报告.md
+    four_set: full
+    note: 明史216全quote核对；生年1549通行说备考

@@ -1,0 +1,68 @@
+# 蔡齐事件档案（R4-T1 批次 8，2026-10-25）
+person_id: cai_qi
+events:
+- year: 988
+  year_precision: about
+  type: 出生
+  title: 先洛阳人，曾祖家莱州胶水，少孤依外家
+  description: 本传：「蔡齐，字子思，其先洛阳人也。曾祖绾，为莱州胶水令，因家焉。齐少孤， 依外家刘氏。」生年据「年五十二」（卒 1039）逆推 988，与卡一致。
+  source_ids:
+  - src_songshi_caiqi
+- year: 1015
+  year_precision: exact
+  type: 夺魁
+  title: 大中祥符八年举进士第一，「状元给驺自齐始」
+  description: 「举进士第一。仪状俊伟，举止端重，真宗见之，顾宰相寇准曰：『得人矣。』 诏金吾给七驺，传呼以宠之。状元给驺，自齐始也。」状元出行的仪仗待遇 自蔡齐始——宋代状元荣耀的起点事件。
+  source_ids:
+  - src_songshi_caiqi
+- year: 1022
+  year_precision: about
+  type: 授官
+  title: 仁宗初劾钱惟演偏赏，拒罗崇勋诱记
+  description: 仁宗初为司谏。钱惟演请曲赐镇兵钱，齐曰「请偏赏以示私恩，不可许」遂劾奏。 太后大出金帛修景德寺，命齐为文记之；内侍罗崇勋阴使人诱曰「趣为记， 当得参知政事矣」，「齐久之不上，崇勋谗之」，罢知河南府——拒绝以文章
+    换参政的交易。
+  source_ids:
+  - src_songshi_caiqi
+- year: 1033
+  year_precision: exact
+  type: 授官
+  title: 明道二年谏止杨太妃同裁制军国
+  description: 太后崩，遗诏以杨太妃为皇太后同裁制军国事。阁门趣百官贺，「齐使台吏毋追班」， 入白执政：「上春秋富……今始亲政事，岂宜使女后相踵称制乎！」遂罢预政。 卷末论曰：「齐从容一言绝女后相踵称制之患，真所谓以道事君者欤！」
+  source_ids:
+  - src_songshi_caiqi
+- year: 1034
+  year_precision: about
+  type: 授官
+  title: 按问荆王飞语「不足治」，平大狱
+  description: 有飞语传荆王元俨为天下兵马都元帅者，捕得系狱连逮甚众。帝怒使齐按问， 齐曰「此小人无知，不足治，且无以安荆王」，帝悟遽释之——一句话避免 一场扩大化的政治狱。
+  source_ids:
+  - src_songshi_caiqi
+- year: 1036
+  year_precision: about
+  type: 授官
+  title: 抵王齐雄罪——「以恩废法，如朝廷何」
+  description: 蜀大姓王齐雄坐杀人除名，齐雄为太后姻家，未更赦复官。齐曰「果如此， 法挠矣」，明日入奏「齐雄恃势杀人，不死，又亟授以官，是以恩废法也」。 帝欲降一等与官，齐曰「以恩废法，如朝廷何」——帝勉从之，乃抵齐雄罪。
+  source_ids:
+  - src_songshi_caiqi
+- year: 1037
+  year_precision: about
+  type: 授官
+  title: 磨去「逆准不书」，还寇准清白
+  description: 钱惟演附丁谓，枢密题名辄削去寇准姓氏云「逆准不书」。齐言于仁宗： 「寇准忠义闻天下，社稷之臣也，岂可为奸党所诬哉！」「仁宗遽令磨去。」 为去世的名臣抹掉党争的墨迹。
+  source_ids:
+  - src_songshi_caiqi
+- year: 1038
+  year_precision: about
+  type: 授官
+  title: 拜参知政事；契丹屯境料其必不叛盟
+  description: 郭皇后废，将立富人陈氏女为后，齐极论之。拜礼部侍郎、参知政事。契丹祭天 于幽州以兵屯境上，辅臣欲调兵备边，「齐画三策，料契丹必不叛盟」。
+  source_ids:
+  - src_songshi_caiqi
+- year: 1039
+  year_precision: exact
+  type: 卒
+  title: 出知颍州卒，年五十二，谥文忠
+  description: 王曾与齐善，曾罢相，齐亦以户部侍郎归班，寻出知颍州卒，「年五十二， 赠兵部尚书，谥曰文忠。颍人见其故吏朱采会丧，犹号泣思之」。性谦退 不妄言，丁谓欲其附己「齐终不往」；所荐庞籍、杨偕、刘随、段少连
+    「后率为名臣」。
+  source_ids:
+  - src_songshi_caiqi

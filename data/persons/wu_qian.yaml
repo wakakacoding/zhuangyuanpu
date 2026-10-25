@@ -1,11 +1,10 @@
 # 吴潜 —— 极简卡（index_to_cards.py 自动生成，勿手改字段结构）
-# 来源：zhuangyuan_index.yaml z0244 | 比对状态：confirmed（name+year） | 备考：宋末三杰之一
 id: wu_qian
 name: 吴潜
 zi: 毅夫
 hao: 履斋
-birth_year: null
-death_year: null
+birth_year: 1196
+death_year: 1262
 fl_year: 1027
 native_hist: 宁国
 native_modern: 安徽省宣城市宁国市
@@ -16,6 +15,9 @@ exam_year: 1217
 ganzhi: 丁丑
 ke_ci: 嘉定十年丁丑科
 rank_detail: 一甲第一名（状元）
-bio_short: null
-tags: []
+bio_short: 嘉定十年状元。谏用兵复河南（后验）、端平九事、淳祐十一年拜右丞相，蠲免庆元府民赋五百四十九万。密奏「臣无弥远之材，忠王无陛下之福」忤帝，谪循州端坐而逝。南宋重要词人，著《履斋遗集》。
+tags:
+- 宰相
+- 词人
+- 贬死循州
 status: published
